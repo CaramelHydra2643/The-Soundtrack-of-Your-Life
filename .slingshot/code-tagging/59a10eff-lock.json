@@ -1,0 +1,408 @@
+{
+  ".env.example": {
+    "filename": ".env.example",
+    "path": ".env.example",
+    "version": "1.2",
+    "contextFile": "59a10eff-context.json",
+    "chunks": {
+      "42d292": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794811936,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "04511a3e"
+        },
+        "hash": "40a7eec1",
+        "messageId": "system_9825f6b0-e189-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/16/2026, 12:22:16 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "42d292",
+        "hash": "ce8d634c",
+        "encoded": "#%20==============================================================================",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "42d292",
+        "hash": "c8d26082",
+        "encoded": "#%20THE%20SOUNDTRACK%20OF%20YOUR%20LIFE%20-%20CONFIGURATION",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "42d292",
+        "hash": "6ead42df",
+        "encoded": "#%20==============================================================================",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "42d292",
+        "hash": "b758f1b8",
+        "encoded": "#%20Copy%20this%20file%20to%20.env%20and%20customize%20as%20needed",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "42d292",
+        "hash": "4d5d5dc8",
+        "encoded": "#%20DO%20NOT%20commit%20.env%20to%20version%20control",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "42d292",
+        "hash": "df54a6c8",
+        "encoded": "#%20------------------------------------------------------------------------------",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "42d292",
+        "hash": "ea2346d3",
+        "encoded": "#%20APPLICATION%20SETTINGS",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "42d292",
+        "hash": "9c08724a",
+        "encoded": "#%20------------------------------------------------------------------------------",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "42d292",
+        "hash": "e91713d1",
+        "encoded": "APP_NAME=%22The%20Soundtrack%20of%20Your%20Life%22",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "42d292",
+        "hash": "ccdcddb6",
+        "encoded": "APP_ENV=development",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "42d292",
+        "hash": "dd18258b",
+        "encoded": "LOG_LEVEL=INFO",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "42d292",
+        "hash": "c35a79be",
+        "encoded": "#%20------------------------------------------------------------------------------",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "42d292",
+        "hash": "3f96ba45",
+        "encoded": "#%20LLM%20CONFIGURATION",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "42d292",
+        "hash": "d1a9c71a",
+        "encoded": "#%20------------------------------------------------------------------------------",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "42d292",
+        "hash": "79672088",
+        "encoded": "#%20Provider:%20ollama%20(default),%20openai%20(future),%20anthropic%20(future)",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "42d292",
+        "hash": "b72fc775",
+        "encoded": "LLM_PROVIDER=ollama",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "42d292",
+        "hash": "0a1cb14e",
+        "encoded": "OLLAMA_BASE_URL=http://localhost:11434",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "42d292",
+        "hash": "bf72934e",
+        "encoded": "OLLAMA_MODEL=qwen2.5:3b",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "42d292",
+        "hash": "0c3f9abb",
+        "encoded": "LLM_TIMEOUT=180",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "42d292",
+        "hash": "f4ce664e",
+        "encoded": "LLM_TEMPERATURE=0.3",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "42d292",
+        "hash": "9c7f010a",
+        "encoded": "LLM_MAX_TOKENS=2000",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "42d292",
+        "hash": "b58b38ea",
+        "encoded": "#%20------------------------------------------------------------------------------",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "42d292",
+        "hash": "25f3ba82",
+        "encoded": "#%20EMBEDDING%20CONFIGURATION",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "42d292",
+        "hash": "f8360ed6",
+        "encoded": "#%20------------------------------------------------------------------------------",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "42d292",
+        "hash": "29c2ff93",
+        "encoded": "EMBEDDING_PROVIDER=sentence-transformers",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "42d292",
+        "hash": "50719bad",
+        "encoded": "EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "42d292",
+        "hash": "066a6405",
+        "encoded": "#%20Device:%20cpu,%20cuda,%20mps%20(auto-detected%20if%20left%20empty)",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "42d292",
+        "hash": "a0d8f51d",
+        "encoded": "EMBEDDING_DEVICE=cpu",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "42d292",
+        "hash": "a3318096",
+        "encoded": "#%20------------------------------------------------------------------------------",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "42d292",
+        "hash": "9409f849",
+        "encoded": "#%20VECTOR%20DATABASE%20CONFIGURATION",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "42d292",
+        "hash": "bad4764e",
+        "encoded": "#%20------------------------------------------------------------------------------",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "42d292",
+        "hash": "df995c8f",
+        "encoded": "VECTOR_STORE=chroma",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "42d292",
+        "hash": "7f5e07b6",
+        "encoded": "#%20Leave%20empty%20to%20use%20default%20app%20data%20directory",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "42d292",
+        "hash": "a8eeb9fd",
+        "encoded": "VECTOR_DB_PATH=",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "42d292",
+        "hash": "1f8d7a0f",
+        "encoded": "COLLECTION_NAME=music_knowledge",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "42d292",
+        "hash": "246a5873",
+        "encoded": "RETRIEVAL_TOP_K=5",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "42d292",
+        "hash": "be6bcb64",
+        "encoded": "#%20------------------------------------------------------------------------------",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "42d292",
+        "hash": "64933063",
+        "encoded": "#%20RECOMMENDATION%20ENGINE%20SETTINGS",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "42d292",
+        "hash": "40fb46d7",
+        "encoded": "#%20------------------------------------------------------------------------------",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "42d292",
+        "hash": "bbf71266",
+        "encoded": "MAX_RECOMMENDATIONS=5",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "42d292",
+        "hash": "1f37889c",
+        "encoded": "MAX_MEMORY_LENGTH=5000",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "42d292",
+        "hash": "5ceed16f",
+        "encoded": "#%20Scoring%20weights%20(must%20sum%20to%201.0)",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "42d292",
+        "hash": "1bb4decf",
+        "encoded": "WEIGHT_MOOD=0.40",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "42d292",
+        "hash": "dcc0b7d1",
+        "encoded": "WEIGHT_GENRE=0.30",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "42d292",
+        "hash": "343efe6d",
+        "encoded": "WEIGHT_INSTRUMENT=0.20",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "42d292",
+        "hash": "0f78fa66",
+        "encoded": "WEIGHT_THEME=0.10",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "42d292",
+        "hash": "957a3312",
+        "encoded": "#%20------------------------------------------------------------------------------",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "42d292",
+        "hash": "90fda49d",
+        "encoded": "#%20OPTIONAL%20FEATURES",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "42d292",
+        "hash": "6138827b",
+        "encoded": "#%20------------------------------------------------------------------------------",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "42d292",
+        "hash": "af922fea",
+        "encoded": "#%20Enable%20external%20music%20lookup%20(iTunes%20API)",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "42d292",
+        "hash": "834a5c24",
+        "encoded": "ENABLE_EXTERNAL_MUSIC_LOOKUP=false",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "42d292",
+        "hash": "b055b28f",
+        "encoded": "#%20Enable%20memory%20vault%20feature",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "42d292",
+        "hash": "2ef14d01",
+        "encoded": "ENABLE_MEMORY_VAULT=true",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "42d292",
+        "hash": "272c3774",
+        "encoded": "#%20------------------------------------------------------------------------------",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "42d292",
+        "hash": "eadeaa40",
+        "encoded": "#%20DATA%20STORAGE",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "42d292",
+        "hash": "aca038fa",
+        "encoded": "#%20------------------------------------------------------------------------------",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "42d292",
+        "hash": "3c89e39d",
+        "encoded": "#%20Leave%20empty%20to%20use%20platformdirs%20default",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "42d292",
+        "hash": "91cd287c",
+        "encoded": "#%20Windows:%20%25LOCALAPPDATA%25%5CThe%20Soundtrack%20of%20Your%20Life",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "42d292",
+        "hash": "8b46f03f",
+        "encoded": "#%20Linux:%20~/.local/share/soundtrack-of-your-life",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "42d292",
+        "hash": "f6bc9428",
+        "encoded": "#%20macOS:%20~/Library/Application%20Support/The%20Soundtrack%20of%20Your%20Life",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "42d292",
+        "hash": "64a25afd",
+        "encoded": "APP_DATA_DIR=",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "42d292",
+        "hash": "651ac959",
+        "encoded": "#%20Database%20filename",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "42d292",
+        "hash": "d8883c1f",
+        "encoded": "DB_NAME=memories.db",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

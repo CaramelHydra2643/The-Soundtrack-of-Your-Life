@@ -1,0 +1,306 @@
+{
+  "requirements.txt": {
+    "filename": "requirements.txt",
+    "path": "requirements.txt",
+    "version": "1.2",
+    "contextFile": "af2bf99d-context.json",
+    "chunks": {
+      "efcf1a": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794811936,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "04511a3e"
+        },
+        "hash": "bbd006ab",
+        "messageId": "system_9825f6b0-e189-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/16/2026, 12:22:16 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "efcf1a",
+        "hash": "ce8d634c",
+        "encoded": "#%20==============================================================================",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "efcf1a",
+        "hash": "aac52074",
+        "encoded": "#%20THE%20SOUNDTRACK%20OF%20YOUR%20LIFE%20-%20DEPENDENCIES",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "efcf1a",
+        "hash": "6ead42df",
+        "encoded": "#%20==============================================================================",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "efcf1a",
+        "hash": "c3a4340a",
+        "encoded": "#%20Compatible%20with%20Python%203.11,%203.12,%20and%203.14",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "efcf1a",
+        "hash": "9bda683f",
+        "encoded": "#%20Tested%20on%20Windows%2011,%20designed%20for%20cross-platform%20compatibility",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "efcf1a",
+        "hash": "df54a6c8",
+        "encoded": "#%20------------------------------------------------------------------------------",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "efcf1a",
+        "hash": "13863b39",
+        "encoded": "#%20Web%20Framework",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "efcf1a",
+        "hash": "9c08724a",
+        "encoded": "#%20------------------------------------------------------------------------------",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "efcf1a",
+        "hash": "44555bcb",
+        "encoded": "streamlit%3E=1.28.0,%3C2.0.0",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "efcf1a",
+        "hash": "dd5fad25",
+        "encoded": "#%20------------------------------------------------------------------------------",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "efcf1a",
+        "hash": "79fa2cba",
+        "encoded": "#%20LLM%20Integration",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "efcf1a",
+        "hash": "c35a79be",
+        "encoded": "#%20------------------------------------------------------------------------------",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "efcf1a",
+        "hash": "fcc81b44",
+        "encoded": "ollama%3E=0.1.0,%3C1.0.0",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "efcf1a",
+        "hash": "e9222158",
+        "encoded": "#%20------------------------------------------------------------------------------",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "efcf1a",
+        "hash": "8e526dae",
+        "encoded": "#%20Embeddings%20and%20ML",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "efcf1a",
+        "hash": "16be2207",
+        "encoded": "#%20------------------------------------------------------------------------------",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "efcf1a",
+        "hash": "92472e4f",
+        "encoded": "sentence-transformers%3E=2.2.0,%3C3.0.0",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "efcf1a",
+        "hash": "8b7b9087",
+        "encoded": "torch%3E=2.0.0,%3C3.0.0",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "efcf1a",
+        "hash": "634803bf",
+        "encoded": "#%20------------------------------------------------------------------------------",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "efcf1a",
+        "hash": "5adff43a",
+        "encoded": "#%20Vector%20Database",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "efcf1a",
+        "hash": "b58b38ea",
+        "encoded": "#%20------------------------------------------------------------------------------",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "efcf1a",
+        "hash": "49e6e686",
+        "encoded": "chromadb%3E=0.4.0,%3C1.0.0",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "efcf1a",
+        "hash": "4b954b16",
+        "encoded": "#%20------------------------------------------------------------------------------",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "efcf1a",
+        "hash": "c8212a4f",
+        "encoded": "#%20Data%20Validation%20and%20Settings",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "efcf1a",
+        "hash": "a36032ba",
+        "encoded": "#%20------------------------------------------------------------------------------",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "efcf1a",
+        "hash": "49b888a7",
+        "encoded": "pydantic%3E=2.0.0,%3C3.0.0",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "efcf1a",
+        "hash": "f7eb9dbd",
+        "encoded": "pydantic-settings%3E=2.0.0,%3C3.0.0",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "efcf1a",
+        "hash": "0eaff830",
+        "encoded": "#%20------------------------------------------------------------------------------",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "efcf1a",
+        "hash": "b96b2dcd",
+        "encoded": "#%20Data%20Processing",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "efcf1a",
+        "hash": "b718f2ba",
+        "encoded": "#%20------------------------------------------------------------------------------",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "efcf1a",
+        "hash": "87e11633",
+        "encoded": "pandas%3E=2.0.0,%3C3.0.0",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "efcf1a",
+        "hash": "b9c07015",
+        "encoded": "numpy%3E=1.24.0,%3C2.0.0",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "efcf1a",
+        "hash": "989212b5",
+        "encoded": "#%20------------------------------------------------------------------------------",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "efcf1a",
+        "hash": "a749dffd",
+        "encoded": "#%20Configuration%20and%20Environment",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "efcf1a",
+        "hash": "be6bcb64",
+        "encoded": "#%20------------------------------------------------------------------------------",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "efcf1a",
+        "hash": "fec2ec29",
+        "encoded": "python-dotenv%3E=1.0.0,%3C2.0.0",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "efcf1a",
+        "hash": "bcbc7f94",
+        "encoded": "platformdirs%3E=3.0.0,%3C5.0.0",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "efcf1a",
+        "hash": "198c43f8",
+        "encoded": "#%20------------------------------------------------------------------------------",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "efcf1a",
+        "hash": "8284ed6c",
+        "encoded": "#%20HTTP%20Requests%20(for%20optional%20iTunes%20API)",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "efcf1a",
+        "hash": "458822a0",
+        "encoded": "#%20------------------------------------------------------------------------------",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "efcf1a",
+        "hash": "37fd8269",
+        "encoded": "requests%3E=2.31.0,%3C3.0.0",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "efcf1a",
+        "hash": "607ace1e",
+        "encoded": "#%20------------------------------------------------------------------------------",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "efcf1a",
+        "hash": "e979a505",
+        "encoded": "#%20Testing",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "efcf1a",
+        "hash": "17b7c407",
+        "encoded": "#%20------------------------------------------------------------------------------",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "efcf1a",
+        "hash": "414db140",
+        "encoded": "pytest%3E=7.4.0,%3C9.0.0",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "efcf1a",
+        "hash": "6e408124",
+        "encoded": "pytest-cov%3E=4.1.0,%3C6.0.0",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

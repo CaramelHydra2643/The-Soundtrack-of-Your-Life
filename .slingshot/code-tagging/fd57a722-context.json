@@ -1,0 +1,15 @@
+{
+  "filename": "acoustic_guitar.txt",
+  "path": "data\\knowledge_base\\instruments\\acoustic_guitar.txt",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "c915a030": {
+      "value": "proceed"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

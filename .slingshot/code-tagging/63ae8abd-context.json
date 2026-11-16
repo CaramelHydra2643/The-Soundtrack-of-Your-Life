@@ -1,0 +1,15 @@
+{
+  "filename": "memory_vault.py",
+  "path": "modules\\memory_vault.py",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "f74bf8b2": {
+      "value": "first test RAG retrieval, then test ollama"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

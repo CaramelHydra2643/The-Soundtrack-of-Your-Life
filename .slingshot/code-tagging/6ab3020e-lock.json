@@ -1,0 +1,42 @@
+{
+  "data\\music_metadata\\.gitkeep": {
+    "filename": ".gitkeep",
+    "path": "data\\music_metadata\\.gitkeep",
+    "version": "1.2",
+    "contextFile": "6ab3020e-context.json",
+    "chunks": {
+      "e73c62": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794812269,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "c915a030"
+        },
+        "hash": "93d110ba",
+        "messageId": "system_5acc7040-e18a-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/16/2026, 12:27:49 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "e73c62",
+        "hash": "af53fcf9",
+        "encoded": "#%20Placeholder%20for%20music%20metadata%20files",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "e73c62",
+        "hash": "17f02f6a",
+        "encoded": "#%20MTG-Jamendo%20dataset%20metadata%20will%20be%20placed%20here",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "filename": "explanation_generator.py",
+  "path": "modules\\explanation_generator.py",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "f74bf8b2": {
+      "value": "first test RAG retrieval, then test ollama"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

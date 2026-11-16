@@ -1,0 +1,1500 @@
+{
+  "modules\\music_catalogue.py": {
+    "filename": "music_catalogue.py",
+    "path": "modules\\music_catalogue.py",
+    "version": "1.2",
+    "contextFile": "7061ab3d-context.json",
+    "chunks": {
+      "2aea31": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794812894,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "f74bf8b2"
+        },
+        "hash": "0c826ade",
+        "messageId": "system_34fe0610-e18c-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/16/2026, 12:38:14 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "2aea31",
+        "hash": "9cef9ccb",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "2aea31",
+        "hash": "5da3e675",
+        "encoded": "Music%20Catalogue%20Module",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "2aea31",
+        "hash": "50b6b3d0",
+        "encoded": "Manages%20music%20metadata%20and%20provides%20search/filtering%20capabilities.",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "2aea31",
+        "hash": "6766a9a9",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "2aea31",
+        "hash": "64820e3e",
+        "encoded": "import%20logging",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "2aea31",
+        "hash": "6fe05597",
+        "encoded": "import%20json",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "2aea31",
+        "hash": "ef3474bc",
+        "encoded": "from%20pathlib%20import%20Path",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "2aea31",
+        "hash": "032f1433",
+        "encoded": "from%20typing%20import%20List,%20Dict,%20Any,%20Optional,%20Set",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "2aea31",
+        "hash": "9b24532a",
+        "encoded": "import%20pandas%20as%20pd",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "2aea31",
+        "hash": "017d7363",
+        "encoded": "from%20config.settings%20import%20get_settings",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "2aea31",
+        "hash": "b057e457",
+        "encoded": "logger%20=%20logging.getLogger(__name__)",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "2aea31",
+        "hash": "08ba8fd9",
+        "encoded": "class%20MusicCatalogue:",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "2aea31",
+        "hash": "a8f6f226",
+        "encoded": "%22%22%22Manages%20music%20track%20metadata%20and%20search%20functionality.%22%22%22",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "2aea31",
+        "hash": "1b5c9a22",
+        "encoded": "def%20__init__(self):",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "2aea31",
+        "hash": "aab6a520",
+        "encoded": "%22%22%22Initialize%20music%20catalogue.%22%22%22",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "2aea31",
+        "hash": "24496ab6",
+        "encoded": "self.settings%20=%20get_settings()",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "2aea31",
+        "hash": "e6e57c4e",
+        "encoded": "self.catalogue_df:%20Optional%5Bpd.DataFrame%5D%20=%20None",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "2aea31",
+        "hash": "3af09339",
+        "encoded": "self.tracks:%20List%5BDict%5Bstr,%20Any%5D%5D%20=%20%5B%5D",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "2aea31",
+        "hash": "9208a788",
+        "encoded": "self._load_catalogue()",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "2aea31",
+        "hash": "1ef3916e",
+        "encoded": "def%20_load_catalogue(self):",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "2aea31",
+        "hash": "03ca3a52",
+        "encoded": "%22%22%22Load%20music%20catalogue%20from%20metadata%20files%20or%20create%20sample%20data.%22%22%22",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "2aea31",
+        "hash": "1f410b9b",
+        "encoded": "workspace_root%20=%20Path(__file__).parent.parent",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "2aea31",
+        "hash": "7e3ccf10",
+        "encoded": "metadata_dir%20=%20workspace_root%20/%20'data'%20/%20'music_metadata'",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "2aea31",
+        "hash": "1403c1df",
+        "encoded": "#%20Try%20to%20load%20from%20CSV/JSON%20files",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "2aea31",
+        "hash": "0aa761bb",
+        "encoded": "csv_files%20=%20list(metadata_dir.glob('*.csv'))",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "2aea31",
+        "hash": "44154d54",
+        "encoded": "json_files%20=%20list(metadata_dir.glob('*.json'))",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "2aea31",
+        "hash": "d014be32",
+        "encoded": "if%20csv_files:",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "2aea31",
+        "hash": "29e58258",
+        "encoded": "logger.info(f%22Loading%20catalogue%20from%20%7Bcsv_files%5B0%5D%7D%22)",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "2aea31",
+        "hash": "238b3898",
+        "encoded": "try:",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "2aea31",
+        "hash": "b52ad1d8",
+        "encoded": "self.catalogue_df%20=%20pd.read_csv(csv_files%5B0%5D)",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "2aea31",
+        "hash": "651f38c5",
+        "encoded": "self._process_catalogue()",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "2aea31",
+        "hash": "d6779ee6",
+        "encoded": "return",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "2aea31",
+        "hash": "454a3ac4",
+        "encoded": "except%20Exception%20as%20e:",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "2aea31",
+        "hash": "5c17ead4",
+        "encoded": "logger.warning(f%22Failed%20to%20load%20CSV:%20%7Be%7D%22)",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "2aea31",
+        "hash": "8a4d6261",
+        "encoded": "if%20json_files:",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "2aea31",
+        "hash": "597577dd",
+        "encoded": "logger.info(f%22Loading%20catalogue%20from%20%7Bjson_files%5B0%5D%7D%22)",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "2aea31",
+        "hash": "7ca27a38",
+        "encoded": "try:",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "2aea31",
+        "hash": "a464d0f3",
+        "encoded": "with%20open(json_files%5B0%5D,%20'r',%20encoding='utf-8')%20as%20f:",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "2aea31",
+        "hash": "43a8d3cb",
+        "encoded": "self.tracks%20=%20json.load(f)",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "2aea31",
+        "hash": "9a5add0f",
+        "encoded": "logger.info(f%22Loaded%20%7Blen(self.tracks)%7D%20tracks%20from%20JSON%22)",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "2aea31",
+        "hash": "6e62ca1c",
+        "encoded": "return",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "2aea31",
+        "hash": "9491e8c8",
+        "encoded": "except%20Exception%20as%20e:",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "2aea31",
+        "hash": "7ad5c74c",
+        "encoded": "logger.warning(f%22Failed%20to%20load%20JSON:%20%7Be%7D%22)",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "2aea31",
+        "hash": "d3c8a592",
+        "encoded": "#%20Create%20sample%20catalogue",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "2aea31",
+        "hash": "fd3bf325",
+        "encoded": "logger.warning(%22No%20catalogue%20files%20found,%20creating%20sample%20data%22)",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "2aea31",
+        "hash": "4dd12161",
+        "encoded": "self._create_sample_catalogue()",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "2aea31",
+        "hash": "5a914704",
+        "encoded": "def%20_create_sample_catalogue(self):",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "2aea31",
+        "hash": "c6487ae9",
+        "encoded": "%22%22%22Create%20a%20sample%20music%20catalogue%20for%20demonstration.%22%22%22",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "2aea31",
+        "hash": "22820853",
+        "encoded": "sample_tracks%20=%20%5B",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "2aea31",
+        "hash": "97dbb014",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "2aea31",
+        "hash": "96cd7774",
+        "encoded": "'track_id':%20'sample_001',",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "2aea31",
+        "hash": "9f4223e8",
+        "encoded": "'track_name':%20'Fading%20Memories',",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "2aea31",
+        "hash": "b4762464",
+        "encoded": "'artist':%20'Acoustic%20Dreams',",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "2aea31",
+        "hash": "61f89c1f",
+        "encoded": "'genre_tags':%20%5B'indie%20folk',%20'acoustic'%5D,",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "2aea31",
+        "hash": "c4dbc209",
+        "encoded": "'mood_tags':%20%5B'nostalgic',%20'melancholic',%20'reflective'%5D,",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "2aea31",
+        "hash": "a5756e4a",
+        "encoded": "'instrument_tags':%20%5B'acoustic%20guitar',%20'piano',%20'strings'%5D,",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "2aea31",
+        "hash": "b2a436c7",
+        "encoded": "'tempo':%20'moderate',",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "2aea31",
+        "hash": "18b2bcac",
+        "encoded": "'energy':%20'low'",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "2aea31",
+        "hash": "c1761422",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "2aea31",
+        "hash": "6e35b3dc",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "2aea31",
+        "hash": "9b5f1085",
+        "encoded": "'track_id':%20'sample_002',",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "2aea31",
+        "hash": "9639eed1",
+        "encoded": "'track_name':%20'Golden%20Days',",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "2aea31",
+        "hash": "32a01a5c",
+        "encoded": "'artist':%20'The%20Rememberers',",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "2aea31",
+        "hash": "e9ac290b",
+        "encoded": "'genre_tags':%20%5B'indie%20folk',%20'singer-songwriter'%5D,",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "2aea31",
+        "hash": "1daaf370",
+        "encoded": "'mood_tags':%20%5B'nostalgic',%20'bittersweet',%20'warm'%5D,",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "2aea31",
+        "hash": "683df49a",
+        "encoded": "'instrument_tags':%20%5B'acoustic%20guitar',%20'harmonica'%5D,",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "2aea31",
+        "hash": "0070217f",
+        "encoded": "'tempo':%20'slow',",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "2aea31",
+        "hash": "ee8ca481",
+        "encoded": "'energy':%20'low'",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "2aea31",
+        "hash": "b33ec0a5",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "2aea31",
+        "hash": "475bedaf",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "2aea31",
+        "hash": "41a8e919",
+        "encoded": "'track_id':%20'sample_003',",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "2aea31",
+        "hash": "a4509933",
+        "encoded": "'track_name':%20'Sunrise%20Celebration',",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "2aea31",
+        "hash": "d594b77f",
+        "encoded": "'artist':%20'Joyful%20Hearts',",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "2aea31",
+        "hash": "25a54e0f",
+        "encoded": "'genre_tags':%20%5B'pop',%20'indie%20pop'%5D,",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "2aea31",
+        "hash": "d0447f44",
+        "encoded": "'mood_tags':%20%5B'happy',%20'uplifting',%20'energetic'%5D,",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "2aea31",
+        "hash": "ef3bc799",
+        "encoded": "'instrument_tags':%20%5B'guitar',%20'drums',%20'bass'%5D,",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "2aea31",
+        "hash": "1caff9a1",
+        "encoded": "'tempo':%20'fast',",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "2aea31",
+        "hash": "d9b593d3",
+        "encoded": "'energy':%20'high'",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "2aea31",
+        "hash": "5f475dcc",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "2aea31",
+        "hash": "37d4c276",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "2aea31",
+        "hash": "502125e4",
+        "encoded": "'track_id':%20'sample_004',",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "2aea31",
+        "hash": "dc0787ab",
+        "encoded": "'track_name':%20'Quiet%20Morning',",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "2aea31",
+        "hash": "2ef4a1e1",
+        "encoded": "'artist':%20'Peaceful%20Sounds',",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "2aea31",
+        "hash": "3a4cc434",
+        "encoded": "'genre_tags':%20%5B'ambient',%20'new%20age'%5D,",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "2aea31",
+        "hash": "9bcc31b8",
+        "encoded": "'mood_tags':%20%5B'peaceful',%20'calm',%20'serene'%5D,",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "2aea31",
+        "hash": "567ebe18",
+        "encoded": "'instrument_tags':%20%5B'piano',%20'synthesizer'%5D,",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "2aea31",
+        "hash": "db00dab7",
+        "encoded": "'tempo':%20'slow',",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "2aea31",
+        "hash": "c0f3874d",
+        "encoded": "'energy':%20'very%20low'",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "2aea31",
+        "hash": "976a72fd",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "2aea31",
+        "hash": "d0d5dd21",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "2aea31",
+        "hash": "f7ba6704",
+        "encoded": "'track_id':%20'sample_005',",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "2aea31",
+        "hash": "f5e013b6",
+        "encoded": "'track_name':%20'Last%20Goodbye',",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "2aea31",
+        "hash": "a79f9a09",
+        "encoded": "'artist':%20'Melancholy%20Strings',",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "2aea31",
+        "hash": "7848640c",
+        "encoded": "'genre_tags':%20%5B'classical',%20'orchestral'%5D,",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "2aea31",
+        "hash": "2f57b6fa",
+        "encoded": "'mood_tags':%20%5B'sad',%20'emotional',%20'dramatic'%5D,",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "2aea31",
+        "hash": "9632bf6d",
+        "encoded": "'instrument_tags':%20%5B'strings',%20'piano',%20'cello'%5D,",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "2aea31",
+        "hash": "b78ace3e",
+        "encoded": "'tempo':%20'slow',",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "2aea31",
+        "hash": "a72aeeff",
+        "encoded": "'energy':%20'low'",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "2aea31",
+        "hash": "88250a73",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "2aea31",
+        "hash": "5f406a3f",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "2aea31",
+        "hash": "ea799bc0",
+        "encoded": "'track_id':%20'sample_006',",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "2aea31",
+        "hash": "0b4d2661",
+        "encoded": "'track_name':%20'College%20Nights',",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "2aea31",
+        "hash": "7393a2dd",
+        "encoded": "'artist':%20'Youth%20Revival',",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "2aea31",
+        "hash": "3a3cb454",
+        "encoded": "'genre_tags':%20%5B'indie%20rock',%20'alternative'%5D,",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "2aea31",
+        "hash": "db7a4bda",
+        "encoded": "'mood_tags':%20%5B'nostalgic',%20'energetic',%20'youthful'%5D,",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "2aea31",
+        "hash": "22e8ee07",
+        "encoded": "'instrument_tags':%20%5B'electric%20guitar',%20'drums',%20'bass'%5D,",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "2aea31",
+        "hash": "91e8f9da",
+        "encoded": "'tempo':%20'moderate',",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "2aea31",
+        "hash": "201c2479",
+        "encoded": "'energy':%20'moderate'",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "2aea31",
+        "hash": "d5084bcd",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "2aea31",
+        "hash": "8606b228",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "2aea31",
+        "hash": "2468b368",
+        "encoded": "'track_id':%20'sample_007',",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "2aea31",
+        "hash": "09182b95",
+        "encoded": "'track_name':%20'Thankful%20Heart',",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "2aea31",
+        "hash": "41247623",
+        "encoded": "'artist':%20'Grateful%20Soul',",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "2aea31",
+        "hash": "c6f6c7e5",
+        "encoded": "'genre_tags':%20%5B'folk',%20'acoustic%20pop'%5D,",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "2aea31",
+        "hash": "a6b98a78",
+        "encoded": "'mood_tags':%20%5B'grateful',%20'warm',%20'content'%5D,",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "2aea31",
+        "hash": "870ad1c4",
+        "encoded": "'instrument_tags':%20%5B'acoustic%20guitar',%20'piano'%5D,",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "2aea31",
+        "hash": "0c795a4b",
+        "encoded": "'tempo':%20'moderate',",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "2aea31",
+        "hash": "c7277c31",
+        "encoded": "'energy':%20'moderate'",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "2aea31",
+        "hash": "fd6b6ded",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "2aea31",
+        "hash": "ebe819f4",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "2aea31",
+        "hash": "1fe8f6ae",
+        "encoded": "'track_id':%20'sample_008',",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "2aea31",
+        "hash": "dc5278dc",
+        "encoded": "'track_name':%20'Victory%20March',",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "2aea31",
+        "hash": "ba096458",
+        "encoded": "'artist':%20'Triumphant%20Brass',",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "2aea31",
+        "hash": "7a8cacf2",
+        "encoded": "'genre_tags':%20%5B'orchestral',%20'cinematic'%5D,",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "2aea31",
+        "hash": "4c51186f",
+        "encoded": "'mood_tags':%20%5B'proud',%20'triumphant',%20'powerful'%5D,",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "2aea31",
+        "hash": "7f4fee93",
+        "encoded": "'instrument_tags':%20%5B'brass',%20'drums',%20'strings'%5D,",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "2aea31",
+        "hash": "379d254b",
+        "encoded": "'tempo':%20'moderate',",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "2aea31",
+        "hash": "468cb60b",
+        "encoded": "'energy':%20'high'",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "2aea31",
+        "hash": "a6ef5996",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "2aea31",
+        "hash": "35c22478",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "2aea31",
+        "hash": "a67e0981",
+        "encoded": "'track_id':%20'sample_009',",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "2aea31",
+        "hash": "9b5710dc",
+        "encoded": "'track_name':%20'Turning%20Pages',",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "2aea31",
+        "hash": "74df30b2",
+        "encoded": "'artist':%20'Life%20Stories',",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "2aea31",
+        "hash": "5fdca92c",
+        "encoded": "'genre_tags':%20%5B'indie%20folk',%20'singer-songwriter'%5D,",
+        "prevChunkIds": []
+      },
+      "147": {
+        "chunkId": "2aea31",
+        "hash": "a68b6fa1",
+        "encoded": "'mood_tags':%20%5B'reflective',%20'hopeful',%20'bittersweet'%5D,",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "2aea31",
+        "hash": "f191830c",
+        "encoded": "'instrument_tags':%20%5B'acoustic%20guitar',%20'piano',%20'strings'%5D,",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "2aea31",
+        "hash": "51dee39b",
+        "encoded": "'tempo':%20'moderate',",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "2aea31",
+        "hash": "bd716355",
+        "encoded": "'energy':%20'moderate'",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "2aea31",
+        "hash": "9f127754",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "2aea31",
+        "hash": "7e9f1110",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "2aea31",
+        "hash": "3b647369",
+        "encoded": "'track_id':%20'sample_010',",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "2aea31",
+        "hash": "ead76e8b",
+        "encoded": "'track_name':%20'First%20Light',",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "2aea31",
+        "hash": "35bab35c",
+        "encoded": "'artist':%20'New%20Beginnings',",
+        "prevChunkIds": []
+      },
+      "156": {
+        "chunkId": "2aea31",
+        "hash": "671589cc",
+        "encoded": "'genre_tags':%20%5B'ambient',%20'electronic'%5D,",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "2aea31",
+        "hash": "43d5462f",
+        "encoded": "'mood_tags':%20%5B'hopeful',%20'peaceful',%20'inspiring'%5D,",
+        "prevChunkIds": []
+      },
+      "158": {
+        "chunkId": "2aea31",
+        "hash": "0dcd7915",
+        "encoded": "'instrument_tags':%20%5B'synthesizer',%20'piano'%5D,",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "2aea31",
+        "hash": "2b9c0aa5",
+        "encoded": "'tempo':%20'slow',",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "2aea31",
+        "hash": "2dd7e8ef",
+        "encoded": "'energy':%20'low'",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "2aea31",
+        "hash": "e9785117",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "162": {
+        "chunkId": "2aea31",
+        "hash": "6a97dbb1",
+        "encoded": "%5D",
+        "prevChunkIds": []
+      },
+      "164": {
+        "chunkId": "2aea31",
+        "hash": "d516fba0",
+        "encoded": "self.tracks%20=%20sample_tracks",
+        "prevChunkIds": []
+      },
+      "165": {
+        "chunkId": "2aea31",
+        "hash": "62af423c",
+        "encoded": "logger.info(f%22Created%20sample%20catalogue%20with%20%7Blen(self.tracks)%7D%20tracks%22)",
+        "prevChunkIds": []
+      },
+      "167": {
+        "chunkId": "2aea31",
+        "hash": "53b31d1b",
+        "encoded": "def%20_process_catalogue(self):",
+        "prevChunkIds": []
+      },
+      "168": {
+        "chunkId": "2aea31",
+        "hash": "9f4cee70",
+        "encoded": "%22%22%22Process%20catalogue%20DataFrame%20into%20track%20dictionaries.%22%22%22",
+        "prevChunkIds": []
+      },
+      "169": {
+        "chunkId": "2aea31",
+        "hash": "1e7dc8cc",
+        "encoded": "if%20self.catalogue_df%20is%20None:",
+        "prevChunkIds": []
+      },
+      "170": {
+        "chunkId": "2aea31",
+        "hash": "9758889f",
+        "encoded": "return",
+        "prevChunkIds": []
+      },
+      "172": {
+        "chunkId": "2aea31",
+        "hash": "9fb0d883",
+        "encoded": "#%20Convert%20DataFrame%20to%20list%20of%20dicts",
+        "prevChunkIds": []
+      },
+      "173": {
+        "chunkId": "2aea31",
+        "hash": "28762cd3",
+        "encoded": "#%20This%20will%20depend%20on%20actual%20MTG-Jamendo%20format",
+        "prevChunkIds": []
+      },
+      "174": {
+        "chunkId": "2aea31",
+        "hash": "28bfd6ff",
+        "encoded": "self.tracks%20=%20self.catalogue_df.to_dict('records')",
+        "prevChunkIds": []
+      },
+      "175": {
+        "chunkId": "2aea31",
+        "hash": "aeb31e27",
+        "encoded": "logger.info(f%22Processed%20%7Blen(self.tracks)%7D%20tracks%20from%20catalogue%22)",
+        "prevChunkIds": []
+      },
+      "177": {
+        "chunkId": "2aea31",
+        "hash": "18c035cf",
+        "encoded": "def%20search_tracks(",
+        "prevChunkIds": []
+      },
+      "178": {
+        "chunkId": "2aea31",
+        "hash": "e43485f0",
+        "encoded": "self,",
+        "prevChunkIds": []
+      },
+      "179": {
+        "chunkId": "2aea31",
+        "hash": "a59c4200",
+        "encoded": "genres:%20Optional%5BList%5Bstr%5D%5D%20=%20None,",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "2aea31",
+        "hash": "071ab9e8",
+        "encoded": "moods:%20Optional%5BList%5Bstr%5D%5D%20=%20None,",
+        "prevChunkIds": []
+      },
+      "181": {
+        "chunkId": "2aea31",
+        "hash": "8ade68f6",
+        "encoded": "instruments:%20Optional%5BList%5Bstr%5D%5D%20=%20None,",
+        "prevChunkIds": []
+      },
+      "182": {
+        "chunkId": "2aea31",
+        "hash": "2a5eff0b",
+        "encoded": "limit:%20int%20=%2050",
+        "prevChunkIds": []
+      },
+      "183": {
+        "chunkId": "2aea31",
+        "hash": "761b496c",
+        "encoded": ")%20-%3E%20List%5BDict%5Bstr,%20Any%5D%5D:",
+        "prevChunkIds": []
+      },
+      "184": {
+        "chunkId": "2aea31",
+        "hash": "a501c94c",
+        "encoded": "%22%22%22Search%20for%20tracks%20matching%20criteria.",
+        "prevChunkIds": []
+      },
+      "186": {
+        "chunkId": "2aea31",
+        "hash": "622b9f98",
+        "encoded": "Args:",
+        "prevChunkIds": []
+      },
+      "187": {
+        "chunkId": "2aea31",
+        "hash": "bc0a9730",
+        "encoded": "genres:%20List%20of%20genre%20tags%20to%20match",
+        "prevChunkIds": []
+      },
+      "188": {
+        "chunkId": "2aea31",
+        "hash": "18f64cd6",
+        "encoded": "moods:%20List%20of%20mood%20tags%20to%20match",
+        "prevChunkIds": []
+      },
+      "189": {
+        "chunkId": "2aea31",
+        "hash": "17cd491c",
+        "encoded": "instruments:%20List%20of%20instrument%20tags%20to%20match",
+        "prevChunkIds": []
+      },
+      "190": {
+        "chunkId": "2aea31",
+        "hash": "00909e79",
+        "encoded": "limit:%20Maximum%20number%20of%20results",
+        "prevChunkIds": []
+      },
+      "192": {
+        "chunkId": "2aea31",
+        "hash": "855503e0",
+        "encoded": "Returns:",
+        "prevChunkIds": []
+      },
+      "193": {
+        "chunkId": "2aea31",
+        "hash": "aeb4d058",
+        "encoded": "List%20of%20matching%20tracks",
+        "prevChunkIds": []
+      },
+      "194": {
+        "chunkId": "2aea31",
+        "hash": "321720ab",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "195": {
+        "chunkId": "2aea31",
+        "hash": "00fe7573",
+        "encoded": "if%20not%20self.tracks:",
+        "prevChunkIds": []
+      },
+      "196": {
+        "chunkId": "2aea31",
+        "hash": "67fdc15f",
+        "encoded": "return%20%5B%5D",
+        "prevChunkIds": []
+      },
+      "198": {
+        "chunkId": "2aea31",
+        "hash": "8703a8f3",
+        "encoded": "matching_tracks%20=%20%5B%5D",
+        "prevChunkIds": []
+      },
+      "200": {
+        "chunkId": "2aea31",
+        "hash": "8e609124",
+        "encoded": "for%20track%20in%20self.tracks:",
+        "prevChunkIds": []
+      },
+      "201": {
+        "chunkId": "2aea31",
+        "hash": "92c56f16",
+        "encoded": "match%20=%20True",
+        "prevChunkIds": []
+      },
+      "203": {
+        "chunkId": "2aea31",
+        "hash": "9fb2d31d",
+        "encoded": "#%20Check%20genres",
+        "prevChunkIds": []
+      },
+      "204": {
+        "chunkId": "2aea31",
+        "hash": "2f07feca",
+        "encoded": "if%20genres:",
+        "prevChunkIds": []
+      },
+      "205": {
+        "chunkId": "2aea31",
+        "hash": "c9c0c846",
+        "encoded": "track_genres%20=%20set(track.get('genre_tags',%20%5B%5D))",
+        "prevChunkIds": []
+      },
+      "206": {
+        "chunkId": "2aea31",
+        "hash": "96deba5d",
+        "encoded": "search_genres%20=%20set(%5Bg.lower()%20for%20g%20in%20genres%5D)",
+        "prevChunkIds": []
+      },
+      "207": {
+        "chunkId": "2aea31",
+        "hash": "778e70d1",
+        "encoded": "if%20not%20track_genres.intersection(search_genres):",
+        "prevChunkIds": []
+      },
+      "208": {
+        "chunkId": "2aea31",
+        "hash": "2ed65910",
+        "encoded": "match%20=%20False",
+        "prevChunkIds": []
+      },
+      "210": {
+        "chunkId": "2aea31",
+        "hash": "3323d824",
+        "encoded": "#%20Check%20moods",
+        "prevChunkIds": []
+      },
+      "211": {
+        "chunkId": "2aea31",
+        "hash": "c5345c71",
+        "encoded": "if%20moods%20and%20match:",
+        "prevChunkIds": []
+      },
+      "212": {
+        "chunkId": "2aea31",
+        "hash": "ddec575a",
+        "encoded": "track_moods%20=%20set(%5Bm.lower()%20for%20m%20in%20track.get('mood_tags',%20%5B%5D)%5D)",
+        "prevChunkIds": []
+      },
+      "213": {
+        "chunkId": "2aea31",
+        "hash": "f63bf501",
+        "encoded": "search_moods%20=%20set(%5Bm.lower()%20for%20m%20in%20moods%5D)",
+        "prevChunkIds": []
+      },
+      "214": {
+        "chunkId": "2aea31",
+        "hash": "c6b046b8",
+        "encoded": "if%20not%20track_moods.intersection(search_moods):",
+        "prevChunkIds": []
+      },
+      "215": {
+        "chunkId": "2aea31",
+        "hash": "5e911619",
+        "encoded": "match%20=%20False",
+        "prevChunkIds": []
+      },
+      "217": {
+        "chunkId": "2aea31",
+        "hash": "a6820088",
+        "encoded": "#%20Check%20instruments",
+        "prevChunkIds": []
+      },
+      "218": {
+        "chunkId": "2aea31",
+        "hash": "651cc977",
+        "encoded": "if%20instruments%20and%20match:",
+        "prevChunkIds": []
+      },
+      "219": {
+        "chunkId": "2aea31",
+        "hash": "596dbc4f",
+        "encoded": "track_instruments%20=%20set(%5Bi.lower()%20for%20i%20in%20track.get('instrument_tags',%20%5B%5D)%5D)",
+        "prevChunkIds": []
+      },
+      "220": {
+        "chunkId": "2aea31",
+        "hash": "5c7fcff7",
+        "encoded": "search_instruments%20=%20set(%5Bi.lower()%20for%20i%20in%20instruments%5D)",
+        "prevChunkIds": []
+      },
+      "221": {
+        "chunkId": "2aea31",
+        "hash": "cc8b75fd",
+        "encoded": "if%20not%20track_instruments.intersection(search_instruments):",
+        "prevChunkIds": []
+      },
+      "222": {
+        "chunkId": "2aea31",
+        "hash": "b791717f",
+        "encoded": "match%20=%20False",
+        "prevChunkIds": []
+      },
+      "224": {
+        "chunkId": "2aea31",
+        "hash": "4b4471ed",
+        "encoded": "if%20match:",
+        "prevChunkIds": []
+      },
+      "225": {
+        "chunkId": "2aea31",
+        "hash": "b4573b01",
+        "encoded": "matching_tracks.append(track)",
+        "prevChunkIds": []
+      },
+      "227": {
+        "chunkId": "2aea31",
+        "hash": "67e3e445",
+        "encoded": "if%20len(matching_tracks)%20%3E=%20limit:",
+        "prevChunkIds": []
+      },
+      "228": {
+        "chunkId": "2aea31",
+        "hash": "f5cc8ef9",
+        "encoded": "break",
+        "prevChunkIds": []
+      },
+      "230": {
+        "chunkId": "2aea31",
+        "hash": "2fbe1a81",
+        "encoded": "return%20matching_tracks",
+        "prevChunkIds": []
+      },
+      "232": {
+        "chunkId": "2aea31",
+        "hash": "b31afcb4",
+        "encoded": "def%20get_track_by_id(self,%20track_id:%20str)%20-%3E%20Optional%5BDict%5Bstr,%20Any%5D%5D:",
+        "prevChunkIds": []
+      },
+      "233": {
+        "chunkId": "2aea31",
+        "hash": "d1c99bb3",
+        "encoded": "%22%22%22Get%20a%20specific%20track%20by%20ID.",
+        "prevChunkIds": []
+      },
+      "235": {
+        "chunkId": "2aea31",
+        "hash": "2daca1de",
+        "encoded": "Args:",
+        "prevChunkIds": []
+      },
+      "236": {
+        "chunkId": "2aea31",
+        "hash": "a8ebaf89",
+        "encoded": "track_id:%20Track%20identifier",
+        "prevChunkIds": []
+      },
+      "238": {
+        "chunkId": "2aea31",
+        "hash": "49f0d31e",
+        "encoded": "Returns:",
+        "prevChunkIds": []
+      },
+      "239": {
+        "chunkId": "2aea31",
+        "hash": "e676fcc9",
+        "encoded": "Track%20dict%20or%20None",
+        "prevChunkIds": []
+      },
+      "240": {
+        "chunkId": "2aea31",
+        "hash": "715f0019",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "241": {
+        "chunkId": "2aea31",
+        "hash": "34804eea",
+        "encoded": "for%20track%20in%20self.tracks:",
+        "prevChunkIds": []
+      },
+      "242": {
+        "chunkId": "2aea31",
+        "hash": "6b34f544",
+        "encoded": "if%20track.get('track_id')%20==%20track_id:",
+        "prevChunkIds": []
+      },
+      "243": {
+        "chunkId": "2aea31",
+        "hash": "b1bdfd18",
+        "encoded": "return%20track",
+        "prevChunkIds": []
+      },
+      "244": {
+        "chunkId": "2aea31",
+        "hash": "3ea743b3",
+        "encoded": "return%20None",
+        "prevChunkIds": []
+      },
+      "246": {
+        "chunkId": "2aea31",
+        "hash": "8ec86dd5",
+        "encoded": "def%20get_all_tags(self)%20-%3E%20Dict%5Bstr,%20Set%5Bstr%5D%5D:",
+        "prevChunkIds": []
+      },
+      "247": {
+        "chunkId": "2aea31",
+        "hash": "6f7ff5f6",
+        "encoded": "%22%22%22Get%20all%20unique%20tags%20in%20the%20catalogue.",
+        "prevChunkIds": []
+      },
+      "249": {
+        "chunkId": "2aea31",
+        "hash": "822cbd4f",
+        "encoded": "Returns:",
+        "prevChunkIds": []
+      },
+      "250": {
+        "chunkId": "2aea31",
+        "hash": "9b128829",
+        "encoded": "Dictionary%20with%20genre,%20mood,%20and%20instrument%20tag%20sets",
+        "prevChunkIds": []
+      },
+      "251": {
+        "chunkId": "2aea31",
+        "hash": "6f56ab30",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "252": {
+        "chunkId": "2aea31",
+        "hash": "a3d288d7",
+        "encoded": "genres%20=%20set()",
+        "prevChunkIds": []
+      },
+      "253": {
+        "chunkId": "2aea31",
+        "hash": "49ecb4a7",
+        "encoded": "moods%20=%20set()",
+        "prevChunkIds": []
+      },
+      "254": {
+        "chunkId": "2aea31",
+        "hash": "91faedc8",
+        "encoded": "instruments%20=%20set()",
+        "prevChunkIds": []
+      },
+      "256": {
+        "chunkId": "2aea31",
+        "hash": "0678043a",
+        "encoded": "for%20track%20in%20self.tracks:",
+        "prevChunkIds": []
+      },
+      "257": {
+        "chunkId": "2aea31",
+        "hash": "7d11edb2",
+        "encoded": "genres.update(track.get('genre_tags',%20%5B%5D))",
+        "prevChunkIds": []
+      },
+      "258": {
+        "chunkId": "2aea31",
+        "hash": "4d1103cd",
+        "encoded": "moods.update(track.get('mood_tags',%20%5B%5D))",
+        "prevChunkIds": []
+      },
+      "259": {
+        "chunkId": "2aea31",
+        "hash": "63aa2501",
+        "encoded": "instruments.update(track.get('instrument_tags',%20%5B%5D))",
+        "prevChunkIds": []
+      },
+      "261": {
+        "chunkId": "2aea31",
+        "hash": "f14c6c90",
+        "encoded": "return%20%7B",
+        "prevChunkIds": []
+      },
+      "262": {
+        "chunkId": "2aea31",
+        "hash": "e76a0091",
+        "encoded": "'genres':%20genres,",
+        "prevChunkIds": []
+      },
+      "263": {
+        "chunkId": "2aea31",
+        "hash": "01501d71",
+        "encoded": "'moods':%20moods,",
+        "prevChunkIds": []
+      },
+      "264": {
+        "chunkId": "2aea31",
+        "hash": "e7377e1f",
+        "encoded": "'instruments':%20instruments",
+        "prevChunkIds": []
+      },
+      "265": {
+        "chunkId": "2aea31",
+        "hash": "2b3722a1",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "267": {
+        "chunkId": "2aea31",
+        "hash": "249e066c",
+        "encoded": "def%20get_catalogue_stats(self)%20-%3E%20Dict%5Bstr,%20Any%5D:",
+        "prevChunkIds": []
+      },
+      "268": {
+        "chunkId": "2aea31",
+        "hash": "ccad904e",
+        "encoded": "%22%22%22Get%20catalogue%20statistics.",
+        "prevChunkIds": []
+      },
+      "270": {
+        "chunkId": "2aea31",
+        "hash": "863467a1",
+        "encoded": "Returns:",
+        "prevChunkIds": []
+      },
+      "271": {
+        "chunkId": "2aea31",
+        "hash": "81c975b5",
+        "encoded": "Dictionary%20with%20catalogue%20statistics",
+        "prevChunkIds": []
+      },
+      "272": {
+        "chunkId": "2aea31",
+        "hash": "d5977316",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "273": {
+        "chunkId": "2aea31",
+        "hash": "f8a0f4fd",
+        "encoded": "tags%20=%20self.get_all_tags()",
+        "prevChunkIds": []
+      },
+      "275": {
+        "chunkId": "2aea31",
+        "hash": "f877c482",
+        "encoded": "return%20%7B",
+        "prevChunkIds": []
+      },
+      "276": {
+        "chunkId": "2aea31",
+        "hash": "0907dd69",
+        "encoded": "'total_tracks':%20len(self.tracks),",
+        "prevChunkIds": []
+      },
+      "277": {
+        "chunkId": "2aea31",
+        "hash": "6a2dca3d",
+        "encoded": "'unique_genres':%20len(tags%5B'genres'%5D),",
+        "prevChunkIds": []
+      },
+      "278": {
+        "chunkId": "2aea31",
+        "hash": "2cd2b2f3",
+        "encoded": "'unique_moods':%20len(tags%5B'moods'%5D),",
+        "prevChunkIds": []
+      },
+      "279": {
+        "chunkId": "2aea31",
+        "hash": "3e7202cf",
+        "encoded": "'unique_instruments':%20len(tags%5B'instruments'%5D),",
+        "prevChunkIds": []
+      },
+      "280": {
+        "chunkId": "2aea31",
+        "hash": "08f71438",
+        "encoded": "'sample_tracks':%20self.tracks%5B:3%5D%20if%20self.tracks%20else%20%5B%5D",
+        "prevChunkIds": []
+      },
+      "281": {
+        "chunkId": "2aea31",
+        "hash": "64187a91",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

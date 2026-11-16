@@ -1,0 +1,300 @@
+{
+  "data\\knowledge_base\\emotions\\excitement.txt": {
+    "filename": "excitement.txt",
+    "path": "data\\knowledge_base\\emotions\\excitement.txt",
+    "version": "1.2",
+    "contextFile": "4ac800b4-context.json",
+    "chunks": {
+      "c9476d": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794812127,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "c915a030"
+        },
+        "hash": "1e5d7942",
+        "messageId": "system_5acc7040-e18a-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/16/2026, 12:25:27 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "c9476d",
+        "hash": "69c39b75",
+        "encoded": "EMOTION:%20Excitement",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "c9476d",
+        "hash": "3d3f53a3",
+        "encoded": "DESCRIPTION:",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "c9476d",
+        "hash": "40dea5d5",
+        "encoded": "Excitement%20is%20a%20feeling%20of%20great%20enthusiasm%20and%20eagerness.%20It's%20characterized%20by%20heightened%20energy,%20anticipation,%20and%20positive%20arousal,%20often%20in%20response%20to%20upcoming%20events%20or%20experiences.",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "c9476d",
+        "hash": "5c8a5d97",
+        "encoded": "MUSICAL%20CHARACTERISTICS:",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "c9476d",
+        "hash": "317ca31e",
+        "encoded": "-%20Fast%20tempo",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "c9476d",
+        "hash": "b59aeb70",
+        "encoded": "-%20Driving%20rhythms",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "c9476d",
+        "hash": "76ccda1e",
+        "encoded": "-%20Energetic%20instrumentation",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "c9476d",
+        "hash": "eadb4694",
+        "encoded": "-%20Dynamic%20changes%20and%20builds",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "c9476d",
+        "hash": "13ffa320",
+        "encoded": "-%20Major%20keys",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "c9476d",
+        "hash": "c25a8c2f",
+        "encoded": "-%20Uplifting%20melodies",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "c9476d",
+        "hash": "ba498479",
+        "encoded": "RECOMMENDED%20GENRES:",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "c9476d",
+        "hash": "7e46e81b",
+        "encoded": "-%20Rock",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "c9476d",
+        "hash": "2c7d40dd",
+        "encoded": "-%20Pop",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "c9476d",
+        "hash": "24daa6fa",
+        "encoded": "-%20Electronic%20dance%20music",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "c9476d",
+        "hash": "44e7daa1",
+        "encoded": "-%20Indie%20rock",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "c9476d",
+        "hash": "8a6d53f8",
+        "encoded": "-%20Pop%20punk",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "c9476d",
+        "hash": "2c472953",
+        "encoded": "-%20Upbeat%20folk",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "c9476d",
+        "hash": "65aad16b",
+        "encoded": "TYPICAL%20INSTRUMENTS:",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "c9476d",
+        "hash": "f2ba58b8",
+        "encoded": "-%20Electric%20guitar%20(energetic)",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "c9476d",
+        "hash": "1b0d2df7",
+        "encoded": "-%20Drums%20(prominent)",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "c9476d",
+        "hash": "e2a6642f",
+        "encoded": "-%20Bass%20(driving)",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "c9476d",
+        "hash": "cc79dc92",
+        "encoded": "-%20Synthesizers%20(bright,%20pulsing)",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "c9476d",
+        "hash": "2a9b64fa",
+        "encoded": "-%20Brass%20(energetic)",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "c9476d",
+        "hash": "1346b476",
+        "encoded": "-%20Energetic%20vocals",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "c9476d",
+        "hash": "c6a0402b",
+        "encoded": "TEMPO%20AND%20ENERGY:",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "c9476d",
+        "hash": "38ea00b2",
+        "encoded": "-%20Tempo:%20Fast%20(120-160+%20BPM)",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "c9476d",
+        "hash": "66910927",
+        "encoded": "-%20Energy:%20High%20to%20very%20high",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "c9476d",
+        "hash": "e022e28d",
+        "encoded": "-%20Dynamics:%20Powerful,%20building",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "c9476d",
+        "hash": "4386f2ab",
+        "encoded": "ATMOSPHERE:",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "c9476d",
+        "hash": "13a1f99c",
+        "encoded": "-%20Energizing%20and%20invigorating",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "c9476d",
+        "hash": "8b0d7fe8",
+        "encoded": "-%20Uplifting%20and%20motivating",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "c9476d",
+        "hash": "96bcdb72",
+        "encoded": "-%20Celebratory",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "c9476d",
+        "hash": "e3d48b72",
+        "encoded": "-%20Anticipatory",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "c9476d",
+        "hash": "5ef1fbcf",
+        "encoded": "-%20Intense%20and%20passionate",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "c9476d",
+        "hash": "75d7390a",
+        "encoded": "RELEVANT%20CONTEXTS:",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "c9476d",
+        "hash": "065040e1",
+        "encoded": "-%20Anticipation%20of%20events",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "c9476d",
+        "hash": "efed6ca0",
+        "encoded": "-%20Adventure%20and%20exploration",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "c9476d",
+        "hash": "e09380ab",
+        "encoded": "-%20Celebrations",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "c9476d",
+        "hash": "4153f3b7",
+        "encoded": "-%20Achieving%20goals",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "c9476d",
+        "hash": "1d583b36",
+        "encoded": "-%20New%20opportunities",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "c9476d",
+        "hash": "22338d17",
+        "encoded": "-%20Competitive%20activities",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "c9476d",
+        "hash": "3c97d68c",
+        "encoded": "CAVEATS:",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "c9476d",
+        "hash": "0d3b0d31",
+        "encoded": "-%20Excitement%20can%20vary%20in%20intensity",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "c9476d",
+        "hash": "93ae5faf",
+        "encoded": "-%20Can%20be%20focused%20or%20chaotic",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "c9476d",
+        "hash": "06502076",
+        "encoded": "-%20May%20overlap%20with%20anxiety%20in%20some%20contexts",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

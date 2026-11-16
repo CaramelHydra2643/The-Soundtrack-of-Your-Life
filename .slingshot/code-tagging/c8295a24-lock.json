@@ -1,0 +1,2058 @@
+{
+  "docs\\HLD.md": {
+    "filename": "HLD.md",
+    "path": "docs\\HLD.md",
+    "version": "1.2",
+    "contextFile": "c8295a24-context.json",
+    "chunks": {
+      "1a7a9d": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794813865,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "7318d5db"
+        },
+        "hash": "e326e590",
+        "messageId": "system_9a937770-e18d-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/16/2026, 12:54:25 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "1a7a9d",
+        "hash": "c2fd5fba",
+        "encoded": "#%20High-Level%20Design%20(HLD)",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "1a7a9d",
+        "hash": "8e4796ac",
+        "encoded": "##%20The%20Soundtrack%20of%20Your%20Life",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "1a7a9d",
+        "hash": "c48bf612",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "1a7a9d",
+        "hash": "3bfb4ede",
+        "encoded": "##%201.%20System%20Overview",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "1a7a9d",
+        "hash": "e4b53c84",
+        "encoded": "###%201.1%20Purpose",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "1a7a9d",
+        "hash": "6ce5b02e",
+        "encoded": "The%20Soundtrack%20of%20Your%20Life%20is%20an%20AI-powered%20application%20that%20analyzes%20personal%20memories,%20understands%20their%20emotional%20context,%20and%20recommends%20music%20that%20captures%20those%20feelings%20using%20advanced%20AI%20techniques%20including%20LLMs,%20RAG,%20and%20semantic%20search.",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "1a7a9d",
+        "hash": "9fad62a2",
+        "encoded": "###%201.2%20Key%20Objectives",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "1a7a9d",
+        "hash": "723a4b9a",
+        "encoded": "-%20Demonstrate%20practical%20implementation%20of%20modern%20AI%20technologies",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "1a7a9d",
+        "hash": "e2025247",
+        "encoded": "-%20Provide%20genuine%20emotional%20intelligence%20through%20LLM%20analysis",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "1a7a9d",
+        "hash": "553c1bcf",
+        "encoded": "-%20Implement%20authentic%20RAG%20(not%20simulated%20retrieval)",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "1a7a9d",
+        "hash": "0be9a848",
+        "encoded": "-%20Ensure%20100%25%20local%20execution%20(privacy-first)",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "1a7a9d",
+        "hash": "b8670f8b",
+        "encoded": "-%20Maintain%20cross-platform%20compatibility",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "1a7a9d",
+        "hash": "13bd76d7",
+        "encoded": "-%20Enable%20easy%20configuration%20and%20deployment",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "1a7a9d",
+        "hash": "a018fa36",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "1a7a9d",
+        "hash": "11912da0",
+        "encoded": "##%202.%20System%20Architecture",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "1a7a9d",
+        "hash": "ddffa8b4",
+        "encoded": "###%202.1%20Architectural%20Style",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "1a7a9d",
+        "hash": "6ea62e7a",
+        "encoded": "**Modular%20Monolithic%20Architecture**",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "1a7a9d",
+        "hash": "e29348a4",
+        "encoded": "-%20Single-process%20application",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "1a7a9d",
+        "hash": "7472ec07",
+        "encoded": "-%20Clear%20module%20boundaries",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "1a7a9d",
+        "hash": "2a0b985a",
+        "encoded": "-%20No%20microservices%20complexity",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "1a7a9d",
+        "hash": "ec455f04",
+        "encoded": "-%20Local-first%20design",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "1a7a9d",
+        "hash": "942a0d3a",
+        "encoded": "-%20Stateless%20request%20handling%20(except%20database)",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "1a7a9d",
+        "hash": "a69502bf",
+        "encoded": "###%202.2%20High-Level%20Component%20Diagram",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "1a7a9d",
+        "hash": "b8d32770",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "1a7a9d",
+        "hash": "b2811e1c",
+        "encoded": "%E2%94%8F%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%93",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "1a7a9d",
+        "hash": "83be3e57",
+        "encoded": "%E2%94%83%20%20%20%20%20%20%20%20%20%20USER%20LAYER%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%E2%94%83",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "1a7a9d",
+        "hash": "3ab25f97",
+        "encoded": "%E2%94%83%20%20%20(Web%20Browser%20/%20Streamlit%20UI)%20%20%20%20%20%E2%94%83",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "1a7a9d",
+        "hash": "894e92db",
+        "encoded": "%E2%94%97%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%B3%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%9B",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "1a7a9d",
+        "hash": "d9266a43",
+        "encoded": "%E2%94%82",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "1a7a9d",
+        "hash": "96358438",
+        "encoded": "v",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "1a7a9d",
+        "hash": "b121a949",
+        "encoded": "%E2%94%8F%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%93",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "1a7a9d",
+        "hash": "a224a4a3",
+        "encoded": "%E2%94%83%20%20%20%20PRESENTATION%20LAYER%20%20%20%20%20%20%20%20%20%20%20%20%E2%94%83",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "1a7a9d",
+        "hash": "2e659b34",
+        "encoded": "%E2%94%83%20%20%20%20(app.py%20-%20Streamlit)%20%20%20%20%20%20%20%20%20%20%E2%94%83",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "1a7a9d",
+        "hash": "0526811a",
+        "encoded": "%E2%94%83%20%20-%20Page%20routing%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%E2%94%83",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "1a7a9d",
+        "hash": "0ead33fb",
+        "encoded": "%E2%94%83%20%20-%20User%20input%20handling%20%20%20%20%20%20%20%20%20%20%20%E2%94%83",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "1a7a9d",
+        "hash": "df75951d",
+        "encoded": "%E2%94%83%20%20-%20Results%20display%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%E2%94%83",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "1a7a9d",
+        "hash": "9cbc371e",
+        "encoded": "%E2%94%97%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%B3%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%9B",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "1a7a9d",
+        "hash": "435d2034",
+        "encoded": "%E2%94%82",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "1a7a9d",
+        "hash": "125b99d7",
+        "encoded": "%E2%94%8C%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%B4%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%90",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "1a7a9d",
+        "hash": "cd29786d",
+        "encoded": "%E2%94%82%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%E2%94%82",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "1a7a9d",
+        "hash": "056103b5",
+        "encoded": "v%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20v",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "1a7a9d",
+        "hash": "c36e4b9d",
+        "encoded": "%E2%94%8F%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%93%20%20%20%20%20%20%E2%94%8F%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%93",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "1a7a9d",
+        "hash": "05c75172",
+        "encoded": "%E2%94%83%20%20BUSINESS%20%20%20%20%E2%94%83%20%20%20%20%20%20%E2%94%83%20PERSISTENCE%20%E2%94%83",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "1a7a9d",
+        "hash": "26341504",
+        "encoded": "%E2%94%83%20%20%20LOGIC%20%20%20%20%20%20%E2%94%83%20%20%20%20%20%20%E2%94%83%20%20%20%20LAYER%20%20%20%20%E2%94%83",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "1a7a9d",
+        "hash": "f0914452",
+        "encoded": "%E2%94%83%20%20%20%20%20%20%20%20%20%20%20%20%20%E2%94%83%20%20%20%20%20%20%E2%94%83%20%20%20%20%20%20%20%20%20%20%20%20%20%E2%94%83",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "1a7a9d",
+        "hash": "8d7e1299",
+        "encoded": "%E2%94%83%20-%20Memory%20%20%20%20%E2%94%83%20%20%20%20%20%20%E2%94%83%20-%20Memory%20%20%20%20%E2%94%83",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "1a7a9d",
+        "hash": "517f1a39",
+        "encoded": "%E2%94%83%20%20%20Analysis%20%20%E2%94%83%20%20%20%20%20%20%E2%94%83%20%20%20Vault%20%20%20%20%20%E2%94%83",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "1a7a9d",
+        "hash": "202cdd77",
+        "encoded": "%E2%94%83%20-%20RAG%20%20%20%20%20%20%20%E2%94%83%20%20%20%20%20%20%E2%94%83%20-%20SQLite%20%20%20%20%E2%94%83",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "1a7a9d",
+        "hash": "27c44313",
+        "encoded": "%E2%94%83%20%20%20Engine%20%20%20%20%E2%94%83%20%20%20%20%20%20%E2%94%83%20%20%20Database%20%20%E2%94%83",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "1a7a9d",
+        "hash": "495c2d29",
+        "encoded": "%E2%94%83%20-%20Music%20%20%20%20%20%E2%94%83%20%20%20%20%20%20%E2%94%83%20%20%20%20%20%20%20%20%20%20%20%20%20%E2%94%83",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "1a7a9d",
+        "hash": "3444d4bb",
+        "encoded": "%E2%94%83%20%20%20Catalogue%20%E2%94%83%20%20%20%20%20%20%E2%94%97%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%9B",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "1a7a9d",
+        "hash": "ec5a03d7",
+        "encoded": "%E2%94%83%20-%20Recommend%20%E2%94%83",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "1a7a9d",
+        "hash": "9ee45731",
+        "encoded": "%E2%94%83%20%20%20Engine%20%20%20%20%E2%94%83",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "1a7a9d",
+        "hash": "e0c0aecb",
+        "encoded": "%E2%94%83%20-%20Explain%20%20%20%E2%94%83",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "1a7a9d",
+        "hash": "5d40c495",
+        "encoded": "%E2%94%83%20%20%20Generator%20%E2%94%83",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "1a7a9d",
+        "hash": "242e871d",
+        "encoded": "%E2%94%97%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%B3%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%9B",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "1a7a9d",
+        "hash": "1ba7595b",
+        "encoded": "%E2%94%82",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "1a7a9d",
+        "hash": "d166f0fb",
+        "encoded": "%E2%94%8C%E2%94%80%E2%94%80%E2%94%B4%E2%94%80%E2%94%80%E2%94%90",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "1a7a9d",
+        "hash": "7eef640c",
+        "encoded": "%E2%94%82%20%20%20%20%20%E2%94%82",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "1a7a9d",
+        "hash": "6a50653d",
+        "encoded": "v%20%20%20%20%20v",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "1a7a9d",
+        "hash": "57bb9d6c",
+        "encoded": "%E2%94%8F%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%93%20%E2%94%8F%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%93",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "1a7a9d",
+        "hash": "61cc174e",
+        "encoded": "%E2%94%83%20LLM%20%E2%94%83%20%E2%94%83%20VECTOR%20%E2%94%83",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "1a7a9d",
+        "hash": "2fbba0c2",
+        "encoded": "%E2%94%83%20%20%20%20%20%E2%94%83%20%E2%94%83%20%20%20DB%20%20%20%E2%94%83",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "1a7a9d",
+        "hash": "e574685a",
+        "encoded": "%E2%94%83Olla-%E2%94%83%20%E2%94%83Chroma-%E2%94%83",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "1a7a9d",
+        "hash": "ed5ffc23",
+        "encoded": "%E2%94%83%20ma%20%20%E2%94%83%20%E2%94%83%20%20DB%20%20%20%E2%94%83",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "1a7a9d",
+        "hash": "b3ec3467",
+        "encoded": "%E2%94%97%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%9B%20%E2%94%97%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%81%E2%94%9B",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "1a7a9d",
+        "hash": "930da210",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "1a7a9d",
+        "hash": "3faafe80",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "1a7a9d",
+        "hash": "08aaa271",
+        "encoded": "##%203.%20Core%20Components",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "1a7a9d",
+        "hash": "d3421422",
+        "encoded": "###%203.1%20Memory%20Analysis%20Engine",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "1a7a9d",
+        "hash": "658392fc",
+        "encoded": "**Responsibility:**%20Understand%20and%20extract%20emotional%20meaning%20from%20memories",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "1a7a9d",
+        "hash": "63f4e9ef",
+        "encoded": "**Key%20Features:**",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "1a7a9d",
+        "hash": "edcfb493",
+        "encoded": "-%20LLM-based%20natural%20language%20understanding",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "1a7a9d",
+        "hash": "c49fd735",
+        "encoded": "-%20Structured%20JSON%20output%20(Pydantic%20validated)",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "1a7a9d",
+        "hash": "4f533079",
+        "encoded": "-%20Emotion%20detection%20(primary%20+%20secondary)",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "1a7a9d",
+        "hash": "97f9dcf8",
+        "encoded": "-%20Theme%20and%20context%20extraction",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "1a7a9d",
+        "hash": "d71668bb",
+        "encoded": "-%20Musical%20characteristic%20derivation",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "1a7a9d",
+        "hash": "d089c788",
+        "encoded": "**Technology:**",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "1a7a9d",
+        "hash": "62a48aa9",
+        "encoded": "-%20Ollama%20(local%20LLM%20runtime)",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "1a7a9d",
+        "hash": "3f0ea506",
+        "encoded": "-%20Qwen%202.5%203B%20Instruct%20(language%20model)",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "1a7a9d",
+        "hash": "b1cfb275",
+        "encoded": "-%20Pydantic%20(schema%20validation)",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "1a7a9d",
+        "hash": "be4e5df2",
+        "encoded": "**Input:**%20Raw%20memory%20text",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "1a7a9d",
+        "hash": "f424ab64",
+        "encoded": "**Output:**%20MemoryAnalysis%20object",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "1a7a9d",
+        "hash": "5730630a",
+        "encoded": "###%203.2%20RAG%20(Retrieval-Augmented%20Generation)%20Engine",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "1a7a9d",
+        "hash": "442534c3",
+        "encoded": "**Responsibility:**%20Retrieve%20relevant%20music%20knowledge%20to%20inform%20recommendations",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "1a7a9d",
+        "hash": "4be96780",
+        "encoded": "**Key%20Features:**",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "1a7a9d",
+        "hash": "af276388",
+        "encoded": "-%20Semantic%20text%20embedding",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "1a7a9d",
+        "hash": "a585820d",
+        "encoded": "-%20Vector%20similarity%20search",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "1a7a9d",
+        "hash": "df926548",
+        "encoded": "-%20Metadata%20filtering",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "1a7a9d",
+        "hash": "c7cbaf40",
+        "encoded": "-%20Top-K%20retrieval",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "1a7a9d",
+        "hash": "06e94a31",
+        "encoded": "-%20Persistent%20vector%20storage",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "1a7a9d",
+        "hash": "446100e1",
+        "encoded": "**Technology:**",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "1a7a9d",
+        "hash": "4bf717d0",
+        "encoded": "-%20Sentence%20Transformers%20(all-MiniLM-L6-v2)",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "1a7a9d",
+        "hash": "a898667d",
+        "encoded": "-%20ChromaDB%20(vector%20database)",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "1a7a9d",
+        "hash": "a3959f91",
+        "encoded": "-%20Cosine%20similarity%20ranking",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "1a7a9d",
+        "hash": "bc522aaf",
+        "encoded": "**Input:**%20Retrieval%20query%20(emotions%20+%20themes%20+%20musical%20attributes)",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "1a7a9d",
+        "hash": "c6c275ce",
+        "encoded": "**Output:**%20Relevant%20knowledge%20documents",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "1a7a9d",
+        "hash": "4eaa814f",
+        "encoded": "###%203.3%20Music%20Catalogue",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "1a7a9d",
+        "hash": "34a0801c",
+        "encoded": "**Responsibility:**%20Manage%20track%20metadata%20and%20provide%20search%20capabilities",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "1a7a9d",
+        "hash": "587d06fa",
+        "encoded": "**Key%20Features:**",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "1a7a9d",
+        "hash": "6f1ce35d",
+        "encoded": "-%20Track%20metadata%20storage",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "1a7a9d",
+        "hash": "6a96cbf6",
+        "encoded": "-%20Tag-based%20filtering",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "1a7a9d",
+        "hash": "56c776c4",
+        "encoded": "-%20Multi-criteria%20search",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "1a7a9d",
+        "hash": "0b5a38f2",
+        "encoded": "-%20Catalogue%20statistics",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "1a7a9d",
+        "hash": "36310aa1",
+        "encoded": "**Technology:**",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "1a7a9d",
+        "hash": "0f63b091",
+        "encoded": "-%20Pandas%20(data%20processing)",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "1a7a9d",
+        "hash": "169a182e",
+        "encoded": "-%20In-memory%20storage",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "1a7a9d",
+        "hash": "284574e8",
+        "encoded": "-%20Optional:%20MTG-Jamendo%20dataset%20integration",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "1a7a9d",
+        "hash": "6bb18e1f",
+        "encoded": "**Input:**%20Search%20criteria%20(genres,%20moods,%20instruments)",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "1a7a9d",
+        "hash": "95e33904",
+        "encoded": "**Output:**%20Candidate%20tracks",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "1a7a9d",
+        "hash": "b666694c",
+        "encoded": "###%203.4%20Recommendation%20Engine",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "1a7a9d",
+        "hash": "23fb0e5c",
+        "encoded": "**Responsibility:**%20Score%20and%20rank%20tracks%20based%20on%20memory%20analysis",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "1a7a9d",
+        "hash": "38224749",
+        "encoded": "**Key%20Features:**",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "1a7a9d",
+        "hash": "dee0c892",
+        "encoded": "-%20Weighted%20multi-criteria%20scoring",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "1a7a9d",
+        "hash": "4f215995",
+        "encoded": "-%20Configurable%20scoring%20weights",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "1a7a9d",
+        "hash": "f6721415",
+        "encoded": "-%20Tag%20overlap%20calculation",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "1a7a9d",
+        "hash": "f97559e7",
+        "encoded": "-%20Duplicate%20removal",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "1a7a9d",
+        "hash": "9cec80e2",
+        "encoded": "-%20Top-N%20selection",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "1a7a9d",
+        "hash": "9c052d7d",
+        "encoded": "**Scoring%20Formula:**",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "1a7a9d",
+        "hash": "5b532b7f",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "147": {
+        "chunkId": "1a7a9d",
+        "hash": "ed78e54f",
+        "encoded": "Final%20Score%20=",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "1a7a9d",
+        "hash": "11528b7b",
+        "encoded": "0.40%20%C3%97%20Mood%20Match%20+",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "1a7a9d",
+        "hash": "02f23a0b",
+        "encoded": "0.30%20%C3%97%20Genre%20Match%20+",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "1a7a9d",
+        "hash": "af73da5b",
+        "encoded": "0.20%20%C3%97%20Instrument%20Match%20+",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "1a7a9d",
+        "hash": "4a0b8e1f",
+        "encoded": "0.10%20%C3%97%20Theme%20Match",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "1a7a9d",
+        "hash": "11e59bee",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "1a7a9d",
+        "hash": "975c7762",
+        "encoded": "**Input:**%20Memory%20analysis%20+%20Retrieved%20knowledge%20+%20Music%20catalogue",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "1a7a9d",
+        "hash": "4920c149",
+        "encoded": "**Output:**%20Ranked%20track%20recommendations",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "1a7a9d",
+        "hash": "318b949e",
+        "encoded": "###%203.5%20Explanation%20Generator",
+        "prevChunkIds": []
+      },
+      "158": {
+        "chunkId": "1a7a9d",
+        "hash": "3ae129c0",
+        "encoded": "**Responsibility:**%20Create%20natural%20language%20explanations%20for%20recommendations",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "1a7a9d",
+        "hash": "3c251e89",
+        "encoded": "**Key%20Features:**",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "1a7a9d",
+        "hash": "ca504ed4",
+        "encoded": "-%20LLM-powered%20explanation%20generation",
+        "prevChunkIds": []
+      },
+      "162": {
+        "chunkId": "1a7a9d",
+        "hash": "b2266174",
+        "encoded": "-%20Grounding%20in%20retrieved%20knowledge",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "1a7a9d",
+        "hash": "350b1f97",
+        "encoded": "-%20Per-track%20explanations",
+        "prevChunkIds": []
+      },
+      "164": {
+        "chunkId": "1a7a9d",
+        "hash": "5884360a",
+        "encoded": "-%20Overall%20soundtrack%20narrative",
+        "prevChunkIds": []
+      },
+      "166": {
+        "chunkId": "1a7a9d",
+        "hash": "e1afe445",
+        "encoded": "**Technology:**",
+        "prevChunkIds": []
+      },
+      "167": {
+        "chunkId": "1a7a9d",
+        "hash": "1a47199a",
+        "encoded": "-%20Ollama%20(local%20LLM)",
+        "prevChunkIds": []
+      },
+      "168": {
+        "chunkId": "1a7a9d",
+        "hash": "a3a377d4",
+        "encoded": "-%20Prompt%20engineering",
+        "prevChunkIds": []
+      },
+      "170": {
+        "chunkId": "1a7a9d",
+        "hash": "6e048baa",
+        "encoded": "**Input:**%20Memory%20+%20Analysis%20+%20Tracks%20+%20RAG%20context",
+        "prevChunkIds": []
+      },
+      "171": {
+        "chunkId": "1a7a9d",
+        "hash": "0b60d96b",
+        "encoded": "**Output:**%20Human-friendly%20explanations",
+        "prevChunkIds": []
+      },
+      "173": {
+        "chunkId": "1a7a9d",
+        "hash": "dbe254ea",
+        "encoded": "###%203.6%20Personal%20Memory%20Vault",
+        "prevChunkIds": []
+      },
+      "174": {
+        "chunkId": "1a7a9d",
+        "hash": "b555ca4c",
+        "encoded": "**Responsibility:**%20Persist%20and%20manage%20saved%20memories",
+        "prevChunkIds": []
+      },
+      "176": {
+        "chunkId": "1a7a9d",
+        "hash": "73aa0807",
+        "encoded": "**Key%20Features:**",
+        "prevChunkIds": []
+      },
+      "177": {
+        "chunkId": "1a7a9d",
+        "hash": "9291f9f9",
+        "encoded": "-%20SQLite-based%20persistence",
+        "prevChunkIds": []
+      },
+      "178": {
+        "chunkId": "1a7a9d",
+        "hash": "011abf1a",
+        "encoded": "-%20CRUD%20operations",
+        "prevChunkIds": []
+      },
+      "179": {
+        "chunkId": "1a7a9d",
+        "hash": "379c1e1a",
+        "encoded": "-%20Full-text%20search",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "1a7a9d",
+        "hash": "442c21b1",
+        "encoded": "-%20Emotion/theme%20filtering",
+        "prevChunkIds": []
+      },
+      "181": {
+        "chunkId": "1a7a9d",
+        "hash": "0dbbeb11",
+        "encoded": "-%20JSON%20serialization%20for%20complex%20fields",
+        "prevChunkIds": []
+      },
+      "183": {
+        "chunkId": "1a7a9d",
+        "hash": "bdc57153",
+        "encoded": "**Technology:**",
+        "prevChunkIds": []
+      },
+      "184": {
+        "chunkId": "1a7a9d",
+        "hash": "fb38d890",
+        "encoded": "-%20SQLite%20(embedded%20database)",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "1a7a9d",
+        "hash": "93ad00ae",
+        "encoded": "-%20Parameterized%20queries%20(SQL%20injection%20prevention)",
+        "prevChunkIds": []
+      },
+      "187": {
+        "chunkId": "1a7a9d",
+        "hash": "18b91efb",
+        "encoded": "**Schema:**",
+        "prevChunkIds": []
+      },
+      "188": {
+        "chunkId": "1a7a9d",
+        "hash": "55b9aad4",
+        "encoded": "%60%60%60sql",
+        "prevChunkIds": []
+      },
+      "189": {
+        "chunkId": "1a7a9d",
+        "hash": "951aeda9",
+        "encoded": "CREATE%20TABLE%20memories%20(",
+        "prevChunkIds": []
+      },
+      "190": {
+        "chunkId": "1a7a9d",
+        "hash": "5c4d9b9e",
+        "encoded": "id%20INTEGER%20PRIMARY%20KEY%20AUTOINCREMENT,",
+        "prevChunkIds": []
+      },
+      "191": {
+        "chunkId": "1a7a9d",
+        "hash": "23e4d8da",
+        "encoded": "story%20TEXT%20NOT%20NULL,",
+        "prevChunkIds": []
+      },
+      "192": {
+        "chunkId": "1a7a9d",
+        "hash": "bbecdb09",
+        "encoded": "memory_title%20TEXT%20NOT%20NULL,",
+        "prevChunkIds": []
+      },
+      "193": {
+        "chunkId": "1a7a9d",
+        "hash": "d0449fb9",
+        "encoded": "summary%20TEXT%20NOT%20NULL,",
+        "prevChunkIds": []
+      },
+      "194": {
+        "chunkId": "1a7a9d",
+        "hash": "323d0328",
+        "encoded": "emotions%20TEXT%20NOT%20NULL,%20%20--%20JSON%20array",
+        "prevChunkIds": []
+      },
+      "195": {
+        "chunkId": "1a7a9d",
+        "hash": "68115a77",
+        "encoded": "themes%20TEXT%20NOT%20NULL,%20%20%20%20--%20JSON%20array",
+        "prevChunkIds": []
+      },
+      "196": {
+        "chunkId": "1a7a9d",
+        "hash": "76b1b2af",
+        "encoded": "musical_attributes%20TEXT,%20--%20JSON%20object",
+        "prevChunkIds": []
+      },
+      "197": {
+        "chunkId": "1a7a9d",
+        "hash": "a1eef84d",
+        "encoded": "recommendations%20TEXT,%20%20%20%20--%20JSON%20array",
+        "prevChunkIds": []
+      },
+      "198": {
+        "chunkId": "1a7a9d",
+        "hash": "740c6b35",
+        "encoded": "explanation%20TEXT,",
+        "prevChunkIds": []
+      },
+      "199": {
+        "chunkId": "1a7a9d",
+        "hash": "94cb1b07",
+        "encoded": "created_at%20TIMESTAMP%20DEFAULT%20CURRENT_TIMESTAMP",
+        "prevChunkIds": []
+      },
+      "200": {
+        "chunkId": "1a7a9d",
+        "hash": "efe31d15",
+        "encoded": ");",
+        "prevChunkIds": []
+      },
+      "201": {
+        "chunkId": "1a7a9d",
+        "hash": "eb317d26",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "203": {
+        "chunkId": "1a7a9d",
+        "hash": "d39a8e31",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "205": {
+        "chunkId": "1a7a9d",
+        "hash": "fa6ee4a6",
+        "encoded": "##%204.%20Data%20Flow",
+        "prevChunkIds": []
+      },
+      "207": {
+        "chunkId": "1a7a9d",
+        "hash": "586d15c2",
+        "encoded": "###%204.1%20Memory-to-Music%20Flow",
+        "prevChunkIds": []
+      },
+      "209": {
+        "chunkId": "1a7a9d",
+        "hash": "3158379a",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "210": {
+        "chunkId": "1a7a9d",
+        "hash": "28ebbb75",
+        "encoded": "1.%20User%20Input",
+        "prevChunkIds": []
+      },
+      "211": {
+        "chunkId": "1a7a9d",
+        "hash": "81e97e7a",
+        "encoded": "%E2%86%93",
+        "prevChunkIds": []
+      },
+      "212": {
+        "chunkId": "1a7a9d",
+        "hash": "f4efbf62",
+        "encoded": "2.%20Memory%20Analyzer%20%E2%86%92%20Ollama%20LLM",
+        "prevChunkIds": []
+      },
+      "213": {
+        "chunkId": "1a7a9d",
+        "hash": "9083f98f",
+        "encoded": "%E2%86%93",
+        "prevChunkIds": []
+      },
+      "214": {
+        "chunkId": "1a7a9d",
+        "hash": "876c3906",
+        "encoded": "3.%20Structured%20Analysis%20(Pydantic%20validation)",
+        "prevChunkIds": []
+      },
+      "215": {
+        "chunkId": "1a7a9d",
+        "hash": "52908e81",
+        "encoded": "%E2%86%93",
+        "prevChunkIds": []
+      },
+      "216": {
+        "chunkId": "1a7a9d",
+        "hash": "0b614602",
+        "encoded": "4.%20Retrieval%20Query%20Generation",
+        "prevChunkIds": []
+      },
+      "217": {
+        "chunkId": "1a7a9d",
+        "hash": "387f4b2b",
+        "encoded": "%E2%86%93",
+        "prevChunkIds": []
+      },
+      "218": {
+        "chunkId": "1a7a9d",
+        "hash": "673c3d7d",
+        "encoded": "5.%20RAG%20Engine%20%E2%86%92%20Sentence%20Transformers%20%E2%86%92%20ChromaDB",
+        "prevChunkIds": []
+      },
+      "219": {
+        "chunkId": "1a7a9d",
+        "hash": "c9feb1fd",
+        "encoded": "%E2%86%93",
+        "prevChunkIds": []
+      },
+      "220": {
+        "chunkId": "1a7a9d",
+        "hash": "35cf51a0",
+        "encoded": "6.%20Retrieved%20Music%20Knowledge",
+        "prevChunkIds": []
+      },
+      "221": {
+        "chunkId": "1a7a9d",
+        "hash": "012338bb",
+        "encoded": "%E2%86%93",
+        "prevChunkIds": []
+      },
+      "222": {
+        "chunkId": "1a7a9d",
+        "hash": "abf3e9d8",
+        "encoded": "7.%20Music%20Catalogue%20Search",
+        "prevChunkIds": []
+      },
+      "223": {
+        "chunkId": "1a7a9d",
+        "hash": "73fec3f3",
+        "encoded": "%E2%86%93",
+        "prevChunkIds": []
+      },
+      "224": {
+        "chunkId": "1a7a9d",
+        "hash": "71d8930d",
+        "encoded": "8.%20Recommendation%20Engine%20(Scoring%20&%20Ranking)",
+        "prevChunkIds": []
+      },
+      "225": {
+        "chunkId": "1a7a9d",
+        "hash": "eb46632d",
+        "encoded": "%E2%86%93",
+        "prevChunkIds": []
+      },
+      "226": {
+        "chunkId": "1a7a9d",
+        "hash": "a3f3db49",
+        "encoded": "9.%20Explanation%20Generator%20%E2%86%92%20Ollama%20LLM",
+        "prevChunkIds": []
+      },
+      "227": {
+        "chunkId": "1a7a9d",
+        "hash": "64383b51",
+        "encoded": "%E2%86%93",
+        "prevChunkIds": []
+      },
+      "228": {
+        "chunkId": "1a7a9d",
+        "hash": "7cc4d92c",
+        "encoded": "10.%20Final%20Soundtrack%20Result",
+        "prevChunkIds": []
+      },
+      "229": {
+        "chunkId": "1a7a9d",
+        "hash": "c90eab8f",
+        "encoded": "%E2%86%93",
+        "prevChunkIds": []
+      },
+      "230": {
+        "chunkId": "1a7a9d",
+        "hash": "6982c977",
+        "encoded": "11.%20Display%20to%20User",
+        "prevChunkIds": []
+      },
+      "231": {
+        "chunkId": "1a7a9d",
+        "hash": "bb2fdb28",
+        "encoded": "%E2%86%93",
+        "prevChunkIds": []
+      },
+      "232": {
+        "chunkId": "1a7a9d",
+        "hash": "4f73bcad",
+        "encoded": "12.%20Optional:%20Save%20to%20Vault%20%E2%86%92%20SQLite",
+        "prevChunkIds": []
+      },
+      "233": {
+        "chunkId": "1a7a9d",
+        "hash": "9f4a7485",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "235": {
+        "chunkId": "1a7a9d",
+        "hash": "2cb59765",
+        "encoded": "###%204.2%20Memory%20Vault%20Flow",
+        "prevChunkIds": []
+      },
+      "237": {
+        "chunkId": "1a7a9d",
+        "hash": "0a9adfca",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "238": {
+        "chunkId": "1a7a9d",
+        "hash": "44cf66f3",
+        "encoded": "Browse:",
+        "prevChunkIds": []
+      },
+      "239": {
+        "chunkId": "1a7a9d",
+        "hash": "bcc82ff9",
+        "encoded": "User%20%E2%86%92%20UI%20%E2%86%92%20MemoryVault.get_all_memories()%20%E2%86%92%20SQLite%20%E2%86%92%20Display",
+        "prevChunkIds": []
+      },
+      "241": {
+        "chunkId": "1a7a9d",
+        "hash": "3e62a5c5",
+        "encoded": "Search:",
+        "prevChunkIds": []
+      },
+      "242": {
+        "chunkId": "1a7a9d",
+        "hash": "8e2a0497",
+        "encoded": "User%20%E2%86%92%20Query%20%E2%86%92%20MemoryVault.search_memories()%20%E2%86%92%20SQLite%20LIKE%20%E2%86%92%20Results",
+        "prevChunkIds": []
+      },
+      "244": {
+        "chunkId": "1a7a9d",
+        "hash": "449a577a",
+        "encoded": "Filter:",
+        "prevChunkIds": []
+      },
+      "245": {
+        "chunkId": "1a7a9d",
+        "hash": "4c1791b0",
+        "encoded": "User%20%E2%86%92%20Emotion/Theme%20%E2%88%992%20MemoryVault.filter_by_X()%20%E2%86%92%20Filter%20%E2%86%92%20Results",
+        "prevChunkIds": []
+      },
+      "247": {
+        "chunkId": "1a7a9d",
+        "hash": "bb08414a",
+        "encoded": "Delete:",
+        "prevChunkIds": []
+      },
+      "248": {
+        "chunkId": "1a7a9d",
+        "hash": "db1a79c0",
+        "encoded": "User%20%E2%86%92%20Confirm%20%E2%86%92%20MemoryVault.delete_memory()%20%E2%86%92%20SQLite%20DELETE",
+        "prevChunkIds": []
+      },
+      "249": {
+        "chunkId": "1a7a9d",
+        "hash": "2453ecbb",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "251": {
+        "chunkId": "1a7a9d",
+        "hash": "95f0292f",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "253": {
+        "chunkId": "1a7a9d",
+        "hash": "4903a564",
+        "encoded": "##%205.%20Technology%20Stack",
+        "prevChunkIds": []
+      },
+      "255": {
+        "chunkId": "1a7a9d",
+        "hash": "3f23c795",
+        "encoded": "###%205.1%20Core%20Technologies",
+        "prevChunkIds": []
+      },
+      "257": {
+        "chunkId": "1a7a9d",
+        "hash": "87b1f88d",
+        "encoded": "%7C%20Layer%20%7C%20Technology%20%7C%20Version%20%7C%20Purpose%20%7C",
+        "prevChunkIds": []
+      },
+      "258": {
+        "chunkId": "1a7a9d",
+        "hash": "ee224445",
+        "encoded": "%7C-------%7C-----------%7C---------%7C----------%7C",
+        "prevChunkIds": []
+      },
+      "259": {
+        "chunkId": "1a7a9d",
+        "hash": "bf5a3c85",
+        "encoded": "%7C%20Frontend%20%7C%20Streamlit%20%7C%201.67+%20%7C%20Web%20UI%20%7C",
+        "prevChunkIds": []
+      },
+      "260": {
+        "chunkId": "1a7a9d",
+        "hash": "c057e656",
+        "encoded": "%7C%20Backend%20%7C%20Python%20%7C%203.11+%20%7C%20Application%20logic%20%7C",
+        "prevChunkIds": []
+      },
+      "261": {
+        "chunkId": "1a7a9d",
+        "hash": "18cb057d",
+        "encoded": "%7C%20LLM%20Runtime%20%7C%20Ollama%20%7C%20Latest%20%7C%20Local%20LLM%20serving%20%7C",
+        "prevChunkIds": []
+      },
+      "262": {
+        "chunkId": "1a7a9d",
+        "hash": "46d84fb4",
+        "encoded": "%7C%20Language%20Model%20%7C%20Qwen%202.5%20%7C%203B%20Instruct%20%7C%20Memory%20analysis%20%7C",
+        "prevChunkIds": []
+      },
+      "263": {
+        "chunkId": "1a7a9d",
+        "hash": "f83e0bab",
+        "encoded": "%7C%20Embeddings%20%7C%20Sentence-Transformers%20%7C%202.2+%20%7C%20Text%20vectorization%20%7C",
+        "prevChunkIds": []
+      },
+      "264": {
+        "chunkId": "1a7a9d",
+        "hash": "02133de9",
+        "encoded": "%7C%20Embedding%20Model%20%7C%20all-MiniLM-L6-v2%20%7C%20-%20%7C%20384-dim%20embeddings%20%7C",
+        "prevChunkIds": []
+      },
+      "265": {
+        "chunkId": "1a7a9d",
+        "hash": "cc6602ca",
+        "encoded": "%7C%20Vector%20DB%20%7C%20ChromaDB%20%7C%200.4+%20%7C%20Semantic%20search%20%7C",
+        "prevChunkIds": []
+      },
+      "266": {
+        "chunkId": "1a7a9d",
+        "hash": "1d64fd05",
+        "encoded": "%7C%20Database%20%7C%20SQLite%20%7C%203.x%20%7C%20Persistence%20%7C",
+        "prevChunkIds": []
+      },
+      "267": {
+        "chunkId": "1a7a9d",
+        "hash": "b080220b",
+        "encoded": "%7C%20Validation%20%7C%20Pydantic%20%7C%202.0+%20%7C%20Data%20schemas%20%7C",
+        "prevChunkIds": []
+      },
+      "268": {
+        "chunkId": "1a7a9d",
+        "hash": "c0bb0d7a",
+        "encoded": "%7C%20Config%20%7C%20pydantic-settings%20%7C%202.0+%20%7C%20Configuration%20%7C",
+        "prevChunkIds": []
+      },
+      "269": {
+        "chunkId": "1a7a9d",
+        "hash": "f3de22df",
+        "encoded": "%7C%20Data%20Processing%20%7C%20Pandas%20%7C%202.0+%20%7C%20Metadata%20handling%20%7C",
+        "prevChunkIds": []
+      },
+      "271": {
+        "chunkId": "1a7a9d",
+        "hash": "8e1b1ef7",
+        "encoded": "###%205.2%20Infrastructure",
+        "prevChunkIds": []
+      },
+      "273": {
+        "chunkId": "1a7a9d",
+        "hash": "015b38bc",
+        "encoded": "**Development:**",
+        "prevChunkIds": []
+      },
+      "274": {
+        "chunkId": "1a7a9d",
+        "hash": "a9d734a4",
+        "encoded": "-%20Git%20(version%20control)",
+        "prevChunkIds": []
+      },
+      "275": {
+        "chunkId": "1a7a9d",
+        "hash": "fa4ff8ef",
+        "encoded": "-%20pytest%20(testing)",
+        "prevChunkIds": []
+      },
+      "276": {
+        "chunkId": "1a7a9d",
+        "hash": "502af72f",
+        "encoded": "-%20Virtual%20environment%20(isolation)",
+        "prevChunkIds": []
+      },
+      "278": {
+        "chunkId": "1a7a9d",
+        "hash": "01a14ccd",
+        "encoded": "**Deployment:**",
+        "prevChunkIds": []
+      },
+      "279": {
+        "chunkId": "1a7a9d",
+        "hash": "3f5bdc09",
+        "encoded": "-%20Cross-platform%20(Windows,%20Linux,%20macOS)",
+        "prevChunkIds": []
+      },
+      "280": {
+        "chunkId": "1a7a9d",
+        "hash": "e53ec100",
+        "encoded": "-%20No%20containers%20required",
+        "prevChunkIds": []
+      },
+      "281": {
+        "chunkId": "1a7a9d",
+        "hash": "71495357",
+        "encoded": "-%20Single-command%20setup",
+        "prevChunkIds": []
+      },
+      "282": {
+        "chunkId": "1a7a9d",
+        "hash": "9bfa9ab9",
+        "encoded": "-%20Local%20execution%20only",
+        "prevChunkIds": []
+      },
+      "284": {
+        "chunkId": "1a7a9d",
+        "hash": "4bf5675d",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "286": {
+        "chunkId": "1a7a9d",
+        "hash": "d5ae55a3",
+        "encoded": "##%206.%20Non-Functional%20Requirements",
+        "prevChunkIds": []
+      },
+      "288": {
+        "chunkId": "1a7a9d",
+        "hash": "01fc0f18",
+        "encoded": "###%206.1%20Performance",
+        "prevChunkIds": []
+      },
+      "289": {
+        "chunkId": "1a7a9d",
+        "hash": "e34bcd8c",
+        "encoded": "-%20**Memory%20Analysis:**%20%3C%2010%20seconds%20(CPU-only)",
+        "prevChunkIds": []
+      },
+      "290": {
+        "chunkId": "1a7a9d",
+        "hash": "79b57734",
+        "encoded": "-%20**RAG%20Retrieval:**%20%3C%202%20seconds",
+        "prevChunkIds": []
+      },
+      "291": {
+        "chunkId": "1a7a9d",
+        "hash": "ab8c6aa0",
+        "encoded": "-%20**Recommendation:**%20%3C%201%20second",
+        "prevChunkIds": []
+      },
+      "292": {
+        "chunkId": "1a7a9d",
+        "hash": "e9d8921e",
+        "encoded": "-%20**Total%20Processing:**%20%3C%2015%20seconds%20per%20memory",
+        "prevChunkIds": []
+      },
+      "294": {
+        "chunkId": "1a7a9d",
+        "hash": "fd4dc64e",
+        "encoded": "###%206.2%20Scalability",
+        "prevChunkIds": []
+      },
+      "295": {
+        "chunkId": "1a7a9d",
+        "hash": "adba991e",
+        "encoded": "-%20**Knowledge%20Base:**%20Supports%201K+%20documents",
+        "prevChunkIds": []
+      },
+      "296": {
+        "chunkId": "1a7a9d",
+        "hash": "218d130a",
+        "encoded": "-%20**Music%20Catalogue:**%20Supports%2050K+%20tracks",
+        "prevChunkIds": []
+      },
+      "297": {
+        "chunkId": "1a7a9d",
+        "hash": "017c3f37",
+        "encoded": "-%20**Memory%20Vault:**%20Supports%2010K+%20saved%20memories",
+        "prevChunkIds": []
+      },
+      "298": {
+        "chunkId": "1a7a9d",
+        "hash": "3828804c",
+        "encoded": "-%20**Concurrent%20Users:**%20Single-user%20application",
+        "prevChunkIds": []
+      },
+      "300": {
+        "chunkId": "1a7a9d",
+        "hash": "9afc2abd",
+        "encoded": "###%206.3%20Security",
+        "prevChunkIds": []
+      },
+      "301": {
+        "chunkId": "1a7a9d",
+        "hash": "de51aca8",
+        "encoded": "-%20**Local%20Execution:**%20No%20data%20leaves%20the%20machine",
+        "prevChunkIds": []
+      },
+      "302": {
+        "chunkId": "1a7a9d",
+        "hash": "b10db41c",
+        "encoded": "-%20**SQL%20Injection:**%20Parameterized%20queries",
+        "prevChunkIds": []
+      },
+      "303": {
+        "chunkId": "1a7a9d",
+        "hash": "05944312",
+        "encoded": "-%20**Input%20Validation:**%20Pydantic%20schemas",
+        "prevChunkIds": []
+      },
+      "304": {
+        "chunkId": "1a7a9d",
+        "hash": "220fb3d3",
+        "encoded": "-%20**Config%20Security:**%20.env%20excluded%20from%20Git",
+        "prevChunkIds": []
+      },
+      "306": {
+        "chunkId": "1a7a9d",
+        "hash": "5bba9cbc",
+        "encoded": "###%206.4%20Portability",
+        "prevChunkIds": []
+      },
+      "307": {
+        "chunkId": "1a7a9d",
+        "hash": "1ba95f24",
+        "encoded": "-%20**OS%20Support:**%20Windows,%20Linux,%20macOS",
+        "prevChunkIds": []
+      },
+      "308": {
+        "chunkId": "1a7a9d",
+        "hash": "2c5f6f30",
+        "encoded": "-%20**Hardware:**%20CPU-only%20minimum,%20GPU%20optional",
+        "prevChunkIds": []
+      },
+      "309": {
+        "chunkId": "1a7a9d",
+        "hash": "8c29d205",
+        "encoded": "-%20**Dependencies:**%20Minimal,%20well-documented",
+        "prevChunkIds": []
+      },
+      "310": {
+        "chunkId": "1a7a9d",
+        "hash": "cc6399de",
+        "encoded": "-%20**Configuration:**%20Environment-based",
+        "prevChunkIds": []
+      },
+      "312": {
+        "chunkId": "1a7a9d",
+        "hash": "4f4f27dd",
+        "encoded": "###%206.5%20Maintainability",
+        "prevChunkIds": []
+      },
+      "313": {
+        "chunkId": "1a7a9d",
+        "hash": "e912829e",
+        "encoded": "-%20**Modularity:**%20Clear%20separation%20of%20concerns",
+        "prevChunkIds": []
+      },
+      "314": {
+        "chunkId": "1a7a9d",
+        "hash": "98ef36c4",
+        "encoded": "-%20**Documentation:**%20Comprehensive%20README%20+%20docs",
+        "prevChunkIds": []
+      },
+      "315": {
+        "chunkId": "1a7a9d",
+        "hash": "154d6894",
+        "encoded": "-%20**Testing:**%20Unit%20and%20integration%20tests",
+        "prevChunkIds": []
+      },
+      "316": {
+        "chunkId": "1a7a9d",
+        "hash": "8c426c27",
+        "encoded": "-%20**Code%20Quality:**%20Type%20hints,%20docstrings",
+        "prevChunkIds": []
+      },
+      "318": {
+        "chunkId": "1a7a9d",
+        "hash": "f36e0f09",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "320": {
+        "chunkId": "1a7a9d",
+        "hash": "03b6ce21",
+        "encoded": "##%207.%20Deployment%20Architecture",
+        "prevChunkIds": []
+      },
+      "322": {
+        "chunkId": "1a7a9d",
+        "hash": "06e91995",
+        "encoded": "###%207.1%20Development%20Environment",
+        "prevChunkIds": []
+      },
+      "323": {
+        "chunkId": "1a7a9d",
+        "hash": "4b8a42bc",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "324": {
+        "chunkId": "1a7a9d",
+        "hash": "cb5a2d09",
+        "encoded": "Developer%20Machine",
+        "prevChunkIds": []
+      },
+      "325": {
+        "chunkId": "1a7a9d",
+        "hash": "531739f8",
+        "encoded": "%E2%94%82",
+        "prevChunkIds": []
+      },
+      "326": {
+        "chunkId": "1a7a9d",
+        "hash": "b99d8434",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20Python%203.11+%20Runtime",
+        "prevChunkIds": []
+      },
+      "327": {
+        "chunkId": "1a7a9d",
+        "hash": "e9cd250e",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20Virtual%20Environment%20(.venv)",
+        "prevChunkIds": []
+      },
+      "328": {
+        "chunkId": "1a7a9d",
+        "hash": "ef265df0",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20Ollama%20Service%20(localhost:11434)",
+        "prevChunkIds": []
+      },
+      "329": {
+        "chunkId": "1a7a9d",
+        "hash": "3b515654",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20Application%20Code",
+        "prevChunkIds": []
+      },
+      "330": {
+        "chunkId": "1a7a9d",
+        "hash": "0013aed4",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20ChromaDB%20(local%20filesystem)",
+        "prevChunkIds": []
+      },
+      "331": {
+        "chunkId": "1a7a9d",
+        "hash": "466660db",
+        "encoded": "%E2%94%94%E2%94%80%E2%94%80%20SQLite%20Database%20(local%20filesystem)",
+        "prevChunkIds": []
+      },
+      "332": {
+        "chunkId": "1a7a9d",
+        "hash": "1cd868b6",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "334": {
+        "chunkId": "1a7a9d",
+        "hash": "b596f6fe",
+        "encoded": "###%207.2%20Production%20Environment",
+        "prevChunkIds": []
+      },
+      "335": {
+        "chunkId": "1a7a9d",
+        "hash": "855e992f",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "336": {
+        "chunkId": "1a7a9d",
+        "hash": "147a421f",
+        "encoded": "User%20Machine",
+        "prevChunkIds": []
+      },
+      "337": {
+        "chunkId": "1a7a9d",
+        "hash": "61120b87",
+        "encoded": "%E2%94%82",
+        "prevChunkIds": []
+      },
+      "338": {
+        "chunkId": "1a7a9d",
+        "hash": "0a8aad2e",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20Python%203.11+%20Runtime",
+        "prevChunkIds": []
+      },
+      "339": {
+        "chunkId": "1a7a9d",
+        "hash": "8ca76f3a",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20Ollama%20Service%20(installed%20locally)",
+        "prevChunkIds": []
+      },
+      "340": {
+        "chunkId": "1a7a9d",
+        "hash": "8a90778a",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20Application%20(cloned%20from%20GitHub)",
+        "prevChunkIds": []
+      },
+      "341": {
+        "chunkId": "1a7a9d",
+        "hash": "d17fff4f",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20Virtual%20Environment%20(created%20during%20setup)",
+        "prevChunkIds": []
+      },
+      "342": {
+        "chunkId": "1a7a9d",
+        "hash": "616a8b26",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20ChromaDB%20(platform-specific%20app%20data%20dir)",
+        "prevChunkIds": []
+      },
+      "343": {
+        "chunkId": "1a7a9d",
+        "hash": "9307fbd4",
+        "encoded": "%E2%94%94%E2%94%80%E2%94%80%20SQLite%20Database%20(platform-specific%20app%20data%20dir)",
+        "prevChunkIds": []
+      },
+      "344": {
+        "chunkId": "1a7a9d",
+        "hash": "8fbf1a24",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "346": {
+        "chunkId": "1a7a9d",
+        "hash": "e1edfa83",
+        "encoded": "**Platform-Specific%20Paths:**",
+        "prevChunkIds": []
+      },
+      "347": {
+        "chunkId": "1a7a9d",
+        "hash": "fcdf9e3e",
+        "encoded": "-%20Windows:%20%60%25LOCALAPPDATA%25%5CThe%20Soundtrack%20of%20Your%20Life%60",
+        "prevChunkIds": []
+      },
+      "348": {
+        "chunkId": "1a7a9d",
+        "hash": "d19b1fb9",
+        "encoded": "-%20Linux:%20%60~/.local/share/soundtrack-of-your-life%60",
+        "prevChunkIds": []
+      },
+      "349": {
+        "chunkId": "1a7a9d",
+        "hash": "91e65ff4",
+        "encoded": "-%20macOS:%20%60~/Library/Application%20Support/The%20Soundtrack%20of%20Your%20Life%60",
+        "prevChunkIds": []
+      },
+      "351": {
+        "chunkId": "1a7a9d",
+        "hash": "fd013ec7",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "353": {
+        "chunkId": "1a7a9d",
+        "hash": "31503b5e",
+        "encoded": "##%208.%20Future%20Enhancements",
+        "prevChunkIds": []
+      },
+      "355": {
+        "chunkId": "1a7a9d",
+        "hash": "396f2fe8",
+        "encoded": "###%208.1%20Short-term",
+        "prevChunkIds": []
+      },
+      "356": {
+        "chunkId": "1a7a9d",
+        "hash": "56753d93",
+        "encoded": "1.%20**MTG-Jamendo%20Integration:**%20Full%20dataset%20(55K%20tracks)",
+        "prevChunkIds": []
+      },
+      "357": {
+        "chunkId": "1a7a9d",
+        "hash": "ef0b4b66",
+        "encoded": "2.%20**iTunes%20API:**%20Preview%20links%20and%20additional%20metadata",
+        "prevChunkIds": []
+      },
+      "358": {
+        "chunkId": "1a7a9d",
+        "hash": "89d6570e",
+        "encoded": "3.%20**Advanced%20Filtering:**%20More%20search%20criteria",
+        "prevChunkIds": []
+      },
+      "359": {
+        "chunkId": "1a7a9d",
+        "hash": "3d5eff4d",
+        "encoded": "4.%20**Batch%20Processing:**%20Analyze%20multiple%20memories",
+        "prevChunkIds": []
+      },
+      "361": {
+        "chunkId": "1a7a9d",
+        "hash": "107d624c",
+        "encoded": "###%208.2%20Long-term",
+        "prevChunkIds": []
+      },
+      "362": {
+        "chunkId": "1a7a9d",
+        "hash": "d3b1ca9e",
+        "encoded": "1.%20**Spotify%20Integration:**%20Direct%20playlist%20creation",
+        "prevChunkIds": []
+      },
+      "363": {
+        "chunkId": "1a7a9d",
+        "hash": "69f098fa",
+        "encoded": "2.%20**Multi-modal%20Input:**%20Image%20analysis%20for%20context",
+        "prevChunkIds": []
+      },
+      "364": {
+        "chunkId": "1a7a9d",
+        "hash": "3a36d039",
+        "encoded": "3.%20**Collaborative%20Filtering:**%20User%20preference%20learning",
+        "prevChunkIds": []
+      },
+      "365": {
+        "chunkId": "1a7a9d",
+        "hash": "5bfc9109",
+        "encoded": "4.%20**Fine-tuned%20Models:**%20Custom%20emotion-music%20embeddings",
+        "prevChunkIds": []
+      },
+      "366": {
+        "chunkId": "1a7a9d",
+        "hash": "afc2bbd1",
+        "encoded": "5.%20**Mobile%20App:**%20iOS/Android%20support",
+        "prevChunkIds": []
+      },
+      "367": {
+        "chunkId": "1a7a9d",
+        "hash": "2bdbdfd9",
+        "encoded": "6.%20**Multi-user:**%20Authentication%20and%20user%20management",
+        "prevChunkIds": []
+      },
+      "369": {
+        "chunkId": "1a7a9d",
+        "hash": "b13e04cc",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "371": {
+        "chunkId": "1a7a9d",
+        "hash": "65e007a4",
+        "encoded": "##%209.%20Risk%20Analysis",
+        "prevChunkIds": []
+      },
+      "373": {
+        "chunkId": "1a7a9d",
+        "hash": "7d91b1e4",
+        "encoded": "###%209.1%20Technical%20Risks",
+        "prevChunkIds": []
+      },
+      "375": {
+        "chunkId": "1a7a9d",
+        "hash": "86d064b9",
+        "encoded": "%7C%20Risk%20%7C%20Impact%20%7C%20Mitigation%20%7C",
+        "prevChunkIds": []
+      },
+      "376": {
+        "chunkId": "1a7a9d",
+        "hash": "3c7054fe",
+        "encoded": "%7C------%7C--------%7C------------%7C",
+        "prevChunkIds": []
+      },
+      "377": {
+        "chunkId": "1a7a9d",
+        "hash": "6daf9e58",
+        "encoded": "%7C%20LLM%20hallucination%20%7C%20Medium%20%7C%20Pydantic%20validation,%20retry%20logic%20%7C",
+        "prevChunkIds": []
+      },
+      "378": {
+        "chunkId": "1a7a9d",
+        "hash": "3de9f6bc",
+        "encoded": "%7C%20Slow%20CPU%20performance%20%7C%20Medium%20%7C%20Progress%20indicators,%20GPU%20support%20%7C",
+        "prevChunkIds": []
+      },
+      "379": {
+        "chunkId": "1a7a9d",
+        "hash": "64a0641a",
+        "encoded": "%7C%20Model%20incompatibility%20%7C%20Low%20%7C%20Version%20pinning,%20testing%20%7C",
+        "prevChunkIds": []
+      },
+      "380": {
+        "chunkId": "1a7a9d",
+        "hash": "f6981809",
+        "encoded": "%7C%20ChromaDB%20corruption%20%7C%20Low%20%7C%20Rebuild%20script,%20backups%20%7C",
+        "prevChunkIds": []
+      },
+      "381": {
+        "chunkId": "1a7a9d",
+        "hash": "84831ac0",
+        "encoded": "%7C%20SQLite%20lock%20contention%20%7C%20Low%20%7C%20Single-user%20design%20%7C",
+        "prevChunkIds": []
+      },
+      "383": {
+        "chunkId": "1a7a9d",
+        "hash": "4af4c040",
+        "encoded": "###%209.2%20Operational%20Risks",
+        "prevChunkIds": []
+      },
+      "385": {
+        "chunkId": "1a7a9d",
+        "hash": "91225d5e",
+        "encoded": "%7C%20Risk%20%7C%20Impact%20%7C%20Mitigation%20%7C",
+        "prevChunkIds": []
+      },
+      "386": {
+        "chunkId": "1a7a9d",
+        "hash": "da643d67",
+        "encoded": "%7C------%7C--------%7C------------%7C",
+        "prevChunkIds": []
+      },
+      "387": {
+        "chunkId": "1a7a9d",
+        "hash": "0d0dd22f",
+        "encoded": "%7C%20Ollama%20not%20installed%20%7C%20High%20%7C%20Setup%20script%20checks,%20clear%20errors%20%7C",
+        "prevChunkIds": []
+      },
+      "388": {
+        "chunkId": "1a7a9d",
+        "hash": "2fd5b9c6",
+        "encoded": "%7C%20Memory%20overflow%20%7C%20Low%20%7C%20Input%20length%20limits%20%7C",
+        "prevChunkIds": []
+      },
+      "389": {
+        "chunkId": "1a7a9d",
+        "hash": "2fc0b995",
+        "encoded": "%7C%20Disk%20space%20shortage%20%7C%20Low%20%7C%20Compressed%20models,%20cleanup%20tools%20%7C",
+        "prevChunkIds": []
+      },
+      "390": {
+        "chunkId": "1a7a9d",
+        "hash": "40e6e97f",
+        "encoded": "%7C%20Platform%20incompatibility%20%7C%20Low%20%7C%20Cross-platform%20testing%20%7C",
+        "prevChunkIds": []
+      },
+      "392": {
+        "chunkId": "1a7a9d",
+        "hash": "9da54a39",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "394": {
+        "chunkId": "1a7a9d",
+        "hash": "a541654f",
+        "encoded": "##%2010.%20Success%20Criteria",
+        "prevChunkIds": []
+      },
+      "396": {
+        "chunkId": "1a7a9d",
+        "hash": "13fc5ab8",
+        "encoded": "%E2%9C%85%20**Functional:**",
+        "prevChunkIds": []
+      },
+      "397": {
+        "chunkId": "1a7a9d",
+        "hash": "9d2bf7db",
+        "encoded": "-%20Memory%20analysis%20produces%20structured%20output",
+        "prevChunkIds": []
+      },
+      "398": {
+        "chunkId": "1a7a9d",
+        "hash": "409bc9df",
+        "encoded": "-%20RAG%20retrieves%20relevant%20knowledge",
+        "prevChunkIds": []
+      },
+      "399": {
+        "chunkId": "1a7a9d",
+        "hash": "49bfcda5",
+        "encoded": "-%20Recommendations%20match%20emotional%20tone",
+        "prevChunkIds": []
+      },
+      "400": {
+        "chunkId": "1a7a9d",
+        "hash": "14338b8a",
+        "encoded": "-%20Memory%20vault%20persists%20data%20correctly",
+        "prevChunkIds": []
+      },
+      "402": {
+        "chunkId": "1a7a9d",
+        "hash": "9645051b",
+        "encoded": "%E2%9C%85%20**Technical:**",
+        "prevChunkIds": []
+      },
+      "403": {
+        "chunkId": "1a7a9d",
+        "hash": "e63c7874",
+        "encoded": "-%20%3C%2015%20second%20total%20processing%20time",
+        "prevChunkIds": []
+      },
+      "404": {
+        "chunkId": "1a7a9d",
+        "hash": "97e5344c",
+        "encoded": "-%20Works%20on%20CPU-only%20systems",
+        "prevChunkIds": []
+      },
+      "405": {
+        "chunkId": "1a7a9d",
+        "hash": "54289c9e",
+        "encoded": "-%20Cross-platform%20compatibility",
+        "prevChunkIds": []
+      },
+      "406": {
+        "chunkId": "1a7a9d",
+        "hash": "5277ef3a",
+        "encoded": "-%20No%20external%20API%20dependencies",
+        "prevChunkIds": []
+      },
+      "408": {
+        "chunkId": "1a7a9d",
+        "hash": "ff18c777",
+        "encoded": "%E2%9C%85%20**Usability:**",
+        "prevChunkIds": []
+      },
+      "409": {
+        "chunkId": "1a7a9d",
+        "hash": "63cb16ee",
+        "encoded": "-%20One-command%20setup",
+        "prevChunkIds": []
+      },
+      "410": {
+        "chunkId": "1a7a9d",
+        "hash": "ff7807f4",
+        "encoded": "-%20Intuitive%20UI",
+        "prevChunkIds": []
+      },
+      "411": {
+        "chunkId": "1a7a9d",
+        "hash": "da23a2ae",
+        "encoded": "-%20Clear%20error%20messages",
+        "prevChunkIds": []
+      },
+      "412": {
+        "chunkId": "1a7a9d",
+        "hash": "b82ef509",
+        "encoded": "-%20Comprehensive%20documentation",
+        "prevChunkIds": []
+      },
+      "414": {
+        "chunkId": "1a7a9d",
+        "hash": "7e3bce01",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "416": {
+        "chunkId": "1a7a9d",
+        "hash": "2d66ef95",
+        "encoded": "**Document%20Version:**%201.0",
+        "prevChunkIds": []
+      },
+      "417": {
+        "chunkId": "1a7a9d",
+        "hash": "90c96e10",
+        "encoded": "**Last%20Updated:**%20November%202024",
+        "prevChunkIds": []
+      },
+      "418": {
+        "chunkId": "1a7a9d",
+        "hash": "68ba1291",
+        "encoded": "**Author:**%20AI%20Solutions%20Architect%20Internship%20Assessment",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

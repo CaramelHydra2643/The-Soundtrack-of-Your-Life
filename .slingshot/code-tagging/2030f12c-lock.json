@@ -1,0 +1,558 @@
+{
+  "scripts\\run_unix.sh": {
+    "filename": "run_unix.sh",
+    "path": "scripts\\run_unix.sh",
+    "version": "1.2",
+    "contextFile": "2030f12c-context.json",
+    "chunks": {
+      "1c02cc": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794813865,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "7318d5db"
+        },
+        "hash": "6537624f",
+        "messageId": "system_9a937770-e18d-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/16/2026, 12:54:25 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "1c02cc",
+        "hash": "acb0f876",
+        "encoded": "#!/bin/bash",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "1c02cc",
+        "hash": "9e1e9840",
+        "encoded": "#%20============================================================================",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "1c02cc",
+        "hash": "5e02a912",
+        "encoded": "#%20The%20Soundtrack%20of%20Your%20Life%20-%20Unix/Linux/macOS%20Run%20Script",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "1c02cc",
+        "hash": "a8f89b19",
+        "encoded": "#%20============================================================================",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "1c02cc",
+        "hash": "8421c51c",
+        "encoded": "set%20-e",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "1c02cc",
+        "hash": "15997413",
+        "encoded": "echo%20%22%22",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "1c02cc",
+        "hash": "922c0e1a",
+        "encoded": "echo%20%22================================================================%22",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "1c02cc",
+        "hash": "4065cc4d",
+        "encoded": "echo%20%22THE%20SOUNDTRACK%20OF%20YOUR%20LIFE%20-%20Launcher%22",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "1c02cc",
+        "hash": "f4095613",
+        "encoded": "echo%20%22================================================================%22",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "1c02cc",
+        "hash": "5e6ca92b",
+        "encoded": "echo%20%22%22",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "1c02cc",
+        "hash": "5df3c434",
+        "encoded": "#%20Colors",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "1c02cc",
+        "hash": "39e8ddd6",
+        "encoded": "RED='%5C033%5B0;31m'",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "1c02cc",
+        "hash": "5e14e901",
+        "encoded": "GREEN='%5C033%5B0;32m'",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "1c02cc",
+        "hash": "ee72b6ed",
+        "encoded": "YELLOW='%5C033%5B1;33m'",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "1c02cc",
+        "hash": "20595e25",
+        "encoded": "NC='%5C033%5B0m'%20#%20No%20Color",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "1c02cc",
+        "hash": "ccb33f51",
+        "encoded": "#%20Check%20if%20virtual%20environment%20exists",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "1c02cc",
+        "hash": "4cc139c5",
+        "encoded": "if%20%5B%20!%20-d%20%22.venv%22%20%5D;%20then",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "1c02cc",
+        "hash": "4f77982f",
+        "encoded": "echo%20-e%20%22$%7BRED%7D%5BERROR%5D$%7BNC%7D%20Virtual%20environment%20not%20found.%20Run%20setup%20first:%22",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "1c02cc",
+        "hash": "d4e92620",
+        "encoded": "echo%20%22%20%20./scripts/setup_unix.sh%22",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "1c02cc",
+        "hash": "9c5c12cd",
+        "encoded": "echo%20%22%22",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "1c02cc",
+        "hash": "d00e8f7e",
+        "encoded": "exit%201",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "1c02cc",
+        "hash": "8cab31a9",
+        "encoded": "fi",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "1c02cc",
+        "hash": "654d230c",
+        "encoded": "#%20Activate%20virtual%20environment",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "1c02cc",
+        "hash": "6584a045",
+        "encoded": "echo%20%22%5B1/4%5D%20Activating%20virtual%20environment...%22",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "1c02cc",
+        "hash": "c94249cd",
+        "encoded": "source%20.venv/bin/activate",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "1c02cc",
+        "hash": "476d3acb",
+        "encoded": "echo%20%22%20%20%5BOK%5D%20Activated%22",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "1c02cc",
+        "hash": "8e8a7662",
+        "encoded": "echo%20%22%22",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "1c02cc",
+        "hash": "e6f24edd",
+        "encoded": "#%20Check%20Ollama",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "1c02cc",
+        "hash": "8b598a53",
+        "encoded": "echo%20%22%5B2/4%5D%20Checking%20Ollama%20status...%22",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "1c02cc",
+        "hash": "8eee7075",
+        "encoded": "if%20curl%20-s%20http://localhost:11434/api/tags%20%3E%20/dev/null%202%3E&1;%20then",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "1c02cc",
+        "hash": "b5549bab",
+        "encoded": "echo%20%22%20%20%5BOK%5D%20Ollama%20is%20running%22",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "1c02cc",
+        "hash": "37ba8d6a",
+        "encoded": "echo%20%22%22",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "1c02cc",
+        "hash": "b7ffb8aa",
+        "encoded": "else",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "1c02cc",
+        "hash": "df4c95c5",
+        "encoded": "echo%20-e%20%22%20%20$%7BRED%7D%5BERROR%5D$%7BNC%7D%20Ollama%20not%20running%22",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "1c02cc",
+        "hash": "4a6d0eb2",
+        "encoded": "echo%20%22%20%20Start%20Ollama:%22",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "1c02cc",
+        "hash": "ffd2cc92",
+        "encoded": "echo%20%22%20%20%20%20Linux:%20ollama%20serve%20&%22",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "1c02cc",
+        "hash": "c56d8fc3",
+        "encoded": "echo%20%22%20%20%20%20macOS:%20ollama%20serve%20&%22",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "1c02cc",
+        "hash": "d2474e89",
+        "encoded": "echo%20%22%22",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "1c02cc",
+        "hash": "8400dc6d",
+        "encoded": "read%20-p%20%22Continue%20anyway?%20(y/n)%20%22%20-n%201%20-r",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "1c02cc",
+        "hash": "0d8f6783",
+        "encoded": "echo",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "1c02cc",
+        "hash": "186ea84c",
+        "encoded": "if%20%5B%5B%20!%20$REPLY%20=~%20%5E%5BYy%5D$%20%5D%5D;%20then",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "1c02cc",
+        "hash": "b6b29bf0",
+        "encoded": "exit%201",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "1c02cc",
+        "hash": "8cb5a9a4",
+        "encoded": "fi",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "1c02cc",
+        "hash": "074309aa",
+        "encoded": "fi",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "1c02cc",
+        "hash": "179152ff",
+        "encoded": "#%20Check%20knowledge%20base",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "1c02cc",
+        "hash": "ff17da40",
+        "encoded": "echo%20%22%5B3/4%5D%20Checking%20knowledge%20base...%22",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "1c02cc",
+        "hash": "f484b1ef",
+        "encoded": "if%20%5B%20-d%20%22$HOME/.local/share/soundtrack-of-your-life/chroma_db%22%20%5D%20%7C%7C%20%5B%20-d%20%22$HOME/Library/Application%20Support/The%20Soundtrack%20of%20Your%20Life/chroma_db%22%20%5D;%20then",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "1c02cc",
+        "hash": "9a59751f",
+        "encoded": "echo%20%22%20%20%5BOK%5D%20Knowledge%20base%20found%22",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "1c02cc",
+        "hash": "3e81e4e8",
+        "encoded": "echo%20%22%22",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "1c02cc",
+        "hash": "4cfff251",
+        "encoded": "else",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "1c02cc",
+        "hash": "6513343e",
+        "encoded": "echo%20-e%20%22%20%20$%7BYELLOW%7D%5BWARNING%5D$%7BNC%7D%20Knowledge%20base%20not%20built%22",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "1c02cc",
+        "hash": "63562b7b",
+        "encoded": "echo%20%22%20%20Run:%20python%20scripts/build_knowledge_base.py%22",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "1c02cc",
+        "hash": "349597e2",
+        "encoded": "echo%20%22%22",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "1c02cc",
+        "hash": "9ff82957",
+        "encoded": "read%20-p%20%22Build%20now?%20(y/n)%20%22%20-n%201%20-r",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "1c02cc",
+        "hash": "06716fc2",
+        "encoded": "echo",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "1c02cc",
+        "hash": "322a753a",
+        "encoded": "if%20%5B%5B%20$REPLY%20=~%20%5E%5BYy%5D$%20%5D%5D;%20then",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "1c02cc",
+        "hash": "8eaa05de",
+        "encoded": "echo%20%22%20%20Building%20knowledge%20base...%22",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "1c02cc",
+        "hash": "e7cbed42",
+        "encoded": "python%20scripts/build_knowledge_base.py",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "1c02cc",
+        "hash": "1bf7b098",
+        "encoded": "if%20%5B%20$?%20-ne%200%20%5D;%20then",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "1c02cc",
+        "hash": "888dcce4",
+        "encoded": "echo%20-e%20%22%20%20$%7BRED%7D%5BERROR%5D$%7BNC%7D%20Knowledge%20base%20build%20failed%22",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "1c02cc",
+        "hash": "99cf9c8f",
+        "encoded": "echo%20%22%22",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "1c02cc",
+        "hash": "b8c02181",
+        "encoded": "exit%201",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "1c02cc",
+        "hash": "6c18a281",
+        "encoded": "fi",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "1c02cc",
+        "hash": "1855b5a5",
+        "encoded": "fi",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "1c02cc",
+        "hash": "5a3e1153",
+        "encoded": "fi",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "1c02cc",
+        "hash": "382b3beb",
+        "encoded": "#%20Run%20health%20check",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "1c02cc",
+        "hash": "51f57e8e",
+        "encoded": "echo%20%22%5B4/4%5D%20Running%20health%20check...%22",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "1c02cc",
+        "hash": "b6673b0a",
+        "encoded": "python%20modules/health_check.py",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "1c02cc",
+        "hash": "bb254ccb",
+        "encoded": "if%20%5B%20$?%20-ne%200%20%5D;%20then",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "1c02cc",
+        "hash": "a33fd2c9",
+        "encoded": "echo%20%22%22",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "1c02cc",
+        "hash": "40dab10b",
+        "encoded": "echo%20-e%20%22$%7BYELLOW%7D%5BWARNING%5D$%7BNC%7D%20Health%20check%20found%20issues%22",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "1c02cc",
+        "hash": "d8c9f5d1",
+        "encoded": "read%20-p%20%22Continue%20anyway?%20(y/n)%20%22%20-n%201%20-r",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "1c02cc",
+        "hash": "8295f2a8",
+        "encoded": "echo",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "1c02cc",
+        "hash": "e2ca31e7",
+        "encoded": "if%20%5B%5B%20!%20$REPLY%20=~%20%5E%5BYy%5D$%20%5D%5D;%20then",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "1c02cc",
+        "hash": "138afb43",
+        "encoded": "exit%201",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "1c02cc",
+        "hash": "f7f4997c",
+        "encoded": "fi",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "1c02cc",
+        "hash": "dc9a9c31",
+        "encoded": "fi",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "1c02cc",
+        "hash": "78343ed9",
+        "encoded": "#%20Launch%20application",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "1c02cc",
+        "hash": "cbcfbbaa",
+        "encoded": "echo%20%22%22",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "1c02cc",
+        "hash": "26dbeaa6",
+        "encoded": "echo%20%22================================================================%22",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "1c02cc",
+        "hash": "9a876368",
+        "encoded": "echo%20-e%20%22$%7BGREEN%7DLAUNCHING%20APPLICATION$%7BNC%7D%22",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "1c02cc",
+        "hash": "e2cc6cd0",
+        "encoded": "echo%20%22================================================================%22",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "1c02cc",
+        "hash": "23aaa0d4",
+        "encoded": "echo%20%22%22",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "1c02cc",
+        "hash": "e1c9c292",
+        "encoded": "echo%20%22Starting%20Streamlit...%22",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "1c02cc",
+        "hash": "4de36778",
+        "encoded": "echo%20%22The%20app%20will%20open%20in%20your%20browser%20automatically.%22",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "1c02cc",
+        "hash": "39cf1562",
+        "encoded": "echo%20%22Press%20Ctrl+C%20to%20stop%20the%20server.%22",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "1c02cc",
+        "hash": "95ad595c",
+        "encoded": "echo%20%22%22",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "1c02cc",
+        "hash": "4705736b",
+        "encoded": "streamlit%20run%20app.py",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

@@ -1,0 +1,324 @@
+{
+  "data\\knowledge_base\\contexts\\achievement.txt": {
+    "filename": "achievement.txt",
+    "path": "data\\knowledge_base\\contexts\\achievement.txt",
+    "version": "1.2",
+    "contextFile": "b7f1af30-context.json",
+    "chunks": {
+      "531cd3": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794812128,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "c915a030"
+        },
+        "hash": "d07e38d9",
+        "messageId": "system_5acc7040-e18a-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/16/2026, 12:25:28 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "531cd3",
+        "hash": "3d7a6e26",
+        "encoded": "CONTEXT:%20Achievement",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "531cd3",
+        "hash": "3d3f53a3",
+        "encoded": "DESCRIPTION:",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "531cd3",
+        "hash": "4bc3fe3d",
+        "encoded": "Achievement%20represents%20the%20successful%20attainment%20of%20goals,%20recognition%20of%20hard%20work,%20and%20moments%20of%20personal%20triumph.%20Music%20for%20achievement%20is%20often%20uplifting,%20motivating,%20and%20celebratory.",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "531cd3",
+        "hash": "44d1037e",
+        "encoded": "EMOTIONAL%20ASSOCIATIONS:",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "531cd3",
+        "hash": "24cb6f6c",
+        "encoded": "-%20Pride%20and%20satisfaction",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "531cd3",
+        "hash": "55fc2079",
+        "encoded": "-%20Excitement%20and%20joy",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "531cd3",
+        "hash": "04e24a12",
+        "encoded": "-%20Relief%20(after%20struggle)",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "531cd3",
+        "hash": "576002c7",
+        "encoded": "-%20Confidence%20and%20empowerment",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "531cd3",
+        "hash": "31301d93",
+        "encoded": "-%20Gratitude",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "531cd3",
+        "hash": "012ad6bf",
+        "encoded": "-%20Motivation",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "531cd3",
+        "hash": "955f4923",
+        "encoded": "MUSICAL%20QUALITIES:",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "531cd3",
+        "hash": "eba4e1d4",
+        "encoded": "-%20Triumphant,%20soaring%20melodies",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "531cd3",
+        "hash": "839db548",
+        "encoded": "-%20Strong,%20driving%20rhythms",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "531cd3",
+        "hash": "8980fd60",
+        "encoded": "-%20Building%20dynamics%20and%20crescendos",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "531cd3",
+        "hash": "52127896",
+        "encoded": "-%20Major%20keys",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "531cd3",
+        "hash": "85022fe6",
+        "encoded": "-%20Energetic%20and%20powerful",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "531cd3",
+        "hash": "3d9c822a",
+        "encoded": "-%20Often%20anthemic%20quality",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "531cd3",
+        "hash": "68f27454",
+        "encoded": "RECOMMENDED%20GENRES:",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "531cd3",
+        "hash": "912c1ff1",
+        "encoded": "-%20Rock",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "531cd3",
+        "hash": "d8c01bc4",
+        "encoded": "-%20Pop",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "531cd3",
+        "hash": "bdefb853",
+        "encoded": "-%20Cinematic/orchestral",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "531cd3",
+        "hash": "728fda0f",
+        "encoded": "-%20Hip-hop",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "531cd3",
+        "hash": "69a9e800",
+        "encoded": "-%20Electronic",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "531cd3",
+        "hash": "33e8d5e4",
+        "encoded": "-%20Indie%20rock",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "531cd3",
+        "hash": "d39957a8",
+        "encoded": "TYPICAL%20INSTRUMENTS:",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "531cd3",
+        "hash": "16c17deb",
+        "encoded": "-%20Electric%20guitar%20(powerful)",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "531cd3",
+        "hash": "d93f52c9",
+        "encoded": "-%20Drums%20(driving)",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "531cd3",
+        "hash": "3ca6f3c8",
+        "encoded": "-%20Strings%20(orchestral%20swells)",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "531cd3",
+        "hash": "775c9e70",
+        "encoded": "-%20Brass%20(triumphant)",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "531cd3",
+        "hash": "6b23304b",
+        "encoded": "-%20Synthesizers%20(epic)",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "531cd3",
+        "hash": "dda23fee",
+        "encoded": "-%20Strong%20vocals",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "531cd3",
+        "hash": "5c0b89c6",
+        "encoded": "TEMPO%20AND%20ENERGY:",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "531cd3",
+        "hash": "bb5660c4",
+        "encoded": "-%20Moderate%20to%20fast%20tempo",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "531cd3",
+        "hash": "b80052cd",
+        "encoded": "-%20High%20energy",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "531cd3",
+        "hash": "396eee88",
+        "encoded": "-%20Powerful%20dynamics",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "531cd3",
+        "hash": "7d8abcb3",
+        "encoded": "RELATED%20THEMES:",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "531cd3",
+        "hash": "d40eeaec",
+        "encoded": "-%20Career%20success",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "531cd3",
+        "hash": "200738b3",
+        "encoded": "-%20Academic%20accomplishments",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "531cd3",
+        "hash": "7b2a36ed",
+        "encoded": "-%20Personal%20goals",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "531cd3",
+        "hash": "7ff02039",
+        "encoded": "-%20Overcoming%20obstacles",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "531cd3",
+        "hash": "4c36ddb1",
+        "encoded": "-%20Competition%20and%20victory",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "531cd3",
+        "hash": "a1c1e5b6",
+        "encoded": "-%20Self-improvement",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "531cd3",
+        "hash": "55a1b893",
+        "encoded": "COMMON%20SCENARIOS:",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "531cd3",
+        "hash": "1725f569",
+        "encoded": "-%20Job%20offers%20and%20promotions",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "531cd3",
+        "hash": "de367253",
+        "encoded": "-%20Graduation",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "531cd3",
+        "hash": "1b3485a7",
+        "encoded": "-%20Winning%20competitions",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "531cd3",
+        "hash": "97293aee",
+        "encoded": "-%20Completing%20projects",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "531cd3",
+        "hash": "504d3c75",
+        "encoded": "-%20Breaking%20personal%20records",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "531cd3",
+        "hash": "5628658b",
+        "encoded": "-%20Recognition%20and%20awards",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

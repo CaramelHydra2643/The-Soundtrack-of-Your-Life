@@ -1,0 +1,402 @@
+{
+  "tests\\test_ollama.py": {
+    "filename": "test_ollama.py",
+    "path": "tests\\test_ollama.py",
+    "version": "1.2",
+    "contextFile": "af128fa9-context.json",
+    "chunks": {
+      "bae41e": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794813099,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "f74bf8b2"
+        },
+        "hash": "3c6421fe",
+        "messageId": "system_34fe0610-e18c-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/16/2026, 12:41:39 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "bae41e",
+        "hash": "9cef9ccb",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "bae41e",
+        "hash": "ded83d9d",
+        "encoded": "Quick%20test%20for%20Ollama%20integration%20and%20memory%20analysis.",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "bae41e",
+        "hash": "d5f64358",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "bae41e",
+        "hash": "ee2a828b",
+        "encoded": "import%20sys",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "bae41e",
+        "hash": "3823768f",
+        "encoded": "from%20pathlib%20import%20Path",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "bae41e",
+        "hash": "0c1267b2",
+        "encoded": "sys.path.insert(0,%20str(Path(__file__).parent.parent))",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "bae41e",
+        "hash": "5e8d20ff",
+        "encoded": "from%20modules.memory_analyzer%20import%20MemoryAnalyzer",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "bae41e",
+        "hash": "86cc5874",
+        "encoded": "from%20modules.rag_engine%20import%20RAGEngine",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "bae41e",
+        "hash": "cecbb673",
+        "encoded": "print(%22=%22%20*%2070)",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "bae41e",
+        "hash": "0a8cef25",
+        "encoded": "print(%22TESTING%20OLLAMA%20&%20MEMORY%20ANALYSIS%22)",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "bae41e",
+        "hash": "e628b344",
+        "encoded": "print(%22=%22%20*%2070)",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "bae41e",
+        "hash": "76b48a50",
+        "encoded": "#%20Test%20memory",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "bae41e",
+        "hash": "8e731ab0",
+        "encoded": "test_memory%20=%20%22%22%22It%20was%20my%20last%20day%20at%20college.%20I%20was%20sitting%20with%20my%20friends,",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "bae41e",
+        "hash": "31d84ee5",
+        "encoded": "remembering%20all%20the%20memories%20we%20created%20together.%20I%20was%20happy,%20but%20somewhere",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "bae41e",
+        "hash": "08a97891",
+        "encoded": "inside%20I%20knew%20I%20would%20miss%20those%20days.%22%22%22",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "bae41e",
+        "hash": "2eff84aa",
+        "encoded": "print(%22%5CnTest%20Memory:%22)",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "bae41e",
+        "hash": "d55cf6d3",
+        "encoded": "print(test_memory)",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "bae41e",
+        "hash": "c891c5fd",
+        "encoded": "print(%22%5Cn%22%20+%20%22=%22*70)",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "bae41e",
+        "hash": "67a34918",
+        "encoded": "#%20Initialize%20analyzer",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "bae41e",
+        "hash": "43a9c9d5",
+        "encoded": "print(%22%5CnInitializing%20Memory%20Analyzer...%22)",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "bae41e",
+        "hash": "bfb8f46e",
+        "encoded": "analyzer%20=%20MemoryAnalyzer()",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "bae41e",
+        "hash": "51035cc7",
+        "encoded": "print(%22%5BOK%5D%20Analyzer%20initialized%22)",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "bae41e",
+        "hash": "42fedd87",
+        "encoded": "#%20Analyze%20memory",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "bae41e",
+        "hash": "bcb21b88",
+        "encoded": "print(%22%5CnAnalyzing%20memory%20with%20Ollama...%22)",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "bae41e",
+        "hash": "6f5a66e9",
+        "encoded": "analysis%20=%20analyzer.analyze_memory(test_memory)",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "bae41e",
+        "hash": "1b0287b7",
+        "encoded": "if%20analysis:",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "bae41e",
+        "hash": "df136fd0",
+        "encoded": "print(%22%5Cn%5BSUCCESS%5D%20Memory%20analysis%20complete!%5Cn%22)",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "bae41e",
+        "hash": "36aa373b",
+        "encoded": "print(f%22Title:%20%7Banalysis.memory_title%7D%22)",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "bae41e",
+        "hash": "ff1efc75",
+        "encoded": "print(f%22Summary:%20%7Banalysis.summary%7D%22)",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "bae41e",
+        "hash": "62c92cd9",
+        "encoded": "print(f%22%5CnPrimary%20Emotions:%20%7B',%20'.join(analysis.primary_emotions)%7D%22)",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "bae41e",
+        "hash": "036b4752",
+        "encoded": "print(f%22Secondary%20Emotions:%20%7B',%20'.join(analysis.secondary_emotions)%7D%22)",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "bae41e",
+        "hash": "561c2795",
+        "encoded": "print(f%22Emotional%20Intensity:%20%7Banalysis.emotional_intensity%7D/10%22)",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "bae41e",
+        "hash": "8f6fad40",
+        "encoded": "print(f%22%5CnThemes:%20%7B',%20'.join(analysis.themes)%7D%22)",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "bae41e",
+        "hash": "bb28ded5",
+        "encoded": "print(f%22Context:%20%7B',%20'.join(analysis.context)%7D%22)",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "bae41e",
+        "hash": "39dea65f",
+        "encoded": "print(f%22%5CnGenres:%20%7B',%20'.join(analysis.genres)%7D%22)",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "bae41e",
+        "hash": "63b41ecf",
+        "encoded": "print(f%22Instruments:%20%7B',%20'.join(analysis.instruments)%7D%22)",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "bae41e",
+        "hash": "70fdb81f",
+        "encoded": "print(f%22Tempo:%20%7Banalysis.tempo%7D%22)",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "bae41e",
+        "hash": "b995e70d",
+        "encoded": "print(f%22Energy:%20%7Banalysis.energy%7D%22)",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "bae41e",
+        "hash": "b6828e66",
+        "encoded": "print(f%22Atmosphere:%20%7Banalysis.atmosphere%7D%22)",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "bae41e",
+        "hash": "e5fe4b45",
+        "encoded": "#%20Test%20RAG%20retrieval",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "bae41e",
+        "hash": "cc6438ad",
+        "encoded": "print(%22%5Cn%22%20+%20%22=%22*70)",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "bae41e",
+        "hash": "56bfc989",
+        "encoded": "print(%22TESTING%20RAG%20RETRIEVAL%22)",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "bae41e",
+        "hash": "25de1001",
+        "encoded": "print(%22=%22*70)",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "bae41e",
+        "hash": "f62d7ba0",
+        "encoded": "rag_engine%20=%20RAGEngine()",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "bae41e",
+        "hash": "0cb32559",
+        "encoded": "if%20rag_engine.is_knowledge_base_ready():",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "bae41e",
+        "hash": "5dd3210e",
+        "encoded": "query%20=%20analyzer.create_retrieval_query(analysis)",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "bae41e",
+        "hash": "f31d0eca",
+        "encoded": "print(f%22%5CnRetrieval%20query:%20%7Bquery%5B:150%5D%7D...%22)",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "bae41e",
+        "hash": "293abd9e",
+        "encoded": "retrieved%20=%20rag_engine.retrieve(query,%20top_k=3)",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "bae41e",
+        "hash": "22197181",
+        "encoded": "print(f%22%5Cn%5BSUCCESS%5D%20Retrieved%20%7Blen(retrieved)%7D%20documents:%5Cn%22)",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "bae41e",
+        "hash": "7bbbb4da",
+        "encoded": "for%20i,%20doc%20in%20enumerate(retrieved,%201):",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "bae41e",
+        "hash": "c935cdd0",
+        "encoded": "meta%20=%20doc.get('metadata',%20%7B%7D)",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "bae41e",
+        "hash": "aa00624e",
+        "encoded": "print(f%22%7Bi%7D.%20%7Bmeta.get('category',%20'unknown').upper()%7D:%20%7Bmeta.get('topic',%20'unknown')%7D%22)",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "bae41e",
+        "hash": "0540f5f1",
+        "encoded": "print(f%22%20%20%20Relevance:%20%7Bdoc.get('relevance_score',%200):.1%25%7D%22)",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "bae41e",
+        "hash": "de452a44",
+        "encoded": "print(f%22%20%20%20Preview:%20%7Bdoc.get('text',%20'')%5B:100%5D%7D...%5Cn%22)",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "bae41e",
+        "hash": "122aba5a",
+        "encoded": "else:",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "bae41e",
+        "hash": "a3a22144",
+        "encoded": "print(%22%5Cn%5BWARNING%5D%20Knowledge%20base%20not%20ready%22)",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "bae41e",
+        "hash": "3a4be1d4",
+        "encoded": "print(%22%5Cn%22%20+%20%22=%22*70)",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "bae41e",
+        "hash": "e254107e",
+        "encoded": "print(%22%5BSUCCESS%5D%20All%20tests%20passed!%22)",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "bae41e",
+        "hash": "da822e0d",
+        "encoded": "print(%22=%22*70)",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "bae41e",
+        "hash": "3c75e0fe",
+        "encoded": "else:",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "bae41e",
+        "hash": "455729f4",
+        "encoded": "print(%22%5Cn%5BFAILED%5D%20Memory%20analysis%20failed%22)",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "bae41e",
+        "hash": "08dc8666",
+        "encoded": "sys.exit(1)",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

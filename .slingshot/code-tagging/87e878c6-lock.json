@@ -1,0 +1,318 @@
+{
+  "data\\knowledge_base\\genres\\acoustic_pop.txt": {
+    "filename": "acoustic_pop.txt",
+    "path": "data\\knowledge_base\\genres\\acoustic_pop.txt",
+    "version": "1.2",
+    "contextFile": "87e878c6-context.json",
+    "chunks": {
+      "19bd55": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794812127,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "c915a030"
+        },
+        "hash": "11a8011b",
+        "messageId": "system_5acc7040-e18a-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/16/2026, 12:25:27 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "19bd55",
+        "hash": "e9451986",
+        "encoded": "GENRE:%20Acoustic%20Pop",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "19bd55",
+        "hash": "3d3f53a3",
+        "encoded": "DESCRIPTION:",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "19bd55",
+        "hash": "06014c69",
+        "encoded": "Acoustic%20pop%20blends%20the%20accessibility%20and%20melody%20of%20pop%20music%20with%20acoustic%20instrumentation.%20It%20maintains%20pop's%20catchiness%20while%20offering%20a%20more%20organic,%20stripped-down%20sound%20that%20emphasizes%20vocals%20and%20natural%20instruments.",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "19bd55",
+        "hash": "b75899ef",
+        "encoded": "KEY%20CHARACTERISTICS:",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "19bd55",
+        "hash": "e60157ca",
+        "encoded": "-%20Catchy,%20memorable%20melodies",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "19bd55",
+        "hash": "f8d9063b",
+        "encoded": "-%20Acoustic%20instrumentation",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "19bd55",
+        "hash": "00e334bd",
+        "encoded": "-%20Clear%20vocal%20focus",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "19bd55",
+        "hash": "3a83531c",
+        "encoded": "-%20Radio-friendly%20structure",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "19bd55",
+        "hash": "3c77c712",
+        "encoded": "-%20Warm,%20polished%20production",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "19bd55",
+        "hash": "8c6c933d",
+        "encoded": "-%20Balance%20between%20intimacy%20and%20accessibility",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "19bd55",
+        "hash": "0a15a960",
+        "encoded": "TYPICAL%20INSTRUMENTS:",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "19bd55",
+        "hash": "618067f3",
+        "encoded": "-%20Acoustic%20guitar%20(primary)",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "19bd55",
+        "hash": "69513507",
+        "encoded": "-%20Piano",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "19bd55",
+        "hash": "41e6ec4e",
+        "encoded": "-%20Light%20percussion%20(caj%C3%B3n,%20brushes)",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "19bd55",
+        "hash": "a31c128a",
+        "encoded": "-%20Strings%20(occasional)",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "19bd55",
+        "hash": "6c7916f5",
+        "encoded": "-%20Minimal%20bass",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "19bd55",
+        "hash": "c6e785f9",
+        "encoded": "-%20Hand%20claps,%20finger%20snaps",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "19bd55",
+        "hash": "21505b68",
+        "encoded": "COMMON%20MOODS:",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "19bd55",
+        "hash": "b37cd4f0",
+        "encoded": "-%20Happiness",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "19bd55",
+        "hash": "3967858c",
+        "encoded": "-%20Nostalgia",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "19bd55",
+        "hash": "3b47877a",
+        "encoded": "-%20Love%20and%20romance",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "19bd55",
+        "hash": "d3199d81",
+        "encoded": "-%20Optimism",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "19bd55",
+        "hash": "2b4267aa",
+        "encoded": "-%20Bittersweet%20emotions",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "19bd55",
+        "hash": "50cc5d98",
+        "encoded": "-%20Warmth",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "19bd55",
+        "hash": "003856f0",
+        "encoded": "TEMPO%20RANGE:",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "19bd55",
+        "hash": "afd880dd",
+        "encoded": "-%20Moderate%20(80-120%20BPM)",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "19bd55",
+        "hash": "3a86ca75",
+        "encoded": "-%20Versatile,%20from%20ballads%20to%20uptempo",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "19bd55",
+        "hash": "8ba80188",
+        "encoded": "ENERGY%20LEVEL:",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "19bd55",
+        "hash": "32423522",
+        "encoded": "-%20Moderate",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "19bd55",
+        "hash": "dc3ea960",
+        "encoded": "-%20Bright%20and%20uplifting",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "19bd55",
+        "hash": "ceac9ff6",
+        "encoded": "-%20More%20energetic%20than%20folk,%20less%20than%20electric%20pop",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "19bd55",
+        "hash": "af3a74a7",
+        "encoded": "POPULAR%20CONTEXTS:",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "19bd55",
+        "hash": "156d9770",
+        "encoded": "-%20Relationships",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "19bd55",
+        "hash": "5dab8fa1",
+        "encoded": "-%20Personal%20growth",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "19bd55",
+        "hash": "4304a893",
+        "encoded": "-%20Everyday%20experiences",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "19bd55",
+        "hash": "7f332067",
+        "encoded": "-%20Celebrations",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "19bd55",
+        "hash": "2c1f4fc2",
+        "encoded": "-%20Reflective%20moments",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "19bd55",
+        "hash": "6c314509",
+        "encoded": "-%20Coffee%20shop%20ambiance",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "19bd55",
+        "hash": "dc0febf1",
+        "encoded": "RELATED%20GENRES:",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "19bd55",
+        "hash": "8d4de32e",
+        "encoded": "-%20Pop",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "19bd55",
+        "hash": "fb65d1a9",
+        "encoded": "-%20Folk%20pop",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "19bd55",
+        "hash": "483cf16d",
+        "encoded": "-%20Singer-songwriter",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "19bd55",
+        "hash": "9b1fa326",
+        "encoded": "-%20Indie%20pop",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "19bd55",
+        "hash": "5e8ae42c",
+        "encoded": "NOTABLE%20FEATURES:",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "19bd55",
+        "hash": "92084cbe",
+        "encoded": "-%20Emphasis%20on%20vocal%20melody",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "19bd55",
+        "hash": "a914de2d",
+        "encoded": "-%20Clean,%20crisp%20production",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "19bd55",
+        "hash": "57932af1",
+        "encoded": "-%20Accessible%20lyrics",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "19bd55",
+        "hash": "f560769c",
+        "encoded": "-%20Organic%20yet%20polished%20sound",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

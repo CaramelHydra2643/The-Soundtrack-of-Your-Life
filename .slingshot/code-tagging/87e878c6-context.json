@@ -1,0 +1,15 @@
+{
+  "filename": "acoustic_pop.txt",
+  "path": "data\\knowledge_base\\genres\\acoustic_pop.txt",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "c915a030": {
+      "value": "proceed"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

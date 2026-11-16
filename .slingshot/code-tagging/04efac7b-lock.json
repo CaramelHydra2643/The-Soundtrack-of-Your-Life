@@ -1,0 +1,288 @@
+{
+  "data\\knowledge_base\\emotions\\gratitude.txt": {
+    "filename": "gratitude.txt",
+    "path": "data\\knowledge_base\\emotions\\gratitude.txt",
+    "version": "1.2",
+    "contextFile": "04efac7b-context.json",
+    "chunks": {
+      "23b28d": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794812126,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "c915a030"
+        },
+        "hash": "36644f7f",
+        "messageId": "system_5acc7040-e18a-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/16/2026, 12:25:26 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "23b28d",
+        "hash": "90b7b490",
+        "encoded": "EMOTION:%20Gratitude",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "23b28d",
+        "hash": "3d3f53a3",
+        "encoded": "DESCRIPTION:",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "23b28d",
+        "hash": "9ec2f5f1",
+        "encoded": "Gratitude%20is%20a%20warm%20feeling%20of%20appreciation%20and%20thankfulness.%20It%20combines%20contentment%20with%20recognition%20of%20positive%20experiences,%20people,%20or%20circumstances%20in%20one's%20life.",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "23b28d",
+        "hash": "5c8a5d97",
+        "encoded": "MUSICAL%20CHARACTERISTICS:",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "23b28d",
+        "hash": "49acad87",
+        "encoded": "-%20Warm,%20full%20instrumentation",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "23b28d",
+        "hash": "522aa188",
+        "encoded": "-%20Major%20keys%20with%20rich%20harmonies",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "23b28d",
+        "hash": "2c6a1f80",
+        "encoded": "-%20Gentle%20to%20moderate%20tempo",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "23b28d",
+        "hash": "6e7d5bd1",
+        "encoded": "-%20Melodic%20and%20heartfelt",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "23b28d",
+        "hash": "672d5fc2",
+        "encoded": "-%20Often%20features%20uplifting%20crescendos",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "23b28d",
+        "hash": "a885c914",
+        "encoded": "RECOMMENDED%20GENRES:",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "23b28d",
+        "hash": "ccdd2390",
+        "encoded": "-%20Folk",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "23b28d",
+        "hash": "e6f3c571",
+        "encoded": "-%20Gospel",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "23b28d",
+        "hash": "136e8643",
+        "encoded": "-%20Soul",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "23b28d",
+        "hash": "d2bffe46",
+        "encoded": "-%20Acoustic%20pop",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "23b28d",
+        "hash": "bc8ca59a",
+        "encoded": "-%20Americana",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "23b28d",
+        "hash": "6128dd1d",
+        "encoded": "-%20Singer-songwriter",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "23b28d",
+        "hash": "07cf74c6",
+        "encoded": "TYPICAL%20INSTRUMENTS:",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "23b28d",
+        "hash": "94727f6a",
+        "encoded": "-%20Acoustic%20guitar",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "23b28d",
+        "hash": "a3a5f449",
+        "encoded": "-%20Piano",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "23b28d",
+        "hash": "302210b4",
+        "encoded": "-%20Strings",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "23b28d",
+        "hash": "321ee426",
+        "encoded": "-%20Harmonica",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "23b28d",
+        "hash": "23478667",
+        "encoded": "-%20Organ",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "23b28d",
+        "hash": "da756815",
+        "encoded": "-%20Vocal%20harmonies",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "23b28d",
+        "hash": "80e4c61c",
+        "encoded": "TEMPO%20AND%20ENERGY:",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "23b28d",
+        "hash": "3c4d1a56",
+        "encoded": "-%20Tempo:%20Moderate%20(80-110%20BPM)",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "23b28d",
+        "hash": "77252c5d",
+        "encoded": "-%20Energy:%20Moderate",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "23b28d",
+        "hash": "60c2806b",
+        "encoded": "-%20Dynamics:%20Warm,%20building",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "23b28d",
+        "hash": "23a8a732",
+        "encoded": "ATMOSPHERE:",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "23b28d",
+        "hash": "8b3cfa7c",
+        "encoded": "-%20Warm%20and%20embracing",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "23b28d",
+        "hash": "41db96bc",
+        "encoded": "-%20Heartfelt%20and%20sincere",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "23b28d",
+        "hash": "bf3c1f9d",
+        "encoded": "-%20Peaceful%20and%20content",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "23b28d",
+        "hash": "c13414c1",
+        "encoded": "-%20Uplifting%20without%20being%20overly%20energetic",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "23b28d",
+        "hash": "28b7da6b",
+        "encoded": "-%20Reflective%20appreciation",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "23b28d",
+        "hash": "75463088",
+        "encoded": "RELEVANT%20CONTEXTS:",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "23b28d",
+        "hash": "7bcb10d9",
+        "encoded": "-%20Moments%20of%20appreciation",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "23b28d",
+        "hash": "bc944226",
+        "encoded": "-%20Family%20gatherings",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "23b28d",
+        "hash": "04bcbe89",
+        "encoded": "-%20Thanksgiving%20and%20celebrations",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "23b28d",
+        "hash": "92dfdd18",
+        "encoded": "-%20Reflecting%20on%20blessings",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "23b28d",
+        "hash": "4e48d4fb",
+        "encoded": "-%20Recognizing%20support%20from%20others",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "23b28d",
+        "hash": "0479519c",
+        "encoded": "-%20Life%20milestones",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "23b28d",
+        "hash": "a6f09180",
+        "encoded": "CAVEATS:",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "23b28d",
+        "hash": "fb8b8b15",
+        "encoded": "-%20Gratitude%20can%20be%20quiet%20or%20celebratory",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "23b28d",
+        "hash": "00dca072",
+        "encoded": "-%20Often%20mixed%20with%20other%20emotions%20like%20nostalgia%20or%20joy",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

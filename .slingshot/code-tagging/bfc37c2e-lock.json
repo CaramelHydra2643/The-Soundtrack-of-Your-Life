@@ -1,0 +1,1716 @@
+{
+  "schemas\\memory_schema.py": {
+    "filename": "memory_schema.py",
+    "path": "schemas\\memory_schema.py",
+    "version": "1.2",
+    "contextFile": "bfc37c2e-context.json",
+    "chunks": {
+      "6db821": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794811937,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "04511a3e"
+        },
+        "hash": "044dbc1d",
+        "messageId": "system_9825f6b0-e189-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/16/2026, 12:22:17 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "6db821",
+        "hash": "9cef9ccb",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "6db821",
+        "hash": "fd3b56f9",
+        "encoded": "Pydantic%20Schemas%20for%20Memory%20Analysis%20and%20Music%20Recommendations",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "6db821",
+        "hash": "f3691683",
+        "encoded": "Defines%20structured%20data%20models%20for%20LLM%20output%20validation%20and%20data%20consistency.",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "6db821",
+        "hash": "6766a9a9",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "6db821",
+        "hash": "7edcaab2",
+        "encoded": "from%20datetime%20import%20datetime",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "6db821",
+        "hash": "a4a2df40",
+        "encoded": "from%20typing%20import%20List,%20Optional,%20Dict,%20Any",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "6db821",
+        "hash": "09f40bc1",
+        "encoded": "from%20pydantic%20import%20BaseModel,%20Field,%20field_validator",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "6db821",
+        "hash": "576bd09d",
+        "encoded": "class%20MemoryAnalysis(BaseModel):",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "6db821",
+        "hash": "3362e97a",
+        "encoded": "%22%22%22Structured%20output%20from%20LLM%20memory%20analysis.",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "6db821",
+        "hash": "44900451",
+        "encoded": "This%20schema%20ensures%20the%20LLM%20provides%20comprehensive%20emotional%20and%20musical",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "6db821",
+        "hash": "3963ceda",
+        "encoded": "analysis%20of%20user%20memories%20in%20a%20consistent,%20validated%20format.",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "6db821",
+        "hash": "22407482",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "6db821",
+        "hash": "c62f9214",
+        "encoded": "#%20=========================================================================",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "6db821",
+        "hash": "e6f39734",
+        "encoded": "#%20MEMORY%20UNDERSTANDING",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "6db821",
+        "hash": "d5331f65",
+        "encoded": "#%20=========================================================================",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "6db821",
+        "hash": "7e6eb8a1",
+        "encoded": "memory_title:%20str%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "6db821",
+        "hash": "df443442",
+        "encoded": "...,",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "6db821",
+        "hash": "c7ea4cc1",
+        "encoded": "min_length=3,",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "6db821",
+        "hash": "8b020995",
+        "encoded": "max_length=200,",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "6db821",
+        "hash": "42f9da05",
+        "encoded": "description=%22Generated%20title%20summarizing%20the%20memory%22",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "6db821",
+        "hash": "a8c600e6",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "6db821",
+        "hash": "e9b721be",
+        "encoded": "summary:%20str%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "6db821",
+        "hash": "230390ab",
+        "encoded": "...,",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "6db821",
+        "hash": "a8b5564f",
+        "encoded": "min_length=10,",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "6db821",
+        "hash": "e89a8544",
+        "encoded": "max_length=500,",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "6db821",
+        "hash": "11982e32",
+        "encoded": "description=%22Brief%20summary%20of%20the%20memory's%20essence%22",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "6db821",
+        "hash": "c835f273",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "6db821",
+        "hash": "aef08c77",
+        "encoded": "#%20=========================================================================",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "6db821",
+        "hash": "5a643e23",
+        "encoded": "#%20EMOTIONAL%20ANALYSIS",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "6db821",
+        "hash": "a8aff489",
+        "encoded": "#%20=========================================================================",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "6db821",
+        "hash": "7e7961f4",
+        "encoded": "primary_emotions:%20List%5Bstr%5D%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "6db821",
+        "hash": "97b45cad",
+        "encoded": "...,",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "6db821",
+        "hash": "c1c723ea",
+        "encoded": "min_length=1,",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "6db821",
+        "hash": "cd206acc",
+        "encoded": "max_length=5,",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "6db821",
+        "hash": "0766cd75",
+        "encoded": "description=%22Main%20emotions%20present%20in%20the%20memory%22",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "6db821",
+        "hash": "de9a7b90",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "6db821",
+        "hash": "eb5a959f",
+        "encoded": "secondary_emotions:%20List%5Bstr%5D%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "6db821",
+        "hash": "78f3a75b",
+        "encoded": "default_factory=list,",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "6db821",
+        "hash": "0b08bfce",
+        "encoded": "max_length=5,",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "6db821",
+        "hash": "3c9a6962",
+        "encoded": "description=%22Subtle%20or%20underlying%20emotions%22",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "6db821",
+        "hash": "bd67edb6",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "6db821",
+        "hash": "e1f73339",
+        "encoded": "emotional_intensity:%20int%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "6db821",
+        "hash": "1d96893e",
+        "encoded": "...,",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "6db821",
+        "hash": "fbe7a329",
+        "encoded": "ge=1,",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "6db821",
+        "hash": "9be6a2f7",
+        "encoded": "le=10,",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "6db821",
+        "hash": "93dc9639",
+        "encoded": "description=%22Intensity%20of%20emotions%20on%20scale%201-10%22",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "6db821",
+        "hash": "e4a7e8dd",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "6db821",
+        "hash": "be263692",
+        "encoded": "#%20=========================================================================",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "6db821",
+        "hash": "21d37bd5",
+        "encoded": "#%20CONTEXTUAL%20UNDERSTANDING",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "6db821",
+        "hash": "fefbf903",
+        "encoded": "#%20=========================================================================",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "6db821",
+        "hash": "6be5c69c",
+        "encoded": "themes:%20List%5Bstr%5D%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "6db821",
+        "hash": "bf5e4131",
+        "encoded": "...,",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "6db821",
+        "hash": "8b52ebb6",
+        "encoded": "min_length=1,",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "6db821",
+        "hash": "e7718d9f",
+        "encoded": "max_length=10,",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "6db821",
+        "hash": "39ffeca5",
+        "encoded": "description=%22Key%20themes%20(e.g.,%20friendship,%20achievement,%20farewell)%22",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "6db821",
+        "hash": "e9467d36",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "6db821",
+        "hash": "208ad924",
+        "encoded": "context:%20List%5Bstr%5D%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "6db821",
+        "hash": "b32045f4",
+        "encoded": "default_factory=list,",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "6db821",
+        "hash": "77eecd09",
+        "encoded": "max_length=10,",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "6db821",
+        "hash": "deca2f83",
+        "encoded": "description=%22Contextual%20elements%20(e.g.,%20college,%20family,%20celebration)%22",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "6db821",
+        "hash": "1af0603e",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "6db821",
+        "hash": "89aff19a",
+        "encoded": "#%20=========================================================================",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "6db821",
+        "hash": "9adafe9a",
+        "encoded": "#%20MUSICAL%20CHARACTERISTICS",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "6db821",
+        "hash": "7e9233ff",
+        "encoded": "#%20=========================================================================",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "6db821",
+        "hash": "51d546b6",
+        "encoded": "genres:%20List%5Bstr%5D%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "6db821",
+        "hash": "608d7701",
+        "encoded": "...,",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "6db821",
+        "hash": "8cb5cf1e",
+        "encoded": "min_length=1,",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "6db821",
+        "hash": "4a3692ad",
+        "encoded": "max_length=5,",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "6db821",
+        "hash": "82755484",
+        "encoded": "description=%22Recommended%20music%20genres%22",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "6db821",
+        "hash": "d8b56883",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "6db821",
+        "hash": "394a7a2b",
+        "encoded": "instruments:%20List%5Bstr%5D%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "6db821",
+        "hash": "7580fac6",
+        "encoded": "...,",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "6db821",
+        "hash": "434a7a69",
+        "encoded": "min_length=1,",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "6db821",
+        "hash": "6773f57f",
+        "encoded": "max_length=8,",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "6db821",
+        "hash": "dd8b10d1",
+        "encoded": "description=%22Instruments%20that%20would%20match%20the%20mood%22",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "6db821",
+        "hash": "a497579a",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "6db821",
+        "hash": "814e9fd4",
+        "encoded": "tempo:%20str%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "6db821",
+        "hash": "90eda5cf",
+        "encoded": "...,",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "6db821",
+        "hash": "d6ff02b8",
+        "encoded": "description=%22Tempo%20description%20(e.g.,%20slow,%20moderate,%20fast,%20variable)%22",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "6db821",
+        "hash": "0ac5bbb9",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "6db821",
+        "hash": "30cacd02",
+        "encoded": "energy:%20str%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "6db821",
+        "hash": "1bb8dec5",
+        "encoded": "...,",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "6db821",
+        "hash": "347b743e",
+        "encoded": "description=%22Energy%20level%20(e.g.,%20low,%20moderate,%20high,%20dynamic)%22",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "6db821",
+        "hash": "7d77163d",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "6db821",
+        "hash": "e2b09ada",
+        "encoded": "atmosphere:%20str%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "6db821",
+        "hash": "e5995d50",
+        "encoded": "...,",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "6db821",
+        "hash": "42cb0348",
+        "encoded": "min_length=5,",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "6db821",
+        "hash": "a285c62a",
+        "encoded": "max_length=200,",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "6db821",
+        "hash": "34a490be",
+        "encoded": "description=%22Overall%20musical%20atmosphere%20and%20mood%22",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "6db821",
+        "hash": "48843cf2",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "6db821",
+        "hash": "c1564c3f",
+        "encoded": "musical_description:%20str%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "6db821",
+        "hash": "e9b48895",
+        "encoded": "...,",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "6db821",
+        "hash": "26588b0b",
+        "encoded": "min_length=20,",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "6db821",
+        "hash": "b2501c14",
+        "encoded": "max_length=500,",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "6db821",
+        "hash": "47cb2ee5",
+        "encoded": "description=%22Detailed%20description%20of%20suitable%20musical%20characteristics%22",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "6db821",
+        "hash": "c790c0ab",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "6db821",
+        "hash": "bbf6045e",
+        "encoded": "#%20=========================================================================",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "6db821",
+        "hash": "6518107c",
+        "encoded": "#%20VALIDATORS",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "6db821",
+        "hash": "9488e04d",
+        "encoded": "#%20=========================================================================",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "6db821",
+        "hash": "384380d4",
+        "encoded": "@field_validator('primary_emotions',%20'secondary_emotions',%20'themes',%20'context',%20'genres',%20'instruments')",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "6db821",
+        "hash": "b2f5feb0",
+        "encoded": "@classmethod",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "6db821",
+        "hash": "320982e6",
+        "encoded": "def%20validate_list_items(cls,%20v:%20List%5Bstr%5D)%20-%3E%20List%5Bstr%5D:",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "6db821",
+        "hash": "9ddd8e90",
+        "encoded": "%22%22%22Ensure%20list%20items%20are%20non-empty%20and%20properly%20formatted.%22%22%22",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "6db821",
+        "hash": "fa667cf0",
+        "encoded": "cleaned%20=%20%5Bitem.strip()%20for%20item%20in%20v%20if%20item.strip()%5D",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "6db821",
+        "hash": "54e6a945",
+        "encoded": "if%20not%20cleaned%20and%20v:%20%20#%20Only%20raise%20if%20original%20list%20was%20non-empty",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "6db821",
+        "hash": "8900bae6",
+        "encoded": "raise%20ValueError(%22List%20items%20cannot%20be%20empty%20strings%22)",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "6db821",
+        "hash": "1b11b38a",
+        "encoded": "return%20cleaned",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "6db821",
+        "hash": "a7d02bb8",
+        "encoded": "@field_validator('tempo')",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "6db821",
+        "hash": "bad48fc2",
+        "encoded": "@classmethod",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "6db821",
+        "hash": "e5486bd6",
+        "encoded": "def%20validate_tempo(cls,%20v:%20str)%20-%3E%20str:",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "6db821",
+        "hash": "55afe9a0",
+        "encoded": "%22%22%22Validate%20tempo%20is%20a%20reasonable%20value.%22%22%22",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "6db821",
+        "hash": "2073a861",
+        "encoded": "v_clean%20=%20v.strip().lower()",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "6db821",
+        "hash": "a0bd57c7",
+        "encoded": "if%20len(v_clean)%20%3C%203:",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "6db821",
+        "hash": "6dc0633a",
+        "encoded": "raise%20ValueError(%22Tempo%20description%20too%20short%22)",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "6db821",
+        "hash": "4a050a6f",
+        "encoded": "return%20v.strip()",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "6db821",
+        "hash": "e73f96f5",
+        "encoded": "@field_validator('energy')",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "6db821",
+        "hash": "e38bef93",
+        "encoded": "@classmethod",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "6db821",
+        "hash": "3d72eca5",
+        "encoded": "def%20validate_energy(cls,%20v:%20str)%20-%3E%20str:",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "6db821",
+        "hash": "706417f5",
+        "encoded": "%22%22%22Validate%20energy%20level%20description.%22%22%22",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "6db821",
+        "hash": "8b1ab83a",
+        "encoded": "v_clean%20=%20v.strip().lower()",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "6db821",
+        "hash": "d15be45d",
+        "encoded": "if%20len(v_clean)%20%3C%203:",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "6db821",
+        "hash": "7a275623",
+        "encoded": "raise%20ValueError(%22Energy%20description%20too%20short%22)",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "6db821",
+        "hash": "a386c481",
+        "encoded": "return%20v.strip()",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "6db821",
+        "hash": "8a622817",
+        "encoded": "class%20Config:",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "6db821",
+        "hash": "6b04d903",
+        "encoded": "%22%22%22Pydantic%20configuration.%22%22%22",
+        "prevChunkIds": []
+      },
+      "147": {
+        "chunkId": "6db821",
+        "hash": "9de7d372",
+        "encoded": "json_schema_extra%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "6db821",
+        "hash": "b6b16b68",
+        "encoded": "%22example%22:%20%7B",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "6db821",
+        "hash": "6587e92f",
+        "encoded": "%22memory_title%22:%20%22Last%20Day%20at%20College%20with%20Friends%22,",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "6db821",
+        "hash": "da4c5aac",
+        "encoded": "%22summary%22:%20%22A%20bittersweet%20farewell%20moment%20filled%20with%20happiness%20and%20nostalgia%20as%20college%20ends.%22,",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "6db821",
+        "hash": "2d664df3",
+        "encoded": "%22primary_emotions%22:%20%5B%22nostalgia%22,%20%22happiness%22,%20%22sadness%22%5D,",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "6db821",
+        "hash": "f0d73317",
+        "encoded": "%22secondary_emotions%22:%20%5B%22gratitude%22,%20%22hope%22%5D,",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "6db821",
+        "hash": "af6c754e",
+        "encoded": "%22emotional_intensity%22:%207,",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "6db821",
+        "hash": "48dde739",
+        "encoded": "%22themes%22:%20%5B%22friendship%22,%20%22farewell%22,%20%22life%20transitions%22,%20%22memories%22%5D,",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "6db821",
+        "hash": "7bd646b2",
+        "encoded": "%22context%22:%20%5B%22college%22,%20%22youth%22,%20%22coming%20of%20age%22%5D,",
+        "prevChunkIds": []
+      },
+      "156": {
+        "chunkId": "6db821",
+        "hash": "e18b857a",
+        "encoded": "%22genres%22:%20%5B%22indie%20folk%22,%20%22acoustic%20pop%22,%20%22soft%20rock%22%5D,",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "6db821",
+        "hash": "30e96d12",
+        "encoded": "%22instruments%22:%20%5B%22acoustic%20guitar%22,%20%22piano%22,%20%22strings%22,%20%22light%20percussion%22%5D,",
+        "prevChunkIds": []
+      },
+      "158": {
+        "chunkId": "6db821",
+        "hash": "9bae82a3",
+        "encoded": "%22tempo%22:%20%22moderate%22,",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "6db821",
+        "hash": "ef1bf79a",
+        "encoded": "%22energy%22:%20%22low%20to%20moderate%22,",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "6db821",
+        "hash": "3977b107",
+        "encoded": "%22atmosphere%22:%20%22warm,%20reflective,%20bittersweet%20with%20a%20touch%20of%20hope%22,",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "6db821",
+        "hash": "9d6f9fc2",
+        "encoded": "%22musical_description%22:%20%22Gentle%20acoustic%20melodies%20with%20warm%20instrumentation%20that%20balances%20uplifting%20elements%20with%20reflective,%20introspective%20moments.%20The%20music%20should%20feel%20like%20a%20warm%20embrace%20while%20acknowledging%20the%20bittersweetness%20of%20change.%22",
+        "prevChunkIds": []
+      },
+      "162": {
+        "chunkId": "6db821",
+        "hash": "9f3096f5",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "6db821",
+        "hash": "b205e858",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "166": {
+        "chunkId": "6db821",
+        "hash": "a56d2cea",
+        "encoded": "class%20TrackRecommendation(BaseModel):",
+        "prevChunkIds": []
+      },
+      "167": {
+        "chunkId": "6db821",
+        "hash": "07977e34",
+        "encoded": "%22%22%22Individual%20music%20track%20recommendation.%22%22%22",
+        "prevChunkIds": []
+      },
+      "169": {
+        "chunkId": "6db821",
+        "hash": "efe8f367",
+        "encoded": "track_id:%20str%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "170": {
+        "chunkId": "6db821",
+        "hash": "b89d8f4d",
+        "encoded": "...,",
+        "prevChunkIds": []
+      },
+      "171": {
+        "chunkId": "6db821",
+        "hash": "5072c2c5",
+        "encoded": "description=%22Unique%20track%20identifier%22",
+        "prevChunkIds": []
+      },
+      "172": {
+        "chunkId": "6db821",
+        "hash": "99553965",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "174": {
+        "chunkId": "6db821",
+        "hash": "709ee394",
+        "encoded": "track_name:%20str%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "175": {
+        "chunkId": "6db821",
+        "hash": "d3471209",
+        "encoded": "...,",
+        "prevChunkIds": []
+      },
+      "176": {
+        "chunkId": "6db821",
+        "hash": "1de1b1dc",
+        "encoded": "min_length=1,",
+        "prevChunkIds": []
+      },
+      "177": {
+        "chunkId": "6db821",
+        "hash": "b8bd22d1",
+        "encoded": "max_length=300,",
+        "prevChunkIds": []
+      },
+      "178": {
+        "chunkId": "6db821",
+        "hash": "0ccff8d7",
+        "encoded": "description=%22Track%20title%22",
+        "prevChunkIds": []
+      },
+      "179": {
+        "chunkId": "6db821",
+        "hash": "3eb301cc",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "181": {
+        "chunkId": "6db821",
+        "hash": "516c3f54",
+        "encoded": "artist:%20str%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "182": {
+        "chunkId": "6db821",
+        "hash": "ab542d42",
+        "encoded": "...,",
+        "prevChunkIds": []
+      },
+      "183": {
+        "chunkId": "6db821",
+        "hash": "98ee2f2d",
+        "encoded": "min_length=1,",
+        "prevChunkIds": []
+      },
+      "184": {
+        "chunkId": "6db821",
+        "hash": "d8841ed0",
+        "encoded": "max_length=300,",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "6db821",
+        "hash": "c05d8339",
+        "encoded": "description=%22Artist%20name%22",
+        "prevChunkIds": []
+      },
+      "186": {
+        "chunkId": "6db821",
+        "hash": "9b5a5613",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "188": {
+        "chunkId": "6db821",
+        "hash": "ed476244",
+        "encoded": "genre_tags:%20List%5Bstr%5D%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "189": {
+        "chunkId": "6db821",
+        "hash": "b5ba12a1",
+        "encoded": "default_factory=list,",
+        "prevChunkIds": []
+      },
+      "190": {
+        "chunkId": "6db821",
+        "hash": "964ee13b",
+        "encoded": "description=%22Genre%20tags%20from%20catalogue%22",
+        "prevChunkIds": []
+      },
+      "191": {
+        "chunkId": "6db821",
+        "hash": "ce892054",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "193": {
+        "chunkId": "6db821",
+        "hash": "126704a2",
+        "encoded": "mood_tags:%20List%5Bstr%5D%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "194": {
+        "chunkId": "6db821",
+        "hash": "740452a2",
+        "encoded": "default_factory=list,",
+        "prevChunkIds": []
+      },
+      "195": {
+        "chunkId": "6db821",
+        "hash": "82b2f244",
+        "encoded": "description=%22Mood/theme%20tags%20from%20catalogue%22",
+        "prevChunkIds": []
+      },
+      "196": {
+        "chunkId": "6db821",
+        "hash": "064de7a0",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "198": {
+        "chunkId": "6db821",
+        "hash": "4a22c2ef",
+        "encoded": "instrument_tags:%20List%5Bstr%5D%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "199": {
+        "chunkId": "6db821",
+        "hash": "0ae1a4cb",
+        "encoded": "default_factory=list,",
+        "prevChunkIds": []
+      },
+      "200": {
+        "chunkId": "6db821",
+        "hash": "25cffe8f",
+        "encoded": "description=%22Instrument%20tags%20from%20catalogue%22",
+        "prevChunkIds": []
+      },
+      "201": {
+        "chunkId": "6db821",
+        "hash": "137907cf",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "203": {
+        "chunkId": "6db821",
+        "hash": "d3de51bc",
+        "encoded": "relevance_score:%20float%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "204": {
+        "chunkId": "6db821",
+        "hash": "eb1a3f26",
+        "encoded": "...,",
+        "prevChunkIds": []
+      },
+      "205": {
+        "chunkId": "6db821",
+        "hash": "a165b656",
+        "encoded": "ge=0.0,",
+        "prevChunkIds": []
+      },
+      "206": {
+        "chunkId": "6db821",
+        "hash": "d12fa678",
+        "encoded": "le=1.0,",
+        "prevChunkIds": []
+      },
+      "207": {
+        "chunkId": "6db821",
+        "hash": "70923a2d",
+        "encoded": "description=%22Relevance%20score%20(0-1)%22",
+        "prevChunkIds": []
+      },
+      "208": {
+        "chunkId": "6db821",
+        "hash": "0b79f80c",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "210": {
+        "chunkId": "6db821",
+        "hash": "b8bd6d61",
+        "encoded": "explanation:%20str%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "211": {
+        "chunkId": "6db821",
+        "hash": "55654c34",
+        "encoded": "...,",
+        "prevChunkIds": []
+      },
+      "212": {
+        "chunkId": "6db821",
+        "hash": "c8e84930",
+        "encoded": "min_length=20,",
+        "prevChunkIds": []
+      },
+      "213": {
+        "chunkId": "6db821",
+        "hash": "d35b3c5b",
+        "encoded": "max_length=1000,",
+        "prevChunkIds": []
+      },
+      "214": {
+        "chunkId": "6db821",
+        "hash": "9e572bf5",
+        "encoded": "description=%22Explanation%20of%20why%20this%20track%20matches%20the%20memory%22",
+        "prevChunkIds": []
+      },
+      "215": {
+        "chunkId": "6db821",
+        "hash": "31c1f179",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "217": {
+        "chunkId": "6db821",
+        "hash": "4c07af2a",
+        "encoded": "source:%20str%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "218": {
+        "chunkId": "6db821",
+        "hash": "7c9d8fc2",
+        "encoded": "default=%22MTG-Jamendo%22,",
+        "prevChunkIds": []
+      },
+      "219": {
+        "chunkId": "6db821",
+        "hash": "f1a92377",
+        "encoded": "description=%22Data%20source%22",
+        "prevChunkIds": []
+      },
+      "220": {
+        "chunkId": "6db821",
+        "hash": "32dc898e",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "222": {
+        "chunkId": "6db821",
+        "hash": "29cbe009",
+        "encoded": "preview_url:%20Optional%5Bstr%5D%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "223": {
+        "chunkId": "6db821",
+        "hash": "4573156d",
+        "encoded": "default=None,",
+        "prevChunkIds": []
+      },
+      "224": {
+        "chunkId": "6db821",
+        "hash": "33bc9360",
+        "encoded": "description=%22Optional%20preview%20URL%20(if%20available%20and%20permitted)%22",
+        "prevChunkIds": []
+      },
+      "225": {
+        "chunkId": "6db821",
+        "hash": "0ae6f6be",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "227": {
+        "chunkId": "6db821",
+        "hash": "48190229",
+        "encoded": "class%20Config:",
+        "prevChunkIds": []
+      },
+      "228": {
+        "chunkId": "6db821",
+        "hash": "724ff002",
+        "encoded": "%22%22%22Pydantic%20configuration.%22%22%22",
+        "prevChunkIds": []
+      },
+      "229": {
+        "chunkId": "6db821",
+        "hash": "6c4088c9",
+        "encoded": "json_schema_extra%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "230": {
+        "chunkId": "6db821",
+        "hash": "9c49a300",
+        "encoded": "%22example%22:%20%7B",
+        "prevChunkIds": []
+      },
+      "231": {
+        "chunkId": "6db821",
+        "hash": "cf50e7a8",
+        "encoded": "%22track_id%22:%20%2212345%22,",
+        "prevChunkIds": []
+      },
+      "232": {
+        "chunkId": "6db821",
+        "hash": "069e5b19",
+        "encoded": "%22track_name%22:%20%22Memories%20Fade%22,",
+        "prevChunkIds": []
+      },
+      "233": {
+        "chunkId": "6db821",
+        "hash": "817e2b9a",
+        "encoded": "%22artist%22:%20%22Acoustic%20Dreamers%22,",
+        "prevChunkIds": []
+      },
+      "234": {
+        "chunkId": "6db821",
+        "hash": "bb058972",
+        "encoded": "%22genre_tags%22:%20%5B%22indie%22,%20%22folk%22,%20%22acoustic%22%5D,",
+        "prevChunkIds": []
+      },
+      "235": {
+        "chunkId": "6db821",
+        "hash": "5f055453",
+        "encoded": "%22mood_tags%22:%20%5B%22nostalgic%22,%20%22bittersweet%22,%20%22reflective%22%5D,",
+        "prevChunkIds": []
+      },
+      "236": {
+        "chunkId": "6db821",
+        "hash": "e07dc590",
+        "encoded": "%22instrument_tags%22:%20%5B%22guitar%22,%20%22piano%22%5D,",
+        "prevChunkIds": []
+      },
+      "237": {
+        "chunkId": "6db821",
+        "hash": "07d55868",
+        "encoded": "%22relevance_score%22:%200.92,",
+        "prevChunkIds": []
+      },
+      "238": {
+        "chunkId": "6db821",
+        "hash": "a2f29047",
+        "encoded": "%22explanation%22:%20%22This%20track%20perfectly%20captures%20the%20bittersweet%20nostalgia%20of%20your%20memory%20through%20gentle%20acoustic%20guitar%20and%20reflective%20piano%20melodies.%22,",
+        "prevChunkIds": []
+      },
+      "239": {
+        "chunkId": "6db821",
+        "hash": "d1a85fd3",
+        "encoded": "%22source%22:%20%22MTG-Jamendo%22,",
+        "prevChunkIds": []
+      },
+      "240": {
+        "chunkId": "6db821",
+        "hash": "27840bbf",
+        "encoded": "%22preview_url%22:%20None",
+        "prevChunkIds": []
+      },
+      "241": {
+        "chunkId": "6db821",
+        "hash": "d5bc439e",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "242": {
+        "chunkId": "6db821",
+        "hash": "606d46a9",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "245": {
+        "chunkId": "6db821",
+        "hash": "7221d051",
+        "encoded": "class%20SoundtrackResult(BaseModel):",
+        "prevChunkIds": []
+      },
+      "246": {
+        "chunkId": "6db821",
+        "hash": "2f45ef74",
+        "encoded": "%22%22%22Complete%20soundtrack%20generation%20result.%22%22%22",
+        "prevChunkIds": []
+      },
+      "248": {
+        "chunkId": "6db821",
+        "hash": "a4b712da",
+        "encoded": "memory_analysis:%20MemoryAnalysis%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "249": {
+        "chunkId": "6db821",
+        "hash": "156b755b",
+        "encoded": "...,",
+        "prevChunkIds": []
+      },
+      "250": {
+        "chunkId": "6db821",
+        "hash": "e28e8e0b",
+        "encoded": "description=%22Analyzed%20memory%20with%20emotions%20and%20musical%20characteristics%22",
+        "prevChunkIds": []
+      },
+      "251": {
+        "chunkId": "6db821",
+        "hash": "d1d9c34a",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "253": {
+        "chunkId": "6db821",
+        "hash": "6845dc54",
+        "encoded": "recommendations:%20List%5BTrackRecommendation%5D%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "254": {
+        "chunkId": "6db821",
+        "hash": "c41412c2",
+        "encoded": "...,",
+        "prevChunkIds": []
+      },
+      "255": {
+        "chunkId": "6db821",
+        "hash": "378d87d7",
+        "encoded": "min_length=1,",
+        "prevChunkIds": []
+      },
+      "256": {
+        "chunkId": "6db821",
+        "hash": "070fe5a1",
+        "encoded": "max_length=10,",
+        "prevChunkIds": []
+      },
+      "257": {
+        "chunkId": "6db821",
+        "hash": "85e6059d",
+        "encoded": "description=%22Recommended%20tracks%22",
+        "prevChunkIds": []
+      },
+      "258": {
+        "chunkId": "6db821",
+        "hash": "a3c9cb00",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "260": {
+        "chunkId": "6db821",
+        "hash": "e3021e7a",
+        "encoded": "overall_explanation:%20str%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "261": {
+        "chunkId": "6db821",
+        "hash": "5d1c72a0",
+        "encoded": "...,",
+        "prevChunkIds": []
+      },
+      "262": {
+        "chunkId": "6db821",
+        "hash": "06f91842",
+        "encoded": "min_length=50,",
+        "prevChunkIds": []
+      },
+      "263": {
+        "chunkId": "6db821",
+        "hash": "f417dff7",
+        "encoded": "max_length=2000,",
+        "prevChunkIds": []
+      },
+      "264": {
+        "chunkId": "6db821",
+        "hash": "27473b8a",
+        "encoded": "description=%22Overall%20explanation%20of%20the%20soundtrack%20selection%22",
+        "prevChunkIds": []
+      },
+      "265": {
+        "chunkId": "6db821",
+        "hash": "cb1ec5e1",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "267": {
+        "chunkId": "6db821",
+        "hash": "75b3e636",
+        "encoded": "retrieved_knowledge_summary:%20Optional%5BList%5Bstr%5D%5D%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "268": {
+        "chunkId": "6db821",
+        "hash": "661c0bd9",
+        "encoded": "default=None,",
+        "prevChunkIds": []
+      },
+      "269": {
+        "chunkId": "6db821",
+        "hash": "0645d9ac",
+        "encoded": "description=%22Summary%20of%20retrieved%20RAG%20context%20(for%20transparency)%22",
+        "prevChunkIds": []
+      },
+      "270": {
+        "chunkId": "6db821",
+        "hash": "a49f9a73",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "272": {
+        "chunkId": "6db821",
+        "hash": "0e2d5c4e",
+        "encoded": "generated_at:%20datetime%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "273": {
+        "chunkId": "6db821",
+        "hash": "aa3362ea",
+        "encoded": "default_factory=datetime.utcnow,",
+        "prevChunkIds": []
+      },
+      "274": {
+        "chunkId": "6db821",
+        "hash": "94598a97",
+        "encoded": "description=%22Timestamp%20of%20generation%22",
+        "prevChunkIds": []
+      },
+      "275": {
+        "chunkId": "6db821",
+        "hash": "a04a4801",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "278": {
+        "chunkId": "6db821",
+        "hash": "747cba21",
+        "encoded": "class%20SavedMemory(BaseModel):",
+        "prevChunkIds": []
+      },
+      "279": {
+        "chunkId": "6db821",
+        "hash": "eba97d9b",
+        "encoded": "%22%22%22Saved%20memory%20in%20the%20personal%20vault.%22%22%22",
+        "prevChunkIds": []
+      },
+      "281": {
+        "chunkId": "6db821",
+        "hash": "f95eee5a",
+        "encoded": "id:%20Optional%5Bint%5D%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "282": {
+        "chunkId": "6db821",
+        "hash": "2d9934d9",
+        "encoded": "default=None,",
+        "prevChunkIds": []
+      },
+      "283": {
+        "chunkId": "6db821",
+        "hash": "bd9342e6",
+        "encoded": "description=%22Database%20ID%20(auto-generated)%22",
+        "prevChunkIds": []
+      },
+      "284": {
+        "chunkId": "6db821",
+        "hash": "8eb92dbb",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "286": {
+        "chunkId": "6db821",
+        "hash": "0bfb69c3",
+        "encoded": "story:%20str%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "287": {
+        "chunkId": "6db821",
+        "hash": "072c51c7",
+        "encoded": "...,",
+        "prevChunkIds": []
+      },
+      "288": {
+        "chunkId": "6db821",
+        "hash": "61ecf589",
+        "encoded": "min_length=10,",
+        "prevChunkIds": []
+      },
+      "289": {
+        "chunkId": "6db821",
+        "hash": "37e68a63",
+        "encoded": "max_length=10000,",
+        "prevChunkIds": []
+      },
+      "290": {
+        "chunkId": "6db821",
+        "hash": "ed4b36f8",
+        "encoded": "description=%22Original%20memory%20story%22",
+        "prevChunkIds": []
+      },
+      "291": {
+        "chunkId": "6db821",
+        "hash": "1ef0d43b",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "293": {
+        "chunkId": "6db821",
+        "hash": "7c9c4cee",
+        "encoded": "memory_title:%20str%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "294": {
+        "chunkId": "6db821",
+        "hash": "2a15a9d8",
+        "encoded": "...,",
+        "prevChunkIds": []
+      },
+      "295": {
+        "chunkId": "6db821",
+        "hash": "3c3401e5",
+        "encoded": "description=%22Generated%20title%22",
+        "prevChunkIds": []
+      },
+      "296": {
+        "chunkId": "6db821",
+        "hash": "6f636190",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "298": {
+        "chunkId": "6db821",
+        "hash": "bc6fd112",
+        "encoded": "summary:%20str%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "299": {
+        "chunkId": "6db821",
+        "hash": "170e6a7e",
+        "encoded": "...,",
+        "prevChunkIds": []
+      },
+      "300": {
+        "chunkId": "6db821",
+        "hash": "bfb51e13",
+        "encoded": "description=%22Memory%20summary%22",
+        "prevChunkIds": []
+      },
+      "301": {
+        "chunkId": "6db821",
+        "hash": "922921a7",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "303": {
+        "chunkId": "6db821",
+        "hash": "e3881cc4",
+        "encoded": "emotions:%20List%5Bstr%5D%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "304": {
+        "chunkId": "6db821",
+        "hash": "bb2b734c",
+        "encoded": "...,",
+        "prevChunkIds": []
+      },
+      "305": {
+        "chunkId": "6db821",
+        "hash": "7604b0df",
+        "encoded": "description=%22All%20emotions%20(primary%20+%20secondary)%22",
+        "prevChunkIds": []
+      },
+      "306": {
+        "chunkId": "6db821",
+        "hash": "35cdd541",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "308": {
+        "chunkId": "6db821",
+        "hash": "593df280",
+        "encoded": "themes:%20List%5Bstr%5D%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "309": {
+        "chunkId": "6db821",
+        "hash": "ef1c6f9c",
+        "encoded": "...,",
+        "prevChunkIds": []
+      },
+      "310": {
+        "chunkId": "6db821",
+        "hash": "d52a29ef",
+        "encoded": "description=%22Themes%20identified%22",
+        "prevChunkIds": []
+      },
+      "311": {
+        "chunkId": "6db821",
+        "hash": "c400c7e7",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "313": {
+        "chunkId": "6db821",
+        "hash": "8fb18720",
+        "encoded": "musical_attributes:%20Dict%5Bstr,%20Any%5D%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "314": {
+        "chunkId": "6db821",
+        "hash": "724764b4",
+        "encoded": "...,",
+        "prevChunkIds": []
+      },
+      "315": {
+        "chunkId": "6db821",
+        "hash": "b83a5724",
+        "encoded": "description=%22Musical%20characteristics%20(genres,%20instruments,%20tempo,%20etc.)%22",
+        "prevChunkIds": []
+      },
+      "316": {
+        "chunkId": "6db821",
+        "hash": "08421340",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "318": {
+        "chunkId": "6db821",
+        "hash": "36070527",
+        "encoded": "recommendations:%20List%5BDict%5Bstr,%20Any%5D%5D%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "319": {
+        "chunkId": "6db821",
+        "hash": "076c3433",
+        "encoded": "...,",
+        "prevChunkIds": []
+      },
+      "320": {
+        "chunkId": "6db821",
+        "hash": "74471281",
+        "encoded": "description=%22Track%20recommendations%20as%20dicts%22",
+        "prevChunkIds": []
+      },
+      "321": {
+        "chunkId": "6db821",
+        "hash": "68f3be91",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "323": {
+        "chunkId": "6db821",
+        "hash": "fd9930e0",
+        "encoded": "explanation:%20str%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "324": {
+        "chunkId": "6db821",
+        "hash": "e16a7f3f",
+        "encoded": "...,",
+        "prevChunkIds": []
+      },
+      "325": {
+        "chunkId": "6db821",
+        "hash": "d42a71a5",
+        "encoded": "description=%22Overall%20soundtrack%20explanation%22",
+        "prevChunkIds": []
+      },
+      "326": {
+        "chunkId": "6db821",
+        "hash": "999a7d9d",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "328": {
+        "chunkId": "6db821",
+        "hash": "54f517f2",
+        "encoded": "created_at:%20datetime%20=%20Field(",
+        "prevChunkIds": []
+      },
+      "329": {
+        "chunkId": "6db821",
+        "hash": "14981a5c",
+        "encoded": "default_factory=datetime.utcnow,",
+        "prevChunkIds": []
+      },
+      "330": {
+        "chunkId": "6db821",
+        "hash": "47589118",
+        "encoded": "description=%22Save%20timestamp%22",
+        "prevChunkIds": []
+      },
+      "331": {
+        "chunkId": "6db821",
+        "hash": "833c67f0",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "333": {
+        "chunkId": "6db821",
+        "hash": "29d498ac",
+        "encoded": "class%20Config:",
+        "prevChunkIds": []
+      },
+      "334": {
+        "chunkId": "6db821",
+        "hash": "3e8750d4",
+        "encoded": "%22%22%22Pydantic%20configuration.%22%22%22",
+        "prevChunkIds": []
+      },
+      "335": {
+        "chunkId": "6db821",
+        "hash": "ff50b113",
+        "encoded": "from_attributes%20=%20True",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

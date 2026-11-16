@@ -1,0 +1,798 @@
+{
+  "scripts\\setup_windows.ps1": {
+    "filename": "setup_windows.ps1",
+    "path": "scripts\\setup_windows.ps1",
+    "version": "1.2",
+    "contextFile": "222396b8-context.json",
+    "chunks": {
+      "c2782e": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794813864,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "7318d5db"
+        },
+        "hash": "a998bb0f",
+        "messageId": "system_9a937770-e18d-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/16/2026, 12:54:24 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "c2782e",
+        "hash": "728e40ac",
+        "encoded": "#%20============================================================================",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "c2782e",
+        "hash": "316f22c2",
+        "encoded": "#%20The%20Soundtrack%20of%20Your%20Life%20-%20Windows%20Setup%20Script",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "c2782e",
+        "hash": "74045fda",
+        "encoded": "#%20============================================================================",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "c2782e",
+        "hash": "ff390481",
+        "encoded": "Write-Host%20%22%60n================================================================%22%20-ForegroundColor%20Cyan",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "c2782e",
+        "hash": "200a1340",
+        "encoded": "Write-Host%20%22THE%20SOUNDTRACK%20OF%20YOUR%20LIFE%20-%20Windows%20Setup%22%20-ForegroundColor%20Cyan",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "c2782e",
+        "hash": "b1c65e2b",
+        "encoded": "Write-Host%20%22================================================================%60n%22%20-ForegroundColor%20Cyan",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "c2782e",
+        "hash": "1e968a5d",
+        "encoded": "#%20Check%20Python%20version",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "c2782e",
+        "hash": "b458642b",
+        "encoded": "Write-Host%20%22%5B1/9%5D%20Checking%20Python%20installation...%22%20-ForegroundColor%20Yellow",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "c2782e",
+        "hash": "eb07a9d5",
+        "encoded": "try%20%7B",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "c2782e",
+        "hash": "817d4d6b",
+        "encoded": "$pythonVersion%20=%20python%20--version%202%3E&1",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "c2782e",
+        "hash": "7344e15d",
+        "encoded": "Write-Host%20%22%20%20Found:%20$pythonVersion%22%20-ForegroundColor%20Green",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "c2782e",
+        "hash": "27961329",
+        "encoded": "#%20Extract%20version%20number",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "c2782e",
+        "hash": "20ef9fde",
+        "encoded": "if%20($pythonVersion%20-match%20%22Python%20(%5Cd+)%5C.(%5Cd+)%22)%20%7B",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "c2782e",
+        "hash": "cfb5e064",
+        "encoded": "$major%20=%20%5Bint%5D$matches%5B1%5D",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "c2782e",
+        "hash": "b7de20ff",
+        "encoded": "$minor%20=%20%5Bint%5D$matches%5B2%5D",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "c2782e",
+        "hash": "55daf466",
+        "encoded": "if%20($major%20-lt%203%20-or%20($major%20-eq%203%20-and%20$minor%20-lt%2011))%20%7B",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "c2782e",
+        "hash": "52b645e7",
+        "encoded": "Write-Host%20%22%20%20%5BERROR%5D%20Python%203.11+%20required.%20Please%20upgrade%20from%20https://www.python.org/downloads/%22%20-ForegroundColor%20Red",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "c2782e",
+        "hash": "19d26833",
+        "encoded": "exit%201",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "c2782e",
+        "hash": "7b3531ab",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "c2782e",
+        "hash": "71870443",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "c2782e",
+        "hash": "ab35f8cf",
+        "encoded": "%7D%20catch%20%7B",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "c2782e",
+        "hash": "9e0d4128",
+        "encoded": "Write-Host%20%22%20%20%5BERROR%5D%20Python%20not%20found.%20Install%20from%20https://www.python.org/downloads/%22%20-ForegroundColor%20Red",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "c2782e",
+        "hash": "ef27ddb9",
+        "encoded": "exit%201",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "c2782e",
+        "hash": "46b23985",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "c2782e",
+        "hash": "c35753e1",
+        "encoded": "#%20Check%20Git",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "c2782e",
+        "hash": "c3d68340",
+        "encoded": "Write-Host%20%22%60n%5B2/9%5D%20Checking%20Git%20installation...%22%20-ForegroundColor%20Yellow",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "c2782e",
+        "hash": "8132407d",
+        "encoded": "try%20%7B",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "c2782e",
+        "hash": "10618190",
+        "encoded": "$gitVersion%20=%20git%20--version%202%3E&1",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "c2782e",
+        "hash": "112beffc",
+        "encoded": "Write-Host%20%22%20%20Found:%20$gitVersion%22%20-ForegroundColor%20Green",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "c2782e",
+        "hash": "baa12762",
+        "encoded": "%7D%20catch%20%7B",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "c2782e",
+        "hash": "565b11cb",
+        "encoded": "Write-Host%20%22%20%20%5BWARNING%5D%20Git%20not%20found%20(optional%20for%20cloning).%20Download%20from%20https://git-scm.com/%22%20-ForegroundColor%20DarkYellow",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "c2782e",
+        "hash": "1b754c76",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "c2782e",
+        "hash": "eff5ce7a",
+        "encoded": "#%20Check%20Ollama",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "c2782e",
+        "hash": "225ebabf",
+        "encoded": "Write-Host%20%22%60n%5B3/9%5D%20Checking%20Ollama%20installation...%22%20-ForegroundColor%20Yellow",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "c2782e",
+        "hash": "bca53730",
+        "encoded": "try%20%7B",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "c2782e",
+        "hash": "6f9bb240",
+        "encoded": "$ollamaCheck%20=%20Invoke-RestMethod%20-Uri%20%22http://localhost:11434/api/tags%22%20-TimeoutSec%205%20-ErrorAction%20Stop",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "c2782e",
+        "hash": "6dd070e6",
+        "encoded": "$modelCount%20=%20$ollamaCheck.models.Count",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "c2782e",
+        "hash": "4b4ee4c7",
+        "encoded": "Write-Host%20%22%20%20%5BOK%5D%20Ollama%20is%20running%20with%20$modelCount%20model(s)%22%20-ForegroundColor%20Green",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "c2782e",
+        "hash": "0d64a39b",
+        "encoded": "#%20Check%20for%20qwen2.5:3b",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "c2782e",
+        "hash": "e3a16549",
+        "encoded": "$hasQwen%20=%20$ollamaCheck.models%20%7C%20Where-Object%20%7B%20$_.name%20-eq%20%22qwen2.5:3b%22%20%7D",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "c2782e",
+        "hash": "d355d1b9",
+        "encoded": "if%20($hasQwen)%20%7B",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "c2782e",
+        "hash": "9fae48fd",
+        "encoded": "Write-Host%20%22%20%20%5BOK%5D%20Model%20qwen2.5:3b%20is%20available%22%20-ForegroundColor%20Green",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "c2782e",
+        "hash": "80a51d02",
+        "encoded": "%7D%20else%20%7B",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "c2782e",
+        "hash": "00e1d74d",
+        "encoded": "Write-Host%20%22%20%20%5BWARNING%5D%20Model%20qwen2.5:3b%20not%20found%22%20-ForegroundColor%20DarkYellow",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "c2782e",
+        "hash": "1e48e5c2",
+        "encoded": "Write-Host%20%22%20%20Run:%20ollama%20pull%20qwen2.5:3b%22%20-ForegroundColor%20Yellow",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "c2782e",
+        "hash": "cdb7b2a0",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "c2782e",
+        "hash": "6d368357",
+        "encoded": "%7D%20catch%20%7B",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "c2782e",
+        "hash": "6c2b8559",
+        "encoded": "Write-Host%20%22%20%20%5BERROR%5D%20Ollama%20not%20running%20or%20not%20installed%22%20-ForegroundColor%20Red",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "c2782e",
+        "hash": "29b2e8a5",
+        "encoded": "Write-Host%20%22%20%20Install%20from:%20https://ollama.com/download/windows%22%20-ForegroundColor%20Yellow",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "c2782e",
+        "hash": "2b71c2fc",
+        "encoded": "Write-Host%20%22%20%20After%20installation,%20run:%20ollama%20pull%20qwen2.5:3b%22%20-ForegroundColor%20Yellow",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "c2782e",
+        "hash": "9ba61142",
+        "encoded": "$continue%20=%20Read-Host%20%22%20%20Continue%20setup%20anyway?%20(y/n)%22",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "c2782e",
+        "hash": "a9f359c8",
+        "encoded": "if%20($continue%20-ne%20'y')%20%7B",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "c2782e",
+        "hash": "e33343e5",
+        "encoded": "exit%201",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "c2782e",
+        "hash": "f706ff69",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "c2782e",
+        "hash": "bf862585",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "c2782e",
+        "hash": "d780e9e7",
+        "encoded": "#%20Create%20virtual%20environment",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "c2782e",
+        "hash": "0f407c8f",
+        "encoded": "Write-Host%20%22%60n%5B4/9%5D%20Creating%20virtual%20environment...%22%20-ForegroundColor%20Yellow",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "c2782e",
+        "hash": "69ede0c8",
+        "encoded": "if%20(Test-Path%20%22.venv%22)%20%7B",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "c2782e",
+        "hash": "5985298b",
+        "encoded": "Write-Host%20%22%20%20%5BOK%5D%20Virtual%20environment%20already%20exists%22%20-ForegroundColor%20Green",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "c2782e",
+        "hash": "af90a6a6",
+        "encoded": "%7D%20else%20%7B",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "c2782e",
+        "hash": "af48e4e0",
+        "encoded": "try%20%7B",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "c2782e",
+        "hash": "399104b2",
+        "encoded": "python%20-m%20venv%20.venv",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "c2782e",
+        "hash": "41f27a07",
+        "encoded": "Write-Host%20%22%20%20%5BOK%5D%20Virtual%20environment%20created%22%20-ForegroundColor%20Green",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "c2782e",
+        "hash": "0c5c3470",
+        "encoded": "%7D%20catch%20%7B",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "c2782e",
+        "hash": "f1178e39",
+        "encoded": "Write-Host%20%22%20%20%5BERROR%5D%20Failed%20to%20create%20virtual%20environment%22%20-ForegroundColor%20Red",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "c2782e",
+        "hash": "8f26c5d1",
+        "encoded": "exit%201",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "c2782e",
+        "hash": "d6938858",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "c2782e",
+        "hash": "74977a35",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "c2782e",
+        "hash": "d36b7f91",
+        "encoded": "#%20Activate%20virtual%20environment",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "c2782e",
+        "hash": "e8d8e966",
+        "encoded": "Write-Host%20%22%60n%5B5/9%5D%20Activating%20virtual%20environment...%22%20-ForegroundColor%20Yellow",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "c2782e",
+        "hash": "5f42dd46",
+        "encoded": "try%20%7B",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "c2782e",
+        "hash": "1d7903c3",
+        "encoded": "&%20.venv%5CScripts%5CActivate.ps1",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "c2782e",
+        "hash": "9aef88a8",
+        "encoded": "Write-Host%20%22%20%20%5BOK%5D%20Virtual%20environment%20activated%22%20-ForegroundColor%20Green",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "c2782e",
+        "hash": "7332af4d",
+        "encoded": "%7D%20catch%20%7B",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "c2782e",
+        "hash": "9e5d2ba1",
+        "encoded": "Write-Host%20%22%20%20%5BERROR%5D%20Failed%20to%20activate%20virtual%20environment%22%20-ForegroundColor%20Red",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "c2782e",
+        "hash": "6b8025e0",
+        "encoded": "Write-Host%20%22%20%20You%20may%20need%20to%20run:%20Set-ExecutionPolicy%20-ExecutionPolicy%20RemoteSigned%20-Scope%20CurrentUser%22%20-ForegroundColor%20Yellow",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "c2782e",
+        "hash": "76ca44e6",
+        "encoded": "exit%201",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "c2782e",
+        "hash": "db89230b",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "c2782e",
+        "hash": "e5baf2a9",
+        "encoded": "#%20Upgrade%20pip",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "c2782e",
+        "hash": "20ac93f6",
+        "encoded": "Write-Host%20%22%60n%5B6/9%5D%20Upgrading%20pip...%22%20-ForegroundColor%20Yellow",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "c2782e",
+        "hash": "1de81801",
+        "encoded": "python%20-m%20pip%20install%20--upgrade%20pip%20--quiet",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "c2782e",
+        "hash": "ba6ac354",
+        "encoded": "Write-Host%20%22%20%20%5BOK%5D%20Pip%20upgraded%22%20-ForegroundColor%20Green",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "c2782e",
+        "hash": "9efc4d12",
+        "encoded": "#%20Install%20dependencies",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "c2782e",
+        "hash": "8e7d5e61",
+        "encoded": "Write-Host%20%22%60n%5B7/9%5D%20Installing%20Python%20dependencies...%22%20-ForegroundColor%20Yellow",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "c2782e",
+        "hash": "18cee573",
+        "encoded": "Write-Host%20%22%20%20This%20may%20take%20several%20minutes%20(downloading%20~500MB)...%22%20-ForegroundColor%20DarkYellow",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "c2782e",
+        "hash": "6e2f82d3",
+        "encoded": "try%20%7B",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "c2782e",
+        "hash": "15f0f663",
+        "encoded": "pip%20install%20-r%20requirements.txt%20--quiet",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "c2782e",
+        "hash": "d030107d",
+        "encoded": "Write-Host%20%22%20%20%5BOK%5D%20Dependencies%20installed%22%20-ForegroundColor%20Green",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "c2782e",
+        "hash": "302aa29b",
+        "encoded": "%7D%20catch%20%7B",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "c2782e",
+        "hash": "24dfae6a",
+        "encoded": "Write-Host%20%22%20%20%5BERROR%5D%20Failed%20to%20install%20dependencies%22%20-ForegroundColor%20Red",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "c2782e",
+        "hash": "4b12d304",
+        "encoded": "Write-Host%20%22%20%20Try%20manually:%20pip%20install%20-r%20requirements.txt%22%20-ForegroundColor%20Yellow",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "c2782e",
+        "hash": "4bcdc786",
+        "encoded": "exit%201",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "c2782e",
+        "hash": "3674f723",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "c2782e",
+        "hash": "9c417ff8",
+        "encoded": "#%20Create%20.env%20file",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "c2782e",
+        "hash": "d194ab55",
+        "encoded": "Write-Host%20%22%60n%5B8/9%5D%20Creating%20configuration%20file...%22%20-ForegroundColor%20Yellow",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "c2782e",
+        "hash": "7acfd3cc",
+        "encoded": "if%20(Test-Path%20%22.env%22)%20%7B",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "c2782e",
+        "hash": "dda85f62",
+        "encoded": "Write-Host%20%22%20%20%5BOK%5D%20.env%20file%20already%20exists%22%20-ForegroundColor%20Green",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "c2782e",
+        "hash": "aa984182",
+        "encoded": "%7D%20else%20%7B",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "c2782e",
+        "hash": "4d162d07",
+        "encoded": "try%20%7B",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "c2782e",
+        "hash": "29404698",
+        "encoded": "Copy-Item%20%22.env.example%22%20%22.env%22",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "c2782e",
+        "hash": "9f0e8c5c",
+        "encoded": "Write-Host%20%22%20%20%5BOK%5D%20Created%20.env%20from%20.env.example%22%20-ForegroundColor%20Green",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "c2782e",
+        "hash": "4f56085d",
+        "encoded": "Write-Host%20%22%20%20You%20can%20edit%20.env%20to%20customize%20settings%22%20-ForegroundColor%20DarkYellow",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "c2782e",
+        "hash": "dd67898f",
+        "encoded": "%7D%20catch%20%7B",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "c2782e",
+        "hash": "dc9e7db4",
+        "encoded": "Write-Host%20%22%20%20%5BERROR%5D%20Failed%20to%20create%20.env%20file%22%20-ForegroundColor%20Red",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "c2782e",
+        "hash": "5513b7ee",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "c2782e",
+        "hash": "b945986d",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "c2782e",
+        "hash": "ee734362",
+        "encoded": "#%20Create%20required%20directories",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "c2782e",
+        "hash": "6f83073d",
+        "encoded": "Write-Host%20%22%60n%5B9/9%5D%20Creating%20application%20directories...%22%20-ForegroundColor%20Yellow",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "c2782e",
+        "hash": "47faa365",
+        "encoded": "try%20%7B",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "c2782e",
+        "hash": "3d93f290",
+        "encoded": "python%20-c%20%22from%20config.settings%20import%20get_settings;%20get_settings().ensure_directories()%22",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "c2782e",
+        "hash": "74c334b9",
+        "encoded": "Write-Host%20%22%20%20%5BOK%5D%20Application%20directories%20created%22%20-ForegroundColor%20Green",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "c2782e",
+        "hash": "2123ea2f",
+        "encoded": "%7D%20catch%20%7B",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "c2782e",
+        "hash": "0bba5756",
+        "encoded": "Write-Host%20%22%20%20%5BWARNING%5D%20Could%20not%20create%20directories%20(will%20be%20created%20at%20runtime)%22%20-ForegroundColor%20DarkYellow",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "c2782e",
+        "hash": "1dc2599e",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "c2782e",
+        "hash": "c71c6004",
+        "encoded": "#%20Summary",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "c2782e",
+        "hash": "9a0bdc9c",
+        "encoded": "Write-Host%20%22%60n================================================================%22%20-ForegroundColor%20Cyan",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "c2782e",
+        "hash": "d2b580ac",
+        "encoded": "Write-Host%20%22SETUP%20COMPLETE!%22%20-ForegroundColor%20Green",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "c2782e",
+        "hash": "3cde925f",
+        "encoded": "Write-Host%20%22================================================================%22%20-ForegroundColor%20Cyan",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "c2782e",
+        "hash": "b691654f",
+        "encoded": "Write-Host%20%22%60nNext%20steps:%22%20-ForegroundColor%20Yellow",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "c2782e",
+        "hash": "97aabb7d",
+        "encoded": "Write-Host%20%22%20%201.%20Build%20knowledge%20base:%22%20-ForegroundColor%20White",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "c2782e",
+        "hash": "8789ae27",
+        "encoded": "Write-Host%20%22%20%20%20%20%20python%20scripts%5Cbuild_knowledge_base.py%22%20-ForegroundColor%20Gray",
+        "prevChunkIds": []
+      },
+      "147": {
+        "chunkId": "c2782e",
+        "hash": "492d1fbc",
+        "encoded": "Write-Host%20%22%60n%20%202.%20Run%20the%20application:%22%20-ForegroundColor%20White",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "c2782e",
+        "hash": "3d9cd079",
+        "encoded": "Write-Host%20%22%20%20%20%20%20.%5Cscripts%5Crun_windows.ps1%22%20-ForegroundColor%20Gray",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "c2782e",
+        "hash": "941e8dc9",
+        "encoded": "Write-Host%20%22%20%20%20%20%20OR%22%20-ForegroundColor%20DarkGray",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "c2782e",
+        "hash": "36ae9a57",
+        "encoded": "Write-Host%20%22%20%20%20%20%20streamlit%20run%20app.py%22%20-ForegroundColor%20Gray",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "c2782e",
+        "hash": "0eba730c",
+        "encoded": "Write-Host%20%22%60n%20%203.%20Run%20health%20check%20(optional):%22%20-ForegroundColor%20White",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "c2782e",
+        "hash": "40dff791",
+        "encoded": "Write-Host%20%22%20%20%20%20%20python%20modules%5Chealth_check.py%22%20-ForegroundColor%20Gray",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "c2782e",
+        "hash": "077c6ee5",
+        "encoded": "Write-Host%20%22%60n================================================================%60n%22%20-ForegroundColor%20Cyan",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

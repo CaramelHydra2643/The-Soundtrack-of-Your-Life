@@ -1,0 +1,1842 @@
+{
+  "modules\\memory_vault.py": {
+    "filename": "memory_vault.py",
+    "path": "modules\\memory_vault.py",
+    "version": "1.2",
+    "contextFile": "63ae8abd-context.json",
+    "chunks": {
+      "827714": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794813010,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "f74bf8b2"
+        },
+        "hash": "1b96125e",
+        "messageId": "system_34fe0610-e18c-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/16/2026, 12:40:10 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "827714",
+        "hash": "9cef9ccb",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "827714",
+        "hash": "113e19c1",
+        "encoded": "Memory%20Vault%20Module",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "827714",
+        "hash": "6a5cd12d",
+        "encoded": "Manages%20persistent%20storage%20of%20analyzed%20memories%20and%20recommendations%20using%20SQLite.",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "827714",
+        "hash": "6766a9a9",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "827714",
+        "hash": "64820e3e",
+        "encoded": "import%20logging",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "827714",
+        "hash": "d124ca5b",
+        "encoded": "import%20sqlite3",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "827714",
+        "hash": "9dbf7119",
+        "encoded": "import%20json",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "827714",
+        "hash": "65a83ad2",
+        "encoded": "from%20datetime%20import%20datetime",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "827714",
+        "hash": "8b446ad8",
+        "encoded": "from%20pathlib%20import%20Path",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "827714",
+        "hash": "43bf0e6d",
+        "encoded": "from%20typing%20import%20List,%20Dict,%20Any,%20Optional",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "827714",
+        "hash": "790d41f0",
+        "encoded": "from%20config.settings%20import%20get_settings",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "827714",
+        "hash": "33e317bf",
+        "encoded": "from%20schemas.memory_schema%20import%20SavedMemory,%20SoundtrackResult",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "827714",
+        "hash": "1601021b",
+        "encoded": "logger%20=%20logging.getLogger(__name__)",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "827714",
+        "hash": "0360f75a",
+        "encoded": "class%20MemoryVault:",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "827714",
+        "hash": "b85afe49",
+        "encoded": "%22%22%22Manages%20persistent%20storage%20of%20personal%20memories%20and%20their%20soundtracks.%22%22%22",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "827714",
+        "hash": "5a02b2a8",
+        "encoded": "def%20__init__(self):",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "827714",
+        "hash": "134100dd",
+        "encoded": "%22%22%22Initialize%20memory%20vault%20with%20SQLite%20database.%22%22%22",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "827714",
+        "hash": "774d206a",
+        "encoded": "self.settings%20=%20get_settings()",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "827714",
+        "hash": "322f184d",
+        "encoded": "self.db_path%20=%20self.settings.db_path",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "827714",
+        "hash": "f538ed49",
+        "encoded": "self._initialize_database()",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "827714",
+        "hash": "adcab3ea",
+        "encoded": "def%20_initialize_database(self):",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "827714",
+        "hash": "a136d799",
+        "encoded": "%22%22%22Create%20database%20and%20tables%20if%20they%20don't%20exist.%22%22%22",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "827714",
+        "hash": "7561d2fa",
+        "encoded": "try:",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "827714",
+        "hash": "ba54a7c6",
+        "encoded": "#%20Ensure%20parent%20directory%20exists",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "827714",
+        "hash": "94843d85",
+        "encoded": "self.db_path.parent.mkdir(parents=True,%20exist_ok=True)",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "827714",
+        "hash": "454213d2",
+        "encoded": "#%20Connect%20and%20create%20tables",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "827714",
+        "hash": "eec9f1ca",
+        "encoded": "conn%20=%20sqlite3.connect(str(self.db_path))",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "827714",
+        "hash": "3e627d0a",
+        "encoded": "cursor%20=%20conn.cursor()",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "827714",
+        "hash": "bc57719c",
+        "encoded": "cursor.execute(%22%22%22",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "827714",
+        "hash": "763d2569",
+        "encoded": "CREATE%20TABLE%20IF%20NOT%20EXISTS%20memories%20(",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "827714",
+        "hash": "9e550aa3",
+        "encoded": "id%20INTEGER%20PRIMARY%20KEY%20AUTOINCREMENT,",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "827714",
+        "hash": "2bc6844c",
+        "encoded": "story%20TEXT%20NOT%20NULL,",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "827714",
+        "hash": "38a50793",
+        "encoded": "memory_title%20TEXT%20NOT%20NULL,",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "827714",
+        "hash": "840a92ea",
+        "encoded": "summary%20TEXT%20NOT%20NULL,",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "827714",
+        "hash": "9e3fa48d",
+        "encoded": "emotions%20TEXT%20NOT%20NULL,",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "827714",
+        "hash": "6662026c",
+        "encoded": "themes%20TEXT%20NOT%20NULL,",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "827714",
+        "hash": "a9893e31",
+        "encoded": "musical_attributes%20TEXT%20NOT%20NULL,",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "827714",
+        "hash": "266aad7b",
+        "encoded": "recommendations%20TEXT%20NOT%20NULL,",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "827714",
+        "hash": "27cd6c54",
+        "encoded": "explanation%20TEXT,",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "827714",
+        "hash": "f6ab62cb",
+        "encoded": "created_at%20TIMESTAMP%20DEFAULT%20CURRENT_TIMESTAMP",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "827714",
+        "hash": "00f5570a",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "827714",
+        "hash": "0658828d",
+        "encoded": "%22%22%22)",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "827714",
+        "hash": "7f3053d1",
+        "encoded": "#%20Create%20indexes%20for%20faster%20searching",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "827714",
+        "hash": "cce2d4aa",
+        "encoded": "cursor.execute(",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "827714",
+        "hash": "39dae192",
+        "encoded": "%22CREATE%20INDEX%20IF%20NOT%20EXISTS%20idx_created_at%20ON%20memories(created_at%20DESC)%22",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "827714",
+        "hash": "e4a7e8dd",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "827714",
+        "hash": "33311490",
+        "encoded": "cursor.execute(",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "827714",
+        "hash": "94770e52",
+        "encoded": "%22CREATE%20INDEX%20IF%20NOT%20EXISTS%20idx_memory_title%20ON%20memories(memory_title)%22",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "827714",
+        "hash": "86d6f6a3",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "827714",
+        "hash": "9832162a",
+        "encoded": "conn.commit()",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "827714",
+        "hash": "5ce40455",
+        "encoded": "conn.close()",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "827714",
+        "hash": "b9eabe81",
+        "encoded": "logger.info(f%22Database%20initialized:%20%7Bself.db_path%7D%22)",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "827714",
+        "hash": "0427d04b",
+        "encoded": "except%20Exception%20as%20e:",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "827714",
+        "hash": "d7c6a180",
+        "encoded": "logger.error(f%22Failed%20to%20initialize%20database:%20%7Be%7D%22)",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "827714",
+        "hash": "f579a759",
+        "encoded": "raise",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "827714",
+        "hash": "c6e6f272",
+        "encoded": "def%20save_memory(",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "827714",
+        "hash": "5df165b0",
+        "encoded": "self,",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "827714",
+        "hash": "b8764473",
+        "encoded": "story:%20str,",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "827714",
+        "hash": "dd79c884",
+        "encoded": "soundtrack_result:%20SoundtrackResult",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "827714",
+        "hash": "c0cfd816",
+        "encoded": ")%20-%3E%20Optional%5Bint%5D:",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "827714",
+        "hash": "2adce5a7",
+        "encoded": "%22%22%22Save%20a%20memory%20and%20its%20soundtrack%20to%20the%20vault.",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "827714",
+        "hash": "33df3520",
+        "encoded": "Args:",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "827714",
+        "hash": "af2d7d42",
+        "encoded": "story:%20Original%20memory%20text",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "827714",
+        "hash": "cb036ee5",
+        "encoded": "soundtrack_result:%20Complete%20soundtrack%20generation%20result",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "827714",
+        "hash": "3015cb47",
+        "encoded": "Returns:",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "827714",
+        "hash": "417c7410",
+        "encoded": "Memory%20ID%20if%20successful,%20None%20otherwise",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "827714",
+        "hash": "5468c29e",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "827714",
+        "hash": "867deb1b",
+        "encoded": "try:",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "827714",
+        "hash": "9c64fb5c",
+        "encoded": "analysis%20=%20soundtrack_result.memory_analysis",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "827714",
+        "hash": "2bd6b630",
+        "encoded": "#%20Combine%20all%20emotions",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "827714",
+        "hash": "36ef6afe",
+        "encoded": "all_emotions%20=%20analysis.primary_emotions%20+%20analysis.secondary_emotions",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "827714",
+        "hash": "1f28185b",
+        "encoded": "#%20Prepare%20musical%20attributes",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "827714",
+        "hash": "40199ddb",
+        "encoded": "musical_attributes%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "827714",
+        "hash": "482179fa",
+        "encoded": "'genres':%20analysis.genres,",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "827714",
+        "hash": "f10c8395",
+        "encoded": "'instruments':%20analysis.instruments,",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "827714",
+        "hash": "2b3180ae",
+        "encoded": "'tempo':%20analysis.tempo,",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "827714",
+        "hash": "2a7ad115",
+        "encoded": "'energy':%20analysis.energy,",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "827714",
+        "hash": "9e344a6b",
+        "encoded": "'atmosphere':%20analysis.atmosphere,",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "827714",
+        "hash": "082dd777",
+        "encoded": "'musical_description':%20analysis.musical_description",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "827714",
+        "hash": "998d938c",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "827714",
+        "hash": "f8bef24c",
+        "encoded": "#%20Convert%20recommendations%20to%20dicts",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "827714",
+        "hash": "86f72cb5",
+        "encoded": "recommendations_data%20=%20%5B",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "827714",
+        "hash": "d0d5dd21",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "827714",
+        "hash": "b7520955",
+        "encoded": "'track_id':%20rec.track_id,",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "827714",
+        "hash": "0adf51c9",
+        "encoded": "'track_name':%20rec.track_name,",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "827714",
+        "hash": "25ac8703",
+        "encoded": "'artist':%20rec.artist,",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "827714",
+        "hash": "e39dc637",
+        "encoded": "'genre_tags':%20rec.genre_tags,",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "827714",
+        "hash": "95adfdb2",
+        "encoded": "'mood_tags':%20rec.mood_tags,",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "827714",
+        "hash": "14e37b35",
+        "encoded": "'instrument_tags':%20rec.instrument_tags,",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "827714",
+        "hash": "6a33caac",
+        "encoded": "'relevance_score':%20rec.relevance_score,",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "827714",
+        "hash": "9ab5eefe",
+        "encoded": "'explanation':%20rec.explanation,",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "827714",
+        "hash": "4ec546ad",
+        "encoded": "'source':%20rec.source",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "827714",
+        "hash": "3674f723",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "827714",
+        "hash": "98e07cb3",
+        "encoded": "for%20rec%20in%20soundtrack_result.recommendations",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "827714",
+        "hash": "6bbde2d6",
+        "encoded": "%5D",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "827714",
+        "hash": "32e402f7",
+        "encoded": "conn%20=%20sqlite3.connect(str(self.db_path))",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "827714",
+        "hash": "5e2dbb21",
+        "encoded": "cursor%20=%20conn.cursor()",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "827714",
+        "hash": "55da93bb",
+        "encoded": "cursor.execute(%22%22%22",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "827714",
+        "hash": "1ca6d408",
+        "encoded": "INSERT%20INTO%20memories%20(",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "827714",
+        "hash": "e9866b01",
+        "encoded": "story,%20memory_title,%20summary,%20emotions,%20themes,",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "827714",
+        "hash": "f4afd345",
+        "encoded": "musical_attributes,%20recommendations,%20explanation",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "827714",
+        "hash": "ba9dbef3",
+        "encoded": ")%20VALUES%20(?,%20?,%20?,%20?,%20?,%20?,%20?,%20?)",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "827714",
+        "hash": "c8378f51",
+        "encoded": "%22%22%22,%20(",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "827714",
+        "hash": "05ee29bb",
+        "encoded": "story,",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "827714",
+        "hash": "44351fc2",
+        "encoded": "analysis.memory_title,",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "827714",
+        "hash": "c8c542cc",
+        "encoded": "analysis.summary,",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "827714",
+        "hash": "fe2ed626",
+        "encoded": "json.dumps(all_emotions),",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "827714",
+        "hash": "f946cd8b",
+        "encoded": "json.dumps(analysis.themes),",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "827714",
+        "hash": "fb6f1bc8",
+        "encoded": "json.dumps(musical_attributes),",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "827714",
+        "hash": "d875ca10",
+        "encoded": "json.dumps(recommendations_data),",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "827714",
+        "hash": "f327ffc6",
+        "encoded": "soundtrack_result.overall_explanation",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "827714",
+        "hash": "40070d22",
+        "encoded": "))",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "827714",
+        "hash": "58b258c5",
+        "encoded": "memory_id%20=%20cursor.lastrowid",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "827714",
+        "hash": "04c6a950",
+        "encoded": "conn.commit()",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "827714",
+        "hash": "2280abfc",
+        "encoded": "conn.close()",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "827714",
+        "hash": "51b29484",
+        "encoded": "logger.info(f%22Saved%20memory%20with%20ID:%20%7Bmemory_id%7D%22)",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "827714",
+        "hash": "3911c726",
+        "encoded": "return%20memory_id",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "827714",
+        "hash": "36ded174",
+        "encoded": "except%20Exception%20as%20e:",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "827714",
+        "hash": "6abd875c",
+        "encoded": "logger.error(f%22Failed%20to%20save%20memory:%20%7Be%7D%22)",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "827714",
+        "hash": "50269f34",
+        "encoded": "return%20None",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "827714",
+        "hash": "a13ce26d",
+        "encoded": "def%20get_all_memories(self,%20limit:%20int%20=%20100)%20-%3E%20List%5BDict%5Bstr,%20Any%5D%5D:",
+        "prevChunkIds": []
+      },
+      "147": {
+        "chunkId": "827714",
+        "hash": "3e67699f",
+        "encoded": "%22%22%22Retrieve%20all%20saved%20memories.",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "827714",
+        "hash": "0dc91929",
+        "encoded": "Args:",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "827714",
+        "hash": "a03d836c",
+        "encoded": "limit:%20Maximum%20number%20of%20memories%20to%20return",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "827714",
+        "hash": "80636ba5",
+        "encoded": "Returns:",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "827714",
+        "hash": "7ab2fde3",
+        "encoded": "List%20of%20memory%20dictionaries",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "827714",
+        "hash": "ac5dcc3d",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "827714",
+        "hash": "1ab1fd28",
+        "encoded": "try:",
+        "prevChunkIds": []
+      },
+      "156": {
+        "chunkId": "827714",
+        "hash": "6921156b",
+        "encoded": "conn%20=%20sqlite3.connect(str(self.db_path))",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "827714",
+        "hash": "866e416a",
+        "encoded": "conn.row_factory%20=%20sqlite3.Row",
+        "prevChunkIds": []
+      },
+      "158": {
+        "chunkId": "827714",
+        "hash": "d0774a23",
+        "encoded": "cursor%20=%20conn.cursor()",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "827714",
+        "hash": "f429118e",
+        "encoded": "cursor.execute(",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "827714",
+        "hash": "0e4055fb",
+        "encoded": "%22SELECT%20*%20FROM%20memories%20ORDER%20BY%20created_at%20DESC%20LIMIT%20?%22,",
+        "prevChunkIds": []
+      },
+      "162": {
+        "chunkId": "827714",
+        "hash": "75c08ec9",
+        "encoded": "(limit,)",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "827714",
+        "hash": "787836bd",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "165": {
+        "chunkId": "827714",
+        "hash": "f7871a6e",
+        "encoded": "rows%20=%20cursor.fetchall()",
+        "prevChunkIds": []
+      },
+      "166": {
+        "chunkId": "827714",
+        "hash": "aec6660d",
+        "encoded": "conn.close()",
+        "prevChunkIds": []
+      },
+      "168": {
+        "chunkId": "827714",
+        "hash": "f88f6475",
+        "encoded": "memories%20=%20%5B%5D",
+        "prevChunkIds": []
+      },
+      "169": {
+        "chunkId": "827714",
+        "hash": "3fa03857",
+        "encoded": "for%20row%20in%20rows:",
+        "prevChunkIds": []
+      },
+      "170": {
+        "chunkId": "827714",
+        "hash": "5bfd4a07",
+        "encoded": "memory%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "171": {
+        "chunkId": "827714",
+        "hash": "7c260308",
+        "encoded": "'id':%20row%5B'id'%5D,",
+        "prevChunkIds": []
+      },
+      "172": {
+        "chunkId": "827714",
+        "hash": "977f6194",
+        "encoded": "'story':%20row%5B'story'%5D,",
+        "prevChunkIds": []
+      },
+      "173": {
+        "chunkId": "827714",
+        "hash": "e1bbbc8f",
+        "encoded": "'memory_title':%20row%5B'memory_title'%5D,",
+        "prevChunkIds": []
+      },
+      "174": {
+        "chunkId": "827714",
+        "hash": "a1bf8739",
+        "encoded": "'summary':%20row%5B'summary'%5D,",
+        "prevChunkIds": []
+      },
+      "175": {
+        "chunkId": "827714",
+        "hash": "8d36d088",
+        "encoded": "'emotions':%20json.loads(row%5B'emotions'%5D),",
+        "prevChunkIds": []
+      },
+      "176": {
+        "chunkId": "827714",
+        "hash": "eea231b7",
+        "encoded": "'themes':%20json.loads(row%5B'themes'%5D),",
+        "prevChunkIds": []
+      },
+      "177": {
+        "chunkId": "827714",
+        "hash": "191ce25f",
+        "encoded": "'musical_attributes':%20json.loads(row%5B'musical_attributes'%5D),",
+        "prevChunkIds": []
+      },
+      "178": {
+        "chunkId": "827714",
+        "hash": "7069456e",
+        "encoded": "'recommendations':%20json.loads(row%5B'recommendations'%5D),",
+        "prevChunkIds": []
+      },
+      "179": {
+        "chunkId": "827714",
+        "hash": "d47cc1b1",
+        "encoded": "'explanation':%20row%5B'explanation'%5D,",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "827714",
+        "hash": "122ec3bc",
+        "encoded": "'created_at':%20row%5B'created_at'%5D",
+        "prevChunkIds": []
+      },
+      "181": {
+        "chunkId": "827714",
+        "hash": "1e08084c",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "182": {
+        "chunkId": "827714",
+        "hash": "9e515278",
+        "encoded": "memories.append(memory)",
+        "prevChunkIds": []
+      },
+      "184": {
+        "chunkId": "827714",
+        "hash": "6b6c3b78",
+        "encoded": "logger.info(f%22Retrieved%20%7Blen(memories)%7D%20memories%22)",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "827714",
+        "hash": "66a1d475",
+        "encoded": "return%20memories",
+        "prevChunkIds": []
+      },
+      "187": {
+        "chunkId": "827714",
+        "hash": "98aaf978",
+        "encoded": "except%20Exception%20as%20e:",
+        "prevChunkIds": []
+      },
+      "188": {
+        "chunkId": "827714",
+        "hash": "8e3577ec",
+        "encoded": "logger.error(f%22Failed%20to%20retrieve%20memories:%20%7Be%7D%22)",
+        "prevChunkIds": []
+      },
+      "189": {
+        "chunkId": "827714",
+        "hash": "85e19919",
+        "encoded": "return%20%5B%5D",
+        "prevChunkIds": []
+      },
+      "191": {
+        "chunkId": "827714",
+        "hash": "7b197151",
+        "encoded": "def%20get_memory_by_id(self,%20memory_id:%20int)%20-%3E%20Optional%5BDict%5Bstr,%20Any%5D%5D:",
+        "prevChunkIds": []
+      },
+      "192": {
+        "chunkId": "827714",
+        "hash": "fea2d41d",
+        "encoded": "%22%22%22Retrieve%20a%20specific%20memory%20by%20ID.",
+        "prevChunkIds": []
+      },
+      "194": {
+        "chunkId": "827714",
+        "hash": "81ecb4c4",
+        "encoded": "Args:",
+        "prevChunkIds": []
+      },
+      "195": {
+        "chunkId": "827714",
+        "hash": "80499826",
+        "encoded": "memory_id:%20Memory%20identifier",
+        "prevChunkIds": []
+      },
+      "197": {
+        "chunkId": "827714",
+        "hash": "8441a092",
+        "encoded": "Returns:",
+        "prevChunkIds": []
+      },
+      "198": {
+        "chunkId": "827714",
+        "hash": "dcbe6c7f",
+        "encoded": "Memory%20dictionary%20or%20None",
+        "prevChunkIds": []
+      },
+      "199": {
+        "chunkId": "827714",
+        "hash": "ec080ab0",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "200": {
+        "chunkId": "827714",
+        "hash": "09ee04bd",
+        "encoded": "try:",
+        "prevChunkIds": []
+      },
+      "201": {
+        "chunkId": "827714",
+        "hash": "5aac9a10",
+        "encoded": "conn%20=%20sqlite3.connect(str(self.db_path))",
+        "prevChunkIds": []
+      },
+      "202": {
+        "chunkId": "827714",
+        "hash": "e98d67f0",
+        "encoded": "conn.row_factory%20=%20sqlite3.Row",
+        "prevChunkIds": []
+      },
+      "203": {
+        "chunkId": "827714",
+        "hash": "26675e8e",
+        "encoded": "cursor%20=%20conn.cursor()",
+        "prevChunkIds": []
+      },
+      "205": {
+        "chunkId": "827714",
+        "hash": "5ef8ace3",
+        "encoded": "cursor.execute(%22SELECT%20*%20FROM%20memories%20WHERE%20id%20=%20?%22,%20(memory_id,))",
+        "prevChunkIds": []
+      },
+      "206": {
+        "chunkId": "827714",
+        "hash": "35f38ab3",
+        "encoded": "row%20=%20cursor.fetchone()",
+        "prevChunkIds": []
+      },
+      "207": {
+        "chunkId": "827714",
+        "hash": "b8a9df15",
+        "encoded": "conn.close()",
+        "prevChunkIds": []
+      },
+      "209": {
+        "chunkId": "827714",
+        "hash": "24059b2c",
+        "encoded": "if%20not%20row:",
+        "prevChunkIds": []
+      },
+      "210": {
+        "chunkId": "827714",
+        "hash": "010cd8a5",
+        "encoded": "return%20None",
+        "prevChunkIds": []
+      },
+      "212": {
+        "chunkId": "827714",
+        "hash": "182e1588",
+        "encoded": "memory%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "213": {
+        "chunkId": "827714",
+        "hash": "1ae172b1",
+        "encoded": "'id':%20row%5B'id'%5D,",
+        "prevChunkIds": []
+      },
+      "214": {
+        "chunkId": "827714",
+        "hash": "f04dde03",
+        "encoded": "'story':%20row%5B'story'%5D,",
+        "prevChunkIds": []
+      },
+      "215": {
+        "chunkId": "827714",
+        "hash": "504430ca",
+        "encoded": "'memory_title':%20row%5B'memory_title'%5D,",
+        "prevChunkIds": []
+      },
+      "216": {
+        "chunkId": "827714",
+        "hash": "fffe603c",
+        "encoded": "'summary':%20row%5B'summary'%5D,",
+        "prevChunkIds": []
+      },
+      "217": {
+        "chunkId": "827714",
+        "hash": "8b687d7c",
+        "encoded": "'emotions':%20json.loads(row%5B'emotions'%5D),",
+        "prevChunkIds": []
+      },
+      "218": {
+        "chunkId": "827714",
+        "hash": "7c25b440",
+        "encoded": "'themes':%20json.loads(row%5B'themes'%5D),",
+        "prevChunkIds": []
+      },
+      "219": {
+        "chunkId": "827714",
+        "hash": "e1320077",
+        "encoded": "'musical_attributes':%20json.loads(row%5B'musical_attributes'%5D),",
+        "prevChunkIds": []
+      },
+      "220": {
+        "chunkId": "827714",
+        "hash": "400274c3",
+        "encoded": "'recommendations':%20json.loads(row%5B'recommendations'%5D),",
+        "prevChunkIds": []
+      },
+      "221": {
+        "chunkId": "827714",
+        "hash": "563558c9",
+        "encoded": "'explanation':%20row%5B'explanation'%5D,",
+        "prevChunkIds": []
+      },
+      "222": {
+        "chunkId": "827714",
+        "hash": "23057a02",
+        "encoded": "'created_at':%20row%5B'created_at'%5D",
+        "prevChunkIds": []
+      },
+      "223": {
+        "chunkId": "827714",
+        "hash": "75bbcadd",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "225": {
+        "chunkId": "827714",
+        "hash": "53b9ef16",
+        "encoded": "return%20memory",
+        "prevChunkIds": []
+      },
+      "227": {
+        "chunkId": "827714",
+        "hash": "1976c046",
+        "encoded": "except%20Exception%20as%20e:",
+        "prevChunkIds": []
+      },
+      "228": {
+        "chunkId": "827714",
+        "hash": "a4392c1a",
+        "encoded": "logger.error(f%22Failed%20to%20retrieve%20memory%20%7Bmemory_id%7D:%20%7Be%7D%22)",
+        "prevChunkIds": []
+      },
+      "229": {
+        "chunkId": "827714",
+        "hash": "9cdef908",
+        "encoded": "return%20None",
+        "prevChunkIds": []
+      },
+      "231": {
+        "chunkId": "827714",
+        "hash": "966192d4",
+        "encoded": "def%20search_memories(self,%20query:%20str)%20-%3E%20List%5BDict%5Bstr,%20Any%5D%5D:",
+        "prevChunkIds": []
+      },
+      "232": {
+        "chunkId": "827714",
+        "hash": "c8f7a3cd",
+        "encoded": "%22%22%22Search%20memories%20by%20keyword.",
+        "prevChunkIds": []
+      },
+      "234": {
+        "chunkId": "827714",
+        "hash": "10c81d4c",
+        "encoded": "Args:",
+        "prevChunkIds": []
+      },
+      "235": {
+        "chunkId": "827714",
+        "hash": "4537c336",
+        "encoded": "query:%20Search%20query%20string",
+        "prevChunkIds": []
+      },
+      "237": {
+        "chunkId": "827714",
+        "hash": "ba5aa534",
+        "encoded": "Returns:",
+        "prevChunkIds": []
+      },
+      "238": {
+        "chunkId": "827714",
+        "hash": "2cc9433b",
+        "encoded": "List%20of%20matching%20memories",
+        "prevChunkIds": []
+      },
+      "239": {
+        "chunkId": "827714",
+        "hash": "fbfe3f48",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "240": {
+        "chunkId": "827714",
+        "hash": "52b300e1",
+        "encoded": "try:",
+        "prevChunkIds": []
+      },
+      "241": {
+        "chunkId": "827714",
+        "hash": "a1fd6b64",
+        "encoded": "conn%20=%20sqlite3.connect(str(self.db_path))",
+        "prevChunkIds": []
+      },
+      "242": {
+        "chunkId": "827714",
+        "hash": "27f42bb0",
+        "encoded": "conn.row_factory%20=%20sqlite3.Row",
+        "prevChunkIds": []
+      },
+      "243": {
+        "chunkId": "827714",
+        "hash": "4c91e06c",
+        "encoded": "cursor%20=%20conn.cursor()",
+        "prevChunkIds": []
+      },
+      "245": {
+        "chunkId": "827714",
+        "hash": "409e836d",
+        "encoded": "search_pattern%20=%20f%22%25%7Bquery%7D%25%22",
+        "prevChunkIds": []
+      },
+      "246": {
+        "chunkId": "827714",
+        "hash": "5a1ab861",
+        "encoded": "cursor.execute(%22%22%22",
+        "prevChunkIds": []
+      },
+      "247": {
+        "chunkId": "827714",
+        "hash": "7e6d077d",
+        "encoded": "SELECT%20*%20FROM%20memories",
+        "prevChunkIds": []
+      },
+      "248": {
+        "chunkId": "827714",
+        "hash": "99f687b0",
+        "encoded": "WHERE%20story%20LIKE%20?%20OR%20memory_title%20LIKE%20?%20OR%20summary%20LIKE%20?",
+        "prevChunkIds": []
+      },
+      "249": {
+        "chunkId": "827714",
+        "hash": "614787ad",
+        "encoded": "ORDER%20BY%20created_at%20DESC",
+        "prevChunkIds": []
+      },
+      "250": {
+        "chunkId": "827714",
+        "hash": "59791ba3",
+        "encoded": "%22%22%22,%20(search_pattern,%20search_pattern,%20search_pattern))",
+        "prevChunkIds": []
+      },
+      "252": {
+        "chunkId": "827714",
+        "hash": "77580bb5",
+        "encoded": "rows%20=%20cursor.fetchall()",
+        "prevChunkIds": []
+      },
+      "253": {
+        "chunkId": "827714",
+        "hash": "e56b034a",
+        "encoded": "conn.close()",
+        "prevChunkIds": []
+      },
+      "255": {
+        "chunkId": "827714",
+        "hash": "1a2eb8ff",
+        "encoded": "memories%20=%20%5B%5D",
+        "prevChunkIds": []
+      },
+      "256": {
+        "chunkId": "827714",
+        "hash": "ae3c2371",
+        "encoded": "for%20row%20in%20rows:",
+        "prevChunkIds": []
+      },
+      "257": {
+        "chunkId": "827714",
+        "hash": "fdd13a9b",
+        "encoded": "memory%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "258": {
+        "chunkId": "827714",
+        "hash": "dca09d82",
+        "encoded": "'id':%20row%5B'id'%5D,",
+        "prevChunkIds": []
+      },
+      "259": {
+        "chunkId": "827714",
+        "hash": "e9e4f7b6",
+        "encoded": "'story':%20row%5B'story'%5D,",
+        "prevChunkIds": []
+      },
+      "260": {
+        "chunkId": "827714",
+        "hash": "2070f0e9",
+        "encoded": "'memory_title':%20row%5B'memory_title'%5D,",
+        "prevChunkIds": []
+      },
+      "261": {
+        "chunkId": "827714",
+        "hash": "a07111e3",
+        "encoded": "'summary':%20row%5B'summary'%5D,",
+        "prevChunkIds": []
+      },
+      "262": {
+        "chunkId": "827714",
+        "hash": "bfd007b4",
+        "encoded": "'emotions':%20json.loads(row%5B'emotions'%5D),",
+        "prevChunkIds": []
+      },
+      "263": {
+        "chunkId": "827714",
+        "hash": "d3d2f5f7",
+        "encoded": "'themes':%20json.loads(row%5B'themes'%5D),",
+        "prevChunkIds": []
+      },
+      "264": {
+        "chunkId": "827714",
+        "hash": "b0adc945",
+        "encoded": "'musical_attributes':%20json.loads(row%5B'musical_attributes'%5D),",
+        "prevChunkIds": []
+      },
+      "265": {
+        "chunkId": "827714",
+        "hash": "958dfed0",
+        "encoded": "'recommendations':%20json.loads(row%5B'recommendations'%5D),",
+        "prevChunkIds": []
+      },
+      "266": {
+        "chunkId": "827714",
+        "hash": "0a0dc95b",
+        "encoded": "'explanation':%20row%5B'explanation'%5D,",
+        "prevChunkIds": []
+      },
+      "267": {
+        "chunkId": "827714",
+        "hash": "063cb905",
+        "encoded": "'created_at':%20row%5B'created_at'%5D",
+        "prevChunkIds": []
+      },
+      "268": {
+        "chunkId": "827714",
+        "hash": "5c85fe45",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "269": {
+        "chunkId": "827714",
+        "hash": "2cae364e",
+        "encoded": "memories.append(memory)",
+        "prevChunkIds": []
+      },
+      "271": {
+        "chunkId": "827714",
+        "hash": "dc543091",
+        "encoded": "logger.info(f%22Found%20%7Blen(memories)%7D%20memories%20matching%20'%7Bquery%7D'%22)",
+        "prevChunkIds": []
+      },
+      "272": {
+        "chunkId": "827714",
+        "hash": "c3610615",
+        "encoded": "return%20memories",
+        "prevChunkIds": []
+      },
+      "274": {
+        "chunkId": "827714",
+        "hash": "3b6458d8",
+        "encoded": "except%20Exception%20as%20e:",
+        "prevChunkIds": []
+      },
+      "275": {
+        "chunkId": "827714",
+        "hash": "8ef47cd0",
+        "encoded": "logger.error(f%22Failed%20to%20search%20memories:%20%7Be%7D%22)",
+        "prevChunkIds": []
+      },
+      "276": {
+        "chunkId": "827714",
+        "hash": "920102b0",
+        "encoded": "return%20%5B%5D",
+        "prevChunkIds": []
+      },
+      "278": {
+        "chunkId": "827714",
+        "hash": "c5ab191c",
+        "encoded": "def%20filter_by_emotion(self,%20emotion:%20str)%20-%3E%20List%5BDict%5Bstr,%20Any%5D%5D:",
+        "prevChunkIds": []
+      },
+      "279": {
+        "chunkId": "827714",
+        "hash": "d2921517",
+        "encoded": "%22%22%22Filter%20memories%20by%20emotion.",
+        "prevChunkIds": []
+      },
+      "281": {
+        "chunkId": "827714",
+        "hash": "47b684d9",
+        "encoded": "Args:",
+        "prevChunkIds": []
+      },
+      "282": {
+        "chunkId": "827714",
+        "hash": "69a4dfa0",
+        "encoded": "emotion:%20Emotion%20to%20filter%20by",
+        "prevChunkIds": []
+      },
+      "284": {
+        "chunkId": "827714",
+        "hash": "3af00dad",
+        "encoded": "Returns:",
+        "prevChunkIds": []
+      },
+      "285": {
+        "chunkId": "827714",
+        "hash": "99aff052",
+        "encoded": "List%20of%20matching%20memories",
+        "prevChunkIds": []
+      },
+      "286": {
+        "chunkId": "827714",
+        "hash": "46cc8b00",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "287": {
+        "chunkId": "827714",
+        "hash": "7fc721c6",
+        "encoded": "all_memories%20=%20self.get_all_memories()",
+        "prevChunkIds": []
+      },
+      "289": {
+        "chunkId": "827714",
+        "hash": "52d6f56e",
+        "encoded": "filtered%20=%20%5B",
+        "prevChunkIds": []
+      },
+      "290": {
+        "chunkId": "827714",
+        "hash": "f7ecdfcd",
+        "encoded": "memory%20for%20memory%20in%20all_memories",
+        "prevChunkIds": []
+      },
+      "291": {
+        "chunkId": "827714",
+        "hash": "aacee702",
+        "encoded": "if%20any(emotion.lower()%20in%20e.lower()%20for%20e%20in%20memory%5B'emotions'%5D)",
+        "prevChunkIds": []
+      },
+      "292": {
+        "chunkId": "827714",
+        "hash": "e2945885",
+        "encoded": "%5D",
+        "prevChunkIds": []
+      },
+      "294": {
+        "chunkId": "827714",
+        "hash": "6213644b",
+        "encoded": "logger.info(f%22Found%20%7Blen(filtered)%7D%20memories%20with%20emotion%20'%7Bemotion%7D'%22)",
+        "prevChunkIds": []
+      },
+      "295": {
+        "chunkId": "827714",
+        "hash": "aad97a98",
+        "encoded": "return%20filtered",
+        "prevChunkIds": []
+      },
+      "297": {
+        "chunkId": "827714",
+        "hash": "8581642e",
+        "encoded": "def%20filter_by_theme(self,%20theme:%20str)%20-%3E%20List%5BDict%5Bstr,%20Any%5D%5D:",
+        "prevChunkIds": []
+      },
+      "298": {
+        "chunkId": "827714",
+        "hash": "feb5e195",
+        "encoded": "%22%22%22Filter%20memories%20by%20theme.",
+        "prevChunkIds": []
+      },
+      "300": {
+        "chunkId": "827714",
+        "hash": "c1ef719d",
+        "encoded": "Args:",
+        "prevChunkIds": []
+      },
+      "301": {
+        "chunkId": "827714",
+        "hash": "0f780bf2",
+        "encoded": "theme:%20Theme%20to%20filter%20by",
+        "prevChunkIds": []
+      },
+      "303": {
+        "chunkId": "827714",
+        "hash": "8d1a0005",
+        "encoded": "Returns:",
+        "prevChunkIds": []
+      },
+      "304": {
+        "chunkId": "827714",
+        "hash": "48ccfa5e",
+        "encoded": "List%20of%20matching%20memories",
+        "prevChunkIds": []
+      },
+      "305": {
+        "chunkId": "827714",
+        "hash": "ec398383",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "306": {
+        "chunkId": "827714",
+        "hash": "1bb56464",
+        "encoded": "all_memories%20=%20self.get_all_memories()",
+        "prevChunkIds": []
+      },
+      "308": {
+        "chunkId": "827714",
+        "hash": "7fcbb31a",
+        "encoded": "filtered%20=%20%5B",
+        "prevChunkIds": []
+      },
+      "309": {
+        "chunkId": "827714",
+        "hash": "4568a61d",
+        "encoded": "memory%20for%20memory%20in%20all_memories",
+        "prevChunkIds": []
+      },
+      "310": {
+        "chunkId": "827714",
+        "hash": "b97aa360",
+        "encoded": "if%20any(theme.lower()%20in%20t.lower()%20for%20t%20in%20memory%5B'themes'%5D)",
+        "prevChunkIds": []
+      },
+      "311": {
+        "chunkId": "827714",
+        "hash": "51842375",
+        "encoded": "%5D",
+        "prevChunkIds": []
+      },
+      "313": {
+        "chunkId": "827714",
+        "hash": "0ddf0225",
+        "encoded": "logger.info(f%22Found%20%7Blen(filtered)%7D%20memories%20with%20theme%20'%7Btheme%7D'%22)",
+        "prevChunkIds": []
+      },
+      "314": {
+        "chunkId": "827714",
+        "hash": "72f623c3",
+        "encoded": "return%20filtered",
+        "prevChunkIds": []
+      },
+      "316": {
+        "chunkId": "827714",
+        "hash": "148ffa31",
+        "encoded": "def%20delete_memory(self,%20memory_id:%20int)%20-%3E%20bool:",
+        "prevChunkIds": []
+      },
+      "317": {
+        "chunkId": "827714",
+        "hash": "c8972c3d",
+        "encoded": "%22%22%22Delete%20a%20memory%20from%20the%20vault.",
+        "prevChunkIds": []
+      },
+      "319": {
+        "chunkId": "827714",
+        "hash": "61a2607d",
+        "encoded": "Args:",
+        "prevChunkIds": []
+      },
+      "320": {
+        "chunkId": "827714",
+        "hash": "9a5d2c6a",
+        "encoded": "memory_id:%20Memory%20identifier",
+        "prevChunkIds": []
+      },
+      "322": {
+        "chunkId": "827714",
+        "hash": "3a6714e6",
+        "encoded": "Returns:",
+        "prevChunkIds": []
+      },
+      "323": {
+        "chunkId": "827714",
+        "hash": "c8cf6503",
+        "encoded": "True%20if%20successful,%20False%20otherwise",
+        "prevChunkIds": []
+      },
+      "324": {
+        "chunkId": "827714",
+        "hash": "afedaea1",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "325": {
+        "chunkId": "827714",
+        "hash": "81ce3db8",
+        "encoded": "try:",
+        "prevChunkIds": []
+      },
+      "326": {
+        "chunkId": "827714",
+        "hash": "f25b7336",
+        "encoded": "conn%20=%20sqlite3.connect(str(self.db_path))",
+        "prevChunkIds": []
+      },
+      "327": {
+        "chunkId": "827714",
+        "hash": "256e272b",
+        "encoded": "cursor%20=%20conn.cursor()",
+        "prevChunkIds": []
+      },
+      "329": {
+        "chunkId": "827714",
+        "hash": "5706dfa0",
+        "encoded": "cursor.execute(%22DELETE%20FROM%20memories%20WHERE%20id%20=%20?%22,%20(memory_id,))",
+        "prevChunkIds": []
+      },
+      "331": {
+        "chunkId": "827714",
+        "hash": "1c41b8ae",
+        "encoded": "deleted%20=%20cursor.rowcount%20%3E%200",
+        "prevChunkIds": []
+      },
+      "332": {
+        "chunkId": "827714",
+        "hash": "74eb814d",
+        "encoded": "conn.commit()",
+        "prevChunkIds": []
+      },
+      "333": {
+        "chunkId": "827714",
+        "hash": "25d29f2b",
+        "encoded": "conn.close()",
+        "prevChunkIds": []
+      },
+      "335": {
+        "chunkId": "827714",
+        "hash": "e1d20cad",
+        "encoded": "if%20deleted:",
+        "prevChunkIds": []
+      },
+      "336": {
+        "chunkId": "827714",
+        "hash": "1fe44570",
+        "encoded": "logger.info(f%22Deleted%20memory%20%7Bmemory_id%7D%22)",
+        "prevChunkIds": []
+      },
+      "337": {
+        "chunkId": "827714",
+        "hash": "dfa12ef3",
+        "encoded": "else:",
+        "prevChunkIds": []
+      },
+      "338": {
+        "chunkId": "827714",
+        "hash": "2d41f1b5",
+        "encoded": "logger.warning(f%22Memory%20%7Bmemory_id%7D%20not%20found%22)",
+        "prevChunkIds": []
+      },
+      "340": {
+        "chunkId": "827714",
+        "hash": "885c454e",
+        "encoded": "return%20deleted",
+        "prevChunkIds": []
+      },
+      "342": {
+        "chunkId": "827714",
+        "hash": "ebc87f8f",
+        "encoded": "except%20Exception%20as%20e:",
+        "prevChunkIds": []
+      },
+      "343": {
+        "chunkId": "827714",
+        "hash": "4c28d557",
+        "encoded": "logger.error(f%22Failed%20to%20delete%20memory%20%7Bmemory_id%7D:%20%7Be%7D%22)",
+        "prevChunkIds": []
+      },
+      "344": {
+        "chunkId": "827714",
+        "hash": "fbb248ac",
+        "encoded": "return%20False",
+        "prevChunkIds": []
+      },
+      "346": {
+        "chunkId": "827714",
+        "hash": "11e54e11",
+        "encoded": "def%20get_stats(self)%20-%3E%20Dict%5Bstr,%20Any%5D:",
+        "prevChunkIds": []
+      },
+      "347": {
+        "chunkId": "827714",
+        "hash": "ca9ba529",
+        "encoded": "%22%22%22Get%20vault%20statistics.",
+        "prevChunkIds": []
+      },
+      "349": {
+        "chunkId": "827714",
+        "hash": "55d4a149",
+        "encoded": "Returns:",
+        "prevChunkIds": []
+      },
+      "350": {
+        "chunkId": "827714",
+        "hash": "eb21dce5",
+        "encoded": "Dictionary%20with%20statistics",
+        "prevChunkIds": []
+      },
+      "351": {
+        "chunkId": "827714",
+        "hash": "1a6bbf37",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "352": {
+        "chunkId": "827714",
+        "hash": "59e80b2e",
+        "encoded": "try:",
+        "prevChunkIds": []
+      },
+      "353": {
+        "chunkId": "827714",
+        "hash": "8342c6c2",
+        "encoded": "conn%20=%20sqlite3.connect(str(self.db_path))",
+        "prevChunkIds": []
+      },
+      "354": {
+        "chunkId": "827714",
+        "hash": "738ea47e",
+        "encoded": "cursor%20=%20conn.cursor()",
+        "prevChunkIds": []
+      },
+      "356": {
+        "chunkId": "827714",
+        "hash": "2f900b4b",
+        "encoded": "cursor.execute(%22SELECT%20COUNT(*)%20FROM%20memories%22)",
+        "prevChunkIds": []
+      },
+      "357": {
+        "chunkId": "827714",
+        "hash": "f357e35f",
+        "encoded": "total%20=%20cursor.fetchone()%5B0%5D",
+        "prevChunkIds": []
+      },
+      "359": {
+        "chunkId": "827714",
+        "hash": "88ba77a0",
+        "encoded": "cursor.execute(%22SELECT%20created_at%20FROM%20memories%20ORDER%20BY%20created_at%20ASC%20LIMIT%201%22)",
+        "prevChunkIds": []
+      },
+      "360": {
+        "chunkId": "827714",
+        "hash": "ab04ab35",
+        "encoded": "oldest%20=%20cursor.fetchone()",
+        "prevChunkIds": []
+      },
+      "362": {
+        "chunkId": "827714",
+        "hash": "42a953a4",
+        "encoded": "cursor.execute(%22SELECT%20created_at%20FROM%20memories%20ORDER%20BY%20created_at%20DESC%20LIMIT%201%22)",
+        "prevChunkIds": []
+      },
+      "363": {
+        "chunkId": "827714",
+        "hash": "dd73b787",
+        "encoded": "newest%20=%20cursor.fetchone()",
+        "prevChunkIds": []
+      },
+      "365": {
+        "chunkId": "827714",
+        "hash": "68aa9aac",
+        "encoded": "conn.close()",
+        "prevChunkIds": []
+      },
+      "367": {
+        "chunkId": "827714",
+        "hash": "7ed283db",
+        "encoded": "return%20%7B",
+        "prevChunkIds": []
+      },
+      "368": {
+        "chunkId": "827714",
+        "hash": "0e76253b",
+        "encoded": "'total_memories':%20total,",
+        "prevChunkIds": []
+      },
+      "369": {
+        "chunkId": "827714",
+        "hash": "cdfcfcf6",
+        "encoded": "'oldest_memory':%20oldest%5B0%5D%20if%20oldest%20else%20None,",
+        "prevChunkIds": []
+      },
+      "370": {
+        "chunkId": "827714",
+        "hash": "91f8f092",
+        "encoded": "'newest_memory':%20newest%5B0%5D%20if%20newest%20else%20None,",
+        "prevChunkIds": []
+      },
+      "371": {
+        "chunkId": "827714",
+        "hash": "ebaec350",
+        "encoded": "'database_path':%20str(self.db_path)",
+        "prevChunkIds": []
+      },
+      "372": {
+        "chunkId": "827714",
+        "hash": "17de4d93",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "374": {
+        "chunkId": "827714",
+        "hash": "81be838b",
+        "encoded": "except%20Exception%20as%20e:",
+        "prevChunkIds": []
+      },
+      "375": {
+        "chunkId": "827714",
+        "hash": "33225aae",
+        "encoded": "logger.error(f%22Failed%20to%20get%20stats:%20%7Be%7D%22)",
+        "prevChunkIds": []
+      },
+      "376": {
+        "chunkId": "827714",
+        "hash": "5600b06b",
+        "encoded": "return%20%7B'total_memories':%200%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

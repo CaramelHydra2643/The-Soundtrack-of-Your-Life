@@ -1,0 +1,408 @@
+{
+  ".gitignore": {
+    "filename": ".gitignore",
+    "path": ".gitignore",
+    "version": "1.2",
+    "contextFile": "b6459458-context.json",
+    "chunks": {
+      "e1b320": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794811936,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "04511a3e"
+        },
+        "hash": "4f1f89cd",
+        "messageId": "system_9825f6b0-e189-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/16/2026, 12:22:16 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "e1b320",
+        "hash": "b251bcd9",
+        "encoded": "#%20Python",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "e1b320",
+        "hash": "7cbb2b27",
+        "encoded": "__pycache__/",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "e1b320",
+        "hash": "9493a419",
+        "encoded": "*.py%5Bcod%5D",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "e1b320",
+        "hash": "8f080315",
+        "encoded": "*$py.class",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "e1b320",
+        "hash": "f95fcc70",
+        "encoded": "*.so",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "e1b320",
+        "hash": "22fc3194",
+        "encoded": ".Python",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "e1b320",
+        "hash": "01536118",
+        "encoded": "build/",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "e1b320",
+        "hash": "0a216ae8",
+        "encoded": "develop-eggs/",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "e1b320",
+        "hash": "2c58a2b9",
+        "encoded": "dist/",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "e1b320",
+        "hash": "8473ffce",
+        "encoded": "downloads/",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "e1b320",
+        "hash": "4d51f5ef",
+        "encoded": "eggs/",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "e1b320",
+        "hash": "495ad6ec",
+        "encoded": ".eggs/",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "e1b320",
+        "hash": "83ca3340",
+        "encoded": "lib/",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "e1b320",
+        "hash": "3c04f890",
+        "encoded": "lib64/",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "e1b320",
+        "hash": "f388a84a",
+        "encoded": "parts/",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "e1b320",
+        "hash": "e874d555",
+        "encoded": "sdist/",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "e1b320",
+        "hash": "c446e63e",
+        "encoded": "var/",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "e1b320",
+        "hash": "15ddfd00",
+        "encoded": "wheels/",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "e1b320",
+        "hash": "8f7fa81b",
+        "encoded": "pip-wheel-metadata/",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "e1b320",
+        "hash": "ab46e52f",
+        "encoded": "share/python-wheels/",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "e1b320",
+        "hash": "e41fe0ef",
+        "encoded": "*.egg-info/",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "e1b320",
+        "hash": "7bd9e4ce",
+        "encoded": ".installed.cfg",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "e1b320",
+        "hash": "c46101b8",
+        "encoded": "*.egg",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "e1b320",
+        "hash": "f8359336",
+        "encoded": "PIPFILE.lock",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "e1b320",
+        "hash": "24ca6349",
+        "encoded": "#%20Virtual%20Environment",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "e1b320",
+        "hash": "370ac5b0",
+        "encoded": ".venv/",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "e1b320",
+        "hash": "960dd2d6",
+        "encoded": "venv/",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "e1b320",
+        "hash": "9316acdc",
+        "encoded": "ENV/",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "e1b320",
+        "hash": "f6caa721",
+        "encoded": "env/",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "e1b320",
+        "hash": "9ea16712",
+        "encoded": ".env",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "e1b320",
+        "hash": "fa8078c8",
+        "encoded": "#%20IDE",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "e1b320",
+        "hash": "7e61b670",
+        "encoded": ".vscode/",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "e1b320",
+        "hash": "c342f8b4",
+        "encoded": ".idea/",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "e1b320",
+        "hash": "b3b5aca9",
+        "encoded": "*.swp",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "e1b320",
+        "hash": "81c96be3",
+        "encoded": "*.swo",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "e1b320",
+        "hash": "6bf678e1",
+        "encoded": "*~",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "e1b320",
+        "hash": "b93b873a",
+        "encoded": ".DS_Store",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "e1b320",
+        "hash": "3b440186",
+        "encoded": "#%20Application%20Data",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "e1b320",
+        "hash": "69437d43",
+        "encoded": "*.db",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "e1b320",
+        "hash": "b52c6c04",
+        "encoded": "*.sqlite",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "e1b320",
+        "hash": "83fed523",
+        "encoded": "*.sqlite3",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "e1b320",
+        "hash": "93351811",
+        "encoded": "chroma_db/",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "e1b320",
+        "hash": "07d8297e",
+        "encoded": "vector_store/",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "e1b320",
+        "hash": "a99b37b5",
+        "encoded": ".chroma/",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "e1b320",
+        "hash": "08cd5248",
+        "encoded": "data/music_metadata/*.csv",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "e1b320",
+        "hash": "ab1df9ee",
+        "encoded": "data/music_metadata/*.tsv",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "e1b320",
+        "hash": "3dfd931c",
+        "encoded": "data/music_metadata/*.json",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "e1b320",
+        "hash": "257d8ec3",
+        "encoded": "!data/music_metadata/.gitkeep",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "e1b320",
+        "hash": "9bbf8bb8",
+        "encoded": "#%20Logs",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "e1b320",
+        "hash": "faf77c13",
+        "encoded": "*.log",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "e1b320",
+        "hash": "e6e4d2e7",
+        "encoded": "logs/",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "e1b320",
+        "hash": "b8423640",
+        "encoded": "#%20Testing",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "e1b320",
+        "hash": "4ccea52a",
+        "encoded": ".pytest_cache/",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "e1b320",
+        "hash": "688d333b",
+        "encoded": ".coverage",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "e1b320",
+        "hash": "36ec821c",
+        "encoded": "htmlcov/",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "e1b320",
+        "hash": "c14e3c6f",
+        "encoded": ".tox/",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "e1b320",
+        "hash": "0ea431fa",
+        "encoded": "#%20OS",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "e1b320",
+        "hash": "d76d0ecb",
+        "encoded": "Thumbs.db",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "e1b320",
+        "hash": "92b7c37d",
+        "encoded": ".DS_Store",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "e1b320",
+        "hash": "908d1018",
+        "encoded": "#%20Temporary%20files",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "e1b320",
+        "hash": "fc31a4de",
+        "encoded": "*.tmp",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "e1b320",
+        "hash": "e7602396",
+        "encoded": "*.temp",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "e1b320",
+        "hash": "9015b6d0",
+        "encoded": ".cache/",
+        "prevChunkIds": []
+      }
+    }
+  }
+}
