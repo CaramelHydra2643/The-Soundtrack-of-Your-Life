@@ -6,6 +6,9 @@
   "promptMessage": {
     "c915a030": {
       "value": "proceed"
+    },
+    "5485bb09": {
+      "value": "# MASTER IMPLEMENTATION PROMPT\n## Project: The Soundtrack of Your Life\n### Complete AI-Powered, Multilingual, Memory-Based Music Discovery and Personal Soundtrack Platform\n\n---\n\n# 1. YOUR ROLE AND RESPONSIBILITY\n\nAct as a principal software architect, senior full-stack engineer, AI/ML engineer, RAG specialist, speech-processing engineer, database architect, and professional UI/UX designer.\n\nYou are responsible for transforming my existing project, **The Soundtrack of Your Life**, into a complete"
     }
   },
   "localPrompts": {},

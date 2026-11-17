@@ -1,0 +1,108 @@
+{
+  "docs\\LOCAL_RUNBOOK.md": {
+    "filename": "LOCAL_RUNBOOK.md",
+    "path": "docs\\LOCAL_RUNBOOK.md",
+    "version": "1.2",
+    "contextFile": "3499dd65-context.json",
+    "chunks": {
+      "4f04c0": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794937495,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "3de5c3ba"
+        },
+        "hash": "2e352a74",
+        "messageId": "system_872805d0-e2ae-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 11:14:55 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "200": {
+        "chunkId": "4f04c0",
+        "hash": "67119fe4",
+        "encoded": "###%20NumPy%20tries%20to%20compile%20from%20source%20on%20Windows",
+        "prevChunkIds": []
+      },
+      "202": {
+        "chunkId": "4f04c0",
+        "hash": "7fa3aa6e",
+        "encoded": "Python%203.14%20cannot%20use%20the%20old%20NumPy%201.26%20constraint%20because%20that%20release%20has%20no%20compatible%20Python%203.14%20wheel.%20The%20current%20requirements%20use%20NumPy%202.x%20wheels.",
+        "prevChunkIds": []
+      },
+      "204": {
+        "chunkId": "4f04c0",
+        "hash": "1adb9bd6",
+        "encoded": "If%20an%20older%20checkout%20still%20contains%20%60numpy%3C2.0.0%60,%20update%20the%20repository%20first,%20then%20recreate%20the%20environment:",
+        "prevChunkIds": []
+      },
+      "206": {
+        "chunkId": "4f04c0",
+        "hash": "bb0bd630",
+        "encoded": "%60%60%60powershell",
+        "prevChunkIds": []
+      },
+      "207": {
+        "chunkId": "4f04c0",
+        "hash": "dc45e118",
+        "encoded": "Remove-Item%20-Recurse%20-Force%20.venv",
+        "prevChunkIds": []
+      },
+      "208": {
+        "chunkId": "4f04c0",
+        "hash": "3debd5aa",
+        "encoded": "python%20-m%20venv%20.venv",
+        "prevChunkIds": []
+      },
+      "209": {
+        "chunkId": "4f04c0",
+        "hash": "49e75e83",
+        "encoded": ".%5C.venv%5CScripts%5CActivate.ps1",
+        "prevChunkIds": []
+      },
+      "210": {
+        "chunkId": "4f04c0",
+        "hash": "776baf78",
+        "encoded": "python%20-m%20pip%20install%20--upgrade%20pip",
+        "prevChunkIds": []
+      },
+      "211": {
+        "chunkId": "4f04c0",
+        "hash": "1edbdd38",
+        "encoded": "python%20-m%20pip%20install%20-r%20requirements.txt",
+        "prevChunkIds": []
+      },
+      "212": {
+        "chunkId": "4f04c0",
+        "hash": "b76731c7",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "214": {
+        "chunkId": "4f04c0",
+        "hash": "b45762bb",
+        "encoded": "Do%20not%20install%20Visual%20Studio%20merely%20to%20compile%20NumPy%20for%20this%20project.",
+        "prevChunkIds": []
+      },
+      "216": {
+        "chunkId": "4f04c0",
+        "hash": "8ff4a893",
+        "encoded": "###%20%60npm%60%20is%20not%20recognized%20or%20PowerShell%20blocks%20npm%20scripts",
+        "prevChunkIds": []
+      },
+      "218": {
+        "chunkId": "4f04c0",
+        "hash": "18390e76",
+        "encoded": "Use%20%60npm.cmd%60%20instead%20of%20%60npm%60:",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

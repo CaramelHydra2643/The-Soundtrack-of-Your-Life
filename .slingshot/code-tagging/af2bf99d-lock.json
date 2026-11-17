@@ -20,7 +20,7 @@
         "hash": "bbd006ab",
         "messageId": "system_9825f6b0-e189-11f1-822b-835c9372b25d",
         "codeBlockId": null,
-        "isActive": true,
+        "isActive": false,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/16/2026, 12:22:16 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
       },
       "980dac": {
@@ -40,6 +40,132 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 10:24:31 AM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      },
+      "3823bf": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794912402,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "5485bb09"
+        },
+        "hash": "fb3061ed",
+        "messageId": "system_3e629830-e261-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 4:16:42 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "8859c0": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794913487,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "6b2db00d"
+        },
+        "hash": "af69a723",
+        "messageId": "system_3d3d7e80-e274-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 4:34:47 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "89913f": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794913914,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "7d1b3494"
+        },
+        "hash": "d7985862",
+        "messageId": "system_13e2c3d0-e277-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 4:41:54 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "28a89a": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794937494,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "3de5c3ba"
+        },
+        "hash": "faf04099",
+        "messageId": "system_872805d0-e2ae-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 11:14:54 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "1fc6af": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794937588,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "3de5c3ba"
+        },
+        "hash": "7c6d6204",
+        "messageId": "system_872805d0-e2ae-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 11:16:28 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "2f2dc1": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794937781,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "3de5c3ba"
+        },
+        "hash": "fc5a8047",
+        "messageId": "system_872805d0-e2ae-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 11:19:41 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "580da2": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794938899,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "cc9e1f18"
+        },
+        "hash": "863f77da",
+        "messageId": "system_d4f3b960-e2b0-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 11:38:19 PM\n- **source**: agent\n- **type**: agentEditTool\n"
       }
     },
     "lines": {
@@ -47,374 +173,203 @@
         "chunkId": "980dac",
         "hash": "d70c86cc",
         "encoded": "#%20Core%20dependencies",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "980dac"
+        ]
       },
       "1": {
-        "chunkId": "980dac",
-        "hash": "50960cf6",
-        "encoded": "pydantic==2.10.4",
-        "prevChunkIds": []
+        "chunkId": "1fc6af",
+        "hash": "94a96643",
+        "encoded": "#%20Pydantic%20versions%20with%20Python%203.14-compatible%20pydantic-core%20wheels",
+        "prevChunkIds": [
+          "1fc6af"
+        ]
       },
       "2": {
-        "chunkId": "980dac",
-        "hash": "f332ffc4",
-        "encoded": "pydantic-settings==2.7.1",
-        "prevChunkIds": []
+        "chunkId": "1fc6af",
+        "hash": "163bee54",
+        "encoded": "pydantic%3E=2.12.0,%3C3.0.0",
+        "prevChunkIds": [
+          "1fc6af"
+        ]
       },
       "3": {
-        "chunkId": "980dac",
-        "hash": "ca1cff9a",
-        "encoded": "python-dotenv==1.0.1",
-        "prevChunkIds": []
+        "chunkId": "1fc6af",
+        "hash": "43488627",
+        "encoded": "pydantic-settings%3E=2.7.1,%3C3.0.0",
+        "prevChunkIds": [
+          "1fc6af"
+        ]
       },
       "4": {
         "chunkId": "980dac",
-        "hash": "d41687c9",
-        "encoded": "platformdirs==4.3.6",
+        "hash": "9f58e545",
+        "encoded": "python-dotenv==1.0.1",
         "prevChunkIds": []
       },
-      "6": {
+      "5": {
         "chunkId": "980dac",
-        "hash": "5aee72a5",
-        "encoded": "#%20LLM%20Integration",
-        "prevChunkIds": []
+        "hash": "c1517aa4",
+        "encoded": "platformdirs==4.3.6",
+        "prevChunkIds": [
+          "980dac"
+        ]
       },
       "7": {
         "chunkId": "980dac",
-        "hash": "035e3c10",
+        "hash": "e7ff2f8e",
+        "encoded": "#%20LLM%20Integration",
+        "prevChunkIds": [
+          "980dac"
+        ]
+      },
+      "8": {
+        "chunkId": "980dac",
+        "hash": "a548d234",
         "encoded": "ollama==0.4.6",
         "prevChunkIds": []
       },
-      "9": {
-        "chunkId": "980dac",
-        "hash": "6c28fbb5",
-        "encoded": "#%20Data%20processing%20-%20Use%20binary%20wheels%20for%20Windows%20compatibility",
-        "prevChunkIds": []
-      },
       "10": {
-        "chunkId": "980dac",
-        "hash": "bcda01b1",
-        "encoded": "numpy%3E=1.26.0,%3C2.0.0%20%20#%20Will%20use%20pre-built%20wheel",
-        "prevChunkIds": []
+        "chunkId": "28a89a",
+        "hash": "3e5af3e7",
+        "encoded": "#%20Data%20processing%20-%20Python%203.14-compatible%20binary%20wheels",
+        "prevChunkIds": [
+          "980dac"
+        ]
       },
       "11": {
-        "chunkId": "980dac",
-        "hash": "f8633337",
-        "encoded": "pandas%3E=2.0.0,%3C3.0.0",
+        "chunkId": "28a89a",
+        "hash": "6dc55cb8",
+        "encoded": "numpy%3E=2.2.0,%3C3.0.0",
         "prevChunkIds": []
       },
-      "13": {
-        "chunkId": "980dac",
-        "hash": "16f22725",
-        "encoded": "#%20HTTP%20requests",
-        "prevChunkIds": []
+      "12": {
+        "chunkId": "28a89a",
+        "hash": "73a47d01",
+        "encoded": "pandas%3E=2.2.0,%3C3.0.0",
+        "prevChunkIds": [
+          "28a89a"
+        ]
       },
       "14": {
-        "chunkId": "980dac",
-        "hash": "d0c38abf",
+        "chunkId": "8859c0",
+        "hash": "7f602bd5",
+        "encoded": "#%20HTTP%20requests%20and%20API%20service",
+        "prevChunkIds": [
+          "28a89a"
+        ]
+      },
+      "15": {
+        "chunkId": "8859c0",
+        "hash": "bf5c419c",
         "encoded": "requests==2.32.3",
         "prevChunkIds": []
       },
       "16": {
-        "chunkId": "980dac",
-        "hash": "a47f2100",
-        "encoded": "#%20RAG%20&%20Embeddings%20-%20Install%20separately%20to%20avoid%20conflicts",
-        "prevChunkIds": []
+        "chunkId": "89913f",
+        "hash": "979b2413",
+        "encoded": "fastapi%3E=0.115.0,%3C1.0.0",
+        "prevChunkIds": [
+          "980dac"
+        ]
       },
       "17": {
-        "chunkId": "980dac",
-        "hash": "83cc6195",
-        "encoded": "#%20sentence-transformers%20%20#%20Install%20after%20other%20deps",
-        "prevChunkIds": []
+        "chunkId": "89913f",
+        "hash": "60555d9b",
+        "encoded": "uvicorn%5Bstandard%5D%3E=0.30.0,%3C1.0.0",
+        "prevChunkIds": [
+          "980dac"
+        ]
       },
       "18": {
-        "chunkId": "980dac",
-        "hash": "f3fef61b",
-        "encoded": "#%20chromadb%20%20#%20Install%20after%20other%20deps",
+        "chunkId": "89913f",
+        "hash": "de3f4995",
+        "encoded": "python-multipart%3E=0.0.9,%3C1.0.0",
         "prevChunkIds": []
       },
       "20": {
-        "chunkId": "980dac",
-        "hash": "aa7a7df7",
-        "encoded": "#%20Streamlit",
+        "chunkId": "580da2",
+        "hash": "7b3d27d8",
+        "encoded": "#%20RAG%20&%20Embeddings%20(CPU-compatible%20wheels;%20models%20download%20on%20first%20use)",
         "prevChunkIds": []
       },
       "21": {
-        "chunkId": "980dac",
-        "hash": "038676cf",
-        "encoded": "streamlit%3E=1.30.0,%3C2.0.0",
+        "chunkId": "580da2",
+        "hash": "7a47ea91",
+        "encoded": "#%20Install%20CPU-only%20PyTorch%20first%20on%20Windows:%20see%20docs/LOCAL_RUNBOOK.md",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "580da2",
+        "hash": "ec4b3ea8",
+        "encoded": "sentence-transformers%3E=3.0.0,%3C6.0.0",
         "prevChunkIds": []
       },
       "23": {
-        "chunkId": "efcf1a",
-        "hash": "a7fbcb9e",
-        "encoded": "#%20THE%20SOUNDTRACK%20OF%20YOUR%20LIFE%20-%20DEPENDENCIES",
-        "prevChunkIds": []
-      },
-      "24": {
-        "chunkId": "efcf1a",
-        "hash": "0d4cfc17",
-        "encoded": "#%20==============================================================================",
+        "chunkId": "580da2",
+        "hash": "4311ebdb",
+        "encoded": "chromadb%3E=0.5.0,%3C2.0.0",
         "prevChunkIds": []
       },
       "25": {
-        "chunkId": "efcf1a",
-        "hash": "3282dc2b",
-        "encoded": "#%20Compatible%20with%20Python%203.11,%203.12,%20and%203.14",
-        "prevChunkIds": []
+        "chunkId": "3823bf",
+        "hash": "69498ce9",
+        "encoded": "sentence-transformers%3E=3.0.0,%3C6.0.0",
+        "prevChunkIds": [
+          "89913f"
+        ]
       },
       "26": {
-        "chunkId": "efcf1a",
-        "hash": "3c162915",
-        "encoded": "#%20Tested%20on%20Windows%2011,%20designed%20for%20cross-platform%20compatibility",
-        "prevChunkIds": []
+        "chunkId": "3823bf",
+        "hash": "ffcf6300",
+        "encoded": "chromadb%3E=0.5.0,%3C2.0.0",
+        "prevChunkIds": [
+          "89913f"
+        ]
       },
       "28": {
-        "chunkId": "efcf1a",
-        "hash": "88a56d02",
-        "encoded": "#%20------------------------------------------------------------------------------",
+        "chunkId": "3823bf",
+        "hash": "ed4f430c",
+        "encoded": "#%20Optional%20local%20speech%20transcription%20(install%20when%20needed;%20CPU%20inference)",
         "prevChunkIds": []
       },
       "29": {
-        "chunkId": "efcf1a",
-        "hash": "d8b88e9f",
-        "encoded": "#%20Web%20Framework",
-        "prevChunkIds": []
-      },
-      "30": {
-        "chunkId": "efcf1a",
-        "hash": "bd053110",
-        "encoded": "#%20------------------------------------------------------------------------------",
-        "prevChunkIds": []
+        "chunkId": "3823bf",
+        "hash": "f61c00d0",
+        "encoded": "#%20faster-whisper%3E=1.0.0,%3C2.0.0",
+        "prevChunkIds": [
+          "89913f"
+        ]
       },
       "31": {
-        "chunkId": "efcf1a",
-        "hash": "90cf5443",
-        "encoded": "streamlit%3E=1.28.0,%3C2.0.0",
+        "chunkId": "2f2dc1",
+        "hash": "5f8f6d10",
+        "encoded": "#%20Streamlit",
         "prevChunkIds": []
       },
-      "33": {
-        "chunkId": "efcf1a",
-        "hash": "0eaff830",
-        "encoded": "#%20------------------------------------------------------------------------------",
-        "prevChunkIds": []
+      "32": {
+        "chunkId": "2f2dc1",
+        "hash": "4e543e74",
+        "encoded": "streamlit%3E=1.30.0,%3C2.0.0",
+        "prevChunkIds": [
+          "8859c0"
+        ]
       },
       "34": {
-        "chunkId": "efcf1a",
-        "hash": "385bd935",
-        "encoded": "#%20LLM%20Integration",
+        "chunkId": "2f2dc1",
+        "hash": "47955ab0",
+        "encoded": "#%20Development%20and%20testing",
         "prevChunkIds": []
       },
       "35": {
-        "chunkId": "efcf1a",
-        "hash": "b718f2ba",
-        "encoded": "#%20------------------------------------------------------------------------------",
-        "prevChunkIds": []
-      },
-      "36": {
-        "chunkId": "efcf1a",
-        "hash": "6dd22f86",
-        "encoded": "ollama%3E=0.1.0,%3C1.0.0",
-        "prevChunkIds": []
-      },
-      "38": {
-        "chunkId": "efcf1a",
-        "hash": "b836c068",
-        "encoded": "#%20------------------------------------------------------------------------------",
-        "prevChunkIds": []
-      },
-      "39": {
-        "chunkId": "efcf1a",
-        "hash": "90b4e808",
-        "encoded": "#%20Embeddings%20and%20ML",
-        "prevChunkIds": []
-      },
-      "40": {
-        "chunkId": "efcf1a",
-        "hash": "5378e5b6",
-        "encoded": "#%20------------------------------------------------------------------------------",
-        "prevChunkIds": []
-      },
-      "41": {
-        "chunkId": "efcf1a",
-        "hash": "c5082e41",
-        "encoded": "sentence-transformers%3E=2.2.0,%3C3.0.0",
-        "prevChunkIds": []
-      },
-      "42": {
-        "chunkId": "efcf1a",
-        "hash": "456f3c9c",
-        "encoded": "torch%3E=2.0.0,%3C3.0.0",
-        "prevChunkIds": []
-      },
-      "44": {
-        "chunkId": "efcf1a",
-        "hash": "87c5840d",
-        "encoded": "#%20------------------------------------------------------------------------------",
-        "prevChunkIds": []
-      },
-      "45": {
-        "chunkId": "efcf1a",
-        "hash": "9fb32d71",
-        "encoded": "#%20Vector%20Database",
-        "prevChunkIds": []
-      },
-      "46": {
-        "chunkId": "efcf1a",
-        "hash": "772918c6",
-        "encoded": "#%20------------------------------------------------------------------------------",
-        "prevChunkIds": []
-      },
-      "47": {
-        "chunkId": "efcf1a",
-        "hash": "128aedc5",
-        "encoded": "chromadb%3E=0.4.0,%3C1.0.0",
-        "prevChunkIds": []
-      },
-      "49": {
-        "chunkId": "efcf1a",
-        "hash": "52671806",
-        "encoded": "#%20------------------------------------------------------------------------------",
-        "prevChunkIds": []
-      },
-      "50": {
-        "chunkId": "efcf1a",
-        "hash": "0cf7ca3d",
-        "encoded": "#%20Data%20Validation%20and%20Settings",
-        "prevChunkIds": []
-      },
-      "51": {
-        "chunkId": "efcf1a",
-        "hash": "db0c1a36",
-        "encoded": "#%20------------------------------------------------------------------------------",
-        "prevChunkIds": []
-      },
-      "52": {
-        "chunkId": "efcf1a",
-        "hash": "59700e53",
-        "encoded": "pydantic%3E=2.0.0,%3C3.0.0",
-        "prevChunkIds": []
-      },
-      "53": {
-        "chunkId": "efcf1a",
-        "hash": "6ca4a919",
-        "encoded": "pydantic-settings%3E=2.0.0,%3C3.0.0",
-        "prevChunkIds": []
-      },
-      "55": {
-        "chunkId": "efcf1a",
-        "hash": "6138827b",
-        "encoded": "#%20------------------------------------------------------------------------------",
-        "prevChunkIds": []
-      },
-      "56": {
-        "chunkId": "efcf1a",
-        "hash": "5734ebe0",
-        "encoded": "#%20Data%20Processing",
-        "prevChunkIds": []
-      },
-      "57": {
-        "chunkId": "efcf1a",
-        "hash": "6e7ee7b0",
-        "encoded": "#%20------------------------------------------------------------------------------",
-        "prevChunkIds": []
-      },
-      "58": {
-        "chunkId": "efcf1a",
-        "hash": "06897796",
-        "encoded": "pandas%3E=2.0.0,%3C3.0.0",
-        "prevChunkIds": []
-      },
-      "59": {
-        "chunkId": "efcf1a",
-        "hash": "58991479",
-        "encoded": "numpy%3E=1.24.0,%3C2.0.0",
-        "prevChunkIds": []
-      },
-      "61": {
-        "chunkId": "efcf1a",
-        "hash": "272c3774",
-        "encoded": "#%20------------------------------------------------------------------------------",
-        "prevChunkIds": []
-      },
-      "62": {
-        "chunkId": "efcf1a",
-        "hash": "b3d014bd",
-        "encoded": "#%20Configuration%20and%20Environment",
-        "prevChunkIds": []
-      },
-      "63": {
-        "chunkId": "efcf1a",
-        "hash": "aca038fa",
-        "encoded": "#%20------------------------------------------------------------------------------",
-        "prevChunkIds": []
-      },
-      "64": {
-        "chunkId": "efcf1a",
-        "hash": "f070fc02",
-        "encoded": "python-dotenv%3E=1.0.0,%3C2.0.0",
-        "prevChunkIds": []
-      },
-      "65": {
-        "chunkId": "efcf1a",
-        "hash": "641b7de4",
-        "encoded": "platformdirs%3E=3.0.0,%3C5.0.0",
-        "prevChunkIds": []
-      },
-      "67": {
-        "chunkId": "efcf1a",
-        "hash": "8b0c9bdc",
-        "encoded": "#%20------------------------------------------------------------------------------",
-        "prevChunkIds": []
-      },
-      "68": {
-        "chunkId": "efcf1a",
-        "hash": "e550cf8c",
-        "encoded": "#%20HTTP%20Requests%20(for%20optional%20iTunes%20API)",
-        "prevChunkIds": []
-      },
-      "69": {
-        "chunkId": "efcf1a",
-        "hash": "e081f11e",
-        "encoded": "#%20------------------------------------------------------------------------------",
-        "prevChunkIds": []
-      },
-      "70": {
-        "chunkId": "efcf1a",
-        "hash": "8e1d409f",
-        "encoded": "requests%3E=2.31.0,%3C3.0.0",
-        "prevChunkIds": []
-      },
-      "72": {
-        "chunkId": "efcf1a",
-        "hash": "b90a1b28",
-        "encoded": "#%20------------------------------------------------------------------------------",
-        "prevChunkIds": []
-      },
-      "73": {
-        "chunkId": "efcf1a",
-        "hash": "99155ca2",
-        "encoded": "#%20Testing",
-        "prevChunkIds": []
-      },
-      "74": {
-        "chunkId": "efcf1a",
-        "hash": "9896a3ab",
-        "encoded": "#%20------------------------------------------------------------------------------",
-        "prevChunkIds": []
-      },
-      "75": {
-        "chunkId": "efcf1a",
-        "hash": "bebb35c0",
-        "encoded": "pytest%3E=7.4.0,%3C9.0.0",
-        "prevChunkIds": []
-      },
-      "76": {
-        "chunkId": "efcf1a",
-        "hash": "98cca52d",
-        "encoded": "pytest-cov%3E=4.1.0,%3C6.0.0",
-        "prevChunkIds": []
+        "chunkId": "2f2dc1",
+        "hash": "8c3122fd",
+        "encoded": "pytest%3E=8.0.0,%3C10.0.0",
+        "prevChunkIds": [
+          "3823bf"
+        ]
       }
-    }
+    },
+    "_prevLineCount": 29
   }
 }

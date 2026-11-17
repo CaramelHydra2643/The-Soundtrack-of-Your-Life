@@ -1,0 +1,36 @@
+{
+  "ARCHITECTURE.md": {
+    "filename": "ARCHITECTURE.md",
+    "path": "ARCHITECTURE.md",
+    "version": "1.2",
+    "contextFile": "67eb1ccc-context.json",
+    "chunks": {
+      "9eb9db": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794913488,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "6b2db00d"
+        },
+        "hash": "70517418",
+        "messageId": "system_3d3d7e80-e274-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 4:34:48 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "4": {
+        "chunkId": "9eb9db",
+        "hash": "150f7c2e",
+        "encoded": "The%20application%20is%20a%20local-first%20modular%20monolith.%20Streamlit%20and%20FastAPI%20are%20presentation%20boundaries,%20while%20%60modules/soundtrack_service.py%60%20owns%20the%20shared%20domain%20orchestration.",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

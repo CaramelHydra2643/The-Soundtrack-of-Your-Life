@@ -6,6 +6,7 @@ AI-powered personal memory analysis and music recommendation system.
 
 import streamlit as st
 import logging
+import json
 from datetime import datetime
 from pathlib import Path
 import sys
@@ -20,6 +21,8 @@ from modules.music_catalogue import MusicCatalogue
 from modules.recommendation_engine import RecommendationEngine
 from modules.explanation_generator import ExplanationGenerator
 from modules.memory_vault import MemoryVault
+from modules.soundtrack_service import SoundtrackService
+from modules.speech_service import SpeechService
 from schemas.memory_schema import SoundtrackResult
 
 # Configure logging
@@ -89,6 +92,14 @@ def initialize_components():
                 st.session_state.recommendation_engine = RecommendationEngine(st.session_state.catalogue)
                 st.session_state.explanation_generator = ExplanationGenerator()
                 st.session_state.memory_vault = MemoryVault()
+                st.session_state.soundtrack_service = SoundtrackService(
+                    analyzer=st.session_state.memory_analyzer,
+                    rag_engine=st.session_state.rag_engine,
+                    catalogue=st.session_state.catalogue,
+                    recommender=st.session_state.recommendation_engine,
+                    explainer=st.session_state.explanation_generator,
+                    vault=st.session_state.memory_vault,
+                )
                 st.session_state.components_initialized = True
                 logger.info("All components initialized successfully")
             except Exception as e:
@@ -99,8 +110,8 @@ def initialize_components():
 
 def page_create_soundtrack():
     """Main page: Create Your Soundtrack."""
-    st.markdown('<h1 class="big-title">🎵 The Soundtrack of Your Life</h1>', unsafe_allow_html=True)
-    st.markdown('<p class="tagline">Your memories. Your emotions. Your music.</p>', unsafe_allow_html=True)
+    st.title("The Soundtrack of Your Life")
+    st.caption("Your memories. Your emotions. Your music.")
     
     st.write("""
     Describe a meaningful moment from your life, and I'll analyze the emotions and recommend music 
@@ -112,68 +123,53 @@ def page_create_soundtrack():
     # Memory input
     memory_text = st.text_area(
         "Tell me about your memory:",
+        value=st.session_state.get("transcribed_memory", ""),
         height=200,
         placeholder="Example: It was my last day at college. I was sitting with my friends, remembering all the memories we created together. I was happy, but somewhere inside I knew I would miss those days...",
         max_chars=st.session_state.settings.max_memory_length
     )
-    
+
+    audio_input = None
+    audio_input_control = getattr(st, "audio_input", None)
+    if audio_input_control:
+        audio_input = audio_input_control("Or record your memory", help="Recording is uploaded only after you choose to transcribe it.")
+        if audio_input and st.button("Transcribe recording"):
+            with st.spinner("Transcribing locally..."):
+                try:
+                    transcription = SpeechService().transcribe(audio_input.getvalue(), "memory.wav")
+                    st.session_state.transcribed_memory = transcription["transcription"]
+                    st.success("Transcription ready. Review and edit it before generating.")
+                    st.rerun()
+                except (ValueError, RuntimeError) as exc:
+                    st.error(str(exc))
+                except Exception:
+                    logger.exception("Speech transcription failed")
+                    st.error("The recording could not be transcribed.")
+
     col1, col2, col3 = st.columns([1, 1, 3])
     
     with col1:
         generate_clicked = st.button("🎼 Generate Soundtrack", type="primary", use_container_width=True)
     
-    # Generate soundtrack
-    if generate_clicked and memory_text.strip():
+    # Generate soundtrack through the shared domain service used by the API.
+    if generate_clicked:
+        if not memory_text.strip():
+            st.warning("Write a memory before generating a soundtrack.")
+            return
         st.session_state.current_story = memory_text
-        
-        with st.spinner("Analyzing your memory..."):
-            # Step 1: Analyze memory
-            analysis = st.session_state.memory_analyzer.analyze_memory(memory_text)
-            
-            if not analysis:
-                st.error("Failed to analyze memory. Please try again.")
+        with st.spinner("Understanding the feeling, then finding its sound..."):
+            try:
+                st.session_state.current_result = st.session_state.soundtrack_service.generate(memory_text)
+            except ValueError as exc:
+                st.error(str(exc))
                 return
-            
-            st.success("Memory analyzed!")
-        
-        with st.spinner("Retrieving music knowledge..."):
-            # Step 2: RAG retrieval
-            if st.session_state.rag_engine.is_knowledge_base_ready():
-                query = st.session_state.memory_analyzer.create_retrieval_query(analysis)
-                retrieved_docs = st.session_state.rag_engine.retrieve(query)
-            else:
-                st.warning("Knowledge base not ready. Run: python scripts/build_knowledge_base.py")
-                retrieved_docs = []
-        
-        with st.spinner("Finding perfect tracks..."):
-            # Step 3: Generate recommendations
-            recommendations = st.session_state.recommendation_engine.generate_recommendations(
-                analysis,
-                retrieved_docs
-            )
-            
-            if not recommendations:
-                st.warning("No matching tracks found. Try describing different emotions.")
+            except RuntimeError as exc:
+                st.error(str(exc))
                 return
-        
-        with st.spinner("Creating your soundtrack story..."):
-            # Step 4: Generate explanation
-            overall_explanation = st.session_state.explanation_generator.generate_overall_explanation(
-                memory_text,
-                analysis,
-                recommendations,
-                retrieved_docs
-            )
-        
-        # Create result
-        result = SoundtrackResult(
-            memory_analysis=analysis,
-            recommendations=recommendations,
-            overall_explanation=overall_explanation,
-            retrieved_knowledge_summary=st.session_state.rag_engine.get_retrieval_summary(retrieved_docs) if retrieved_docs else None
-        )
-        
-        st.session_state.current_result = result
+            except Exception:
+                logger.exception("Soundtrack generation failed")
+                st.error("The soundtrack could not be generated. Check the local setup and try again.")
+                return
     
     # Display results
     if st.session_state.current_result:
@@ -189,14 +185,12 @@ def page_create_soundtrack():
             st.write(f"**{analysis.memory_title}**")
             st.write(analysis.summary)
             
-            st.write("\n**Primary Emotions:**")
-            for emotion in analysis.primary_emotions:
-                st.markdown(f'<span class="emotion-tag">{emotion}</span>', unsafe_allow_html=True)
+            st.write("**Primary emotions**")
+            st.write(" · ".join(analysis.primary_emotions))
             
             if analysis.secondary_emotions:
-                st.write("\n**Secondary Emotions:**")
-                for emotion in analysis.secondary_emotions:
-                    st.markdown(f'<span class="emotion-tag">{emotion}</span>', unsafe_allow_html=True)
+                st.write("**Secondary emotions**")
+                st.write(" · ".join(analysis.secondary_emotions))
         
         with col2:
             st.write("**Musical Direction:**")
@@ -213,18 +207,35 @@ def page_create_soundtrack():
         st.write("\n### Recommended Tracks")
         
         for i, track in enumerate(result.recommendations, 1):
-            with st.container():
-                st.markdown(f"""
-                <div class="track-card">
-                    <h4>{i}. {track.track_name}</h4>
-                    <p><strong>Artist:</strong> {track.artist}</p>
-                    <p><strong>Relevance:</strong> {track.relevance_score:.0%}</p>
-                    <p>{track.explanation}</p>
-                    <p style="font-size:0.85rem; color: #666;">
-                        <strong>Tags:</strong> {', '.join(track.genre_tags + track.mood_tags[:3])}
-                    </p>
-                </div>
-                """, unsafe_allow_html=True)
+            with st.container(border=True):
+                st.subheader(f"{i}. {track.track_name}")
+                st.caption(f"{track.artist} · {track.album or 'Album unavailable'}")
+                st.progress(float(track.relevance_score), text=f"Match {track.relevance_score:.0%}")
+                st.write(track.explanation)
+                tags = track.genre_tags + track.mood_tags[:3]
+                if tags:
+                    st.caption(" · ".join(tags))
+                if track.listening_url:
+                    st.link_button("Open legitimate listening link", track.listening_url)
+                elif track.preview_url:
+                    st.audio(track.preview_url)
+                else:
+                    st.caption("Metadata only — no authorized preview is available.")
+                feedback_cols = st.columns(4)
+                for feedback_col, label, feedback_type in zip(
+                    feedback_cols,
+                    ("Like", "Dislike", "Save track", "Skip"),
+                    ("like", "dislike", "save", "skip"),
+                ):
+                    with feedback_col:
+                        if st.button(label, key=f"feedback_{feedback_type}_{track.track_id}"):
+                            recorded = st.session_state.memory_vault.record_feedback(
+                                track.track_id, feedback_type
+                            )
+                            if recorded:
+                                st.toast(f"{label} recorded")
+                            else:
+                                st.error("Feedback could not be recorded")
         
         # RAG Transparency
         if result.retrieved_knowledge_summary:
@@ -298,8 +309,7 @@ def page_memory_vault():
                 st.write(memory['story'][:300] + "..." if len(memory['story']) > 300 else memory['story'])
                 
                 st.write("\n**Emotions:**")
-                for emotion in memory['emotions'][:5]:
-                    st.markdown(f'<span class="emotion-tag">{emotion}</span>', unsafe_allow_html=True)
+                st.write(" · ".join(memory['emotions'][:5]))
             
             with col2:
                 st.write("**Soundtrack:**")
@@ -313,6 +323,64 @@ def page_memory_vault():
                         st.rerun()
 
 
+def page_preferences():
+    """Preferences and local privacy controls."""
+    st.title("Preferences")
+    st.caption("Shape future recommendations without sending your memories to a cloud service.")
+    current = st.session_state.memory_vault.get_preferences()
+
+    preferred_languages = st.text_input(
+        "Preferred languages",
+        value=", ".join(current["preferred_languages"]),
+        help="Separate languages with commas, for example English, Telugu, Hindi.",
+    )
+    preferred_genres = st.text_input(
+        "Preferred genres", value=", ".join(current["preferred_genres"])
+    )
+    disliked_genres = st.text_input(
+        "Genres to avoid", value=", ".join(current["disliked_genres"])
+    )
+    explicit_content = st.selectbox(
+        "Explicit content", ["allow", "avoid", "unknown"],
+        index=["allow", "avoid", "unknown"].index(current["explicit_content"]),
+    )
+    diversity = st.slider(
+        "Recommendation diversity", 0.0, 1.0, float(current["diversity"]), 0.05,
+        help="Higher values favor variety across artists and genres.",
+    )
+    if st.button("Save preferences", type="primary"):
+        values = {
+            "preferred_languages": [item.strip() for item in preferred_languages.split(",") if item.strip()],
+            "preferred_genres": [item.strip() for item in preferred_genres.split(",") if item.strip()],
+            "disliked_genres": [item.strip() for item in disliked_genres.split(",") if item.strip()],
+            "explicit_content": explicit_content,
+            "diversity": diversity,
+        }
+        if st.session_state.memory_vault.save_preferences(values):
+            st.success("Preferences saved locally.")
+        else:
+            st.error("Preferences could not be saved.")
+
+    st.divider()
+    st.subheader("Your data")
+    export = st.session_state.memory_vault.export_data()
+    st.download_button(
+        "Download a JSON export",
+        data=json.dumps(export, ensure_ascii=False, indent=2),
+        file_name="soundtrack-data-export.json",
+        mime="application/json",
+    )
+    st.caption("Export includes saved memories, feedback, and preferences.")
+    confirm_delete = st.checkbox("I understand this permanently deletes my local data")
+    if st.button("Delete all personal data", disabled=not confirm_delete):
+        if st.session_state.memory_vault.delete_all_data():
+            st.session_state.current_result = None
+            st.success("All personal data was deleted.")
+            st.rerun()
+        else:
+            st.error("Personal data could not be deleted.")
+
+
 def main():
     """Main application."""
     # Initialize
@@ -322,7 +390,7 @@ def main():
     st.sidebar.title("Navigation")
     page = st.sidebar.radio(
         "Choose a page:",
-        ["🎼 Create Soundtrack", "🗄️ Memory Vault"]
+        ["🎼 Create Soundtrack", "🗄️ Memory Vault", "⚙️ Preferences"]
     )
     
     # System info
@@ -337,8 +405,10 @@ def main():
     # Route to pages
     if page == "🎼 Create Soundtrack":
         page_create_soundtrack()
-    else:
+    elif page == "🗄️ Memory Vault":
         page_memory_vault()
+    else:
+        page_preferences()
 
 
 if __name__ == "__main__":

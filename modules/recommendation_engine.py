@@ -62,64 +62,94 @@ class RecommendationEngine:
     def _score_track(
         self,
         track: Dict[str, Any],
-        analysis: MemoryAnalysis
+        analysis: MemoryAnalysis,
+        retrieved_context: Optional[List[Dict[str, Any]]] = None,
+        user_preferences: Optional[Dict[str, Any]] = None,
     ) -> float:
-        """Score a track's relevance to the memory analysis.
-        
-        Args:
-            track: Track metadata dictionary
-            analysis: Memory analysis results
-            
-        Returns:
-            Relevance score between 0 and 1
-        """
-        # Combine all emotions
+        """Score a track across available signals, renormalizing missing data."""
         all_emotions = analysis.primary_emotions + analysis.secondary_emotions
-        
-        # Calculate component scores
-        mood_score = self._calculate_tag_overlap(
-            all_emotions + analysis.themes,
-            track.get('mood_tags', [])
+        track_moods = track.get('mood_tags') or []
+        track_genres = track.get('genre_tags') or []
+        track_instruments = track.get('instrument_tags') or []
+        track_themes = track.get('themes') or []
+
+        preferences = user_preferences or {}
+        disliked = {str(value).lower() for value in preferences.get('disliked_genres', [])}
+        if disliked.intersection(str(value).lower() for value in track_genres):
+            return 0.0
+        preferred_genres = preferences.get('preferred_genres', [])
+        preferred_languages = preferences.get('preferred_languages', [])
+        feedback = preferences.get('feedback', [])
+        like_count = sum(1 for item in feedback if item.get('track_id') == track.get('track_id') and item.get('feedback_type') in {'like', 'save'})
+        dislike_count = sum(1 for item in feedback if item.get('track_id') == track.get('track_id') and item.get('feedback_type') == 'dislike')
+        feedback_signal = min(max(0.5 + (0.2 * like_count) - (0.3 * dislike_count), 0.0), 1.0)
+        preference_signal = max(
+            self._calculate_tag_overlap(preferred_genres, track_genres),
+            self._calculate_tag_overlap(preferred_languages, [track.get('language', '')]),
+            feedback_signal if like_count or dislike_count else 0.0,
         )
-        
-        genre_score = self._calculate_tag_overlap(
-            analysis.genres,
-            track.get('genre_tags', [])
-        )
-        
-        instrument_score = self._calculate_tag_overlap(
-            analysis.instruments,
-            track.get('instrument_tags', [])
-        )
-        
-        # Theme matching (use context and themes)
-        theme_score = self._calculate_tag_overlap(
-            analysis.context + analysis.themes,
-            track.get('mood_tags', []) + track.get('genre_tags', [])
-        )
-        
-        # Weighted final score using configured weights
-        final_score = (
-            self.settings.weight_mood * mood_score +
-            self.settings.weight_genre * genre_score +
-            self.settings.weight_instrument * instrument_score +
-            self.settings.weight_theme * theme_score
-        )
-        
-        logger.debug(
-            f"Track: {track.get('track_name')}, "
-            f"Mood: {mood_score:.2f}, Genre: {genre_score:.2f}, "
-            f"Instrument: {instrument_score:.2f}, Theme: {theme_score:.2f}, "
-            f"Final: {final_score:.2f}"
-        )
-        
-        return final_score
+        scores = {
+            'mood': self._calculate_tag_overlap(all_emotions + analysis.themes, track_moods),
+            'genre': self._calculate_tag_overlap(analysis.genres, track_genres),
+            'language': self._calculate_tag_overlap(
+                [getattr(analysis, 'language', '')], [track.get('language', '')]
+            ),
+            'instrument': self._calculate_tag_overlap(analysis.instruments, track_instruments),
+            'theme': self._calculate_tag_overlap(analysis.context + analysis.themes, track_themes + track_genres),
+            'audio': self._audio_compatibility(track, analysis),
+            'personal': preference_signal,
+        }
+        weights = {
+            'mood': self.settings.weight_mood,
+            'genre': self.settings.weight_genre,
+            'language': self.settings.weight_language,
+            'instrument': self.settings.weight_instrument,
+            'theme': self.settings.weight_theme,
+            'audio': self.settings.weight_audio,
+            'personal': self.settings.weight_personal,
+        }
+
+        rag_score = self._rag_signal(track, retrieved_context or [])
+        available = {key: value for key, value in scores.items() if key != 'language' or track.get('language')}
+        available_weights = {key: weights[key] for key in available if key != 'personal' or scores[key] > 0}
+        if rag_score > 0:
+            available['rag'] = rag_score
+            available_weights['rag'] = 0.10
+        available = {key: value for key, value in available.items() if key in available_weights}
+        total_weight = sum(available_weights.values())
+        final_score = sum(available[key] * available_weights[key] for key in available) / total_weight if total_weight else 0.0
+        return min(max(final_score, 0.0), 1.0)
+
+    @staticmethod
+    def _audio_compatibility(track: Dict[str, Any], analysis: MemoryAnalysis) -> float:
+        """Match coarse tempo/energy fields without pretending missing audio data exists."""
+        values = []
+        if track.get('tempo'):
+            values.append(1.0 if str(track['tempo']).lower() == str(analysis.tempo).lower() else 0.0)
+        if track.get('energy'):
+            values.append(1.0 if str(track['energy']).lower() == str(analysis.energy).lower() else 0.0)
+        return sum(values) / len(values) if values else 0.0
+
+    def _rag_signal(self, track: Dict[str, Any], retrieved_context: List[Dict[str, Any]]) -> float:
+        """Use retrieved topics/text as a small, explainable ranking signal."""
+        if not retrieved_context:
+            return 0.0
+        track_text = ' '.join(str(track.get(field) or '') for field in ('genre_tags', 'mood_tags', 'themes', 'instrument_tags')).lower()
+        signals = []
+        for document in retrieved_context:
+            metadata = document.get('metadata') or {}
+            topic = str(metadata.get('topic') or '').lower()
+            text = str(document.get('text') or '').lower()
+            overlap = self._calculate_tag_overlap(track_text.split(), (topic + ' ' + text).split())
+            signals.append(overlap * float(document.get('relevance_score') or 0.0))
+        return min(max(max(signals, default=0.0), 0.0), 1.0)
 
     def generate_recommendations(
         self,
         analysis: MemoryAnalysis,
         retrieved_context: Optional[List[Dict[str, Any]]] = None,
-        max_recommendations: Optional[int] = None
+        max_recommendations: Optional[int] = None,
+        user_preferences: Optional[Dict[str, Any]] = None,
     ) -> List[TrackRecommendation]:
         """Generate track recommendations.
         
@@ -146,24 +176,37 @@ class RecommendationEngine:
             logger.warning("No tracks in catalogue")
             return []
         
-        # Score each candidate
+        # Score each candidate with the same retrieved context used for ranking.
         scored_tracks = []
         for track in candidates:
-            score = self._score_track(track, analysis)
-            
-            if score > 0.0:  # Only include tracks with some relevance
-                scored_tracks.append({
-                    'track': track,
-                    'score': score
-                })
-        
-        # Sort by score descending
-        scored_tracks.sort(key=lambda x: x['score'], reverse=True)
-        
+            score = self._score_track(track, analysis, retrieved_context, user_preferences)
+            if score > 0.0:
+                scored_tracks.append({'track': track, 'score': score})
+
+        scored_tracks.sort(key=lambda item: item['score'], reverse=True)
         logger.info(f"Scored {len(scored_tracks)} tracks")
-        
-        # Take top N
-        top_tracks = scored_tracks[:max_recommendations]
+
+        # Greedy diversity reranking: prefer a new artist, then a new genre, when
+        # the candidate remains close to the best available score.
+        top_tracks = []
+        seen_artists: Set[str] = set()
+        seen_genres: Set[str] = set()
+        remaining = list(scored_tracks)
+        while remaining and len(top_tracks) < max_recommendations:
+            best_index = 0
+            for index, item in enumerate(remaining):
+                track = item['track']
+                artist = str(track.get('artist') or '').lower()
+                genres = set(track.get('genre_tags') or [])
+                penalty = (0.08 if artist in seen_artists else 0.0) + (0.03 if genres & seen_genres else 0.0)
+                adjusted = item['score'] - penalty
+                best_adjusted = remaining[best_index]['score']
+                if adjusted > best_adjusted - 0.08:
+                    best_index = index
+            chosen = remaining.pop(best_index)
+            top_tracks.append(chosen)
+            seen_artists.add(str(chosen['track'].get('artist') or '').lower())
+            seen_genres.update(chosen['track'].get('genre_tags') or [])
         
         # Convert to TrackRecommendation objects
         recommendations = []
@@ -184,7 +227,13 @@ class RecommendationEngine:
                     instrument_tags=track.get('instrument_tags', []),
                     relevance_score=score,
                     explanation=explanation,
-                    source='Sample Catalogue'
+                    source=track.get('source') or 'Local catalogue',
+                    preview_url=track.get('preview_url'),
+                    listening_url=track.get('listening_url'),
+                    album=track.get('album'),
+                    language=track.get('language'),
+                    artwork_url=track.get('artwork_url'),
+                    availability_status=track.get('availability_status') or 'metadata_only'
                 )
                 recommendations.append(recommendation)
             except Exception as e:

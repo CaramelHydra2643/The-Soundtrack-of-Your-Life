@@ -50,6 +50,29 @@ class MemoryVault:
                     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                 )
             """)
+            cursor.execute("""
+                CREATE TABLE IF NOT EXISTS feedback (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    memory_id INTEGER,
+                    track_id TEXT NOT NULL,
+                    feedback_type TEXT NOT NULL CHECK(feedback_type IN ('like', 'dislike', 'save', 'skip')),
+                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    FOREIGN KEY(memory_id) REFERENCES memories(id) ON DELETE CASCADE
+                )
+            """)
+            cursor.execute("""
+                CREATE TABLE IF NOT EXISTS preferences (
+                    id INTEGER PRIMARY KEY CHECK(id = 1),
+                    preferred_languages TEXT NOT NULL DEFAULT '[]',
+                    preferred_genres TEXT NOT NULL DEFAULT '[]',
+                    disliked_genres TEXT NOT NULL DEFAULT '[]',
+                    preferred_eras TEXT NOT NULL DEFAULT '[]',
+                    regional_preferences TEXT NOT NULL DEFAULT '[]',
+                    explicit_content TEXT NOT NULL DEFAULT 'allow',
+                    diversity REAL NOT NULL DEFAULT 0.5,
+                    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                )
+            """)
             
             # Create indexes for faster searching
             cursor.execute(
@@ -342,6 +365,117 @@ class MemoryVault:
             
         except Exception as e:
             logger.error(f"Failed to delete memory {memory_id}: {e}")
+            return False
+
+    def record_feedback(
+        self,
+        track_id: str,
+        feedback_type: str,
+        memory_id: Optional[int] = None,
+    ) -> bool:
+        """Persist one transparent user reaction to a recommended track."""
+        if feedback_type not in {"like", "dislike", "save", "skip"} or not track_id.strip():
+            return False
+        try:
+            with sqlite3.connect(str(self.db_path)) as conn:
+                conn.execute(
+                    "INSERT INTO feedback (memory_id, track_id, feedback_type) VALUES (?, ?, ?)",
+                    (memory_id, track_id.strip(), feedback_type),
+                )
+            return True
+        except sqlite3.Error as exc:
+            logger.error("Failed to record feedback: %s", exc)
+            return False
+
+    def get_feedback(self, limit: int = 200) -> List[Dict[str, Any]]:
+        """Return recent feedback records without exposing raw memory text."""
+        try:
+            with sqlite3.connect(str(self.db_path)) as conn:
+                conn.row_factory = sqlite3.Row
+                rows = conn.execute(
+                    "SELECT id, memory_id, track_id, feedback_type, created_at "
+                    "FROM feedback ORDER BY created_at DESC LIMIT ?", (limit,)
+                ).fetchall()
+            return [dict(row) for row in rows]
+        except sqlite3.Error as exc:
+            logger.error("Failed to retrieve feedback: %s", exc)
+            return []
+
+    def save_preferences(self, preferences: Dict[str, Any]) -> bool:
+        """Persist single-user recommendation preferences as JSON arrays."""
+        fields = {
+            "preferred_languages": preferences.get("preferred_languages", []),
+            "preferred_genres": preferences.get("preferred_genres", []),
+            "disliked_genres": preferences.get("disliked_genres", []),
+            "preferred_eras": preferences.get("preferred_eras", []),
+            "regional_preferences": preferences.get("regional_preferences", []),
+            "explicit_content": preferences.get("explicit_content", "allow"),
+            "diversity": min(max(float(preferences.get("diversity", 0.5)), 0.0), 1.0),
+        }
+        try:
+            with sqlite3.connect(str(self.db_path)) as conn:
+                conn.execute("""
+                    INSERT INTO preferences
+                    (id, preferred_languages, preferred_genres, disliked_genres,
+                     preferred_eras, regional_preferences, explicit_content, diversity)
+                    VALUES (1, ?, ?, ?, ?, ?, ?, ?)
+                    ON CONFLICT(id) DO UPDATE SET
+                      preferred_languages=excluded.preferred_languages,
+                      preferred_genres=excluded.preferred_genres,
+                      disliked_genres=excluded.disliked_genres,
+                      preferred_eras=excluded.preferred_eras,
+                      regional_preferences=excluded.regional_preferences,
+                      explicit_content=excluded.explicit_content,
+                      diversity=excluded.diversity,
+                      updated_at=CURRENT_TIMESTAMP
+                """, (*[json.dumps(fields[key]) for key in (
+                    "preferred_languages", "preferred_genres", "disliked_genres",
+                    "preferred_eras", "regional_preferences"
+                )], fields["explicit_content"], fields["diversity"]))
+            return True
+        except (sqlite3.Error, TypeError, ValueError) as exc:
+            logger.error("Failed to save preferences: %s", exc)
+            return False
+
+    def get_preferences(self) -> Dict[str, Any]:
+        """Return saved preferences or meaningful local defaults."""
+        defaults = {
+            "preferred_languages": [], "preferred_genres": [], "disliked_genres": [],
+            "preferred_eras": [], "regional_preferences": [], "explicit_content": "allow",
+            "diversity": 0.5,
+        }
+        try:
+            with sqlite3.connect(str(self.db_path)) as conn:
+                conn.row_factory = sqlite3.Row
+                row = conn.execute("SELECT * FROM preferences WHERE id = 1").fetchone()
+            if not row:
+                return defaults
+            result = dict(row)
+            for key in ("preferred_languages", "preferred_genres", "disliked_genres", "preferred_eras", "regional_preferences"):
+                result[key] = json.loads(result[key])
+            return {key: result[key] for key in defaults}
+        except (sqlite3.Error, json.JSONDecodeError) as exc:
+            logger.error("Failed to retrieve preferences: %s", exc)
+            return defaults
+
+    def export_data(self) -> Dict[str, Any]:
+        """Export user-owned memories, feedback, and preferences as JSON-safe data."""
+        return {
+            "memories": self.get_all_memories(limit=10000),
+            "feedback": self.get_feedback(limit=10000),
+            "preferences": self.get_preferences(),
+        }
+
+    def delete_all_data(self) -> bool:
+        """Delete all single-user personal data while retaining database structure."""
+        try:
+            with sqlite3.connect(str(self.db_path)) as conn:
+                conn.execute("DELETE FROM feedback")
+                conn.execute("DELETE FROM memories")
+                conn.execute("DELETE FROM preferences")
+            return True
+        except sqlite3.Error as exc:
+            logger.error("Failed to delete personal data: %s", exc)
             return False
 
     def get_stats(self) -> Dict[str, Any]:

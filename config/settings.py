@@ -125,19 +125,25 @@ class Settings(BaseSettings):
 
     # Scoring weights
     weight_mood: float = Field(
-        default=0.40,
+        default=0.25,
         ge=0.0,
         le=1.0,
         description="Weight for mood matching in scoring"
     )
     weight_genre: float = Field(
-        default=0.30,
+        default=0.20,
         ge=0.0,
         le=1.0,
         description="Weight for genre matching in scoring"
     )
+    weight_language: float = Field(
+        default=0.15,
+        ge=0.0,
+        le=1.0,
+        description="Weight for language compatibility in scoring"
+    )
     weight_instrument: float = Field(
-        default=0.20,
+        default=0.10,
         ge=0.0,
         le=1.0,
         description="Weight for instrument matching in scoring"
@@ -147,6 +153,18 @@ class Settings(BaseSettings):
         ge=0.0,
         le=1.0,
         description="Weight for theme matching in scoring"
+    )
+    weight_audio: float = Field(
+        default=0.10,
+        ge=0.0,
+        le=1.0,
+        description="Weight for tempo and energy compatibility"
+    )
+    weight_personal: float = Field(
+        default=0.10,
+        ge=0.0,
+        le=1.0,
+        description="Weight for future preference signals"
     )
 
     # =========================================================================
@@ -233,13 +251,12 @@ class Settings(BaseSettings):
 
     @property
     def total_weight(self) -> float:
-        """Calculate total scoring weight."""
-        return (
-            self.weight_mood +
-            self.weight_genre +
-            self.weight_instrument +
-            self.weight_theme
-        )
+        """Calculate total configured scoring weight."""
+        return sum((
+            self.weight_mood, self.weight_genre, self.weight_language,
+            self.weight_instrument, self.weight_theme, self.weight_audio,
+            self.weight_personal,
+        ))
 
     def validate_weights_sum(self) -> bool:
         """Check if weights approximately sum to 1.0."""

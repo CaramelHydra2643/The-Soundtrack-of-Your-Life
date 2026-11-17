@@ -16,14 +16,82 @@ logger = logging.getLogger(__name__)
 
 
 class MusicCatalogue:
-    """Manages music track metadata and search functionality."""
+    """Manages normalized, provenance-aware music metadata."""
+
+    REQUIRED_FIELDS = (
+        'track_id', 'track_name', 'artist', 'album', 'release_year', 'language',
+        'country', 'region', 'genre_tags', 'subgenre_tags', 'mood_tags', 'themes',
+        'instrument_tags', 'energy', 'tempo', 'danceability', 'acousticness',
+        'artwork_url', 'preview_url', 'listening_url', 'source', 'license',
+        'availability_status'
+    )
 
     def __init__(self):
-        """Initialize music catalogue."""
+        """Initialize and load the best available local catalogue."""
         self.settings = get_settings()
         self.catalogue_df: Optional[pd.DataFrame] = None
         self.tracks: List[Dict[str, Any]] = []
         self._load_catalogue()
+
+    @staticmethod
+    def _as_tags(value: Any) -> List[str]:
+        """Normalize a scalar or delimited tag value to unique lowercase tags."""
+        if value is None or (isinstance(value, float) and pd.isna(value)):
+            return []
+        values = value if isinstance(value, (list, tuple, set)) else str(value).replace(';', ',').split(',')
+        return list(dict.fromkeys(str(item).strip().lower() for item in values if str(item).strip()))
+
+    @classmethod
+    def normalize_track(cls, raw: Dict[str, Any]) -> Dict[str, Any]:
+        """Normalize common CSV/JSON field names without inventing metadata."""
+        def first(*keys: str) -> Any:
+            return next((raw[key] for key in keys if raw.get(key) not in (None, '')), None)
+
+        track = {field: None for field in cls.REQUIRED_FIELDS}
+        track.update({
+            'track_id': str(first('track_id', 'id') or '').strip(),
+            'track_name': str(first('track_name', 'name', 'title') or '').strip(),
+            'artist': str(first('artist', 'artist_name') or '').strip(),
+            'album': first('album', 'album_name'),
+            'release_year': first('release_year', 'year'),
+            'language': first('language', 'lang'),
+            'country': first('country'),
+            'region': first('region'),
+            'genre_tags': cls._as_tags(first('genre_tags', 'genre', 'genres')),
+            'subgenre_tags': cls._as_tags(first('subgenre_tags', 'subgenre')),
+            'mood_tags': cls._as_tags(first('mood_tags', 'mood', 'moods')),
+            'themes': cls._as_tags(first('themes', 'theme', 'lyrics_themes')),
+            'instrument_tags': cls._as_tags(first('instrument_tags', 'instruments', 'instrument')),
+            'energy': first('energy'),
+            'tempo': first('tempo', 'bpm'),
+            'danceability': first('danceability'),
+            'acousticness': first('acousticness'),
+            'artwork_url': first('artwork_url', 'cover_url'),
+            'preview_url': first('preview_url', 'audio_preview'),
+            'listening_url': first('listening_url', 'external_url', 'url'),
+            'source': first('source') or 'local catalogue',
+            'license': first('license', 'licence'),
+            'availability_status': first('availability_status') or 'metadata_only',
+        })
+        return track
+
+    @classmethod
+    def deduplicate_tracks(cls, tracks: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        """Deduplicate by stable id, retaining useful fields from later records."""
+        by_id: Dict[str, Dict[str, Any]] = {}
+        for raw_track in tracks:
+            track = cls.normalize_track(raw_track)
+            key = track['track_id'] or f"{track['track_name'].lower()}::{track['artist'].lower()}"
+            if not key or key == '::':
+                continue
+            if key not in by_id:
+                by_id[key] = track
+                continue
+            existing = by_id[key]
+            for field, value in track.items():
+                if value not in (None, '', [], {}) and existing.get(field) in (None, '', [], {}):
+                    existing[field] = value
+        return list(by_id.values())
 
     def _load_catalogue(self):
         """Load music catalogue from metadata files or create sample data."""
@@ -47,8 +115,9 @@ class MusicCatalogue:
             logger.info(f"Loading catalogue from {json_files[0]}")
             try:
                 with open(json_files[0], 'r', encoding='utf-8') as f:
-                    self.tracks = json.load(f)
-                logger.info(f"Loaded {len(self.tracks)} tracks from JSON")
+                    raw_tracks = json.load(f)
+                self.tracks = self.deduplicate_tracks(raw_tracks if isinstance(raw_tracks, list) else [])
+                logger.info(f"Loaded {len(self.tracks)} normalized tracks from JSON")
                 return
             except Exception as e:
                 logger.warning(f"Failed to load JSON: {e}")
@@ -162,18 +231,24 @@ class MusicCatalogue:
             }
         ]
         
-        self.tracks = sample_tracks
-        logger.info(f"Created sample catalogue with {len(self.tracks)} tracks")
+        self.tracks = self.deduplicate_tracks([
+            {
+                **track,
+                'source': 'demo fixture (replace with licensed metadata)',
+                'availability_status': 'metadata_only',
+            }
+            for track in sample_tracks
+        ])
+        logger.info("No licensed catalogue was found; loaded %d clearly labelled demo fixtures", len(self.tracks))
 
     def _process_catalogue(self):
         """Process catalogue DataFrame into track dictionaries."""
         if self.catalogue_df is None:
             return
         
-        # Convert DataFrame to list of dicts
-        # This will depend on actual MTG-Jamendo format
-        self.tracks = self.catalogue_df.to_dict('records')
-        logger.info(f"Processed {len(self.tracks)} tracks from catalogue")
+        # Normalize common MTG-Jamendo/CSV field names and remove duplicates.
+        self.tracks = self.deduplicate_tracks(self.catalogue_df.to_dict('records'))
+        logger.info(f"Processed {len(self.tracks)} normalized tracks from catalogue")
 
     def search_tracks(
         self,

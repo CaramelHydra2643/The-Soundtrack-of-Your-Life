@@ -39,7 +39,9 @@ This project demonstrates practical implementation of:
 - **Vector Databases** (ChromaDB)
 - **Text Embeddings** (Sentence Transformers)
 - **Structured LLM Outputs** (Pydantic)
-- **Full-Stack Development** (Streamlit + Python)
+- **Full-Stack Development** (React/Vite + FastAPI, with Streamlit fallback)
+
+> **Current setup:** Use [`docs/LOCAL_RUNBOOK.md`](docs/LOCAL_RUNBOOK.md) for the accurate Windows installation, dependency setup, Ollama configuration, FastAPI startup, React startup, Streamlit fallback, optional speech transcription, testing, and troubleshooting instructions.
 
 ---
 
@@ -86,16 +88,18 @@ The system should:
 ## 🛠️ Technology Stack
 
 | Layer | Technology | Purpose |
-|-------|-----------|----------|
-| **Frontend** | Streamlit | Interactive web UI |
-| **Backend** | Python 3.11+ | Application logic |
+|-------|-----------|---------|
+| **Primary frontend** | React + TypeScript + Vite | Memory composer, voice capture, vault, preferences, refinement |
+| **Fallback frontend** | Streamlit | Local fallback/admin UI |
+| **API** | FastAPI + Uvicorn | REST service and OpenAPI docs |
+| **Backend services** | Python 3.11+ | Shared soundtrack orchestration |
 | **LLM** | Ollama (Qwen 2.5 3B) | Memory analysis & explanations |
 | **Embeddings** | all-MiniLM-L6-v2 | Text vectorization |
 | **Vector DB** | ChromaDB | Semantic search |
-| **Database** | SQLite | Memory persistence |
-| **Validation** | Pydantic | Structured data schemas |
+| **Database** | SQLite | Memory, feedback, and preferences |
+| **Validation** | Pydantic | Structured request and response schemas |
 | **Config** | pydantic-settings | Centralized configuration |
-| **Data** | Pandas | Metadata processing |
+| **Optional speech** | faster-whisper | Local CPU transcription |
 
 ---
 

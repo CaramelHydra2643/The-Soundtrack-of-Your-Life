@@ -6,6 +6,9 @@
   "promptMessage": {
     "f74bf8b2": {
       "value": "first test RAG retrieval, then test ollama"
+    },
+    "7d1b3494": {
+      "value": "conitue doing remaining major phases"
     }
   },
   "localPrompts": {},

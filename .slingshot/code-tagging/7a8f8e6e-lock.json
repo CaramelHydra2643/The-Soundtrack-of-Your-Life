@@ -1,0 +1,295 @@
+{
+  "IMPLEMENTATION_PLAN.md": {
+    "filename": "IMPLEMENTATION_PLAN.md",
+    "path": "IMPLEMENTATION_PLAN.md",
+    "version": "1.2",
+    "contextFile": "7a8f8e6e-context.json",
+    "chunks": {
+      "959538": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794929760,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "d86bf9f3"
+        },
+        "hash": "314f0c49",
+        "messageId": "system_cb77e8f0-e28f-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 9:06:00 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "1b4302": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794913488,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "6b2db00d"
+        },
+        "hash": "f60985f7",
+        "messageId": "system_3d3d7e80-e274-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 4:34:48 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "e5fb58": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794913488,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "6b2db00d"
+        },
+        "hash": "8636e18d",
+        "messageId": "system_3d3d7e80-e274-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 4:34:48 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "e9eea3": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794920885,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "d86bf9f3"
+        },
+        "hash": "6cd4d16b",
+        "messageId": "system_21561cf0-e287-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 6:38:05 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "060fbc": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794920885,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "d86bf9f3"
+        },
+        "hash": "e98a935e",
+        "messageId": "system_21561cf0-e287-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 6:38:05 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "1128af": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794921264,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "d86bf9f3"
+        },
+        "hash": "ab9f8819",
+        "messageId": "system_f06306c0-e287-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 6:44:24 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "1db9f2": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794922217,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "d86bf9f3"
+        },
+        "hash": "95543060",
+        "messageId": "system_da31c340-e288-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 7:00:17 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "c9d396": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794924252,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "d86bf9f3"
+        },
+        "hash": "82dcee95",
+        "messageId": "system_0a9a6c60-e28b-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 7:34:12 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "15": {
+        "chunkId": "e5fb58",
+        "hash": "a5dedef0",
+        "encoded": "-%20%5Bx%5D%20Normalize%20track%20metadata%20and%20add%20a%20provenance-preserving%20demo%20fallback.",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "e5fb58",
+        "hash": "c19c20df",
+        "encoded": "-%20%5Bx%5D%20Make%20recommendation%20weights%20match%20the%20brief%20and%20renormalize%20missing%20signals.",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "e5fb58",
+        "hash": "4ddd4b03",
+        "encoded": "-%20%5Bx%5D%20Make%20RAG%20context%20influence%20scoring%20with%20transparent%20topic/tag%20boosts.",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "e5fb58",
+        "hash": "242cfae2",
+        "encoded": "-%20%5Bx%5D%20Fix%20Chroma%20distance%20normalization%20for%20cosine,%20L2,%20and%20unknown%20metrics.",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "e5fb58",
+        "hash": "ae2276cb",
+        "encoded": "-%20%5Bx%5D%20Make%20Ollama%20configuration%20and%20structured-output%20retries%20reliable.",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "e5fb58",
+        "hash": "521d58df",
+        "encoded": "-%20%5Bx%5D%20Replace%20unsafe%20HTML%20interpolation%20in%20the%20UI.",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "e5fb58",
+        "hash": "d7f7b188",
+        "encoded": "-%20%5Bx%5D%20Add%20deterministic%20core%20tests%20and%20isolate%20external%20integration%20tests.",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "060fbc",
+        "hash": "837868ee",
+        "encoded": "-%20%5Bx%5D%20Add%20feedback%20persistence%20(%60like%60,%20%60dislike%60,%20%60save%60,%20%60skip%60)%20and%20export/delete-all%20controls.",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "060fbc",
+        "hash": "4f9c81f1",
+        "encoded": "-%20%5Bx%5D%20Add%20optional%20local%20speech%20transcription%20endpoint%20with%20CPU-safe%20faster-whisper%20integration.",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "060fbc",
+        "hash": "f0bcab74",
+        "encoded": "-%20%5Bx%5D%20Add%20local%20preferences%20controls%20and%20API%20contracts.",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "060fbc",
+        "hash": "447e6120",
+        "encoded": "-%20%5B%20%5D%20Add%20browser%20MediaRecorder%20UI%20and%20recommendation%20refinement%20controls.",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "c9d396",
+        "hash": "5772644e",
+        "encoded": "-%20%5Bx%5D%20Add%20React%20browser%20MediaRecorder%20UI%20and%20React%20Memory%20Vault/Preferences%20views.",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "959538",
+        "hash": "d87c1e8a",
+        "encoded": "-%20%5Bx%5D%20Add%20bounded%20conversational%20recommendation%20refinement%20across%20FastAPI%20and%20React.",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "1128af",
+        "hash": "698ba3ab",
+        "encoded": "##%20Phase%203%20%E2%80%94%20service%20seam",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "1128af",
+        "hash": "c5c8788e",
+        "encoded": "-%20%5Bx%5D%20Extract%20%60SoundtrackService%60%20orchestration%20from%20the%20Streamlit%20entry%20point.",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "1128af",
+        "hash": "ff4b88c5",
+        "encoded": "-%20%5Bx%5D%20Expose%20that%20service%20through%20FastAPI%20request/response%20schemas.",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "1128af",
+        "hash": "1b12ad72",
+        "encoded": "-%20%5Bx%5D%20Add%20a%20Vite/React%20client%20using%20the%20same%20contracts;%20keep%20Streamlit%20available%20as%20a%20local%20fallback%20during%20migration.",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "1db9f2",
+        "hash": "7876120e",
+        "encoded": "-%20%5Bx%5D%20Add%20browser%20smoke%20coverage%20for%20the%20React%20shell%20and%20microphone%20controls.",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "1db9f2",
+        "hash": "9d1e22d9",
+        "encoded": "-%20%5B%20%5D%20Add%20full%20API-backed%20browser%20integration%20tests%20and%20wire%20microphone%20capture%20to%20speech%20in%20a%20running%20environment.",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "e9eea3",
+        "hash": "18dc4553",
+        "encoded": "-%20%5Bx%5D%20Apply%20saved%20preferences%20and%20feedback%20to%20recommendation%20ranking.",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "e9eea3",
+        "hash": "a8cc418b",
+        "encoded": "-%20%5B%20%5D%20Add%20React%20browser%20MediaRecorder%20UI%20and%20conversational%20recommendation%20refinement.",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "1b4302",
+        "hash": "2721c384",
+        "encoded": "-%20%5Bx%5D%20Extract%20shared%20%60SoundtrackService%60%20orchestration%20and%20expose%20initial%20FastAPI%20contracts.",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "1b4302",
+        "hash": "d4cbe07a",
+        "encoded": "-%20%5Bx%5D%20Refresh%20the%20existing%20Streamlit%20soundtrack/results%20surface%20with%20safer%20native%20components.",
+        "prevChunkIds": []
+      }
+    },
+    "_prevLineCount": 55
+  }
+}

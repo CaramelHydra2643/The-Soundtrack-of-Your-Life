@@ -6,7 +6,7 @@ Defines structured data models for LLM output validation and data consistency.
 
 from datetime import datetime
 from typing import List, Optional, Dict, Any
-from pydantic import BaseModel, Field, field_validator
+from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 
 class MemoryAnalysis(BaseModel):
@@ -112,6 +112,8 @@ class MemoryAnalysis(BaseModel):
         max_length=500,
         description="Detailed description of suitable musical characteristics"
     )
+    language: Optional[str] = Field(default=None, max_length=80)
+    cultural_context: List[str] = Field(default_factory=list, max_length=10)
 
     # =========================================================================
     # VALIDATORS
@@ -224,6 +226,11 @@ class TrackRecommendation(BaseModel):
         default=None,
         description="Optional preview URL (if available and permitted)"
     )
+    listening_url: Optional[str] = Field(default=None)
+    album: Optional[str] = Field(default=None)
+    language: Optional[str] = Field(default=None)
+    artwork_url: Optional[str] = Field(default=None)
+    availability_status: str = Field(default="metadata_only")
 
     class Config:
         """Pydantic configuration."""

@@ -1,6 +1,8 @@
 # Detailed Setup Guide
 ## The Soundtrack of Your Life
 
+> For the current React/Vite + FastAPI + Streamlit workflow, use [`LOCAL_RUNBOOK.md`](LOCAL_RUNBOOK.md). This document contains legacy platform notes retained for reference.
+
 ---
 
 ## Table of Contents

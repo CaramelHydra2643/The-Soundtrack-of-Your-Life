@@ -6,6 +6,18 @@
   "promptMessage": {
     "f74bf8b2": {
       "value": "first test RAG retrieval, then test ollama"
+    },
+    "5485bb09": {
+      "value": "# MASTER IMPLEMENTATION PROMPT\n## Project: The Soundtrack of Your Life\n### Complete AI-Powered, Multilingual, Memory-Based Music Discovery and Personal Soundtrack Platform\n\n---\n\n# 1. YOUR ROLE AND RESPONSIBILITY\n\nAct as a principal software architect, senior full-stack engineer, AI/ML engineer, RAG specialist, speech-processing engineer, database architect, and professional UI/UX designer.\n\nYou are responsible for transforming my existing project, **The Soundtrack of Your Life**, into a complete"
+    },
+    "6b2db00d": {
+      "value": "carry on"
+    },
+    "7d1b3494": {
+      "value": "conitue doing remaining major phases"
+    },
+    "d86bf9f3": {
+      "value": "continue"
     }
   },
   "localPrompts": {},

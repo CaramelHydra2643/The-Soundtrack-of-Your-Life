@@ -28,6 +28,7 @@ class MemoryAnalyzer:
         self.temperature = self.settings.llm_temperature
         self.timeout = self.settings.llm_timeout
         self.max_tokens = self.settings.llm_max_tokens
+        self.client = ollama.Client(host=self.base_url)
 
     def _create_analysis_prompt(self, memory_text: str) -> str:
         """Create a detailed prompt for memory analysis.
@@ -62,6 +63,8 @@ Provide your analysis as a JSON object with these fields:
 11. energy: Describe the energy level (e.g., low, moderate, high, dynamic)
 12. atmosphere: Describe the overall musical atmosphere (20-50 words)
 13. musical_description: Detailed description of musical characteristics (50-200 words)
+14. language: The language most present in the memory, or null when unclear
+15. cultural_context: Specific cultural or regional references, without stereotyping
 
 IMPORTANT:
 - Be authentic to the specific emotions in this memory - don't force emotions that aren't present
@@ -87,10 +90,9 @@ JSON OUTPUT:
             logger.error("Memory text too short for analysis")
             return None
 
-        # Truncate if too long
         if len(memory_text) > self.settings.max_memory_length:
-            logger.warning(f"Memory truncated from {len(memory_text)} to {self.settings.max_memory_length} characters")
-            memory_text = memory_text[:self.settings.max_memory_length]
+            logger.error("Memory exceeds the configured character limit")
+            return None
 
         prompt = self._create_analysis_prompt(memory_text)
 
@@ -98,7 +100,7 @@ JSON OUTPUT:
             logger.info(f"Analyzing memory with {self.model}...")
             
             # Call Ollama
-            response = ollama.chat(
+            response = self.client.chat(
                 model=self.model,
                 messages=[
                     {
@@ -144,6 +146,9 @@ JSON OUTPUT:
 
             except ValidationError as e:
                 logger.error(f"Pydantic validation failed: {e}")
+                if retry:
+                    logger.info("Retrying after structured-output validation failure...")
+                    return self.analyze_memory(memory_text, retry=False)
                 return None
 
         except Exception as e:

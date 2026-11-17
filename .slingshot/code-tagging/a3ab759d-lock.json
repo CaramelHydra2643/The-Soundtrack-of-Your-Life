@@ -22,6 +22,60 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/16/2026, 12:34:12 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      },
+      "073cb3": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794912402,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "5485bb09"
+        },
+        "hash": "5696f8d0",
+        "messageId": "system_3e629830-e261-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 4:16:42 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "692d5f": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794912402,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "5485bb09"
+        },
+        "hash": "cc83ba0a",
+        "messageId": "system_3e629830-e261-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 4:16:42 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "78e561": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794912402,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "5485bb09"
+        },
+        "hash": "f5f19d98",
+        "messageId": "system_3e629830-e261-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 4:16:42 PM\n- **source**: agent\n- **type**: agentEditTool\n"
       }
     },
     "lines": {
@@ -434,147 +488,147 @@
         "prevChunkIds": []
       },
       "84": {
-        "chunkId": "7b30e7",
+        "chunkId": "78e561",
         "hash": "3bcad1fb",
         "encoded": "def%20embed_text(self,%20text:%20str)%20-%3E%20List%5Bfloat%5D:",
         "prevChunkIds": []
       },
       "85": {
-        "chunkId": "7b30e7",
-        "hash": "2b30027c",
-        "encoded": "%22%22%22Generate%20embedding%20for%20text.",
+        "chunkId": "78e561",
+        "hash": "66021c7a",
+        "encoded": "%22%22%22Generate%20embedding%20for%20text.%22%22%22",
         "prevChunkIds": []
       },
-      "87": {
-        "chunkId": "7b30e7",
-        "hash": "0979d9fb",
-        "encoded": "Args:",
-        "prevChunkIds": []
-      },
-      "88": {
-        "chunkId": "7b30e7",
-        "hash": "31709b1c",
-        "encoded": "text:%20Text%20to%20embed",
-        "prevChunkIds": []
-      },
-      "90": {
-        "chunkId": "7b30e7",
-        "hash": "2ca44850",
-        "encoded": "Returns:",
-        "prevChunkIds": []
-      },
-      "91": {
-        "chunkId": "7b30e7",
-        "hash": "d0aa8a26",
-        "encoded": "Embedding%20vector%20as%20list%20of%20floats",
-        "prevChunkIds": []
-      },
-      "92": {
-        "chunkId": "7b30e7",
-        "hash": "a3112ed8",
-        "encoded": "%22%22%22",
-        "prevChunkIds": []
-      },
-      "93": {
-        "chunkId": "7b30e7",
-        "hash": "9f0c58fe",
+      "86": {
+        "chunkId": "78e561",
+        "hash": "6cb12500",
         "encoded": "try:",
         "prevChunkIds": []
       },
-      "94": {
-        "chunkId": "7b30e7",
-        "hash": "d94d720e",
+      "87": {
+        "chunkId": "78e561",
+        "hash": "1a15aa45",
         "encoded": "embedding%20=%20self.embedding_model.encode(text,%20convert_to_numpy=True)",
         "prevChunkIds": []
       },
-      "95": {
-        "chunkId": "7b30e7",
-        "hash": "ce8d29bc",
+      "88": {
+        "chunkId": "78e561",
+        "hash": "e22f2ccb",
         "encoded": "return%20embedding.tolist()",
         "prevChunkIds": []
       },
-      "96": {
-        "chunkId": "7b30e7",
-        "hash": "75fd0dbe",
+      "89": {
+        "chunkId": "78e561",
+        "hash": "c19f4dbd",
         "encoded": "except%20Exception%20as%20e:",
         "prevChunkIds": []
       },
-      "97": {
-        "chunkId": "7b30e7",
-        "hash": "f75ad3d6",
+      "90": {
+        "chunkId": "78e561",
+        "hash": "7b144f28",
         "encoded": "logger.error(f%22Embedding%20generation%20failed:%20%7Be%7D%22)",
         "prevChunkIds": []
       },
-      "98": {
-        "chunkId": "7b30e7",
-        "hash": "a550cdd2",
+      "91": {
+        "chunkId": "78e561",
+        "hash": "8e731e83",
         "encoded": "raise",
         "prevChunkIds": []
       },
+      "93": {
+        "chunkId": "78e561",
+        "hash": "22a850cd",
+        "encoded": "@staticmethod",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "78e561",
+        "hash": "637953e2",
+        "encoded": "def%20normalize_distance(distance:%20Optional%5Bfloat%5D,%20metric:%20str%20=%20%22cosine%22)%20-%3E%20float:",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "78e561",
+        "hash": "e4f7bf80",
+        "encoded": "%22%22%22Convert%20supported%20Chroma%20distances%20into%20a%20bounded%20relevance%20score.%22%22%22",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "78e561",
+        "hash": "e5e32a51",
+        "encoded": "if%20distance%20is%20None:",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "78e561",
+        "hash": "8cc9d46b",
+        "encoded": "return%200.0",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "78e561",
+        "hash": "a58bd13d",
+        "encoded": "value%20=%20max(float(distance),%200.0)",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "78e561",
+        "hash": "f48d4c99",
+        "encoded": "metric%20=%20(metric%20or%20%22cosine%22).lower()",
+        "prevChunkIds": []
+      },
       "100": {
-        "chunkId": "7b30e7",
-        "hash": "c5cf3500",
-        "encoded": "def%20retrieve(",
+        "chunkId": "78e561",
+        "hash": "23a4413e",
+        "encoded": "if%20metric%20in%20%7B%22cosine%22,%20%22cosine_distance%22%7D:",
         "prevChunkIds": []
       },
       "101": {
-        "chunkId": "7b30e7",
-        "hash": "ad428234",
-        "encoded": "self,",
+        "chunkId": "78e561",
+        "hash": "41165b01",
+        "encoded": "return%20min(max(1.0%20-%20value,%200.0),%201.0)",
         "prevChunkIds": []
       },
       "102": {
-        "chunkId": "7b30e7",
-        "hash": "337f1547",
-        "encoded": "query:%20str,",
+        "chunkId": "78e561",
+        "hash": "3a03ea67",
+        "encoded": "if%20metric%20in%20%7B%22l2%22,%20%22euclidean%22%7D:",
         "prevChunkIds": []
       },
       "103": {
-        "chunkId": "7b30e7",
-        "hash": "67f8783e",
-        "encoded": "top_k:%20Optional%5Bint%5D%20=%20None,",
+        "chunkId": "78e561",
+        "hash": "84046d04",
+        "encoded": "return%201.0%20/%20(1.0%20+%20value)",
         "prevChunkIds": []
       },
       "104": {
-        "chunkId": "7b30e7",
-        "hash": "e0001059",
-        "encoded": "filter_metadata:%20Optional%5BDict%5Bstr,%20Any%5D%5D%20=%20None",
-        "prevChunkIds": []
-      },
-      "105": {
-        "chunkId": "7b30e7",
-        "hash": "ed535675",
-        "encoded": ")%20-%3E%20List%5BDict%5Bstr,%20Any%5D%5D:",
+        "chunkId": "78e561",
+        "hash": "759d6dd3",
+        "encoded": "return%201.0%20/%20(1.0%20+%20value)",
         "prevChunkIds": []
       },
       "106": {
-        "chunkId": "7b30e7",
-        "hash": "4878b6bc",
-        "encoded": "%22%22%22Retrieve%20relevant%20knowledge%20chunks%20using%20semantic%20search.",
+        "chunkId": "78e561",
+        "hash": "e0167cc8",
+        "encoded": "def%20retrieve(",
         "prevChunkIds": []
       },
       "108": {
         "chunkId": "7b30e7",
-        "hash": "9df7b449",
-        "encoded": "Args:",
-        "prevChunkIds": []
-      },
-      "109": {
-        "chunkId": "7b30e7",
-        "hash": "219a29f3",
-        "encoded": "query:%20Search%20query",
+        "hash": "7e9b3fd2",
+        "encoded": "%22%22%22Generate%20embedding%20for%20text.",
         "prevChunkIds": []
       },
       "110": {
         "chunkId": "7b30e7",
-        "hash": "647caa44",
-        "encoded": "top_k:%20Number%20of%20results%20to%20return%20(default%20from%20config)",
+        "hash": "46c7957b",
+        "encoded": "Args:",
         "prevChunkIds": []
       },
       "111": {
         "chunkId": "7b30e7",
-        "hash": "4b88529b",
-        "encoded": "filter_metadata:%20Optional%20metadata%20filters",
+        "hash": "919a1101",
+        "encoded": "text:%20Text%20to%20embed",
         "prevChunkIds": []
       },
       "113": {
@@ -585,8 +639,8 @@
       },
       "114": {
         "chunkId": "7b30e7",
-        "hash": "7df5b147",
-        "encoded": "List%20of%20retrieved%20documents%20with%20metadata",
+        "hash": "74f55d88",
+        "encoded": "Embedding%20vector%20as%20list%20of%20floats",
         "prevChunkIds": []
       },
       "115": {
@@ -597,571 +651,769 @@
       },
       "116": {
         "chunkId": "7b30e7",
-        "hash": "615edf5f",
-        "encoded": "if%20not%20self.is_knowledge_base_ready():",
+        "hash": "0065ab2d",
+        "encoded": "try:",
         "prevChunkIds": []
       },
       "117": {
         "chunkId": "7b30e7",
-        "hash": "b542129b",
-        "encoded": "logger.error(%22Knowledge%20base%20not%20ready%20-%20run%20build_knowledge_base.py%20first%22)",
+        "hash": "c4eff054",
+        "encoded": "embedding%20=%20self.embedding_model.encode(text,%20convert_to_numpy=True)",
         "prevChunkIds": []
       },
       "118": {
         "chunkId": "7b30e7",
-        "hash": "26646cfb",
-        "encoded": "return%20%5B%5D",
+        "hash": "ea334389",
+        "encoded": "return%20embedding.tolist()",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "7b30e7",
+        "hash": "4e81c4e2",
+        "encoded": "except%20Exception%20as%20e:",
         "prevChunkIds": []
       },
       "120": {
         "chunkId": "7b30e7",
-        "hash": "827bb492",
-        "encoded": "if%20not%20query%20or%20not%20query.strip():",
+        "hash": "a72ad2b1",
+        "encoded": "logger.error(f%22Embedding%20generation%20failed:%20%7Be%7D%22)",
         "prevChunkIds": []
       },
       "121": {
         "chunkId": "7b30e7",
-        "hash": "c0583bba",
-        "encoded": "logger.warning(%22Empty%20query%20provided%22)",
+        "hash": "5c0a81a7",
+        "encoded": "raise",
         "prevChunkIds": []
       },
-      "122": {
+      "123": {
         "chunkId": "7b30e7",
-        "hash": "5fe05d63",
-        "encoded": "return%20%5B%5D",
+        "hash": "f0a6062c",
+        "encoded": "def%20retrieve(",
         "prevChunkIds": []
       },
       "124": {
         "chunkId": "7b30e7",
-        "hash": "a3cb426c",
-        "encoded": "top_k%20=%20top_k%20or%20self.settings.retrieval_top_k",
+        "hash": "d8126c58",
+        "encoded": "self,",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "073cb3",
+        "hash": "4807a6c8",
+        "encoded": "if%20metric%20in%20%7B%22l2%22,%20%22euclidean%22%7D:",
         "prevChunkIds": []
       },
       "126": {
-        "chunkId": "7b30e7",
-        "hash": "9bbb1c6e",
-        "encoded": "try:",
+        "chunkId": "073cb3",
+        "hash": "c834bbef",
+        "encoded": "return%201.0%20/%20(1.0%20+%20value)",
         "prevChunkIds": []
       },
       "127": {
-        "chunkId": "7b30e7",
-        "hash": "fa2c3e1a",
-        "encoded": "logger.info(f%22Retrieving%20top-%7Btop_k%7D%20documents%20for%20query:%20%7Bquery%5B:100%5D%7D...%22)",
+        "chunkId": "073cb3",
+        "hash": "74d895db",
+        "encoded": "return%201.0%20/%20(1.0%20+%20value)",
         "prevChunkIds": []
       },
       "129": {
-        "chunkId": "7b30e7",
-        "hash": "f88972c0",
-        "encoded": "#%20Generate%20query%20embedding",
+        "chunkId": "073cb3",
+        "hash": "ad1a7ec4",
+        "encoded": "def%20_collection_metric(self)%20-%3E%20str:",
         "prevChunkIds": []
       },
       "130": {
-        "chunkId": "7b30e7",
-        "hash": "88523b15",
-        "encoded": "query_embedding%20=%20self.embed_text(query)",
+        "chunkId": "073cb3",
+        "hash": "8dffe532",
+        "encoded": "%22%22%22Read%20the%20collection%20metric%20when%20Chroma%20exposes%20it;%20default%20to%20cosine.%22%22%22",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "073cb3",
+        "hash": "4151d86d",
+        "encoded": "metadata%20=%20getattr(self.collection,%20%22metadata%22,%20%7B%7D)%20or%20%7B%7D",
         "prevChunkIds": []
       },
       "132": {
-        "chunkId": "7b30e7",
-        "hash": "bf43cfb5",
-        "encoded": "#%20Perform%20semantic%20search",
-        "prevChunkIds": []
-      },
-      "133": {
-        "chunkId": "7b30e7",
-        "hash": "f9e7289a",
-        "encoded": "results%20=%20self.collection.query(",
+        "chunkId": "073cb3",
+        "hash": "4108f4fd",
+        "encoded": "return%20str(metadata.get(%22hnsw:space%22,%20%22cosine%22))",
         "prevChunkIds": []
       },
       "134": {
-        "chunkId": "7b30e7",
-        "hash": "bd579a5a",
-        "encoded": "query_embeddings=%5Bquery_embedding%5D,",
-        "prevChunkIds": []
-      },
-      "135": {
-        "chunkId": "7b30e7",
-        "hash": "25136f2c",
-        "encoded": "n_results=top_k,",
+        "chunkId": "073cb3",
+        "hash": "355e3144",
+        "encoded": "def%20retrieve(",
         "prevChunkIds": []
       },
       "136": {
         "chunkId": "7b30e7",
-        "hash": "07e7f974",
-        "encoded": "where=filter_metadata,",
+        "hash": "9395f92e",
+        "encoded": "top_k:%20Optional%5Bint%5D%20=%20None,",
         "prevChunkIds": []
       },
       "137": {
         "chunkId": "7b30e7",
-        "hash": "d4ef87b7",
-        "encoded": "include=%5B'documents',%20'metadatas',%20'distances'%5D",
+        "hash": "dabe5e78",
+        "encoded": "filter_metadata:%20Optional%5BDict%5Bstr,%20Any%5D%5D%20=%20None",
         "prevChunkIds": []
       },
       "138": {
         "chunkId": "7b30e7",
-        "hash": "b9b4c6d2",
-        "encoded": ")",
+        "hash": "58c7bde6",
+        "encoded": ")%20-%3E%20List%5BDict%5Bstr,%20Any%5D%5D:",
         "prevChunkIds": []
       },
-      "140": {
+      "139": {
         "chunkId": "7b30e7",
-        "hash": "d5b845c4",
-        "encoded": "#%20Format%20results",
+        "hash": "315ec0d8",
+        "encoded": "%22%22%22Retrieve%20relevant%20knowledge%20chunks%20using%20semantic%20search.",
         "prevChunkIds": []
       },
       "141": {
         "chunkId": "7b30e7",
-        "hash": "be595d25",
-        "encoded": "retrieved_docs%20=%20%5B%5D",
+        "hash": "5e521a29",
+        "encoded": "Args:",
         "prevChunkIds": []
       },
       "142": {
         "chunkId": "7b30e7",
-        "hash": "5e774d14",
-        "encoded": "if%20results%20and%20results%5B'ids'%5D%20and%20len(results%5B'ids'%5D%5B0%5D)%20%3E%200:",
+        "hash": "01278c1c",
+        "encoded": "query:%20Search%20query",
         "prevChunkIds": []
       },
       "143": {
         "chunkId": "7b30e7",
-        "hash": "70af35a1",
-        "encoded": "for%20i%20in%20range(len(results%5B'ids'%5D%5B0%5D)):",
+        "hash": "643e7519",
+        "encoded": "top_k:%20Number%20of%20results%20to%20return%20(default%20from%20config)",
         "prevChunkIds": []
       },
       "144": {
         "chunkId": "7b30e7",
-        "hash": "11ba485f",
-        "encoded": "doc%20=%20%7B",
-        "prevChunkIds": []
-      },
-      "145": {
-        "chunkId": "7b30e7",
-        "hash": "69944efe",
-        "encoded": "'id':%20results%5B'ids'%5D%5B0%5D%5Bi%5D,",
+        "hash": "70a4017d",
+        "encoded": "filter_metadata:%20Optional%20metadata%20filters",
         "prevChunkIds": []
       },
       "146": {
         "chunkId": "7b30e7",
-        "hash": "9cf890cc",
-        "encoded": "'text':%20results%5B'documents'%5D%5B0%5D%5Bi%5D,",
+        "hash": "667ae023",
+        "encoded": "Returns:",
         "prevChunkIds": []
       },
       "147": {
         "chunkId": "7b30e7",
-        "hash": "c4df8950",
-        "encoded": "'metadata':%20results%5B'metadatas'%5D%5B0%5D%5Bi%5D%20if%20results%5B'metadatas'%5D%20else%20%7B%7D,",
+        "hash": "e907b7b7",
+        "encoded": "List%20of%20retrieved%20documents%20with%20metadata",
         "prevChunkIds": []
       },
       "148": {
         "chunkId": "7b30e7",
-        "hash": "0813f17d",
-        "encoded": "'distance':%20results%5B'distances'%5D%5B0%5D%5Bi%5D%20if%20results%5B'distances'%5D%20else%20None,",
+        "hash": "71e1143c",
+        "encoded": "%22%22%22",
         "prevChunkIds": []
       },
       "149": {
         "chunkId": "7b30e7",
-        "hash": "db84ad06",
-        "encoded": "'relevance_score':%201.0%20-%20(results%5B'distances'%5D%5B0%5D%5Bi%5D%20if%20results%5B'distances'%5D%20and%20results%5B'distances'%5D%5B0%5D%5Bi%5D%20else%200.0)",
+        "hash": "43ca256b",
+        "encoded": "if%20not%20self.is_knowledge_base_ready():",
         "prevChunkIds": []
       },
       "150": {
         "chunkId": "7b30e7",
-        "hash": "e584d451",
-        "encoded": "%7D",
+        "hash": "c5f12ca5",
+        "encoded": "logger.error(%22Knowledge%20base%20not%20ready%20-%20run%20build_knowledge_base.py%20first%22)",
         "prevChunkIds": []
       },
       "151": {
         "chunkId": "7b30e7",
-        "hash": "2bf04e7d",
-        "encoded": "retrieved_docs.append(doc)",
+        "hash": "8c550485",
+        "encoded": "return%20%5B%5D",
         "prevChunkIds": []
       },
       "153": {
         "chunkId": "7b30e7",
-        "hash": "a6a938b9",
-        "encoded": "logger.info(f%22Retrieved%20%7Blen(retrieved_docs)%7D%20documents%22)",
+        "hash": "b1a1b56a",
+        "encoded": "if%20not%20query%20or%20not%20query.strip():",
         "prevChunkIds": []
       },
       "154": {
         "chunkId": "7b30e7",
-        "hash": "edab486e",
-        "encoded": "return%20retrieved_docs",
+        "hash": "730ab5b8",
+        "encoded": "logger.warning(%22Empty%20query%20provided%22)",
         "prevChunkIds": []
       },
-      "156": {
+      "155": {
         "chunkId": "7b30e7",
-        "hash": "1ad83972",
-        "encoded": "except%20Exception%20as%20e:",
+        "hash": "4f669ff6",
+        "encoded": "return%20%5B%5D",
         "prevChunkIds": []
       },
       "157": {
         "chunkId": "7b30e7",
-        "hash": "dc34a5c1",
-        "encoded": "logger.error(f%22Retrieval%20failed:%20%7Be%7D%22)",
+        "hash": "182168b0",
+        "encoded": "top_k%20=%20top_k%20or%20self.settings.retrieval_top_k",
         "prevChunkIds": []
       },
-      "158": {
+      "159": {
         "chunkId": "7b30e7",
-        "hash": "20c6ecd0",
-        "encoded": "return%20%5B%5D",
+        "hash": "e56d790d",
+        "encoded": "try:",
         "prevChunkIds": []
       },
       "160": {
         "chunkId": "7b30e7",
-        "hash": "73146f3e",
-        "encoded": "def%20retrieve_by_category(",
-        "prevChunkIds": []
-      },
-      "161": {
-        "chunkId": "7b30e7",
-        "hash": "7edae46f",
-        "encoded": "self,",
+        "hash": "8432d15c",
+        "encoded": "logger.info(f%22Retrieving%20top-%7Btop_k%7D%20documents%20for%20query:%20%7Bquery%5B:100%5D%7D...%22)",
         "prevChunkIds": []
       },
       "162": {
         "chunkId": "7b30e7",
-        "hash": "e1c95d3d",
-        "encoded": "query:%20str,",
+        "hash": "81e4bc8f",
+        "encoded": "#%20Generate%20query%20embedding",
         "prevChunkIds": []
       },
       "163": {
         "chunkId": "7b30e7",
-        "hash": "21c5fffb",
-        "encoded": "category:%20str,",
-        "prevChunkIds": []
-      },
-      "164": {
-        "chunkId": "7b30e7",
-        "hash": "00670ab9",
-        "encoded": "top_k:%20Optional%5Bint%5D%20=%20None",
+        "hash": "23602804",
+        "encoded": "query_embedding%20=%20self.embed_text(query)",
         "prevChunkIds": []
       },
       "165": {
         "chunkId": "7b30e7",
-        "hash": "ab14cb41",
-        "encoded": ")%20-%3E%20List%5BDict%5Bstr,%20Any%5D%5D:",
+        "hash": "58b73b08",
+        "encoded": "#%20Perform%20semantic%20search",
         "prevChunkIds": []
       },
       "166": {
         "chunkId": "7b30e7",
-        "hash": "0d544561",
-        "encoded": "%22%22%22Retrieve%20documents%20filtered%20by%20category.",
+        "hash": "92df3e36",
+        "encoded": "results%20=%20self.collection.query(",
+        "prevChunkIds": []
+      },
+      "167": {
+        "chunkId": "7b30e7",
+        "hash": "cb42507f",
+        "encoded": "query_embeddings=%5Bquery_embedding%5D,",
         "prevChunkIds": []
       },
       "168": {
         "chunkId": "7b30e7",
-        "hash": "0c6e0b7a",
-        "encoded": "Args:",
+        "hash": "5620ee59",
+        "encoded": "n_results=top_k,",
         "prevChunkIds": []
       },
       "169": {
         "chunkId": "7b30e7",
-        "hash": "faf9fe25",
-        "encoded": "query:%20Search%20query",
+        "hash": "f0136009",
+        "encoded": "where=filter_metadata,",
         "prevChunkIds": []
       },
       "170": {
         "chunkId": "7b30e7",
-        "hash": "a6b1a0ef",
-        "encoded": "category:%20Category%20to%20filter%20(emotion,%20genre,%20instrument,%20context)",
+        "hash": "2d481919",
+        "encoded": "include=%5B'documents',%20'metadatas',%20'distances'%5D",
         "prevChunkIds": []
       },
       "171": {
         "chunkId": "7b30e7",
-        "hash": "bc989cbc",
-        "encoded": "top_k:%20Number%20of%20results",
+        "hash": "88de31a9",
+        "encoded": ")",
         "prevChunkIds": []
       },
       "173": {
         "chunkId": "7b30e7",
-        "hash": "74d7045c",
-        "encoded": "Returns:",
+        "hash": "465534ae",
+        "encoded": "#%20Format%20results",
         "prevChunkIds": []
       },
       "174": {
         "chunkId": "7b30e7",
-        "hash": "042fe2e2",
-        "encoded": "Retrieved%20documents%20from%20specified%20category",
+        "hash": "8faa7cb7",
+        "encoded": "retrieved_docs%20=%20%5B%5D",
         "prevChunkIds": []
       },
       "175": {
         "chunkId": "7b30e7",
-        "hash": "76cc4dfd",
-        "encoded": "%22%22%22",
+        "hash": "3c677e6a",
+        "encoded": "if%20results%20and%20results%5B'ids'%5D%20and%20len(results%5B'ids'%5D%5B0%5D)%20%3E%200:",
         "prevChunkIds": []
       },
       "176": {
-        "chunkId": "7b30e7",
-        "hash": "63bed1f5",
-        "encoded": "return%20self.retrieve(",
+        "chunkId": "692d5f",
+        "hash": "2971081d",
+        "encoded": "'metadata':%20results%5B'metadatas'%5D%5B0%5D%5Bi%5D%20if%20results%5B'metadatas'%5D%20else%20%7B%7D,",
         "prevChunkIds": []
       },
       "177": {
-        "chunkId": "7b30e7",
-        "hash": "eb241b51",
-        "encoded": "query=query,",
+        "chunkId": "692d5f",
+        "hash": "682a0e76",
+        "encoded": "'distance':%20results%5B'distances'%5D%5B0%5D%5Bi%5D%20if%20results%5B'distances'%5D%20else%20None,",
         "prevChunkIds": []
       },
       "178": {
-        "chunkId": "7b30e7",
-        "hash": "156ac3ad",
-        "encoded": "top_k=top_k,",
+        "chunkId": "692d5f",
+        "hash": "78726fc5",
+        "encoded": "'relevance_score':%20self.normalize_distance(",
         "prevChunkIds": []
       },
       "179": {
-        "chunkId": "7b30e7",
-        "hash": "2e5408e1",
-        "encoded": "filter_metadata=%7B'category':%20category%7D",
+        "chunkId": "692d5f",
+        "hash": "3e16524b",
+        "encoded": "results%5B'distances'%5D%5B0%5D%5Bi%5D%20if%20results%5B'distances'%5D%20else%20None,",
         "prevChunkIds": []
       },
       "180": {
-        "chunkId": "7b30e7",
-        "hash": "cbc92fbd",
+        "chunkId": "692d5f",
+        "hash": "2260fa7c",
+        "encoded": "self._collection_metric(),",
+        "prevChunkIds": []
+      },
+      "181": {
+        "chunkId": "692d5f",
+        "hash": "1a4bcb2f",
         "encoded": ")",
         "prevChunkIds": []
       },
       "182": {
-        "chunkId": "7b30e7",
-        "hash": "8c8121d9",
-        "encoded": "def%20format_retrieved_context(self,%20retrieved_docs:%20List%5BDict%5Bstr,%20Any%5D%5D)%20-%3E%20str:",
+        "chunkId": "692d5f",
+        "hash": "ad066da5",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
-      "183": {
+      "184": {
         "chunkId": "7b30e7",
-        "hash": "502a3deb",
-        "encoded": "%22%22%22Format%20retrieved%20documents%20into%20context%20string%20for%20LLM.",
+        "hash": "bf27aa0a",
+        "encoded": "doc%20=%20%7B",
         "prevChunkIds": []
       },
       "185": {
         "chunkId": "7b30e7",
-        "hash": "79b567db",
-        "encoded": "Args:",
+        "hash": "d1cf29d2",
+        "encoded": "'id':%20results%5B'ids'%5D%5B0%5D%5Bi%5D,",
         "prevChunkIds": []
       },
       "186": {
         "chunkId": "7b30e7",
-        "hash": "dbedc61c",
-        "encoded": "retrieved_docs:%20List%20of%20retrieved%20document%20dictionaries",
+        "hash": "3c7354bc",
+        "encoded": "'text':%20results%5B'documents'%5D%5B0%5D%5Bi%5D,",
+        "prevChunkIds": []
+      },
+      "187": {
+        "chunkId": "7b30e7",
+        "hash": "d926b659",
+        "encoded": "'metadata':%20results%5B'metadatas'%5D%5B0%5D%5Bi%5D%20if%20results%5B'metadatas'%5D%20else%20%7B%7D,",
         "prevChunkIds": []
       },
       "188": {
         "chunkId": "7b30e7",
-        "hash": "d5ea0ece",
-        "encoded": "Returns:",
+        "hash": "22149758",
+        "encoded": "'distance':%20results%5B'distances'%5D%5B0%5D%5Bi%5D%20if%20results%5B'distances'%5D%20else%20None,",
         "prevChunkIds": []
       },
       "189": {
         "chunkId": "7b30e7",
-        "hash": "994dc1cf",
-        "encoded": "Formatted%20context%20string",
+        "hash": "578acf15",
+        "encoded": "'relevance_score':%201.0%20-%20(results%5B'distances'%5D%5B0%5D%5Bi%5D%20if%20results%5B'distances'%5D%20and%20results%5B'distances'%5D%5B0%5D%5Bi%5D%20else%200.0)",
         "prevChunkIds": []
       },
       "190": {
         "chunkId": "7b30e7",
-        "hash": "79dbe91f",
-        "encoded": "%22%22%22",
+        "hash": "6e59ae01",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "191": {
         "chunkId": "7b30e7",
-        "hash": "ca84ddc2",
-        "encoded": "if%20not%20retrieved_docs:",
+        "hash": "d0197531",
+        "encoded": "retrieved_docs.append(doc)",
         "prevChunkIds": []
       },
-      "192": {
+      "193": {
         "chunkId": "7b30e7",
-        "hash": "49c58827",
-        "encoded": "return%20%22No%20relevant%20knowledge%20found.%22",
+        "hash": "22212670",
+        "encoded": "logger.info(f%22Retrieved%20%7Blen(retrieved_docs)%7D%20documents%22)",
         "prevChunkIds": []
       },
       "194": {
         "chunkId": "7b30e7",
-        "hash": "868948cd",
-        "encoded": "context_parts%20=%20%5B%5D",
-        "prevChunkIds": []
-      },
-      "195": {
-        "chunkId": "7b30e7",
-        "hash": "cccef112",
-        "encoded": "for%20i,%20doc%20in%20enumerate(retrieved_docs,%201):",
+        "hash": "09bffb57",
+        "encoded": "return%20retrieved_docs",
         "prevChunkIds": []
       },
       "196": {
         "chunkId": "7b30e7",
-        "hash": "e42920ad",
-        "encoded": "metadata%20=%20doc.get('metadata',%20%7B%7D)",
+        "hash": "0392e318",
+        "encoded": "except%20Exception%20as%20e:",
         "prevChunkIds": []
       },
       "197": {
         "chunkId": "7b30e7",
-        "hash": "e2e81670",
-        "encoded": "category%20=%20metadata.get('category',%20'unknown')",
+        "hash": "8203d995",
+        "encoded": "logger.error(f%22Retrieval%20failed:%20%7Be%7D%22)",
         "prevChunkIds": []
       },
       "198": {
         "chunkId": "7b30e7",
-        "hash": "dabf5c66",
-        "encoded": "topic%20=%20metadata.get('topic',%20'unknown')",
-        "prevChunkIds": []
-      },
-      "199": {
-        "chunkId": "7b30e7",
-        "hash": "6f7dd9c7",
-        "encoded": "text%20=%20doc.get('text',%20'')",
+        "hash": "8c2c53fd",
+        "encoded": "return%20%5B%5D",
         "prevChunkIds": []
       },
       "200": {
         "chunkId": "7b30e7",
-        "hash": "fe8d11b9",
-        "encoded": "relevance%20=%20doc.get('relevance_score',%200.0)",
+        "hash": "e0863a7f",
+        "encoded": "def%20retrieve_by_category(",
+        "prevChunkIds": []
+      },
+      "201": {
+        "chunkId": "7b30e7",
+        "hash": "bb56ed2d",
+        "encoded": "self,",
         "prevChunkIds": []
       },
       "202": {
         "chunkId": "7b30e7",
-        "hash": "1602d7a7",
-        "encoded": "context_parts.append(",
+        "hash": "c865aa5e",
+        "encoded": "query:%20str,",
         "prevChunkIds": []
       },
       "203": {
         "chunkId": "7b30e7",
-        "hash": "ad6b176f",
-        "encoded": "f%22%5B%7Bi%7D%5D%20%7Bcategory.upper()%7D:%20%7Btopic%7D%5Cn%22",
+        "hash": "286c5586",
+        "encoded": "category:%20str,",
         "prevChunkIds": []
       },
       "204": {
         "chunkId": "7b30e7",
-        "hash": "25669cef",
-        "encoded": "f%22Relevance:%20%7Brelevance:.2f%7D%5Cn%22",
+        "hash": "4694c35f",
+        "encoded": "top_k:%20Optional%5Bint%5D%20=%20None",
         "prevChunkIds": []
       },
       "205": {
         "chunkId": "7b30e7",
-        "hash": "3d045296",
-        "encoded": "f%22%7Btext%7D%5Cn%22",
+        "hash": "181caa1e",
+        "encoded": ")%20-%3E%20List%5BDict%5Bstr,%20Any%5D%5D:",
         "prevChunkIds": []
       },
       "206": {
         "chunkId": "7b30e7",
-        "hash": "ce3c15a2",
-        "encoded": ")",
+        "hash": "91f4479c",
+        "encoded": "%22%22%22Retrieve%20documents%20filtered%20by%20category.",
         "prevChunkIds": []
       },
       "208": {
         "chunkId": "7b30e7",
-        "hash": "f9309145",
-        "encoded": "return%20%22%5Cn%22.join(context_parts)",
+        "hash": "3fe5fb21",
+        "encoded": "Args:",
+        "prevChunkIds": []
+      },
+      "209": {
+        "chunkId": "7b30e7",
+        "hash": "29fb2938",
+        "encoded": "query:%20Search%20query",
         "prevChunkIds": []
       },
       "210": {
         "chunkId": "7b30e7",
-        "hash": "2d3ef5a9",
-        "encoded": "def%20get_retrieval_summary(self,%20retrieved_docs:%20List%5BDict%5Bstr,%20Any%5D%5D)%20-%3E%20List%5Bstr%5D:",
+        "hash": "05320da0",
+        "encoded": "category:%20Category%20to%20filter%20(emotion,%20genre,%20instrument,%20context)",
         "prevChunkIds": []
       },
       "211": {
         "chunkId": "7b30e7",
-        "hash": "c4038962",
-        "encoded": "%22%22%22Create%20human-readable%20summary%20of%20retrieved%20knowledge.",
+        "hash": "0cb7e8e4",
+        "encoded": "top_k:%20Number%20of%20results",
         "prevChunkIds": []
       },
       "213": {
         "chunkId": "7b30e7",
-        "hash": "b6e7388b",
-        "encoded": "Args:",
+        "hash": "1a5766b9",
+        "encoded": "Returns:",
         "prevChunkIds": []
       },
       "214": {
         "chunkId": "7b30e7",
-        "hash": "07745738",
-        "encoded": "retrieved_docs:%20Retrieved%20documents",
+        "hash": "ffb26abd",
+        "encoded": "Retrieved%20documents%20from%20specified%20category",
+        "prevChunkIds": []
+      },
+      "215": {
+        "chunkId": "7b30e7",
+        "hash": "3c72afdc",
+        "encoded": "%22%22%22",
         "prevChunkIds": []
       },
       "216": {
         "chunkId": "7b30e7",
-        "hash": "81220caa",
-        "encoded": "Returns:",
+        "hash": "a409be6c",
+        "encoded": "return%20self.retrieve(",
         "prevChunkIds": []
       },
       "217": {
         "chunkId": "7b30e7",
-        "hash": "45b56323",
-        "encoded": "List%20of%20summary%20strings",
+        "hash": "b022e55e",
+        "encoded": "query=query,",
         "prevChunkIds": []
       },
       "218": {
         "chunkId": "7b30e7",
-        "hash": "533ad611",
-        "encoded": "%22%22%22",
+        "hash": "f677190e",
+        "encoded": "top_k=top_k,",
         "prevChunkIds": []
       },
       "219": {
         "chunkId": "7b30e7",
-        "hash": "d27401b6",
-        "encoded": "if%20not%20retrieved_docs:",
+        "hash": "d75ee771",
+        "encoded": "filter_metadata=%7B'category':%20category%7D",
         "prevChunkIds": []
       },
       "220": {
         "chunkId": "7b30e7",
-        "hash": "3102cf2c",
-        "encoded": "return%20%5B%22No%20knowledge%20retrieved%22%5D",
+        "hash": "32dc898e",
+        "encoded": ")",
         "prevChunkIds": []
       },
       "222": {
         "chunkId": "7b30e7",
-        "hash": "9c317b8a",
-        "encoded": "summaries%20=%20%5B%5D",
+        "hash": "9ac08ec7",
+        "encoded": "def%20format_retrieved_context(self,%20retrieved_docs:%20List%5BDict%5Bstr,%20Any%5D%5D)%20-%3E%20str:",
         "prevChunkIds": []
       },
       "223": {
         "chunkId": "7b30e7",
-        "hash": "3460e027",
-        "encoded": "for%20doc%20in%20retrieved_docs:",
-        "prevChunkIds": []
-      },
-      "224": {
-        "chunkId": "7b30e7",
-        "hash": "7a3146a1",
-        "encoded": "metadata%20=%20doc.get('metadata',%20%7B%7D)",
+        "hash": "82c71e4e",
+        "encoded": "%22%22%22Format%20retrieved%20documents%20into%20context%20string%20for%20LLM.",
         "prevChunkIds": []
       },
       "225": {
         "chunkId": "7b30e7",
-        "hash": "2ac5ee69",
-        "encoded": "category%20=%20metadata.get('category',%20'unknown')",
+        "hash": "a216a6a8",
+        "encoded": "Args:",
         "prevChunkIds": []
       },
       "226": {
         "chunkId": "7b30e7",
-        "hash": "36fe44bc",
-        "encoded": "topic%20=%20metadata.get('topic',%20'unknown')",
+        "hash": "48b018c0",
+        "encoded": "retrieved_docs:%20List%20of%20retrieved%20document%20dictionaries",
         "prevChunkIds": []
       },
-      "227": {
+      "228": {
         "chunkId": "7b30e7",
-        "hash": "ba79a915",
-        "encoded": "relevance%20=%20doc.get('relevance_score',%200.0)",
+        "hash": "353fc337",
+        "encoded": "Returns:",
         "prevChunkIds": []
       },
       "229": {
         "chunkId": "7b30e7",
-        "hash": "b503e99b",
-        "encoded": "summaries.append(",
+        "hash": "af51bf3e",
+        "encoded": "Formatted%20context%20string",
         "prevChunkIds": []
       },
       "230": {
         "chunkId": "7b30e7",
-        "hash": "d5295f29",
-        "encoded": "f%22%7Bcategory.capitalize()%7D:%20%7Btopic%7D%20(relevance:%20%7Brelevance:.1%25%7D)%22",
+        "hash": "8c87e8b5",
+        "encoded": "%22%22%22",
         "prevChunkIds": []
       },
       "231": {
         "chunkId": "7b30e7",
-        "hash": "457b310d",
+        "hash": "2e3c6ad1",
+        "encoded": "if%20not%20retrieved_docs:",
+        "prevChunkIds": []
+      },
+      "232": {
+        "chunkId": "7b30e7",
+        "hash": "07e4a553",
+        "encoded": "return%20%22No%20relevant%20knowledge%20found.%22",
+        "prevChunkIds": []
+      },
+      "234": {
+        "chunkId": "7b30e7",
+        "hash": "87ba5fc5",
+        "encoded": "context_parts%20=%20%5B%5D",
+        "prevChunkIds": []
+      },
+      "235": {
+        "chunkId": "7b30e7",
+        "hash": "774e2b32",
+        "encoded": "for%20i,%20doc%20in%20enumerate(retrieved_docs,%201):",
+        "prevChunkIds": []
+      },
+      "236": {
+        "chunkId": "7b30e7",
+        "hash": "6f6ee52d",
+        "encoded": "metadata%20=%20doc.get('metadata',%20%7B%7D)",
+        "prevChunkIds": []
+      },
+      "237": {
+        "chunkId": "7b30e7",
+        "hash": "522b8303",
+        "encoded": "category%20=%20metadata.get('category',%20'unknown')",
+        "prevChunkIds": []
+      },
+      "238": {
+        "chunkId": "7b30e7",
+        "hash": "c7a4ef27",
+        "encoded": "topic%20=%20metadata.get('topic',%20'unknown')",
+        "prevChunkIds": []
+      },
+      "239": {
+        "chunkId": "7b30e7",
+        "hash": "c54e6638",
+        "encoded": "text%20=%20doc.get('text',%20'')",
+        "prevChunkIds": []
+      },
+      "240": {
+        "chunkId": "7b30e7",
+        "hash": "9c48a0fc",
+        "encoded": "relevance%20=%20doc.get('relevance_score',%200.0)",
+        "prevChunkIds": []
+      },
+      "242": {
+        "chunkId": "7b30e7",
+        "hash": "d8dec885",
+        "encoded": "context_parts.append(",
+        "prevChunkIds": []
+      },
+      "243": {
+        "chunkId": "7b30e7",
+        "hash": "3ee7d490",
+        "encoded": "f%22%5B%7Bi%7D%5D%20%7Bcategory.upper()%7D:%20%7Btopic%7D%5Cn%22",
+        "prevChunkIds": []
+      },
+      "244": {
+        "chunkId": "7b30e7",
+        "hash": "d957399b",
+        "encoded": "f%22Relevance:%20%7Brelevance:.2f%7D%5Cn%22",
+        "prevChunkIds": []
+      },
+      "245": {
+        "chunkId": "7b30e7",
+        "hash": "711b7a87",
+        "encoded": "f%22%7Btext%7D%5Cn%22",
+        "prevChunkIds": []
+      },
+      "246": {
+        "chunkId": "7b30e7",
+        "hash": "c40cfef1",
         "encoded": ")",
         "prevChunkIds": []
       },
-      "233": {
+      "248": {
         "chunkId": "7b30e7",
-        "hash": "5e04ee52",
+        "hash": "b23f214e",
+        "encoded": "return%20%22%5Cn%22.join(context_parts)",
+        "prevChunkIds": []
+      },
+      "250": {
+        "chunkId": "7b30e7",
+        "hash": "8dccbd0a",
+        "encoded": "def%20get_retrieval_summary(self,%20retrieved_docs:%20List%5BDict%5Bstr,%20Any%5D%5D)%20-%3E%20List%5Bstr%5D:",
+        "prevChunkIds": []
+      },
+      "251": {
+        "chunkId": "7b30e7",
+        "hash": "af2748f1",
+        "encoded": "%22%22%22Create%20human-readable%20summary%20of%20retrieved%20knowledge.",
+        "prevChunkIds": []
+      },
+      "253": {
+        "chunkId": "7b30e7",
+        "hash": "038ac947",
+        "encoded": "Args:",
+        "prevChunkIds": []
+      },
+      "254": {
+        "chunkId": "7b30e7",
+        "hash": "96b40fa0",
+        "encoded": "retrieved_docs:%20Retrieved%20documents",
+        "prevChunkIds": []
+      },
+      "256": {
+        "chunkId": "7b30e7",
+        "hash": "8b254536",
+        "encoded": "Returns:",
+        "prevChunkIds": []
+      },
+      "257": {
+        "chunkId": "7b30e7",
+        "hash": "d35a51bd",
+        "encoded": "List%20of%20summary%20strings",
+        "prevChunkIds": []
+      },
+      "258": {
+        "chunkId": "7b30e7",
+        "hash": "f41dc512",
+        "encoded": "%22%22%22",
+        "prevChunkIds": []
+      },
+      "259": {
+        "chunkId": "7b30e7",
+        "hash": "70cc2a0f",
+        "encoded": "if%20not%20retrieved_docs:",
+        "prevChunkIds": []
+      },
+      "260": {
+        "chunkId": "7b30e7",
+        "hash": "e2a6f113",
+        "encoded": "return%20%5B%22No%20knowledge%20retrieved%22%5D",
+        "prevChunkIds": []
+      },
+      "262": {
+        "chunkId": "7b30e7",
+        "hash": "1780d844",
+        "encoded": "summaries%20=%20%5B%5D",
+        "prevChunkIds": []
+      },
+      "263": {
+        "chunkId": "7b30e7",
+        "hash": "8d65dd3a",
+        "encoded": "for%20doc%20in%20retrieved_docs:",
+        "prevChunkIds": []
+      },
+      "264": {
+        "chunkId": "7b30e7",
+        "hash": "6aa4f1ea",
+        "encoded": "metadata%20=%20doc.get('metadata',%20%7B%7D)",
+        "prevChunkIds": []
+      },
+      "265": {
+        "chunkId": "7b30e7",
+        "hash": "88508b39",
+        "encoded": "category%20=%20metadata.get('category',%20'unknown')",
+        "prevChunkIds": []
+      },
+      "266": {
+        "chunkId": "7b30e7",
+        "hash": "b3462f88",
+        "encoded": "topic%20=%20metadata.get('topic',%20'unknown')",
+        "prevChunkIds": []
+      },
+      "267": {
+        "chunkId": "7b30e7",
+        "hash": "44f0c3ac",
+        "encoded": "relevance%20=%20doc.get('relevance_score',%200.0)",
+        "prevChunkIds": []
+      },
+      "269": {
+        "chunkId": "7b30e7",
+        "hash": "399674dc",
+        "encoded": "summaries.append(",
+        "prevChunkIds": []
+      },
+      "270": {
+        "chunkId": "7b30e7",
+        "hash": "455963bb",
+        "encoded": "f%22%7Bcategory.capitalize()%7D:%20%7Btopic%7D%20(relevance:%20%7Brelevance:.1%25%7D)%22",
+        "prevChunkIds": []
+      },
+      "271": {
+        "chunkId": "7b30e7",
+        "hash": "757ab519",
+        "encoded": ")",
+        "prevChunkIds": []
+      },
+      "273": {
+        "chunkId": "7b30e7",
+        "hash": "7b94a214",
         "encoded": "return%20summaries",
         "prevChunkIds": []
       }

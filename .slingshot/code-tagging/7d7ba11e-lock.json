@@ -22,6 +22,42 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/16/2026, 12:48:23 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      },
+      "0972e8": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794930220,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "1dd5b8cd"
+        },
+        "hash": "4bb2f6fa",
+        "messageId": "system_ac1f1610-e29c-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 9:13:40 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "0743a1": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794930220,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "1dd5b8cd"
+        },
+        "hash": "6b357722",
+        "messageId": "system_ac1f1610-e29c-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 9:13:40 PM\n- **source**: agent\n- **type**: agentEditTool\n"
       }
     },
     "lines": {
@@ -176,1293 +212,1269 @@
         "prevChunkIds": []
       },
       "35": {
-        "chunkId": "167679",
+        "chunkId": "0743a1",
         "hash": "8da83f35",
         "encoded": "This%20project%20demonstrates%20practical%20implementation%20of:",
         "prevChunkIds": []
       },
       "36": {
-        "chunkId": "167679",
+        "chunkId": "0743a1",
         "hash": "87e70d8b",
         "encoded": "-%20**Local%20LLM%20Integration**%20(Ollama%20+%20Qwen%202.5%203B)",
         "prevChunkIds": []
       },
       "37": {
-        "chunkId": "167679",
+        "chunkId": "0743a1",
         "hash": "5192ed25",
         "encoded": "-%20**RAG%20(Retrieval-Augmented%20Generation)**",
         "prevChunkIds": []
       },
       "38": {
-        "chunkId": "167679",
+        "chunkId": "0743a1",
         "hash": "896e85bc",
         "encoded": "-%20**Vector%20Databases**%20(ChromaDB)",
         "prevChunkIds": []
       },
       "39": {
-        "chunkId": "167679",
+        "chunkId": "0743a1",
         "hash": "825ce8c3",
         "encoded": "-%20**Text%20Embeddings**%20(Sentence%20Transformers)",
         "prevChunkIds": []
       },
       "40": {
-        "chunkId": "167679",
+        "chunkId": "0743a1",
         "hash": "07898613",
         "encoded": "-%20**Structured%20LLM%20Outputs**%20(Pydantic)",
         "prevChunkIds": []
       },
       "41": {
-        "chunkId": "167679",
-        "hash": "509cdcd0",
-        "encoded": "-%20**Full-Stack%20Development**%20(Streamlit%20+%20Python)",
+        "chunkId": "0743a1",
+        "hash": "99cc0c2f",
+        "encoded": "-%20**Full-Stack%20Development**%20(React/Vite%20+%20FastAPI,%20with%20Streamlit%20fallback)",
         "prevChunkIds": []
       },
       "43": {
-        "chunkId": "167679",
-        "hash": "d3e00cdb",
-        "encoded": "---",
+        "chunkId": "0743a1",
+        "hash": "61e79175",
+        "encoded": "%3E%20**Current%20setup:**%20Use%20%5B%60docs/LOCAL_RUNBOOK.md%60%5D(docs/LOCAL_RUNBOOK.md)%20for%20the%20accurate%20Windows%20installation,%20dependency%20setup,%20Ollama%20configuration,%20FastAPI%20startup,%20React%20startup,%20Streamlit%20fallback,%20optional%20speech%20transcription,%20testing,%20and%20troubleshooting%20instructions.",
         "prevChunkIds": []
       },
       "45": {
         "chunkId": "167679",
-        "hash": "912c353e",
-        "encoded": "##%20%F0%9F%8E%AF%20Problem%20Statement",
+        "hash": "5f39487d",
+        "encoded": "-%20**Local%20LLM%20Integration**%20(Ollama%20+%20Qwen%202.5%203B)",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "167679",
+        "hash": "1ede9eee",
+        "encoded": "-%20**RAG%20(Retrieval-Augmented%20Generation)**",
         "prevChunkIds": []
       },
       "47": {
         "chunkId": "167679",
-        "hash": "24b8589b",
-        "encoded": "**Can%20AI%20understand%20the%20emotional%20depth%20of%20personal%20memories%20and%20recommend%20music%20that%20captures%20those%20feelings?**",
+        "hash": "72932974",
+        "encoded": "-%20**Vector%20Databases**%20(ChromaDB)",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "167679",
+        "hash": "21963e41",
+        "encoded": "-%20**Text%20Embeddings**%20(Sentence%20Transformers)",
         "prevChunkIds": []
       },
       "49": {
         "chunkId": "167679",
-        "hash": "2026c505",
-        "encoded": "For%20example,%20if%20you%20describe:",
+        "hash": "c2b54af6",
+        "encoded": "-%20**Structured%20LLM%20Outputs**%20(Pydantic)",
         "prevChunkIds": []
       },
       "50": {
         "chunkId": "167679",
-        "hash": "a9b32020",
-        "encoded": "%3E%20%22It%20was%20my%20last%20day%20at%20college.%20I%20was%20sitting%20with%20my%20friends,%20remembering%20all%20the%20memories%20we%20created%20together.%20I%20was%20happy,%20but%20somewhere%20inside%20I%20knew%20I%20would%20miss%20those%20days.%22",
+        "hash": "4e2c54f2",
+        "encoded": "-%20**Full-Stack%20Development**%20(Streamlit%20+%20Python)",
         "prevChunkIds": []
       },
       "52": {
         "chunkId": "167679",
-        "hash": "42cecd4e",
-        "encoded": "The%20system%20should:",
-        "prevChunkIds": []
-      },
-      "53": {
-        "chunkId": "167679",
-        "hash": "c4cf4ca6",
-        "encoded": "1.%20Understand%20emotions:%20**Nostalgia,%20Happiness,%20Sadness,%20Gratitude**",
+        "hash": "e6641b4b",
+        "encoded": "---",
         "prevChunkIds": []
       },
       "54": {
         "chunkId": "167679",
-        "hash": "3975f95a",
-        "encoded": "2.%20Identify%20themes:%20**Friendship,%20Farewell,%20College,%20Life%20Transitions**",
-        "prevChunkIds": []
-      },
-      "55": {
-        "chunkId": "167679",
-        "hash": "23752bc8",
-        "encoded": "3.%20Derive%20musical%20characteristics:%20**Indie%20folk,%20Acoustic%20pop,%20Piano,%20Guitar**",
+        "hash": "ab78913e",
+        "encoded": "##%20%F0%9F%8E%AF%20Problem%20Statement",
         "prevChunkIds": []
       },
       "56": {
         "chunkId": "167679",
-        "hash": "9844f9c6",
-        "encoded": "4.%20Recommend%20actual%20tracks%20that%20match%20these%20elements",
+        "hash": "8efc43c2",
+        "encoded": "**Can%20AI%20understand%20the%20emotional%20depth%20of%20personal%20memories%20and%20recommend%20music%20that%20captures%20those%20feelings?**",
         "prevChunkIds": []
       },
-      "57": {
+      "58": {
         "chunkId": "167679",
-        "hash": "4fa139c7",
-        "encoded": "5.%20Explain%20why%20each%20track%20fits%20your%20memory",
+        "hash": "1b3e760f",
+        "encoded": "For%20example,%20if%20you%20describe:",
         "prevChunkIds": []
       },
       "59": {
         "chunkId": "167679",
-        "hash": "526cf402",
-        "encoded": "---",
+        "hash": "93af449d",
+        "encoded": "%3E%20%22It%20was%20my%20last%20day%20at%20college.%20I%20was%20sitting%20with%20my%20friends,%20remembering%20all%20the%20memories%20we%20created%20together.%20I%20was%20happy,%20but%20somewhere%20inside%20I%20knew%20I%20would%20miss%20those%20days.%22",
         "prevChunkIds": []
       },
       "61": {
         "chunkId": "167679",
-        "hash": "6f780ae4",
-        "encoded": "##%20%E2%9C%A8%20Features",
+        "hash": "79b27baf",
+        "encoded": "The%20system%20should:",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "167679",
+        "hash": "110efe1f",
+        "encoded": "1.%20Understand%20emotions:%20**Nostalgia,%20Happiness,%20Sadness,%20Gratitude**",
         "prevChunkIds": []
       },
       "63": {
         "chunkId": "167679",
-        "hash": "c54567b8",
-        "encoded": "###%20%F0%9F%8E%AD%20Memory-to-Music%20Analysis",
+        "hash": "501efef0",
+        "encoded": "2.%20Identify%20themes:%20**Friendship,%20Farewell,%20College,%20Life%20Transitions**",
         "prevChunkIds": []
       },
       "64": {
         "chunkId": "167679",
-        "hash": "dfeb1865",
-        "encoded": "-%20**Emotion%20Detection**:%20Identifies%20primary%20and%20secondary%20emotions%20with%20intensity%20scoring",
+        "hash": "368a07ad",
+        "encoded": "3.%20Derive%20musical%20characteristics:%20**Indie%20folk,%20Acoustic%20pop,%20Piano,%20Guitar**",
         "prevChunkIds": []
       },
       "65": {
         "chunkId": "167679",
-        "hash": "58a329a0",
-        "encoded": "-%20**Theme%20Extraction**:%20Recognizes%20life%20contexts,%20events,%20and%20relationships",
+        "hash": "9aad3453",
+        "encoded": "4.%20Recommend%20actual%20tracks%20that%20match%20these%20elements",
         "prevChunkIds": []
       },
       "66": {
         "chunkId": "167679",
-        "hash": "577ee0de",
-        "encoded": "-%20**Musical%20Mapping**:%20Translates%20emotions%20into%20genres,%20instruments,%20tempo,%20and%20atmosphere",
-        "prevChunkIds": []
-      },
-      "67": {
-        "chunkId": "167679",
-        "hash": "4275a0a3",
-        "encoded": "-%20**RAG-Powered%20Insights**:%20Retrieves%20relevant%20music%20knowledge%20to%20inform%20recommendations",
+        "hash": "4362b687",
+        "encoded": "5.%20Explain%20why%20each%20track%20fits%20your%20memory",
         "prevChunkIds": []
       },
       "68": {
         "chunkId": "167679",
-        "hash": "4f6f1855",
-        "encoded": "-%20**Intelligent%20Ranking**:%20Scores%20tracks%20using%20configurable%20weighted%20matching",
+        "hash": "fa5dcb71",
+        "encoded": "---",
         "prevChunkIds": []
       },
-      "69": {
+      "70": {
         "chunkId": "167679",
-        "hash": "14c75ce6",
-        "encoded": "-%20**Natural%20Explanations**:%20Generates%20empathetic%20explanations%20for%20each%20recommendation",
-        "prevChunkIds": []
-      },
-      "71": {
-        "chunkId": "167679",
-        "hash": "02ff0759",
-        "encoded": "###%20%F0%9F%92%BE%20Personal%20Memory%20Vault",
+        "hash": "3e84bdf1",
+        "encoded": "##%20%E2%9C%A8%20Features",
         "prevChunkIds": []
       },
       "72": {
         "chunkId": "167679",
-        "hash": "4ebde503",
-        "encoded": "-%20**Persistent%20Storage**:%20Save%20analyzed%20memories%20with%20their%20soundtracks%20(SQLite)",
+        "hash": "f82b1787",
+        "encoded": "###%20%F0%9F%8E%AD%20Memory-to-Music%20Analysis",
         "prevChunkIds": []
       },
       "73": {
         "chunkId": "167679",
-        "hash": "ea97ed7b",
-        "encoded": "-%20**Search%20&%20Filter**:%20Find%20memories%20by%20keywords,%20emotions,%20or%20themes",
+        "hash": "c80e144f",
+        "encoded": "-%20**Emotion%20Detection**:%20Identifies%20primary%20and%20secondary%20emotions%20with%20intensity%20scoring",
         "prevChunkIds": []
       },
       "74": {
         "chunkId": "167679",
-        "hash": "a2f4194d",
-        "encoded": "-%20**Browse%20History**:%20Revisit%20past%20memories%20and%20their%20recommended%20music",
+        "hash": "6fea0440",
+        "encoded": "-%20**Theme%20Extraction**:%20Recognizes%20life%20contexts,%20events,%20and%20relationships",
         "prevChunkIds": []
       },
       "75": {
         "chunkId": "167679",
-        "hash": "ccc1b506",
-        "encoded": "-%20**Delete%20with%20Confirmation**:%20Manage%20your%20personal%20memory%20collection",
+        "hash": "17603d0e",
+        "encoded": "-%20**Musical%20Mapping**:%20Translates%20emotions%20into%20genres,%20instruments,%20tempo,%20and%20atmosphere",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "167679",
+        "hash": "35e9f300",
+        "encoded": "-%20**RAG-Powered%20Insights**:%20Retrieves%20relevant%20music%20knowledge%20to%20inform%20recommendations",
         "prevChunkIds": []
       },
       "77": {
         "chunkId": "167679",
-        "hash": "23a9d710",
-        "encoded": "###%20%F0%9F%94%92%20Privacy%20&%20Portability",
+        "hash": "2267a8bf",
+        "encoded": "-%20**Intelligent%20Ranking**:%20Scores%20tracks%20using%20configurable%20weighted%20matching",
         "prevChunkIds": []
       },
       "78": {
         "chunkId": "167679",
-        "hash": "5e8cc594",
-        "encoded": "-%20**100%25%20Local%20Execution**:%20No%20cloud%20APIs,%20all%20processing%20on%20your%20machine",
-        "prevChunkIds": []
-      },
-      "79": {
-        "chunkId": "167679",
-        "hash": "a672d0a6",
-        "encoded": "-%20**Cross-Platform**:%20Windows,%20Linux,%20macOS%20compatible",
+        "hash": "0b0c5538",
+        "encoded": "-%20**Natural%20Explanations**:%20Generates%20empathetic%20explanations%20for%20each%20recommendation",
         "prevChunkIds": []
       },
       "80": {
         "chunkId": "167679",
-        "hash": "cbc82501",
-        "encoded": "-%20**CPU-Only%20Support**:%20No%20GPU%20required%20(optional%20GPU%20acceleration)",
+        "hash": "3e027a20",
+        "encoded": "###%20%F0%9F%92%BE%20Personal%20Memory%20Vault",
         "prevChunkIds": []
       },
       "81": {
         "chunkId": "167679",
-        "hash": "b31cbf46",
-        "encoded": "-%20**Configurable**:%20Easy%20customization%20via%20environment%20variables",
+        "hash": "9e19e999",
+        "encoded": "-%20**Persistent%20Storage**:%20Save%20analyzed%20memories%20with%20their%20soundtracks%20(SQLite)",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "167679",
+        "hash": "63c9e53c",
+        "encoded": "-%20**Search%20&%20Filter**:%20Find%20memories%20by%20keywords,%20emotions,%20or%20themes",
         "prevChunkIds": []
       },
       "83": {
         "chunkId": "167679",
-        "hash": "540fbc64",
-        "encoded": "---",
+        "hash": "9ca19648",
+        "encoded": "-%20**Browse%20History**:%20Revisit%20past%20memories%20and%20their%20recommended%20music",
         "prevChunkIds": []
       },
-      "85": {
+      "84": {
         "chunkId": "167679",
-        "hash": "bd177aaf",
-        "encoded": "##%20%F0%9F%9B%A0%EF%B8%8F%20Technology%20Stack",
+        "hash": "d2bb075e",
+        "encoded": "-%20**Delete%20with%20Confirmation**:%20Manage%20your%20personal%20memory%20collection",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "167679",
+        "hash": "8bb4b63b",
+        "encoded": "###%20%F0%9F%94%92%20Privacy%20&%20Portability",
         "prevChunkIds": []
       },
       "87": {
         "chunkId": "167679",
-        "hash": "e52ea90a",
-        "encoded": "%7C%20Layer%20%7C%20Technology%20%7C%20Purpose%20%7C",
+        "hash": "9e19a85d",
+        "encoded": "-%20**100%25%20Local%20Execution**:%20No%20cloud%20APIs,%20all%20processing%20on%20your%20machine",
         "prevChunkIds": []
       },
       "88": {
         "chunkId": "167679",
-        "hash": "0a421928",
-        "encoded": "%7C-------%7C-----------%7C----------%7C",
+        "hash": "f890284c",
+        "encoded": "-%20**Cross-Platform**:%20Windows,%20Linux,%20macOS%20compatible",
         "prevChunkIds": []
       },
       "89": {
         "chunkId": "167679",
-        "hash": "7129cdb4",
-        "encoded": "%7C%20**Frontend**%20%7C%20Streamlit%20%7C%20Interactive%20web%20UI%20%7C",
+        "hash": "2890e814",
+        "encoded": "-%20**CPU-Only%20Support**:%20No%20GPU%20required%20(optional%20GPU%20acceleration)",
         "prevChunkIds": []
       },
       "90": {
         "chunkId": "167679",
-        "hash": "e11afc19",
-        "encoded": "%7C%20**Backend**%20%7C%20Python%203.11+%20%7C%20Application%20logic%20%7C",
-        "prevChunkIds": []
-      },
-      "91": {
-        "chunkId": "167679",
-        "hash": "1171f4ce",
-        "encoded": "%7C%20**LLM**%20%7C%20Ollama%20(Qwen%202.5%203B)%20%7C%20Memory%20analysis%20&%20explanations%20%7C",
+        "hash": "33a2d544",
+        "encoded": "-%20**Configurable**:%20Easy%20customization%20via%20environment%20variables",
         "prevChunkIds": []
       },
       "92": {
         "chunkId": "167679",
-        "hash": "fc5af2b2",
-        "encoded": "%7C%20**Embeddings**%20%7C%20all-MiniLM-L6-v2%20%7C%20Text%20vectorization%20%7C",
-        "prevChunkIds": []
-      },
-      "93": {
-        "chunkId": "167679",
-        "hash": "98631295",
-        "encoded": "%7C%20**Vector%20DB**%20%7C%20ChromaDB%20%7C%20Semantic%20search%20%7C",
+        "hash": "1e4d648e",
+        "encoded": "---",
         "prevChunkIds": []
       },
       "94": {
         "chunkId": "167679",
-        "hash": "8fc3ee51",
-        "encoded": "%7C%20**Database**%20%7C%20SQLite%20%7C%20Memory%20persistence%20%7C",
-        "prevChunkIds": []
-      },
-      "95": {
-        "chunkId": "167679",
-        "hash": "189372ac",
-        "encoded": "%7C%20**Validation**%20%7C%20Pydantic%20%7C%20Structured%20data%20schemas%20%7C",
+        "hash": "d406e4ef",
+        "encoded": "##%20%F0%9F%9B%A0%EF%B8%8F%20Technology%20Stack",
         "prevChunkIds": []
       },
       "96": {
         "chunkId": "167679",
-        "hash": "bd708899",
-        "encoded": "%7C%20**Config**%20%7C%20pydantic-settings%20%7C%20Centralized%20configuration%20%7C",
+        "hash": "a361e75c",
+        "encoded": "%7C%20Layer%20%7C%20Technology%20%7C%20Purpose%20%7C",
         "prevChunkIds": []
       },
       "97": {
         "chunkId": "167679",
-        "hash": "2ad28d1e",
-        "encoded": "%7C%20**Data**%20%7C%20Pandas%20%7C%20Metadata%20processing%20%7C",
+        "hash": "bb7b2586",
+        "encoded": "%7C-------%7C-----------%7C----------%7C",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "0972e8",
+        "hash": "23070d6f",
+        "encoded": "%7C%20Layer%20%7C%20Technology%20%7C%20Purpose%20%7C",
         "prevChunkIds": []
       },
       "99": {
-        "chunkId": "167679",
-        "hash": "eb5cd618",
-        "encoded": "---",
+        "chunkId": "0972e8",
+        "hash": "16ee6a49",
+        "encoded": "%7C-------%7C-----------%7C---------%7C",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "0972e8",
+        "hash": "44560c1f",
+        "encoded": "%7C%20**Primary%20frontend**%20%7C%20React%20+%20TypeScript%20+%20Vite%20%7C%20Memory%20composer,%20voice%20capture,%20vault,%20preferences,%20refinement%20%7C",
         "prevChunkIds": []
       },
       "101": {
-        "chunkId": "167679",
-        "hash": "ab762afe",
-        "encoded": "##%20%F0%9F%8F%97%EF%B8%8F%20Architecture",
+        "chunkId": "0972e8",
+        "hash": "870c0bc3",
+        "encoded": "%7C%20**Fallback%20frontend**%20%7C%20Streamlit%20%7C%20Local%20fallback/admin%20UI%20%7C",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "0972e8",
+        "hash": "f05f31e7",
+        "encoded": "%7C%20**API**%20%7C%20FastAPI%20+%20Uvicorn%20%7C%20REST%20service%20and%20OpenAPI%20docs%20%7C",
         "prevChunkIds": []
       },
       "103": {
-        "chunkId": "167679",
-        "hash": "a16efac8",
-        "encoded": "###%20High-Level%20System%20Design",
+        "chunkId": "0972e8",
+        "hash": "cc9f3c02",
+        "encoded": "%7C%20**Backend%20services**%20%7C%20Python%203.11+%20%7C%20Shared%20soundtrack%20orchestration%20%7C",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "0972e8",
+        "hash": "3e405e4d",
+        "encoded": "%7C%20**LLM**%20%7C%20Ollama%20(Qwen%202.5%203B)%20%7C%20Memory%20analysis%20&%20explanations%20%7C",
         "prevChunkIds": []
       },
       "105": {
-        "chunkId": "167679",
-        "hash": "5d561670",
-        "encoded": "%60%60%60",
+        "chunkId": "0972e8",
+        "hash": "9a22a670",
+        "encoded": "%7C%20**Embeddings**%20%7C%20all-MiniLM-L6-v2%20%7C%20Text%20vectorization%20%7C",
         "prevChunkIds": []
       },
       "106": {
-        "chunkId": "167679",
-        "hash": "beee6217",
-        "encoded": "USER",
+        "chunkId": "0972e8",
+        "hash": "cff78fac",
+        "encoded": "%7C%20**Vector%20DB**%20%7C%20ChromaDB%20%7C%20Semantic%20search%20%7C",
         "prevChunkIds": []
       },
       "107": {
-        "chunkId": "167679",
-        "hash": "4c4bcdcd",
-        "encoded": "%E2%86%93",
+        "chunkId": "0972e8",
+        "hash": "95f6bbd9",
+        "encoded": "%7C%20**Database**%20%7C%20SQLite%20%7C%20Memory,%20feedback,%20and%20preferences%20%7C",
         "prevChunkIds": []
       },
       "108": {
-        "chunkId": "167679",
-        "hash": "a27c0dd3",
-        "encoded": "STREAMLIT%20FRONTEND",
+        "chunkId": "0972e8",
+        "hash": "55bcad3d",
+        "encoded": "%7C%20**Validation**%20%7C%20Pydantic%20%7C%20Structured%20request%20and%20response%20schemas%20%7C",
         "prevChunkIds": []
       },
       "109": {
-        "chunkId": "167679",
-        "hash": "f1a1fc87",
-        "encoded": "%E2%86%93",
+        "chunkId": "0972e8",
+        "hash": "6fc61607",
+        "encoded": "%7C%20**Config**%20%7C%20pydantic-settings%20%7C%20Centralized%20configuration%20%7C",
         "prevChunkIds": []
       },
       "110": {
-        "chunkId": "167679",
-        "hash": "8214d666",
-        "encoded": "PYTHON%20BACKEND",
-        "prevChunkIds": []
-      },
-      "111": {
-        "chunkId": "167679",
-        "hash": "31b89726",
-        "encoded": "%E2%86%93",
-        "prevChunkIds": []
-      },
-      "112": {
-        "chunkId": "167679",
-        "hash": "d272f594",
-        "encoded": "%E2%94%8C%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%AC%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%90",
+        "chunkId": "0972e8",
+        "hash": "d82b4072",
+        "encoded": "%7C%20**Optional%20speech**%20%7C%20faster-whisper%20%7C%20Local%20CPU%20transcription%20%7C",
         "prevChunkIds": []
       },
       "113": {
         "chunkId": "167679",
-        "hash": "8343bc3b",
-        "encoded": "%E2%94%82%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%E2%94%82%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%E2%94%82",
+        "hash": "947acf43",
+        "encoded": "%7C%20**Backend**%20%7C%20Python%203.11+%20%7C%20Application%20logic%20%7C",
         "prevChunkIds": []
       },
       "114": {
         "chunkId": "167679",
-        "hash": "f43cbacb",
-        "encoded": "MEMORY%20ANALYSIS%20%20%20%20PERSONAL%20MEMORY%20VAULT",
+        "hash": "125e3393",
+        "encoded": "%7C%20**LLM**%20%7C%20Ollama%20(Qwen%202.5%203B)%20%7C%20Memory%20analysis%20&%20explanations%20%7C",
         "prevChunkIds": []
       },
       "115": {
         "chunkId": "167679",
-        "hash": "b1450720",
-        "encoded": "%E2%94%82%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%E2%94%82",
+        "hash": "e6cf3a8d",
+        "encoded": "%7C%20**Embeddings**%20%7C%20all-MiniLM-L6-v2%20%7C%20Text%20vectorization%20%7C",
         "prevChunkIds": []
       },
       "116": {
         "chunkId": "167679",
-        "hash": "b903801c",
-        "encoded": "OLLAMA%20LLM%20%20%20%20%20%20%20%20%20SQLite%20DATABASE",
+        "hash": "8182fb94",
+        "encoded": "%7C%20**Vector%20DB**%20%7C%20ChromaDB%20%7C%20Semantic%20search%20%7C",
         "prevChunkIds": []
       },
       "117": {
         "chunkId": "167679",
-        "hash": "6a10ce1e",
-        "encoded": "%E2%94%82",
+        "hash": "b39a8503",
+        "encoded": "%7C%20**Database**%20%7C%20SQLite%20%7C%20Memory%20persistence%20%7C",
         "prevChunkIds": []
       },
       "118": {
         "chunkId": "167679",
-        "hash": "1d788857",
-        "encoded": "STRUCTURED%20OUTPUT",
+        "hash": "864ff30a",
+        "encoded": "%7C%20**Validation**%20%7C%20Pydantic%20%7C%20Structured%20data%20schemas%20%7C",
         "prevChunkIds": []
       },
       "119": {
         "chunkId": "167679",
-        "hash": "4f8754b7",
-        "encoded": "%E2%94%82",
+        "hash": "58185234",
+        "encoded": "%7C%20**Config**%20%7C%20pydantic-settings%20%7C%20Centralized%20configuration%20%7C",
         "prevChunkIds": []
       },
       "120": {
         "chunkId": "167679",
-        "hash": "4b11e057",
-        "encoded": "RAG%20RETRIEVAL%20ENGINE",
-        "prevChunkIds": []
-      },
-      "121": {
-        "chunkId": "167679",
-        "hash": "e67f4ac7",
-        "encoded": "%E2%94%82",
+        "hash": "d42432ee",
+        "encoded": "%7C%20**Data**%20%7C%20Pandas%20%7C%20Metadata%20processing%20%7C",
         "prevChunkIds": []
       },
       "122": {
         "chunkId": "167679",
-        "hash": "69d88f84",
-        "encoded": "%E2%94%8C%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%AC%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%90",
-        "prevChunkIds": []
-      },
-      "123": {
-        "chunkId": "167679",
-        "hash": "45f6a81a",
-        "encoded": "%E2%94%82%20%20%20%20%20%20%20%20%20%20%20%20%20%20%E2%94%82%20%20%20%20%20%20%20%20%20%20%20%20%20%20%E2%94%82",
+        "hash": "38358227",
+        "encoded": "---",
         "prevChunkIds": []
       },
       "124": {
         "chunkId": "167679",
-        "hash": "ebc7a031",
-        "encoded": "EMBEDDINGS%20%20%20CHROMADB%20%20%20%20MUSIC%20KNOWLEDGE",
-        "prevChunkIds": []
-      },
-      "125": {
-        "chunkId": "167679",
-        "hash": "99d5b510",
-        "encoded": "%E2%94%82%20%20%20%20%20%20%20%20%20%20%20%20%20%20%E2%94%82%20%20%20%20%20%20%20%20%20%20%20%20%20%20%E2%94%82",
+        "hash": "3613e28e",
+        "encoded": "##%20%F0%9F%8F%97%EF%B8%8F%20Architecture",
         "prevChunkIds": []
       },
       "126": {
         "chunkId": "167679",
-        "hash": "4a1bbfb0",
-        "encoded": "%E2%94%94%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%B4%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%98",
-        "prevChunkIds": []
-      },
-      "127": {
-        "chunkId": "167679",
-        "hash": "b058cc2e",
-        "encoded": "%E2%94%82",
+        "hash": "602c60d8",
+        "encoded": "###%20High-Level%20System%20Design",
         "prevChunkIds": []
       },
       "128": {
         "chunkId": "167679",
-        "hash": "333d5bdf",
-        "encoded": "RECOMMENDATION%20ENGINE",
+        "hash": "f89c7fc2",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "129": {
         "chunkId": "167679",
-        "hash": "05dd0006",
-        "encoded": "%E2%94%82",
+        "hash": "a6a35330",
+        "encoded": "USER",
         "prevChunkIds": []
       },
       "130": {
         "chunkId": "167679",
-        "hash": "4cca8d88",
-        "encoded": "MUSIC%20CATALOGUE%20%E2%86%92%20RANKING%20%E2%86%92%20EXPLANATION",
+        "hash": "2a3fc07d",
+        "encoded": "%E2%86%93",
         "prevChunkIds": []
       },
       "131": {
         "chunkId": "167679",
-        "hash": "303a7dee",
-        "encoded": "%E2%94%82",
+        "hash": "d850379e",
+        "encoded": "STREAMLIT%20FRONTEND",
         "prevChunkIds": []
       },
       "132": {
         "chunkId": "167679",
-        "hash": "5b497602",
-        "encoded": "FINAL%20SOUNDTRACK%20RESULTS",
+        "hash": "4a4583a8",
+        "encoded": "%E2%86%93",
         "prevChunkIds": []
       },
       "133": {
         "chunkId": "167679",
-        "hash": "262a6d47",
-        "encoded": "%60%60%60",
+        "hash": "ac0196ab",
+        "encoded": "PYTHON%20BACKEND",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "167679",
+        "hash": "29468ba2",
+        "encoded": "%E2%86%93",
         "prevChunkIds": []
       },
       "135": {
         "chunkId": "167679",
-        "hash": "a8958eff",
-        "encoded": "###%20RAG%20Workflow",
+        "hash": "fbe567e3",
+        "encoded": "%E2%94%8C%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%AC%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%90",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "167679",
+        "hash": "9a3a4278",
+        "encoded": "%E2%94%82%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%E2%94%82%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%E2%94%82",
         "prevChunkIds": []
       },
       "137": {
         "chunkId": "167679",
-        "hash": "f5522d99",
-        "encoded": "%60%60%60",
+        "hash": "a1280023",
+        "encoded": "MEMORY%20ANALYSIS%20%20%20%20PERSONAL%20MEMORY%20VAULT",
         "prevChunkIds": []
       },
       "138": {
         "chunkId": "167679",
-        "hash": "5ef5e199",
-        "encoded": "1.%20User%20Memory%20%E2%86%92%202.%20LLM%20Analysis%20%E2%86%92%203.%20Emotion/Theme%20Extraction",
+        "hash": "122cbf81",
+        "encoded": "%E2%94%82%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%E2%94%82",
         "prevChunkIds": []
       },
       "139": {
         "chunkId": "167679",
-        "hash": "aac86b72",
-        "encoded": "%E2%86%93",
+        "hash": "59281eff",
+        "encoded": "OLLAMA%20LLM%20%20%20%20%20%20%20%20%20SQLite%20DATABASE",
         "prevChunkIds": []
       },
       "140": {
         "chunkId": "167679",
-        "hash": "b820e4b1",
-        "encoded": "4.%20Generate%20Retrieval%20Query",
+        "hash": "d38d3df4",
+        "encoded": "%E2%94%82",
         "prevChunkIds": []
       },
       "141": {
         "chunkId": "167679",
-        "hash": "d3a4c95b",
-        "encoded": "%E2%86%93",
+        "hash": "45d23dd6",
+        "encoded": "STRUCTURED%20OUTPUT",
         "prevChunkIds": []
       },
       "142": {
         "chunkId": "167679",
-        "hash": "9e3a3141",
-        "encoded": "5.%20Embed%20Query%20(Sentence%20Transformers)",
+        "hash": "6eda4345",
+        "encoded": "%E2%94%82",
         "prevChunkIds": []
       },
       "143": {
         "chunkId": "167679",
-        "hash": "01006923",
-        "encoded": "%E2%86%93",
+        "hash": "c078cb94",
+        "encoded": "RAG%20RETRIEVAL%20ENGINE",
         "prevChunkIds": []
       },
       "144": {
         "chunkId": "167679",
-        "hash": "7910ba43",
-        "encoded": "6.%20ChromaDB%20Vector%20Search",
+        "hash": "2ace1d94",
+        "encoded": "%E2%94%82",
         "prevChunkIds": []
       },
       "145": {
         "chunkId": "167679",
-        "hash": "4f785e1a",
-        "encoded": "%E2%86%93",
+        "hash": "ac610727",
+        "encoded": "%E2%94%8C%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%AC%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%90",
         "prevChunkIds": []
       },
       "146": {
         "chunkId": "167679",
-        "hash": "44ce8412",
-        "encoded": "7.%20Retrieve%20Music%20Knowledge",
+        "hash": "8823d9db",
+        "encoded": "%E2%94%82%20%20%20%20%20%20%20%20%20%20%20%20%20%20%E2%94%82%20%20%20%20%20%20%20%20%20%20%20%20%20%20%E2%94%82",
         "prevChunkIds": []
       },
       "147": {
         "chunkId": "167679",
-        "hash": "1fe22837",
-        "encoded": "%E2%86%93",
+        "hash": "0a5cff60",
+        "encoded": "EMBEDDINGS%20%20%20CHROMADB%20%20%20%20MUSIC%20KNOWLEDGE",
         "prevChunkIds": []
       },
       "148": {
         "chunkId": "167679",
-        "hash": "91c3d5b3",
-        "encoded": "8.%20Combine%20Analysis%20+%20Retrieved%20Context",
+        "hash": "0731120c",
+        "encoded": "%E2%94%82%20%20%20%20%20%20%20%20%20%20%20%20%20%20%E2%94%82%20%20%20%20%20%20%20%20%20%20%20%20%20%20%E2%94%82",
         "prevChunkIds": []
       },
       "149": {
         "chunkId": "167679",
-        "hash": "3eb925f7",
-        "encoded": "%E2%86%93",
+        "hash": "41f8ae48",
+        "encoded": "%E2%94%94%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%B4%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%98",
         "prevChunkIds": []
       },
       "150": {
         "chunkId": "167679",
-        "hash": "a9ff91c6",
-        "encoded": "9.%20Score%20&%20Rank%20Tracks",
+        "hash": "1dee458d",
+        "encoded": "%E2%94%82",
         "prevChunkIds": []
       },
       "151": {
         "chunkId": "167679",
-        "hash": "8d472810",
-        "encoded": "%E2%86%93",
+        "hash": "a5a58034",
+        "encoded": "RECOMMENDATION%20ENGINE",
         "prevChunkIds": []
       },
       "152": {
         "chunkId": "167679",
-        "hash": "2e9f43ce",
-        "encoded": "10.%20Generate%20Explanations",
+        "hash": "1c322ed9",
+        "encoded": "%E2%94%82",
         "prevChunkIds": []
       },
       "153": {
         "chunkId": "167679",
-        "hash": "95e4a90e",
-        "encoded": "%60%60%60",
+        "hash": "2e26e69a",
+        "encoded": "MUSIC%20CATALOGUE%20%E2%86%92%20RANKING%20%E2%86%92%20EXPLANATION",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "167679",
+        "hash": "a7ccb810",
+        "encoded": "%E2%94%82",
         "prevChunkIds": []
       },
       "155": {
         "chunkId": "167679",
-        "hash": "ba82d885",
-        "encoded": "---",
+        "hash": "06d9b533",
+        "encoded": "FINAL%20SOUNDTRACK%20RESULTS",
         "prevChunkIds": []
       },
-      "157": {
+      "156": {
         "chunkId": "167679",
-        "hash": "576e96e6",
-        "encoded": "##%20%F0%9F%93%A5%20Installation",
+        "hash": "92bc600d",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
-      "159": {
+      "158": {
         "chunkId": "167679",
-        "hash": "0f96cc98",
-        "encoded": "###%20Prerequisites",
+        "hash": "7b4a1948",
+        "encoded": "###%20RAG%20Workflow",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "167679",
+        "hash": "c681a864",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "161": {
         "chunkId": "167679",
-        "hash": "7e07514c",
-        "encoded": "-%20**Python%203.11%20or%20higher**%20(3.12%20recommended)",
+        "hash": "c7f6fddc",
+        "encoded": "1.%20User%20Memory%20%E2%86%92%202.%20LLM%20Analysis%20%E2%86%92%203.%20Emotion/Theme%20Extraction",
         "prevChunkIds": []
       },
       "162": {
         "chunkId": "167679",
-        "hash": "0a29bf27",
-        "encoded": "-%20**Git**",
+        "hash": "06e2c45a",
+        "encoded": "%E2%86%93",
         "prevChunkIds": []
       },
       "163": {
         "chunkId": "167679",
-        "hash": "7834b806",
-        "encoded": "-%20**Ollama**%20(%5BDownload%5D(https://ollama.com/download))",
+        "hash": "d5b5e9c1",
+        "encoded": "4.%20Generate%20Retrieval%20Query",
         "prevChunkIds": []
       },
       "164": {
         "chunkId": "167679",
-        "hash": "f52fc9d8",
-        "encoded": "-%20**8GB+%20RAM**%20(recommended)",
+        "hash": "25342f81",
+        "encoded": "%E2%86%93",
         "prevChunkIds": []
       },
       "165": {
         "chunkId": "167679",
-        "hash": "b48e6496",
-        "encoded": "-%20**2GB+%20free%20disk%20space**",
+        "hash": "726433d3",
+        "encoded": "5.%20Embed%20Query%20(Sentence%20Transformers)",
+        "prevChunkIds": []
+      },
+      "166": {
+        "chunkId": "167679",
+        "hash": "06cb8268",
+        "encoded": "%E2%86%93",
         "prevChunkIds": []
       },
       "167": {
         "chunkId": "167679",
-        "hash": "5d9fa576",
-        "encoded": "###%20Windows%20Setup",
+        "hash": "c17f27f0",
+        "encoded": "6.%20ChromaDB%20Vector%20Search",
+        "prevChunkIds": []
+      },
+      "168": {
+        "chunkId": "167679",
+        "hash": "c9c73bb3",
+        "encoded": "%E2%86%93",
         "prevChunkIds": []
       },
       "169": {
         "chunkId": "167679",
-        "hash": "aa846dfe",
-        "encoded": "%60%60%60powershell",
+        "hash": "91c46d06",
+        "encoded": "7.%20Retrieve%20Music%20Knowledge",
         "prevChunkIds": []
       },
       "170": {
         "chunkId": "167679",
-        "hash": "5d74bf09",
-        "encoded": "#%201.%20Clone%20the%20repository",
+        "hash": "3e6782a1",
+        "encoded": "%E2%86%93",
         "prevChunkIds": []
       },
       "171": {
         "chunkId": "167679",
-        "hash": "d8e42b94",
-        "encoded": "git%20clone%20%3Crepository-url%3E",
+        "hash": "bb718ffa",
+        "encoded": "8.%20Combine%20Analysis%20+%20Retrieved%20Context",
         "prevChunkIds": []
       },
       "172": {
         "chunkId": "167679",
-        "hash": "cf31a9ca",
-        "encoded": "cd%20%22The%20Soundtrack%20of%20Your%20Life%22",
+        "hash": "112d1bcb",
+        "encoded": "%E2%86%93",
+        "prevChunkIds": []
+      },
+      "173": {
+        "chunkId": "167679",
+        "hash": "2ca6e076",
+        "encoded": "9.%20Score%20&%20Rank%20Tracks",
         "prevChunkIds": []
       },
       "174": {
         "chunkId": "167679",
-        "hash": "a155c562",
-        "encoded": "#%202.%20Run%20automated%20setup",
+        "hash": "efe6964a",
+        "encoded": "%E2%86%93",
         "prevChunkIds": []
       },
       "175": {
         "chunkId": "167679",
-        "hash": "9a1165c1",
-        "encoded": ".%5Cscripts%5Csetup_windows.ps1",
+        "hash": "a932ea7f",
+        "encoded": "10.%20Generate%20Explanations",
         "prevChunkIds": []
       },
-      "177": {
+      "176": {
         "chunkId": "167679",
-        "hash": "40ffb3a4",
-        "encoded": "#%203.%20Build%20knowledge%20base%20(one-time)",
+        "hash": "d2daaacf",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "178": {
         "chunkId": "167679",
-        "hash": "ea10f887",
-        "encoded": "python%20scripts/build_knowledge_base.py",
+        "hash": "ed94207e",
+        "encoded": "---",
         "prevChunkIds": []
       },
       "180": {
         "chunkId": "167679",
-        "hash": "e1893de0",
-        "encoded": "#%204.%20Run%20the%20application",
-        "prevChunkIds": []
-      },
-      "181": {
-        "chunkId": "167679",
-        "hash": "6a31536b",
-        "encoded": ".%5Cscripts%5Crun_windows.ps1",
+        "hash": "5b3e54d3",
+        "encoded": "##%20%F0%9F%93%A5%20Installation",
         "prevChunkIds": []
       },
       "182": {
         "chunkId": "167679",
-        "hash": "5e9cbb4d",
-        "encoded": "%60%60%60",
+        "hash": "aa6afdfd",
+        "encoded": "###%20Prerequisites",
         "prevChunkIds": []
       },
       "184": {
         "chunkId": "167679",
-        "hash": "ccfbbde9",
-        "encoded": "###%20Linux/macOS%20Setup",
+        "hash": "2e439eb6",
+        "encoded": "-%20**Python%203.11%20or%20higher**%20(3.12%20recommended)",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "167679",
+        "hash": "981feabd",
+        "encoded": "-%20**Git**",
         "prevChunkIds": []
       },
       "186": {
         "chunkId": "167679",
-        "hash": "b0ea5d87",
-        "encoded": "%60%60%60bash",
+        "hash": "6929095c",
+        "encoded": "-%20**Ollama**%20(%5BDownload%5D(https://ollama.com/download))",
         "prevChunkIds": []
       },
       "187": {
         "chunkId": "167679",
-        "hash": "57f0651b",
-        "encoded": "#%201.%20Clone%20the%20repository",
+        "hash": "a2b8e186",
+        "encoded": "-%20**8GB+%20RAM**%20(recommended)",
         "prevChunkIds": []
       },
       "188": {
         "chunkId": "167679",
-        "hash": "a699122c",
-        "encoded": "git%20clone%20%3Crepository-url%3E",
+        "hash": "1e2a943a",
+        "encoded": "-%20**2GB+%20free%20disk%20space**",
         "prevChunkIds": []
       },
-      "189": {
+      "190": {
         "chunkId": "167679",
-        "hash": "0adf4a5b",
-        "encoded": "cd%20%22The%20Soundtrack%20of%20Your%20Life%22",
-        "prevChunkIds": []
-      },
-      "191": {
-        "chunkId": "167679",
-        "hash": "a637cf1f",
-        "encoded": "#%202.%20Run%20automated%20setup",
+        "hash": "dd1972c2",
+        "encoded": "###%20Windows%20Setup",
         "prevChunkIds": []
       },
       "192": {
         "chunkId": "167679",
-        "hash": "7d419544",
-        "encoded": "chmod%20+x%20scripts/setup_unix.sh%20scripts/run_unix.sh",
+        "hash": "57ecc438",
+        "encoded": "%60%60%60powershell",
         "prevChunkIds": []
       },
       "193": {
         "chunkId": "167679",
-        "hash": "c74a1749",
-        "encoded": "./scripts/setup_unix.sh",
+        "hash": "f895ac7e",
+        "encoded": "#%201.%20Clone%20the%20repository",
+        "prevChunkIds": []
+      },
+      "194": {
+        "chunkId": "167679",
+        "hash": "6afa3b41",
+        "encoded": "git%20clone%20%3Crepository-url%3E",
         "prevChunkIds": []
       },
       "195": {
         "chunkId": "167679",
-        "hash": "84577954",
-        "encoded": "#%203.%20Build%20knowledge%20base%20(one-time)",
+        "hash": "d5f41efd",
+        "encoded": "cd%20%22The%20Soundtrack%20of%20Your%20Life%22",
         "prevChunkIds": []
       },
-      "196": {
+      "197": {
         "chunkId": "167679",
-        "hash": "9fb8665a",
-        "encoded": "python%20scripts/build_knowledge_base.py",
+        "hash": "ca80f36c",
+        "encoded": "#%202.%20Run%20automated%20setup",
         "prevChunkIds": []
       },
       "198": {
         "chunkId": "167679",
-        "hash": "32902a0f",
-        "encoded": "#%204.%20Run%20the%20application",
-        "prevChunkIds": []
-      },
-      "199": {
-        "chunkId": "167679",
-        "hash": "48d18754",
-        "encoded": "./scripts/run_unix.sh",
+        "hash": "297d3a92",
+        "encoded": ".%5Cscripts%5Csetup_windows.ps1",
         "prevChunkIds": []
       },
       "200": {
         "chunkId": "167679",
-        "hash": "88344ed4",
-        "encoded": "%60%60%60",
+        "hash": "99b1ec60",
+        "encoded": "#%203.%20Build%20knowledge%20base%20(one-time)",
         "prevChunkIds": []
       },
-      "202": {
+      "201": {
         "chunkId": "167679",
-        "hash": "b96ebbc8",
-        "encoded": "###%20Manual%20Installation",
+        "hash": "240d5d0e",
+        "encoded": "python%20scripts/build_knowledge_base.py",
+        "prevChunkIds": []
+      },
+      "203": {
+        "chunkId": "167679",
+        "hash": "de479039",
+        "encoded": "#%204.%20Run%20the%20application",
         "prevChunkIds": []
       },
       "204": {
         "chunkId": "167679",
-        "hash": "e0d2bdfa",
-        "encoded": "%60%60%60bash",
+        "hash": "5e5759fa",
+        "encoded": ".%5Cscripts%5Crun_windows.ps1",
         "prevChunkIds": []
       },
       "205": {
         "chunkId": "167679",
-        "hash": "87b7aa51",
-        "encoded": "#%201.%20Install%20Ollama",
-        "prevChunkIds": []
-      },
-      "206": {
-        "chunkId": "167679",
-        "hash": "68748f73",
-        "encoded": "#%20Windows:%20Download%20from%20https://ollama.com/download/windows",
+        "hash": "c456e94f",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "207": {
         "chunkId": "167679",
-        "hash": "e07c4a59",
-        "encoded": "#%20Linux:%20curl%20-fsSL%20https://ollama.com/install.sh%20%7C%20sh",
+        "hash": "7d51600a",
+        "encoded": "###%20Linux/macOS%20Setup",
         "prevChunkIds": []
       },
-      "208": {
+      "209": {
         "chunkId": "167679",
-        "hash": "f598c92e",
-        "encoded": "#%20macOS:%20brew%20install%20ollama",
+        "hash": "7f648551",
+        "encoded": "%60%60%60bash",
         "prevChunkIds": []
       },
       "210": {
         "chunkId": "167679",
-        "hash": "7165e3ae",
-        "encoded": "#%202.%20Pull%20the%20LLM%20model",
+        "hash": "66b4efca",
+        "encoded": "#%201.%20Clone%20the%20repository",
         "prevChunkIds": []
       },
       "211": {
         "chunkId": "167679",
-        "hash": "538418a1",
-        "encoded": "ollama%20pull%20qwen2.5:3b",
+        "hash": "7d3df5b1",
+        "encoded": "git%20clone%20%3Crepository-url%3E",
         "prevChunkIds": []
       },
-      "213": {
+      "212": {
         "chunkId": "167679",
-        "hash": "9992e278",
-        "encoded": "#%203.%20Create%20virtual%20environment",
+        "hash": "c0a6b05f",
+        "encoded": "cd%20%22The%20Soundtrack%20of%20Your%20Life%22",
         "prevChunkIds": []
       },
       "214": {
         "chunkId": "167679",
-        "hash": "2752fa5e",
-        "encoded": "python%20-m%20venv%20.venv",
+        "hash": "27f3a122",
+        "encoded": "#%202.%20Run%20automated%20setup",
+        "prevChunkIds": []
+      },
+      "215": {
+        "chunkId": "167679",
+        "hash": "0270a782",
+        "encoded": "chmod%20+x%20scripts/setup_unix.sh%20scripts/run_unix.sh",
         "prevChunkIds": []
       },
       "216": {
         "chunkId": "167679",
-        "hash": "abe6304c",
-        "encoded": "#%20Windows:",
+        "hash": "b5946c38",
+        "encoded": "./scripts/setup_unix.sh",
         "prevChunkIds": []
       },
-      "217": {
+      "218": {
         "chunkId": "167679",
-        "hash": "d033084f",
-        "encoded": ".venv%5CScripts%5Cactivate",
+        "hash": "241e92be",
+        "encoded": "#%203.%20Build%20knowledge%20base%20(one-time)",
         "prevChunkIds": []
       },
       "219": {
         "chunkId": "167679",
-        "hash": "cccf4224",
-        "encoded": "#%20Linux/macOS:",
+        "hash": "6d0a3ea3",
+        "encoded": "python%20scripts/build_knowledge_base.py",
         "prevChunkIds": []
       },
-      "220": {
+      "221": {
         "chunkId": "167679",
-        "hash": "13226a7c",
-        "encoded": "source%20.venv/bin/activate",
+        "hash": "b428364a",
+        "encoded": "#%204.%20Run%20the%20application",
         "prevChunkIds": []
       },
       "222": {
         "chunkId": "167679",
-        "hash": "1a0193f8",
-        "encoded": "#%204.%20Install%20dependencies",
+        "hash": "8d3f7404",
+        "encoded": "./scripts/run_unix.sh",
         "prevChunkIds": []
       },
       "223": {
         "chunkId": "167679",
-        "hash": "99616fd1",
-        "encoded": "pip%20install%20-r%20requirements.txt",
+        "hash": "17c8baf3",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "225": {
         "chunkId": "167679",
-        "hash": "6123716d",
-        "encoded": "#%205.%20Configure%20environment",
-        "prevChunkIds": []
-      },
-      "226": {
-        "chunkId": "167679",
-        "hash": "95fcba00",
-        "encoded": "cp%20.env.example%20.env",
+        "hash": "4702f862",
+        "encoded": "###%20Manual%20Installation",
         "prevChunkIds": []
       },
       "227": {
         "chunkId": "167679",
-        "hash": "1879657a",
-        "encoded": "#%20Edit%20.env%20if%20needed",
+        "hash": "9958b7ef",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "228": {
+        "chunkId": "167679",
+        "hash": "15db3683",
+        "encoded": "#%201.%20Install%20Ollama",
         "prevChunkIds": []
       },
       "229": {
         "chunkId": "167679",
-        "hash": "0dfa0022",
-        "encoded": "#%206.%20Build%20knowledge%20base",
+        "hash": "26d40438",
+        "encoded": "#%20Windows:%20Download%20from%20https://ollama.com/download/windows",
         "prevChunkIds": []
       },
       "230": {
         "chunkId": "167679",
-        "hash": "7419a1ff",
-        "encoded": "python%20scripts/build_knowledge_base.py",
+        "hash": "5b6c8b32",
+        "encoded": "#%20Linux:%20curl%20-fsSL%20https://ollama.com/install.sh%20%7C%20sh",
         "prevChunkIds": []
       },
-      "232": {
+      "231": {
         "chunkId": "167679",
-        "hash": "e778ca47",
-        "encoded": "#%207.%20Run%20application",
+        "hash": "59f4c23b",
+        "encoded": "#%20macOS:%20brew%20install%20ollama",
         "prevChunkIds": []
       },
       "233": {
         "chunkId": "167679",
-        "hash": "4a6ee814",
-        "encoded": "streamlit%20run%20app.py",
+        "hash": "ce0f1ddd",
+        "encoded": "#%202.%20Pull%20the%20LLM%20model",
         "prevChunkIds": []
       },
       "234": {
         "chunkId": "167679",
-        "hash": "eeaec860",
-        "encoded": "%60%60%60",
+        "hash": "1c401486",
+        "encoded": "ollama%20pull%20qwen2.5:3b",
         "prevChunkIds": []
       },
       "236": {
         "chunkId": "167679",
-        "hash": "483b2cde",
-        "encoded": "---",
+        "hash": "612ba12b",
+        "encoded": "#%203.%20Create%20virtual%20environment",
         "prevChunkIds": []
       },
-      "238": {
+      "237": {
         "chunkId": "167679",
-        "hash": "10b1b2a5",
-        "encoded": "##%20%F0%9F%9A%80%20Usage",
+        "hash": "79222f71",
+        "encoded": "python%20-m%20venv%20.venv",
+        "prevChunkIds": []
+      },
+      "239": {
+        "chunkId": "167679",
+        "hash": "fda47beb",
+        "encoded": "#%20Windows:",
         "prevChunkIds": []
       },
       "240": {
         "chunkId": "167679",
-        "hash": "3872e062",
-        "encoded": "###%20Creating%20Your%20Soundtrack",
+        "hash": "28c2879e",
+        "encoded": ".venv%5CScripts%5Cactivate",
         "prevChunkIds": []
       },
       "242": {
         "chunkId": "167679",
-        "hash": "242ac594",
-        "encoded": "1.%20**Launch%20the%20application**",
+        "hash": "27d05692",
+        "encoded": "#%20Linux/macOS:",
         "prevChunkIds": []
       },
       "243": {
         "chunkId": "167679",
-        "hash": "cf4e6f89",
-        "encoded": "%60%60%60bash",
-        "prevChunkIds": []
-      },
-      "244": {
-        "chunkId": "167679",
-        "hash": "e9e7a959",
-        "encoded": "streamlit%20run%20app.py",
+        "hash": "e7028410",
+        "encoded": "source%20.venv/bin/activate",
         "prevChunkIds": []
       },
       "245": {
         "chunkId": "167679",
-        "hash": "a2a3c0f4",
-        "encoded": "%60%60%60",
+        "hash": "a436a37e",
+        "encoded": "#%204.%20Install%20dependencies",
         "prevChunkIds": []
       },
-      "247": {
+      "246": {
         "chunkId": "167679",
-        "hash": "186bc8e4",
-        "encoded": "2.%20**Navigate%20to%20%22Create%20Soundtrack%22**",
+        "hash": "bd1ed244",
+        "encoded": "pip%20install%20-r%20requirements.txt",
+        "prevChunkIds": []
+      },
+      "248": {
+        "chunkId": "167679",
+        "hash": "6be1e24f",
+        "encoded": "#%205.%20Configure%20environment",
         "prevChunkIds": []
       },
       "249": {
         "chunkId": "167679",
-        "hash": "79cc90c5",
-        "encoded": "3.%20**Enter%20a%20personal%20memory**%20(example):",
+        "hash": "bb462ab9",
+        "encoded": "cp%20.env.example%20.env",
         "prevChunkIds": []
       },
       "250": {
         "chunkId": "167679",
-        "hash": "8775bd00",
-        "encoded": "%60%60%60",
-        "prevChunkIds": []
-      },
-      "251": {
-        "chunkId": "167679",
-        "hash": "63ef76a7",
-        "encoded": "I%20was%20sitting%20near%20a%20lake%20early%20in%20the%20morning,%20enjoying%20the",
+        "hash": "e67621a5",
+        "encoded": "#%20Edit%20.env%20if%20needed",
         "prevChunkIds": []
       },
       "252": {
         "chunkId": "167679",
-        "hash": "9ef7ea6f",
-        "encoded": "silence%20and%20fresh%20air.%20The%20world%20felt%20peaceful%20and%20calm.",
+        "hash": "a65ea200",
+        "encoded": "#%206.%20Build%20knowledge%20base",
         "prevChunkIds": []
       },
       "253": {
         "chunkId": "167679",
-        "hash": "3aedd391",
-        "encoded": "%60%60%60",
+        "hash": "46e85db9",
+        "encoded": "python%20scripts/build_knowledge_base.py",
         "prevChunkIds": []
       },
       "255": {
         "chunkId": "167679",
-        "hash": "dc578ae4",
-        "encoded": "4.%20**Click%20%22Generate%20Soundtrack%22**",
+        "hash": "abd05968",
+        "encoded": "#%207.%20Run%20application",
+        "prevChunkIds": []
+      },
+      "256": {
+        "chunkId": "167679",
+        "hash": "0608ce0f",
+        "encoded": "streamlit%20run%20app.py",
         "prevChunkIds": []
       },
       "257": {
         "chunkId": "167679",
-        "hash": "d964248d",
-        "encoded": "5.%20**View%20Results**:",
-        "prevChunkIds": []
-      },
-      "258": {
-        "chunkId": "167679",
-        "hash": "3a325643",
-        "encoded": "-%20Memory%20analysis%20(emotions,%20themes,%20musical%20direction)",
+        "hash": "98388c3c",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "259": {
         "chunkId": "167679",
-        "hash": "3aa6e024",
-        "encoded": "-%20Recommended%20tracks%20with%20explanations",
+        "hash": "8d2f46fc",
+        "encoded": "---",
         "prevChunkIds": []
       },
-      "260": {
+      "261": {
         "chunkId": "167679",
-        "hash": "adb48521",
-        "encoded": "-%20RAG%20transparency%20(how%20AI%20selected%20tracks)",
+        "hash": "6d199277",
+        "encoded": "##%20%F0%9F%9A%80%20Usage",
         "prevChunkIds": []
       },
-      "262": {
+      "263": {
         "chunkId": "167679",
-        "hash": "fcbe5e06",
-        "encoded": "6.%20**Save%20to%20Memory%20Vault**%20(optional)",
+        "hash": "175d9152",
+        "encoded": "###%20Creating%20Your%20Soundtrack",
         "prevChunkIds": []
       },
-      "264": {
+      "265": {
         "chunkId": "167679",
-        "hash": "db7bd40b",
-        "encoded": "###%20Managing%20Memory%20Vault",
+        "hash": "9f90f67a",
+        "encoded": "1.%20**Launch%20the%20application**",
         "prevChunkIds": []
       },
       "266": {
         "chunkId": "167679",
-        "hash": "2dbd6126",
-        "encoded": "1.%20**Navigate%20to%20%22Memory%20Vault%22**",
+        "hash": "4f247c5f",
+        "encoded": "%60%60%60bash",
         "prevChunkIds": []
       },
       "267": {
         "chunkId": "167679",
-        "hash": "69268ec4",
-        "encoded": "2.%20**Browse**%20saved%20memories",
+        "hash": "bb2f0751",
+        "encoded": "streamlit%20run%20app.py",
         "prevChunkIds": []
       },
       "268": {
         "chunkId": "167679",
-        "hash": "f2f7da66",
-        "encoded": "3.%20**Search**%20by%20keywords",
-        "prevChunkIds": []
-      },
-      "269": {
-        "chunkId": "167679",
-        "hash": "472186b7",
-        "encoded": "4.%20**Filter**%20by%20emotion%20or%20theme",
+        "hash": "86fe91be",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "270": {
         "chunkId": "167679",
-        "hash": "fec2f0a6",
-        "encoded": "5.%20**View**%20detailed%20memory%20analysis%20and%20soundtrack",
+        "hash": "242cd482",
+        "encoded": "2.%20**Navigate%20to%20%22Create%20Soundtrack%22**",
         "prevChunkIds": []
       },
-      "271": {
+      "272": {
         "chunkId": "167679",
-        "hash": "09e93b0e",
-        "encoded": "6.%20**Delete**%20memories%20(with%20confirmation)",
+        "hash": "694c8ccb",
+        "encoded": "3.%20**Enter%20a%20personal%20memory**%20(example):",
         "prevChunkIds": []
       },
       "273": {
         "chunkId": "167679",
-        "hash": "ab474597",
-        "encoded": "---",
+        "hash": "3f206c91",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "274": {
+        "chunkId": "167679",
+        "hash": "d230eada",
+        "encoded": "I%20was%20sitting%20near%20a%20lake%20early%20in%20the%20morning,%20enjoying%20the",
         "prevChunkIds": []
       },
       "275": {
         "chunkId": "167679",
-        "hash": "3ae07bd4",
-        "encoded": "##%20%F0%9F%93%81%20Project%20Structure",
+        "hash": "32a8c4ae",
+        "encoded": "silence%20and%20fresh%20air.%20The%20world%20felt%20peaceful%20and%20calm.",
         "prevChunkIds": []
       },
-      "277": {
+      "276": {
         "chunkId": "167679",
-        "hash": "42c31215",
+        "hash": "c3089e2c",
         "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "278": {
         "chunkId": "167679",
-        "hash": "45d1ac13",
-        "encoded": "The%20Soundtrack%20of%20Your%20Life/",
-        "prevChunkIds": []
-      },
-      "279": {
-        "chunkId": "167679",
-        "hash": "801f2155",
-        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20app.py%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Main%20Streamlit%20application",
+        "hash": "706b58f5",
+        "encoded": "4.%20**Click%20%22Generate%20Soundtrack%22**",
         "prevChunkIds": []
       },
       "280": {
         "chunkId": "167679",
-        "hash": "b83c5798",
-        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20requirements.txt%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Python%20dependencies",
+        "hash": "1dadbf79",
+        "encoded": "5.%20**View%20Results**:",
         "prevChunkIds": []
       },
       "281": {
         "chunkId": "167679",
-        "hash": "d16a98d9",
-        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20README.md%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20This%20file",
+        "hash": "b0de4fd2",
+        "encoded": "-%20Memory%20analysis%20(emotions,%20themes,%20musical%20direction)",
         "prevChunkIds": []
       },
       "282": {
         "chunkId": "167679",
-        "hash": "2cb14d07",
-        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20.env.example%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Configuration%20template",
+        "hash": "0cab672b",
+        "encoded": "-%20Recommended%20tracks%20with%20explanations",
         "prevChunkIds": []
       },
       "283": {
         "chunkId": "167679",
-        "hash": "5049d311",
-        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20.gitignore%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Git%20ignore%20rules",
-        "prevChunkIds": []
-      },
-      "284": {
-        "chunkId": "167679",
-        "hash": "0195e4ba",
-        "encoded": "%E2%94%82",
+        "hash": "e279a62f",
+        "encoded": "-%20RAG%20transparency%20(how%20AI%20selected%20tracks)",
         "prevChunkIds": []
       },
       "285": {
         "chunkId": "167679",
-        "hash": "d58331cd",
-        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20config/",
-        "prevChunkIds": []
-      },
-      "286": {
-        "chunkId": "167679",
-        "hash": "f4025007",
-        "encoded": "%E2%94%82%20%20%20%E2%94%94%E2%94%80%E2%94%80%20settings.py%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Centralized%20configuration",
+        "hash": "cdb9773e",
+        "encoded": "6.%20**Save%20to%20Memory%20Vault**%20(optional)",
         "prevChunkIds": []
       },
       "287": {
         "chunkId": "167679",
-        "hash": "f15f77d9",
-        "encoded": "%E2%94%82",
-        "prevChunkIds": []
-      },
-      "288": {
-        "chunkId": "167679",
-        "hash": "138e3aa3",
-        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20schemas/",
+        "hash": "b9e14f2f",
+        "encoded": "###%20Managing%20Memory%20Vault",
         "prevChunkIds": []
       },
       "289": {
         "chunkId": "167679",
-        "hash": "2087602d",
-        "encoded": "%E2%94%82%20%20%20%E2%94%94%E2%94%80%E2%94%80%20memory_schema.py%20%20%20%20%20%20%20%20%20%20%20%20#%20Pydantic%20data%20models",
+        "hash": "63c3c409",
+        "encoded": "1.%20**Navigate%20to%20%22Memory%20Vault%22**",
         "prevChunkIds": []
       },
       "290": {
         "chunkId": "167679",
-        "hash": "ab37ec37",
-        "encoded": "%E2%94%82",
+        "hash": "be1478ae",
+        "encoded": "2.%20**Browse**%20saved%20memories",
         "prevChunkIds": []
       },
       "291": {
         "chunkId": "167679",
-        "hash": "0cb5bc30",
-        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20modules/",
+        "hash": "78e996c0",
+        "encoded": "3.%20**Search**%20by%20keywords",
         "prevChunkIds": []
       },
       "292": {
         "chunkId": "167679",
-        "hash": "e1ad8c4b",
-        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20memory_analyzer.py%20%20%20%20%20%20%20%20%20%20#%20LLM-based%20memory%20analysis",
+        "hash": "513b178a",
+        "encoded": "4.%20**Filter**%20by%20emotion%20or%20theme",
         "prevChunkIds": []
       },
       "293": {
         "chunkId": "167679",
-        "hash": "8196f4b3",
-        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20rag_engine.py%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20RAG%20retrieval%20system",
+        "hash": "339e0f02",
+        "encoded": "5.%20**View**%20detailed%20memory%20analysis%20and%20soundtrack",
         "prevChunkIds": []
       },
       "294": {
         "chunkId": "167679",
-        "hash": "7d5afbae",
-        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20music_catalogue.py%20%20%20%20%20%20%20%20%20%20#%20Track%20metadata%20management",
-        "prevChunkIds": []
-      },
-      "295": {
-        "chunkId": "167679",
-        "hash": "7347be93",
-        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20recommendation_engine.py%20%20%20%20#%20Scoring%20&%20ranking",
+        "hash": "bd237351",
+        "encoded": "6.%20**Delete**%20memories%20(with%20confirmation)",
         "prevChunkIds": []
       },
       "296": {
         "chunkId": "167679",
-        "hash": "204fe034",
-        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20explanation_generator.py%20%20%20%20#%20LLM%20explanations",
-        "prevChunkIds": []
-      },
-      "297": {
-        "chunkId": "167679",
-        "hash": "c367f16e",
-        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20memory_vault.py%20%20%20%20%20%20%20%20%20%20%20%20%20#%20SQLite%20persistence",
+        "hash": "04aa0ef6",
+        "encoded": "---",
         "prevChunkIds": []
       },
       "298": {
         "chunkId": "167679",
-        "hash": "b30e1d99",
-        "encoded": "%E2%94%82%20%20%20%E2%94%94%E2%94%80%E2%94%80%20health_check.py%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Startup%20diagnostics",
-        "prevChunkIds": []
-      },
-      "299": {
-        "chunkId": "167679",
-        "hash": "a3dafb7f",
-        "encoded": "%E2%94%82",
+        "hash": "c4999ba0",
+        "encoded": "##%20%F0%9F%93%81%20Project%20Structure",
         "prevChunkIds": []
       },
       "300": {
         "chunkId": "167679",
-        "hash": "3a488d5a",
-        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20data/",
+        "hash": "cf074648",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "301": {
         "chunkId": "167679",
-        "hash": "911c3e11",
-        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20knowledge_base/",
+        "hash": "a27a33bd",
+        "encoded": "The%20Soundtrack%20of%20Your%20Life/",
         "prevChunkIds": []
       },
       "302": {
         "chunkId": "167679",
-        "hash": "d2d2498f",
-        "encoded": "%E2%94%82%20%20%20%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20emotions/%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Emotion%20documents%20(6)",
+        "hash": "138c61ca",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20app.py%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Main%20Streamlit%20application",
         "prevChunkIds": []
       },
       "303": {
         "chunkId": "167679",
-        "hash": "6174a7ab",
-        "encoded": "%E2%94%82%20%20%20%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20genres/%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Genre%20documents%20(4)",
+        "hash": "a1b3b9c3",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20requirements.txt%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Python%20dependencies",
         "prevChunkIds": []
       },
       "304": {
         "chunkId": "167679",
-        "hash": "386bffc3",
-        "encoded": "%E2%94%82%20%20%20%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20instruments/%20%20%20%20%20%20%20%20%20%20%20%20#%20Instrument%20documents%20(3)",
+        "hash": "4b1d4f61",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20README.md%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20This%20file",
         "prevChunkIds": []
       },
       "305": {
         "chunkId": "167679",
-        "hash": "da96d0a9",
-        "encoded": "%E2%94%82%20%20%20%E2%94%82%20%20%20%E2%94%94%E2%94%80%E2%94%80%20contexts/%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Context%20documents%20(5)",
+        "hash": "ead88536",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20.env.example%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Configuration%20template",
         "prevChunkIds": []
       },
       "306": {
         "chunkId": "167679",
-        "hash": "8295b1e7",
-        "encoded": "%E2%94%82%20%20%20%E2%94%94%E2%94%80%E2%94%80%20music_metadata/%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Music%20catalogue%20data",
+        "hash": "0373b8ee",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20.gitignore%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Git%20ignore%20rules",
         "prevChunkIds": []
       },
       "307": {
@@ -1473,344 +1485,386 @@
       },
       "308": {
         "chunkId": "167679",
-        "hash": "445a5efe",
-        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20scripts/",
+        "hash": "ffefe42c",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20config/",
         "prevChunkIds": []
       },
       "309": {
         "chunkId": "167679",
-        "hash": "0fd4ce89",
-        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20build_knowledge_base.py%20%20%20%20%20#%20ChromaDB%20ingestion",
+        "hash": "7c0fba85",
+        "encoded": "%E2%94%82%20%20%20%E2%94%94%E2%94%80%E2%94%80%20settings.py%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Centralized%20configuration",
         "prevChunkIds": []
       },
       "310": {
         "chunkId": "167679",
-        "hash": "86f589a6",
-        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20prepare_music_catalogue.py%20%20#%20MTG-Jamendo%20processor",
+        "hash": "07cdd38b",
+        "encoded": "%E2%94%82",
         "prevChunkIds": []
       },
       "311": {
         "chunkId": "167679",
-        "hash": "d9231ec3",
-        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20setup_windows.ps1%20%20%20%20%20%20%20%20%20%20%20#%20Windows%20setup",
+        "hash": "7269be8e",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20schemas/",
         "prevChunkIds": []
       },
       "312": {
         "chunkId": "167679",
-        "hash": "2de1c1b9",
-        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20run_windows.ps1%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Windows%20launcher",
+        "hash": "a6931b82",
+        "encoded": "%E2%94%82%20%20%20%E2%94%94%E2%94%80%E2%94%80%20memory_schema.py%20%20%20%20%20%20%20%20%20%20%20%20#%20Pydantic%20data%20models",
         "prevChunkIds": []
       },
       "313": {
         "chunkId": "167679",
-        "hash": "9e4dd2d5",
-        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20setup_unix.sh%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Linux/macOS%20setup",
+        "hash": "12f956cf",
+        "encoded": "%E2%94%82",
         "prevChunkIds": []
       },
       "314": {
         "chunkId": "167679",
-        "hash": "ba173efc",
-        "encoded": "%E2%94%82%20%20%20%E2%94%94%E2%94%80%E2%94%80%20run_unix.sh%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Linux/macOS%20launcher",
+        "hash": "6c8628d9",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20modules/",
         "prevChunkIds": []
       },
       "315": {
         "chunkId": "167679",
-        "hash": "c9b698dc",
-        "encoded": "%E2%94%82",
+        "hash": "19038293",
+        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20memory_analyzer.py%20%20%20%20%20%20%20%20%20%20#%20LLM-based%20memory%20analysis",
         "prevChunkIds": []
       },
       "316": {
         "chunkId": "167679",
-        "hash": "95886403",
-        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20tests/",
+        "hash": "07a63b3f",
+        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20rag_engine.py%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20RAG%20retrieval%20system",
         "prevChunkIds": []
       },
       "317": {
         "chunkId": "167679",
-        "hash": "ed9ee2a8",
-        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20test_config.py%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Configuration%20tests",
+        "hash": "7a830644",
+        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20music_catalogue.py%20%20%20%20%20%20%20%20%20%20#%20Track%20metadata%20management",
         "prevChunkIds": []
       },
       "318": {
         "chunkId": "167679",
-        "hash": "bddeb24a",
-        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20test_ollama.py%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Integration%20tests",
+        "hash": "393b054f",
+        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20recommendation_engine.py%20%20%20%20#%20Scoring%20&%20ranking",
         "prevChunkIds": []
       },
       "319": {
         "chunkId": "167679",
-        "hash": "b1cc4bdb",
-        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20test_memory_analyzer.py%20%20%20%20%20#%20Memory%20analyzer%20tests",
+        "hash": "423b0e5f",
+        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20explanation_generator.py%20%20%20%20#%20LLM%20explanations",
         "prevChunkIds": []
       },
       "320": {
         "chunkId": "167679",
-        "hash": "3b1526e9",
-        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20test_rag_engine.py%20%20%20%20%20%20%20%20%20%20#%20RAG%20tests",
+        "hash": "8aea4ef3",
+        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20memory_vault.py%20%20%20%20%20%20%20%20%20%20%20%20%20#%20SQLite%20persistence",
         "prevChunkIds": []
       },
       "321": {
         "chunkId": "167679",
-        "hash": "03dfd170",
-        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20test_recommendation_engine.py",
+        "hash": "21f73096",
+        "encoded": "%E2%94%82%20%20%20%E2%94%94%E2%94%80%E2%94%80%20health_check.py%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Startup%20diagnostics",
         "prevChunkIds": []
       },
       "322": {
         "chunkId": "167679",
-        "hash": "d3cf0a15",
-        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20test_memory_vault.py",
+        "hash": "d6086f18",
+        "encoded": "%E2%94%82",
         "prevChunkIds": []
       },
       "323": {
         "chunkId": "167679",
-        "hash": "f7b0d521",
-        "encoded": "%E2%94%82%20%20%20%E2%94%94%E2%94%80%E2%94%80%20test_portability.py",
+        "hash": "df53ef5c",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20data/",
         "prevChunkIds": []
       },
       "324": {
         "chunkId": "167679",
-        "hash": "bbb91580",
-        "encoded": "%E2%94%82",
+        "hash": "beab598d",
+        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20knowledge_base/",
         "prevChunkIds": []
       },
       "325": {
         "chunkId": "167679",
-        "hash": "ec5f720f",
-        "encoded": "%E2%94%94%E2%94%80%E2%94%80%20docs/",
+        "hash": "b8c00b22",
+        "encoded": "%E2%94%82%20%20%20%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20emotions/%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Emotion%20documents%20(6)",
         "prevChunkIds": []
       },
       "326": {
         "chunkId": "167679",
-        "hash": "eaf83df0",
-        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20HLD.md%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20High-level%20design",
+        "hash": "ee4dad10",
+        "encoded": "%E2%94%82%20%20%20%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20genres/%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Genre%20documents%20(4)",
         "prevChunkIds": []
       },
       "327": {
         "chunkId": "167679",
-        "hash": "56408c88",
-        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20LLD.md%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Low-level%20design",
+        "hash": "294b3694",
+        "encoded": "%E2%94%82%20%20%20%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20instruments/%20%20%20%20%20%20%20%20%20%20%20%20#%20Instrument%20documents%20(3)",
         "prevChunkIds": []
       },
       "328": {
         "chunkId": "167679",
-        "hash": "bee0bdab",
-        "encoded": "%E2%94%94%E2%94%80%E2%94%80%20SETUP.md%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Detailed%20setup%20guide",
+        "hash": "1fc698a4",
+        "encoded": "%E2%94%82%20%20%20%E2%94%82%20%20%20%E2%94%94%E2%94%80%E2%94%80%20contexts/%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Context%20documents%20(5)",
         "prevChunkIds": []
       },
       "329": {
         "chunkId": "167679",
-        "hash": "630b3f4c",
-        "encoded": "%60%60%60",
+        "hash": "c8a2d05f",
+        "encoded": "%E2%94%82%20%20%20%E2%94%94%E2%94%80%E2%94%80%20music_metadata/%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Music%20catalogue%20data",
+        "prevChunkIds": []
+      },
+      "330": {
+        "chunkId": "167679",
+        "hash": "251fd8a7",
+        "encoded": "%E2%94%82",
         "prevChunkIds": []
       },
       "331": {
         "chunkId": "167679",
-        "hash": "03ae0d39",
-        "encoded": "---",
+        "hash": "5b375cde",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20scripts/",
+        "prevChunkIds": []
+      },
+      "332": {
+        "chunkId": "167679",
+        "hash": "4d2cad50",
+        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20build_knowledge_base.py%20%20%20%20%20#%20ChromaDB%20ingestion",
         "prevChunkIds": []
       },
       "333": {
         "chunkId": "167679",
-        "hash": "c1ed818e",
-        "encoded": "##%20%F0%9F%94%8D%20How%20It%20Works",
+        "hash": "ce5f165b",
+        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20prepare_music_catalogue.py%20%20#%20MTG-Jamendo%20processor",
+        "prevChunkIds": []
+      },
+      "334": {
+        "chunkId": "167679",
+        "hash": "19ee65cd",
+        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20setup_windows.ps1%20%20%20%20%20%20%20%20%20%20%20#%20Windows%20setup",
         "prevChunkIds": []
       },
       "335": {
         "chunkId": "167679",
-        "hash": "916108f3",
-        "encoded": "###%201.%20Memory%20Analysis",
+        "hash": "e1af0f67",
+        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20run_windows.ps1%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Windows%20launcher",
+        "prevChunkIds": []
+      },
+      "336": {
+        "chunkId": "167679",
+        "hash": "bf7dd547",
+        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20setup_unix.sh%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Linux/macOS%20setup",
         "prevChunkIds": []
       },
       "337": {
         "chunkId": "167679",
-        "hash": "43a8f3b4",
-        "encoded": "**Input:**%20User's%20personal%20memory%20text",
+        "hash": "f71a3172",
+        "encoded": "%E2%94%82%20%20%20%E2%94%94%E2%94%80%E2%94%80%20run_unix.sh%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Linux/macOS%20launcher",
+        "prevChunkIds": []
+      },
+      "338": {
+        "chunkId": "167679",
+        "hash": "71c20d20",
+        "encoded": "%E2%94%82",
         "prevChunkIds": []
       },
       "339": {
         "chunkId": "167679",
-        "hash": "528e5b25",
-        "encoded": "**Process:**",
+        "hash": "e4c8198c",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20tests/",
         "prevChunkIds": []
       },
       "340": {
         "chunkId": "167679",
-        "hash": "407d5aa7",
-        "encoded": "-%20Ollama%20LLM%20analyzes%20the%20narrative",
+        "hash": "0483df49",
+        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20test_config.py%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Configuration%20tests",
         "prevChunkIds": []
       },
       "341": {
         "chunkId": "167679",
-        "hash": "d6f9e317",
-        "encoded": "-%20Extracts%20structured%20JSON%20output",
+        "hash": "bde9842f",
+        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20test_ollama.py%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Integration%20tests",
         "prevChunkIds": []
       },
       "342": {
         "chunkId": "167679",
-        "hash": "471cbc7e",
-        "encoded": "-%20Pydantic%20validates%20the%20response",
+        "hash": "8e358216",
+        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20test_memory_analyzer.py%20%20%20%20%20#%20Memory%20analyzer%20tests",
+        "prevChunkIds": []
+      },
+      "343": {
+        "chunkId": "167679",
+        "hash": "5283bb38",
+        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20test_rag_engine.py%20%20%20%20%20%20%20%20%20%20#%20RAG%20tests",
         "prevChunkIds": []
       },
       "344": {
         "chunkId": "167679",
-        "hash": "0c568cd8",
-        "encoded": "**Output:**",
+        "hash": "97439d1d",
+        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20test_recommendation_engine.py",
         "prevChunkIds": []
       },
       "345": {
         "chunkId": "167679",
-        "hash": "1469d589",
-        "encoded": "%60%60%60json",
+        "hash": "11e23c23",
+        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20test_memory_vault.py",
         "prevChunkIds": []
       },
       "346": {
         "chunkId": "167679",
-        "hash": "16b23c67",
-        "encoded": "%7B",
+        "hash": "febed6d5",
+        "encoded": "%E2%94%82%20%20%20%E2%94%94%E2%94%80%E2%94%80%20test_portability.py",
         "prevChunkIds": []
       },
       "347": {
         "chunkId": "167679",
-        "hash": "176a07c8",
-        "encoded": "%22memory_title%22:%20%22Peaceful%20Morning%20by%20the%20Lake%22,",
+        "hash": "37322a21",
+        "encoded": "%E2%94%82",
         "prevChunkIds": []
       },
       "348": {
         "chunkId": "167679",
-        "hash": "7a3d1556",
-        "encoded": "%22primary_emotions%22:%20%5B%22peace%22,%20%22calm%22%5D,",
+        "hash": "3fb9d666",
+        "encoded": "%E2%94%94%E2%94%80%E2%94%80%20docs/",
         "prevChunkIds": []
       },
       "349": {
         "chunkId": "167679",
-        "hash": "dbc47dbd",
-        "encoded": "%22themes%22:%20%5B%22nature%22,%20%22solitude%22,%20%22reflection%22%5D,",
+        "hash": "a5612850",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20HLD.md%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20High-level%20design",
         "prevChunkIds": []
       },
       "350": {
         "chunkId": "167679",
-        "hash": "77ade166",
-        "encoded": "%22genres%22:%20%5B%22ambient%22,%20%22classical%22%5D,",
+        "hash": "5e6b7f6c",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20LLD.md%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Low-level%20design",
         "prevChunkIds": []
       },
       "351": {
         "chunkId": "167679",
-        "hash": "32247c67",
-        "encoded": "%22instruments%22:%20%5B%22piano%22,%20%22strings%22%5D,",
+        "hash": "e3252f8a",
+        "encoded": "%E2%94%94%E2%94%80%E2%94%80%20SETUP.md%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Detailed%20setup%20guide",
         "prevChunkIds": []
       },
       "352": {
         "chunkId": "167679",
-        "hash": "c6cc5a21",
-        "encoded": "%22tempo%22:%20%22slow%22,",
-        "prevChunkIds": []
-      },
-      "353": {
-        "chunkId": "167679",
-        "hash": "35d6b12b",
-        "encoded": "%22atmosphere%22:%20%22serene%20and%20contemplative%22",
+        "hash": "7ad698f5",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "354": {
         "chunkId": "167679",
-        "hash": "bb5dc0a7",
-        "encoded": "%7D",
+        "hash": "749f9441",
+        "encoded": "---",
         "prevChunkIds": []
       },
-      "355": {
+      "356": {
         "chunkId": "167679",
-        "hash": "9dddf243",
-        "encoded": "%60%60%60",
+        "hash": "32d0e1e0",
+        "encoded": "##%20%F0%9F%94%8D%20How%20It%20Works",
         "prevChunkIds": []
       },
-      "357": {
+      "358": {
         "chunkId": "167679",
-        "hash": "140e9c5a",
-        "encoded": "###%202.%20RAG%20Retrieval",
+        "hash": "6774f109",
+        "encoded": "###%201.%20Memory%20Analysis",
         "prevChunkIds": []
       },
-      "359": {
+      "360": {
         "chunkId": "167679",
-        "hash": "c53e5b67",
-        "encoded": "**Input:**%20Emotions,%20themes,%20musical%20characteristics",
-        "prevChunkIds": []
-      },
-      "361": {
-        "chunkId": "167679",
-        "hash": "5bb5ff36",
-        "encoded": "**Process:**",
+        "hash": "c42cdc9d",
+        "encoded": "**Input:**%20User's%20personal%20memory%20text",
         "prevChunkIds": []
       },
       "362": {
         "chunkId": "167679",
-        "hash": "cca1fe96",
-        "encoded": "-%20Generate%20semantic%20query",
+        "hash": "3c0d3ccc",
+        "encoded": "**Process:**",
         "prevChunkIds": []
       },
       "363": {
         "chunkId": "167679",
-        "hash": "7abf62d3",
-        "encoded": "-%20Embed%20query%20using%20Sentence%20Transformers",
+        "hash": "4f91ca17",
+        "encoded": "-%20Ollama%20LLM%20analyzes%20the%20narrative",
         "prevChunkIds": []
       },
       "364": {
         "chunkId": "167679",
-        "hash": "c83d6345",
-        "encoded": "-%20ChromaDB%20vector%20similarity%20search",
+        "hash": "1ae0dc0f",
+        "encoded": "-%20Extracts%20structured%20JSON%20output",
         "prevChunkIds": []
       },
       "365": {
         "chunkId": "167679",
-        "hash": "479fe602",
-        "encoded": "-%20Retrieve%20top-K%20relevant%20knowledge%20chunks",
+        "hash": "cdfbc211",
+        "encoded": "-%20Pydantic%20validates%20the%20response",
         "prevChunkIds": []
       },
       "367": {
         "chunkId": "167679",
-        "hash": "0bc84be7",
-        "encoded": "**Output:**%20Music%20knowledge%20documents%20(emotions,%20genres,%20instruments,%20contexts)",
+        "hash": "8b3c7589",
+        "encoded": "**Output:**",
+        "prevChunkIds": []
+      },
+      "368": {
+        "chunkId": "167679",
+        "hash": "0dca7108",
+        "encoded": "%60%60%60json",
         "prevChunkIds": []
       },
       "369": {
         "chunkId": "167679",
-        "hash": "5aa5564c",
-        "encoded": "###%203.%20Recommendation",
+        "hash": "6ce7dcf7",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "370": {
+        "chunkId": "167679",
+        "hash": "996cb70f",
+        "encoded": "%22memory_title%22:%20%22Peaceful%20Morning%20by%20the%20Lake%22,",
         "prevChunkIds": []
       },
       "371": {
         "chunkId": "167679",
-        "hash": "83d08136",
-        "encoded": "**Input:**%20Memory%20analysis%20+%20Retrieved%20knowledge%20+%20Music%20catalogue",
+        "hash": "322584a0",
+        "encoded": "%22primary_emotions%22:%20%5B%22peace%22,%20%22calm%22%5D,",
+        "prevChunkIds": []
+      },
+      "372": {
+        "chunkId": "167679",
+        "hash": "0b774e6e",
+        "encoded": "%22themes%22:%20%5B%22nature%22,%20%22solitude%22,%20%22reflection%22%5D,",
         "prevChunkIds": []
       },
       "373": {
         "chunkId": "167679",
-        "hash": "f67c0beb",
-        "encoded": "**Process:**",
+        "hash": "19dd5b0c",
+        "encoded": "%22genres%22:%20%5B%22ambient%22,%20%22classical%22%5D,",
         "prevChunkIds": []
       },
       "374": {
         "chunkId": "167679",
-        "hash": "643173cd",
-        "encoded": "-%20Filter%20candidate%20tracks%20by%20tags",
+        "hash": "179d02f4",
+        "encoded": "%22instruments%22:%20%5B%22piano%22,%20%22strings%22%5D,",
         "prevChunkIds": []
       },
       "375": {
         "chunkId": "167679",
-        "hash": "de62fe51",
-        "encoded": "-%20Score%20each%20track%20using%20weighted%20formula:",
+        "hash": "41a4bb4a",
+        "encoded": "%22tempo%22:%20%22slow%22,",
         "prevChunkIds": []
       },
       "376": {
         "chunkId": "167679",
-        "hash": "418039de",
-        "encoded": "%60%60%60",
+        "hash": "ee482dfb",
+        "encoded": "%22atmosphere%22:%20%22serene%20and%20contemplative%22",
         "prevChunkIds": []
       },
       "377": {
         "chunkId": "167679",
-        "hash": "6c89263e",
-        "encoded": "Score%20=%200.4%C3%97Mood%20+%200.3%C3%97Genre%20+%200.2%C3%97Instrument%20+%200.1%C3%97Theme",
+        "hash": "53e09fdc",
+        "encoded": "%7D",
         "prevChunkIds": []
       },
       "378": {
@@ -1819,658 +1873,670 @@
         "encoded": "%60%60%60",
         "prevChunkIds": []
       },
-      "379": {
-        "chunkId": "167679",
-        "hash": "92f45973",
-        "encoded": "-%20Rank%20by%20relevance%20score",
-        "prevChunkIds": []
-      },
       "380": {
         "chunkId": "167679",
-        "hash": "a1a5b0be",
-        "encoded": "-%20Select%20top%20N%20tracks",
+        "hash": "cb751eb0",
+        "encoded": "###%202.%20RAG%20Retrieval",
         "prevChunkIds": []
       },
       "382": {
         "chunkId": "167679",
-        "hash": "703cf609",
-        "encoded": "**Output:**%20Ranked%20list%20of%20tracks%20with%20scores",
+        "hash": "7676ef6f",
+        "encoded": "**Input:**%20Emotions,%20themes,%20musical%20characteristics",
         "prevChunkIds": []
       },
       "384": {
         "chunkId": "167679",
-        "hash": "7d3265a8",
-        "encoded": "###%204.%20Explanation%20Generation",
+        "hash": "2ec26997",
+        "encoded": "**Process:**",
+        "prevChunkIds": []
+      },
+      "385": {
+        "chunkId": "167679",
+        "hash": "9504a702",
+        "encoded": "-%20Generate%20semantic%20query",
         "prevChunkIds": []
       },
       "386": {
         "chunkId": "167679",
-        "hash": "efb928d0",
-        "encoded": "**Input:**%20Original%20memory%20+%20Analysis%20+%20Selected%20tracks%20+%20RAG%20context",
+        "hash": "b56ef219",
+        "encoded": "-%20Embed%20query%20using%20Sentence%20Transformers",
+        "prevChunkIds": []
+      },
+      "387": {
+        "chunkId": "167679",
+        "hash": "1aa84014",
+        "encoded": "-%20ChromaDB%20vector%20similarity%20search",
         "prevChunkIds": []
       },
       "388": {
         "chunkId": "167679",
-        "hash": "26f59d0b",
-        "encoded": "**Process:**",
-        "prevChunkIds": []
-      },
-      "389": {
-        "chunkId": "167679",
-        "hash": "3dd9ba2e",
-        "encoded": "-%20LLM%20generates%20natural%20language%20explanation",
+        "hash": "46931ea6",
+        "encoded": "-%20Retrieve%20top-K%20relevant%20knowledge%20chunks",
         "prevChunkIds": []
       },
       "390": {
         "chunkId": "167679",
-        "hash": "231c3386",
-        "encoded": "-%20Explains%20emotional%20and%20musical%20connections",
+        "hash": "3577d5c3",
+        "encoded": "**Output:**%20Music%20knowledge%20documents%20(emotions,%20genres,%20instruments,%20contexts)",
         "prevChunkIds": []
       },
-      "391": {
+      "392": {
         "chunkId": "167679",
-        "hash": "1a5bea22",
-        "encoded": "-%20Grounds%20explanations%20in%20retrieved%20knowledge",
+        "hash": "48166e7d",
+        "encoded": "###%203.%20Recommendation",
         "prevChunkIds": []
       },
-      "393": {
+      "394": {
         "chunkId": "167679",
-        "hash": "03478e58",
-        "encoded": "**Output:**%20Human-friendly%20soundtrack%20story",
+        "hash": "e882581e",
+        "encoded": "**Input:**%20Memory%20analysis%20+%20Retrieved%20knowledge%20+%20Music%20catalogue",
         "prevChunkIds": []
       },
-      "395": {
+      "396": {
         "chunkId": "167679",
-        "hash": "92d0c1fb",
-        "encoded": "---",
+        "hash": "1887f7db",
+        "encoded": "**Process:**",
         "prevChunkIds": []
       },
       "397": {
         "chunkId": "167679",
-        "hash": "8e4517d8",
-        "encoded": "##%20%F0%9F%A7%AA%20Testing",
+        "hash": "74b7d1e3",
+        "encoded": "-%20Filter%20candidate%20tracks%20by%20tags",
+        "prevChunkIds": []
+      },
+      "398": {
+        "chunkId": "167679",
+        "hash": "04e7aa8d",
+        "encoded": "-%20Score%20each%20track%20using%20weighted%20formula:",
         "prevChunkIds": []
       },
       "399": {
         "chunkId": "167679",
-        "hash": "b5972af0",
-        "encoded": "###%20Run%20All%20Tests",
+        "hash": "a35fbd67",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "400": {
+        "chunkId": "167679",
+        "hash": "b257acf1",
+        "encoded": "Score%20=%200.4%C3%97Mood%20+%200.3%C3%97Genre%20+%200.2%C3%97Instrument%20+%200.1%C3%97Theme",
         "prevChunkIds": []
       },
       "401": {
         "chunkId": "167679",
-        "hash": "1ef18c5e",
-        "encoded": "%60%60%60bash",
+        "hash": "5bb0a4df",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "402": {
         "chunkId": "167679",
-        "hash": "0b6d50f4",
-        "encoded": "#%20Configuration%20tests",
+        "hash": "534e143d",
+        "encoded": "-%20Rank%20by%20relevance%20score",
         "prevChunkIds": []
       },
       "403": {
         "chunkId": "167679",
-        "hash": "8a7e5de4",
-        "encoded": "python%20tests/test_config.py",
+        "hash": "1e1878d4",
+        "encoded": "-%20Select%20top%20N%20tracks",
         "prevChunkIds": []
       },
       "405": {
         "chunkId": "167679",
-        "hash": "0fe2e9e3",
-        "encoded": "#%20Integration%20tests%20(Ollama%20+%20RAG)",
+        "hash": "1775af0e",
+        "encoded": "**Output:**%20Ranked%20list%20of%20tracks%20with%20scores",
         "prevChunkIds": []
       },
-      "406": {
+      "407": {
         "chunkId": "167679",
-        "hash": "222d73ca",
-        "encoded": "python%20tests/test_ollama.py",
-        "prevChunkIds": []
-      },
-      "408": {
-        "chunkId": "167679",
-        "hash": "26a851a3",
-        "encoded": "#%20Unit%20tests",
+        "hash": "45dc242c",
+        "encoded": "###%204.%20Explanation%20Generation",
         "prevChunkIds": []
       },
       "409": {
         "chunkId": "167679",
-        "hash": "8993af88",
-        "encoded": "pytest%20tests/%20-v",
+        "hash": "bd4f0ce3",
+        "encoded": "**Input:**%20Original%20memory%20+%20Analysis%20+%20Selected%20tracks%20+%20RAG%20context",
         "prevChunkIds": []
       },
-      "410": {
+      "411": {
         "chunkId": "167679",
-        "hash": "fcb094a4",
-        "encoded": "%60%60%60",
+        "hash": "c28cdbc6",
+        "encoded": "**Process:**",
         "prevChunkIds": []
       },
       "412": {
         "chunkId": "167679",
-        "hash": "470c7d3e",
-        "encoded": "###%20Test%20Scenarios",
+        "hash": "0d9fa190",
+        "encoded": "-%20LLM%20generates%20natural%20language%20explanation",
+        "prevChunkIds": []
+      },
+      "413": {
+        "chunkId": "167679",
+        "hash": "3dad6624",
+        "encoded": "-%20Explains%20emotional%20and%20musical%20connections",
         "prevChunkIds": []
       },
       "414": {
         "chunkId": "167679",
-        "hash": "086a1345",
-        "encoded": "**Scenario%201:%20Nostalgia**",
-        "prevChunkIds": []
-      },
-      "415": {
-        "chunkId": "167679",
-        "hash": "101c0785",
-        "encoded": "%60%60%60",
+        "hash": "9c063fd9",
+        "encoded": "-%20Grounds%20explanations%20in%20retrieved%20knowledge",
         "prevChunkIds": []
       },
       "416": {
         "chunkId": "167679",
-        "hash": "b30e85b7",
-        "encoded": "Memory:%20%22My%20final%20day%20at%20college%20with%20my%20friends.%20I%20was%20happy%20but%20sad%20that%20everything%20was%20ending.%22",
-        "prevChunkIds": []
-      },
-      "417": {
-        "chunkId": "167679",
-        "hash": "51a639c1",
-        "encoded": "Expected:%20Nostalgia,%20friendship,%20farewell,%20mixed%20emotions",
+        "hash": "907cb091",
+        "encoded": "**Output:**%20Human-friendly%20soundtrack%20story",
         "prevChunkIds": []
       },
       "418": {
         "chunkId": "167679",
-        "hash": "220bf246",
-        "encoded": "%60%60%60",
+        "hash": "8af1f78a",
+        "encoded": "---",
         "prevChunkIds": []
       },
       "420": {
         "chunkId": "167679",
-        "hash": "a7f5b854",
-        "encoded": "**Scenario%202:%20Achievement**",
-        "prevChunkIds": []
-      },
-      "421": {
-        "chunkId": "167679",
-        "hash": "d3b787bd",
-        "encoded": "%60%60%60",
+        "hash": "85a08f3d",
+        "encoded": "##%20%F0%9F%A7%AA%20Testing",
         "prevChunkIds": []
       },
       "422": {
         "chunkId": "167679",
-        "hash": "a717dca2",
-        "encoded": "Memory:%20%22I%20finally%20received%20my%20first%20job%20offer%20after%20months%20of%20preparation.%20I%20felt%20proud%20and%20relieved.%22",
-        "prevChunkIds": []
-      },
-      "423": {
-        "chunkId": "167679",
-        "hash": "a90ca3aa",
-        "encoded": "Expected:%20Achievement,%20pride,%20excitement,%20relief",
+        "hash": "2a0e8560",
+        "encoded": "###%20Run%20All%20Tests",
         "prevChunkIds": []
       },
       "424": {
         "chunkId": "167679",
-        "hash": "e21f2206",
-        "encoded": "%60%60%60",
+        "hash": "cfe9874f",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "425": {
+        "chunkId": "167679",
+        "hash": "cdd8b755",
+        "encoded": "#%20Configuration%20tests",
         "prevChunkIds": []
       },
       "426": {
         "chunkId": "167679",
-        "hash": "db7c8fb4",
-        "encoded": "**Scenario%203:%20Peace**",
-        "prevChunkIds": []
-      },
-      "427": {
-        "chunkId": "167679",
-        "hash": "b3b09aef",
-        "encoded": "%60%60%60",
+        "hash": "9921d047",
+        "encoded": "python%20tests/test_config.py",
         "prevChunkIds": []
       },
       "428": {
         "chunkId": "167679",
-        "hash": "1aa5f84c",
-        "encoded": "Memory:%20%22I%20was%20sitting%20near%20a%20lake%20early%20in%20the%20morning,%20enjoying%20the%20silence%20and%20fresh%20air.%22",
+        "hash": "2c8ea881",
+        "encoded": "#%20Integration%20tests%20(Ollama%20+%20RAG)",
         "prevChunkIds": []
       },
       "429": {
         "chunkId": "167679",
-        "hash": "5636664c",
-        "encoded": "Expected:%20Peace,%20calmness,%20reflection",
+        "hash": "71ab8639",
+        "encoded": "python%20tests/test_ollama.py",
         "prevChunkIds": []
       },
-      "430": {
+      "431": {
         "chunkId": "167679",
-        "hash": "d89a8a10",
-        "encoded": "%60%60%60",
+        "hash": "ab6b68d5",
+        "encoded": "#%20Unit%20tests",
         "prevChunkIds": []
       },
       "432": {
         "chunkId": "167679",
-        "hash": "c1e4609e",
-        "encoded": "---",
+        "hash": "2ac79ee9",
+        "encoded": "pytest%20tests/%20-v",
         "prevChunkIds": []
       },
-      "434": {
+      "433": {
         "chunkId": "167679",
-        "hash": "2e52f651",
-        "encoded": "##%20%E2%9A%99%EF%B8%8F%20Configuration",
+        "hash": "c514d55f",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
-      "436": {
+      "435": {
         "chunkId": "167679",
-        "hash": "4b933fba",
-        "encoded": "Edit%20%60.env%60%20file%20to%20customize:",
+        "hash": "1320c0cc",
+        "encoded": "###%20Test%20Scenarios",
+        "prevChunkIds": []
+      },
+      "437": {
+        "chunkId": "167679",
+        "hash": "60022f63",
+        "encoded": "**Scenario%201:%20Nostalgia**",
         "prevChunkIds": []
       },
       "438": {
         "chunkId": "167679",
-        "hash": "2f41da12",
-        "encoded": "%60%60%60ini",
+        "hash": "d27fea50",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "439": {
         "chunkId": "167679",
-        "hash": "8ba363d9",
-        "encoded": "#%20LLM%20Configuration",
+        "hash": "dab4140f",
+        "encoded": "Memory:%20%22My%20final%20day%20at%20college%20with%20my%20friends.%20I%20was%20happy%20but%20sad%20that%20everything%20was%20ending.%22",
         "prevChunkIds": []
       },
       "440": {
         "chunkId": "167679",
-        "hash": "850c9c6f",
-        "encoded": "OLLAMA_MODEL=qwen2.5:3b%20%20%20%20%20%20%20%20%20%20#%20Change%20model",
+        "hash": "c05908c1",
+        "encoded": "Expected:%20Nostalgia,%20friendship,%20farewell,%20mixed%20emotions",
         "prevChunkIds": []
       },
       "441": {
         "chunkId": "167679",
-        "hash": "336d042c",
-        "encoded": "LLM_TEMPERATURE=0.3%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Creativity%20(0-1)",
+        "hash": "e4b8dd6d",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
-      "442": {
+      "443": {
         "chunkId": "167679",
-        "hash": "52ad1993",
-        "encoded": "LLM_MAX_TOKENS=2000%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Response%20length",
+        "hash": "fcf45c77",
+        "encoded": "**Scenario%202:%20Achievement**",
         "prevChunkIds": []
       },
       "444": {
         "chunkId": "167679",
-        "hash": "647d2afc",
-        "encoded": "#%20Embedding%20Configuration",
+        "hash": "424a0565",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "445": {
         "chunkId": "167679",
-        "hash": "9dd96919",
-        "encoded": "EMBEDDING_DEVICE=cpu%20%20%20%20%20%20%20%20%20%20%20%20%20#%20cpu,%20cuda,%20mps",
+        "hash": "2b48763e",
+        "encoded": "Memory:%20%22I%20finally%20received%20my%20first%20job%20offer%20after%20months%20of%20preparation.%20I%20felt%20proud%20and%20relieved.%22",
+        "prevChunkIds": []
+      },
+      "446": {
+        "chunkId": "167679",
+        "hash": "f2c97ab8",
+        "encoded": "Expected:%20Achievement,%20pride,%20excitement,%20relief",
         "prevChunkIds": []
       },
       "447": {
         "chunkId": "167679",
-        "hash": "16bbb31f",
-        "encoded": "#%20RAG%20Configuration",
+        "hash": "a98a1c3c",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
-      "448": {
+      "449": {
         "chunkId": "167679",
-        "hash": "8efaad2f",
-        "encoded": "RETRIEVAL_TOP_K=5%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Documents%20to%20retrieve",
+        "hash": "4e1a5db9",
+        "encoded": "**Scenario%203:%20Peace**",
         "prevChunkIds": []
       },
       "450": {
         "chunkId": "167679",
-        "hash": "a0c64ef0",
-        "encoded": "#%20Recommendation%20Weights",
+        "hash": "124033f9",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "451": {
         "chunkId": "167679",
-        "hash": "41b20ca1",
-        "encoded": "WEIGHT_MOOD=0.40",
+        "hash": "fc974975",
+        "encoded": "Memory:%20%22I%20was%20sitting%20near%20a%20lake%20early%20in%20the%20morning,%20enjoying%20the%20silence%20and%20fresh%20air.%22",
         "prevChunkIds": []
       },
       "452": {
         "chunkId": "167679",
-        "hash": "cbe9bbc4",
-        "encoded": "WEIGHT_GENRE=0.30",
+        "hash": "73a07b1f",
+        "encoded": "Expected:%20Peace,%20calmness,%20reflection",
         "prevChunkIds": []
       },
       "453": {
         "chunkId": "167679",
-        "hash": "8c1272b3",
-        "encoded": "WEIGHT_INSTRUMENT=0.20",
+        "hash": "359e5831",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
-      "454": {
+      "455": {
         "chunkId": "167679",
-        "hash": "32632348",
-        "encoded": "WEIGHT_THEME=0.10",
-        "prevChunkIds": []
-      },
-      "456": {
-        "chunkId": "167679",
-        "hash": "217cc916",
-        "encoded": "#%20Features",
+        "hash": "ffd3ae85",
+        "encoded": "---",
         "prevChunkIds": []
       },
       "457": {
         "chunkId": "167679",
-        "hash": "bf7e7335",
-        "encoded": "ENABLE_MEMORY_VAULT=true",
-        "prevChunkIds": []
-      },
-      "458": {
-        "chunkId": "167679",
-        "hash": "4f0eb5d1",
-        "encoded": "ENABLE_EXTERNAL_MUSIC_LOOKUP=false",
+        "hash": "b39ba895",
+        "encoded": "##%20%E2%9A%99%EF%B8%8F%20Configuration",
         "prevChunkIds": []
       },
       "459": {
         "chunkId": "167679",
-        "hash": "21130ac1",
-        "encoded": "%60%60%60",
+        "hash": "ff844b2b",
+        "encoded": "Edit%20%60.env%60%20file%20to%20customize:",
         "prevChunkIds": []
       },
       "461": {
         "chunkId": "167679",
-        "hash": "d41857e9",
-        "encoded": "---",
+        "hash": "0d788ce0",
+        "encoded": "%60%60%60ini",
+        "prevChunkIds": []
+      },
+      "462": {
+        "chunkId": "167679",
+        "hash": "3b2fa42d",
+        "encoded": "#%20LLM%20Configuration",
         "prevChunkIds": []
       },
       "463": {
         "chunkId": "167679",
-        "hash": "3833b178",
-        "encoded": "##%20%E2%9A%A0%EF%B8%8F%20Known%20Limitations",
+        "hash": "f8a347c3",
+        "encoded": "OLLAMA_MODEL=qwen2.5:3b%20%20%20%20%20%20%20%20%20%20#%20Change%20model",
+        "prevChunkIds": []
+      },
+      "464": {
+        "chunkId": "167679",
+        "hash": "402ee433",
+        "encoded": "LLM_TEMPERATURE=0.3%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Creativity%20(0-1)",
         "prevChunkIds": []
       },
       "465": {
         "chunkId": "167679",
-        "hash": "47e90548",
-        "encoded": "1.%20**Sample%20Music%20Catalogue**:%20Currently%20uses%2010%20sample%20tracks.%20For%20production,%20integrate%20MTG-Jamendo%20dataset.",
-        "prevChunkIds": []
-      },
-      "466": {
-        "chunkId": "167679",
-        "hash": "cb9569f7",
-        "encoded": "2.%20**CPU%20Performance**:%20Embedding%20generation%20may%20be%20slow%20on%20older%20CPUs%20(GPU%20recommended%20for%20large%20datasets).",
+        "hash": "314a6f13",
+        "encoded": "LLM_MAX_TOKENS=2000%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Response%20length",
         "prevChunkIds": []
       },
       "467": {
         "chunkId": "167679",
-        "hash": "bc9b188c",
-        "encoded": "3.%20**LLM%20Accuracy**:%20Results%20depend%20on%20Ollama%20model%20quality%20and%20prompt%20engineering.",
+        "hash": "ced3a68b",
+        "encoded": "#%20Embedding%20Configuration",
         "prevChunkIds": []
       },
       "468": {
         "chunkId": "167679",
-        "hash": "40e20d12",
-        "encoded": "4.%20**Language%20Support**:%20Currently%20optimized%20for%20English%20text.",
+        "hash": "de1bb3d4",
+        "encoded": "EMBEDDING_DEVICE=cpu%20%20%20%20%20%20%20%20%20%20%20%20%20#%20cpu,%20cuda,%20mps",
         "prevChunkIds": []
       },
-      "469": {
+      "470": {
         "chunkId": "167679",
-        "hash": "216b76ae",
-        "encoded": "5.%20**No%20Audio%20Playback**:%20Only%20provides%20track%20metadata,%20not%20actual%20audio%20streaming.",
+        "hash": "5219624d",
+        "encoded": "#%20RAG%20Configuration",
         "prevChunkIds": []
       },
       "471": {
         "chunkId": "167679",
-        "hash": "f54dc419",
-        "encoded": "---",
+        "hash": "5b7a1a93",
+        "encoded": "RETRIEVAL_TOP_K=5%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20#%20Documents%20to%20retrieve",
         "prevChunkIds": []
       },
       "473": {
         "chunkId": "167679",
-        "hash": "3d26c6bb",
-        "encoded": "##%20%F0%9F%9A%80%20Future%20Improvements",
+        "hash": "a4ad4d3f",
+        "encoded": "#%20Recommendation%20Weights",
+        "prevChunkIds": []
+      },
+      "474": {
+        "chunkId": "167679",
+        "hash": "de731d9d",
+        "encoded": "WEIGHT_MOOD=0.40",
         "prevChunkIds": []
       },
       "475": {
         "chunkId": "167679",
-        "hash": "b45195b8",
-        "encoded": "###%20Short-term",
+        "hash": "3337423b",
+        "encoded": "WEIGHT_GENRE=0.30",
         "prevChunkIds": []
       },
       "476": {
         "chunkId": "167679",
-        "hash": "c5ed049c",
-        "encoded": "-%20%5B%20%5D%20Integrate%20full%20MTG-Jamendo%20dataset%20(55K+%20tracks)",
+        "hash": "8492867b",
+        "encoded": "WEIGHT_INSTRUMENT=0.20",
         "prevChunkIds": []
       },
       "477": {
         "chunkId": "167679",
-        "hash": "d536e93f",
-        "encoded": "-%20%5B%20%5D%20Add%20Spotify/Apple%20Music%20API%20integration%20for%20previews",
-        "prevChunkIds": []
-      },
-      "478": {
-        "chunkId": "167679",
-        "hash": "0fa32d16",
-        "encoded": "-%20%5B%20%5D%20Support%20multiple%20languages",
+        "hash": "decc4c64",
+        "encoded": "WEIGHT_THEME=0.10",
         "prevChunkIds": []
       },
       "479": {
         "chunkId": "167679",
-        "hash": "c95019ad",
-        "encoded": "-%20%5B%20%5D%20Add%20emotion%20history%20visualization",
+        "hash": "74c2928e",
+        "encoded": "#%20Features",
         "prevChunkIds": []
       },
       "480": {
         "chunkId": "167679",
-        "hash": "6283c04c",
-        "encoded": "-%20%5B%20%5D%20Export%20playlists%20to%20Spotify/Apple%20Music",
+        "hash": "415b0eb4",
+        "encoded": "ENABLE_MEMORY_VAULT=true",
+        "prevChunkIds": []
+      },
+      "481": {
+        "chunkId": "167679",
+        "hash": "54f585ea",
+        "encoded": "ENABLE_EXTERNAL_MUSIC_LOOKUP=false",
         "prevChunkIds": []
       },
       "482": {
         "chunkId": "167679",
-        "hash": "49b8e5fc",
-        "encoded": "###%20Long-term",
-        "prevChunkIds": []
-      },
-      "483": {
-        "chunkId": "167679",
-        "hash": "06f74071",
-        "encoded": "-%20%5B%20%5D%20Fine-tune%20embedding%20model%20on%20music-emotion%20data",
+        "hash": "aac2df4e",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "484": {
         "chunkId": "167679",
-        "hash": "3d9e8fd7",
-        "encoded": "-%20%5B%20%5D%20Add%20collaborative%20filtering",
-        "prevChunkIds": []
-      },
-      "485": {
-        "chunkId": "167679",
-        "hash": "df76191a",
-        "encoded": "-%20%5B%20%5D%20Support%20image%20uploads%20(analyze%20photos%20for%20context)",
+        "hash": "7fa1ca8d",
+        "encoded": "---",
         "prevChunkIds": []
       },
       "486": {
         "chunkId": "167679",
-        "hash": "b2da1ebe",
-        "encoded": "-%20%5B%20%5D%20Multi-user%20support%20with%20authentication",
-        "prevChunkIds": []
-      },
-      "487": {
-        "chunkId": "167679",
-        "hash": "980fd6fe",
-        "encoded": "-%20%5B%20%5D%20Mobile%20app%20(React%20Native)",
+        "hash": "7d075470",
+        "encoded": "##%20%E2%9A%A0%EF%B8%8F%20Known%20Limitations",
         "prevChunkIds": []
       },
       "488": {
         "chunkId": "167679",
-        "hash": "39276aff",
-        "encoded": "-%20%5B%20%5D%20Voice%20input%20for%20memories",
+        "hash": "f093389f",
+        "encoded": "1.%20**Sample%20Music%20Catalogue**:%20Currently%20uses%2010%20sample%20tracks.%20For%20production,%20integrate%20MTG-Jamendo%20dataset.",
+        "prevChunkIds": []
+      },
+      "489": {
+        "chunkId": "167679",
+        "hash": "7794a3a2",
+        "encoded": "2.%20**CPU%20Performance**:%20Embedding%20generation%20may%20be%20slow%20on%20older%20CPUs%20(GPU%20recommended%20for%20large%20datasets).",
         "prevChunkIds": []
       },
       "490": {
         "chunkId": "167679",
-        "hash": "ee64789b",
-        "encoded": "---",
+        "hash": "9d7f45af",
+        "encoded": "3.%20**LLM%20Accuracy**:%20Results%20depend%20on%20Ollama%20model%20quality%20and%20prompt%20engineering.",
+        "prevChunkIds": []
+      },
+      "491": {
+        "chunkId": "167679",
+        "hash": "28efbb55",
+        "encoded": "4.%20**Language%20Support**:%20Currently%20optimized%20for%20English%20text.",
         "prevChunkIds": []
       },
       "492": {
         "chunkId": "167679",
-        "hash": "08426cf9",
-        "encoded": "##%20%F0%9F%93%8A%20Performance",
+        "hash": "faf30067",
+        "encoded": "5.%20**No%20Audio%20Playback**:%20Only%20provides%20track%20metadata,%20not%20actual%20audio%20streaming.",
         "prevChunkIds": []
       },
       "494": {
         "chunkId": "167679",
-        "hash": "60803ee3",
-        "encoded": "**Hardware%20Requirements:**",
+        "hash": "b664ce5e",
+        "encoded": "---",
         "prevChunkIds": []
       },
       "496": {
         "chunkId": "167679",
-        "hash": "ff1df6ff",
-        "encoded": "%7C%20Component%20%7C%20Minimum%20%7C%20Recommended%20%7C",
-        "prevChunkIds": []
-      },
-      "497": {
-        "chunkId": "167679",
-        "hash": "1634ac9a",
-        "encoded": "%7C-----------%7C---------%7C-------------%7C",
+        "hash": "8b8a9b81",
+        "encoded": "##%20%F0%9F%9A%80%20Future%20Improvements",
         "prevChunkIds": []
       },
       "498": {
         "chunkId": "167679",
-        "hash": "efcd2976",
-        "encoded": "%7C%20RAM%20%7C%208%20GB%20%7C%2016%20GB+%20%7C",
+        "hash": "a45b79af",
+        "encoded": "###%20Short-term",
         "prevChunkIds": []
       },
       "499": {
         "chunkId": "167679",
-        "hash": "a5196048",
-        "encoded": "%7C%20CPU%20%7C%20Dual-core%202.0%20GHz%20%7C%20Quad-core%203.0%20GHz+%20%7C",
+        "hash": "0c90eed5",
+        "encoded": "-%20%5B%20%5D%20Integrate%20full%20MTG-Jamendo%20dataset%20(55K+%20tracks)",
         "prevChunkIds": []
       },
       "500": {
         "chunkId": "167679",
-        "hash": "6fed6944",
-        "encoded": "%7C%20GPU%20%7C%20Not%20required%20%7C%20Optional%20(CUDA/MPS)%20%7C",
+        "hash": "1412b8ed",
+        "encoded": "-%20%5B%20%5D%20Add%20Spotify/Apple%20Music%20API%20integration%20for%20previews",
         "prevChunkIds": []
       },
       "501": {
         "chunkId": "167679",
-        "hash": "f6854488",
-        "encoded": "%7C%20Storage%20%7C%202%20GB%20%7C%205%20GB+%20%7C",
+        "hash": "3f0336ec",
+        "encoded": "-%20%5B%20%5D%20Support%20multiple%20languages",
+        "prevChunkIds": []
+      },
+      "502": {
+        "chunkId": "167679",
+        "hash": "445f2c29",
+        "encoded": "-%20%5B%20%5D%20Add%20emotion%20history%20visualization",
         "prevChunkIds": []
       },
       "503": {
         "chunkId": "167679",
-        "hash": "6de1bc41",
-        "encoded": "**Typical%20Processing%20Times**%20(Intel%20i5,%2016GB%20RAM,%20CPU-only):",
-        "prevChunkIds": []
-      },
-      "504": {
-        "chunkId": "167679",
-        "hash": "1e43f22d",
-        "encoded": "-%20Memory%20analysis:%203-8%20seconds",
+        "hash": "58fb16d8",
+        "encoded": "-%20%5B%20%5D%20Export%20playlists%20to%20Spotify/Apple%20Music",
         "prevChunkIds": []
       },
       "505": {
         "chunkId": "167679",
-        "hash": "681c0e0c",
-        "encoded": "-%20RAG%20retrieval:%200.5-2%20seconds",
+        "hash": "247390b0",
+        "encoded": "###%20Long-term",
         "prevChunkIds": []
       },
       "506": {
         "chunkId": "167679",
-        "hash": "98ea02cf",
-        "encoded": "-%20Recommendation:%200.1-0.5%20seconds",
+        "hash": "045b3147",
+        "encoded": "-%20%5B%20%5D%20Fine-tune%20embedding%20model%20on%20music-emotion%20data",
         "prevChunkIds": []
       },
       "507": {
         "chunkId": "167679",
-        "hash": "8d981a0e",
-        "encoded": "-%20Explanation%20generation:%202-5%20seconds",
+        "hash": "74990609",
+        "encoded": "-%20%5B%20%5D%20Add%20collaborative%20filtering",
         "prevChunkIds": []
       },
       "508": {
         "chunkId": "167679",
-        "hash": "316e88e3",
-        "encoded": "-%20**Total:%206-15%20seconds%20per%20memory**",
+        "hash": "80358768",
+        "encoded": "-%20%5B%20%5D%20Support%20image%20uploads%20(analyze%20photos%20for%20context)",
+        "prevChunkIds": []
+      },
+      "509": {
+        "chunkId": "167679",
+        "hash": "bdf8562e",
+        "encoded": "-%20%5B%20%5D%20Multi-user%20support%20with%20authentication",
         "prevChunkIds": []
       },
       "510": {
         "chunkId": "167679",
-        "hash": "0ef4e647",
+        "hash": "f3f376ca",
+        "encoded": "-%20%5B%20%5D%20Mobile%20app%20(React%20Native)",
+        "prevChunkIds": []
+      },
+      "511": {
+        "chunkId": "167679",
+        "hash": "3311bf24",
+        "encoded": "-%20%5B%20%5D%20Voice%20input%20for%20memories",
+        "prevChunkIds": []
+      },
+      "513": {
+        "chunkId": "167679",
+        "hash": "6af6b80f",
         "encoded": "---",
         "prevChunkIds": []
       },
-      "512": {
+      "515": {
         "chunkId": "167679",
-        "hash": "1cae1a51",
-        "encoded": "##%20%F0%9F%93%84%20License",
+        "hash": "8ba887ed",
+        "encoded": "##%20%F0%9F%93%8A%20Performance",
         "prevChunkIds": []
       },
-      "514": {
+      "517": {
         "chunkId": "167679",
-        "hash": "f1350ed0",
-        "encoded": "MIT%20License%20-%20feel%20free%20to%20use%20this%20project%20for%20learning%20and%20development.",
+        "hash": "10582f6e",
+        "encoded": "**Hardware%20Requirements:**",
         "prevChunkIds": []
       },
-      "516": {
+      "519": {
         "chunkId": "167679",
-        "hash": "800d44ce",
-        "encoded": "---",
-        "prevChunkIds": []
-      },
-      "518": {
-        "chunkId": "167679",
-        "hash": "a5185dd1",
-        "encoded": "##%20%F0%9F%99%8F%20Acknowledgments",
+        "hash": "84496daf",
+        "encoded": "%7C%20Component%20%7C%20Minimum%20%7C%20Recommended%20%7C",
         "prevChunkIds": []
       },
       "520": {
         "chunkId": "167679",
-        "hash": "23930a39",
-        "encoded": "-%20**Ollama**%20-%20Local%20LLM%20runtime",
+        "hash": "a73af2ec",
+        "encoded": "%7C-----------%7C---------%7C-------------%7C",
         "prevChunkIds": []
       },
       "521": {
         "chunkId": "167679",
-        "hash": "0317a508",
-        "encoded": "-%20**Sentence%20Transformers**%20-%20Embedding%20models",
+        "hash": "eb5e8fbe",
+        "encoded": "%7C%20RAM%20%7C%208%20GB%20%7C%2016%20GB+%20%7C",
         "prevChunkIds": []
       },
       "522": {
         "chunkId": "167679",
-        "hash": "183943ee",
-        "encoded": "-%20**ChromaDB**%20-%20Vector%20database",
+        "hash": "6d825051",
+        "encoded": "%7C%20CPU%20%7C%20Dual-core%202.0%20GHz%20%7C%20Quad-core%203.0%20GHz+%20%7C",
         "prevChunkIds": []
       },
       "523": {
         "chunkId": "167679",
-        "hash": "09edc424",
-        "encoded": "-%20**Streamlit**%20-%20Web%20framework",
+        "hash": "c13aa7c2",
+        "encoded": "%7C%20GPU%20%7C%20Not%20required%20%7C%20Optional%20(CUDA/MPS)%20%7C",
         "prevChunkIds": []
       },
       "524": {
         "chunkId": "167679",
-        "hash": "b128173e",
-        "encoded": "-%20**MTG-Jamendo**%20-%20Music%20dataset",
+        "hash": "1c8efdee",
+        "encoded": "%7C%20Storage%20%7C%202%20GB%20%7C%205%20GB+%20%7C",
         "prevChunkIds": []
       },
-      "525": {
+      "526": {
         "chunkId": "167679",
-        "hash": "ba53e80e",
-        "encoded": "-%20**Qwen%20Team**%20-%20Language%20model",
+        "hash": "15509060",
+        "encoded": "**Typical%20Processing%20Times**%20(Intel%20i5,%2016GB%20RAM,%20CPU-only):",
         "prevChunkIds": []
       },
       "527": {
         "chunkId": "167679",
-        "hash": "63112faf",
-        "encoded": "---",
+        "hash": "551f6945",
+        "encoded": "-%20Memory%20analysis:%203-8%20seconds",
+        "prevChunkIds": []
+      },
+      "528": {
+        "chunkId": "167679",
+        "hash": "b9ab74b3",
+        "encoded": "-%20RAG%20retrieval:%200.5-2%20seconds",
         "prevChunkIds": []
       },
       "529": {
         "chunkId": "167679",
-        "hash": "a940b602",
-        "encoded": "##%20%F0%9F%93%9E%20Contact",
+        "hash": "b6e5df32",
+        "encoded": "-%20Recommendation:%200.1-0.5%20seconds",
+        "prevChunkIds": []
+      },
+      "530": {
+        "chunkId": "167679",
+        "hash": "fea1bad1",
+        "encoded": "-%20Explanation%20generation:%202-5%20seconds",
         "prevChunkIds": []
       },
       "531": {
         "chunkId": "167679",
-        "hash": "9a409bd4",
-        "encoded": "For%20questions,%20issues,%20or%20contributions,%20please%20open%20an%20issue%20on%20GitHub.",
+        "hash": "3d806b0c",
+        "encoded": "-%20**Total:%206-15%20seconds%20per%20memory**",
         "prevChunkIds": []
       },
       "533": {
@@ -2481,10 +2547,95 @@
       },
       "535": {
         "chunkId": "167679",
-        "hash": "f5549a75",
+        "hash": "2c17a8cc",
+        "encoded": "##%20%F0%9F%93%84%20License",
+        "prevChunkIds": []
+      },
+      "537": {
+        "chunkId": "167679",
+        "hash": "16a6ada9",
+        "encoded": "MIT%20License%20-%20feel%20free%20to%20use%20this%20project%20for%20learning%20and%20development.",
+        "prevChunkIds": []
+      },
+      "539": {
+        "chunkId": "167679",
+        "hash": "32bf6c37",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "541": {
+        "chunkId": "167679",
+        "hash": "fb68d76d",
+        "encoded": "##%20%F0%9F%99%8F%20Acknowledgments",
+        "prevChunkIds": []
+      },
+      "543": {
+        "chunkId": "167679",
+        "hash": "de6fd058",
+        "encoded": "-%20**Ollama**%20-%20Local%20LLM%20runtime",
+        "prevChunkIds": []
+      },
+      "544": {
+        "chunkId": "167679",
+        "hash": "e8c3afef",
+        "encoded": "-%20**Sentence%20Transformers**%20-%20Embedding%20models",
+        "prevChunkIds": []
+      },
+      "545": {
+        "chunkId": "167679",
+        "hash": "39955a2b",
+        "encoded": "-%20**ChromaDB**%20-%20Vector%20database",
+        "prevChunkIds": []
+      },
+      "546": {
+        "chunkId": "167679",
+        "hash": "89f5e617",
+        "encoded": "-%20**Streamlit**%20-%20Web%20framework",
+        "prevChunkIds": []
+      },
+      "547": {
+        "chunkId": "167679",
+        "hash": "3ccf14e6",
+        "encoded": "-%20**MTG-Jamendo**%20-%20Music%20dataset",
+        "prevChunkIds": []
+      },
+      "548": {
+        "chunkId": "167679",
+        "hash": "e08d8b40",
+        "encoded": "-%20**Qwen%20Team**%20-%20Language%20model",
+        "prevChunkIds": []
+      },
+      "550": {
+        "chunkId": "167679",
+        "hash": "4633bcd0",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "552": {
+        "chunkId": "167679",
+        "hash": "332d07de",
+        "encoded": "##%20%F0%9F%93%9E%20Contact",
+        "prevChunkIds": []
+      },
+      "554": {
+        "chunkId": "167679",
+        "hash": "3385d775",
+        "encoded": "For%20questions,%20issues,%20or%20contributions,%20please%20open%20an%20issue%20on%20GitHub.",
+        "prevChunkIds": []
+      },
+      "556": {
+        "chunkId": "167679",
+        "hash": "3920ee60",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "558": {
+        "chunkId": "167679",
+        "hash": "d8bd3aed",
         "encoded": "**Made%20with%20%E2%9D%A4%EF%B8%8F%20for%20AI%20Solutions%20Architect%20Internship%20Assessment**",
         "prevChunkIds": []
       }
-    }
+    },
+    "_prevLineCount": 541
   }
 }

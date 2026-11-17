@@ -23,6 +23,7 @@ class ExplanationGenerator:
         self.settings = get_settings()
         self.model = self.settings.ollama_model
         self.temperature = self.settings.llm_temperature
+        self.client = ollama.Client(host=self.settings.ollama_base_url)
 
     def generate_overall_explanation(
         self,
@@ -83,10 +84,10 @@ Do not mention technical details like "algorithms" or "scoring". Write as a huma
 """
 
         try:
-            response = ollama.chat(
+            response = self.client.chat(
                 model=self.model,
                 messages=[{'role': 'user', 'content': prompt}],
-                options={'temperature': self.temperature + 0.2}  # Slightly more creative
+                options={'temperature': min(self.temperature + 0.2, 2.0)}
             )
             
             explanation = response['message']['content'].strip()

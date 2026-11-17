@@ -6,6 +6,9 @@
   "promptMessage": {
     "04511a3e": {
       "value": "the ollama is installed. check this\nPS C:\\Users\\madsaich\\Documents\\The Soundtrack of Your Life> Invoke-RestMethod http://localhost:11434/api/tags\n\nmodels                                                                                                   \n------                                                                                                   \n{@{name=qwen2.5:3b; model=qwen2.5:3b; modified_at=2026-11-16T12:03:18.2491277+05:30; size=1929912432; ...\n\n\nUse python 3.11/3.12 if needed. o"
+    },
+    "5485bb09": {
+      "value": "# MASTER IMPLEMENTATION PROMPT\n## Project: The Soundtrack of Your Life\n### Complete AI-Powered, Multilingual, Memory-Based Music Discovery and Personal Soundtrack Platform\n\n---\n\n# 1. YOUR ROLE AND RESPONSIBILITY\n\nAct as a principal software architect, senior full-stack engineer, AI/ML engineer, RAG specialist, speech-processing engineer, database architect, and professional UI/UX designer.\n\nYou are responsible for transforming my existing project, **The Soundtrack of Your Life**, into a complete"
     }
   },
   "localPrompts": {},

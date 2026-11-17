@@ -83,20 +83,31 @@ class RAGEngine:
             return False
 
     def embed_text(self, text: str) -> List[float]:
-        """Generate embedding for text.
-        
-        Args:
-            text: Text to embed
-            
-        Returns:
-            Embedding vector as list of floats
-        """
+        """Generate embedding for text."""
         try:
             embedding = self.embedding_model.encode(text, convert_to_numpy=True)
             return embedding.tolist()
         except Exception as e:
             logger.error(f"Embedding generation failed: {e}")
             raise
+
+    @staticmethod
+    def normalize_distance(distance: Optional[float], metric: str = "cosine") -> float:
+        """Convert supported Chroma distances into a bounded relevance score."""
+        if distance is None:
+            return 0.0
+        value = max(float(distance), 0.0)
+        metric = (metric or "cosine").lower()
+        if metric in {"cosine", "cosine_distance"}:
+            return min(max(1.0 - value, 0.0), 1.0)
+        if metric in {"l2", "euclidean"}:
+            return 1.0 / (1.0 + value)
+        return 1.0 / (1.0 + value)
+
+    def _collection_metric(self) -> str:
+        """Read the collection metric when Chroma exposes it; default to cosine."""
+        metadata = getattr(self.collection, "metadata", {}) or {}
+        return str(metadata.get("hnsw:space", "cosine"))
 
     def retrieve(
         self,
@@ -147,7 +158,10 @@ class RAGEngine:
                         'text': results['documents'][0][i],
                         'metadata': results['metadatas'][0][i] if results['metadatas'] else {},
                         'distance': results['distances'][0][i] if results['distances'] else None,
-                        'relevance_score': 1.0 - (results['distances'][0][i] if results['distances'] and results['distances'][0][i] else 0.0)
+                        'relevance_score': self.normalize_distance(
+                            results['distances'][0][i] if results['distances'] else None,
+                            self._collection_metric(),
+                        )
                     }
                     retrieved_docs.append(doc)
 

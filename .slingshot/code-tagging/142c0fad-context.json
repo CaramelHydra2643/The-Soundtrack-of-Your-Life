@@ -6,6 +6,9 @@
   "promptMessage": {
     "7318d5db": {
       "value": "create complete"
+    },
+    "1dd5b8cd": {
+      "value": "update the required setup, installations and how to run the application"
     }
   },
   "localPrompts": {},

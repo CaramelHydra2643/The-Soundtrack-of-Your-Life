@@ -22,259 +22,265 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/16/2026, 12:58:09 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      },
+      "9ad4c7": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794930221,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "1dd5b8cd"
+        },
+        "hash": "1219d3c6",
+        "messageId": "system_ac1f1610-e29c-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 9:13:41 PM\n- **source**: agent\n- **type**: agentEditTool\n"
       }
     },
     "lines": {
       "0": {
-        "chunkId": "610a02",
+        "chunkId": "9ad4c7",
         "hash": "f8ae20ef",
         "encoded": "#%20Detailed%20Setup%20Guide",
         "prevChunkIds": []
       },
       "1": {
-        "chunkId": "610a02",
+        "chunkId": "9ad4c7",
         "hash": "8e4796ac",
         "encoded": "##%20The%20Soundtrack%20of%20Your%20Life",
         "prevChunkIds": []
       },
       "3": {
-        "chunkId": "610a02",
-        "hash": "c48bf612",
-        "encoded": "---",
+        "chunkId": "9ad4c7",
+        "hash": "190b31ff",
+        "encoded": "%3E%20For%20the%20current%20React/Vite%20+%20FastAPI%20+%20Streamlit%20workflow,%20use%20%5B%60LOCAL_RUNBOOK.md%60%5D(LOCAL_RUNBOOK.md).%20This%20document%20contains%20legacy%20platform%20notes%20retained%20for%20reference.",
         "prevChunkIds": []
       },
       "5": {
-        "chunkId": "610a02",
-        "hash": "50ff9049",
-        "encoded": "##%20Table%20of%20Contents",
+        "chunkId": "9ad4c7",
+        "hash": "bd282217",
+        "encoded": "---",
         "prevChunkIds": []
       },
       "7": {
         "chunkId": "610a02",
-        "hash": "374d66f0",
-        "encoded": "1.%20%5BSystem%20Requirements%5D(#system-requirements)",
-        "prevChunkIds": []
-      },
-      "8": {
-        "chunkId": "610a02",
-        "hash": "917795fb",
-        "encoded": "2.%20%5BInstallation%5D(#installation)",
+        "hash": "086427a6",
+        "encoded": "##%20The%20Soundtrack%20of%20Your%20Life",
         "prevChunkIds": []
       },
       "9": {
         "chunkId": "610a02",
-        "hash": "42440535",
-        "encoded": "3.%20%5BConfiguration%5D(#configuration)",
-        "prevChunkIds": []
-      },
-      "10": {
-        "chunkId": "610a02",
-        "hash": "4dc64852",
-        "encoded": "4.%20%5BKnowledge%20Base%20Setup%5D(#knowledge-base-setup)",
+        "hash": "a770a7c1",
+        "encoded": "---",
         "prevChunkIds": []
       },
       "11": {
         "chunkId": "610a02",
-        "hash": "26965e58",
-        "encoded": "5.%20%5BRunning%20the%20Application%5D(#running-the-application)",
-        "prevChunkIds": []
-      },
-      "12": {
-        "chunkId": "610a02",
-        "hash": "21764432",
-        "encoded": "6.%20%5BTroubleshooting%5D(#troubleshooting)",
+        "hash": "d0f3107b",
+        "encoded": "##%20Table%20of%20Contents",
         "prevChunkIds": []
       },
       "13": {
         "chunkId": "610a02",
-        "hash": "bf4f1a0e",
-        "encoded": "7.%20%5BAdvanced%20Configuration%5D(#advanced-configuration)",
+        "hash": "6790be5c",
+        "encoded": "1.%20%5BSystem%20Requirements%5D(#system-requirements)",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "610a02",
+        "hash": "d9cf1b15",
+        "encoded": "2.%20%5BInstallation%5D(#installation)",
         "prevChunkIds": []
       },
       "15": {
         "chunkId": "610a02",
-        "hash": "32c8452b",
-        "encoded": "---",
+        "hash": "fc2ae262",
+        "encoded": "3.%20%5BConfiguration%5D(#configuration)",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "610a02",
+        "hash": "fb18b406",
+        "encoded": "4.%20%5BKnowledge%20Base%20Setup%5D(#knowledge-base-setup)",
         "prevChunkIds": []
       },
       "17": {
         "chunkId": "610a02",
-        "hash": "1e288d4f",
-        "encoded": "##%201.%20System%20Requirements",
+        "hash": "d7c6fd30",
+        "encoded": "5.%20%5BRunning%20the%20Application%5D(#running-the-application)",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "610a02",
+        "hash": "62891a74",
+        "encoded": "6.%20%5BTroubleshooting%5D(#troubleshooting)",
         "prevChunkIds": []
       },
       "19": {
         "chunkId": "610a02",
-        "hash": "3599d4c8",
-        "encoded": "###%20Minimum%20Requirements",
+        "hash": "0e0cc606",
+        "encoded": "7.%20%5BAdvanced%20Configuration%5D(#advanced-configuration)",
         "prevChunkIds": []
       },
       "21": {
         "chunkId": "610a02",
-        "hash": "0902e273",
-        "encoded": "%7C%20Component%20%7C%20Requirement%20%7C",
-        "prevChunkIds": []
-      },
-      "22": {
-        "chunkId": "610a02",
-        "hash": "f149e810",
-        "encoded": "%7C-----------%7C-------------%7C",
+        "hash": "14243945",
+        "encoded": "---",
         "prevChunkIds": []
       },
       "23": {
         "chunkId": "610a02",
-        "hash": "af4f1a1d",
-        "encoded": "%7C%20**OS**%20%7C%20Windows%2010+,%20Ubuntu%2020.04+,%20macOS%2011+%20%7C",
-        "prevChunkIds": []
-      },
-      "24": {
-        "chunkId": "610a02",
-        "hash": "4b943d0a",
-        "encoded": "%7C%20**CPU**%20%7C%20Dual-core%202.0%20GHz+%20%7C",
+        "hash": "76f264c9",
+        "encoded": "##%201.%20System%20Requirements",
         "prevChunkIds": []
       },
       "25": {
         "chunkId": "610a02",
-        "hash": "40ce597c",
-        "encoded": "%7C%20**RAM**%20%7C%208%20GB%20%7C",
-        "prevChunkIds": []
-      },
-      "26": {
-        "chunkId": "610a02",
-        "hash": "da6cc73c",
-        "encoded": "%7C%20**Storage**%20%7C%202%20GB%20free%20space%20%7C",
+        "hash": "7b9db3b8",
+        "encoded": "###%20Minimum%20Requirements",
         "prevChunkIds": []
       },
       "27": {
         "chunkId": "610a02",
-        "hash": "e76839b8",
-        "encoded": "%7C%20**Python**%20%7C%203.11,%203.12,%20or%203.13%20%7C",
+        "hash": "d0894d90",
+        "encoded": "%7C%20Component%20%7C%20Requirement%20%7C",
         "prevChunkIds": []
       },
       "28": {
         "chunkId": "610a02",
-        "hash": "fb49ccce",
-        "encoded": "%7C%20**Internet**%20%7C%20Required%20for%20initial%20setup%20only%20%7C",
+        "hash": "e4bbc937",
+        "encoded": "%7C-----------%7C-------------%7C",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "610a02",
+        "hash": "2a652b1a",
+        "encoded": "%7C%20**OS**%20%7C%20Windows%2010+,%20Ubuntu%2020.04+,%20macOS%2011+%20%7C",
         "prevChunkIds": []
       },
       "30": {
         "chunkId": "610a02",
-        "hash": "d1ef56eb",
-        "encoded": "###%20Recommended%20Requirements",
+        "hash": "ee2ed434",
+        "encoded": "%7C%20**CPU**%20%7C%20Dual-core%202.0%20GHz+%20%7C",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "610a02",
+        "hash": "529140e2",
+        "encoded": "%7C%20**RAM**%20%7C%208%20GB%20%7C",
         "prevChunkIds": []
       },
       "32": {
         "chunkId": "610a02",
-        "hash": "0520c1e7",
-        "encoded": "%7C%20Component%20%7C%20Requirement%20%7C",
+        "hash": "0e7194cb",
+        "encoded": "%7C%20**Storage**%20%7C%202%20GB%20free%20space%20%7C",
         "prevChunkIds": []
       },
       "33": {
         "chunkId": "610a02",
-        "hash": "b0d8ea50",
-        "encoded": "%7C-----------%7C-------------%7C",
+        "hash": "d68d76d1",
+        "encoded": "%7C%20**Python**%20%7C%203.11,%203.12,%20or%203.13%20%7C",
         "prevChunkIds": []
       },
       "34": {
         "chunkId": "610a02",
-        "hash": "e7372ffe",
-        "encoded": "%7C%20**CPU**%20%7C%20Quad-core%203.0%20GHz+%20%7C",
-        "prevChunkIds": []
-      },
-      "35": {
-        "chunkId": "610a02",
-        "hash": "a3a6f0ca",
-        "encoded": "%7C%20**RAM**%20%7C%2016%20GB+%20%7C",
+        "hash": "eb52e2be",
+        "encoded": "%7C%20**Internet**%20%7C%20Required%20for%20initial%20setup%20only%20%7C",
         "prevChunkIds": []
       },
       "36": {
         "chunkId": "610a02",
-        "hash": "4344ab28",
-        "encoded": "%7C%20**GPU**%20%7C%20Optional%20(CUDA/MPS%20for%20faster%20embeddings)%20%7C",
+        "hash": "bb6b0906",
+        "encoded": "###%20Recommended%20Requirements",
         "prevChunkIds": []
       },
-      "37": {
+      "38": {
         "chunkId": "610a02",
-        "hash": "352ec94d",
-        "encoded": "%7C%20**Storage**%20%7C%205%20GB+%20free%20space%20%7C",
+        "hash": "04f7cabf",
+        "encoded": "%7C%20Component%20%7C%20Requirement%20%7C",
         "prevChunkIds": []
       },
       "39": {
         "chunkId": "610a02",
-        "hash": "f7e71f0a",
-        "encoded": "---",
+        "hash": "d0504097",
+        "encoded": "%7C-----------%7C-------------%7C",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "610a02",
+        "hash": "aa49d985",
+        "encoded": "%7C%20**CPU**%20%7C%20Quad-core%203.0%20GHz+%20%7C",
         "prevChunkIds": []
       },
       "41": {
         "chunkId": "610a02",
-        "hash": "9d87a4cc",
-        "encoded": "##%202.%20Installation",
+        "hash": "f2ba0702",
+        "encoded": "%7C%20**RAM**%20%7C%2016%20GB+%20%7C",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "610a02",
+        "hash": "6a1ac620",
+        "encoded": "%7C%20**GPU**%20%7C%20Optional%20(CUDA/MPS%20for%20faster%20embeddings)%20%7C",
         "prevChunkIds": []
       },
       "43": {
         "chunkId": "610a02",
-        "hash": "9f2bc39c",
-        "encoded": "###%202.1%20Install%20Python",
+        "hash": "6167fc8e",
+        "encoded": "%7C%20**Storage**%20%7C%205%20GB+%20free%20space%20%7C",
         "prevChunkIds": []
       },
       "45": {
         "chunkId": "610a02",
-        "hash": "ca01ea02",
-        "encoded": "####%20Windows",
-        "prevChunkIds": []
-      },
-      "46": {
-        "chunkId": "610a02",
-        "hash": "b4c500f1",
-        "encoded": "1.%20Download%20from%20%5Bpython.org%5D(https://www.python.org/downloads/)",
+        "hash": "02f8be73",
+        "encoded": "---",
         "prevChunkIds": []
       },
       "47": {
         "chunkId": "610a02",
-        "hash": "e7fdcdb6",
-        "encoded": "2.%20Run%20installer,%20**check%20%22Add%20Python%20to%20PATH%22**",
+        "hash": "872c4aaa",
+        "encoded": "##%202.%20Installation",
         "prevChunkIds": []
       },
-      "48": {
+      "49": {
         "chunkId": "610a02",
-        "hash": "546e9300",
-        "encoded": "3.%20Verify:%20%60python%20--version%60",
-        "prevChunkIds": []
-      },
-      "50": {
-        "chunkId": "610a02",
-        "hash": "a583850e",
-        "encoded": "####%20Linux",
+        "hash": "4cbf9ed8",
+        "encoded": "###%202.1%20Install%20Python",
         "prevChunkIds": []
       },
       "51": {
         "chunkId": "610a02",
-        "hash": "78f50183",
-        "encoded": "%60%60%60bash",
+        "hash": "394050fb",
+        "encoded": "####%20Windows",
         "prevChunkIds": []
       },
       "52": {
         "chunkId": "610a02",
-        "hash": "d7f3d7ad",
-        "encoded": "sudo%20apt%20update",
+        "hash": "81c6b7d5",
+        "encoded": "1.%20Download%20from%20%5Bpython.org%5D(https://www.python.org/downloads/)",
         "prevChunkIds": []
       },
       "53": {
         "chunkId": "610a02",
-        "hash": "9850fbeb",
-        "encoded": "sudo%20apt%20install%20python3.11%20python3.11-venv%20python3-pip",
+        "hash": "6e8618f0",
+        "encoded": "2.%20Run%20installer,%20**check%20%22Add%20Python%20to%20PATH%22**",
         "prevChunkIds": []
       },
       "54": {
         "chunkId": "610a02",
-        "hash": "45b4a8d5",
-        "encoded": "%60%60%60",
+        "hash": "124b017e",
+        "encoded": "3.%20Verify:%20%60python%20--version%60",
         "prevChunkIds": []
       },
       "56": {
         "chunkId": "610a02",
-        "hash": "4ea5d3e5",
-        "encoded": "####%20macOS",
+        "hash": "3b805019",
+        "encoded": "####%20Linux",
         "prevChunkIds": []
       },
       "57": {
@@ -285,98 +291,104 @@
       },
       "58": {
         "chunkId": "610a02",
-        "hash": "c660b9d7",
-        "encoded": "brew%20install%20python@3.11",
+        "hash": "292b1e24",
+        "encoded": "sudo%20apt%20update",
         "prevChunkIds": []
       },
       "59": {
         "chunkId": "610a02",
-        "hash": "4e510c34",
+        "hash": "783c6743",
+        "encoded": "sudo%20apt%20install%20python3.11%20python3.11-venv%20python3-pip",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "610a02",
+        "hash": "4b176361",
         "encoded": "%60%60%60",
         "prevChunkIds": []
       },
-      "61": {
+      "62": {
         "chunkId": "610a02",
-        "hash": "078554e8",
-        "encoded": "###%202.2%20Install%20Ollama",
+        "hash": "24a756b2",
+        "encoded": "####%20macOS",
         "prevChunkIds": []
       },
       "63": {
         "chunkId": "610a02",
-        "hash": "377c9236",
-        "encoded": "####%20Windows",
+        "hash": "d17a2743",
+        "encoded": "%60%60%60bash",
         "prevChunkIds": []
       },
       "64": {
         "chunkId": "610a02",
-        "hash": "9164526a",
-        "encoded": "1.%20Download:%20%5Bhttps://ollama.com/download/windows%5D(https://ollama.com/download/windows)",
+        "hash": "01edb554",
+        "encoded": "brew%20install%20python@3.11",
         "prevChunkIds": []
       },
       "65": {
         "chunkId": "610a02",
-        "hash": "158f0c6e",
-        "encoded": "2.%20Run%20installer",
+        "hash": "9bea3682",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
-      "66": {
+      "67": {
         "chunkId": "610a02",
-        "hash": "3f154c59",
-        "encoded": "3.%20Open%20PowerShell%20and%20verify:%20%60ollama%20--version%60",
-        "prevChunkIds": []
-      },
-      "68": {
-        "chunkId": "610a02",
-        "hash": "0ee3c51d",
-        "encoded": "####%20Linux",
+        "hash": "632956fe",
+        "encoded": "###%202.2%20Install%20Ollama",
         "prevChunkIds": []
       },
       "69": {
         "chunkId": "610a02",
-        "hash": "d8484db5",
-        "encoded": "%60%60%60bash",
+        "hash": "d41fdd93",
+        "encoded": "####%20Windows",
         "prevChunkIds": []
       },
       "70": {
         "chunkId": "610a02",
-        "hash": "3a86942d",
-        "encoded": "curl%20-fsSL%20https://ollama.com/install.sh%20%7C%20sh",
+        "hash": "481c1642",
+        "encoded": "1.%20Download:%20%5Bhttps://ollama.com/download/windows%5D(https://ollama.com/download/windows)",
         "prevChunkIds": []
       },
       "71": {
         "chunkId": "610a02",
-        "hash": "6edcfbbd",
-        "encoded": "%60%60%60",
+        "hash": "7d27700c",
+        "encoded": "2.%20Run%20installer",
         "prevChunkIds": []
       },
-      "73": {
+      "72": {
         "chunkId": "610a02",
-        "hash": "6709a6d6",
-        "encoded": "####%20macOS",
+        "hash": "ce0e2aa5",
+        "encoded": "3.%20Open%20PowerShell%20and%20verify:%20%60ollama%20--version%60",
         "prevChunkIds": []
       },
       "74": {
         "chunkId": "610a02",
-        "hash": "c52292b3",
-        "encoded": "%60%60%60bash",
+        "hash": "52df1d41",
+        "encoded": "####%20Linux",
         "prevChunkIds": []
       },
       "75": {
         "chunkId": "610a02",
-        "hash": "8b30b458",
-        "encoded": "brew%20install%20ollama",
+        "hash": "d4634994",
+        "encoded": "%60%60%60bash",
         "prevChunkIds": []
       },
       "76": {
         "chunkId": "610a02",
-        "hash": "930da210",
+        "hash": "e2b7fcca",
+        "encoded": "curl%20-fsSL%20https://ollama.com/install.sh%20%7C%20sh",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "610a02",
+        "hash": "8e9ac3d3",
         "encoded": "%60%60%60",
         "prevChunkIds": []
       },
-      "78": {
+      "79": {
         "chunkId": "610a02",
-        "hash": "77a852e2",
-        "encoded": "###%202.3%20Pull%20LLM%20Model",
+        "hash": "7eb562d1",
+        "encoded": "####%20macOS",
         "prevChunkIds": []
       },
       "80": {
@@ -387,8 +399,8 @@
       },
       "81": {
         "chunkId": "610a02",
-        "hash": "cf034bb6",
-        "encoded": "ollama%20pull%20qwen2.5:3b",
+        "hash": "174c85ca",
+        "encoded": "brew%20install%20ollama",
         "prevChunkIds": []
       },
       "82": {
@@ -399,122 +411,116 @@
       },
       "84": {
         "chunkId": "610a02",
-        "hash": "ce081aab",
-        "encoded": "**Expected%20download:**%20~2%20GB",
+        "hash": "008da7aa",
+        "encoded": "###%202.3%20Pull%20LLM%20Model",
         "prevChunkIds": []
       },
       "86": {
         "chunkId": "610a02",
-        "hash": "619a3d0a",
-        "encoded": "**Verify:**",
+        "hash": "a0c7a7d5",
+        "encoded": "%60%60%60bash",
         "prevChunkIds": []
       },
       "87": {
         "chunkId": "610a02",
-        "hash": "cac72da9",
-        "encoded": "%60%60%60bash",
+        "hash": "8b4b4ed2",
+        "encoded": "ollama%20pull%20qwen2.5:3b",
         "prevChunkIds": []
       },
       "88": {
         "chunkId": "610a02",
-        "hash": "ed4ffa86",
-        "encoded": "ollama%20list",
-        "prevChunkIds": []
-      },
-      "89": {
-        "chunkId": "610a02",
-        "hash": "f9db9798",
+        "hash": "1888d09b",
         "encoded": "%60%60%60",
         "prevChunkIds": []
       },
-      "91": {
+      "90": {
         "chunkId": "610a02",
-        "hash": "c3495e79",
-        "encoded": "You%20should%20see%20%60qwen2.5:3b%60%20in%20the%20list.",
+        "hash": "fced583b",
+        "encoded": "**Expected%20download:**%20~2%20GB",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "610a02",
+        "hash": "57ef3abf",
+        "encoded": "**Verify:**",
         "prevChunkIds": []
       },
       "93": {
         "chunkId": "610a02",
-        "hash": "2fbc1fa2",
-        "encoded": "###%202.4%20Clone%20Repository",
+        "hash": "d8cb440d",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "610a02",
+        "hash": "fe802a2c",
+        "encoded": "ollama%20list",
         "prevChunkIds": []
       },
       "95": {
         "chunkId": "610a02",
-        "hash": "65027f7f",
-        "encoded": "%60%60%60bash",
-        "prevChunkIds": []
-      },
-      "96": {
-        "chunkId": "610a02",
-        "hash": "131a6885",
-        "encoded": "git%20clone%20%3Crepository-url%3E",
+        "hash": "ea211396",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "97": {
         "chunkId": "610a02",
-        "hash": "04f92c6a",
-        "encoded": "cd%20%22The%20Soundtrack%20of%20Your%20Life%22",
+        "hash": "589ebf80",
+        "encoded": "You%20should%20see%20%60qwen2.5:3b%60%20in%20the%20list.",
         "prevChunkIds": []
       },
-      "98": {
+      "99": {
         "chunkId": "610a02",
-        "hash": "0b932502",
-        "encoded": "%60%60%60",
+        "hash": "ee19305f",
+        "encoded": "###%202.4%20Clone%20Repository",
         "prevChunkIds": []
       },
-      "100": {
+      "101": {
         "chunkId": "610a02",
-        "hash": "22913a3b",
-        "encoded": "###%202.5%20Automated%20Setup",
+        "hash": "b3afdaff",
+        "encoded": "%60%60%60bash",
         "prevChunkIds": []
       },
       "102": {
         "chunkId": "610a02",
-        "hash": "628c9d87",
-        "encoded": "####%20Windows",
+        "hash": "f49d4b41",
+        "encoded": "git%20clone%20%3Crepository-url%3E",
         "prevChunkIds": []
       },
       "103": {
         "chunkId": "610a02",
-        "hash": "c3ec08db",
-        "encoded": "%60%60%60powershell",
+        "hash": "86a74428",
+        "encoded": "cd%20%22The%20Soundtrack%20of%20Your%20Life%22",
         "prevChunkIds": []
       },
       "104": {
         "chunkId": "610a02",
-        "hash": "902c827b",
-        "encoded": ".%5Cscripts%5Csetup_windows.ps1",
-        "prevChunkIds": []
-      },
-      "105": {
-        "chunkId": "610a02",
-        "hash": "5d561670",
+        "hash": "062ff69e",
         "encoded": "%60%60%60",
         "prevChunkIds": []
       },
-      "107": {
+      "106": {
         "chunkId": "610a02",
-        "hash": "5839ef4a",
-        "encoded": "####%20Linux/macOS",
+        "hash": "7598acaa",
+        "encoded": "###%202.5%20Automated%20Setup",
         "prevChunkIds": []
       },
       "108": {
         "chunkId": "610a02",
-        "hash": "b3cb8da2",
-        "encoded": "%60%60%60bash",
+        "hash": "423bc9aa",
+        "encoded": "####%20Windows",
         "prevChunkIds": []
       },
       "109": {
         "chunkId": "610a02",
-        "hash": "c865c15f",
-        "encoded": "chmod%20+x%20scripts/setup_unix.sh",
+        "hash": "b94f5353",
+        "encoded": "%60%60%60powershell",
         "prevChunkIds": []
       },
       "110": {
         "chunkId": "610a02",
-        "hash": "7e37935b",
-        "encoded": "./scripts/setup_unix.sh",
+        "hash": "be106ae0",
+        "encoded": ".%5Cscripts%5Csetup_windows.ps1",
         "prevChunkIds": []
       },
       "111": {
@@ -525,2137 +531,2167 @@
       },
       "113": {
         "chunkId": "610a02",
-        "hash": "653ef2d4",
-        "encoded": "**What%20the%20setup%20script%20does:**",
+        "hash": "ab2de012",
+        "encoded": "####%20Linux/macOS",
         "prevChunkIds": []
       },
       "114": {
         "chunkId": "610a02",
-        "hash": "186abe49",
-        "encoded": "1.%20Checks%20Python%20version",
+        "hash": "3f705304",
+        "encoded": "%60%60%60bash",
         "prevChunkIds": []
       },
       "115": {
         "chunkId": "610a02",
-        "hash": "310d2e03",
-        "encoded": "2.%20Checks%20Ollama%20installation",
+        "hash": "8b1528b3",
+        "encoded": "chmod%20+x%20scripts/setup_unix.sh",
         "prevChunkIds": []
       },
       "116": {
         "chunkId": "610a02",
-        "hash": "c5657e0a",
-        "encoded": "3.%20Creates%20virtual%20environment",
+        "hash": "1ac9eea7",
+        "encoded": "./scripts/setup_unix.sh",
         "prevChunkIds": []
       },
       "117": {
         "chunkId": "610a02",
-        "hash": "c2fa7aab",
-        "encoded": "4.%20Installs%20Python%20dependencies",
-        "prevChunkIds": []
-      },
-      "118": {
-        "chunkId": "610a02",
-        "hash": "26c8bc01",
-        "encoded": "5.%20Creates%20%60.env%60%20configuration%20file",
+        "hash": "ffa9b2a8",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "119": {
         "chunkId": "610a02",
-        "hash": "4478d60f",
-        "encoded": "6.%20Sets%20up%20application%20directories",
+        "hash": "c4b3ee5d",
+        "encoded": "**What%20the%20setup%20script%20does:**",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "610a02",
+        "hash": "e1b56922",
+        "encoded": "1.%20Checks%20Python%20version",
         "prevChunkIds": []
       },
       "121": {
         "chunkId": "610a02",
-        "hash": "bc685725",
-        "encoded": "---",
+        "hash": "280aed34",
+        "encoded": "2.%20Checks%20Ollama%20installation",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "610a02",
+        "hash": "cb240276",
+        "encoded": "3.%20Creates%20virtual%20environment",
         "prevChunkIds": []
       },
       "123": {
         "chunkId": "610a02",
-        "hash": "f8c29c6f",
-        "encoded": "##%203.%20Configuration",
+        "hash": "69df1b4d",
+        "encoded": "4.%20Installs%20Python%20dependencies",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "610a02",
+        "hash": "bf8cad2b",
+        "encoded": "5.%20Creates%20%60.env%60%20configuration%20file",
         "prevChunkIds": []
       },
       "125": {
         "chunkId": "610a02",
-        "hash": "d38c4ad7",
-        "encoded": "###%203.1%20Environment%20Variables",
+        "hash": "f22e061a",
+        "encoded": "6.%20Sets%20up%20application%20directories",
         "prevChunkIds": []
       },
       "127": {
         "chunkId": "610a02",
-        "hash": "eba4d98e",
-        "encoded": "The%20%60.env%60%20file%20contains%20all%20configurable%20settings.",
+        "hash": "1fa638e9",
+        "encoded": "---",
         "prevChunkIds": []
       },
       "129": {
         "chunkId": "610a02",
-        "hash": "198dad75",
-        "encoded": "**Location:**%20Project%20root%20directory",
+        "hash": "e235e7a3",
+        "encoded": "##%203.%20Configuration",
         "prevChunkIds": []
       },
       "131": {
         "chunkId": "610a02",
-        "hash": "4d5f4a5f",
-        "encoded": "**Default%20values:**",
-        "prevChunkIds": []
-      },
-      "132": {
-        "chunkId": "610a02",
-        "hash": "711e0899",
-        "encoded": "%60%60%60ini",
+        "hash": "5e916611",
+        "encoded": "###%203.1%20Environment%20Variables",
         "prevChunkIds": []
       },
       "133": {
         "chunkId": "610a02",
-        "hash": "cb4513d9",
-        "encoded": "#%20LLM%20Configuration",
-        "prevChunkIds": []
-      },
-      "134": {
-        "chunkId": "610a02",
-        "hash": "7077dd57",
-        "encoded": "OLLAMA_BASE_URL=http://localhost:11434",
+        "hash": "c159314f",
+        "encoded": "The%20%60.env%60%20file%20contains%20all%20configurable%20settings.",
         "prevChunkIds": []
       },
       "135": {
         "chunkId": "610a02",
-        "hash": "1198d7d8",
-        "encoded": "OLLAMA_MODEL=qwen2.5:3b",
-        "prevChunkIds": []
-      },
-      "136": {
-        "chunkId": "610a02",
-        "hash": "5c1149e8",
-        "encoded": "LLM_TEMPERATURE=0.3",
+        "hash": "ca67366a",
+        "encoded": "**Location:**%20Project%20root%20directory",
         "prevChunkIds": []
       },
       "137": {
         "chunkId": "610a02",
-        "hash": "f97f63ae",
-        "encoded": "LLM_MAX_TOKENS=2000",
+        "hash": "11ad4e6e",
+        "encoded": "**Default%20values:**",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "610a02",
+        "hash": "79198390",
+        "encoded": "%60%60%60ini",
         "prevChunkIds": []
       },
       "139": {
         "chunkId": "610a02",
-        "hash": "cf5ec72c",
-        "encoded": "#%20Embedding%20Configuration",
+        "hash": "da4899b0",
+        "encoded": "#%20LLM%20Configuration",
         "prevChunkIds": []
       },
       "140": {
         "chunkId": "610a02",
-        "hash": "be3f2a34",
-        "encoded": "EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2",
+        "hash": "311b8f31",
+        "encoded": "OLLAMA_BASE_URL=http://localhost:11434",
         "prevChunkIds": []
       },
       "141": {
         "chunkId": "610a02",
-        "hash": "88ef744f",
-        "encoded": "EMBEDDING_DEVICE=cpu%20%20#%20or%20cuda,%20mps",
+        "hash": "8e7f5d7c",
+        "encoded": "OLLAMA_MODEL=qwen2.5:3b",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "610a02",
+        "hash": "203fd4b6",
+        "encoded": "LLM_TEMPERATURE=0.3",
         "prevChunkIds": []
       },
       "143": {
         "chunkId": "610a02",
-        "hash": "94a77309",
-        "encoded": "#%20RAG%20Configuration",
-        "prevChunkIds": []
-      },
-      "144": {
-        "chunkId": "610a02",
-        "hash": "b7083000",
-        "encoded": "COLLECTION_NAME=music_knowledge",
+        "hash": "66a55f25",
+        "encoded": "LLM_MAX_TOKENS=2000",
         "prevChunkIds": []
       },
       "145": {
         "chunkId": "610a02",
-        "hash": "146e1055",
-        "encoded": "RETRIEVAL_TOP_K=5",
+        "hash": "7372f210",
+        "encoded": "#%20Embedding%20Configuration",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "610a02",
+        "hash": "324afffe",
+        "encoded": "EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2",
         "prevChunkIds": []
       },
       "147": {
         "chunkId": "610a02",
-        "hash": "24af52a6",
-        "encoded": "#%20Recommendation%20Weights%20(must%20sum%20to%201.0)",
-        "prevChunkIds": []
-      },
-      "148": {
-        "chunkId": "610a02",
-        "hash": "2253e314",
-        "encoded": "WEIGHT_MOOD=0.40",
+        "hash": "ba51768c",
+        "encoded": "EMBEDDING_DEVICE=cpu%20%20#%20or%20cuda,%20mps",
         "prevChunkIds": []
       },
       "149": {
         "chunkId": "610a02",
-        "hash": "4bb71ff7",
-        "encoded": "WEIGHT_GENRE=0.30",
+        "hash": "cda187a7",
+        "encoded": "#%20RAG%20Configuration",
         "prevChunkIds": []
       },
       "150": {
         "chunkId": "610a02",
-        "hash": "7d20569b",
-        "encoded": "WEIGHT_INSTRUMENT=0.20",
+        "hash": "4f69d23d",
+        "encoded": "COLLECTION_NAME=music_knowledge",
         "prevChunkIds": []
       },
       "151": {
         "chunkId": "610a02",
-        "hash": "30212f56",
-        "encoded": "WEIGHT_THEME=0.10",
+        "hash": "389b49ef",
+        "encoded": "RETRIEVAL_TOP_K=5",
         "prevChunkIds": []
       },
       "153": {
         "chunkId": "610a02",
-        "hash": "f8a338c5",
-        "encoded": "#%20Features",
+        "hash": "c8803232",
+        "encoded": "#%20Recommendation%20Weights%20(must%20sum%20to%201.0)",
         "prevChunkIds": []
       },
       "154": {
         "chunkId": "610a02",
-        "hash": "0b0cb25e",
-        "encoded": "MAX_RECOMMENDATIONS=10",
+        "hash": "309d9642",
+        "encoded": "WEIGHT_MOOD=0.40",
         "prevChunkIds": []
       },
       "155": {
         "chunkId": "610a02",
-        "hash": "5ccad19a",
-        "encoded": "MAX_MEMORY_LENGTH=5000",
+        "hash": "82644ed3",
+        "encoded": "WEIGHT_GENRE=0.30",
         "prevChunkIds": []
       },
       "156": {
         "chunkId": "610a02",
-        "hash": "3038e8ae",
-        "encoded": "ENABLE_MEMORY_VAULT=true",
+        "hash": "54cc4657",
+        "encoded": "WEIGHT_INSTRUMENT=0.20",
         "prevChunkIds": []
       },
       "157": {
         "chunkId": "610a02",
-        "hash": "3400feea",
-        "encoded": "%60%60%60",
+        "hash": "0419ec60",
+        "encoded": "WEIGHT_THEME=0.10",
         "prevChunkIds": []
       },
       "159": {
         "chunkId": "610a02",
-        "hash": "f43d713c",
-        "encoded": "###%203.2%20Customization%20Examples",
+        "hash": "47589be2",
+        "encoded": "#%20Features",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "610a02",
+        "hash": "f0065330",
+        "encoded": "MAX_RECOMMENDATIONS=10",
         "prevChunkIds": []
       },
       "161": {
         "chunkId": "610a02",
-        "hash": "cd7fcc6c",
-        "encoded": "**Use%20GPU%20for%20faster%20embeddings%20(NVIDIA):**",
+        "hash": "90f0a078",
+        "encoded": "MAX_MEMORY_LENGTH=5000",
         "prevChunkIds": []
       },
       "162": {
         "chunkId": "610a02",
-        "hash": "53a03f71",
-        "encoded": "%60%60%60ini",
+        "hash": "7e6a16b5",
+        "encoded": "ENABLE_MEMORY_VAULT=true",
         "prevChunkIds": []
       },
       "163": {
         "chunkId": "610a02",
-        "hash": "329005ce",
-        "encoded": "EMBEDDING_DEVICE=cuda",
-        "prevChunkIds": []
-      },
-      "164": {
-        "chunkId": "610a02",
-        "hash": "a24bb7f5",
+        "hash": "3f4e2600",
         "encoded": "%60%60%60",
         "prevChunkIds": []
       },
-      "166": {
+      "165": {
         "chunkId": "610a02",
-        "hash": "28770e6d",
-        "encoded": "**Use%20GPU%20for%20Mac%20(Apple%20Silicon):**",
+        "hash": "1c3a9a65",
+        "encoded": "###%203.2%20Customization%20Examples",
         "prevChunkIds": []
       },
       "167": {
         "chunkId": "610a02",
-        "hash": "c0884007",
-        "encoded": "%60%60%60ini",
+        "hash": "13a656d2",
+        "encoded": "**Use%20GPU%20for%20faster%20embeddings%20(NVIDIA):**",
         "prevChunkIds": []
       },
       "168": {
         "chunkId": "610a02",
-        "hash": "6b6ab46b",
-        "encoded": "EMBEDDING_DEVICE=mps",
+        "hash": "ef8bf771",
+        "encoded": "%60%60%60ini",
         "prevChunkIds": []
       },
       "169": {
         "chunkId": "610a02",
-        "hash": "018e634b",
-        "encoded": "%60%60%60",
+        "hash": "921269ca",
+        "encoded": "EMBEDDING_DEVICE=cuda",
         "prevChunkIds": []
       },
-      "171": {
+      "170": {
         "chunkId": "610a02",
-        "hash": "44960bf1",
-        "encoded": "**Change%20LLM%20creativity:**",
+        "hash": "2c35a052",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "172": {
         "chunkId": "610a02",
-        "hash": "af37c432",
-        "encoded": "%60%60%60ini",
+        "hash": "d17a008e",
+        "encoded": "**Use%20GPU%20for%20Mac%20(Apple%20Silicon):**",
         "prevChunkIds": []
       },
       "173": {
         "chunkId": "610a02",
-        "hash": "f1f0c8e3",
-        "encoded": "LLM_TEMPERATURE=0.7%20%20#%20More%20creative%20(0.0-1.0)",
+        "hash": "ccff739f",
+        "encoded": "%60%60%60ini",
         "prevChunkIds": []
       },
       "174": {
         "chunkId": "610a02",
-        "hash": "c4e20f80",
-        "encoded": "%60%60%60",
+        "hash": "adfbdc66",
+        "encoded": "EMBEDDING_DEVICE=mps",
         "prevChunkIds": []
       },
-      "176": {
+      "175": {
         "chunkId": "610a02",
-        "hash": "bbd9cb0c",
-        "encoded": "**Adjust%20recommendation%20weights:**",
+        "hash": "8cf1243a",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "177": {
         "chunkId": "610a02",
-        "hash": "721bc1a7",
-        "encoded": "%60%60%60ini",
+        "hash": "73f062da",
+        "encoded": "**Change%20LLM%20creativity:**",
         "prevChunkIds": []
       },
       "178": {
         "chunkId": "610a02",
-        "hash": "69e8c2b0",
-        "encoded": "WEIGHT_MOOD=0.50%20%20%20%20%20%20#%20Prioritize%20mood%20matching",
+        "hash": "a58e32e9",
+        "encoded": "%60%60%60ini",
         "prevChunkIds": []
       },
       "179": {
         "chunkId": "610a02",
-        "hash": "d3958531",
-        "encoded": "WEIGHT_GENRE=0.25",
+        "hash": "759355a0",
+        "encoded": "LLM_TEMPERATURE=0.7%20%20#%20More%20creative%20(0.0-1.0)",
         "prevChunkIds": []
       },
       "180": {
         "chunkId": "610a02",
-        "hash": "fa981689",
-        "encoded": "WEIGHT_INSTRUMENT=0.15",
-        "prevChunkIds": []
-      },
-      "181": {
-        "chunkId": "610a02",
-        "hash": "b63cf9f7",
-        "encoded": "WEIGHT_THEME=0.10",
+        "hash": "ec94677a",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "182": {
         "chunkId": "610a02",
-        "hash": "5e9cbb4d",
-        "encoded": "%60%60%60",
+        "hash": "6d88922d",
+        "encoded": "**Adjust%20recommendation%20weights:**",
+        "prevChunkIds": []
+      },
+      "183": {
+        "chunkId": "610a02",
+        "hash": "dd3611bf",
+        "encoded": "%60%60%60ini",
         "prevChunkIds": []
       },
       "184": {
         "chunkId": "610a02",
-        "hash": "0b37543c",
-        "encoded": "---",
+        "hash": "d7698008",
+        "encoded": "WEIGHT_MOOD=0.50%20%20%20%20%20%20#%20Prioritize%20mood%20matching",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "610a02",
+        "hash": "9c8f0172",
+        "encoded": "WEIGHT_GENRE=0.25",
         "prevChunkIds": []
       },
       "186": {
         "chunkId": "610a02",
-        "hash": "945d09a0",
-        "encoded": "##%204.%20Knowledge%20Base%20Setup",
+        "hash": "8a31663e",
+        "encoded": "WEIGHT_INSTRUMENT=0.15",
+        "prevChunkIds": []
+      },
+      "187": {
+        "chunkId": "610a02",
+        "hash": "ff5e9f8b",
+        "encoded": "WEIGHT_THEME=0.10",
         "prevChunkIds": []
       },
       "188": {
         "chunkId": "610a02",
-        "hash": "d424a695",
-        "encoded": "###%204.1%20Initial%20Build",
+        "hash": "9c195bb5",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "190": {
         "chunkId": "610a02",
-        "hash": "423072f5",
-        "encoded": "**Important:**%20The%20knowledge%20base%20must%20be%20built%20once%20before%20using%20the%20application.",
+        "hash": "40d13c3f",
+        "encoded": "---",
         "prevChunkIds": []
       },
       "192": {
         "chunkId": "610a02",
-        "hash": "198a0718",
-        "encoded": "%60%60%60bash",
-        "prevChunkIds": []
-      },
-      "193": {
-        "chunkId": "610a02",
-        "hash": "5793c38c",
-        "encoded": "python%20scripts/build_knowledge_base.py",
+        "hash": "3d2767fa",
+        "encoded": "##%204.%20Knowledge%20Base%20Setup",
         "prevChunkIds": []
       },
       "194": {
         "chunkId": "610a02",
-        "hash": "cf0ca1be",
-        "encoded": "%60%60%60",
+        "hash": "af7728ac",
+        "encoded": "###%204.1%20Initial%20Build",
         "prevChunkIds": []
       },
       "196": {
         "chunkId": "610a02",
-        "hash": "911d003d",
-        "encoded": "**Expected%20output:**",
-        "prevChunkIds": []
-      },
-      "197": {
-        "chunkId": "610a02",
-        "hash": "77444ad1",
-        "encoded": "%60%60%60",
+        "hash": "c21a563d",
+        "encoded": "**Important:**%20The%20knowledge%20base%20must%20be%20built%20once%20before%20using%20the%20application.",
         "prevChunkIds": []
       },
       "198": {
         "chunkId": "610a02",
-        "hash": "9adbaa50",
-        "encoded": "%5BINFO%5D%20Loaded%2018%20documents",
+        "hash": "6e087dbb",
+        "encoded": "%60%60%60bash",
         "prevChunkIds": []
       },
       "199": {
         "chunkId": "610a02",
-        "hash": "e0ef3d03",
-        "encoded": "%5BINFO%5D%20Created%2036%20chunks%20from%2018%20documents",
+        "hash": "045a5c42",
+        "encoded": "python%20scripts/build_knowledge_base.py",
         "prevChunkIds": []
       },
       "200": {
         "chunkId": "610a02",
-        "hash": "0c5d68ce",
-        "encoded": "%5BINFO%5D%20Generating%20embeddings%20and%20adding%20to%20ChromaDB...",
-        "prevChunkIds": []
-      },
-      "201": {
-        "chunkId": "610a02",
-        "hash": "034adf45",
-        "encoded": "%5BINFO%5D%20Progress:%2036/36%20chunks%20processed",
+        "hash": "88344ed4",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "202": {
         "chunkId": "610a02",
-        "hash": "33471f81",
-        "encoded": "%5BSUCCESS%5D%20Knowledge%20base%20ingestion%20complete!",
+        "hash": "29b25f0e",
+        "encoded": "**Expected%20output:**",
         "prevChunkIds": []
       },
       "203": {
         "chunkId": "610a02",
-        "hash": "01d48ac9",
-        "encoded": "%5BINFO%5D%20Documents:%2036",
+        "hash": "230d5995",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "204": {
         "chunkId": "610a02",
-        "hash": "a422f964",
-        "encoded": "%60%60%60",
+        "hash": "a5b02ae0",
+        "encoded": "%5BINFO%5D%20Loaded%2018%20documents",
+        "prevChunkIds": []
+      },
+      "205": {
+        "chunkId": "610a02",
+        "hash": "ad36e138",
+        "encoded": "%5BINFO%5D%20Created%2036%20chunks%20from%2018%20documents",
         "prevChunkIds": []
       },
       "206": {
         "chunkId": "610a02",
-        "hash": "f5c8721d",
-        "encoded": "**Time%20required:**%202-5%20minutes%20(first%20run,%20downloads%20embedding%20model)",
+        "hash": "0468d225",
+        "encoded": "%5BINFO%5D%20Generating%20embeddings%20and%20adding%20to%20ChromaDB...",
+        "prevChunkIds": []
+      },
+      "207": {
+        "chunkId": "610a02",
+        "hash": "a0b6e0b7",
+        "encoded": "%5BINFO%5D%20Progress:%2036/36%20chunks%20processed",
         "prevChunkIds": []
       },
       "208": {
         "chunkId": "610a02",
-        "hash": "1063e522",
-        "encoded": "###%204.2%20Rebuild%20Knowledge%20Base",
+        "hash": "d874d60e",
+        "encoded": "%5BSUCCESS%5D%20Knowledge%20base%20ingestion%20complete!",
+        "prevChunkIds": []
+      },
+      "209": {
+        "chunkId": "610a02",
+        "hash": "d0f6675e",
+        "encoded": "%5BINFO%5D%20Documents:%2036",
         "prevChunkIds": []
       },
       "210": {
         "chunkId": "610a02",
-        "hash": "add802cd",
-        "encoded": "If%20you%20modify%20knowledge%20documents%20or%20encounter%20issues:",
+        "hash": "5cbb2974",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "212": {
         "chunkId": "610a02",
-        "hash": "9f323f0c",
-        "encoded": "%60%60%60bash",
-        "prevChunkIds": []
-      },
-      "213": {
-        "chunkId": "610a02",
-        "hash": "ca21983c",
-        "encoded": "python%20scripts/build_knowledge_base.py%20--rebuild",
+        "hash": "22c17421",
+        "encoded": "**Time%20required:**%202-5%20minutes%20(first%20run,%20downloads%20embedding%20model)",
         "prevChunkIds": []
       },
       "214": {
         "chunkId": "610a02",
-        "hash": "2e15d42e",
-        "encoded": "%60%60%60",
+        "hash": "724addf9",
+        "encoded": "###%204.2%20Rebuild%20Knowledge%20Base",
         "prevChunkIds": []
       },
       "216": {
         "chunkId": "610a02",
-        "hash": "6015a68b",
-        "encoded": "###%204.3%20Knowledge%20Base%20Location",
+        "hash": "1a669090",
+        "encoded": "If%20you%20modify%20knowledge%20documents%20or%20encounter%20issues:",
         "prevChunkIds": []
       },
       "218": {
         "chunkId": "610a02",
-        "hash": "989c67d5",
-        "encoded": "**Windows:**",
+        "hash": "1d740748",
+        "encoded": "%60%60%60bash",
         "prevChunkIds": []
       },
       "219": {
         "chunkId": "610a02",
-        "hash": "55d11e32",
-        "encoded": "%60%60%60",
+        "hash": "d56be632",
+        "encoded": "python%20scripts/build_knowledge_base.py%20--rebuild",
         "prevChunkIds": []
       },
       "220": {
         "chunkId": "610a02",
-        "hash": "9fffb01d",
-        "encoded": "C:%5CUsers%5C%3Cusername%3E%5CAppData%5CLocal%5CThe%20Soundtrack%20of%20Your%20Life%5Cchroma_db",
-        "prevChunkIds": []
-      },
-      "221": {
-        "chunkId": "610a02",
-        "hash": "a4646b1d",
+        "hash": "67dc3588",
         "encoded": "%60%60%60",
         "prevChunkIds": []
       },
-      "223": {
+      "222": {
         "chunkId": "610a02",
-        "hash": "93cdea4a",
-        "encoded": "**Linux:**",
+        "hash": "ee64f7a0",
+        "encoded": "###%204.3%20Knowledge%20Base%20Location",
         "prevChunkIds": []
       },
       "224": {
         "chunkId": "610a02",
-        "hash": "2e86529a",
-        "encoded": "%60%60%60",
+        "hash": "340e401e",
+        "encoded": "**Windows:**",
         "prevChunkIds": []
       },
       "225": {
         "chunkId": "610a02",
-        "hash": "4234de37",
-        "encoded": "~/.local/share/soundtrack-of-your-life/chroma_db",
+        "hash": "793b03c9",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "226": {
         "chunkId": "610a02",
-        "hash": "83245c39",
-        "encoded": "%60%60%60",
+        "hash": "734992c7",
+        "encoded": "C:%5CUsers%5C%3Cusername%3E%5CAppData%5CLocal%5CThe%20Soundtrack%20of%20Your%20Life%5Cchroma_db",
         "prevChunkIds": []
       },
-      "228": {
+      "227": {
         "chunkId": "610a02",
-        "hash": "08b9b6ee",
-        "encoded": "**macOS:**",
+        "hash": "5e86e250",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "229": {
         "chunkId": "610a02",
-        "hash": "f2f91319",
-        "encoded": "%60%60%60",
+        "hash": "8fa96d6b",
+        "encoded": "**Linux:**",
         "prevChunkIds": []
       },
       "230": {
         "chunkId": "610a02",
-        "hash": "fa130a5b",
-        "encoded": "~/Library/Application%20Support/The%20Soundtrack%20of%20Your%20Life/chroma_db",
+        "hash": "d827234d",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "231": {
         "chunkId": "610a02",
-        "hash": "b8e5ac38",
+        "hash": "55282ca2",
+        "encoded": "~/.local/share/soundtrack-of-your-life/chroma_db",
+        "prevChunkIds": []
+      },
+      "232": {
+        "chunkId": "610a02",
+        "hash": "89131f8b",
         "encoded": "%60%60%60",
         "prevChunkIds": []
       },
-      "233": {
+      "234": {
         "chunkId": "610a02",
-        "hash": "a3450517",
-        "encoded": "---",
+        "hash": "fb21717d",
+        "encoded": "**macOS:**",
         "prevChunkIds": []
       },
       "235": {
         "chunkId": "610a02",
-        "hash": "29aa6dcb",
-        "encoded": "##%205.%20Running%20the%20Application",
+        "hash": "74c5597a",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "236": {
+        "chunkId": "610a02",
+        "hash": "907c3fc1",
+        "encoded": "~/Library/Application%20Support/The%20Soundtrack%20of%20Your%20Life/chroma_db",
         "prevChunkIds": []
       },
       "237": {
         "chunkId": "610a02",
-        "hash": "c8f4d837",
-        "encoded": "###%205.1%20Automated%20Launch",
+        "hash": "0a9adfca",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "239": {
         "chunkId": "610a02",
-        "hash": "38acef20",
-        "encoded": "####%20Windows",
-        "prevChunkIds": []
-      },
-      "240": {
-        "chunkId": "610a02",
-        "hash": "aac13f6b",
-        "encoded": "%60%60%60powershell",
+        "hash": "39887ee3",
+        "encoded": "---",
         "prevChunkIds": []
       },
       "241": {
         "chunkId": "610a02",
-        "hash": "e540caf9",
-        "encoded": ".%5Cscripts%5Crun_windows.ps1",
+        "hash": "d194081f",
+        "encoded": "##%205.%20Running%20the%20Application",
         "prevChunkIds": []
       },
-      "242": {
+      "243": {
         "chunkId": "610a02",
-        "hash": "775a82e0",
-        "encoded": "%60%60%60",
-        "prevChunkIds": []
-      },
-      "244": {
-        "chunkId": "610a02",
-        "hash": "6e49763d",
-        "encoded": "####%20Linux/macOS",
+        "hash": "0e6d20c8",
+        "encoded": "###%205.1%20Automated%20Launch",
         "prevChunkIds": []
       },
       "245": {
         "chunkId": "610a02",
-        "hash": "2fe17e71",
-        "encoded": "%60%60%60bash",
+        "hash": "aa621b22",
+        "encoded": "####%20Windows",
         "prevChunkIds": []
       },
       "246": {
         "chunkId": "610a02",
-        "hash": "6f32e34d",
-        "encoded": "./scripts/run_unix.sh",
+        "hash": "df9b34c5",
+        "encoded": "%60%60%60powershell",
         "prevChunkIds": []
       },
       "247": {
         "chunkId": "610a02",
-        "hash": "4f560dd2",
-        "encoded": "%60%60%60",
+        "hash": "09a7a829",
+        "encoded": ".%5Cscripts%5Crun_windows.ps1",
         "prevChunkIds": []
       },
-      "249": {
+      "248": {
         "chunkId": "610a02",
-        "hash": "4b339464",
-        "encoded": "**What%20the%20run%20script%20does:**",
+        "hash": "4b4073ff",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "250": {
         "chunkId": "610a02",
-        "hash": "a0c9f4cc",
-        "encoded": "1.%20Activates%20virtual%20environment",
+        "hash": "d7777cdd",
+        "encoded": "####%20Linux/macOS",
         "prevChunkIds": []
       },
       "251": {
         "chunkId": "610a02",
-        "hash": "307dbe6f",
-        "encoded": "2.%20Checks%20Ollama%20status",
+        "hash": "385d2492",
+        "encoded": "%60%60%60bash",
         "prevChunkIds": []
       },
       "252": {
         "chunkId": "610a02",
-        "hash": "59cfdf74",
-        "encoded": "3.%20Verifies%20knowledge%20base",
+        "hash": "a18f7573",
+        "encoded": "./scripts/run_unix.sh",
         "prevChunkIds": []
       },
       "253": {
         "chunkId": "610a02",
-        "hash": "9c5a399b",
-        "encoded": "4.%20Runs%20health%20check",
+        "hash": "3aedd391",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
-      "254": {
+      "255": {
         "chunkId": "610a02",
-        "hash": "98d38288",
-        "encoded": "5.%20Launches%20Streamlit%20app",
+        "hash": "a09ee503",
+        "encoded": "**What%20the%20run%20script%20does:**",
         "prevChunkIds": []
       },
       "256": {
         "chunkId": "610a02",
-        "hash": "836d7735",
-        "encoded": "###%205.2%20Manual%20Launch",
+        "hash": "a0924410",
+        "encoded": "1.%20Activates%20virtual%20environment",
+        "prevChunkIds": []
+      },
+      "257": {
+        "chunkId": "610a02",
+        "hash": "66504492",
+        "encoded": "2.%20Checks%20Ollama%20status",
         "prevChunkIds": []
       },
       "258": {
         "chunkId": "610a02",
-        "hash": "23d97ccf",
-        "encoded": "%60%60%60bash",
+        "hash": "1d18d2cc",
+        "encoded": "3.%20Verifies%20knowledge%20base",
         "prevChunkIds": []
       },
       "259": {
         "chunkId": "610a02",
-        "hash": "530e5d4e",
-        "encoded": "#%20Activate%20virtual%20environment",
+        "hash": "a87deac5",
+        "encoded": "4.%20Runs%20health%20check",
         "prevChunkIds": []
       },
       "260": {
         "chunkId": "610a02",
-        "hash": "d0314921",
-        "encoded": "#%20Windows:",
+        "hash": "49f3311e",
+        "encoded": "5.%20Launches%20Streamlit%20app",
         "prevChunkIds": []
       },
-      "261": {
+      "262": {
         "chunkId": "610a02",
-        "hash": "80b71212",
-        "encoded": ".venv%5CScripts%5Cactivate",
-        "prevChunkIds": []
-      },
-      "263": {
-        "chunkId": "610a02",
-        "hash": "6cb90540",
-        "encoded": "#%20Linux/macOS:",
+        "hash": "0a4154a6",
+        "encoded": "###%205.2%20Manual%20Launch",
         "prevChunkIds": []
       },
       "264": {
         "chunkId": "610a02",
-        "hash": "58ab886d",
-        "encoded": "source%20.venv/bin/activate",
+        "hash": "8c9199c7",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "265": {
+        "chunkId": "610a02",
+        "hash": "f1f72599",
+        "encoded": "#%20Activate%20virtual%20environment",
         "prevChunkIds": []
       },
       "266": {
         "chunkId": "610a02",
-        "hash": "9886b0d2",
-        "encoded": "#%20Run%20application",
+        "hash": "d01ac2f8",
+        "encoded": "#%20Windows:",
         "prevChunkIds": []
       },
       "267": {
         "chunkId": "610a02",
-        "hash": "bb2f0751",
-        "encoded": "streamlit%20run%20app.py",
+        "hash": "227f7e44",
+        "encoded": ".venv%5CScripts%5Cactivate",
         "prevChunkIds": []
       },
-      "268": {
+      "269": {
         "chunkId": "610a02",
-        "hash": "86fe91be",
-        "encoded": "%60%60%60",
+        "hash": "03a6acbf",
+        "encoded": "#%20Linux/macOS:",
         "prevChunkIds": []
       },
       "270": {
         "chunkId": "610a02",
-        "hash": "c6564595",
-        "encoded": "###%205.3%20Accessing%20the%20Application",
+        "hash": "f0a95f84",
+        "encoded": "source%20.venv/bin/activate",
         "prevChunkIds": []
       },
       "272": {
         "chunkId": "610a02",
-        "hash": "eb8c97bd",
-        "encoded": "The%20app%20will%20automatically%20open%20in%20your%20default%20browser%20at:",
+        "hash": "d73cbcea",
+        "encoded": "#%20Run%20application",
         "prevChunkIds": []
       },
       "273": {
         "chunkId": "610a02",
-        "hash": "3f206c91",
-        "encoded": "%60%60%60",
+        "hash": "dffab331",
+        "encoded": "streamlit%20run%20app.py",
         "prevChunkIds": []
       },
       "274": {
         "chunkId": "610a02",
-        "hash": "2b8bd998",
-        "encoded": "http://localhost:8501",
-        "prevChunkIds": []
-      },
-      "275": {
-        "chunkId": "610a02",
-        "hash": "67aa1ca9",
+        "hash": "16f6405e",
         "encoded": "%60%60%60",
         "prevChunkIds": []
       },
-      "277": {
+      "276": {
         "chunkId": "610a02",
-        "hash": "6b842a5d",
-        "encoded": "If%20it%20doesn't%20open%20automatically,%20click%20the%20link%20in%20the%20terminal.",
+        "hash": "8bfcd7a4",
+        "encoded": "###%205.3%20Accessing%20the%20Application",
+        "prevChunkIds": []
+      },
+      "278": {
+        "chunkId": "610a02",
+        "hash": "adaf4c0d",
+        "encoded": "The%20app%20will%20automatically%20open%20in%20your%20default%20browser%20at:",
         "prevChunkIds": []
       },
       "279": {
         "chunkId": "610a02",
-        "hash": "701ec67b",
-        "encoded": "###%205.4%20Stopping%20the%20Application",
+        "hash": "bbe409e4",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "280": {
+        "chunkId": "610a02",
+        "hash": "e0f15fb4",
+        "encoded": "http://localhost:8501",
         "prevChunkIds": []
       },
       "281": {
         "chunkId": "610a02",
-        "hash": "392897d5",
-        "encoded": "Press%20%60Ctrl+C%60%20in%20the%20terminal%20running%20Streamlit.",
+        "hash": "be4faeb5",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "283": {
         "chunkId": "610a02",
-        "hash": "6e65a46c",
-        "encoded": "---",
+        "hash": "21efbcbd",
+        "encoded": "If%20it%20doesn't%20open%20automatically,%20click%20the%20link%20in%20the%20terminal.",
         "prevChunkIds": []
       },
       "285": {
         "chunkId": "610a02",
-        "hash": "e3682ec1",
-        "encoded": "##%206.%20Troubleshooting",
+        "hash": "b3387112",
+        "encoded": "###%205.4%20Stopping%20the%20Application",
         "prevChunkIds": []
       },
       "287": {
         "chunkId": "610a02",
-        "hash": "a5ebc9db",
-        "encoded": "###%206.1%20Ollama%20Not%20Running",
+        "hash": "b0867bce",
+        "encoded": "Press%20%60Ctrl+C%60%20in%20the%20terminal%20running%20Streamlit.",
         "prevChunkIds": []
       },
       "289": {
         "chunkId": "610a02",
-        "hash": "129e9450",
-        "encoded": "**Error:**",
-        "prevChunkIds": []
-      },
-      "290": {
-        "chunkId": "610a02",
-        "hash": "19b4c866",
-        "encoded": "%60%60%60",
+        "hash": "30eb3566",
+        "encoded": "---",
         "prevChunkIds": []
       },
       "291": {
         "chunkId": "610a02",
-        "hash": "d9fbe453",
-        "encoded": "%5BERROR%5D%20Ollama%20not%20accessible%20at%20http://localhost:11434",
+        "hash": "88072f90",
+        "encoded": "##%206.%20Troubleshooting",
         "prevChunkIds": []
       },
-      "292": {
+      "293": {
         "chunkId": "610a02",
-        "hash": "11a3ac8c",
-        "encoded": "%60%60%60",
+        "hash": "ea2b4c5e",
+        "encoded": "###%206.1%20Ollama%20Not%20Running",
         "prevChunkIds": []
       },
-      "294": {
+      "295": {
         "chunkId": "610a02",
-        "hash": "e19cc85d",
-        "encoded": "**Solution:**",
+        "hash": "e015c701",
+        "encoded": "**Error:**",
         "prevChunkIds": []
       },
       "296": {
         "chunkId": "610a02",
-        "hash": "67b7e540",
-        "encoded": "**Windows:**",
+        "hash": "3a349f9f",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "297": {
         "chunkId": "610a02",
-        "hash": "31f67396",
-        "encoded": "-%20Ollama%20should%20start%20automatically",
+        "hash": "f9cf4174",
+        "encoded": "%5BERROR%5D%20Ollama%20not%20accessible%20at%20http://localhost:11434",
         "prevChunkIds": []
       },
       "298": {
         "chunkId": "610a02",
-        "hash": "dfb6ca5f",
-        "encoded": "-%20If%20not,%20launch%20%22Ollama%22%20from%20Start%20Menu",
+        "hash": "445c0b4e",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "300": {
         "chunkId": "610a02",
-        "hash": "55d2b308",
-        "encoded": "**Linux:**",
-        "prevChunkIds": []
-      },
-      "301": {
-        "chunkId": "610a02",
-        "hash": "d81fbad3",
-        "encoded": "%60%60%60bash",
+        "hash": "128641a4",
+        "encoded": "**Solution:**",
         "prevChunkIds": []
       },
       "302": {
         "chunkId": "610a02",
-        "hash": "bac91dec",
-        "encoded": "ollama%20serve%20&",
+        "hash": "24aeb45c",
+        "encoded": "**Windows:**",
         "prevChunkIds": []
       },
       "303": {
         "chunkId": "610a02",
-        "hash": "b8455191",
-        "encoded": "%60%60%60",
+        "hash": "6123e4b0",
+        "encoded": "-%20Ollama%20should%20start%20automatically",
         "prevChunkIds": []
       },
-      "305": {
+      "304": {
         "chunkId": "610a02",
-        "hash": "2924a579",
-        "encoded": "**macOS:**",
+        "hash": "7e157cdb",
+        "encoded": "-%20If%20not,%20launch%20%22Ollama%22%20from%20Start%20Menu",
         "prevChunkIds": []
       },
       "306": {
         "chunkId": "610a02",
-        "hash": "708b17b8",
-        "encoded": "%60%60%60bash",
+        "hash": "c3329635",
+        "encoded": "**Linux:**",
         "prevChunkIds": []
       },
       "307": {
         "chunkId": "610a02",
-        "hash": "084834f1",
-        "encoded": "ollama%20serve%20&",
+        "hash": "5f84e40c",
+        "encoded": "%60%60%60bash",
         "prevChunkIds": []
       },
       "308": {
         "chunkId": "610a02",
-        "hash": "17dd5299",
+        "hash": "f04d6f3f",
+        "encoded": "ollama%20serve%20&",
+        "prevChunkIds": []
+      },
+      "309": {
+        "chunkId": "610a02",
+        "hash": "a9c3f9f7",
         "encoded": "%60%60%60",
         "prevChunkIds": []
       },
-      "310": {
+      "311": {
         "chunkId": "610a02",
-        "hash": "55296648",
-        "encoded": "###%206.2%20Model%20Not%20Found",
+        "hash": "f413a5df",
+        "encoded": "**macOS:**",
         "prevChunkIds": []
       },
       "312": {
         "chunkId": "610a02",
-        "hash": "74472919",
-        "encoded": "**Error:**",
+        "hash": "0bec4103",
+        "encoded": "%60%60%60bash",
         "prevChunkIds": []
       },
       "313": {
         "chunkId": "610a02",
-        "hash": "8e7a1c3a",
-        "encoded": "%60%60%60",
+        "hash": "55ce75a6",
+        "encoded": "ollama%20serve%20&",
         "prevChunkIds": []
       },
       "314": {
         "chunkId": "610a02",
-        "hash": "edd0a121",
-        "encoded": "%5BERROR%5D%20Model%20'qwen2.5:3b'%20not%20found",
-        "prevChunkIds": []
-      },
-      "315": {
-        "chunkId": "610a02",
-        "hash": "da9d98fc",
+        "hash": "e26614c7",
         "encoded": "%60%60%60",
         "prevChunkIds": []
       },
-      "317": {
+      "316": {
         "chunkId": "610a02",
-        "hash": "f014713a",
-        "encoded": "**Solution:**",
+        "hash": "e61ab95c",
+        "encoded": "###%206.2%20Model%20Not%20Found",
         "prevChunkIds": []
       },
       "318": {
         "chunkId": "610a02",
-        "hash": "7e3249b4",
-        "encoded": "%60%60%60bash",
+        "hash": "931dbc67",
+        "encoded": "**Error:**",
         "prevChunkIds": []
       },
       "319": {
         "chunkId": "610a02",
-        "hash": "88b2ce82",
-        "encoded": "ollama%20pull%20qwen2.5:3b",
+        "hash": "d82b9d3f",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "320": {
         "chunkId": "610a02",
-        "hash": "5cd06880",
+        "hash": "85154faf",
+        "encoded": "%5BERROR%5D%20Model%20'qwen2.5:3b'%20not%20found",
+        "prevChunkIds": []
+      },
+      "321": {
+        "chunkId": "610a02",
+        "hash": "1df35e71",
         "encoded": "%60%60%60",
         "prevChunkIds": []
       },
-      "322": {
+      "323": {
         "chunkId": "610a02",
-        "hash": "29a2e454",
-        "encoded": "###%206.3%20Knowledge%20Base%20Not%20Built",
+        "hash": "780d8673",
+        "encoded": "**Solution:**",
         "prevChunkIds": []
       },
       "324": {
         "chunkId": "610a02",
-        "hash": "854811c9",
-        "encoded": "**Warning:**",
+        "hash": "0da7c504",
+        "encoded": "%60%60%60bash",
         "prevChunkIds": []
       },
       "325": {
         "chunkId": "610a02",
-        "hash": "c3feee25",
-        "encoded": "%60%60%60",
+        "hash": "b342271f",
+        "encoded": "ollama%20pull%20qwen2.5:3b",
         "prevChunkIds": []
       },
       "326": {
         "chunkId": "610a02",
-        "hash": "600d9581",
-        "encoded": "%5BWARNING%5D%20Knowledge%20base%20not%20found",
-        "prevChunkIds": []
-      },
-      "327": {
-        "chunkId": "610a02",
-        "hash": "7b00a5f8",
+        "hash": "f2319027",
         "encoded": "%60%60%60",
         "prevChunkIds": []
       },
-      "329": {
+      "328": {
         "chunkId": "610a02",
-        "hash": "55f301b2",
-        "encoded": "**Solution:**",
+        "hash": "2761e074",
+        "encoded": "###%206.3%20Knowledge%20Base%20Not%20Built",
         "prevChunkIds": []
       },
       "330": {
         "chunkId": "610a02",
-        "hash": "5a1c367b",
-        "encoded": "%60%60%60bash",
+        "hash": "052f52f6",
+        "encoded": "**Warning:**",
         "prevChunkIds": []
       },
       "331": {
         "chunkId": "610a02",
-        "hash": "3ca49553",
-        "encoded": "python%20scripts/build_knowledge_base.py",
+        "hash": "efd0a93e",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "332": {
         "chunkId": "610a02",
-        "hash": "1cd868b6",
+        "hash": "31d9ee4e",
+        "encoded": "%5BWARNING%5D%20Knowledge%20base%20not%20found",
+        "prevChunkIds": []
+      },
+      "333": {
+        "chunkId": "610a02",
+        "hash": "5858474a",
         "encoded": "%60%60%60",
         "prevChunkIds": []
       },
-      "334": {
+      "335": {
         "chunkId": "610a02",
-        "hash": "f4bc6391",
-        "encoded": "###%206.4%20Python%20Version%20Issues",
+        "hash": "77f7f364",
+        "encoded": "**Solution:**",
         "prevChunkIds": []
       },
       "336": {
         "chunkId": "610a02",
-        "hash": "7d065b42",
-        "encoded": "**Error:**",
+        "hash": "465ebf9d",
+        "encoded": "%60%60%60bash",
         "prevChunkIds": []
       },
       "337": {
         "chunkId": "610a02",
-        "hash": "f0811a27",
-        "encoded": "%60%60%60",
+        "hash": "9ca8ceb6",
+        "encoded": "python%20scripts/build_knowledge_base.py",
         "prevChunkIds": []
       },
       "338": {
         "chunkId": "610a02",
-        "hash": "f633b4d5",
-        "encoded": "%5BERROR%5D%20Python%203.11+%20required",
-        "prevChunkIds": []
-      },
-      "339": {
-        "chunkId": "610a02",
-        "hash": "82a512ce",
+        "hash": "e1b66d2b",
         "encoded": "%60%60%60",
         "prevChunkIds": []
       },
-      "341": {
+      "340": {
         "chunkId": "610a02",
-        "hash": "29900f2d",
-        "encoded": "**Solution:**",
+        "hash": "13e782ef",
+        "encoded": "###%206.4%20Python%20Version%20Issues",
         "prevChunkIds": []
       },
       "342": {
         "chunkId": "610a02",
-        "hash": "f336511d",
-        "encoded": "-%20Install%20Python%203.11,%203.12,%20or%203.13",
+        "hash": "26922a0c",
+        "encoded": "**Error:**",
         "prevChunkIds": []
       },
       "343": {
         "chunkId": "610a02",
-        "hash": "e94f8b2b",
-        "encoded": "-%20Update%20PATH%20to%20use%20correct%20version",
+        "hash": "5718e4dc",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "344": {
         "chunkId": "610a02",
-        "hash": "9ae6d946",
-        "encoded": "-%20Recreate%20virtual%20environment:",
+        "hash": "8f717d18",
+        "encoded": "%5BERROR%5D%20Python%203.11+%20required",
         "prevChunkIds": []
       },
       "345": {
         "chunkId": "610a02",
-        "hash": "bc112c04",
-        "encoded": "%60%60%60bash",
-        "prevChunkIds": []
-      },
-      "346": {
-        "chunkId": "610a02",
-        "hash": "75f26a4d",
-        "encoded": "rm%20-rf%20.venv",
+        "hash": "e0d7dc85",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "347": {
         "chunkId": "610a02",
-        "hash": "e1712eff",
-        "encoded": "python3.11%20-m%20venv%20.venv",
+        "hash": "be7b9d32",
+        "encoded": "**Solution:**",
         "prevChunkIds": []
       },
       "348": {
         "chunkId": "610a02",
-        "hash": "43d96861",
-        "encoded": "%60%60%60",
+        "hash": "ff527dbc",
+        "encoded": "-%20Install%20Python%203.11,%203.12,%20or%203.13",
+        "prevChunkIds": []
+      },
+      "349": {
+        "chunkId": "610a02",
+        "hash": "1aae414c",
+        "encoded": "-%20Update%20PATH%20to%20use%20correct%20version",
         "prevChunkIds": []
       },
       "350": {
         "chunkId": "610a02",
-        "hash": "d84f26ae",
-        "encoded": "###%206.5%20ChromaDB%20Import%20Error",
+        "hash": "475a53ec",
+        "encoded": "-%20Recreate%20virtual%20environment:",
+        "prevChunkIds": []
+      },
+      "351": {
+        "chunkId": "610a02",
+        "hash": "b24d68c2",
+        "encoded": "%60%60%60bash",
         "prevChunkIds": []
       },
       "352": {
         "chunkId": "610a02",
-        "hash": "c3bd9c6b",
-        "encoded": "**Error:**",
+        "hash": "397f637b",
+        "encoded": "rm%20-rf%20.venv",
         "prevChunkIds": []
       },
       "353": {
         "chunkId": "610a02",
-        "hash": "bc83d4ed",
-        "encoded": "%60%60%60",
+        "hash": "57bfff29",
+        "encoded": "python3.11%20-m%20venv%20.venv",
         "prevChunkIds": []
       },
       "354": {
         "chunkId": "610a02",
-        "hash": "d4000295",
-        "encoded": "ModuleNotFoundError:%20No%20module%20named%20'chromadb'",
-        "prevChunkIds": []
-      },
-      "355": {
-        "chunkId": "610a02",
-        "hash": "9dddf243",
+        "hash": "6186482d",
         "encoded": "%60%60%60",
         "prevChunkIds": []
       },
-      "357": {
+      "356": {
         "chunkId": "610a02",
-        "hash": "31159a37",
-        "encoded": "**Solution:**",
+        "hash": "d6a252b3",
+        "encoded": "###%206.5%20ChromaDB%20Import%20Error",
         "prevChunkIds": []
       },
       "358": {
         "chunkId": "610a02",
-        "hash": "d75faf1a",
-        "encoded": "%60%60%60bash",
+        "hash": "15b70ecb",
+        "encoded": "**Error:**",
         "prevChunkIds": []
       },
       "359": {
         "chunkId": "610a02",
-        "hash": "1ae22f08",
-        "encoded": "#%20Activate%20virtual%20environment%20first",
+        "hash": "86a12399",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "360": {
         "chunkId": "610a02",
-        "hash": "597f5fbd",
-        "encoded": "pip%20install%20chromadb%20--no-deps",
+        "hash": "2323e7ba",
+        "encoded": "ModuleNotFoundError:%20No%20module%20named%20'chromadb'",
         "prevChunkIds": []
       },
       "361": {
         "chunkId": "610a02",
-        "hash": "64c3121f",
-        "encoded": "pip%20install%20sentence-transformers",
+        "hash": "d4b0e93c",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
-      "362": {
+      "363": {
         "chunkId": "610a02",
-        "hash": "ada75d6f",
-        "encoded": "%60%60%60",
+        "hash": "b717a9b6",
+        "encoded": "**Solution:**",
         "prevChunkIds": []
       },
       "364": {
         "chunkId": "610a02",
-        "hash": "006cc82d",
-        "encoded": "###%206.6%20Slow%20Performance",
+        "hash": "8d9eeca9",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "365": {
+        "chunkId": "610a02",
+        "hash": "21aed35b",
+        "encoded": "#%20Activate%20virtual%20environment%20first",
         "prevChunkIds": []
       },
       "366": {
         "chunkId": "610a02",
-        "hash": "29209314",
-        "encoded": "**Issue:**%20Analysis%20takes%20%3E%2030%20seconds",
+        "hash": "0f88807d",
+        "encoded": "pip%20install%20chromadb%20--no-deps",
+        "prevChunkIds": []
+      },
+      "367": {
+        "chunkId": "610a02",
+        "hash": "2e2b2731",
+        "encoded": "pip%20install%20sentence-transformers",
         "prevChunkIds": []
       },
       "368": {
         "chunkId": "610a02",
-        "hash": "834dc71c",
-        "encoded": "**Solutions:**",
-        "prevChunkIds": []
-      },
-      "369": {
-        "chunkId": "610a02",
-        "hash": "52ef042a",
-        "encoded": "1.%20**Use%20GPU%20acceleration:**",
+        "hash": "831d9b02",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "370": {
         "chunkId": "610a02",
-        "hash": "041203c4",
-        "encoded": "%60%60%60ini",
-        "prevChunkIds": []
-      },
-      "371": {
-        "chunkId": "610a02",
-        "hash": "085d0f8d",
-        "encoded": "#%20In%20.env",
+        "hash": "258bf589",
+        "encoded": "###%206.6%20Slow%20Performance",
         "prevChunkIds": []
       },
       "372": {
         "chunkId": "610a02",
-        "hash": "11317057",
-        "encoded": "EMBEDDING_DEVICE=cuda%20%20#%20or%20mps%20for%20Mac",
+        "hash": "921879f3",
+        "encoded": "**Issue:**%20Analysis%20takes%20%3E%2030%20seconds",
         "prevChunkIds": []
       },
-      "373": {
+      "374": {
         "chunkId": "610a02",
-        "hash": "cccd948b",
-        "encoded": "%60%60%60",
+        "hash": "4b364e81",
+        "encoded": "**Solutions:**",
         "prevChunkIds": []
       },
       "375": {
         "chunkId": "610a02",
-        "hash": "950c0efc",
-        "encoded": "2.%20**Reduce%20knowledge%20base%20size:**",
+        "hash": "5fef69db",
+        "encoded": "1.%20**Use%20GPU%20acceleration:**",
         "prevChunkIds": []
       },
       "376": {
         "chunkId": "610a02",
-        "hash": "a48ea2bb",
-        "encoded": "-%20Remove%20unnecessary%20documents%20from%20%60data/knowledge_base/%60",
+        "hash": "59765764",
+        "encoded": "%60%60%60ini",
         "prevChunkIds": []
       },
       "377": {
         "chunkId": "610a02",
-        "hash": "11b36f57",
-        "encoded": "-%20Rebuild%20knowledge%20base",
+        "hash": "1cca839f",
+        "encoded": "#%20In%20.env",
+        "prevChunkIds": []
+      },
+      "378": {
+        "chunkId": "610a02",
+        "hash": "2df9def4",
+        "encoded": "EMBEDDING_DEVICE=cuda%20%20#%20or%20mps%20for%20Mac",
         "prevChunkIds": []
       },
       "379": {
         "chunkId": "610a02",
-        "hash": "1565dbdf",
-        "encoded": "3.%20**Use%20smaller%20model:**",
-        "prevChunkIds": []
-      },
-      "380": {
-        "chunkId": "610a02",
-        "hash": "ab017639",
-        "encoded": "%60%60%60ini",
+        "hash": "f13a2237",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "381": {
         "chunkId": "610a02",
-        "hash": "0cb7a0c1",
-        "encoded": "OLLAMA_MODEL=qwen2.5:1.5b%20%20#%20Faster%20but%20less%20accurate",
+        "hash": "d03d5137",
+        "encoded": "2.%20**Reduce%20knowledge%20base%20size:**",
         "prevChunkIds": []
       },
       "382": {
         "chunkId": "610a02",
-        "hash": "288e8afe",
-        "encoded": "%60%60%60",
+        "hash": "8f2133dd",
+        "encoded": "-%20Remove%20unnecessary%20documents%20from%20%60data/knowledge_base/%60",
         "prevChunkIds": []
       },
-      "384": {
+      "383": {
         "chunkId": "610a02",
-        "hash": "29b57fbb",
-        "encoded": "###%206.7%20Memory%20Vault%20Database%20Locked",
+        "hash": "dea034a7",
+        "encoded": "-%20Rebuild%20knowledge%20base",
+        "prevChunkIds": []
+      },
+      "385": {
+        "chunkId": "610a02",
+        "hash": "150611a5",
+        "encoded": "3.%20**Use%20smaller%20model:**",
         "prevChunkIds": []
       },
       "386": {
         "chunkId": "610a02",
-        "hash": "308b2b1f",
-        "encoded": "**Error:**",
+        "hash": "534b6b36",
+        "encoded": "%60%60%60ini",
         "prevChunkIds": []
       },
       "387": {
         "chunkId": "610a02",
-        "hash": "a4e390b4",
-        "encoded": "%60%60%60",
+        "hash": "c477927f",
+        "encoded": "OLLAMA_MODEL=qwen2.5:1.5b%20%20#%20Faster%20but%20less%20accurate",
         "prevChunkIds": []
       },
       "388": {
         "chunkId": "610a02",
-        "hash": "fd6ea255",
-        "encoded": "atabase%20is%20locked",
-        "prevChunkIds": []
-      },
-      "389": {
-        "chunkId": "610a02",
-        "hash": "4e38c357",
+        "hash": "13817993",
         "encoded": "%60%60%60",
         "prevChunkIds": []
       },
-      "391": {
+      "390": {
         "chunkId": "610a02",
-        "hash": "fba1c526",
-        "encoded": "**Solution:**",
+        "hash": "37a4e3e9",
+        "encoded": "###%206.7%20Memory%20Vault%20Database%20Locked",
         "prevChunkIds": []
       },
       "392": {
         "chunkId": "610a02",
-        "hash": "905821fa",
-        "encoded": "1.%20Close%20any%20other%20instances%20of%20the%20app",
+        "hash": "8f052710",
+        "encoded": "**Error:**",
         "prevChunkIds": []
       },
       "393": {
         "chunkId": "610a02",
-        "hash": "4f93df34",
-        "encoded": "2.%20Delete%20lock%20file:",
+        "hash": "65b86e00",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "394": {
         "chunkId": "610a02",
-        "hash": "8f2cc7aa",
-        "encoded": "%60%60%60bash",
+        "hash": "e0c5f984",
+        "encoded": "atabase%20is%20locked",
         "prevChunkIds": []
       },
       "395": {
         "chunkId": "610a02",
-        "hash": "29736e55",
-        "encoded": "#%20Location%20varies%20by%20OS%20(see%20section%204.3)",
-        "prevChunkIds": []
-      },
-      "396": {
-        "chunkId": "610a02",
-        "hash": "6b86da95",
-        "encoded": "rm%20memories.db-wal",
+        "hash": "089d888a",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "397": {
         "chunkId": "610a02",
-        "hash": "baac251a",
-        "encoded": "rm%20memories.db-shm",
+        "hash": "c0a90043",
+        "encoded": "**Solution:**",
         "prevChunkIds": []
       },
       "398": {
         "chunkId": "610a02",
-        "hash": "308e5bd7",
-        "encoded": "%60%60%60",
+        "hash": "6d2629be",
+        "encoded": "1.%20Close%20any%20other%20instances%20of%20the%20app",
+        "prevChunkIds": []
+      },
+      "399": {
+        "chunkId": "610a02",
+        "hash": "3a024ba0",
+        "encoded": "2.%20Delete%20lock%20file:",
         "prevChunkIds": []
       },
       "400": {
         "chunkId": "610a02",
-        "hash": "d2ea6748",
-        "encoded": "###%206.8%20PowerShell%20Execution%20Policy%20(Windows)",
+        "hash": "f44fa321",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "401": {
+        "chunkId": "610a02",
+        "hash": "126017d8",
+        "encoded": "#%20Location%20varies%20by%20OS%20(see%20section%204.3)",
         "prevChunkIds": []
       },
       "402": {
         "chunkId": "610a02",
-        "hash": "03dfb146",
-        "encoded": "**Error:**",
+        "hash": "b0217231",
+        "encoded": "rm%20memories.db-wal",
         "prevChunkIds": []
       },
       "403": {
         "chunkId": "610a02",
-        "hash": "74c153a4",
-        "encoded": "%60%60%60",
+        "hash": "2f3eb58b",
+        "encoded": "rm%20memories.db-shm",
         "prevChunkIds": []
       },
       "404": {
         "chunkId": "610a02",
-        "hash": "f07d5794",
-        "encoded": "File%20cannot%20be%20loaded%20because%20running%20scripts%20is%20disabled",
-        "prevChunkIds": []
-      },
-      "405": {
-        "chunkId": "610a02",
-        "hash": "7df0f4d2",
+        "hash": "ac8360f9",
         "encoded": "%60%60%60",
         "prevChunkIds": []
       },
-      "407": {
+      "406": {
         "chunkId": "610a02",
-        "hash": "baa007d5",
-        "encoded": "**Solution:**",
+        "hash": "7949a703",
+        "encoded": "###%206.8%20PowerShell%20Execution%20Policy%20(Windows)",
         "prevChunkIds": []
       },
       "408": {
         "chunkId": "610a02",
-        "hash": "727b4b51",
-        "encoded": "%60%60%60powershell",
+        "hash": "7b9be30c",
+        "encoded": "**Error:**",
         "prevChunkIds": []
       },
       "409": {
         "chunkId": "610a02",
-        "hash": "54011b0b",
-        "encoded": "Set-ExecutionPolicy%20-ExecutionPolicy%20RemoteSigned%20-Scope%20CurrentUser",
+        "hash": "fa45ef81",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "410": {
         "chunkId": "610a02",
-        "hash": "fcb094a4",
+        "hash": "d49c668a",
+        "encoded": "File%20cannot%20be%20loaded%20because%20running%20scripts%20is%20disabled",
+        "prevChunkIds": []
+      },
+      "411": {
+        "chunkId": "610a02",
+        "hash": "70c08241",
         "encoded": "%60%60%60",
         "prevChunkIds": []
       },
-      "412": {
+      "413": {
         "chunkId": "610a02",
-        "hash": "aac4a067",
-        "encoded": "---",
+        "hash": "9a71cf96",
+        "encoded": "**Solution:**",
         "prevChunkIds": []
       },
       "414": {
         "chunkId": "610a02",
-        "hash": "1901afd7",
-        "encoded": "##%207.%20Advanced%20Configuration",
+        "hash": "ade4d9b3",
+        "encoded": "%60%60%60powershell",
+        "prevChunkIds": []
+      },
+      "415": {
+        "chunkId": "610a02",
+        "hash": "98b5f192",
+        "encoded": "Set-ExecutionPolicy%20-ExecutionPolicy%20RemoteSigned%20-Scope%20CurrentUser",
         "prevChunkIds": []
       },
       "416": {
         "chunkId": "610a02",
-        "hash": "64d8f753",
-        "encoded": "###%207.1%20Using%20Different%20LLM%20Models",
+        "hash": "1adde9fb",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "418": {
         "chunkId": "610a02",
-        "hash": "1fc7f8ad",
-        "encoded": "**Available%20Ollama%20models:**",
-        "prevChunkIds": []
-      },
-      "419": {
-        "chunkId": "610a02",
-        "hash": "20cd3cca",
-        "encoded": "-%20%60qwen2.5:3b%60%20(default,%20balanced)",
+        "hash": "8af1f78a",
+        "encoded": "---",
         "prevChunkIds": []
       },
       "420": {
         "chunkId": "610a02",
-        "hash": "e1144a73",
-        "encoded": "-%20%60qwen2.5:1.5b%60%20(faster,%20less%20accurate)",
-        "prevChunkIds": []
-      },
-      "421": {
-        "chunkId": "610a02",
-        "hash": "36cc8675",
-        "encoded": "-%20%60qwen2.5:7b%60%20(more%20accurate,%20slower)",
+        "hash": "ab0261e0",
+        "encoded": "##%207.%20Advanced%20Configuration",
         "prevChunkIds": []
       },
       "422": {
         "chunkId": "610a02",
-        "hash": "8097b468",
-        "encoded": "-%20%60llama3.2:3b%60%20(alternative)",
+        "hash": "e9b78034",
+        "encoded": "###%207.1%20Using%20Different%20LLM%20Models",
         "prevChunkIds": []
       },
       "424": {
         "chunkId": "610a02",
-        "hash": "8ce63dbc",
-        "encoded": "**Change%20model:**",
+        "hash": "aee04aa8",
+        "encoded": "**Available%20Ollama%20models:**",
         "prevChunkIds": []
       },
       "425": {
         "chunkId": "610a02",
-        "hash": "98d0ccc5",
-        "encoded": "1.%20Pull%20new%20model:%20%60ollama%20pull%20qwen2.5:7b%60",
+        "hash": "d282b7b8",
+        "encoded": "-%20%60qwen2.5:3b%60%20(default,%20balanced)",
         "prevChunkIds": []
       },
       "426": {
         "chunkId": "610a02",
-        "hash": "78cd2681",
-        "encoded": "2.%20Update%20%60.env%60:",
+        "hash": "4e97d417",
+        "encoded": "-%20%60qwen2.5:1.5b%60%20(faster,%20less%20accurate)",
         "prevChunkIds": []
       },
       "427": {
         "chunkId": "610a02",
-        "hash": "6b50d9c6",
-        "encoded": "%60%60%60ini",
+        "hash": "30cb7dd3",
+        "encoded": "-%20%60qwen2.5:7b%60%20(more%20accurate,%20slower)",
         "prevChunkIds": []
       },
       "428": {
         "chunkId": "610a02",
-        "hash": "4e3e22a3",
-        "encoded": "OLLAMA_MODEL=qwen2.5:7b",
-        "prevChunkIds": []
-      },
-      "429": {
-        "chunkId": "610a02",
-        "hash": "fe60e29a",
-        "encoded": "%60%60%60",
+        "hash": "ced77f2c",
+        "encoded": "-%20%60llama3.2:3b%60%20(alternative)",
         "prevChunkIds": []
       },
       "430": {
         "chunkId": "610a02",
-        "hash": "9bdcd20c",
-        "encoded": "3.%20Restart%20application",
+        "hash": "32b51745",
+        "encoded": "**Change%20model:**",
+        "prevChunkIds": []
+      },
+      "431": {
+        "chunkId": "610a02",
+        "hash": "f867d3de",
+        "encoded": "1.%20Pull%20new%20model:%20%60ollama%20pull%20qwen2.5:7b%60",
         "prevChunkIds": []
       },
       "432": {
         "chunkId": "610a02",
-        "hash": "b9ccd952",
-        "encoded": "###%207.2%20Using%20Different%20Embedding%20Models",
+        "hash": "3fe6d45f",
+        "encoded": "2.%20Update%20%60.env%60:",
+        "prevChunkIds": []
+      },
+      "433": {
+        "chunkId": "610a02",
+        "hash": "6ab4801b",
+        "encoded": "%60%60%60ini",
         "prevChunkIds": []
       },
       "434": {
         "chunkId": "610a02",
-        "hash": "2cb262e3",
-        "encoded": "**Alternatives:**",
+        "hash": "6cf7e4fe",
+        "encoded": "OLLAMA_MODEL=qwen2.5:7b",
         "prevChunkIds": []
       },
       "435": {
         "chunkId": "610a02",
-        "hash": "0ca7b553",
-        "encoded": "-%20%60sentence-transformers/paraphrase-MiniLM-L6-v2%60%20(similar%20size)",
+        "hash": "eaa997a1",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "436": {
         "chunkId": "610a02",
-        "hash": "3397cbca",
-        "encoded": "-%20%60sentence-transformers/all-mpnet-base-v2%60%20(larger,%20better)",
+        "hash": "1fedfd04",
+        "encoded": "3.%20Restart%20application",
         "prevChunkIds": []
       },
-      "437": {
+      "438": {
         "chunkId": "610a02",
-        "hash": "7009d193",
-        "encoded": "-%20%60BAAI/bge-small-en-v1.5%60%20(optimized%20for%20retrieval)",
-        "prevChunkIds": []
-      },
-      "439": {
-        "chunkId": "610a02",
-        "hash": "641cb2f7",
-        "encoded": "**Change%20model:**",
+        "hash": "52cbb154",
+        "encoded": "###%207.2%20Using%20Different%20Embedding%20Models",
         "prevChunkIds": []
       },
       "440": {
         "chunkId": "610a02",
-        "hash": "aae7bd44",
-        "encoded": "1.%20Update%20%60.env%60:",
+        "hash": "d46dba47",
+        "encoded": "**Alternatives:**",
         "prevChunkIds": []
       },
       "441": {
         "chunkId": "610a02",
-        "hash": "29ba4abc",
-        "encoded": "%60%60%60ini",
+        "hash": "0362fd3f",
+        "encoded": "-%20%60sentence-transformers/paraphrase-MiniLM-L6-v2%60%20(similar%20size)",
         "prevChunkIds": []
       },
       "442": {
         "chunkId": "610a02",
-        "hash": "e4329d7e",
-        "encoded": "EMBEDDING_MODEL=sentence-transformers/all-mpnet-base-v2",
+        "hash": "e7cd9493",
+        "encoded": "-%20%60sentence-transformers/all-mpnet-base-v2%60%20(larger,%20better)",
         "prevChunkIds": []
       },
       "443": {
         "chunkId": "610a02",
-        "hash": "66ae5fa6",
-        "encoded": "%60%60%60",
-        "prevChunkIds": []
-      },
-      "444": {
-        "chunkId": "610a02",
-        "hash": "ba6bd554",
-        "encoded": "2.%20Rebuild%20knowledge%20base:",
+        "hash": "01bd1625",
+        "encoded": "-%20%60BAAI/bge-small-en-v1.5%60%20(optimized%20for%20retrieval)",
         "prevChunkIds": []
       },
       "445": {
         "chunkId": "610a02",
-        "hash": "ea449a52",
-        "encoded": "%60%60%60bash",
+        "hash": "d2fcf84d",
+        "encoded": "**Change%20model:**",
         "prevChunkIds": []
       },
       "446": {
         "chunkId": "610a02",
-        "hash": "88f258c0",
-        "encoded": "python%20scripts/build_knowledge_base.py%20--rebuild",
+        "hash": "15ab1e71",
+        "encoded": "1.%20Update%20%60.env%60:",
         "prevChunkIds": []
       },
       "447": {
         "chunkId": "610a02",
-        "hash": "a98a1c3c",
-        "encoded": "%60%60%60",
+        "hash": "54734166",
+        "encoded": "%60%60%60ini",
+        "prevChunkIds": []
+      },
+      "448": {
+        "chunkId": "610a02",
+        "hash": "61eaa7b9",
+        "encoded": "EMBEDDING_MODEL=sentence-transformers/all-mpnet-base-v2",
         "prevChunkIds": []
       },
       "449": {
         "chunkId": "610a02",
-        "hash": "6c2389e2",
-        "encoded": "###%207.3%20Custom%20Knowledge%20Base",
+        "hash": "957ffb0f",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "450": {
+        "chunkId": "610a02",
+        "hash": "6a388a8c",
+        "encoded": "2.%20Rebuild%20knowledge%20base:",
         "prevChunkIds": []
       },
       "451": {
         "chunkId": "610a02",
-        "hash": "08e6d4eb",
-        "encoded": "**Add%20new%20documents:**",
+        "hash": "7ac1918a",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "452": {
+        "chunkId": "610a02",
+        "hash": "f16f0d24",
+        "encoded": "python%20scripts/build_knowledge_base.py%20--rebuild",
         "prevChunkIds": []
       },
       "453": {
         "chunkId": "610a02",
-        "hash": "149a6308",
-        "encoded": "1.%20Create%20text%20file%20in%20appropriate%20category:",
-        "prevChunkIds": []
-      },
-      "454": {
-        "chunkId": "610a02",
-        "hash": "88fae106",
+        "hash": "359e5831",
         "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "455": {
         "chunkId": "610a02",
-        "hash": "93438a43",
-        "encoded": "data/knowledge_base/emotions/hope.txt",
-        "prevChunkIds": []
-      },
-      "456": {
-        "chunkId": "610a02",
-        "hash": "8b2b0931",
-        "encoded": "data/knowledge_base/genres/jazz.txt",
+        "hash": "6669334d",
+        "encoded": "###%207.3%20Custom%20Knowledge%20Base",
         "prevChunkIds": []
       },
       "457": {
         "chunkId": "610a02",
-        "hash": "a2953b67",
-        "encoded": "data/knowledge_base/instruments/saxophone.txt",
-        "prevChunkIds": []
-      },
-      "458": {
-        "chunkId": "610a02",
-        "hash": "c1af30f0",
-        "encoded": "data/knowledge_base/contexts/childhood.txt",
+        "hash": "c9c37a26",
+        "encoded": "**Add%20new%20documents:**",
         "prevChunkIds": []
       },
       "459": {
         "chunkId": "610a02",
-        "hash": "21130ac1",
+        "hash": "fa540f9a",
+        "encoded": "1.%20Create%20text%20file%20in%20appropriate%20category:",
+        "prevChunkIds": []
+      },
+      "460": {
+        "chunkId": "610a02",
+        "hash": "5f8cf96b",
         "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "461": {
         "chunkId": "610a02",
-        "hash": "46b551ee",
-        "encoded": "2.%20Write%20content%20(see%20existing%20files%20for%20format)",
+        "hash": "21753ef5",
+        "encoded": "data/knowledge_base/emotions/hope.txt",
+        "prevChunkIds": []
+      },
+      "462": {
+        "chunkId": "610a02",
+        "hash": "0a6a90c3",
+        "encoded": "data/knowledge_base/genres/jazz.txt",
         "prevChunkIds": []
       },
       "463": {
         "chunkId": "610a02",
-        "hash": "55160857",
-        "encoded": "3.%20Rebuild%20knowledge%20base:",
+        "hash": "f605a6ea",
+        "encoded": "data/knowledge_base/instruments/saxophone.txt",
         "prevChunkIds": []
       },
       "464": {
         "chunkId": "610a02",
-        "hash": "f761cc0a",
-        "encoded": "%60%60%60bash",
+        "hash": "7fd10b08",
+        "encoded": "data/knowledge_base/contexts/childhood.txt",
         "prevChunkIds": []
       },
       "465": {
         "chunkId": "610a02",
-        "hash": "607c1aaf",
-        "encoded": "python%20scripts/build_knowledge_base.py%20--rebuild",
-        "prevChunkIds": []
-      },
-      "466": {
-        "chunkId": "610a02",
-        "hash": "3735db1a",
+        "hash": "48b39717",
         "encoded": "%60%60%60",
         "prevChunkIds": []
       },
-      "468": {
+      "467": {
         "chunkId": "610a02",
-        "hash": "181866cb",
-        "encoded": "###%207.4%20External%20Music%20Catalogue%20(MTG-Jamendo)",
+        "hash": "704b2aab",
+        "encoded": "2.%20Write%20content%20(see%20existing%20files%20for%20format)",
+        "prevChunkIds": []
+      },
+      "469": {
+        "chunkId": "610a02",
+        "hash": "ee2e8aa3",
+        "encoded": "3.%20Rebuild%20knowledge%20base:",
         "prevChunkIds": []
       },
       "470": {
         "chunkId": "610a02",
-        "hash": "a424caca",
-        "encoded": "**To%20use%20real%20music%20dataset%20(55K+%20tracks):**",
+        "hash": "f0349ff4",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "471": {
+        "chunkId": "610a02",
+        "hash": "dc54b8f5",
+        "encoded": "python%20scripts/build_knowledge_base.py%20--rebuild",
         "prevChunkIds": []
       },
       "472": {
         "chunkId": "610a02",
-        "hash": "64f7716a",
-        "encoded": "1.%20Download%20MTG-Jamendo%20dataset",
-        "prevChunkIds": []
-      },
-      "473": {
-        "chunkId": "610a02",
-        "hash": "97198ae0",
-        "encoded": "2.%20Place%20CSV%20in%20%60data/music_metadata/%60",
+        "hash": "bef48479",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "474": {
         "chunkId": "610a02",
-        "hash": "8a87ce1c",
-        "encoded": "3.%20The%20app%20will%20automatically%20use%20it%20instead%20of%20sample%20data",
+        "hash": "d11bef58",
+        "encoded": "###%207.4%20External%20Music%20Catalogue%20(MTG-Jamendo)",
         "prevChunkIds": []
       },
       "476": {
         "chunkId": "610a02",
-        "hash": "3003549b",
-        "encoded": "###%207.5%20Running%20on%20Remote%20Server",
+        "hash": "1c5fb350",
+        "encoded": "**To%20use%20real%20music%20dataset%20(55K+%20tracks):**",
         "prevChunkIds": []
       },
       "478": {
         "chunkId": "610a02",
-        "hash": "7b1916fe",
-        "encoded": "**For%20remote%20access:**",
+        "hash": "9f0e5606",
+        "encoded": "1.%20Download%20MTG-Jamendo%20dataset",
+        "prevChunkIds": []
+      },
+      "479": {
+        "chunkId": "610a02",
+        "hash": "76fb5a07",
+        "encoded": "2.%20Place%20CSV%20in%20%60data/music_metadata/%60",
         "prevChunkIds": []
       },
       "480": {
         "chunkId": "610a02",
-        "hash": "1a2c429c",
-        "encoded": "%60%60%60bash",
-        "prevChunkIds": []
-      },
-      "481": {
-        "chunkId": "610a02",
-        "hash": "d53e8a31",
-        "encoded": "streamlit%20run%20app.py%20--server.address%200.0.0.0%20--server.port%208501",
+        "hash": "b1d47a8e",
+        "encoded": "3.%20The%20app%20will%20automatically%20use%20it%20instead%20of%20sample%20data",
         "prevChunkIds": []
       },
       "482": {
         "chunkId": "610a02",
-        "hash": "aac2df4e",
-        "encoded": "%60%60%60",
+        "hash": "572f2dea",
+        "encoded": "###%207.5%20Running%20on%20Remote%20Server",
         "prevChunkIds": []
       },
       "484": {
         "chunkId": "610a02",
-        "hash": "47777211",
-        "encoded": "**Access%20from%20another%20machine:**",
-        "prevChunkIds": []
-      },
-      "485": {
-        "chunkId": "610a02",
-        "hash": "9fc3c42d",
-        "encoded": "%60%60%60",
+        "hash": "36e6eb8e",
+        "encoded": "**For%20remote%20access:**",
         "prevChunkIds": []
       },
       "486": {
         "chunkId": "610a02",
-        "hash": "d4eaaeb2",
-        "encoded": "http://%3Cserver-ip%3E:8501",
+        "hash": "f3981d4c",
+        "encoded": "%60%60%60bash",
         "prevChunkIds": []
       },
       "487": {
         "chunkId": "610a02",
-        "hash": "b2f7b5fb",
+        "hash": "a43465e9",
+        "encoded": "streamlit%20run%20app.py%20--server.address%200.0.0.0%20--server.port%208501",
+        "prevChunkIds": []
+      },
+      "488": {
+        "chunkId": "610a02",
+        "hash": "a4281c19",
         "encoded": "%60%60%60",
         "prevChunkIds": []
       },
-      "489": {
+      "490": {
         "chunkId": "610a02",
-        "hash": "80edc128",
-        "encoded": "**Security%20warning:**%20Use%20firewall%20rules%20or%20SSH%20tunneling%20for%20production.",
+        "hash": "fc2c4ea2",
+        "encoded": "**Access%20from%20another%20machine:**",
         "prevChunkIds": []
       },
       "491": {
         "chunkId": "610a02",
-        "hash": "6d6b04cb",
-        "encoded": "---",
+        "hash": "2fe01953",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "492": {
+        "chunkId": "610a02",
+        "hash": "969626a3",
+        "encoded": "http://%3Cserver-ip%3E:8501",
         "prevChunkIds": []
       },
       "493": {
         "chunkId": "610a02",
-        "hash": "8af9fe66",
-        "encoded": "##%208.%20Health%20Check",
+        "hash": "1fdbe263",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "495": {
         "chunkId": "610a02",
-        "hash": "55cf0a2f",
-        "encoded": "**Run%20anytime%20to%20verify%20system%20health:**",
+        "hash": "8cc8e6e2",
+        "encoded": "**Security%20warning:**%20Use%20firewall%20rules%20or%20SSH%20tunneling%20for%20production.",
         "prevChunkIds": []
       },
       "497": {
         "chunkId": "610a02",
-        "hash": "70d055b3",
-        "encoded": "%60%60%60bash",
-        "prevChunkIds": []
-      },
-      "498": {
-        "chunkId": "610a02",
-        "hash": "41ce9ad8",
-        "encoded": "python%20modules/health_check.py",
+        "hash": "4c7606e0",
+        "encoded": "---",
         "prevChunkIds": []
       },
       "499": {
         "chunkId": "610a02",
-        "hash": "b4199ebc",
-        "encoded": "%60%60%60",
+        "hash": "0eec6f5e",
+        "encoded": "##%208.%20Health%20Check",
         "prevChunkIds": []
       },
       "501": {
         "chunkId": "610a02",
-        "hash": "4ca3da01",
-        "encoded": "**Example%20output:**",
-        "prevChunkIds": []
-      },
-      "502": {
-        "chunkId": "610a02",
-        "hash": "2ddac335",
-        "encoded": "%60%60%60",
+        "hash": "6f2548d9",
+        "encoded": "**Run%20anytime%20to%20verify%20system%20health:**",
         "prevChunkIds": []
       },
       "503": {
         "chunkId": "610a02",
-        "hash": "5d0461d3",
-        "encoded": "======================================================================",
+        "hash": "9e2e6955",
+        "encoded": "%60%60%60bash",
         "prevChunkIds": []
       },
       "504": {
         "chunkId": "610a02",
-        "hash": "609b2b49",
-        "encoded": "SYSTEM%20HEALTH%20CHECK",
+        "hash": "03c0c4f3",
+        "encoded": "python%20modules/health_check.py",
         "prevChunkIds": []
       },
       "505": {
         "chunkId": "610a02",
-        "hash": "d86b0b45",
-        "encoded": "======================================================================",
+        "hash": "3d2ef16e",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "507": {
         "chunkId": "610a02",
-        "hash": "bde0bcf9",
-        "encoded": "Platform:%20Windows%2011",
+        "hash": "7308a375",
+        "encoded": "**Example%20output:**",
         "prevChunkIds": []
       },
       "508": {
         "chunkId": "610a02",
-        "hash": "419314e0",
-        "encoded": "Python:%203.14.7",
+        "hash": "85d509c6",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "509": {
+        "chunkId": "610a02",
+        "hash": "f1586655",
+        "encoded": "======================================================================",
         "prevChunkIds": []
       },
       "510": {
         "chunkId": "610a02",
-        "hash": "d2e6d4ef",
-        "encoded": "%5BOK%5D%20%20%20%20%20Python%20Version",
+        "hash": "68a8984c",
+        "encoded": "SYSTEM%20HEALTH%20CHECK",
         "prevChunkIds": []
       },
       "511": {
         "chunkId": "610a02",
-        "hash": "a5506498",
-        "encoded": "%5BOK%5D%20%20%20%20%20Streamlit",
-        "prevChunkIds": []
-      },
-      "512": {
-        "chunkId": "610a02",
-        "hash": "69aa9efb",
-        "encoded": "%5BOK%5D%20%20%20%20%20Ollama%20Connectivity",
+        "hash": "9b155083",
+        "encoded": "======================================================================",
         "prevChunkIds": []
       },
       "513": {
         "chunkId": "610a02",
-        "hash": "845126c8",
-        "encoded": "%5BOK%5D%20%20%20%20%20Embedding%20Model%20Package",
+        "hash": "57438861",
+        "encoded": "Platform:%20Windows%2011",
         "prevChunkIds": []
       },
       "514": {
         "chunkId": "610a02",
-        "hash": "330e952b",
-        "encoded": "%5BOK%5D%20%20%20%20%20ChromaDB%20Package",
-        "prevChunkIds": []
-      },
-      "515": {
-        "chunkId": "610a02",
-        "hash": "512fc81b",
-        "encoded": "%5BOK%5D%20%20%20%20%20Configured%20LLM%20Model",
+        "hash": "d3b06678",
+        "encoded": "Python:%203.14.7",
         "prevChunkIds": []
       },
       "516": {
         "chunkId": "610a02",
-        "hash": "afd0f5c4",
-        "encoded": "%5BOK%5D%20%20%20%20%20Knowledge%20Base",
+        "hash": "0c815ba6",
+        "encoded": "%5BOK%5D%20%20%20%20%20Python%20Version",
         "prevChunkIds": []
       },
       "517": {
         "chunkId": "610a02",
-        "hash": "34362f66",
-        "encoded": "%5BOK%5D%20%20%20%20%20Database%20Access",
+        "hash": "52ae9222",
+        "encoded": "%5BOK%5D%20%20%20%20%20Streamlit",
+        "prevChunkIds": []
+      },
+      "518": {
+        "chunkId": "610a02",
+        "hash": "fc7dc7fe",
+        "encoded": "%5BOK%5D%20%20%20%20%20Ollama%20Connectivity",
         "prevChunkIds": []
       },
       "519": {
         "chunkId": "610a02",
-        "hash": "f2d44fdc",
-        "encoded": "SUMMARY:%208/8%20checks%20passed",
+        "hash": "b44815a2",
+        "encoded": "%5BOK%5D%20%20%20%20%20Embedding%20Model%20Package",
         "prevChunkIds": []
       },
       "520": {
         "chunkId": "610a02",
-        "hash": "5ce00626",
-        "encoded": "%5BSUCCESS%5D%20System%20is%20ready!",
+        "hash": "cbb00184",
+        "encoded": "%5BOK%5D%20%20%20%20%20ChromaDB%20Package",
         "prevChunkIds": []
       },
       "521": {
         "chunkId": "610a02",
-        "hash": "2d37a4fb",
-        "encoded": "%60%60%60",
+        "hash": "ea39bd3e",
+        "encoded": "%5BOK%5D%20%20%20%20%20Configured%20LLM%20Model",
+        "prevChunkIds": []
+      },
+      "522": {
+        "chunkId": "610a02",
+        "hash": "6dddd856",
+        "encoded": "%5BOK%5D%20%20%20%20%20Knowledge%20Base",
         "prevChunkIds": []
       },
       "523": {
         "chunkId": "610a02",
-        "hash": "a2269a96",
-        "encoded": "---",
+        "hash": "7149b5a9",
+        "encoded": "%5BOK%5D%20%20%20%20%20Database%20Access",
         "prevChunkIds": []
       },
       "525": {
         "chunkId": "610a02",
-        "hash": "52b1feaf",
-        "encoded": "##%209.%20Uninstallation",
+        "hash": "eb534ab7",
+        "encoded": "SUMMARY:%208/8%20checks%20passed",
+        "prevChunkIds": []
+      },
+      "526": {
+        "chunkId": "610a02",
+        "hash": "57e23593",
+        "encoded": "%5BSUCCESS%5D%20System%20is%20ready!",
         "prevChunkIds": []
       },
       "527": {
         "chunkId": "610a02",
-        "hash": "0a8c0e1c",
-        "encoded": "###%209.1%20Remove%20Application",
+        "hash": "4569b35a",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "529": {
         "chunkId": "610a02",
-        "hash": "2374f1b1",
-        "encoded": "%60%60%60bash",
-        "prevChunkIds": []
-      },
-      "530": {
-        "chunkId": "610a02",
-        "hash": "a7c1e53b",
-        "encoded": "#%20Delete%20project%20directory",
+        "hash": "71cf7657",
+        "encoded": "---",
         "prevChunkIds": []
       },
       "531": {
         "chunkId": "610a02",
-        "hash": "74f4607f",
-        "encoded": "cd%20..",
-        "prevChunkIds": []
-      },
-      "532": {
-        "chunkId": "610a02",
-        "hash": "f733df58",
-        "encoded": "rm%20-rf%20%22The%20Soundtrack%20of%20Your%20Life%22",
+        "hash": "20eb5484",
+        "encoded": "##%209.%20Uninstallation",
         "prevChunkIds": []
       },
       "533": {
         "chunkId": "610a02",
-        "hash": "fd98c074",
-        "encoded": "%60%60%60",
+        "hash": "8282446c",
+        "encoded": "###%209.1%20Remove%20Application",
         "prevChunkIds": []
       },
       "535": {
         "chunkId": "610a02",
-        "hash": "cec8c183",
-        "encoded": "###%209.2%20Remove%20Application%20Data",
+        "hash": "1ecf61b3",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "536": {
+        "chunkId": "610a02",
+        "hash": "eebe5371",
+        "encoded": "#%20Delete%20project%20directory",
         "prevChunkIds": []
       },
       "537": {
         "chunkId": "610a02",
-        "hash": "a66c609f",
-        "encoded": "**Windows:**",
+        "hash": "3d427d75",
+        "encoded": "cd%20..",
         "prevChunkIds": []
       },
       "538": {
         "chunkId": "610a02",
-        "hash": "4333778d",
-        "encoded": "%60%60%60powershell",
+        "hash": "597578cf",
+        "encoded": "rm%20-rf%20%22The%20Soundtrack%20of%20Your%20Life%22",
         "prevChunkIds": []
       },
       "539": {
         "chunkId": "610a02",
-        "hash": "61ed6ef2",
-        "encoded": "Remove-Item%20-Recurse%20-Force%20%22$env:LOCALAPPDATA%5CThe%20Soundtrack%20of%20Your%20Life%22",
-        "prevChunkIds": []
-      },
-      "540": {
-        "chunkId": "610a02",
-        "hash": "a88d407c",
+        "hash": "a8e9da84",
         "encoded": "%60%60%60",
         "prevChunkIds": []
       },
-      "542": {
+      "541": {
         "chunkId": "610a02",
-        "hash": "fcf4a757",
-        "encoded": "**Linux:**",
+        "hash": "fcbeae91",
+        "encoded": "###%209.2%20Remove%20Application%20Data",
         "prevChunkIds": []
       },
       "543": {
         "chunkId": "610a02",
-        "hash": "3fa97504",
-        "encoded": "%60%60%60bash",
+        "hash": "7e16faca",
+        "encoded": "**Windows:**",
         "prevChunkIds": []
       },
       "544": {
         "chunkId": "610a02",
-        "hash": "98af5d6d",
-        "encoded": "rm%20-rf%20~/.local/share/soundtrack-of-your-life",
+        "hash": "b002a14b",
+        "encoded": "%60%60%60powershell",
         "prevChunkIds": []
       },
       "545": {
         "chunkId": "610a02",
-        "hash": "b5542895",
-        "encoded": "%60%60%60",
+        "hash": "089f2b5f",
+        "encoded": "Remove-Item%20-Recurse%20-Force%20%22$env:LOCALAPPDATA%5CThe%20Soundtrack%20of%20Your%20Life%22",
         "prevChunkIds": []
       },
-      "547": {
+      "546": {
         "chunkId": "610a02",
-        "hash": "278c4f99",
-        "encoded": "**macOS:**",
+        "hash": "9696338c",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "548": {
         "chunkId": "610a02",
-        "hash": "c14c1d5e",
-        "encoded": "%60%60%60bash",
+        "hash": "559f54d8",
+        "encoded": "**Linux:**",
         "prevChunkIds": []
       },
       "549": {
         "chunkId": "610a02",
-        "hash": "40c752f8",
-        "encoded": "rm%20-rf%20~/Library/Application%5C%20Support/The%5C%20Soundtrack%5C%20of%5C%20Your%5C%20Life",
+        "hash": "1383ebcb",
+        "encoded": "%60%60%60bash",
         "prevChunkIds": []
       },
       "550": {
         "chunkId": "610a02",
-        "hash": "2928fcfc",
+        "hash": "4b90d696",
+        "encoded": "rm%20-rf%20~/.local/share/soundtrack-of-your-life",
+        "prevChunkIds": []
+      },
+      "551": {
+        "chunkId": "610a02",
+        "hash": "c7f8d5a7",
         "encoded": "%60%60%60",
         "prevChunkIds": []
       },
-      "552": {
+      "553": {
         "chunkId": "610a02",
-        "hash": "a4b2b5cb",
-        "encoded": "###%209.3%20Uninstall%20Ollama%20(Optional)",
+        "hash": "cb78d11c",
+        "encoded": "**macOS:**",
         "prevChunkIds": []
       },
       "554": {
         "chunkId": "610a02",
-        "hash": "55c74c99",
-        "encoded": "**Windows:**%20Uninstall%20via%20Settings%20%3E%20Apps",
+        "hash": "10735c02",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "555": {
+        "chunkId": "610a02",
+        "hash": "1a9752b9",
+        "encoded": "rm%20-rf%20~/Library/Application%5C%20Support/The%5C%20Soundtrack%5C%20of%5C%20Your%5C%20Life",
         "prevChunkIds": []
       },
       "556": {
         "chunkId": "610a02",
-        "hash": "2704e330",
-        "encoded": "**Linux:**",
-        "prevChunkIds": []
-      },
-      "557": {
-        "chunkId": "610a02",
-        "hash": "dca84a4e",
-        "encoded": "%60%60%60bash",
+        "hash": "e1669747",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "558": {
         "chunkId": "610a02",
-        "hash": "16c9c91c",
-        "encoded": "sudo%20systemctl%20stop%20ollama",
-        "prevChunkIds": []
-      },
-      "559": {
-        "chunkId": "610a02",
-        "hash": "a9261921",
-        "encoded": "sudo%20systemctl%20disable%20ollama",
+        "hash": "af18ca6d",
+        "encoded": "###%209.3%20Uninstall%20Ollama%20(Optional)",
         "prevChunkIds": []
       },
       "560": {
         "chunkId": "610a02",
-        "hash": "8dfa3854",
-        "encoded": "sudo%20rm%20/usr/local/bin/ollama",
-        "prevChunkIds": []
-      },
-      "561": {
-        "chunkId": "610a02",
-        "hash": "050af2a2",
-        "encoded": "sudo%20rm%20-rf%20/usr/share/ollama",
+        "hash": "7458a8b0",
+        "encoded": "**Windows:**%20Uninstall%20via%20Settings%20%3E%20Apps",
         "prevChunkIds": []
       },
       "562": {
         "chunkId": "610a02",
-        "hash": "89347f64",
-        "encoded": "%60%60%60",
+        "hash": "e65d9c70",
+        "encoded": "**Linux:**",
+        "prevChunkIds": []
+      },
+      "563": {
+        "chunkId": "610a02",
+        "hash": "07c1f8ce",
+        "encoded": "%60%60%60bash",
         "prevChunkIds": []
       },
       "564": {
         "chunkId": "610a02",
-        "hash": "fb5f5b17",
-        "encoded": "**macOS:**",
+        "hash": "c4f17bf0",
+        "encoded": "sudo%20systemctl%20stop%20ollama",
         "prevChunkIds": []
       },
       "565": {
         "chunkId": "610a02",
-        "hash": "007d2b72",
-        "encoded": "%60%60%60bash",
+        "hash": "d2a4d520",
+        "encoded": "sudo%20systemctl%20disable%20ollama",
         "prevChunkIds": []
       },
       "566": {
         "chunkId": "610a02",
-        "hash": "670938f5",
-        "encoded": "brew%20uninstall%20ollama",
+        "hash": "a8854a8c",
+        "encoded": "sudo%20rm%20/usr/local/bin/ollama",
         "prevChunkIds": []
       },
       "567": {
         "chunkId": "610a02",
-        "hash": "978afdba",
+        "hash": "76c43de1",
+        "encoded": "sudo%20rm%20-rf%20/usr/share/ollama",
+        "prevChunkIds": []
+      },
+      "568": {
+        "chunkId": "610a02",
+        "hash": "a1c6923b",
         "encoded": "%60%60%60",
         "prevChunkIds": []
       },
-      "569": {
+      "570": {
         "chunkId": "610a02",
-        "hash": "70550b49",
-        "encoded": "---",
+        "hash": "48ac04b8",
+        "encoded": "**macOS:**",
         "prevChunkIds": []
       },
       "571": {
         "chunkId": "610a02",
-        "hash": "761a89ea",
-        "encoded": "##%2010.%20Getting%20Help",
+        "hash": "942812a3",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "572": {
+        "chunkId": "610a02",
+        "hash": "5259abe4",
+        "encoded": "brew%20uninstall%20ollama",
         "prevChunkIds": []
       },
       "573": {
         "chunkId": "610a02",
-        "hash": "e96f0391",
-        "encoded": "###%20Documentation",
-        "prevChunkIds": []
-      },
-      "574": {
-        "chunkId": "610a02",
-        "hash": "b53f5bb2",
-        "encoded": "-%20**README.md**%20-%20Project%20overview",
+        "hash": "748cf2b1",
+        "encoded": "%60%60%60",
         "prevChunkIds": []
       },
       "575": {
         "chunkId": "610a02",
-        "hash": "5448002d",
-        "encoded": "-%20**HLD.md**%20-%20High-level%20architecture",
+        "hash": "ab80bc3d",
+        "encoded": "---",
         "prevChunkIds": []
       },
-      "576": {
+      "577": {
         "chunkId": "610a02",
-        "hash": "f2c5f37f",
-        "encoded": "-%20**LLD.md**%20-%20Technical%20implementation%20details",
-        "prevChunkIds": []
-      },
-      "578": {
-        "chunkId": "610a02",
-        "hash": "7783d1f6",
-        "encoded": "###%20Common%20Issues",
+        "hash": "29b4e76f",
+        "encoded": "##%2010.%20Getting%20Help",
         "prevChunkIds": []
       },
       "579": {
         "chunkId": "610a02",
-        "hash": "b164420f",
-        "encoded": "-%20Check%20%5BTroubleshooting%5D(#6-troubleshooting)%20section%20above",
+        "hash": "6862b990",
+        "encoded": "###%20Documentation",
         "prevChunkIds": []
       },
       "580": {
         "chunkId": "610a02",
-        "hash": "5641ed1f",
-        "encoded": "-%20Run%20health%20check:%20%60python%20modules/health_check.py%60",
+        "hash": "6e238f2e",
+        "encoded": "-%20**README.md**%20-%20Project%20overview",
         "prevChunkIds": []
       },
       "581": {
         "chunkId": "610a02",
-        "hash": "1d14c319",
-        "encoded": "-%20Check%20logs%20in%20terminal%20output",
+        "hash": "b053b930",
+        "encoded": "-%20**HLD.md**%20-%20High-level%20architecture",
         "prevChunkIds": []
       },
-      "583": {
+      "582": {
         "chunkId": "610a02",
-        "hash": "ee963eb0",
-        "encoded": "###%20Support",
+        "hash": "edcdc4ca",
+        "encoded": "-%20**LLD.md**%20-%20Technical%20implementation%20details",
         "prevChunkIds": []
       },
       "584": {
         "chunkId": "610a02",
-        "hash": "25d31fd6",
-        "encoded": "-%20Open%20an%20issue%20on%20GitHub",
+        "hash": "0f6a52f2",
+        "encoded": "###%20Common%20Issues",
         "prevChunkIds": []
       },
       "585": {
         "chunkId": "610a02",
-        "hash": "9518a624",
-        "encoded": "-%20Check%20existing%20issues%20for%20solutions",
+        "hash": "c8e44c55",
+        "encoded": "-%20Check%20%5BTroubleshooting%5D(#6-troubleshooting)%20section%20above",
+        "prevChunkIds": []
+      },
+      "586": {
+        "chunkId": "610a02",
+        "hash": "2b772fb0",
+        "encoded": "-%20Run%20health%20check:%20%60python%20modules/health_check.py%60",
         "prevChunkIds": []
       },
       "587": {
         "chunkId": "610a02",
-        "hash": "dc866ca3",
-        "encoded": "---",
+        "hash": "eeac6084",
+        "encoded": "-%20Check%20logs%20in%20terminal%20output",
         "prevChunkIds": []
       },
       "589": {
         "chunkId": "610a02",
-        "hash": "96e84e9b",
-        "encoded": "**Document%20Version:**%201.0",
+        "hash": "25afa4a6",
+        "encoded": "###%20Support",
         "prevChunkIds": []
       },
       "590": {
         "chunkId": "610a02",
-        "hash": "0b0afe55",
-        "encoded": "**Last%20Updated:**%20November%202024",
+        "hash": "3e2afe77",
+        "encoded": "-%20Open%20an%20issue%20on%20GitHub",
         "prevChunkIds": []
       },
       "591": {
         "chunkId": "610a02",
-        "hash": "766540a2",
+        "hash": "19c72330",
+        "encoded": "-%20Check%20existing%20issues%20for%20solutions",
+        "prevChunkIds": []
+      },
+      "593": {
+        "chunkId": "610a02",
+        "hash": "dea56dd1",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "595": {
+        "chunkId": "610a02",
+        "hash": "c7bc5107",
+        "encoded": "**Document%20Version:**%201.0",
+        "prevChunkIds": []
+      },
+      "596": {
+        "chunkId": "610a02",
+        "hash": "c9d86ae7",
+        "encoded": "**Last%20Updated:**%20November%202024",
+        "prevChunkIds": []
+      },
+      "597": {
+        "chunkId": "610a02",
+        "hash": "8313e904",
         "encoded": "**Author:**%20AI%20Solutions%20Architect%20Internship%20Assessment",
         "prevChunkIds": []
       }
