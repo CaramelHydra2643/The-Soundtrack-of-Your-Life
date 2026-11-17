@@ -6,6 +6,9 @@
   "promptMessage": {
     "f74bf8b2": {
       "value": "first test RAG retrieval, then test ollama"
+    },
+    "d0f1484e": {
+      "value": "LL+madsaich@WKWEJ726026205 MINGW64 ~/Documents/The Soundtrack of Your Life (main)\n$ streamlit run app.py\n\n      Welcome to Streamlit!\n\n      If you'd like to receive helpful onboarding emails, news, offers, promotions,\n      and the occasional swag, please enter your email address below. Otherwise,\n      leave this field blank.\n\n      Email: \n\n  You can find our privacy policy at https://streamlit.io/privacy-policy\n\n  Summary:\n  - This open source library collects usage statistics.\n  - We cannot"
     }
   },
   "localPrompts": {},

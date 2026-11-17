@@ -22,6 +22,24 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/16/2026, 12:38:15 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      },
+      "0c4032": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794892556,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "d0f1484e"
+        },
+        "hash": "817f45e8",
+        "messageId": "system_dab2ae80-e245-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 10:45:56 AM\n- **source**: agent\n- **type**: agentEditTool\n"
       }
     },
     "lines": {
@@ -662,527 +680,570 @@
         "prevChunkIds": []
       },
       "137": {
-        "chunkId": "7c2ff3",
-        "hash": "d4c1f62a",
-        "encoded": "#%20Get%20candidate%20tracks%20from%20catalogue",
+        "chunkId": "0c4032",
+        "hash": "cbebea85",
+        "encoded": "#%20Get%20ALL%20tracks%20as%20candidates%20(don't%20filter%20upfront)",
         "prevChunkIds": []
       },
       "138": {
-        "chunkId": "7c2ff3",
-        "hash": "27812cf3",
-        "encoded": "#%20Use%20broad%20search%20to%20get%20initial%20candidates",
+        "chunkId": "0c4032",
+        "hash": "f0ea0ba5",
+        "encoded": "#%20Filtering%20is%20too%20strict%20with%20sample%20catalogue",
         "prevChunkIds": []
       },
       "139": {
-        "chunkId": "7c2ff3",
-        "hash": "5ada9e84",
-        "encoded": "candidates%20=%20self.catalogue.search_tracks(",
+        "chunkId": "0c4032",
+        "hash": "463e2d47",
+        "encoded": "#%20Instead,%20we'll%20score%20all%20tracks%20and%20pick%20the%20best%20ones",
         "prevChunkIds": []
       },
       "140": {
-        "chunkId": "7c2ff3",
-        "hash": "2ca5382f",
-        "encoded": "genres=analysis.genres%20if%20analysis.genres%20else%20None,",
-        "prevChunkIds": []
-      },
-      "141": {
-        "chunkId": "7c2ff3",
-        "hash": "ea655cd3",
-        "encoded": "moods=analysis.primary_emotions%20if%20analysis.primary_emotions%20else%20None,",
+        "chunkId": "0c4032",
+        "hash": "79ae8bb7",
+        "encoded": "candidates%20=%20self.catalogue.tracks",
         "prevChunkIds": []
       },
       "142": {
-        "chunkId": "7c2ff3",
-        "hash": "d593bd8a",
-        "encoded": "instruments=analysis.instruments%20if%20analysis.instruments%20else%20None,",
-        "prevChunkIds": []
-      },
-      "143": {
-        "chunkId": "7c2ff3",
-        "hash": "20112737",
-        "encoded": "limit=100",
+        "chunkId": "0c4032",
+        "hash": "14c286f9",
+        "encoded": "logger.info(f%22Evaluating%20%7Blen(candidates)%7D%20tracks%20from%20catalogue%22)",
         "prevChunkIds": []
       },
       "144": {
-        "chunkId": "7c2ff3",
-        "hash": "ca70e784",
-        "encoded": ")",
+        "chunkId": "0c4032",
+        "hash": "0adcbf75",
+        "encoded": "if%20not%20candidates:",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "0c4032",
+        "hash": "c06a9bbb",
+        "encoded": "logger.warning(%22No%20tracks%20in%20catalogue%22)",
         "prevChunkIds": []
       },
       "146": {
+        "chunkId": "0c4032",
+        "hash": "fca0779a",
+        "encoded": "return%20%5B%5D",
+        "prevChunkIds": []
+      },
+      "147": {
         "chunkId": "7c2ff3",
-        "hash": "1a492259",
-        "encoded": "logger.info(f%22Found%20%7Blen(candidates)%7D%20candidate%20tracks%22)",
+        "hash": "7efe462c",
+        "encoded": "#%20Use%20broad%20search%20to%20get%20initial%20candidates",
         "prevChunkIds": []
       },
       "148": {
         "chunkId": "7c2ff3",
-        "hash": "e10a63d6",
-        "encoded": "if%20not%20candidates:",
+        "hash": "d34bc8a3",
+        "encoded": "candidates%20=%20self.catalogue.search_tracks(",
         "prevChunkIds": []
       },
       "149": {
         "chunkId": "7c2ff3",
-        "hash": "3f872e2d",
-        "encoded": "logger.warning(%22No%20candidate%20tracks%20found%22)",
+        "hash": "8e0c6451",
+        "encoded": "genres=analysis.genres%20if%20analysis.genres%20else%20None,",
         "prevChunkIds": []
       },
       "150": {
         "chunkId": "7c2ff3",
-        "hash": "45307d2c",
-        "encoded": "return%20%5B%5D",
+        "hash": "da2b482b",
+        "encoded": "moods=analysis.primary_emotions%20if%20analysis.primary_emotions%20else%20None,",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "7c2ff3",
+        "hash": "6839d0b8",
+        "encoded": "instruments=analysis.instruments%20if%20analysis.instruments%20else%20None,",
         "prevChunkIds": []
       },
       "152": {
         "chunkId": "7c2ff3",
-        "hash": "e4134263",
-        "encoded": "#%20Score%20each%20candidate",
+        "hash": "866e9ab9",
+        "encoded": "limit=100",
         "prevChunkIds": []
       },
       "153": {
         "chunkId": "7c2ff3",
-        "hash": "76a44487",
-        "encoded": "scored_tracks%20=%20%5B%5D",
-        "prevChunkIds": []
-      },
-      "154": {
-        "chunkId": "7c2ff3",
-        "hash": "f9d4b910",
-        "encoded": "for%20track%20in%20candidates:",
+        "hash": "6351b77a",
+        "encoded": ")",
         "prevChunkIds": []
       },
       "155": {
         "chunkId": "7c2ff3",
-        "hash": "ae53ed83",
-        "encoded": "score%20=%20self._score_track(track,%20analysis)",
+        "hash": "12bd81dc",
+        "encoded": "logger.info(f%22Found%20%7Blen(candidates)%7D%20candidate%20tracks%22)",
         "prevChunkIds": []
       },
       "157": {
         "chunkId": "7c2ff3",
-        "hash": "a7badf3e",
-        "encoded": "if%20score%20%3E%200.0:%20%20#%20Only%20include%20tracks%20with%20some%20relevance",
+        "hash": "3702105d",
+        "encoded": "if%20not%20candidates:",
         "prevChunkIds": []
       },
       "158": {
         "chunkId": "7c2ff3",
-        "hash": "0abe7c86",
-        "encoded": "scored_tracks.append(%7B",
+        "hash": "a9f599d2",
+        "encoded": "logger.warning(%22No%20candidate%20tracks%20found%22)",
         "prevChunkIds": []
       },
       "159": {
         "chunkId": "7c2ff3",
-        "hash": "2b5aae27",
-        "encoded": "'track':%20track,",
-        "prevChunkIds": []
-      },
-      "160": {
-        "chunkId": "7c2ff3",
-        "hash": "021df2d4",
-        "encoded": "'score':%20score",
+        "hash": "9ed4be0b",
+        "encoded": "return%20%5B%5D",
         "prevChunkIds": []
       },
       "161": {
         "chunkId": "7c2ff3",
-        "hash": "6075ec3f",
-        "encoded": "%7D)",
+        "hash": "32021a8e",
+        "encoded": "#%20Score%20each%20candidate",
+        "prevChunkIds": []
+      },
+      "162": {
+        "chunkId": "7c2ff3",
+        "hash": "27389b88",
+        "encoded": "scored_tracks%20=%20%5B%5D",
         "prevChunkIds": []
       },
       "163": {
         "chunkId": "7c2ff3",
-        "hash": "c21759ea",
-        "encoded": "#%20Sort%20by%20score%20descending",
+        "hash": "f9183108",
+        "encoded": "for%20track%20in%20candidates:",
         "prevChunkIds": []
       },
       "164": {
         "chunkId": "7c2ff3",
-        "hash": "4a24d08c",
-        "encoded": "scored_tracks.sort(key=lambda%20x:%20x%5B'score'%5D,%20reverse=True)",
+        "hash": "b658e648",
+        "encoded": "score%20=%20self._score_track(track,%20analysis)",
         "prevChunkIds": []
       },
       "166": {
         "chunkId": "7c2ff3",
-        "hash": "b8a96b18",
-        "encoded": "logger.info(f%22Scored%20%7Blen(scored_tracks)%7D%20tracks%22)",
+        "hash": "4a984cea",
+        "encoded": "if%20score%20%3E%200.0:%20%20#%20Only%20include%20tracks%20with%20some%20relevance",
+        "prevChunkIds": []
+      },
+      "167": {
+        "chunkId": "7c2ff3",
+        "hash": "5fafcf15",
+        "encoded": "scored_tracks.append(%7B",
         "prevChunkIds": []
       },
       "168": {
         "chunkId": "7c2ff3",
-        "hash": "bb515c5e",
-        "encoded": "#%20Take%20top%20N",
+        "hash": "4b53692f",
+        "encoded": "'track':%20track,",
         "prevChunkIds": []
       },
       "169": {
         "chunkId": "7c2ff3",
-        "hash": "5afbe58e",
-        "encoded": "top_tracks%20=%20scored_tracks%5B:max_recommendations%5D",
+        "hash": "cd6bc488",
+        "encoded": "'score':%20score",
         "prevChunkIds": []
       },
-      "171": {
+      "170": {
         "chunkId": "7c2ff3",
-        "hash": "0352b666",
-        "encoded": "#%20Convert%20to%20TrackRecommendation%20objects",
+        "hash": "6da7e841",
+        "encoded": "%7D)",
         "prevChunkIds": []
       },
       "172": {
         "chunkId": "7c2ff3",
-        "hash": "2e71fca5",
-        "encoded": "recommendations%20=%20%5B%5D",
+        "hash": "7718d843",
+        "encoded": "#%20Sort%20by%20score%20descending",
         "prevChunkIds": []
       },
       "173": {
         "chunkId": "7c2ff3",
-        "hash": "2e4e6a0f",
-        "encoded": "for%20item%20in%20top_tracks:",
-        "prevChunkIds": []
-      },
-      "174": {
-        "chunkId": "7c2ff3",
-        "hash": "e283ff5f",
-        "encoded": "track%20=%20item%5B'track'%5D",
+        "hash": "04f06194",
+        "encoded": "scored_tracks.sort(key=lambda%20x:%20x%5B'score'%5D,%20reverse=True)",
         "prevChunkIds": []
       },
       "175": {
         "chunkId": "7c2ff3",
-        "hash": "e17a5f46",
-        "encoded": "score%20=%20item%5B'score'%5D",
+        "hash": "6982bbd9",
+        "encoded": "logger.info(f%22Scored%20%7Blen(scored_tracks)%7D%20tracks%22)",
         "prevChunkIds": []
       },
       "177": {
         "chunkId": "7c2ff3",
-        "hash": "b292572a",
-        "encoded": "#%20Create%20brief%20explanation%20(will%20be%20enhanced%20by%20ExplanationGenerator)",
+        "hash": "c8b5b58a",
+        "encoded": "#%20Take%20top%20N",
         "prevChunkIds": []
       },
       "178": {
         "chunkId": "7c2ff3",
-        "hash": "0e2c1432",
-        "encoded": "explanation%20=%20self._create_brief_explanation(track,%20analysis,%20score)",
+        "hash": "b68531ac",
+        "encoded": "top_tracks%20=%20scored_tracks%5B:max_recommendations%5D",
         "prevChunkIds": []
       },
       "180": {
         "chunkId": "7c2ff3",
-        "hash": "d837203e",
-        "encoded": "try:",
+        "hash": "e945f8e3",
+        "encoded": "#%20Convert%20to%20TrackRecommendation%20objects",
         "prevChunkIds": []
       },
       "181": {
         "chunkId": "7c2ff3",
-        "hash": "47663d8d",
-        "encoded": "recommendation%20=%20TrackRecommendation(",
+        "hash": "88dcadb7",
+        "encoded": "recommendations%20=%20%5B%5D",
         "prevChunkIds": []
       },
       "182": {
         "chunkId": "7c2ff3",
-        "hash": "4de95d94",
-        "encoded": "track_id=track.get('track_id',%20'unknown'),",
+        "hash": "077c7a54",
+        "encoded": "for%20item%20in%20top_tracks:",
         "prevChunkIds": []
       },
       "183": {
         "chunkId": "7c2ff3",
-        "hash": "f74e180e",
-        "encoded": "track_name=track.get('track_name',%20'Unknown%20Track'),",
+        "hash": "75fc7433",
+        "encoded": "track%20=%20item%5B'track'%5D",
         "prevChunkIds": []
       },
       "184": {
         "chunkId": "7c2ff3",
-        "hash": "a221f054",
-        "encoded": "artist=track.get('artist',%20'Unknown%20Artist'),",
-        "prevChunkIds": []
-      },
-      "185": {
-        "chunkId": "7c2ff3",
-        "hash": "86ce12ec",
-        "encoded": "genre_tags=track.get('genre_tags',%20%5B%5D),",
+        "hash": "3b96660c",
+        "encoded": "score%20=%20item%5B'score'%5D",
         "prevChunkIds": []
       },
       "186": {
         "chunkId": "7c2ff3",
-        "hash": "4af20654",
-        "encoded": "mood_tags=track.get('mood_tags',%20%5B%5D),",
+        "hash": "cf2a6584",
+        "encoded": "#%20Create%20brief%20explanation%20(will%20be%20enhanced%20by%20ExplanationGenerator)",
         "prevChunkIds": []
       },
       "187": {
         "chunkId": "7c2ff3",
-        "hash": "fe1e2ac2",
-        "encoded": "instrument_tags=track.get('instrument_tags',%20%5B%5D),",
-        "prevChunkIds": []
-      },
-      "188": {
-        "chunkId": "7c2ff3",
-        "hash": "294318a9",
-        "encoded": "relevance_score=score,",
+        "hash": "9da65c6f",
+        "encoded": "explanation%20=%20self._create_brief_explanation(track,%20analysis,%20score)",
         "prevChunkIds": []
       },
       "189": {
         "chunkId": "7c2ff3",
-        "hash": "8a5bea69",
-        "encoded": "explanation=explanation,",
+        "hash": "eaddff87",
+        "encoded": "try:",
         "prevChunkIds": []
       },
       "190": {
         "chunkId": "7c2ff3",
-        "hash": "dfcc34f8",
-        "encoded": "source='Sample%20Catalogue'",
+        "hash": "10c5d44c",
+        "encoded": "recommendation%20=%20TrackRecommendation(",
         "prevChunkIds": []
       },
       "191": {
         "chunkId": "7c2ff3",
-        "hash": "ce892054",
-        "encoded": ")",
+        "hash": "fb479c83",
+        "encoded": "track_id=track.get('track_id',%20'unknown'),",
         "prevChunkIds": []
       },
       "192": {
         "chunkId": "7c2ff3",
-        "hash": "16cd077f",
-        "encoded": "recommendations.append(recommendation)",
+        "hash": "302fa660",
+        "encoded": "track_name=track.get('track_name',%20'Unknown%20Track'),",
         "prevChunkIds": []
       },
       "193": {
         "chunkId": "7c2ff3",
-        "hash": "86c04f59",
-        "encoded": "except%20Exception%20as%20e:",
+        "hash": "8d0e0483",
+        "encoded": "artist=track.get('artist',%20'Unknown%20Artist'),",
         "prevChunkIds": []
       },
       "194": {
         "chunkId": "7c2ff3",
-        "hash": "330cadc7",
-        "encoded": "logger.error(f%22Failed%20to%20create%20recommendation:%20%7Be%7D%22)",
+        "hash": "c7ea2788",
+        "encoded": "genre_tags=track.get('genre_tags',%20%5B%5D),",
+        "prevChunkIds": []
+      },
+      "195": {
+        "chunkId": "7c2ff3",
+        "hash": "bf52455d",
+        "encoded": "mood_tags=track.get('mood_tags',%20%5B%5D),",
         "prevChunkIds": []
       },
       "196": {
         "chunkId": "7c2ff3",
-        "hash": "0b72954c",
-        "encoded": "logger.info(f%22Generated%20%7Blen(recommendations)%7D%20recommendations%22)",
+        "hash": "1a0e5221",
+        "encoded": "instrument_tags=track.get('instrument_tags',%20%5B%5D),",
         "prevChunkIds": []
       },
       "197": {
         "chunkId": "7c2ff3",
-        "hash": "498a129c",
-        "encoded": "return%20recommendations",
+        "hash": "b8288638",
+        "encoded": "relevance_score=score,",
+        "prevChunkIds": []
+      },
+      "198": {
+        "chunkId": "7c2ff3",
+        "hash": "2d308662",
+        "encoded": "explanation=explanation,",
         "prevChunkIds": []
       },
       "199": {
         "chunkId": "7c2ff3",
-        "hash": "10a99103",
-        "encoded": "def%20_create_brief_explanation(",
+        "hash": "8ccfd65b",
+        "encoded": "source='Sample%20Catalogue'",
         "prevChunkIds": []
       },
       "200": {
         "chunkId": "7c2ff3",
-        "hash": "e764606b",
-        "encoded": "self,",
+        "hash": "10109818",
+        "encoded": ")",
         "prevChunkIds": []
       },
       "201": {
         "chunkId": "7c2ff3",
-        "hash": "f7e4a42c",
-        "encoded": "track:%20Dict%5Bstr,%20Any%5D,",
+        "hash": "1b85fc21",
+        "encoded": "recommendations.append(recommendation)",
         "prevChunkIds": []
       },
       "202": {
         "chunkId": "7c2ff3",
-        "hash": "4d983391",
-        "encoded": "analysis:%20MemoryAnalysis,",
+        "hash": "a04b6074",
+        "encoded": "except%20Exception%20as%20e:",
         "prevChunkIds": []
       },
       "203": {
         "chunkId": "7c2ff3",
-        "hash": "bdac19c7",
-        "encoded": "score:%20float",
-        "prevChunkIds": []
-      },
-      "204": {
-        "chunkId": "7c2ff3",
-        "hash": "886a72b8",
-        "encoded": ")%20-%3E%20str:",
+        "hash": "9a03dc56",
+        "encoded": "logger.error(f%22Failed%20to%20create%20recommendation:%20%7Be%7D%22)",
         "prevChunkIds": []
       },
       "205": {
         "chunkId": "7c2ff3",
-        "hash": "15d70486",
-        "encoded": "%22%22%22Create%20a%20brief%20explanation%20for%20the%20recommendation.",
+        "hash": "1600cc2e",
+        "encoded": "logger.info(f%22Generated%20%7Blen(recommendations)%7D%20recommendations%22)",
         "prevChunkIds": []
       },
-      "207": {
+      "206": {
         "chunkId": "7c2ff3",
-        "hash": "30f22f39",
-        "encoded": "Args:",
+        "hash": "5712eff4",
+        "encoded": "return%20recommendations",
         "prevChunkIds": []
       },
       "208": {
         "chunkId": "7c2ff3",
-        "hash": "98736a91",
-        "encoded": "track:%20Track%20metadata",
+        "hash": "d75fa262",
+        "encoded": "def%20_create_brief_explanation(",
         "prevChunkIds": []
       },
       "209": {
         "chunkId": "7c2ff3",
-        "hash": "f8743903",
-        "encoded": "analysis:%20Memory%20analysis",
+        "hash": "97ef1497",
+        "encoded": "self,",
         "prevChunkIds": []
       },
       "210": {
         "chunkId": "7c2ff3",
-        "hash": "1eb41f2f",
-        "encoded": "score:%20Relevance%20score",
+        "hash": "03dc2ef5",
+        "encoded": "track:%20Dict%5Bstr,%20Any%5D,",
+        "prevChunkIds": []
+      },
+      "211": {
+        "chunkId": "7c2ff3",
+        "hash": "31c8f28b",
+        "encoded": "analysis:%20MemoryAnalysis,",
         "prevChunkIds": []
       },
       "212": {
         "chunkId": "7c2ff3",
-        "hash": "e411e5bc",
-        "encoded": "Returns:",
+        "hash": "c681a9c9",
+        "encoded": "score:%20float",
         "prevChunkIds": []
       },
       "213": {
         "chunkId": "7c2ff3",
-        "hash": "d052b16a",
-        "encoded": "Brief%20explanation%20string",
+        "hash": "2a471b6b",
+        "encoded": ")%20-%3E%20str:",
         "prevChunkIds": []
       },
       "214": {
         "chunkId": "7c2ff3",
-        "hash": "5a8ecfe1",
-        "encoded": "%22%22%22",
-        "prevChunkIds": []
-      },
-      "215": {
-        "chunkId": "7c2ff3",
-        "hash": "67706e10",
-        "encoded": "#%20Find%20matching%20elements",
+        "hash": "c41d136d",
+        "encoded": "%22%22%22Create%20a%20brief%20explanation%20for%20the%20recommendation.",
         "prevChunkIds": []
       },
       "216": {
         "chunkId": "7c2ff3",
-        "hash": "15ea013c",
-        "encoded": "matching_moods%20=%20set(%5Bm.lower()%20for%20m%20in%20track.get('mood_tags',%20%5B%5D)%5D).intersection(",
+        "hash": "f9e3ac7c",
+        "encoded": "Args:",
         "prevChunkIds": []
       },
       "217": {
         "chunkId": "7c2ff3",
-        "hash": "77f7b785",
-        "encoded": "set(%5Be.lower()%20for%20e%20in%20(analysis.primary_emotions%20+%20analysis.secondary_emotions)%5D)",
+        "hash": "46bf9d09",
+        "encoded": "track:%20Track%20metadata",
         "prevChunkIds": []
       },
       "218": {
         "chunkId": "7c2ff3",
-        "hash": "db97fdf0",
-        "encoded": ")",
+        "hash": "9aea2105",
+        "encoded": "analysis:%20Memory%20analysis",
         "prevChunkIds": []
       },
-      "220": {
+      "219": {
         "chunkId": "7c2ff3",
-        "hash": "d6f50d3c",
-        "encoded": "matching_genres%20=%20set(%5Bg.lower()%20for%20g%20in%20track.get('genre_tags',%20%5B%5D)%5D).intersection(",
+        "hash": "3bbac75d",
+        "encoded": "score:%20Relevance%20score",
         "prevChunkIds": []
       },
       "221": {
         "chunkId": "7c2ff3",
-        "hash": "9605c158",
-        "encoded": "set(%5Bg.lower()%20for%20g%20in%20analysis.genres%5D)",
+        "hash": "3dc10251",
+        "encoded": "Returns:",
         "prevChunkIds": []
       },
       "222": {
         "chunkId": "7c2ff3",
-        "hash": "5196aac2",
-        "encoded": ")",
+        "hash": "e5c74258",
+        "encoded": "Brief%20explanation%20string",
+        "prevChunkIds": []
+      },
+      "223": {
+        "chunkId": "7c2ff3",
+        "hash": "91ae4daa",
+        "encoded": "%22%22%22",
         "prevChunkIds": []
       },
       "224": {
         "chunkId": "7c2ff3",
-        "hash": "11ed6464",
-        "encoded": "matching_instruments%20=%20set(%5Bi.lower()%20for%20i%20in%20track.get('instrument_tags',%20%5B%5D)%5D).intersection(",
+        "hash": "01228a0e",
+        "encoded": "#%20Find%20matching%20elements",
         "prevChunkIds": []
       },
       "225": {
         "chunkId": "7c2ff3",
-        "hash": "5b500d13",
-        "encoded": "set(%5Bi.lower()%20for%20i%20in%20analysis.instruments%5D)",
+        "hash": "b32d5841",
+        "encoded": "matching_moods%20=%20set(%5Bm.lower()%20for%20m%20in%20track.get('mood_tags',%20%5B%5D)%5D).intersection(",
         "prevChunkIds": []
       },
       "226": {
         "chunkId": "7c2ff3",
-        "hash": "a0f1c4c5",
-        "encoded": ")",
+        "hash": "7984ab81",
+        "encoded": "set(%5Be.lower()%20for%20e%20in%20(analysis.primary_emotions%20+%20analysis.secondary_emotions)%5D)",
         "prevChunkIds": []
       },
-      "228": {
+      "227": {
         "chunkId": "7c2ff3",
-        "hash": "9f9b7405",
-        "encoded": "#%20Build%20explanation",
+        "hash": "4bffac54",
+        "encoded": ")",
         "prevChunkIds": []
       },
       "229": {
         "chunkId": "7c2ff3",
-        "hash": "b6af57c6",
-        "encoded": "parts%20=%20%5B%5D",
+        "hash": "bf079589",
+        "encoded": "matching_genres%20=%20set(%5Bg.lower()%20for%20g%20in%20track.get('genre_tags',%20%5B%5D)%5D).intersection(",
+        "prevChunkIds": []
+      },
+      "230": {
+        "chunkId": "7c2ff3",
+        "hash": "e966fa51",
+        "encoded": "set(%5Bg.lower()%20for%20g%20in%20analysis.genres%5D)",
         "prevChunkIds": []
       },
       "231": {
         "chunkId": "7c2ff3",
-        "hash": "ef9d82ad",
-        "encoded": "if%20matching_moods:",
+        "hash": "457b310d",
+        "encoded": ")",
         "prevChunkIds": []
       },
-      "232": {
+      "233": {
         "chunkId": "7c2ff3",
-        "hash": "7de68c5f",
-        "encoded": "parts.append(f%22captures%20%7B',%20'.join(list(matching_moods)%5B:2%5D)%7D%20emotions%22)",
+        "hash": "31ddca12",
+        "encoded": "matching_instruments%20=%20set(%5Bi.lower()%20for%20i%20in%20track.get('instrument_tags',%20%5B%5D)%5D).intersection(",
         "prevChunkIds": []
       },
       "234": {
         "chunkId": "7c2ff3",
-        "hash": "559a9567",
-        "encoded": "if%20matching_genres:",
+        "hash": "b39e802a",
+        "encoded": "set(%5Bi.lower()%20for%20i%20in%20analysis.instruments%5D)",
         "prevChunkIds": []
       },
       "235": {
         "chunkId": "7c2ff3",
-        "hash": "0c0f7c71",
-        "encoded": "parts.append(f%22%7B',%20'.join(list(matching_genres)%5B:2%5D)%7D%20style%22)",
+        "hash": "baa66723",
+        "encoded": ")",
         "prevChunkIds": []
       },
       "237": {
         "chunkId": "7c2ff3",
-        "hash": "7d2d37ad",
-        "encoded": "if%20matching_instruments:",
+        "hash": "6372269c",
+        "encoded": "#%20Build%20explanation",
         "prevChunkIds": []
       },
       "238": {
         "chunkId": "7c2ff3",
-        "hash": "be3df19a",
-        "encoded": "parts.append(f%22features%20%7B',%20'.join(list(matching_instruments)%5B:2%5D)%7D%22)",
+        "hash": "5239a268",
+        "encoded": "parts%20=%20%5B%5D",
         "prevChunkIds": []
       },
       "240": {
         "chunkId": "7c2ff3",
-        "hash": "b0b23181",
-        "encoded": "if%20parts:",
+        "hash": "35c4ab9d",
+        "encoded": "if%20matching_moods:",
         "prevChunkIds": []
       },
       "241": {
         "chunkId": "7c2ff3",
-        "hash": "1a6fb0aa",
-        "encoded": "explanation%20=%20f%22This%20track%20%7B'%20with%20'.join(parts)%7D,%20matching%20your%20memory's%20%7Banalysis.atmosphere%7D%20atmosphere.%22",
-        "prevChunkIds": []
-      },
-      "242": {
-        "chunkId": "7c2ff3",
-        "hash": "785a226c",
-        "encoded": "else:",
+        "hash": "f6876ded",
+        "encoded": "parts.append(f%22captures%20%7B',%20'.join(list(matching_moods)%5B:2%5D)%7D%20emotions%22)",
         "prevChunkIds": []
       },
       "243": {
         "chunkId": "7c2ff3",
-        "hash": "07bd2a59",
+        "hash": "612c00e9",
+        "encoded": "if%20matching_genres:",
+        "prevChunkIds": []
+      },
+      "244": {
+        "chunkId": "7c2ff3",
+        "hash": "4cb48007",
+        "encoded": "parts.append(f%22%7B',%20'.join(list(matching_genres)%5B:2%5D)%7D%20style%22)",
+        "prevChunkIds": []
+      },
+      "246": {
+        "chunkId": "7c2ff3",
+        "hash": "47e9986a",
+        "encoded": "if%20matching_instruments:",
+        "prevChunkIds": []
+      },
+      "247": {
+        "chunkId": "7c2ff3",
+        "hash": "b3f85141",
+        "encoded": "parts.append(f%22features%20%7B',%20'.join(list(matching_instruments)%5B:2%5D)%7D%22)",
+        "prevChunkIds": []
+      },
+      "249": {
+        "chunkId": "7c2ff3",
+        "hash": "d156d681",
+        "encoded": "if%20parts:",
+        "prevChunkIds": []
+      },
+      "250": {
+        "chunkId": "7c2ff3",
+        "hash": "a868addf",
+        "encoded": "explanation%20=%20f%22This%20track%20%7B'%20with%20'.join(parts)%7D,%20matching%20your%20memory's%20%7Banalysis.atmosphere%7D%20atmosphere.%22",
+        "prevChunkIds": []
+      },
+      "251": {
+        "chunkId": "7c2ff3",
+        "hash": "0345ba15",
+        "encoded": "else:",
+        "prevChunkIds": []
+      },
+      "252": {
+        "chunkId": "7c2ff3",
+        "hash": "6c103a6f",
         "encoded": "explanation%20=%20f%22This%20track%20aligns%20with%20the%20%7Banalysis.atmosphere%7D%20atmosphere%20of%20your%20memory.%22",
         "prevChunkIds": []
       },
-      "245": {
+      "254": {
         "chunkId": "7c2ff3",
-        "hash": "2a99cfb4",
+        "hash": "7f916170",
         "encoded": "return%20explanation",
         "prevChunkIds": []
       }
-    }
+    },
+    "_prevLineCount": 243
   }
 }

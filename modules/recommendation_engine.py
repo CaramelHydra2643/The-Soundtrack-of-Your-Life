@@ -135,19 +135,15 @@ class RecommendationEngine:
         
         logger.info("Generating track recommendations...")
         
-        # Get candidate tracks from catalogue
-        # Use broad search to get initial candidates
-        candidates = self.catalogue.search_tracks(
-            genres=analysis.genres if analysis.genres else None,
-            moods=analysis.primary_emotions if analysis.primary_emotions else None,
-            instruments=analysis.instruments if analysis.instruments else None,
-            limit=100
-        )
+        # Get ALL tracks as candidates (don't filter upfront)
+        # Filtering is too strict with sample catalogue
+        # Instead, we'll score all tracks and pick the best ones
+        candidates = self.catalogue.tracks
         
-        logger.info(f"Found {len(candidates)} candidate tracks")
+        logger.info(f"Evaluating {len(candidates)} tracks from catalogue")
         
         if not candidates:
-            logger.warning("No candidate tracks found")
+            logger.warning("No tracks in catalogue")
             return []
         
         # Score each candidate

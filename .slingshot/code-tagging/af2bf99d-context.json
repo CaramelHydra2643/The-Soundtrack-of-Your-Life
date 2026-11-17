@@ -6,6 +6,12 @@
   "promptMessage": {
     "04511a3e": {
       "value": "the ollama is installed. check this\nPS C:\\Users\\madsaich\\Documents\\The Soundtrack of Your Life> Invoke-RestMethod http://localhost:11434/api/tags\n\nmodels                                                                                                   \n------                                                                                                   \n{@{name=qwen2.5:3b; model=qwen2.5:3b; modified_at=2026-11-16T12:03:18.2491277+05:30; size=1929912432; ...\n\n\nUse python 3.11/3.12 if needed. o"
+    },
+    "92d4cb46": {
+      "value": "PS C:\\Users\\madsaich\\Documents\\The Soundtrack of Your Life> .\\scripts\\setup_windows.ps1\n\n================================================================\nTHE SOUNDTRACK OF YOUR LIFE - Windows Setup\n================================================================\n\n[1/9] Checking Python installation...\n  Found: Python 3.14.7\n\n[2/9] Checking Git installation...\n  Found: git version 2.55.0.windows.3\n\n[3/9] Checking Ollama installation...\n  [OK] Ollama is running with 1 model(s)\n  [OK] Model qwen2.5:"
+    },
+    "eee49bc2": {
+      "value": "(.venv) PS C:\\Users\\madsaich\\Documents\\The Soundtrack of Your Life> .\\scripts\\run_windows.ps1\n>> \n\n================================================================\nTHE SOUNDTRACK OF YOUR LIFE - Launcher\n================================================================\n\n[1/4] Activating virtual environment...\n  [OK] Activated\n\n[2/4] Checking Ollama status...\n  [OK] Ollama is running\n\n[3/4] Checking knowledge base...\n  [OK] Knowledge base found\n\n[4/4] Running health check...\nTraceback (most recent "
     }
   },
   "localPrompts": {},
