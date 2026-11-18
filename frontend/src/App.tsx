@@ -67,6 +67,17 @@ async function createSoundtrack(memory: string): Promise<Soundtrack> {
   return response.json() as Promise<Soundtrack>;
 }
 
+async function saveSoundtrack(memory: string, result: Soundtrack): Promise<number> {
+  const response = await fetch("/api/memories", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ memory, result }),
+  });
+  const payload = await response.json().catch(() => ({}));
+  if (!response.ok) throw new Error(payload.detail ?? "The soundtrack could not be saved.");
+  return payload.memory_id as number;
+}
+
 async function refineSoundtrack(memory: string, result: Soundtrack, instruction: string): Promise<Soundtrack> {
   const response = await fetch("/api/soundtracks/refine", {
     method: "POST",
@@ -101,6 +112,8 @@ async function loadPreferences(): Promise<Preferences> {
 export default function App() {
   const [memory, setMemory] = useState("");
   const [soundtrack, setSoundtrack] = useState<Soundtrack | null>(null);
+  const [savedMemoryId, setSavedMemoryId] = useState<number | null>(null);
+  const [saving, setSaving] = useState(false);
   const [refinement, setRefinement] = useState("");
   const [refining, setRefining] = useState(false);
   const [view, setView] = useState<"create" | "vault" | "preferences">("create");
@@ -240,6 +253,19 @@ export default function App() {
     setError("");
   };
 
+  const saveCurrentSoundtrack = async () => {
+    if (!soundtrack || saving) return;
+    setSaving(true);
+    setError("");
+    try {
+      setSavedMemoryId(await saveSoundtrack(memory, soundtrack));
+    } catch (requestError) {
+      setError(requestError instanceof Error ? requestError.message : "The soundtrack could not be saved.");
+    } finally {
+      setSaving(false);
+    }
+  };
+
   const submitRefinement = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (!soundtrack || !refinement.trim()) return;
@@ -311,6 +337,7 @@ export default function App() {
           <h2 id="results-title">{soundtrack.memory_analysis.memory_title}</h2>
           <p>{soundtrack.overall_explanation}</p>
           <div className="tags">{[...soundtrack.memory_analysis.primary_emotions, ...soundtrack.memory_analysis.themes].slice(0, 6).map((tag) => <span key={tag}>{tag}</span>)}</div>
+          <div className="results-actions"><button className="primary-button" type="button" onClick={() => void saveCurrentSoundtrack()} disabled={saving || savedMemoryId !== null}>{savedMemoryId ? `Saved to Memory Vault (#${savedMemoryId})` : saving ? "Saving…" : "Save to Memory Vault"}</button></div>
           <form className="refinement-form" onSubmit={(event) => void submitRefinement(event)}><label className="sr-only" htmlFor="refinement">Refine this soundtrack</label><input id="refinement" value={refinement} onChange={(event) => setRefinement(event.target.value)} placeholder="Make it more nostalgic, peaceful, energetic, or Telugu…" maxLength={300} /><button type="submit" disabled={refining || !refinement.trim()}>{refining ? "Refining…" : "Refine ↗"}</button></form>
           {error && <p className="error" role="alert">{error}</p>}
         </div>

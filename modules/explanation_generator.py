@@ -43,6 +43,9 @@ class ExplanationGenerator:
         Returns:
             Overall explanation string
         """
+        if not self.settings.enable_llm_explanations:
+            return self._create_fallback_overall_explanation(analysis, recommendations)
+
         # Build context from RAG retrieval
         rag_context = ""
         if retrieved_context:

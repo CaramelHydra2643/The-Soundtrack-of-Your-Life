@@ -38,7 +38,8 @@ class SoundtrackService:
         self.explainer = explainer or ExplanationGenerator()
         self.vault = vault or MemoryVault()
         try:
-            self.track_index = track_index or TrackEmbeddingIndex()
+            shared_embedding_model = getattr(self.rag_engine, "embedding_model", None)
+            self.track_index = track_index or TrackEmbeddingIndex(model=shared_embedding_model)
         except Exception as exc:
             logger.warning("Track vector index unavailable; using catalogue scan: %s", exc)
             self.track_index = None

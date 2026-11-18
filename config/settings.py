@@ -63,10 +63,14 @@ class Settings(BaseSettings):
         description="LLM temperature for response randomness"
     )
     llm_max_tokens: int = Field(
-        default=2000,
+        default=1000,
         ge=100,
         le=8000,
         description="Maximum tokens in LLM response"
+    )
+    enable_llm_explanations: bool = Field(
+        default=False,
+        description="Use a second Ollama call for explanations; disabled for faster local responses"
     )
 
     # =========================================================================

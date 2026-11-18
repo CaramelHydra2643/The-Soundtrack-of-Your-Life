@@ -1,0 +1,29 @@
+{
+  "scripts\\ingest_mtg_jamendo.py": {
+    "filename": "ingest_mtg_jamendo.py",
+    "path": "scripts\\ingest_mtg_jamendo.py",
+    "version": "1.2",
+    "contextFile": "fb31b9e1-context.json",
+    "chunks": {
+      "1cf55c": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1795008055,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "chat",
+        "type": "copyCode",
+        "extraContext": {
+          "promptMessage": "4ecc3e43"
+        },
+        "hash": "317cd509",
+        "messageId": "system_573f0f90-e352-11f1-822b-835c9372b25d",
+        "codeBlockId": "system_573f0f90-e352-11f1-822b-835c9372b25d-Codeblock-7",
+        "isActive": false,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/18/2026, 6:50:55 PM\n- **source**: chat\n- **type**: copyCode\n"
+      }
+    },
+    "lines": {}
+  }
+}
