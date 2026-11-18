@@ -148,6 +148,60 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 7:34:12 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "82b807": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794982580,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "b95f0b24"
+        },
+        "hash": "3d6d8c57",
+        "messageId": "system_167535a0-e313-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/18/2026, 11:46:20 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "ea4313": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794985376,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "9a2f634b"
+        },
+        "hash": "7bb0c4b6",
+        "messageId": "system_0e557d80-e318-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/18/2026, 12:32:56 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "3b6233": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794986452,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "64dd6f8b"
+        },
+        "hash": "1868f39b",
+        "messageId": "system_08dcc220-e320-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/18/2026, 12:50:52 PM\n- **source**: agent\n- **type**: agentEditTool\n"
       }
     },
     "lines": {
@@ -260,36 +314,96 @@
         "prevChunkIds": []
       },
       "43": {
-        "chunkId": "1db9f2",
-        "hash": "9d1e22d9",
-        "encoded": "-%20%5B%20%5D%20Add%20full%20API-backed%20browser%20integration%20tests%20and%20wire%20microphone%20capture%20to%20speech%20in%20a%20running%20environment.",
+        "chunkId": "82b807",
+        "hash": "3775357f",
+        "encoded": "##%20Phase%204%20%E2%80%94%20data%20expansion",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "ea4313",
+        "hash": "2952f821",
+        "encoded": "-%20%5Bx%5D%20Add%20a%20dedicated%20MTG-Jamendo%20clone%20adapter%20with%20licence%20and%20URL%20provenance.",
         "prevChunkIds": []
       },
       "46": {
-        "chunkId": "e9eea3",
-        "hash": "18dc4553",
-        "encoded": "-%20%5Bx%5D%20Apply%20saved%20preferences%20and%20feedback%20to%20recommendation%20ranking.",
+        "chunkId": "ea4313",
+        "hash": "239c67f3",
+        "encoded": "-%20%5Bx%5D%20Import%20the%20cloned%20MTG-Jamendo%20metadata/tag%20catalogue%20without%20downloading%20audio.",
         "prevChunkIds": []
       },
       "47": {
-        "chunkId": "e9eea3",
-        "hash": "a8cc418b",
-        "encoded": "-%20%5B%20%5D%20Add%20React%20browser%20MediaRecorder%20UI%20and%20conversational%20recommendation%20refinement.",
+        "chunkId": "ea4313",
+        "hash": "6b7339a7",
+        "encoded": "-%20%5Bx%5D%20Add%20FMA%20metadata%20adapter%20and%20merge%20MTG-Jamendo/FMA%20catalogue%20sources.",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "3b6233",
+        "hash": "798966b9",
+        "encoded": "-%20%5B%20%5D%20Add%20MusicBrainz%20enrichment%20and%20a%20separate%20music-track%20Chroma%20collection.",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "3b6233",
+        "hash": "713b3a8d",
+        "encoded": "-%20%5Bx%5D%20Import%20DEAM%20valence/arousal%20annotations%20and%20retain%20openSMILE%20features%20for%20calibration.",
         "prevChunkIds": []
       },
       "50": {
+        "chunkId": "3b6233",
+        "hash": "d263d652",
+        "encoded": "-%20%5B%20%5D%20Add%20audio-feature%20extraction/mapping%20into%20track%20ranking.",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "82b807",
+        "hash": "269bd319",
+        "encoded": "-%20%5Bx%5D%20Import%20the%20cloned%20MTG-Jamendo%20metadata/tag%20catalogue%20without%20downloading%20audio.",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "82b807",
+        "hash": "41954539",
+        "encoded": "-%20%5B%20%5D%20Add%20FMA/MusicBrainz%20adapters,%20audio-feature%20extraction,%20and%20a%20separate%20music-track%20Chroma%20collection.",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "82b807",
+        "hash": "4f149397",
+        "encoded": "-%20%5B%20%5D%20Add%20multilingual%20catalogue%20normalization%20and%20optional%20local%20speech%20recognition.",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "82b807",
+        "hash": "cc77119e",
+        "encoded": "-%20%5B%20%5D%20Add%20batch%20ingestion%20diagnostics,%20deduplication%20reports,%20and%20retrieval%20evaluation%20fixtures.",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "e9eea3",
+        "hash": "0a44cac0",
+        "encoded": "-%20%5Bx%5D%20Apply%20saved%20preferences%20and%20feedback%20to%20recommendation%20ranking.",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "e9eea3",
+        "hash": "a9f8d42e",
+        "encoded": "-%20%5B%20%5D%20Add%20React%20browser%20MediaRecorder%20UI%20and%20conversational%20recommendation%20refinement.",
+        "prevChunkIds": []
+      },
+      "71": {
         "chunkId": "1b4302",
-        "hash": "2721c384",
+        "hash": "1b6f5c6c",
         "encoded": "-%20%5Bx%5D%20Extract%20shared%20%60SoundtrackService%60%20orchestration%20and%20expose%20initial%20FastAPI%20contracts.",
         "prevChunkIds": []
       },
-      "51": {
+      "72": {
         "chunkId": "1b4302",
-        "hash": "d4cbe07a",
+        "hash": "a2c68f31",
         "encoded": "-%20%5Bx%5D%20Refresh%20the%20existing%20Streamlit%20soundtrack/results%20surface%20with%20safer%20native%20components.",
         "prevChunkIds": []
       }
     },
-    "_prevLineCount": 55
+    "_prevLineCount": 62
   }
 }

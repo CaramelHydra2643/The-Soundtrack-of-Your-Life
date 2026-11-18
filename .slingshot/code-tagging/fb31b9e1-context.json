@@ -1,0 +1,15 @@
+{
+  "filename": "ingest_mtg_jamendo.py",
+  "path": "scripts\\ingest_mtg_jamendo.py",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "4ecc3e43": {
+      "value": "INFO:     127.0.0.1:52430 - \"DELETE /api/memories/1 HTTP/1.1\" 200 OK\nWarning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\nLoading weights: 100%|█| 103/103 [00:00<00:00, 1347.5\nTrack vector index unavailable; using catalogue scan: An instance of Chroma already exists for C:\\Users\\madsaich\\AppData\\Local\\The Soundtrack of Your Life\\chroma_db with different settings\nINFO:     127.0.0.1:58816 - \"POST /api/soundtracks"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

@@ -6,6 +6,15 @@
   "promptMessage": {
     "3de5c3ba": {
       "value": "(.venv) PS C:\\Users\\madsaich\\Documents\\The Soundtrack of Your Life> python -m pip install --upgrade pip\n>> \nRequirement already satisfied: pip in .\\.venv\\Lib\\site-packages (26.3)\n(.venv) PS C:\\Users\\madsaich\\Documents\\The Soundtrack of Your Life> python -m pip install -r requirements.txt\n>> \nCollecting pydantic==2.10.4 (from -r requirements.txt (line 2))\n  Using cached pydantic-2.10.4-py3-none-any.whl.metadata (29 kB)\nCollecting pydantic-settings==2.7.1 (from -r requirements.txt (line 3))\n  Usin"
+    },
+    "b95f0b24": {
+      "value": "I have cloned the MTG-jamendo dataset into C:\\Users\\madsaich\\Documents\\mtg-jamendo-dataset folder, this contains entire details how to download the dataset with scripts. Check the folder and readme and download that"
+    },
+    "9a2f634b": {
+      "value": "i have cloned fma github into C:\\Users\\madsaich\\Documents\\fma. Analyze the folder and the scripts to download the data are mentioned in that. Also go through readme file and all the entire folder and download needed for thie application"
+    },
+    "64dd6f8b": {
+      "value": "i have downloaded annotations and features in the location C:\\Users\\madsaich\\Downloads\\DEAM_Annotations.zip, C:\\Users\\madsaich\\Downloads\\features.zip\nwaht to do next?"
     }
   },
   "localPrompts": {},

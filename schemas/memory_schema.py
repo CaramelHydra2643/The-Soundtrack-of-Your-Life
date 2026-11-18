@@ -118,6 +118,16 @@ class MemoryAnalysis(BaseModel):
     # =========================================================================
     # VALIDATORS
     # =========================================================================
+    @field_validator('cultural_context', mode='before')
+    @classmethod
+    def normalize_cultural_context(cls, value: Any) -> List[str]:
+        """Accept a single model-generated sentence or a list of references."""
+        if value is None or value == "":
+            return []
+        if isinstance(value, str):
+            return [value.strip()] if value.strip() else []
+        return value
+
     @field_validator('primary_emotions', 'secondary_emotions', 'themes', 'context', 'genres', 'instruments')
     @classmethod
     def validate_list_items(cls, v: List[str]) -> List[str]:

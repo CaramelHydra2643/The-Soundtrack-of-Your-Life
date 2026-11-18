@@ -1,0 +1,15 @@
+{
+  "filename": "test_refinement.py",
+  "path": "tests\\test_refinement.py",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "0cb5ef94": {
+      "value": "(.venv) PS C:\\Users\\madsaich\\Documents\\The Soundtrack of Your Life> .\\.venv\\Scripts\\python.exe -m pip install --force-reinstall `\n>>   --index-url https://download.pytorch.org/whl/cpu torch\nLooking in indexes: https://download.pytorch.org/whl/cpu\nCollecting torch\n  Using cached torch-2.15.0%2Bcpu-cp314-cp314-win_amd64.whl.metadata (36 kB)\nCollecting filelock (from torch)\n  Using cached filelock-4.2.4-py3-none-any.whl.metadata (2.0 kB)\nCollecting typing-extensions>=4.13.0 (from torch)\n  Using cac"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

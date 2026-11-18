@@ -1,0 +1,36 @@
+{
+  "tests\\test_catalogue_ingestion.py": {
+    "filename": "test_catalogue_ingestion.py",
+    "path": "tests\\test_catalogue_ingestion.py",
+    "version": "1.2",
+    "contextFile": "dfb16299-context.json",
+    "chunks": {
+      "d94f4d": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1794982580,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "b95f0b24"
+        },
+        "hash": "b9e8da53",
+        "messageId": "system_167535a0-e313-11f1-822b-835c9372b25d",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/18/2026, 11:46:20 AM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "2": {
+        "chunkId": "d94f4d",
+        "hash": "25faaf21",
+        "encoded": "from%20scripts.ingest_mtg_jamendo%20import%20import_catalogue",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "filename": "test_catalogue_ingestion.py",
+  "path": "tests\\test_catalogue_ingestion.py",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "b95f0b24": {
+      "value": "I have cloned the MTG-jamendo dataset into C:\\Users\\madsaich\\Documents\\mtg-jamendo-dataset folder, this contains entire details how to download the dataset with scripts. Check the folder and readme and download that"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

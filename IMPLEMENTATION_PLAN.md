@@ -43,7 +43,16 @@
 
 ## Phase 4 — data expansion
 
-- [ ] Add adapters for approved MusicBrainz/MTG-Jamendo/FMA exports with licence and URL validation.
+- [x] Add a dedicated MTG-Jamendo clone adapter with licence and URL provenance.
+- [x] Import the cloned MTG-Jamendo metadata/tag catalogue without downloading audio.
+- [x] Add FMA metadata adapter and merge MTG-Jamendo/FMA catalogue sources.
+- [x] Add cached, rate-limited MusicBrainz API enrichment for bounded batches.
+- [x] Add enrichment fields to the primary catalogue and a separate music-track Chroma collection.
+- [ ] Complete full 163,124-track index build.
+- [x] Import verified FMA Echo Nest audio features for 13,129 tracks and use numeric audio compatibility.
+- [ ] Add verified DEAM joins where an explicit cross-dataset identity exists.
+- [x] Import DEAM valence/arousal annotations and retain openSMILE features for calibration.
+- [ ] Add audio-feature extraction/mapping into track ranking.
 - [ ] Add multilingual catalogue normalization and optional local speech recognition.
 - [ ] Add batch ingestion diagnostics, deduplication reports, and retrieval evaluation fixtures.
 

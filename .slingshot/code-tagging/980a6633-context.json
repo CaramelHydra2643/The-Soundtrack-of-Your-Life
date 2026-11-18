@@ -1,0 +1,15 @@
+{
+  "filename": "ingest_fma.py",
+  "path": "scripts\\ingest_fma.py",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "9a2f634b": {
+      "value": "i have cloned fma github into C:\\Users\\madsaich\\Documents\\fma. Analyze the folder and the scripts to download the data are mentioned in that. Also go through readme file and all the entire folder and download needed for thie application"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

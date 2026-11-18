@@ -11,6 +11,7 @@ from modules.memory_vault import MemoryVault
 from modules.music_catalogue import MusicCatalogue
 from modules.rag_engine import RAGEngine
 from modules.recommendation_engine import RecommendationEngine
+from modules.track_embedding_index import TrackEmbeddingIndex
 from schemas.memory_schema import SoundtrackResult
 
 logger = logging.getLogger(__name__)
@@ -27,6 +28,7 @@ class SoundtrackService:
         recommender: Optional[RecommendationEngine] = None,
         explainer: Optional[ExplanationGenerator] = None,
         vault: Optional[MemoryVault] = None,
+        track_index: Optional[TrackEmbeddingIndex] = None,
     ) -> None:
         self.settings = get_settings()
         self.analyzer = analyzer or MemoryAnalyzer()
@@ -35,6 +37,11 @@ class SoundtrackService:
         self.recommender = recommender or RecommendationEngine(self.catalogue)
         self.explainer = explainer or ExplanationGenerator()
         self.vault = vault or MemoryVault()
+        try:
+            self.track_index = track_index or TrackEmbeddingIndex()
+        except Exception as exc:
+            logger.warning("Track vector index unavailable; using catalogue scan: %s", exc)
+            self.track_index = None
 
     def generate(self, memory_text: str) -> SoundtrackResult:
         """Generate a validated soundtrack result from one memory."""
@@ -59,15 +66,26 @@ class SoundtrackService:
         get_feedback = getattr(self.vault, "get_feedback", lambda: [])
         preferences = get_preferences()
         preferences["feedback"] = get_feedback()
-        recommender_params = inspect.signature(
-            self.recommender.generate_recommendations
-        ).parameters
+        candidate_tracks = None
+        if self.track_index:
+            try:
+                if self.track_index.is_ready():
+                    hits = self.track_index.query(self.analyzer.create_retrieval_query(analysis), limit=100)
+                    by_id = {str(track.get("track_id")): track for track in self.catalogue.tracks}
+                    resolved = [by_id[hit["track_id"]] for hit in hits if hit["track_id"] in by_id]
+                    candidate_tracks = resolved or None
+            except Exception as exc:
+                logger.warning("Track index query failed; falling back to catalogue scan: %s", exc)
+                candidate_tracks = None
+        recommender_params = inspect.signature(self.recommender.generate_recommendations).parameters
+        recommender_kwargs = {}
         if "user_preferences" in recommender_params:
-            recommendations = self.recommender.generate_recommendations(
-                analysis, retrieved, user_preferences=preferences
-            )
-        else:
-            recommendations = self.recommender.generate_recommendations(analysis, retrieved)
+            recommender_kwargs["user_preferences"] = preferences
+        if "candidate_tracks" in recommender_params:
+            recommender_kwargs["candidate_tracks"] = candidate_tracks
+        recommendations = self.recommender.generate_recommendations(
+            analysis, retrieved, **recommender_kwargs
+        )
         if not recommendations:
             raise RuntimeError("No catalogue tracks matched this memory.")
 

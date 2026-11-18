@@ -54,6 +54,8 @@ data/music_metadata/*.csv
 data/music_metadata/*.tsv
 data/music_metadata/*.json
 !data/music_metadata/.gitkeep
+data/emotion_annotations/
+data/audio_features/
 
 # Logs
 *.log

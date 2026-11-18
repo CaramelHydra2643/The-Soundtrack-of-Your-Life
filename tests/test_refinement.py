@@ -11,6 +11,20 @@ def build_service():
     )
 
 
+def test_memory_analysis_accepts_single_cultural_context_sentence():
+    from schemas.memory_schema import MemoryAnalysis
+
+    analysis = MemoryAnalysis(
+        memory_title="A memory", summary="A meaningful memory with enough detail to validate.",
+        primary_emotions=["warmth"], secondary_emotions=[], emotional_intensity=5,
+        themes=["family"], context=["home"], genres=["folk"], instruments=["piano"],
+        tempo="slow", energy="low", atmosphere="warm and reflective",
+        musical_description="Gentle music with a warm reflective character.",
+        cultural_context="A regional family gathering.",
+    )
+    assert analysis.cultural_context == ["A regional family gathering."]
+
+
 def test_refinement_updates_supported_emotional_direction():
     service = build_service()
     original = service.generate("I remember returning home after a difficult year.")

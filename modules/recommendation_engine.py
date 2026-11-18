@@ -5,6 +5,7 @@ Combines memory analysis, RAG retrieval, and music catalogue to generate recomme
 """
 
 import logging
+import math
 from typing import List, Dict, Any, Optional, Set
 
 from config.settings import get_settings
@@ -43,9 +44,20 @@ class RecommendationEngine:
         if not search_tags or not track_tags:
             return 0.0
         
-        # Normalize to lowercase for comparison
-        search_set = set([t.lower().strip() for t in search_tags if t])
-        track_set = set([t.lower().strip() for t in track_tags if t])
+        # Normalize external CSV/JSON values defensively; pandas may expose
+        # missing strings as float NaN values.
+        def clean(value: Any) -> str:
+            if value is None:
+                return ""
+            try:
+                if isinstance(value, float) and math.isnan(value):
+                    return ""
+            except (TypeError, ValueError):
+                pass
+            return str(value).lower().strip()
+
+        search_set = {clean(value) for value in search_tags if clean(value)}
+        track_set = {clean(value) for value in track_tags if clean(value)}
         
         if not search_set:
             return 0.0
@@ -122,12 +134,31 @@ class RecommendationEngine:
 
     @staticmethod
     def _audio_compatibility(track: Dict[str, Any], analysis: MemoryAnalysis) -> float:
-        """Match coarse tempo/energy fields without pretending missing audio data exists."""
+        """Match qualitative fields and verified numeric audio features."""
         values = []
-        if track.get('tempo'):
-            values.append(1.0 if str(track['tempo']).lower() == str(analysis.tempo).lower() else 0.0)
-        if track.get('energy'):
-            values.append(1.0 if str(track['energy']).lower() == str(analysis.energy).lower() else 0.0)
+        energy = track.get('energy')
+        if isinstance(energy, (int, float)):
+            target = {'very low': 0.15, 'low': 0.30, 'moderate': 0.55, 'high': 0.80}.get(str(analysis.energy).lower())
+            if target is not None:
+                values.append(max(0.0, 1.0 - abs(float(energy) - target)))
+        elif energy:
+            values.append(1.0 if str(energy).lower() == str(analysis.energy).lower() else 0.0)
+
+        tempo = track.get('tempo')
+        if isinstance(tempo, (int, float)):
+            target_tempo = {'slow': 70.0, 'moderate': 110.0, 'fast': 145.0}.get(str(analysis.tempo).lower())
+            if target_tempo is not None:
+                values.append(max(0.0, 1.0 - abs(float(tempo) - target_tempo) / 120.0))
+        elif tempo:
+            values.append(1.0 if str(tempo).lower() == str(analysis.tempo).lower() else 0.0)
+
+        valence = track.get('valence')
+        emotions = {str(value).lower() for value in analysis.primary_emotions + analysis.secondary_emotions}
+        if isinstance(valence, (int, float)) and emotions:
+            positive = {'happiness', 'happy', 'gratitude', 'grateful', 'joy', 'excitement', 'hopeful'}
+            negative = {'sadness', 'sad', 'grief', 'loneliness', 'anger'}
+            target_valence = 0.65 if emotions & positive else 0.35 if emotions & negative else 0.50
+            values.append(max(0.0, 1.0 - abs(float(valence) - target_valence)))
         return sum(values) / len(values) if values else 0.0
 
     def _rag_signal(self, track: Dict[str, Any], retrieved_context: List[Dict[str, Any]]) -> float:
@@ -150,6 +181,7 @@ class RecommendationEngine:
         retrieved_context: Optional[List[Dict[str, Any]]] = None,
         max_recommendations: Optional[int] = None,
         user_preferences: Optional[Dict[str, Any]] = None,
+        candidate_tracks: Optional[List[Dict[str, Any]]] = None,
     ) -> List[TrackRecommendation]:
         """Generate track recommendations.
         
@@ -168,7 +200,7 @@ class RecommendationEngine:
         # Get ALL tracks as candidates (don't filter upfront)
         # Filtering is too strict with sample catalogue
         # Instead, we'll score all tracks and pick the best ones
-        candidates = self.catalogue.tracks
+        candidates = candidate_tracks if candidate_tracks is not None else self.catalogue.tracks
         
         logger.info(f"Evaluating {len(candidates)} tracks from catalogue")
         

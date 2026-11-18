@@ -22,8 +22,11 @@ class MusicCatalogue:
         'track_id', 'track_name', 'artist', 'album', 'release_year', 'language',
         'country', 'region', 'genre_tags', 'subgenre_tags', 'mood_tags', 'themes',
         'instrument_tags', 'energy', 'tempo', 'danceability', 'acousticness',
-        'artwork_url', 'preview_url', 'listening_url', 'source', 'license',
-        'availability_status'
+        'instrumentalness', 'valence', 'arousal', 'artwork_url', 'preview_url',
+        'listening_url', 'source', 'license',
+        'availability_status', 'musicbrainz_recording_id', 'musicbrainz_artist_id',
+        'musicbrainz_release_id', 'musicbrainz_release_group_id', 'musicbrainz_area_id',
+        'musicbrainz_match_score'
     )
 
     def __init__(self):
@@ -45,7 +48,14 @@ class MusicCatalogue:
     def normalize_track(cls, raw: Dict[str, Any]) -> Dict[str, Any]:
         """Normalize common CSV/JSON field names without inventing metadata."""
         def first(*keys: str) -> Any:
-            return next((raw[key] for key in keys if raw.get(key) not in (None, '')), None)
+            for key in keys:
+                value = raw.get(key)
+                if value is None or value == "":
+                    continue
+                if isinstance(value, float) and pd.isna(value):
+                    continue
+                return value
+            return None
 
         track = {field: None for field in cls.REQUIRED_FIELDS}
         track.update({
@@ -66,12 +76,21 @@ class MusicCatalogue:
             'tempo': first('tempo', 'bpm'),
             'danceability': first('danceability'),
             'acousticness': first('acousticness'),
+            'instrumentalness': first('instrumentalness'),
+            'valence': first('valence', 'valence_mean'),
+            'arousal': first('arousal', 'arousal_mean'),
             'artwork_url': first('artwork_url', 'cover_url'),
             'preview_url': first('preview_url', 'audio_preview'),
             'listening_url': first('listening_url', 'external_url', 'url'),
             'source': first('source') or 'local catalogue',
             'license': first('license', 'licence'),
             'availability_status': first('availability_status') or 'metadata_only',
+            'musicbrainz_recording_id': first('musicbrainz_recording_id'),
+            'musicbrainz_artist_id': first('musicbrainz_artist_id'),
+            'musicbrainz_release_id': first('musicbrainz_release_id'),
+            'musicbrainz_release_group_id': first('musicbrainz_release_group_id'),
+            'musicbrainz_area_id': first('musicbrainz_area_id'),
+            'musicbrainz_match_score': first('musicbrainz_match_score'),
         })
         return track
 
@@ -98,30 +117,33 @@ class MusicCatalogue:
         workspace_root = Path(__file__).parent.parent
         metadata_dir = workspace_root / 'data' / 'music_metadata'
         
-        # Try to load from CSV/JSON files
-        csv_files = list(metadata_dir.glob('*.csv'))
-        json_files = list(metadata_dir.glob('*.json'))
-        
-        if csv_files:
-            logger.info(f"Loading catalogue from {csv_files[0]}")
+        # Load and merge every local CSV/JSON source. Multiple approved sources
+        # (for example MTG-Jamendo and FMA) must not silently replace each other.
+        csv_files = sorted(metadata_dir.glob('*.csv'))
+        json_files = sorted(metadata_dir.glob('*.json'))
+        raw_tracks: List[Dict[str, Any]] = []
+        for csv_file in csv_files:
             try:
-                self.catalogue_df = pd.read_csv(csv_files[0])
-                self._process_catalogue()
-                return
-            except Exception as e:
-                logger.warning(f"Failed to load CSV: {e}")
-        
-        if json_files:
-            logger.info(f"Loading catalogue from {json_files[0]}")
+                logger.info(f"Loading catalogue from {csv_file.name}")
+                raw_tracks.extend(pd.read_csv(csv_file).to_dict('records'))
+            except Exception as exc:
+                logger.warning(f"Failed to load CSV {csv_file}: {exc}")
+        for json_file in json_files:
             try:
-                with open(json_files[0], 'r', encoding='utf-8') as f:
-                    raw_tracks = json.load(f)
-                self.tracks = self.deduplicate_tracks(raw_tracks if isinstance(raw_tracks, list) else [])
-                logger.info(f"Loaded {len(self.tracks)} normalized tracks from JSON")
-                return
-            except Exception as e:
-                logger.warning(f"Failed to load JSON: {e}")
-        
+                logger.info(f"Loading catalogue from {json_file.name}")
+                with json_file.open('r', encoding='utf-8') as handle:
+                    payload = json.load(handle)
+                if isinstance(payload, list):
+                    raw_tracks.extend(payload)
+                else:
+                    logger.warning("Ignoring JSON %s because it is not an array", json_file)
+            except Exception as exc:
+                logger.warning(f"Failed to load JSON {json_file}: {exc}")
+        if raw_tracks:
+            self.tracks = self.deduplicate_tracks(raw_tracks)
+            logger.info(f"Loaded {len(self.tracks)} normalized tracks from {len(csv_files) + len(json_files)} source files")
+            return
+
         # Create sample catalogue
         logger.warning("No catalogue files found, creating sample data")
         self._create_sample_catalogue()
