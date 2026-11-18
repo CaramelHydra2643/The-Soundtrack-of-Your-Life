@@ -39,7 +39,8 @@
 - [x] Expose that service through FastAPI request/response schemas.
 - [x] Add a Vite/React client using the same contracts; keep Streamlit available as a local fallback during migration.
 - [x] Add browser smoke coverage for the React shell and microphone controls.
-- [ ] Add full API-backed browser integration tests and wire microphone capture to speech in a running environment.
+- [ ] Add full API-backed browser integration tests in a running environment.
+- [x] Add canonical React Text/Voice composer with live browser recognition and single textarea state.
 
 ## Phase 4 — data expansion
 
@@ -53,8 +54,10 @@
 - [ ] Add verified DEAM joins where an explicit cross-dataset identity exists.
 - [x] Import DEAM valence/arousal annotations and retain openSMILE features for calibration.
 - [ ] Add audio-feature extraction/mapping into track ranking.
-- [ ] Add multilingual catalogue normalization and optional local speech recognition.
-- [ ] Add batch ingestion diagnostics, deduplication reports, and retrieval evaluation fixtures.
+- [x] Add multilingual speech-language selection and optional local speech fallback.
+- [ ] Add multilingual catalogue normalization and batch ingestion diagnostics.
+- [x] Add latency instrumentation and CPU fast-path settings.
+- [ ] Add retrieval evaluation fixtures.
 
 ## Quality gates per phase
 

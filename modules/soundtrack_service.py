@@ -2,6 +2,7 @@
 
 import inspect
 import logging
+import time
 from typing import Optional
 
 from config.settings import get_settings
@@ -54,14 +55,18 @@ class SoundtrackService:
                 f"Memory must be no longer than {self.settings.max_memory_length} characters."
             )
 
+        started_at = time.perf_counter()
         analysis = self.analyzer.analyze_memory(normalized)
+        logger.info("soundtrack_stage=analysis duration_ms=%.1f", (time.perf_counter() - started_at) * 1000)
         if analysis is None:
             raise RuntimeError("Memory analysis failed. Check the local Ollama model and try again.")
 
+        retrieval_started_at = time.perf_counter()
         retrieved = []
         if self.rag_engine.is_knowledge_base_ready():
             query = self.analyzer.create_retrieval_query(analysis)
             retrieved = self.rag_engine.retrieve(query)
+        logger.info("soundtrack_stage=knowledge_retrieval duration_ms=%.1f", (time.perf_counter() - retrieval_started_at) * 1000)
 
         get_preferences = getattr(self.vault, "get_preferences", lambda: {})
         get_feedback = getattr(self.vault, "get_feedback", lambda: [])
@@ -84,9 +89,11 @@ class SoundtrackService:
             recommender_kwargs["user_preferences"] = preferences
         if "candidate_tracks" in recommender_params:
             recommender_kwargs["candidate_tracks"] = candidate_tracks
+        ranking_started_at = time.perf_counter()
         recommendations = self.recommender.generate_recommendations(
             analysis, retrieved, **recommender_kwargs
         )
+        logger.info("soundtrack_stage=ranking duration_ms=%.1f", (time.perf_counter() - ranking_started_at) * 1000)
         if not recommendations:
             raise RuntimeError("No catalogue tracks matched this memory.")
 

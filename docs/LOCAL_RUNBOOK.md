@@ -234,6 +234,8 @@ Copy `.env.example` to `.env` and adjust values when needed:
 ```ini
 OLLAMA_BASE_URL=http://localhost:11434
 OLLAMA_MODEL=qwen2.5:3b
+LLM_MAX_TOKENS=1000
+ENABLE_LLM_EXPLANATIONS=false
 EMBEDDING_DEVICE=cpu
 RETRIEVAL_TOP_K=5
 MAX_RECOMMENDATIONS=5

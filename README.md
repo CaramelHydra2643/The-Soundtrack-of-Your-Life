@@ -41,7 +41,7 @@ This project demonstrates practical implementation of:
 - **Structured LLM Outputs** (Pydantic)
 - **Full-Stack Development** (React/Vite + FastAPI, with Streamlit fallback)
 
-> **Current setup:** Use [`docs/LOCAL_RUNBOOK.md`](docs/LOCAL_RUNBOOK.md) for the accurate Windows installation, dependency setup, Ollama configuration, FastAPI startup, React startup, Streamlit fallback, optional speech transcription, testing, and troubleshooting instructions.
+> **Current setup:** Use [`docs/LOCAL_RUNBOOK.md`](docs/LOCAL_RUNBOOK.md) for the accurate Windows installation, dependency setup, Ollama configuration, FastAPI startup, React startup, Streamlit fallback, live browser voice input, optional local Whisper fallback, testing, and troubleshooting instructions. See [`PERFORMANCE.md`](PERFORMANCE.md) for the CPU latency fast path.
 
 ---
 

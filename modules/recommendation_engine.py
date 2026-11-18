@@ -218,27 +218,33 @@ class RecommendationEngine:
         scored_tracks.sort(key=lambda item: item['score'], reverse=True)
         logger.info(f"Scored {len(scored_tracks)} tracks")
 
-        # Greedy diversity reranking: prefer a new artist, then a new genre, when
-        # the candidate remains close to the best available score.
+        # MMR-style diversity reranking. Relevance remains primary, while the
+        # user's diversity preference controls similarity penalty strength.
         top_tracks = []
-        seen_artists: Set[str] = set()
-        seen_genres: Set[str] = set()
         remaining = list(scored_tracks)
+        diversity = float((user_preferences or {}).get('diversity', 0.5))
+        lambda_relevance = min(max(1.0 - diversity, 0.35), 0.95)
+
+        def similarity(left: Dict[str, Any], right: Dict[str, Any]) -> float:
+            left_artist = str(left.get('artist') or '').strip().lower()
+            right_artist = str(right.get('artist') or '').strip().lower()
+            artist_similarity = 1.0 if left_artist and left_artist == right_artist else 0.0
+            left_genres = set(left.get('genre_tags') or [])
+            right_genres = set(right.get('genre_tags') or [])
+            genre_union = left_genres | right_genres
+            genre_similarity = len(left_genres & right_genres) / len(genre_union) if genre_union else 0.0
+            return 0.65 * artist_similarity + 0.35 * genre_similarity
+
         while remaining and len(top_tracks) < max_recommendations:
-            best_index = 0
-            for index, item in enumerate(remaining):
-                track = item['track']
-                artist = str(track.get('artist') or '').lower()
-                genres = set(track.get('genre_tags') or [])
-                penalty = (0.08 if artist in seen_artists else 0.0) + (0.03 if genres & seen_genres else 0.0)
-                adjusted = item['score'] - penalty
-                best_adjusted = remaining[best_index]['score']
-                if adjusted > best_adjusted - 0.08:
-                    best_index = index
-            chosen = remaining.pop(best_index)
-            top_tracks.append(chosen)
-            seen_artists.add(str(chosen['track'].get('artist') or '').lower())
-            seen_genres.update(chosen['track'].get('genre_tags') or [])
+            best_index = max(
+                range(len(remaining)),
+                key=lambda index: lambda_relevance * remaining[index]['score']
+                - (1.0 - lambda_relevance) * max(
+                    (similarity(remaining[index]['track'], selected['track']) for selected in top_tracks),
+                    default=0.0,
+                ),
+            )
+            top_tracks.append(remaining.pop(best_index))
         
         # Convert to TrackRecommendation objects
         recommendations = []

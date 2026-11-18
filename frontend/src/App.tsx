@@ -1,5 +1,24 @@
 import { FormEvent, useEffect, useRef, useState } from "react";
 
+type SpeechResultEvent = Event & {
+  resultIndex: number;
+  results: ArrayLike<{
+    isFinal: boolean;
+    0: { transcript: string };
+  }>;
+};
+
+type SpeechRecognitionLike = {
+  continuous: boolean;
+  interimResults: boolean;
+  lang: string;
+  onend: (() => void) | null;
+  onerror: ((event: Event) => void) | null;
+  onresult: ((event: SpeechResultEvent) => void) | null;
+  start: () => void;
+  stop: () => void;
+};
+
 type Track = {
   track_id: string;
   track_name: string;
@@ -111,6 +130,8 @@ async function loadPreferences(): Promise<Preferences> {
 
 export default function App() {
   const [memory, setMemory] = useState("");
+  const [inputMode, setInputMode] = useState<"text" | "voice">("text");
+  const [speechLanguage, setSpeechLanguage] = useState("en-IN");
   const [soundtrack, setSoundtrack] = useState<Soundtrack | null>(null);
   const [savedMemoryId, setSavedMemoryId] = useState<number | null>(null);
   const [saving, setSaving] = useState(false);
@@ -128,13 +149,65 @@ export default function App() {
   const [audioBlob, setAudioBlob] = useState<Blob | null>(null);
   const [voiceError, setVoiceError] = useState("");
   const recorderRef = useRef<MediaRecorder | null>(null);
+  const recognitionRef = useRef<SpeechRecognitionLike | null>(null);
+  const committedSpeechRef = useRef("");
+  const interimSpeechRef = useRef("");
+  const restartRecognitionRef = useRef(false);
   const chunksRef = useRef<Blob[]>([]);
 
   useEffect(() => () => {
+    restartRecognitionRef.current = false;
+    recognitionRef.current?.stop();
     recorderRef.current?.stream.getTracks().forEach((track) => track.stop());
   }, []);
 
   const startRecording = async () => {
+    setVoiceError("");
+    const recognitionConstructor = (window as Window & {
+      SpeechRecognition?: new () => SpeechRecognitionLike;
+      webkitSpeechRecognition?: new () => SpeechRecognitionLike;
+    }).SpeechRecognition ?? (window as Window & {
+      webkitSpeechRecognition?: new () => SpeechRecognitionLike;
+    }).webkitSpeechRecognition;
+
+    if (recognitionConstructor) {
+      const recognition = new recognitionConstructor();
+      const existingText = memory.trim();
+      committedSpeechRef.current = "";
+      interimSpeechRef.current = "";
+      restartRecognitionRef.current = true;
+      recognition.continuous = true;
+      recognition.interimResults = true;
+      recognition.lang = speechLanguage;
+      recognition.onresult = (event) => {
+        let finalText = committedSpeechRef.current;
+        let interimText = "";
+        for (let index = event.resultIndex; index < event.results.length; index += 1) {
+          const transcript = event.results[index][0]?.transcript ?? "";
+          if (event.results[index].isFinal) finalText = `${finalText} ${transcript}`.trim();
+          else interimText += transcript;
+        }
+        committedSpeechRef.current = finalText;
+        interimSpeechRef.current = interimText;
+        const combined = [existingText, finalText, interimText].filter(Boolean).join(" ");
+        setMemory(combined.slice(0, 5000));
+      };
+      recognition.onerror = () => {
+        restartRecognitionRef.current = false;
+        setRecording(false);
+        setVoiceError("Browser speech recognition could not continue. You can type instead.");
+      };
+      recognition.onend = () => {
+        if (restartRecognitionRef.current) {
+          try { recognition.start(); } catch { setRecording(false); }
+        }
+      };
+      recognitionRef.current = recognition;
+      recognition.start();
+      setRecording(true);
+      return;
+    }
+
     setVoiceError("");
     if (!navigator.mediaDevices?.getUserMedia) {
       setVoiceError("Microphone capture is not supported in this browser.");
@@ -160,7 +233,12 @@ export default function App() {
   };
 
   const stopRecording = () => {
-    recorderRef.current?.stop();
+    restartRecognitionRef.current = false;
+    if (recognitionRef.current) {
+      recognitionRef.current.stop();
+      recognitionRef.current = null;
+    }
+    if (recorderRef.current?.state === "recording") recorderRef.current.stop();
     setRecording(false);
   };
 
@@ -312,13 +390,19 @@ export default function App() {
           <div><h2 id="composer-title">Begin with a memory</h2><p>There is no right length or perfect way to tell it.</p></div>
         </div>
         <form onSubmit={submit}>
+          <div className="input-mode" role="group" aria-label="Memory input mode">
+            <button type="button" className={inputMode === "text" ? "active" : ""} onClick={() => { stopRecording(); setInputMode("text"); }}>Type</button>
+            <button type="button" className={inputMode === "voice" ? "active" : ""} onClick={() => setInputMode("voice")}>Voice</button>
+            {inputMode === "voice" && <label className="speech-language">Speech language<select value={speechLanguage} onChange={(event) => setSpeechLanguage(event.target.value)}><option value="en-IN">English (India)</option><option value="te-IN">Telugu</option><option value="hi-IN">Hindi</option><option value="ta-IN">Tamil</option><option value="kn-IN">Kannada</option><option value="ml-IN">Malayalam</option></select></label>}
+          </div>
           <label className="sr-only" htmlFor="memory">Your memory</label>
           <div className="voice-tools" aria-live="polite">
             <button className={`voice-button ${recording ? "recording" : ""}`} type="button" onClick={recording ? stopRecording : startRecording}>
               <span className="voice-dot" aria-hidden="true" /> {recording ? "Stop recording" : "Record a memory"}
             </button>
-            {audioBlob && <button className="transcribe-button" type="button" onClick={() => void transcribeRecording()}>Transcribe recording</button>}
-            {recording && <span className="recording-status">Recording — your voice is not transcribed live</span>}
+            {audioBlob && <button className="transcribe-button" type="button" onClick={() => void transcribeRecording()}>Use fallback transcription</button>}
+            {recording && <span className="recording-status">Listening live — words appear in the same memory box</span>}
+            {inputMode === "voice" && <span className="privacy-note">Browser speech recognition may use your browser provider; use Type for fully local text processing.</span>}
           </div>
           {voiceError && <p className="error" role="alert">{voiceError}</p>}
           <textarea id="memory" value={memory} onChange={(event) => setMemory(event.target.value)} placeholder="I remember..." maxLength={5000} />
