@@ -89,6 +89,18 @@ class RecommendationEngine:
         disliked = {str(value).lower() for value in preferences.get('disliked_genres', [])}
         if disliked.intersection(str(value).lower() for value in track_genres):
             return 0.0
+        requested_language = getattr(analysis, 'requested_music_language', None)
+        if requested_language:
+            language_aliases = {
+                "english": {"english", "en", "en-in"}, "telugu": {"telugu", "te", "te-in"},
+                "hindi": {"hindi", "hi", "hi-in"}, "tamil": {"tamil", "ta", "ta-in"},
+                "kannada": {"kannada", "kn", "kn-in"}, "malayalam": {"malayalam", "ml", "ml-in"},
+                "bengali": {"bengali", "bn", "bn-in"}, "punjabi": {"punjabi", "pa", "pa-in"},
+            }
+            requested_values = language_aliases.get(str(requested_language).strip().lower(), {str(requested_language).strip().lower()})
+            track_language = str(track.get('language') or '').strip().lower()
+            if track_language not in requested_values:
+                return 0.0
         preferred_genres = preferences.get('preferred_genres', [])
         preferred_languages = preferences.get('preferred_languages', [])
         feedback = preferences.get('feedback', [])

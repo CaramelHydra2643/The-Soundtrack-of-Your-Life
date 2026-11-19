@@ -8,7 +8,7 @@ from functools import lru_cache
 from pydantic import BaseModel, Field
 
 try:
-    from fastapi import FastAPI, File, HTTPException, UploadFile
+    from fastapi import FastAPI, File, HTTPException, Query, UploadFile
     from fastapi.middleware.cors import CORSMiddleware
 except ImportError as exc:  # pragma: no cover - gives a useful setup error
     raise RuntimeError(
@@ -187,9 +187,17 @@ def delete_all_data() -> dict[str, bool]:
 
 
 @app.get("/api/memories")
-def list_memories() -> list[dict]:
-    """Return saved local memories for the single-user local mode."""
-    return get_vault().get_all_memories()
+def list_memories(
+    search: str | None = Query(default=None, max_length=120),
+    emotion: str | None = Query(default=None, max_length=80),
+) -> list[dict]:
+    """Return saved memories with optional keyword or emotion filters."""
+    vault = get_vault()
+    memories = vault.search_memories(search.strip()) if search and search.strip() else vault.get_all_memories()
+    if emotion and emotion.strip():
+        needle = emotion.strip().lower()
+        memories = [memory for memory in memories if any(needle in value.lower() for value in memory.get("emotions", []))]
+    return memories
 
 
 @app.delete("/api/memories/{memory_id}", response_model=dict[str, bool])

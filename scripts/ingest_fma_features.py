@@ -27,7 +27,7 @@ def import_features(path: Path, output: Path) -> dict[str, int]:
     }
     records = []
     for track_id, row in frame.iterrows():
-        record = {"track_id": f"fma_{int(track_id):06d}", "feature_source": "FMA Echo Nest"}
+        record = {"track_id": f"fma_{int(track_id):06d}", "source": "Free Music Archive", "feature_source": "FMA Echo Nest"}
         for name, column in selected.items():
             record[name] = clean(row.get(column))
         if any(record[name] is not None for name in selected):

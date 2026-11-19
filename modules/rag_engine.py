@@ -172,6 +172,30 @@ class RAGEngine:
             logger.error(f"Retrieval failed: {e}")
             return []
 
+    def retrieve_multi(
+        self,
+        queries: List[str],
+        top_k: Optional[int] = None,
+        per_query_k: Optional[int] = None,
+    ) -> List[Dict[str, Any]]:
+        """Retrieve and fuse a small set of targeted semantic queries."""
+        unique_queries = list(dict.fromkeys(query.strip() for query in queries if query and query.strip()))
+        if not unique_queries:
+            return []
+        per_query_k = per_query_k or self.settings.retrieval_top_k
+        fused: Dict[str, Dict[str, Any]] = {}
+        for query in unique_queries:
+            for rank, document in enumerate(self.retrieve(query, top_k=per_query_k)):
+                key = str(document.get("id"))
+                contribution = float(document.get("relevance_score") or 0.0) + 0.5 / (rank + 1)
+                if key not in fused:
+                    fused[key] = dict(document)
+                    fused[key]["relevance_score"] = contribution
+                else:
+                    fused[key]["relevance_score"] = max(float(fused[key]["relevance_score"]), contribution)
+        results = sorted(fused.values(), key=lambda item: item["relevance_score"], reverse=True)
+        return results[: (top_k or self.settings.retrieval_top_k)]
+
     def retrieve_by_category(
         self,
         query: str,

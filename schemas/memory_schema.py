@@ -113,6 +113,7 @@ class MemoryAnalysis(BaseModel):
         description="Detailed description of suitable musical characteristics"
     )
     language: Optional[str] = Field(default=None, max_length=80)
+    requested_music_language: Optional[str] = Field(default=None, max_length=80)
     cultural_context: List[str] = Field(default_factory=list, max_length=10)
 
     # =========================================================================
