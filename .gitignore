@@ -104,3 +104,6 @@ test-results/
 .huggingface/
 .cache/huggingface/
 .cache/torch/
+
+# IDE/agent-local state
+.slingshot/
