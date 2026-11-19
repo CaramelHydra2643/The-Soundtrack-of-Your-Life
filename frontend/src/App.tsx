@@ -23,23 +23,23 @@ type Track = {
   track_id: string;
   track_name: string;
   artist: string;
-  album?: string | null;
-  language?: string | null;
+  album: string | null;
+  language: string | null;
   genre_tags: string[];
   mood_tags: string[];
   relevance_score: number;
   explanation: string;
-  listening_url?: string | null;
-  preview_url?: string | null;
+  listening_url: string | null;
+  preview_urlx: string | null;
   availability_status: string;
-  metadata_enrichment?: {
-    artwork_url?: string | null;
-    itunes_preview_url?: string | null;
-    itunes_store_url?: string | null;
-    spotify_track_url?: string | null;
-    spotify_embed_url?: string | null;
-    metadata_provider?: string;
-    confidence?: number;
+  metadata_enrichment: {
+    artwork_url: string | null;
+    itunes_preview_url: string | null;
+    itunes_store_url: string | null;
+    spotify_track_url: string | null;
+    spotify_embed_url: string | null;
+    metadata_provider: string;
+    confidence: number;
   };
 };
 
@@ -50,7 +50,7 @@ type Memory = {
   story: string;
   emotions: string[];
   themes: string[];
-  recommendations: Array<{ track_name: string; artist: string }>;
+  recommendations: Array<Track>;
   created_at: string;
 };
 
@@ -69,8 +69,8 @@ type Soundtrack = {
     primary_emotions: string[];
     secondary_emotions: string[];
     themes: string[];
-    emotional_intensity?: number;
-    language?: string | null;
+    emotional_intensity: number;
+    language: string | null;
     atmosphere: string;
   };
   recommendations: Track[];
@@ -89,6 +89,24 @@ function chapterName(index: number, total: number): string | null {
   const chapterIndex = Math.min(chapters.length - 1, Math.floor((index * chapters.length) / total));
   const starts = [0, Math.ceil(total / 3), Math.ceil((total * 2) / 3)];
   return starts.includes(index) ? chapters[chapterIndex] : null;
+}
+
+function cleanDisplayText(value: string): string {
+  return value.replace(/\u6e29\u99a8/g, "warm").replace(/\u00e2\u20ac\u2122/g, "'").replace(/\u00c2\u00b7/g, " - ");
+}
+
+function InfoTip({ text }: { text: string }) {
+  return <details className="info-tip"><summary aria-label="More information">i</summary><span>{text}</span></details>;
+}
+
+function TagInput({ label, values, placeholder, onChange }: { label: string; values: string[]; placeholder: string; onChange: (values: string[]) => void }) {
+  const [draft, setDraft] = useState("");
+  const add = () => {
+    const value = draft.trim();
+    if (value && !values.some((item) => item.toLowerCase() === value.toLowerCase())) onChange([...values, value]);
+    setDraft("");
+  };
+  return <label className="tag-input-label">{label}<div className="tag-input-box">{values.map((value) => <span className="input-chip" key={value}>{value}<button type="button" onClick={() => onChange(values.filter((item) => item !== value))} aria-label={`Remove ${value}`}>x</button></span>)}<input value={draft} onChange={(event) => setDraft(event.target.value)} onKeyDown={(event) => { if (event.key === "Enter" || event.key === ",") { event.preventDefault(); add(); } }} onBlur={add} placeholder={values.length ? "Add another" : placeholder} /></div></label>;
 }
 
 async function createSoundtrack(memory: string): Promise<Soundtrack> {
@@ -173,7 +191,7 @@ async function loadMemories(search = "", emotion = ""): Promise<Memory[]> {
   const params = new URLSearchParams();
   if (search.trim()) params.set("search", search.trim());
   if (emotion.trim()) params.set("emotion", emotion.trim());
-  const response = await fetch(`/api/memories${params.toString() ? `?${params.toString()}` : ""}`);
+  const response = await fetch(`/api/memories${params.toString() ? `x${params.toString()}` : ""}`);
   if (!response.ok) throw new Error("Saved memories could not be loaded.");
   return response.json() as Promise<Memory[]>;
 }
@@ -195,9 +213,11 @@ export default function App() {
   const [refining, setRefining] = useState(false);
   const [view, setView] = useState<"create" | "vault" | "preferences">("create");
   const [memories, setMemories] = useState<Memory[]>([]);
+  const [expandedMemoryId, setExpandedMemoryId] = useState<number | null>(null);
   const [vaultSearch, setVaultSearch] = useState("");
   const [vaultEmotion, setVaultEmotion] = useState("");
   const [preferences, setPreferences] = useState<Preferences | null>(null);
+  const [preferenceSaved, setPreferenceSaved] = useState(false);
   const [pageLoading, setPageLoading] = useState(false);
   const [pageError, setPageError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -221,12 +241,11 @@ export default function App() {
 
   const startRecording = async () => {
     setVoiceError("");
-    const recognitionConstructor = (window as Window & {
+    const browserWindow = window as unknown as {
       SpeechRecognition?: new () => SpeechRecognitionLike;
       webkitSpeechRecognition?: new () => SpeechRecognitionLike;
-    }).SpeechRecognition ?? (window as Window & {
-      webkitSpeechRecognition?: new () => SpeechRecognitionLike;
-    }).webkitSpeechRecognition;
+    };
+    const recognitionConstructor = browserWindow.SpeechRecognition ?? browserWindow.webkitSpeechRecognition;
 
     if (recognitionConstructor) {
       const recognition = new recognitionConstructor();
@@ -267,7 +286,7 @@ export default function App() {
     }
 
     setVoiceError("");
-    if (!navigator.mediaDevices?.getUserMedia) {
+    if (!navigator.mediaDevices.getUserMedia) {
       setVoiceError("Microphone capture is not supported in this browser.");
       return;
     }
@@ -296,7 +315,8 @@ export default function App() {
       recognitionRef.current.stop();
       recognitionRef.current = null;
     }
-    if (recorderRef.current?.state === "recording") recorderRef.current.stop();
+    const recorder = recorderRef.current;
+    if (recorder?.state === "recording") recorder.stop();
     setRecording(false);
   };
 
@@ -347,6 +367,7 @@ export default function App() {
     if (!preferences) return;
     setPageLoading(true);
     setPageError("");
+    setPreferenceSaved(false);
     try {
       const response = await fetch("/api/preferences", {
         method: "PUT",
@@ -354,6 +375,7 @@ export default function App() {
         body: JSON.stringify(preferences),
       });
       if (!response.ok) throw new Error("Preferences could not be saved.");
+      setPreferenceSaved(true);
     } catch (requestError) {
       setPageError(requestError instanceof Error ? requestError.message : "Preferences could not be saved.");
     } finally {
@@ -392,6 +414,7 @@ export default function App() {
       setError("Write at least a sentence so the feeling has room to emerge.");
       return;
     }
+    if (recording) stopRecording();
     setLoading(true);
     setError("");
     try {
@@ -441,7 +464,7 @@ export default function App() {
     <main className="shell">
       <nav className="nav" aria-label="Main navigation">
         <button className="brand brand-button" type="button" onClick={() => setView("create")} aria-label="Create a soundtrack">
-          <span className="brand-mark">◒</span>
+          <span className="brand-mark"></span>
           <span>The Soundtrack<br /><em>of Your Life</em></span>
         </button>
         <div className="nav-actions">
@@ -449,15 +472,15 @@ export default function App() {
           <button type="button" className={view === "vault" ? "active" : ""} onClick={() => void openVault()}>Memory vault</button>
           <button type="button" className={view === "preferences" ? "active" : ""} onClick={() => void openPreferences()}>Preferences</button>
         </div>
-        <span className="nav-note">Local-first · private by design</span>
+        <span className="nav-note">Local-first  -  private by design</span>
       </nav>
 
       {view === "create" ? <>
       <section className="hero" aria-labelledby="hero-title">
         <div className="hero-copy">
           <p className="eyebrow">A musical memory studio</p>
-          <h1 id="hero-title">Your life has a soundtrack.<br /><i>Let’s find it.</i></h1>
-          <p className="hero-lede">Describe a moment that stayed with you. We’ll listen for the feeling beneath the words and shape it into a thoughtful, personal soundtrack.</p>
+          <h1 id="hero-title">Your life has a soundtrack.<br /><i>Let's find it.</i></h1>
+          <p className="hero-lede">Describe a moment that stayed with you. We'll listen for the feeling beneath the words and shape it into a thoughtful, personal soundtrack.</p>
         </div>
         <div className="orbit" aria-hidden="true"><span>memory</span><span>feeling</span><span>sound</span></div>
       </section>
@@ -479,14 +502,14 @@ export default function App() {
               <span className="voice-dot" aria-hidden="true" /> {recording ? "Stop recording" : "Record a memory"}
             </button>
             {audioBlob && <button className="transcribe-button" type="button" onClick={() => void transcribeRecording()}>Use fallback transcription</button>}
-            {recording && <span className="recording-status">Listening live — words appear in the same memory box</span>}
+            {recording && <span className="recording-status">Listening live - words appear in the same memory box</span>}
             {inputMode === "voice" && <span className="privacy-note">Browser speech recognition may use your browser provider; use Type for fully local text processing.</span>}
           </div>
           {voiceError && <p className="error" role="alert">{voiceError}</p>}
           <textarea id="memory" value={memory} onChange={(event) => setMemory(event.target.value)} placeholder="I remember..." maxLength={5000} />
           <div className="composer-footer">
             <span className="character-count">{memory.length.toLocaleString()} / 5,000</span>
-            <button className="primary-button" type="submit" disabled={loading}>{loading ? "Listening..." : "Create my soundtrack ↗"}</button>
+            <button className="primary-button" type="submit" disabled={loading}>{loading ? "Listening..." : "Create my soundtrack"}</button>
           </div>
         </form>
         {error && <p className="error" role="alert">{error}</p>}
@@ -499,40 +522,42 @@ export default function App() {
           <h2 id="results-title">{soundtrack.memory_analysis.memory_title}</h2>
           <p>{soundtrack.overall_explanation}</p>
           <div className="tags">{[...soundtrack.memory_analysis.primary_emotions, ...soundtrack.memory_analysis.themes].slice(0, 6).map((tag) => <span key={tag}>{tag}</span>)}</div>
-          <div className="emotion-profile"><span>Emotional intensity</span><div className="emotion-bar"><span style={{ width: `${Math.min(Math.max((soundtrack.memory_analysis.emotional_intensity ?? 5) * 10, 0), 100)}%` }} /></div><strong>{soundtrack.memory_analysis.emotional_intensity ?? "—"}/10</strong></div>
+          <div className="emotion-profile"><span>Emotional intensity <InfoTip text="This is an AI-derived recommendation signal showing how strongly the memory expresses emotion. It is not a psychological diagnosis or clinically validated measurement." /></span><div className="emotion-bar"><span style={{ width: `${Math.min(Math.max((soundtrack.memory_analysis.emotional_intensity ?? 5) * 10, 0), 100)}%` }} /></div><strong>{soundtrack.memory_analysis.emotional_intensity ?? "-"}/10</strong></div>
           <div className="chapter-list"><span>Soundtrack chapters</span><b>The feeling</b><b>The texture</b><b>The afterglow</b></div>
-          <div className="results-actions"><button className="primary-button" type="button" onClick={() => void saveCurrentSoundtrack()} disabled={saving || savedMemoryId !== null}>{savedMemoryId ? `Saved to Memory Vault (#${savedMemoryId})` : saving ? "Saving…" : "Save to Memory Vault"}</button></div>
-          <form className="refinement-form" onSubmit={(event) => void submitRefinement(event)}><label className="sr-only" htmlFor="refinement">Refine this soundtrack</label><input id="refinement" value={refinement} onChange={(event) => setRefinement(event.target.value)} placeholder="Make it more nostalgic, peaceful, energetic, or Telugu…" maxLength={300} /><button type="submit" disabled={refining || !refinement.trim()}>{refining ? "Refining…" : "Refine ↗"}</button></form>
+          <div className="results-actions"><button className="primary-button" type="button" onClick={() => void saveCurrentSoundtrack()} disabled={saving || savedMemoryId !== null}>{savedMemoryId ? `Saved to Memory Vault (#${savedMemoryId})` : saving ? "Saving..." : "Save to Memory Vault"}</button></div>
+          <form className="refinement-form" onSubmit={(event) => void submitRefinement(event)}><label className="sr-only" htmlFor="refinement">Refine this soundtrack</label><input id="refinement" value={refinement} onChange={(event) => setRefinement(event.target.value)} placeholder="Make it more nostalgic, peaceful, energetic, or Telugu..." maxLength={300} /><InfoTip text="Refinement adjusts this soundtrack without changing your original memory. Try nostalgic, peaceful, energetic, or a specific language." /><button type="submit" disabled={refining || !refinement.trim()}>{refining ? "Refining..." : "Refine"}</button></form>
           {error && <p className="error" role="alert">{error}</p>}
         </div>
         <div className="track-list">
           {soundtrack.recommendations.map((track, index) => <span key={track.track_id} className="track-with-chapter">{chapterName(index, soundtrack.recommendations.length) && <h3 className="chapter-heading">{chapterName(index, soundtrack.recommendations.length)}</h3>}<article className="track">
             <div className="track-number">{String(index + 1).padStart(2, "0")}</div>
-            <div className="track-info"><div className="track-media">{track.metadata_enrichment?.artwork_url ? <img src={track.metadata_enrichment.artwork_url} alt={`${track.track_name} artwork`} loading="lazy" /> : <div className="artwork-placeholder" aria-label="Artwork unavailable">♪</div>}<div><h3>{track.track_name}</h3><p>{track.artist}{track.album ? ` · ${track.album}` : ""}</p></div></div><div className="track-meta">{track.language ?? "Language unavailable"} · {track.genre_tags.slice(0, 2).join(" · ")}</div><p className="reason">{track.explanation}</p></div>
-            <div className="track-actions"><span className="score">{Math.round(track.relevance_score * 100)}%</span>{track.metadata_enrichment?.itunes_preview_url && <audio controls preload="none" src={track.metadata_enrichment.itunes_preview_url} aria-label={`Preview ${track.track_name}`} />}{track.metadata_enrichment?.spotify_embed_url && <iframe className="spotify-embed" src={track.metadata_enrichment.spotify_embed_url} title={`Spotify player for ${track.track_name}`} loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" />}{track.metadata_enrichment?.spotify_track_url && <a href={track.metadata_enrichment.spotify_track_url} target="_blank" rel="noreferrer">Play on Spotify ↗</a>}{track.metadata_enrichment?.itunes_store_url && <a href={track.metadata_enrichment.itunes_store_url} target="_blank" rel="noreferrer">Open in Apple Music ↗</a>}{track.listening_url ? <a href={track.listening_url} target="_blank" rel="noreferrer">Listen ↗</a> : !track.metadata_enrichment?.spotify_track_url && !track.metadata_enrichment?.itunes_store_url && <span className="muted">Metadata only</span>}<div className="feedback" aria-label={`Feedback for ${track.track_name}`}>{["like", "dislike", "save"].map((type) => <button className={feedback[track.track_id] === type ? "selected" : ""} key={type} type="button" onClick={() => { void sendFeedback(track.track_id, type); setFeedback({ ...feedback, [track.track_id]: type }); }}>{type}</button>)}</div></div>
+            <div className="track-info"><div className="track-media">{track.metadata_enrichment?.artwork_url ? <img src={track.metadata_enrichment.artwork_url} alt={`${track.track_name} artwork`} loading="lazy" /> : <div className="artwork-placeholder" aria-label="Artwork unavailable"></div>}<div><h3>{track.track_name}</h3><p>{track.artist}{track.album ? `  -  ${track.album}` : ""}</p></div></div><div className="track-meta">{track.language ?? "Language unavailable"}  -  {track.genre_tags.slice(0, 2).join("  -  ")}</div><p className="reason">{cleanDisplayText(track.explanation)}</p></div>
+            <div className="track-actions"><span className="score">{Math.round(track.relevance_score * 100)}%</span>{track.metadata_enrichment?.itunes_preview_url && <audio controls preload="none" src={track.metadata_enrichment.itunes_preview_url} aria-label={`Preview ${track.track_name}`} />}{track.metadata_enrichment?.spotify_embed_url && <iframe className="spotify-embed" src={track.metadata_enrichment.spotify_embed_url} title={`Spotify player for ${track.track_name}`} loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" />}{track.metadata_enrichment?.spotify_track_url && <a href={track.metadata_enrichment.spotify_track_url} target="_blank" rel="noreferrer">Play on Spotify</a>}{track.metadata_enrichment?.itunes_store_url && <a href={track.metadata_enrichment.itunes_store_url} target="_blank" rel="noreferrer">Open in Apple Music</a>}{track.listening_url ? <a href={track.listening_url} target="_blank" rel="noreferrer">Listen</a> : !track.metadata_enrichment?.spotify_track_url && !track.metadata_enrichment?.itunes_store_url && <span className="muted">Metadata only</span>}<div className="feedback" aria-label={`Feedback for ${track.track_name}`}>{["like", "dislike", "save"].map((type) => <button className={feedback[track.track_id] === type ? "selected" : ""} key={type} type="button" onClick={() => { void sendFeedback(track.track_id, type); setFeedback({ ...feedback, [track.track_id]: type }); }}>{type}</button>)}</div></div>
           </article></span>)}
         </div>
       </section>}
 
       </> : view === "vault" ? <section className="secondary-panel" aria-labelledby="vault-title">
         <p className="eyebrow">Your archive</p>
-        <h1 id="vault-title">Memory vault</h1>
+        <h1 id="vault-title">Memory vault <InfoTip text="The Memory Vault stores memories and soundtracks you explicitly choose to keep so you can revisit or reuse them later." /></h1>
         <p className="panel-intro">The moments you chose to keep, with the soundtracks they opened.</p>
         <div className="vault-filters"><input aria-label="Search memories" value={vaultSearch} onChange={(event) => setVaultSearch(event.target.value)} onKeyDown={(event) => { if (event.key === "Enter") void refreshVault(); }} placeholder="Search memories" /><input aria-label="Filter by emotion" value={vaultEmotion} onChange={(event) => setVaultEmotion(event.target.value)} onKeyDown={(event) => { if (event.key === "Enter") void refreshVault(); }} placeholder="Filter by emotion" /><button className="primary-button" type="button" onClick={() => void refreshVault()}>Search vault</button></div>
-        {pageLoading && <p className="panel-status">Opening your vault…</p>}
+        {pageLoading && <p className="panel-status">Opening your vault...</p>}
         {pageError && <p className="error" role="alert">{pageError}</p>}
         {!pageLoading && !pageError && memories.length === 0 && <div className="empty-state"><strong>Your vault is quiet.</strong><span>Save a soundtrack and it will appear here.</span></div>}
-        <div className="memory-grid">{memories.map((memoryItem) => <article className="memory-card" key={memoryItem.id}><div className="memory-card-top"><span>{new Date(memoryItem.created_at).toLocaleDateString()}</span><button type="button" onClick={() => void deleteMemory(memoryItem.id)} aria-label={`Delete ${memoryItem.memory_title}`}>Delete</button></div><h2>{memoryItem.memory_title}</h2><p>{memoryItem.summary}</p><div className="tags">{memoryItem.emotions.slice(0, 3).map((tag) => <span key={tag}>{tag}</span>)}</div><div className="memory-tracks">{memoryItem.recommendations.slice(0, 3).map((track) => <span key={`${memoryItem.id}-${track.track_name}`}>{track.track_name} · {track.artist}</span>)}</div><button className="secondary-action" type="button" onClick={() => reuseMemory(memoryItem)}>Reuse memory</button></article>)}</div>
+        <div className="memory-grid">{memories.map((memoryItem) => { const expanded = expandedMemoryId === memoryItem.id; return <article className="memory-card" key={memoryItem.id}><div className="memory-card-top"><span>{new Date(memoryItem.created_at).toLocaleDateString()}</span><button type="button" onClick={() => void deleteMemory(memoryItem.id)} aria-label={`Delete ${memoryItem.memory_title}`}>Delete</button></div><h2>{memoryItem.memory_title}</h2><p>{memoryItem.summary}</p><div className="tags">{memoryItem.emotions.slice(0, 3).map((tag) => <span key={tag}>{tag}</span>)}</div><div className="memory-tracks">{memoryItem.recommendations.slice(0, 3).map((track) => <span key={`${memoryItem.id}-${track.track_id}`}>{track.track_name}  -  {track.artist}</span>)}</div><div className="memory-card-actions"><button className="secondary-action" type="button" onClick={() => setExpandedMemoryId(expanded ? null : memoryItem.id)}>{expanded ? "Hide soundtrack" : `View soundtrack (${memoryItem.recommendations.length})`}</button><button className="secondary-action" type="button" onClick={() => reuseMemory(memoryItem)}>Reuse memory</button></div>{expanded && <div className="saved-soundtrack" aria-label={`Saved soundtrack for ${memoryItem.memory_title}`}>{memoryItem.recommendations.map((track) => <article className="saved-track" key={`${memoryItem.id}-${track.track_id}`}><div className="saved-track-art">{track.metadata_enrichment?.artwork_url ? <img src={track.metadata_enrichment.artwork_url} alt={`${track.track_name} artwork`} loading="lazy" /> : <div className="artwork-placeholder" aria-label="Artwork unavailable"></div>}</div><div className="saved-track-copy"><strong>{track.track_name}</strong><span>{track.artist}{track.album ? `  -  ${track.album}` : ""}</span><small>{track.language ?? "Language unavailable"}  -  {track.genre_tags.slice(0, 2).join("  -  ") || "Genre unavailable"}</small><p>{cleanDisplayText(track.explanation)}</p></div><div className="saved-track-actions">{track.metadata_enrichment?.itunes_preview_url ? <audio controls preload="none" src={track.metadata_enrichment.itunes_preview_url} aria-label={`Preview ${track.track_name}`} /> : <span className="muted">Preview unavailable</span>}{track.metadata_enrichment?.spotify_track_url && <a href={track.metadata_enrichment.spotify_track_url} target="_blank" rel="noreferrer">Play on Spotify</a>}{track.metadata_enrichment?.itunes_store_url && <a href={track.metadata_enrichment.itunes_store_url} target="_blank" rel="noreferrer">Open in Apple Music</a>}{track.listening_url && <a href={track.listening_url} target="_blank" rel="noreferrer">Listen</a>}</div></article>)}</div>}</article>; })}</div>
       </section> : <section className="secondary-panel" aria-labelledby="preferences-title">
         <p className="eyebrow">Tune the listening lens</p>
-        <h1 id="preferences-title">Preferences</h1>
+        <h1 id="preferences-title">Preferences <InfoTip text="Preferences personalize future recommendations. Choose languages and genres, exclude genres, and adjust content and diversity settings." /></h1>
         <p className="panel-intro">A few signals help future soundtracks feel more like yours.</p>
-        {pageLoading && !preferences && <p className="panel-status">Loading preferences…</p>}
+        {pageLoading && !preferences && <p className="panel-status">Loading preferences...</p>}
         {pageError && <p className="error" role="alert">{pageError}</p>}
-        {preferences && <form className="preferences-form" onSubmit={(event) => void savePreferences(event)}><label>Preferred languages<input value={preferences.preferred_languages.join(", ")} onChange={(event) => setPreferences({ ...preferences, preferred_languages: event.target.value.split(",").map((item) => item.trim()).filter(Boolean) })} placeholder="English, Telugu, Hindi" /></label><label>Preferred genres<input value={preferences.preferred_genres.join(", ")} onChange={(event) => setPreferences({ ...preferences, preferred_genres: event.target.value.split(",").map((item) => item.trim()).filter(Boolean) })} placeholder="Folk, ambient, acoustic" /></label><label>Genres to avoid<input value={preferences.disliked_genres.join(", ")} onChange={(event) => setPreferences({ ...preferences, disliked_genres: event.target.value.split(",").map((item) => item.trim()).filter(Boolean) })} placeholder="Genres you do not want" /></label><label>Explicit content<select value={preferences.explicit_content} onChange={(event) => setPreferences({ ...preferences, explicit_content: event.target.value as Preferences["explicit_content"] })}><option value="allow">Allow</option><option value="avoid">Avoid</option><option value="unknown">No preference</option></select></label><label>Recommendation diversity<input type="range" min="0" max="1" step="0.05" value={preferences.diversity} onChange={(event) => setPreferences({ ...preferences, diversity: Number(event.target.value) })} /><span className="range-value">{Math.round(preferences.diversity * 100)}%</span></label><button className="primary-button" type="submit" disabled={pageLoading}>{pageLoading ? "Saving…" : "Save preferences"}</button></form>}
+        {preferenceSaved && <p className="saved-confirmation" role="status">Preferences saved for future soundtracks.</p>}
+        {preferences && <form className="preferences-form" onSubmit={(event) => void savePreferences(event)}><TagInput label="Preferred languages" values={preferences.preferred_languages} onChange={(values) => setPreferences({ ...preferences, preferred_languages: values })} placeholder="Type a language and press Enter" /><TagInput label="Preferred genres" values={preferences.preferred_genres} onChange={(values) => setPreferences({ ...preferences, preferred_genres: values })} placeholder="Type a genre and press Enter" /><TagInput label="Genres to avoid" values={preferences.disliked_genres} onChange={(values) => setPreferences({ ...preferences, disliked_genres: values })} placeholder="Type a genre and press Enter" /><label>Explicit content<select value={preferences.explicit_content} onChange={(event) => setPreferences({ ...preferences, explicit_content: event.target.value as Preferences["explicit_content"] })}><option value="allow">Allow</option><option value="avoid">Avoid</option><option value="unknown">No preference</option></select></label><label>Recommendation diversity<input type="range" min="0" max="1" step="0.05" value={preferences.diversity} onChange={(event) => setPreferences({ ...preferences, diversity: Number(event.target.value) })} /><span className="range-value">{Math.round(preferences.diversity * 100)}%</span></label><button className="primary-button" type="submit" disabled={pageLoading}>{pageLoading ? "Saving..." : "Save preferences"}</button></form>}        {preferences && <section className="saved-profile" aria-labelledby="saved-profile-title"><h2 id="saved-profile-title">Your listening profile</h2><div><strong>Preferred languages</strong><span>{preferences.preferred_languages.length ? preferences.preferred_languages.join(" · ") : "None selected"}</span></div><div><strong>Preferred genres</strong><span>{preferences.preferred_genres.length ? preferences.preferred_genres.join(" · ") : "None selected"}</span></div><div><strong>Genres to avoid</strong><span>{preferences.disliked_genres.length ? preferences.disliked_genres.join(" · ") : "None selected"}</span></div><div><strong>Explicit content</strong><span>{preferences.explicit_content === "unknown" ? "No preference" : preferences.explicit_content === "avoid" ? "Avoid" : "Allow"}</span></div><div><strong>Recommendation diversity</strong><span>{Math.round(preferences.diversity * 100)}%</span></div></section>}
       </section>}
 
       <footer><span>Every memory has a feeling. Every feeling has a sound.</span><span>Made for the moments that made you.</span></footer>
     </main>
   );
 }
+
