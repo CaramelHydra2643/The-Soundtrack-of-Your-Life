@@ -1,4 +1,4 @@
-"""
+﻿"""
 Memory Vault Module
 
 Manages persistent storage of analyzed memories and recommendations using SQLite.
@@ -26,6 +26,14 @@ class MemoryVault:
         self.db_path = self.settings.db_path
         self._initialize_database()
 
+    def _connect(self) -> sqlite3.Connection:
+        """Open a consistently configured SQLite connection."""
+        connection = sqlite3.connect(str(self.db_path), timeout=10.0)
+        connection.execute("PRAGMA foreign_keys=ON")
+        connection.execute("PRAGMA busy_timeout=10000")
+        connection.execute("PRAGMA journal_mode=WAL")
+        return connection
+
     def _initialize_database(self):
         """Create database and tables if they don't exist."""
         try:
@@ -33,7 +41,7 @@ class MemoryVault:
             self.db_path.parent.mkdir(parents=True, exist_ok=True)
             
             # Connect and create tables
-            conn = sqlite3.connect(str(self.db_path))
+            conn = self._connect()
             cursor = conn.cursor()
             
             cursor.execute("""
@@ -137,7 +145,7 @@ class MemoryVault:
                 for rec in soundtrack_result.recommendations
             ]
             
-            conn = sqlite3.connect(str(self.db_path))
+            conn = self._connect()
             cursor = conn.cursor()
             
             cursor.execute("""
@@ -177,7 +185,7 @@ class MemoryVault:
             List of memory dictionaries
         """
         try:
-            conn = sqlite3.connect(str(self.db_path))
+            conn = self._connect()
             conn.row_factory = sqlite3.Row
             cursor = conn.cursor()
             
@@ -222,7 +230,7 @@ class MemoryVault:
             Memory dictionary or None
         """
         try:
-            conn = sqlite3.connect(str(self.db_path))
+            conn = self._connect()
             conn.row_factory = sqlite3.Row
             cursor = conn.cursor()
             
@@ -262,7 +270,7 @@ class MemoryVault:
             List of matching memories
         """
         try:
-            conn = sqlite3.connect(str(self.db_path))
+            conn = self._connect()
             conn.row_factory = sqlite3.Row
             cursor = conn.cursor()
             
@@ -347,7 +355,7 @@ class MemoryVault:
             True if successful, False otherwise
         """
         try:
-            conn = sqlite3.connect(str(self.db_path))
+            conn = self._connect()
             cursor = conn.cursor()
             
             cursor.execute("DELETE FROM memories WHERE id = ?", (memory_id,))
@@ -377,7 +385,7 @@ class MemoryVault:
         if feedback_type not in {"like", "dislike", "save", "skip"} or not track_id.strip():
             return False
         try:
-            with sqlite3.connect(str(self.db_path)) as conn:
+            with self._connect() as conn:
                 conn.execute(
                     "INSERT INTO feedback (memory_id, track_id, feedback_type) VALUES (?, ?, ?)",
                     (memory_id, track_id.strip(), feedback_type),
@@ -390,7 +398,7 @@ class MemoryVault:
     def get_feedback(self, limit: int = 200) -> List[Dict[str, Any]]:
         """Return recent feedback records without exposing raw memory text."""
         try:
-            with sqlite3.connect(str(self.db_path)) as conn:
+            with self._connect() as conn:
                 conn.row_factory = sqlite3.Row
                 rows = conn.execute(
                     "SELECT id, memory_id, track_id, feedback_type, created_at "
@@ -413,7 +421,7 @@ class MemoryVault:
             "diversity": min(max(float(preferences.get("diversity", 0.5)), 0.0), 1.0),
         }
         try:
-            with sqlite3.connect(str(self.db_path)) as conn:
+            with self._connect() as conn:
                 conn.execute("""
                     INSERT INTO preferences
                     (id, preferred_languages, preferred_genres, disliked_genres,
@@ -445,7 +453,7 @@ class MemoryVault:
             "diversity": 0.5,
         }
         try:
-            with sqlite3.connect(str(self.db_path)) as conn:
+            with self._connect() as conn:
                 conn.row_factory = sqlite3.Row
                 row = conn.execute("SELECT * FROM preferences WHERE id = 1").fetchone()
             if not row:
@@ -469,7 +477,7 @@ class MemoryVault:
     def delete_all_data(self) -> bool:
         """Delete all single-user personal data while retaining database structure."""
         try:
-            with sqlite3.connect(str(self.db_path)) as conn:
+            with self._connect() as conn:
                 conn.execute("DELETE FROM feedback")
                 conn.execute("DELETE FROM memories")
                 conn.execute("DELETE FROM preferences")
@@ -485,7 +493,7 @@ class MemoryVault:
             Dictionary with statistics
         """
         try:
-            conn = sqlite3.connect(str(self.db_path))
+            conn = self._connect()
             cursor = conn.cursor()
             
             cursor.execute("SELECT COUNT(*) FROM memories")
@@ -509,3 +517,4 @@ class MemoryVault:
         except Exception as e:
             logger.error(f"Failed to get stats: {e}")
             return {'total_memories': 0}
+

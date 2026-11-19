@@ -107,6 +107,8 @@ class MusicCatalogue:
                 by_id[key] = track
                 continue
             existing = by_id[key]
+            if existing.get('source') in (None, '', 'local catalogue') and track.get('source') not in (None, '', 'local catalogue'):
+                existing['source'] = track['source']
             for field, value in track.items():
                 if value not in (None, '', [], {}) and existing.get(field) in (None, '', [], {}):
                     existing[field] = value

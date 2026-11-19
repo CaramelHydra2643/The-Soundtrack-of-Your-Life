@@ -2,9 +2,11 @@
 
 import inspect
 import logging
+import time
 from typing import Optional
 
 from config.settings import get_settings
+from modules.catalogue_store import CatalogueStore
 from modules.explanation_generator import ExplanationGenerator
 from modules.memory_analyzer import MemoryAnalyzer
 from modules.memory_vault import MemoryVault
@@ -29,6 +31,7 @@ class SoundtrackService:
         explainer: Optional[ExplanationGenerator] = None,
         vault: Optional[MemoryVault] = None,
         track_index: Optional[TrackEmbeddingIndex] = None,
+        catalogue_store: Optional[CatalogueStore] = None,
     ) -> None:
         self.settings = get_settings()
         self.analyzer = analyzer or MemoryAnalyzer()
@@ -43,6 +46,11 @@ class SoundtrackService:
         except Exception as exc:
             logger.warning("Track vector index unavailable; using catalogue scan: %s", exc)
             self.track_index = None
+        try:
+            self.catalogue_store = catalogue_store or CatalogueStore()
+        except Exception as exc:
+            logger.warning("Catalogue metadata index unavailable: %s", exc)
+            self.catalogue_store = None
 
     def generate(self, memory_text: str) -> SoundtrackResult:
         """Generate a validated soundtrack result from one memory."""
@@ -54,21 +62,36 @@ class SoundtrackService:
                 f"Memory must be no longer than {self.settings.max_memory_length} characters."
             )
 
+        started_at = time.perf_counter()
         analysis = self.analyzer.analyze_memory(normalized)
+        logger.info("soundtrack_stage=analysis duration_ms=%.1f", (time.perf_counter() - started_at) * 1000)
         if analysis is None:
             raise RuntimeError("Memory analysis failed. Check the local Ollama model and try again.")
 
+        retrieval_started_at = time.perf_counter()
         retrieved = []
         if self.rag_engine.is_knowledge_base_ready():
             query = self.analyzer.create_retrieval_query(analysis)
-            retrieved = self.rag_engine.retrieve(query)
+            targeted_queries = [
+                " ".join(analysis.primary_emotions + analysis.secondary_emotions + analysis.themes),
+                " ".join(analysis.genres + analysis.instruments + [analysis.tempo, analysis.energy]),
+                " ".join(analysis.context + analysis.cultural_context),
+            ]
+            retrieve_multi = getattr(self.rag_engine, "retrieve_multi", None)
+            retrieved = retrieve_multi(targeted_queries, top_k=self.settings.retrieval_top_k) if retrieve_multi else self.rag_engine.retrieve(query)
+        logger.info("soundtrack_stage=knowledge_retrieval duration_ms=%.1f", (time.perf_counter() - retrieval_started_at) * 1000)
 
         get_preferences = getattr(self.vault, "get_preferences", lambda: {})
         get_feedback = getattr(self.vault, "get_feedback", lambda: [])
         preferences = get_preferences()
         preferences["feedback"] = get_feedback()
         candidate_tracks = None
-        if self.track_index:
+        requested_language = getattr(analysis, "requested_music_language", None)
+        if requested_language and self.catalogue_store:
+            allowed_ids = set(self.catalogue_store.search_ids(language=requested_language, limit=10000))
+            by_id = {str(track.get("track_id")): track for track in self.catalogue.tracks}
+            candidate_tracks = [by_id[track_id] for track_id in allowed_ids if track_id in by_id]
+        if self.track_index and candidate_tracks is None:
             try:
                 if self.track_index.is_ready():
                     hits = self.track_index.query(self.analyzer.create_retrieval_query(analysis), limit=100)
@@ -84,9 +107,11 @@ class SoundtrackService:
             recommender_kwargs["user_preferences"] = preferences
         if "candidate_tracks" in recommender_params:
             recommender_kwargs["candidate_tracks"] = candidate_tracks
+        ranking_started_at = time.perf_counter()
         recommendations = self.recommender.generate_recommendations(
             analysis, retrieved, **recommender_kwargs
         )
+        logger.info("soundtrack_stage=ranking duration_ms=%.1f", (time.perf_counter() - ranking_started_at) * 1000)
         if not recommendations:
             raise RuntimeError("No catalogue tracks matched this memory.")
 
@@ -135,6 +160,7 @@ class SoundtrackService:
         for language in ("telugu", "tamil", "hindi", "kannada", "malayalam", "bengali", "punjabi", "english"):
             if language in request:
                 analysis.language = language.title()
+                analysis.requested_music_language = language.title()
                 recognized = True
                 break
         if not recognized:
@@ -153,7 +179,8 @@ class SoundtrackService:
         else:
             recommendations = self.recommender.generate_recommendations(analysis, retrieved)
         if not recommendations:
-            raise RuntimeError("No tracks matched that refinement.")
+            logger.warning("Refinement produced no new candidates; retaining the previous soundtrack.")
+            recommendations = result.recommendations
         explanation = self.explainer.generate_overall_explanation(memory_text, analysis, recommendations, retrieved)
         return SoundtrackResult(
             memory_analysis=analysis,

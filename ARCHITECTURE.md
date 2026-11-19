@@ -58,3 +58,30 @@ React/Vite client  <---- JSON ---->  FastAPI API
 ```
 
 The migration should happen after the core contract and deterministic tests are stable; otherwise the UI rewrite would duplicate unresolved domain bugs.
+
+## Canonical request flow
+
+React/Vite is the canonical product frontend. The single `memory` textarea is shared by typed input and live browser speech recognition. The final text follows the same FastAPI path:
+
+```mermaid
+flowchart TD
+  Input[Typed or live voice memory] --> Validate[FastAPI validation]
+  Validate --> Analyze[Ollama structured MemoryAnalysis]
+  Analyze --> Query[Emotion/theme/music query]
+  Query --> Knowledge[music_knowledge RAG]
+  Query --> Tracks[music_tracks semantic retrieval]
+  Analyze --> Rank[Hybrid metadata/audio/preference ranking]
+  Knowledge --> Rank
+  Tracks --> Rank
+  Rank --> MMR[MMR diversity reranking]
+  MMR --> Result[Validated SoundtrackResult]
+  Result --> Save{Explicit save?}
+  Save -->|Yes| Vault[SQLite MemoryVault]
+  Save -->|No| Unsaved[Displayed result only]
+```
+
+`music_knowledge` stores conceptual music and cultural context. `music_tracks` stores real catalogue track profiles. Track-vector failures fall back to the normalized catalogue.
+
+The service reuses the RAG Sentence Transformer instance for track queries, keeps explanations deterministic by default, and logs analysis, retrieval, and ranking timings. See `PERFORMANCE.md`.
+
+Browser speech recognition is not guaranteed to be local and is disclosed in the UI. Typed text follows local FastAPI/Ollama processing. The optional faster-whisper endpoint remains available as a local fallback; raw recordings are not persisted.
