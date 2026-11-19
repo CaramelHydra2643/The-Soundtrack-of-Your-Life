@@ -1,0 +1,18 @@
+{
+  "filename": ".env",
+  "path": ".env",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "7cc672c2": {
+      "value": "I have added the client id and secret id, done from my side, now implement the recommendation flow"
+    },
+    "b71a901d": {
+      "value": "give one example scenario to test"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

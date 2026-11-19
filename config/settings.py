@@ -176,8 +176,10 @@ class Settings(BaseSettings):
     # =========================================================================
     enable_external_music_lookup: bool = Field(
         default=False,
-        description="Enable iTunes API for additional metadata"
+        description="Enable bounded iTunes/Spotify metadata enrichment"
     )
+    spotify_client_id: Optional[str] = Field(default=None, description="Optional Spotify client ID")
+    spotify_client_secret: Optional[str] = Field(default=None, description="Optional Spotify client secret")
     enable_memory_vault: bool = Field(
         default=True,
         description="Enable memory vault persistence"

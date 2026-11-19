@@ -242,6 +242,7 @@ class TrackRecommendation(BaseModel):
     language: Optional[str] = Field(default=None)
     artwork_url: Optional[str] = Field(default=None)
     availability_status: str = Field(default="metadata_only")
+    metadata_enrichment: Dict[str, Any] = Field(default_factory=dict)
 
     class Config:
         """Pydantic configuration."""

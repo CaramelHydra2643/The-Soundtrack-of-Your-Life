@@ -32,6 +32,15 @@ type Track = {
   listening_url?: string | null;
   preview_url?: string | null;
   availability_status: string;
+  metadata_enrichment?: {
+    artwork_url?: string | null;
+    itunes_preview_url?: string | null;
+    itunes_store_url?: string | null;
+    spotify_track_url?: string | null;
+    spotify_embed_url?: string | null;
+    metadata_provider?: string;
+    confidence?: number;
+  };
 };
 
 type Memory = {
@@ -499,8 +508,8 @@ export default function App() {
         <div className="track-list">
           {soundtrack.recommendations.map((track, index) => <span key={track.track_id} className="track-with-chapter">{chapterName(index, soundtrack.recommendations.length) && <h3 className="chapter-heading">{chapterName(index, soundtrack.recommendations.length)}</h3>}<article className="track">
             <div className="track-number">{String(index + 1).padStart(2, "0")}</div>
-            <div className="track-info"><h3>{track.track_name}</h3><p>{track.artist}{track.album ? ` · ${track.album}` : ""}</p><div className="track-meta">{track.language ?? "Language unavailable"} · {track.genre_tags.slice(0, 2).join(" · ")}</div><p className="reason">{track.explanation}</p></div>
-            <div className="track-actions"><span className="score">{Math.round(track.relevance_score * 100)}%</span>{track.listening_url ? <a href={track.listening_url} target="_blank" rel="noreferrer">Listen ↗</a> : <span className="muted">Metadata only</span>}<div className="feedback" aria-label={`Feedback for ${track.track_name}`}>{["like", "dislike", "save"].map((type) => <button className={feedback[track.track_id] === type ? "selected" : ""} key={type} type="button" onClick={() => { void sendFeedback(track.track_id, type); setFeedback({ ...feedback, [track.track_id]: type }); }}>{type}</button>)}</div></div>
+            <div className="track-info"><div className="track-media">{track.metadata_enrichment?.artwork_url ? <img src={track.metadata_enrichment.artwork_url} alt={`${track.track_name} artwork`} loading="lazy" /> : <div className="artwork-placeholder" aria-label="Artwork unavailable">♪</div>}<div><h3>{track.track_name}</h3><p>{track.artist}{track.album ? ` · ${track.album}` : ""}</p></div></div><div className="track-meta">{track.language ?? "Language unavailable"} · {track.genre_tags.slice(0, 2).join(" · ")}</div><p className="reason">{track.explanation}</p></div>
+            <div className="track-actions"><span className="score">{Math.round(track.relevance_score * 100)}%</span>{track.metadata_enrichment?.itunes_preview_url && <audio controls preload="none" src={track.metadata_enrichment.itunes_preview_url} aria-label={`Preview ${track.track_name}`} />}{track.metadata_enrichment?.spotify_embed_url && <iframe className="spotify-embed" src={track.metadata_enrichment.spotify_embed_url} title={`Spotify player for ${track.track_name}`} loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" />}{track.metadata_enrichment?.spotify_track_url && <a href={track.metadata_enrichment.spotify_track_url} target="_blank" rel="noreferrer">Play on Spotify ↗</a>}{track.metadata_enrichment?.itunes_store_url && <a href={track.metadata_enrichment.itunes_store_url} target="_blank" rel="noreferrer">Open in Apple Music ↗</a>}{track.listening_url ? <a href={track.listening_url} target="_blank" rel="noreferrer">Listen ↗</a> : !track.metadata_enrichment?.spotify_track_url && !track.metadata_enrichment?.itunes_store_url && <span className="muted">Metadata only</span>}<div className="feedback" aria-label={`Feedback for ${track.track_name}`}>{["like", "dislike", "save"].map((type) => <button className={feedback[track.track_id] === type ? "selected" : ""} key={type} type="button" onClick={() => { void sendFeedback(track.track_id, type); setFeedback({ ...feedback, [track.track_id]: type }); }}>{type}</button>)}</div></div>
           </article></span>)}
         </div>
       </section>}

@@ -11,6 +11,7 @@ from modules.explanation_generator import ExplanationGenerator
 from modules.memory_analyzer import MemoryAnalyzer
 from modules.memory_vault import MemoryVault
 from modules.music_catalogue import MusicCatalogue
+from modules.music_metadata_enrichment import MusicMetadataEnricher
 from modules.rag_engine import RAGEngine
 from modules.recommendation_engine import RecommendationEngine
 from modules.track_embedding_index import TrackEmbeddingIndex
@@ -51,6 +52,11 @@ class SoundtrackService:
         except Exception as exc:
             logger.warning("Catalogue metadata index unavailable: %s", exc)
             self.catalogue_store = None
+        self.metadata_enricher = MusicMetadataEnricher(
+            self.settings.cache_dir,
+            spotify_client_id=getattr(self.settings, "spotify_client_id", None),
+            spotify_client_secret=getattr(self.settings, "spotify_client_secret", None),
+        ) if self.settings.enable_external_music_lookup else None
 
     def generate(self, memory_text: str) -> SoundtrackResult:
         """Generate a validated soundtrack result from one memory."""
@@ -107,6 +113,8 @@ class SoundtrackService:
             recommender_kwargs["user_preferences"] = preferences
         if "candidate_tracks" in recommender_params:
             recommender_kwargs["candidate_tracks"] = candidate_tracks
+        if self.metadata_enricher and "max_recommendations" in recommender_params:
+            recommender_kwargs["max_recommendations"] = self.settings.max_recommendations * 4
         ranking_started_at = time.perf_counter()
         recommendations = self.recommender.generate_recommendations(
             analysis, retrieved, **recommender_kwargs
@@ -114,6 +122,21 @@ class SoundtrackService:
         logger.info("soundtrack_stage=ranking duration_ms=%.1f", (time.perf_counter() - ranking_started_at) * 1000)
         if not recommendations:
             raise RuntimeError("No catalogue tracks matched this memory.")
+
+        if self.metadata_enricher:
+            enriched_tracks = self.metadata_enricher.enrich([recommendation.model_dump() for recommendation in recommendations])
+            paired = [recommendation.model_copy(update={"metadata_enrichment": item.get("metadata_enrichment", {})}) for recommendation, item in zip(recommendations, enriched_tracks)]
+            matched = [recommendation for recommendation in paired if recommendation.metadata_enrichment.get("artwork_url") and (
+                recommendation.metadata_enrichment.get("itunes_preview_url")
+                or recommendation.metadata_enrichment.get("spotify_embed_url")
+                or recommendation.metadata_enrichment.get("spotify_track_url")
+                or recommendation.metadata_enrichment.get("itunes_store_url")
+            )]
+            if matched:
+                recommendations = matched[: self.settings.max_recommendations]
+            else:
+                logger.warning("External metadata enrichment returned no confident matches; retaining catalogue recommendations.")
+                recommendations = paired[: self.settings.max_recommendations]
 
         explanation = self.explainer.generate_overall_explanation(
             normalized, analysis, recommendations, retrieved

@@ -75,3 +75,32 @@ Thumbs.db
 *.tmp
 *.temp
 .cache/
+
+# Environment files and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+secrets.json
+
+# Local application caches and generated indexes
+data/cache/
+data/catalogue/
+data/**/music_tracks_progress.json
+*.db-wal
+*.db-shm
+
+# Generated browser artifacts
+tests/browser_smoke.png
+tests/*.png
+playwright-report/
+test-results/
+
+# Local model and tool caches
+.huggingface/
+.cache/huggingface/
+.cache/torch/

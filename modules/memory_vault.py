@@ -140,7 +140,8 @@ class MemoryVault:
                     'instrument_tags': rec.instrument_tags,
                     'relevance_score': rec.relevance_score,
                     'explanation': rec.explanation,
-                    'source': rec.source
+                    'source': rec.source,
+                    'metadata_enrichment': rec.metadata_enrichment,
                 }
                 for rec in soundtrack_result.recommendations
             ]

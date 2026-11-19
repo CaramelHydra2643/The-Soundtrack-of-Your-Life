@@ -76,1792 +76,2406 @@
         "codeBlockId": null,
         "isActive": true,
         "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/17/2026, 4:16:41 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      },
+      "dfd7e8": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1795071505,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "chat",
+        "type": "copyCode",
+        "extraContext": {
+          "promptMessage": "3fd8c127"
+        },
+        "hash": "496627b6",
+        "messageId": "system_84006e40-e3e6-11f1-822b-835c9372b25d",
+        "codeBlockId": "system_84006e40-e3e6-11f1-822b-835c9372b25d-Codeblock-4",
+        "isActive": false,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/19/2026, 12:28:25 PM\n- **source**: chat\n- **type**: copyCode\n"
+      },
+      "2ce4b7": {
+        "user": "You",
+        "model": "gpt-4.1",
+        "timestamp": 1795071627,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.6.1",
+        "source": "chat",
+        "type": "copyCode",
+        "extraContext": {
+          "promptMessage": "3fd8c127"
+        },
+        "hash": "496627b6",
+        "messageId": "system_84006e40-e3e6-11f1-822b-835c9372b25d",
+        "codeBlockId": "system_84006e40-e3e6-11f1-822b-835c9372b25d-Codeblock-4",
+        "isActive": false,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: You\n- **model**: gpt-4.1\n- **timestamp**: 11/19/2026, 12:30:27 PM\n- **source**: chat\n- **type**: copyCode\n"
       }
     },
     "lines": {
-      "0": {
-        "chunkId": "8561f0",
-        "hash": "9cef9ccb",
-        "encoded": "%22%22%22",
-        "prevChunkIds": []
-      },
       "1": {
         "chunkId": "8561f0",
         "hash": "edf79f66",
         "encoded": "Configuration%20Management%20for%20The%20Soundtrack%20of%20Your%20Life",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "3": {
         "chunkId": "8561f0",
         "hash": "a36eb5ab",
         "encoded": "This%20module%20provides%20centralized,%20type-safe%20configuration%20using%20Pydantic%20Settings.",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "4": {
         "chunkId": "8561f0",
         "hash": "e4c53219",
         "encoded": "All%20settings%20can%20be%20overridden%20via%20environment%20variables%20or%20.env%20file.",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "6": {
         "chunkId": "8561f0",
         "hash": "f419a39a",
         "encoded": "Cross-platform%20compatible:%20Windows,%20Linux,%20macOS",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "7": {
         "chunkId": "8561f0",
         "hash": "41dfbec5",
         "encoded": "%22%22%22",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "9": {
         "chunkId": "8561f0",
         "hash": "1609246a",
         "encoded": "import%20os",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "10": {
         "chunkId": "8561f0",
         "hash": "8b446ad8",
         "encoded": "from%20pathlib%20import%20Path",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "11": {
         "chunkId": "8561f0",
         "hash": "6dcacc74",
         "encoded": "from%20typing%20import%20Optional",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "13": {
         "chunkId": "8561f0",
         "hash": "59c3d54c",
         "encoded": "from%20pydantic%20import%20Field,%20field_validator",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "14": {
         "chunkId": "8561f0",
         "hash": "4e26ea95",
         "encoded": "from%20pydantic_settings%20import%20BaseSettings,%20SettingsConfigDict",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "15": {
         "chunkId": "8561f0",
         "hash": "318caba3",
         "encoded": "from%20platformdirs%20import%20user_data_dir,%20user_cache_dir",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "18": {
         "chunkId": "8561f0",
         "hash": "ab447f82",
         "encoded": "class%20Settings(BaseSettings):",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "19": {
         "chunkId": "8561f0",
         "hash": "d477716d",
         "encoded": "%22%22%22Application%20configuration%20with%20environment%20variable%20override%20support.%22%22%22",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "21": {
         "chunkId": "8561f0",
         "hash": "745ed3de",
         "encoded": "#%20=========================================================================",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "22": {
         "chunkId": "8561f0",
         "hash": "eb765ea2",
         "encoded": "#%20APPLICATION%20SETTINGS",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "23": {
         "chunkId": "8561f0",
         "hash": "916d0cfe",
         "encoded": "#%20=========================================================================",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "24": {
         "chunkId": "8561f0",
         "hash": "93c9ab2f",
         "encoded": "app_name:%20str%20=%20Field(",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "25": {
         "chunkId": "8561f0",
         "hash": "38f558b7",
         "encoded": "default=%22The%20Soundtrack%20of%20Your%20Life%22,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "26": {
         "chunkId": "8561f0",
         "hash": "c23779cb",
         "encoded": "description=%22Application%20display%20name%22",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "27": {
         "chunkId": "8561f0",
         "hash": "25d7ea84",
         "encoded": ")",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "28": {
         "chunkId": "8561f0",
         "hash": "244ae7d5",
         "encoded": "app_env:%20str%20=%20Field(",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "29": {
         "chunkId": "8561f0",
         "hash": "944fa92c",
         "encoded": "default=%22development%22,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "30": {
         "chunkId": "8561f0",
         "hash": "3f2ed26e",
         "encoded": "description=%22Environment:%20development,%20production,%20testing%22",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "31": {
         "chunkId": "8561f0",
         "hash": "c3399f39",
         "encoded": ")",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "32": {
         "chunkId": "8561f0",
         "hash": "3dada418",
         "encoded": "log_level:%20str%20=%20Field(",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "33": {
         "chunkId": "8561f0",
         "hash": "2bee0635",
         "encoded": "default=%22INFO%22,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "34": {
         "chunkId": "8561f0",
         "hash": "82128ceb",
         "encoded": "description=%22Logging%20level:%20DEBUG,%20INFO,%20WARNING,%20ERROR,%20CRITICAL%22",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "35": {
         "chunkId": "8561f0",
         "hash": "ab5057c6",
         "encoded": ")",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "37": {
         "chunkId": "8561f0",
         "hash": "a8aff489",
         "encoded": "#%20=========================================================================",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "38": {
         "chunkId": "8561f0",
         "hash": "5dfa3afe",
         "encoded": "#%20LLM%20CONFIGURATION",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "39": {
         "chunkId": "8561f0",
         "hash": "aeda4759",
         "encoded": "#%20=========================================================================",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "40": {
         "chunkId": "8561f0",
         "hash": "c5b439b2",
         "encoded": "llm_provider:%20str%20=%20Field(",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "41": {
         "chunkId": "8561f0",
         "hash": "634185c8",
         "encoded": "default=%22ollama%22,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "42": {
         "chunkId": "8561f0",
         "hash": "11a6eaf4",
         "encoded": "description=%22LLM%20provider:%20ollama,%20openai,%20anthropic%22",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "43": {
         "chunkId": "8561f0",
         "hash": "de9a7b90",
         "encoded": ")",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "44": {
         "chunkId": "8561f0",
         "hash": "41215f38",
         "encoded": "ollama_base_url:%20str%20=%20Field(",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "45": {
         "chunkId": "8561f0",
         "hash": "fc4bab31",
         "encoded": "default=%22http://localhost:11434%22,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "46": {
         "chunkId": "8561f0",
         "hash": "9e2d9bc0",
         "encoded": "description=%22Ollama%20API%20base%20URL%22",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "47": {
         "chunkId": "8561f0",
         "hash": "7384634f",
         "encoded": ")",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "48": {
         "chunkId": "8561f0",
         "hash": "309bb825",
         "encoded": "ollama_model:%20str%20=%20Field(",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "49": {
         "chunkId": "8561f0",
         "hash": "7c8cbf51",
         "encoded": "default=%22qwen2.5:3b%22,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "50": {
         "chunkId": "8561f0",
         "hash": "140c55ed",
         "encoded": "description=%22Ollama%20model%20name%22",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "51": {
         "chunkId": "8561f0",
         "hash": "5f71c65e",
         "encoded": ")",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "52": {
         "chunkId": "8561f0",
         "hash": "a72ac4db",
         "encoded": "llm_timeout:%20int%20=%20Field(",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "53": {
         "chunkId": "8561f0",
         "hash": "be79da2d",
         "encoded": "default=180,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "54": {
         "chunkId": "8561f0",
         "hash": "eaa7a3a2",
         "encoded": "ge=30,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "55": {
         "chunkId": "8561f0",
         "hash": "0088018e",
         "encoded": "le=600,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "56": {
         "chunkId": "8561f0",
         "hash": "463eabd4",
         "encoded": "description=%22LLM%20request%20timeout%20in%20seconds%22",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "57": {
         "chunkId": "8561f0",
         "hash": "092cf027",
         "encoded": ")",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "58": {
         "chunkId": "8561f0",
         "hash": "573731e6",
         "encoded": "llm_temperature:%20float%20=%20Field(",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "59": {
         "chunkId": "8561f0",
         "hash": "9b34d0c8",
         "encoded": "default=0.3,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "60": {
         "chunkId": "8561f0",
         "hash": "a3200a78",
         "encoded": "ge=0.0,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "61": {
         "chunkId": "8561f0",
         "hash": "20966636",
         "encoded": "le=2.0,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "62": {
         "chunkId": "8561f0",
         "hash": "5a8cf1e2",
         "encoded": "description=%22LLM%20temperature%20for%20response%20randomness%22",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "63": {
         "chunkId": "8561f0",
         "hash": "bde04ac6",
         "encoded": ")",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "64": {
         "chunkId": "8561f0",
         "hash": "a28e4c91",
         "encoded": "llm_max_tokens:%20int%20=%20Field(",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "66": {
         "chunkId": "8561f0",
         "hash": "b42fcb31",
         "encoded": "ge=100,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "67": {
         "chunkId": "8561f0",
         "hash": "514287dc",
         "encoded": "le=8000,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "68": {
         "chunkId": "8561f0",
         "hash": "62896cf3",
         "encoded": "description=%22Maximum%20tokens%20in%20LLM%20response%22",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "69": {
         "chunkId": "8561f0",
         "hash": "0946a8e8",
         "encoded": ")",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "71": {
         "chunkId": "8561f0",
         "hash": "b0266999",
         "encoded": "default=False,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "73": {
         "chunkId": "8561f0",
         "hash": "11fc1d2b",
         "encoded": ")",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "75": {
         "chunkId": "8561f0",
         "hash": "d56a553e",
         "encoded": "#%20=========================================================================",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "76": {
         "chunkId": "8561f0",
         "hash": "9810470b",
         "encoded": "#%20EMBEDDING%20CONFIGURATION",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "77": {
         "chunkId": "8561f0",
         "hash": "17e5740d",
         "encoded": "#%20=========================================================================",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "78": {
         "chunkId": "8561f0",
         "hash": "d02e69b8",
         "encoded": "embedding_provider:%20str%20=%20Field(",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "79": {
         "chunkId": "8561f0",
         "hash": "3566f2ca",
         "encoded": "default=%22sentence-transformers%22,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "80": {
         "chunkId": "8561f0",
         "hash": "0e287511",
         "encoded": "description=%22Embedding%20provider%22",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "81": {
         "chunkId": "8561f0",
         "hash": "490979b5",
         "encoded": ")",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "82": {
         "chunkId": "8561f0",
         "hash": "fcfcb8d3",
         "encoded": "embedding_model:%20str%20=%20Field(",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "83": {
         "chunkId": "8561f0",
         "hash": "01945a44",
         "encoded": "default=%22sentence-transformers/all-MiniLM-L6-v2%22,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "84": {
         "chunkId": "8561f0",
         "hash": "0dfd2e8a",
         "encoded": "description=%22Embedding%20model%20identifier%22",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "85": {
         "chunkId": "8561f0",
         "hash": "f98ed38b",
         "encoded": ")",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "86": {
         "chunkId": "8561f0",
         "hash": "936e47c2",
         "encoded": "embedding_device:%20str%20=%20Field(",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "87": {
         "chunkId": "8561f0",
         "hash": "0ce4dcea",
         "encoded": "default=%22cpu%22,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "88": {
         "chunkId": "8561f0",
         "hash": "18aff4b5",
         "encoded": "description=%22Device%20for%20embeddings:%20cpu,%20cuda,%20mps%22",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "89": {
         "chunkId": "8561f0",
         "hash": "a497579a",
         "encoded": ")",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "91": {
         "chunkId": "8561f0",
         "hash": "fef807ae",
         "encoded": "#%20=========================================================================",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "92": {
         "chunkId": "8561f0",
         "hash": "867ee602",
         "encoded": "#%20VECTOR%20DATABASE%20CONFIGURATION",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "93": {
         "chunkId": "8561f0",
         "hash": "e82dffe7",
         "encoded": "#%20=========================================================================",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "94": {
         "chunkId": "8561f0",
         "hash": "daab387e",
         "encoded": "vector_store:%20str%20=%20Field(",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "95": {
         "chunkId": "8561f0",
         "hash": "9973c241",
         "encoded": "default=%22chroma%22,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "96": {
         "chunkId": "8561f0",
         "hash": "15426b46",
         "encoded": "description=%22Vector%20store%20type:%20chroma%22",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "97": {
         "chunkId": "8561f0",
         "hash": "9973c4bc",
         "encoded": ")",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "98": {
         "chunkId": "8561f0",
         "hash": "020f33db",
         "encoded": "vector_db_path:%20Optional%5Bstr%5D%20=%20Field(",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "99": {
         "chunkId": "8561f0",
         "hash": "3266e660",
         "encoded": "default=None,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "100": {
         "chunkId": "8561f0",
         "hash": "125c960b",
         "encoded": "description=%22Custom%20vector%20DB%20path%20(optional)%22",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "101": {
         "chunkId": "8561f0",
         "hash": "714ca3af",
         "encoded": ")",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "102": {
         "chunkId": "8561f0",
         "hash": "225f26ad",
         "encoded": "collection_name:%20str%20=%20Field(",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "103": {
         "chunkId": "8561f0",
         "hash": "ea8f063b",
         "encoded": "default=%22music_knowledge%22,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "104": {
         "chunkId": "8561f0",
         "hash": "9ed3401d",
         "encoded": "description=%22ChromaDB%20collection%20name%22",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "105": {
         "chunkId": "8561f0",
         "hash": "59b65f59",
         "encoded": ")",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "106": {
         "chunkId": "8561f0",
         "hash": "661776f1",
         "encoded": "retrieval_top_k:%20int%20=%20Field(",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "107": {
         "chunkId": "8561f0",
         "hash": "92afdc42",
         "encoded": "default=5,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "108": {
         "chunkId": "8561f0",
         "hash": "3b2cb37d",
         "encoded": "ge=1,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "109": {
         "chunkId": "8561f0",
         "hash": "5f45c597",
         "encoded": "le=20,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "110": {
         "chunkId": "8561f0",
         "hash": "6b26f7d9",
         "encoded": "description=%22Number%20of%20top%20results%20to%20retrieve%22",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "111": {
         "chunkId": "8561f0",
         "hash": "f0befa65",
         "encoded": ")",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "113": {
         "chunkId": "8561f0",
         "hash": "7acbd892",
         "encoded": "#%20=========================================================================",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "114": {
         "chunkId": "8561f0",
         "hash": "57f52405",
         "encoded": "#%20RECOMMENDATION%20ENGINE%20SETTINGS",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "115": {
         "chunkId": "8561f0",
         "hash": "bbf6045e",
         "encoded": "#%20=========================================================================",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "116": {
         "chunkId": "8561f0",
         "hash": "ff59d01b",
         "encoded": "max_recommendations:%20int%20=%20Field(",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "117": {
         "chunkId": "8561f0",
         "hash": "29035953",
         "encoded": "default=5,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "118": {
         "chunkId": "8561f0",
         "hash": "d0b75efd",
         "encoded": "ge=1,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "119": {
         "chunkId": "8561f0",
         "hash": "f9b3cd7b",
         "encoded": "le=10,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "120": {
         "chunkId": "8561f0",
         "hash": "946792fc",
         "encoded": "description=%22Maximum%20number%20of%20track%20recommendations%22",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "121": {
         "chunkId": "8561f0",
         "hash": "0059af44",
         "encoded": ")",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "122": {
         "chunkId": "8561f0",
         "hash": "6f8df601",
         "encoded": "max_memory_length:%20int%20=%20Field(",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "123": {
         "chunkId": "8561f0",
         "hash": "54d88cd3",
         "encoded": "default=5000,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "124": {
         "chunkId": "8561f0",
         "hash": "e8c0e3e7",
         "encoded": "ge=100,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "125": {
         "chunkId": "8561f0",
         "hash": "d43f9a74",
         "encoded": "le=10000,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "126": {
         "chunkId": "8561f0",
         "hash": "f5758e41",
         "encoded": "description=%22Maximum%20character%20length%20for%20memory%20input%22",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "127": {
         "chunkId": "e3cbca",
         "hash": "d6e1fc11",
         "encoded": ")",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "129": {
         "chunkId": "8561f0",
         "hash": "6756eadc",
         "encoded": "#%20Scoring%20weights",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "130": {
         "chunkId": "e3cbca",
         "hash": "dcb34f83",
         "encoded": "weight_mood:%20float%20=%20Field(",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "131": {
         "chunkId": "e3cbca",
         "hash": "baed66ad",
         "encoded": "default=0.25,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "132": {
         "chunkId": "e3cbca",
         "hash": "a0fdeac8",
         "encoded": "ge=0.0,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "133": {
         "chunkId": "e3cbca",
         "hash": "6a575c94",
         "encoded": "le=1.0,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "134": {
         "chunkId": "e3cbca",
         "hash": "0bfd5344",
         "encoded": "description=%22Weight%20for%20mood%20matching%20in%20scoring%22",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "135": {
         "chunkId": "e3cbca",
         "hash": "7489ea82",
         "encoded": ")",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "136": {
         "chunkId": "e3cbca",
         "hash": "19ea037f",
         "encoded": "weight_genre:%20float%20=%20Field(",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "137": {
         "chunkId": "e3cbca",
         "hash": "aa770517",
         "encoded": "default=0.20,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "138": {
         "chunkId": "e3cbca",
         "hash": "27d658e2",
         "encoded": "ge=0.0,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "139": {
         "chunkId": "e3cbca",
         "hash": "c505f031",
         "encoded": "le=1.0,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "140": {
         "chunkId": "e3cbca",
         "hash": "ef79504b",
         "encoded": "description=%22Weight%20for%20genre%20matching%20in%20scoring%22",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "141": {
         "chunkId": "e3cbca",
         "hash": "afe3c588",
         "encoded": ")",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "142": {
         "chunkId": "e3cbca",
         "hash": "252c8230",
         "encoded": "weight_language:%20float%20=%20Field(",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "143": {
         "chunkId": "e3cbca",
         "hash": "57f778b3",
         "encoded": "default=0.15,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "144": {
         "chunkId": "e3cbca",
         "hash": "c8269e67",
         "encoded": "ge=0.0,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "145": {
         "chunkId": "e3cbca",
         "hash": "a1ba7e19",
         "encoded": "le=1.0,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "146": {
         "chunkId": "e3cbca",
         "hash": "8705f46b",
         "encoded": "description=%22Weight%20for%20language%20compatibility%20in%20scoring%22",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "147": {
         "chunkId": "e3cbca",
         "hash": "0af61669",
         "encoded": ")",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "148": {
         "chunkId": "e3cbca",
         "hash": "e7e7f230",
         "encoded": "weight_instrument:%20float%20=%20Field(",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "149": {
         "chunkId": "e3cbca",
         "hash": "a5ebd56a",
         "encoded": "default=0.10,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "150": {
         "chunkId": "e3cbca",
         "hash": "95d4b0e2",
         "encoded": "ge=0.0,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "151": {
         "chunkId": "e3cbca",
         "hash": "4a18420b",
         "encoded": "le=1.0,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "152": {
         "chunkId": "e3cbca",
         "hash": "36afbc2f",
         "encoded": "description=%22Weight%20for%20instrument%20matching%20in%20scoring%22",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "153": {
         "chunkId": "e3cbca",
         "hash": "6351b77a",
         "encoded": ")",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "154": {
         "chunkId": "e3cbca",
         "hash": "00ee2262",
         "encoded": "weight_theme:%20float%20=%20Field(",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "155": {
         "chunkId": "e3cbca",
         "hash": "9ba0dad8",
         "encoded": "default=0.10,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "156": {
         "chunkId": "e3cbca",
         "hash": "378b1cbf",
         "encoded": "ge=0.0,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "157": {
         "chunkId": "e3cbca",
         "hash": "0d14aaa5",
         "encoded": "le=1.0,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "158": {
         "chunkId": "e3cbca",
         "hash": "f1d838de",
         "encoded": "description=%22Weight%20for%20theme%20matching%20in%20scoring%22",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "159": {
         "chunkId": "e3cbca",
         "hash": "47b98f1e",
         "encoded": ")",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "160": {
         "chunkId": "e3cbca",
         "hash": "b7a2456b",
         "encoded": "weight_audio:%20float%20=%20Field(",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "161": {
         "chunkId": "e3cbca",
         "hash": "fce4d3de",
         "encoded": "default=0.10,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "162": {
         "chunkId": "e3cbca",
         "hash": "93e99169",
         "encoded": "ge=0.0,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "163": {
         "chunkId": "e3cbca",
         "hash": "613d87f4",
         "encoded": "le=1.0,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "164": {
         "chunkId": "e3cbca",
         "hash": "2ae7806c",
         "encoded": "description=%22Weight%20for%20tempo%20and%20energy%20compatibility%22",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "165": {
         "chunkId": "e3cbca",
         "hash": "8e5dac78",
         "encoded": ")",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "166": {
         "chunkId": "e3cbca",
         "hash": "d1a514c7",
         "encoded": "weight_personal:%20float%20=%20Field(",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "167": {
         "chunkId": "e3cbca",
         "hash": "13843acd",
         "encoded": "default=0.10,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "168": {
         "chunkId": "e3cbca",
         "hash": "13f9e938",
         "encoded": "ge=0.0,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "169": {
         "chunkId": "e3cbca",
         "hash": "7b2f12ba",
         "encoded": "le=1.0,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "170": {
         "chunkId": "e3cbca",
         "hash": "9d1ac355",
         "encoded": "description=%22Weight%20for%20future%20preference%20signals%22",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e3cbca"
+        ]
       },
       "171": {
         "chunkId": "8561f0",
         "hash": "88de31a9",
         "encoded": ")",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "173": {
         "chunkId": "8561f0",
         "hash": "69240d76",
         "encoded": "#%20=========================================================================",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "174": {
         "chunkId": "8561f0",
         "hash": "c3b6317e",
         "encoded": "#%20OPTIONAL%20FEATURES",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "175": {
         "chunkId": "8561f0",
         "hash": "7650f478",
         "encoded": "#%20=========================================================================",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "176": {
         "chunkId": "8561f0",
         "hash": "41940152",
         "encoded": "enable_external_music_lookup:%20bool%20=%20Field(",
-        "prevChunkIds": []
-      },
-      "178": {
-        "chunkId": "8561f0",
-        "hash": "7263aabb",
-        "encoded": "description=%22Enable%20iTunes%20API%20for%20additional%20metadata%22",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "179": {
         "chunkId": "8561f0",
         "hash": "3eb301cc",
         "encoded": ")",
-        "prevChunkIds": []
-      },
-      "180": {
-        "chunkId": "8561f0",
-        "hash": "8695d815",
-        "encoded": "enable_memory_vault:%20bool%20=%20Field(",
-        "prevChunkIds": []
-      },
-      "181": {
-        "chunkId": "8561f0",
-        "hash": "3a452e23",
-        "encoded": "default=True,",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "182": {
         "chunkId": "8561f0",
-        "hash": "081592df",
-        "encoded": "description=%22Enable%20memory%20vault%20persistence%22",
-        "prevChunkIds": []
+        "hash": "fb11ec02",
+        "encoded": "enable_memory_vault:%20bool%20=%20Field(",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "183": {
         "chunkId": "8561f0",
-        "hash": "52bea5c5",
-        "encoded": ")",
-        "prevChunkIds": []
+        "hash": "c67f45ed",
+        "encoded": "default=True,",
+        "prevChunkIds": [
+          "8561f0"
+        ]
+      },
+      "184": {
+        "chunkId": "8561f0",
+        "hash": "e88c3c0b",
+        "encoded": "description=%22Enable%20memory%20vault%20persistence%22",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "185": {
         "chunkId": "8561f0",
-        "hash": "34d5dcbe",
-        "encoded": "#%20=========================================================================",
-        "prevChunkIds": []
-      },
-      "186": {
-        "chunkId": "8561f0",
-        "hash": "ad730e5e",
-        "encoded": "#%20DATA%20STORAGE",
-        "prevChunkIds": []
+        "hash": "09de608b",
+        "encoded": ")",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "187": {
         "chunkId": "8561f0",
         "hash": "3e154bfc",
         "encoded": "#%20=========================================================================",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "188": {
         "chunkId": "8561f0",
-        "hash": "6dcf6103",
-        "encoded": "app_data_dir:%20Optional%5Bstr%5D%20=%20Field(",
-        "prevChunkIds": []
+        "hash": "26ed732e",
+        "encoded": "#%20DATA%20STORAGE",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "189": {
         "chunkId": "8561f0",
-        "hash": "cbd6e097",
-        "encoded": "default=None,",
-        "prevChunkIds": []
+        "hash": "89cb0db0",
+        "encoded": "#%20=========================================================================",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "190": {
         "chunkId": "8561f0",
-        "hash": "f70d09b8",
-        "encoded": "description=%22Custom%20app%20data%20directory%20(optional)%22",
-        "prevChunkIds": []
+        "hash": "2b933263",
+        "encoded": "app_data_dir:%20Optional%5Bstr%5D%20=%20Field(",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "191": {
         "chunkId": "8561f0",
-        "hash": "ce892054",
-        "encoded": ")",
-        "prevChunkIds": []
+        "hash": "19698c5e",
+        "encoded": "default=None,",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "192": {
         "chunkId": "8561f0",
-        "hash": "89d84c2c",
-        "encoded": "db_name:%20str%20=%20Field(",
-        "prevChunkIds": []
+        "hash": "fa3a19d2",
+        "encoded": "description=%22Custom%20app%20data%20directory%20(optional)%22",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "193": {
         "chunkId": "8561f0",
-        "hash": "a83f17fa",
-        "encoded": "default=%22memories.db%22,",
-        "prevChunkIds": []
+        "hash": "6b397fa0",
+        "encoded": ")",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "194": {
         "chunkId": "8561f0",
-        "hash": "c905a35d",
-        "encoded": "description=%22SQLite%20database%20filename%22",
-        "prevChunkIds": []
+        "hash": "80351e3b",
+        "encoded": "db_name:%20str%20=%20Field(",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "195": {
         "chunkId": "8561f0",
-        "hash": "cfb24311",
-        "encoded": ")",
-        "prevChunkIds": []
+        "hash": "57fdd851",
+        "encoded": "default=%22memories.db%22,",
+        "prevChunkIds": [
+          "8561f0"
+        ]
+      },
+      "196": {
+        "chunkId": "8561f0",
+        "hash": "1a6134db",
+        "encoded": "description=%22SQLite%20database%20filename%22",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "197": {
         "chunkId": "8561f0",
-        "hash": "59806559",
-        "encoded": "#%20=========================================================================",
-        "prevChunkIds": []
-      },
-      "198": {
-        "chunkId": "8561f0",
-        "hash": "90d58697",
-        "encoded": "#%20PYDANTIC%20CONFIGURATION",
-        "prevChunkIds": []
+        "hash": "34074b2c",
+        "encoded": ")",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "199": {
         "chunkId": "8561f0",
         "hash": "e25b068a",
         "encoded": "#%20=========================================================================",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "200": {
         "chunkId": "8561f0",
-        "hash": "11da2245",
-        "encoded": "model_config%20=%20SettingsConfigDict(",
-        "prevChunkIds": []
+        "hash": "93e5a389",
+        "encoded": "#%20PYDANTIC%20CONFIGURATION",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "201": {
         "chunkId": "8561f0",
-        "hash": "6e7a587d",
-        "encoded": "env_file=%22.env%22,",
-        "prevChunkIds": []
+        "hash": "0e4b5569",
+        "encoded": "#%20=========================================================================",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "202": {
         "chunkId": "8561f0",
-        "hash": "a5d75d15",
-        "encoded": "env_file_encoding=%22utf-8%22,",
-        "prevChunkIds": []
+        "hash": "b9370dc5",
+        "encoded": "model_config%20=%20SettingsConfigDict(",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "203": {
         "chunkId": "8561f0",
-        "hash": "f528a69c",
-        "encoded": "case_sensitive=False,",
-        "prevChunkIds": []
+        "hash": "bdbad34f",
+        "encoded": "env_file=%22.env%22,",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "204": {
         "chunkId": "8561f0",
-        "hash": "84914483",
-        "encoded": "extra=%22ignore%22",
-        "prevChunkIds": []
+        "hash": "3b7cc390",
+        "encoded": "env_file_encoding=%22utf-8%22,",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "205": {
         "chunkId": "8561f0",
-        "hash": "1df2abd0",
-        "encoded": ")",
-        "prevChunkIds": []
+        "hash": "4e5f3bbc",
+        "encoded": "case_sensitive=False,",
+        "prevChunkIds": [
+          "8561f0"
+        ]
+      },
+      "206": {
+        "chunkId": "8561f0",
+        "hash": "066e67a5",
+        "encoded": "extra=%22ignore%22",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "207": {
         "chunkId": "8561f0",
-        "hash": "84210f0d",
-        "encoded": "#%20=========================================================================",
-        "prevChunkIds": []
-      },
-      "208": {
-        "chunkId": "8561f0",
-        "hash": "a8baee3c",
-        "encoded": "#%20VALIDATORS",
-        "prevChunkIds": []
+        "hash": "1f7a9c64",
+        "encoded": ")",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "209": {
         "chunkId": "8561f0",
         "hash": "cc85a6cb",
         "encoded": "#%20=========================================================================",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "210": {
         "chunkId": "8561f0",
-        "hash": "5a9bbeec",
-        "encoded": "@field_validator(%22log_level%22)",
-        "prevChunkIds": []
+        "hash": "59f5db91",
+        "encoded": "#%20VALIDATORS",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "211": {
         "chunkId": "8561f0",
-        "hash": "ff687fd4",
-        "encoded": "@classmethod",
-        "prevChunkIds": []
+        "hash": "92a2ce98",
+        "encoded": "#%20=========================================================================",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "212": {
         "chunkId": "8561f0",
-        "hash": "d55d7b7e",
-        "encoded": "def%20validate_log_level(cls,%20v:%20str)%20-%3E%20str:",
-        "prevChunkIds": []
+        "hash": "da2f66a4",
+        "encoded": "@field_validator(%22log_level%22)",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "213": {
         "chunkId": "8561f0",
-        "hash": "0800db6c",
-        "encoded": "%22%22%22Validate%20log%20level.%22%22%22",
-        "prevChunkIds": []
+        "hash": "fb0bdb07",
+        "encoded": "@classmethod",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "214": {
         "chunkId": "8561f0",
-        "hash": "dd0a8d8c",
-        "encoded": "valid_levels%20=%20%5B%22DEBUG%22,%20%22INFO%22,%20%22WARNING%22,%20%22ERROR%22,%20%22CRITICAL%22%5D",
-        "prevChunkIds": []
+        "hash": "ceef4a5e",
+        "encoded": "def%20validate_log_level(cls,%20v:%20str)%20-%3E%20str:",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "215": {
         "chunkId": "8561f0",
-        "hash": "083a0c0c",
-        "encoded": "v_upper%20=%20v.upper()",
-        "prevChunkIds": []
+        "hash": "128f1e08",
+        "encoded": "%22%22%22Validate%20log%20level.%22%22%22",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "216": {
         "chunkId": "8561f0",
-        "hash": "fdcc2349",
-        "encoded": "if%20v_upper%20not%20in%20valid_levels:",
-        "prevChunkIds": []
+        "hash": "ed607fdd",
+        "encoded": "valid_levels%20=%20%5B%22DEBUG%22,%20%22INFO%22,%20%22WARNING%22,%20%22ERROR%22,%20%22CRITICAL%22%5D",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "217": {
         "chunkId": "8561f0",
-        "hash": "9c5dc94b",
-        "encoded": "raise%20ValueError(f%22Invalid%20log%20level:%20%7Bv%7D.%20Must%20be%20one%20of%20%7Bvalid_levels%7D%22)",
-        "prevChunkIds": []
+        "hash": "3d252de0",
+        "encoded": "v_upper%20=%20v.upper()",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "218": {
         "chunkId": "8561f0",
-        "hash": "cd1410ff",
-        "encoded": "return%20v_upper",
-        "prevChunkIds": []
+        "hash": "589e6281",
+        "encoded": "if%20v_upper%20not%20in%20valid_levels:",
+        "prevChunkIds": [
+          "8561f0"
+        ]
+      },
+      "219": {
+        "chunkId": "8561f0",
+        "hash": "8932cb1b",
+        "encoded": "raise%20ValueError(f%22Invalid%20log%20level:%20%7Bv%7D.%20Must%20be%20one%20of%20%7Bvalid_levels%7D%22)",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "220": {
         "chunkId": "8561f0",
-        "hash": "8dfd991b",
-        "encoded": "@field_validator(%22weight_mood%22,%20%22weight_genre%22,%20%22weight_instrument%22,%20%22weight_theme%22)",
-        "prevChunkIds": []
-      },
-      "221": {
-        "chunkId": "8561f0",
-        "hash": "f98ec1da",
-        "encoded": "@classmethod",
-        "prevChunkIds": []
+        "hash": "bae091a5",
+        "encoded": "return%20v_upper",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "222": {
         "chunkId": "8561f0",
-        "hash": "b3625210",
-        "encoded": "def%20validate_weights(cls,%20v:%20float)%20-%3E%20float:",
-        "prevChunkIds": []
+        "hash": "4ec638d2",
+        "encoded": "@field_validator(%22weight_mood%22,%20%22weight_genre%22,%20%22weight_instrument%22,%20%22weight_theme%22)",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "223": {
         "chunkId": "8561f0",
-        "hash": "8e6a21a1",
-        "encoded": "%22%22%22Validate%20that%20weights%20are%20between%200%20and%201.%22%22%22",
-        "prevChunkIds": []
+        "hash": "c8d64894",
+        "encoded": "@classmethod",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "224": {
         "chunkId": "8561f0",
-        "hash": "9d0a29a7",
-        "encoded": "if%20not%200.0%20%3C=%20v%20%3C=%201.0:",
-        "prevChunkIds": []
+        "hash": "808f3af5",
+        "encoded": "def%20validate_weights(cls,%20v:%20float)%20-%3E%20float:",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "225": {
         "chunkId": "8561f0",
-        "hash": "bc6bde64",
-        "encoded": "raise%20ValueError(f%22Weight%20must%20be%20between%200%20and%201,%20got%20%7Bv%7D%22)",
-        "prevChunkIds": []
+        "hash": "141b0fc3",
+        "encoded": "%22%22%22Validate%20that%20weights%20are%20between%200%20and%201.%22%22%22",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "226": {
         "chunkId": "8561f0",
-        "hash": "adea2bde",
-        "encoded": "return%20v",
-        "prevChunkIds": []
+        "hash": "74398d65",
+        "encoded": "if%20not%200.0%20%3C=%20v%20%3C=%201.0:",
+        "prevChunkIds": [
+          "8561f0"
+        ]
+      },
+      "227": {
+        "chunkId": "8561f0",
+        "hash": "93b4d644",
+        "encoded": "raise%20ValueError(f%22Weight%20must%20be%20between%200%20and%201,%20got%20%7Bv%7D%22)",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "228": {
         "chunkId": "8561f0",
-        "hash": "55a1c724",
-        "encoded": "#%20=========================================================================",
-        "prevChunkIds": []
-      },
-      "229": {
-        "chunkId": "8561f0",
-        "hash": "85301eda",
-        "encoded": "#%20COMPUTED%20PROPERTIES",
-        "prevChunkIds": []
+        "hash": "6bd597b4",
+        "encoded": "return%20v",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "230": {
         "chunkId": "8561f0",
         "hash": "598be5aa",
         "encoded": "#%20=========================================================================",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "231": {
         "chunkId": "8561f0",
-        "hash": "92fab8a3",
-        "encoded": "@property",
-        "prevChunkIds": []
+        "hash": "17686774",
+        "encoded": "#%20COMPUTED%20PROPERTIES",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "232": {
         "chunkId": "8561f0",
-        "hash": "f6a526a7",
-        "encoded": "def%20data_dir(self)%20-%3E%20Path:",
-        "prevChunkIds": []
+        "hash": "94693f4f",
+        "encoded": "#%20=========================================================================",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "233": {
         "chunkId": "8561f0",
-        "hash": "c9d43bb5",
-        "encoded": "%22%22%22Get%20the%20application%20data%20directory%20(platform-aware).%22%22%22",
-        "prevChunkIds": []
+        "hash": "b07801d2",
+        "encoded": "@property",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "234": {
         "chunkId": "8561f0",
-        "hash": "6c20042a",
-        "encoded": "if%20self.app_data_dir:",
-        "prevChunkIds": []
+        "hash": "0d97b3fd",
+        "encoded": "def%20data_dir(self)%20-%3E%20Path:",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "235": {
         "chunkId": "8561f0",
-        "hash": "28fc3c9c",
-        "encoded": "return%20Path(self.app_data_dir)",
-        "prevChunkIds": []
+        "hash": "b1d5807a",
+        "encoded": "%22%22%22Get%20the%20application%20data%20directory%20(platform-aware).%22%22%22",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "236": {
         "chunkId": "8561f0",
-        "hash": "6ee4687d",
-        "encoded": "return%20Path(user_data_dir(self.app_name,%20appauthor=False))",
-        "prevChunkIds": []
+        "hash": "c0ae533d",
+        "encoded": "if%20self.app_data_dir:",
+        "prevChunkIds": [
+          "8561f0"
+        ]
+      },
+      "237": {
+        "chunkId": "8561f0",
+        "hash": "a70de2fc",
+        "encoded": "return%20Path(self.app_data_dir)",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "238": {
         "chunkId": "8561f0",
-        "hash": "269f6b63",
-        "encoded": "@property",
-        "prevChunkIds": []
-      },
-      "239": {
-        "chunkId": "8561f0",
-        "hash": "f33ec3b2",
-        "encoded": "def%20cache_dir(self)%20-%3E%20Path:",
-        "prevChunkIds": []
+        "hash": "5fd3f12f",
+        "encoded": "return%20Path(user_data_dir(self.app_name,%20appauthor=False))",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "240": {
         "chunkId": "8561f0",
-        "hash": "abe54ca7",
-        "encoded": "%22%22%22Get%20the%20application%20cache%20directory%20(platform-aware).%22%22%22",
-        "prevChunkIds": []
+        "hash": "84457643",
+        "encoded": "@property",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "241": {
         "chunkId": "8561f0",
-        "hash": "162e788e",
-        "encoded": "return%20Path(user_cache_dir(self.app_name,%20appauthor=False))",
-        "prevChunkIds": []
+        "hash": "5f2a359c",
+        "encoded": "def%20cache_dir(self)%20-%3E%20Path:",
+        "prevChunkIds": [
+          "8561f0"
+        ]
+      },
+      "242": {
+        "chunkId": "8561f0",
+        "hash": "9f67f0e9",
+        "encoded": "%22%22%22Get%20the%20application%20cache%20directory%20(platform-aware).%22%22%22",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "243": {
         "chunkId": "8561f0",
-        "hash": "adddafd9",
-        "encoded": "@property",
-        "prevChunkIds": []
-      },
-      "244": {
-        "chunkId": "8561f0",
-        "hash": "d77e5d1a",
-        "encoded": "def%20db_path(self)%20-%3E%20Path:",
-        "prevChunkIds": []
+        "hash": "327ffaa5",
+        "encoded": "return%20Path(user_cache_dir(self.app_name,%20appauthor=False))",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "245": {
         "chunkId": "8561f0",
-        "hash": "e2b0f268",
-        "encoded": "%22%22%22Get%20the%20full%20database%20file%20path.%22%22%22",
-        "prevChunkIds": []
+        "hash": "d5081cac",
+        "encoded": "@property",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "246": {
         "chunkId": "8561f0",
-        "hash": "980c8423",
-        "encoded": "return%20self.data_dir%20/%20self.db_name",
-        "prevChunkIds": []
+        "hash": "2b8ffa43",
+        "encoded": "def%20db_path(self)%20-%3E%20Path:",
+        "prevChunkIds": [
+          "8561f0"
+        ]
+      },
+      "247": {
+        "chunkId": "8561f0",
+        "hash": "2bbeb816",
+        "encoded": "%22%22%22Get%20the%20full%20database%20file%20path.%22%22%22",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "248": {
         "chunkId": "8561f0",
-        "hash": "68c950a3",
-        "encoded": "@property",
-        "prevChunkIds": []
-      },
-      "249": {
-        "chunkId": "8561f0",
-        "hash": "aa2ce831",
-        "encoded": "def%20vector_db_dir(self)%20-%3E%20Path:",
-        "prevChunkIds": []
+        "hash": "ad8fcaab",
+        "encoded": "return%20self.data_dir%20/%20self.db_name",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "250": {
         "chunkId": "8561f0",
-        "hash": "7c2155f2",
-        "encoded": "%22%22%22Get%20the%20vector%20database%20directory.%22%22%22",
-        "prevChunkIds": []
+        "hash": "d6fabef1",
+        "encoded": "@property",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "251": {
         "chunkId": "8561f0",
-        "hash": "4f1ac70d",
-        "encoded": "if%20self.vector_db_path:",
-        "prevChunkIds": []
+        "hash": "6e3eaadf",
+        "encoded": "def%20vector_db_dir(self)%20-%3E%20Path:",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "252": {
         "chunkId": "8561f0",
-        "hash": "2feb7f68",
-        "encoded": "return%20Path(self.vector_db_path)",
-        "prevChunkIds": []
+        "hash": "8a837910",
+        "encoded": "%22%22%22Get%20the%20vector%20database%20directory.%22%22%22",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "253": {
         "chunkId": "8561f0",
-        "hash": "42a76c3c",
-        "encoded": "return%20self.data_dir%20/%20%22chroma_db%22",
-        "prevChunkIds": []
+        "hash": "b0a24d7f",
+        "encoded": "if%20self.vector_db_path:",
+        "prevChunkIds": [
+          "8561f0"
+        ]
+      },
+      "254": {
+        "chunkId": "8561f0",
+        "hash": "f229ef42",
+        "encoded": "return%20Path(self.vector_db_path)",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "255": {
         "chunkId": "8561f0",
-        "hash": "27d21013",
-        "encoded": "@property",
-        "prevChunkIds": []
-      },
-      "256": {
-        "chunkId": "8561f0",
-        "hash": "2b18544a",
-        "encoded": "def%20total_weight(self)%20-%3E%20float:",
-        "prevChunkIds": []
+        "hash": "b8b42555",
+        "encoded": "return%20self.data_dir%20/%20%22chroma_db%22",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "257": {
-        "chunkId": "68e80e",
-        "hash": "66fb30c2",
-        "encoded": "%22%22%22Calculate%20total%20configured%20scoring%20weight.%22%22%22",
-        "prevChunkIds": []
+        "chunkId": "8561f0",
+        "hash": "f2868755",
+        "encoded": "@property",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "258": {
-        "chunkId": "68e80e",
-        "hash": "ba5f501c",
-        "encoded": "return%20sum((",
-        "prevChunkIds": []
+        "chunkId": "8561f0",
+        "hash": "94a5680c",
+        "encoded": "def%20total_weight(self)%20-%3E%20float:",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "259": {
         "chunkId": "68e80e",
-        "hash": "aa133430",
-        "encoded": "self.weight_mood,%20self.weight_genre,%20self.weight_language,",
-        "prevChunkIds": []
+        "hash": "5935c547",
+        "encoded": "%22%22%22Calculate%20total%20configured%20scoring%20weight.%22%22%22",
+        "prevChunkIds": [
+          "68e80e"
+        ]
       },
       "260": {
         "chunkId": "68e80e",
-        "hash": "7a000b40",
-        "encoded": "self.weight_instrument,%20self.weight_theme,%20self.weight_audio,",
-        "prevChunkIds": []
+        "hash": "6f1bcf43",
+        "encoded": "return%20sum((",
+        "prevChunkIds": [
+          "68e80e"
+        ]
       },
       "261": {
         "chunkId": "68e80e",
-        "hash": "f8041c65",
-        "encoded": "self.weight_personal,",
-        "prevChunkIds": []
+        "hash": "3a2dfcb0",
+        "encoded": "self.weight_mood,%20self.weight_genre,%20self.weight_language,",
+        "prevChunkIds": [
+          "68e80e"
+        ]
       },
       "262": {
         "chunkId": "68e80e",
-        "hash": "53bb1461",
-        "encoded": "))",
-        "prevChunkIds": []
+        "hash": "244a58d1",
+        "encoded": "self.weight_instrument,%20self.weight_theme,%20self.weight_audio,",
+        "prevChunkIds": [
+          "68e80e"
+        ]
+      },
+      "263": {
+        "chunkId": "68e80e",
+        "hash": "c41b86df",
+        "encoded": "self.weight_personal,",
+        "prevChunkIds": [
+          "68e80e"
+        ]
       },
       "264": {
-        "chunkId": "8561f0",
-        "hash": "1e3e6226",
-        "encoded": "def%20validate_weights_sum(self)%20-%3E%20bool:",
-        "prevChunkIds": []
-      },
-      "265": {
-        "chunkId": "8561f0",
-        "hash": "8f1960e9",
-        "encoded": "%22%22%22Check%20if%20weights%20approximately%20sum%20to%201.0.%22%22%22",
-        "prevChunkIds": []
+        "chunkId": "68e80e",
+        "hash": "5ec4122f",
+        "encoded": "))",
+        "prevChunkIds": [
+          "68e80e"
+        ]
       },
       "266": {
         "chunkId": "8561f0",
-        "hash": "8336a89b",
-        "encoded": "return%20abs(self.total_weight%20-%201.0)%20%3C%200.01",
-        "prevChunkIds": []
+        "hash": "a785fe1a",
+        "encoded": "def%20validate_weights_sum(self)%20-%3E%20bool:",
+        "prevChunkIds": [
+          "8561f0"
+        ]
+      },
+      "267": {
+        "chunkId": "8561f0",
+        "hash": "568ed15e",
+        "encoded": "%22%22%22Check%20if%20weights%20approximately%20sum%20to%201.0.%22%22%22",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "268": {
         "chunkId": "8561f0",
-        "hash": "bab0c5af",
-        "encoded": "def%20ensure_directories(self)%20-%3E%20None:",
-        "prevChunkIds": []
-      },
-      "269": {
-        "chunkId": "8561f0",
-        "hash": "57a496f6",
-        "encoded": "%22%22%22Create%20necessary%20application%20directories.%22%22%22",
-        "prevChunkIds": []
+        "hash": "ca8b86d8",
+        "encoded": "return%20abs(self.total_weight%20-%201.0)%20%3C%200.01",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "270": {
         "chunkId": "8561f0",
-        "hash": "39e0cc6c",
-        "encoded": "self.data_dir.mkdir(parents=True,%20exist_ok=True)",
-        "prevChunkIds": []
+        "hash": "5568d14e",
+        "encoded": "def%20ensure_directories(self)%20-%3E%20None:",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "271": {
         "chunkId": "8561f0",
-        "hash": "9348bfdb",
-        "encoded": "self.cache_dir.mkdir(parents=True,%20exist_ok=True)",
-        "prevChunkIds": []
+        "hash": "a983fc8f",
+        "encoded": "%22%22%22Create%20necessary%20application%20directories.%22%22%22",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "272": {
         "chunkId": "8561f0",
-        "hash": "44a91be9",
-        "encoded": "self.vector_db_dir.mkdir(parents=True,%20exist_ok=True)",
-        "prevChunkIds": []
+        "hash": "6a846972",
+        "encoded": "self.data_dir.mkdir(parents=True,%20exist_ok=True)",
+        "prevChunkIds": [
+          "8561f0"
+        ]
+      },
+      "273": {
+        "chunkId": "8561f0",
+        "hash": "54ae1e00",
+        "encoded": "self.cache_dir.mkdir(parents=True,%20exist_ok=True)",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "274": {
         "chunkId": "8561f0",
-        "hash": "e85d7be5",
-        "encoded": "def%20display_summary(self)%20-%3E%20str:",
-        "prevChunkIds": []
-      },
-      "275": {
-        "chunkId": "8561f0",
-        "hash": "0d5c54b8",
-        "encoded": "%22%22%22Generate%20a%20configuration%20summary%20for%20display.%22%22%22",
-        "prevChunkIds": []
+        "hash": "1e72096a",
+        "encoded": "self.vector_db_dir.mkdir(parents=True,%20exist_ok=True)",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "276": {
         "chunkId": "8561f0",
-        "hash": "40480f6d",
-        "encoded": "return%20f%22%22%22",
-        "prevChunkIds": []
+        "hash": "9df99ada",
+        "encoded": "def%20display_summary(self)%20-%3E%20str:",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "277": {
-        "chunkId": "e2a298",
-        "hash": "49187d47",
-        "encoded": "%7B'='*70%7D",
-        "prevChunkIds": []
+        "chunkId": "8561f0",
+        "hash": "4462df50",
+        "encoded": "%22%22%22Generate%20a%20configuration%20summary%20for%20display.%22%22%22",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "278": {
-        "chunkId": "e2a298",
-        "hash": "0f137938",
-        "encoded": "%7Bself.app_name:%5E66%7D",
-        "prevChunkIds": []
+        "chunkId": "8561f0",
+        "hash": "b3146503",
+        "encoded": "return%20f%22%22%22",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "279": {
         "chunkId": "e2a298",
         "hash": "7b503883",
         "encoded": "%7B'='*70%7D",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "e2a298"
+        ]
+      },
+      "280": {
+        "chunkId": "e2a298",
+        "hash": "7801cfdf",
+        "encoded": "%7Bself.app_name:%5E66%7D",
+        "prevChunkIds": [
+          "e2a298"
+        ]
       },
       "281": {
-        "chunkId": "8561f0",
-        "hash": "946a6a92",
-        "encoded": "ENVIRONMENT:%20%7Bself.app_env%7D",
-        "prevChunkIds": []
+        "chunkId": "e2a298",
+        "hash": "c12c62ca",
+        "encoded": "%7B'='*70%7D",
+        "prevChunkIds": [
+          "e2a298"
+        ]
       },
-      "282": {
+      "283": {
         "chunkId": "8561f0",
-        "hash": "e9374f02",
-        "encoded": "LOG%20LEVEL:%20%7Bself.log_level%7D",
-        "prevChunkIds": []
+        "hash": "1a7ff1bf",
+        "encoded": "ENVIRONMENT:%20%7Bself.app_env%7D",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "284": {
         "chunkId": "8561f0",
-        "hash": "8b1f3e4e",
-        "encoded": "LLM%20CONFIGURATION:",
-        "prevChunkIds": []
-      },
-      "285": {
-        "chunkId": "8561f0",
-        "hash": "47278d82",
-        "encoded": "Provider:%20%7Bself.llm_provider%7D",
-        "prevChunkIds": []
+        "hash": "6cb8f3cf",
+        "encoded": "LOG%20LEVEL:%20%7Bself.log_level%7D",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "286": {
         "chunkId": "8561f0",
-        "hash": "6b166eb3",
-        "encoded": "Model:%20%7Bself.ollama_model%7D",
-        "prevChunkIds": []
+        "hash": "8a0fecda",
+        "encoded": "LLM%20CONFIGURATION:",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "287": {
         "chunkId": "8561f0",
-        "hash": "c6cddfe5",
-        "encoded": "Base%20URL:%20%7Bself.ollama_base_url%7D",
-        "prevChunkIds": []
+        "hash": "2ac159e2",
+        "encoded": "Provider:%20%7Bself.llm_provider%7D",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "288": {
         "chunkId": "8561f0",
-        "hash": "743ef629",
-        "encoded": "Timeout:%20%7Bself.llm_timeout%7Ds",
-        "prevChunkIds": []
+        "hash": "5cb2ad04",
+        "encoded": "Model:%20%7Bself.ollama_model%7D",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "289": {
         "chunkId": "8561f0",
-        "hash": "68515b54",
-        "encoded": "Temperature:%20%7Bself.llm_temperature%7D",
-        "prevChunkIds": []
+        "hash": "03a41a20",
+        "encoded": "Base%20URL:%20%7Bself.ollama_base_url%7D",
+        "prevChunkIds": [
+          "8561f0"
+        ]
+      },
+      "290": {
+        "chunkId": "8561f0",
+        "hash": "14aa97ce",
+        "encoded": "Timeout:%20%7Bself.llm_timeout%7Ds",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "291": {
         "chunkId": "8561f0",
-        "hash": "cff2a9fb",
-        "encoded": "EMBEDDING%20CONFIGURATION:",
-        "prevChunkIds": []
-      },
-      "292": {
-        "chunkId": "8561f0",
-        "hash": "91c2e2b2",
-        "encoded": "Provider:%20%7Bself.embedding_provider%7D",
-        "prevChunkIds": []
+        "hash": "a3d83687",
+        "encoded": "Temperature:%20%7Bself.llm_temperature%7D",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "293": {
         "chunkId": "8561f0",
-        "hash": "16dec68a",
-        "encoded": "Model:%20%7Bself.embedding_model%7D",
-        "prevChunkIds": []
+        "hash": "ce922483",
+        "encoded": "EMBEDDING%20CONFIGURATION:",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "294": {
         "chunkId": "8561f0",
-        "hash": "f7965379",
-        "encoded": "Device:%20%7Bself.embedding_device%7D",
-        "prevChunkIds": []
+        "hash": "d2a3215c",
+        "encoded": "Provider:%20%7Bself.embedding_provider%7D",
+        "prevChunkIds": [
+          "8561f0"
+        ]
+      },
+      "295": {
+        "chunkId": "8561f0",
+        "hash": "9295ef36",
+        "encoded": "Model:%20%7Bself.embedding_model%7D",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "296": {
         "chunkId": "8561f0",
-        "hash": "ffcc0f10",
-        "encoded": "VECTOR%20DATABASE:",
-        "prevChunkIds": []
-      },
-      "297": {
-        "chunkId": "8561f0",
-        "hash": "7cd5b9ce",
-        "encoded": "Type:%20%7Bself.vector_store%7D",
-        "prevChunkIds": []
+        "hash": "b6570694",
+        "encoded": "Device:%20%7Bself.embedding_device%7D",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "298": {
         "chunkId": "8561f0",
-        "hash": "8bde9381",
-        "encoded": "Path:%20%7Bself.vector_db_dir%7D",
-        "prevChunkIds": []
+        "hash": "837b8af3",
+        "encoded": "VECTOR%20DATABASE:",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "299": {
         "chunkId": "8561f0",
-        "hash": "7c664377",
-        "encoded": "Collection:%20%7Bself.collection_name%7D",
-        "prevChunkIds": []
+        "hash": "3770fbf5",
+        "encoded": "Type:%20%7Bself.vector_store%7D",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "300": {
         "chunkId": "8561f0",
-        "hash": "056a107f",
-        "encoded": "Top-K:%20%7Bself.retrieval_top_k%7D",
-        "prevChunkIds": []
+        "hash": "5a73ca8b",
+        "encoded": "Path:%20%7Bself.vector_db_dir%7D",
+        "prevChunkIds": [
+          "8561f0"
+        ]
+      },
+      "301": {
+        "chunkId": "8561f0",
+        "hash": "484b9cba",
+        "encoded": "Collection:%20%7Bself.collection_name%7D",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "302": {
         "chunkId": "8561f0",
-        "hash": "6341bc07",
-        "encoded": "RECOMMENDATION%20ENGINE:",
-        "prevChunkIds": []
-      },
-      "303": {
-        "chunkId": "8561f0",
-        "hash": "22e1dc38",
-        "encoded": "Max%20Recommendations:%20%7Bself.max_recommendations%7D",
-        "prevChunkIds": []
+        "hash": "1f23f158",
+        "encoded": "Top-K:%20%7Bself.retrieval_top_k%7D",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "304": {
         "chunkId": "8561f0",
-        "hash": "b7a55867",
-        "encoded": "Scoring%20Weights:%20Mood=%7Bself.weight_mood%7D,%20Genre=%7Bself.weight_genre%7D,%20Instrument=%7Bself.weight_instrument%7D,%20Theme=%7Bself.weight_theme%7D",
-        "prevChunkIds": []
+        "hash": "e0764126",
+        "encoded": "RECOMMENDATION%20ENGINE:",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "305": {
         "chunkId": "8561f0",
-        "hash": "0998ffe2",
-        "encoded": "Total%20Weight:%20%7Bself.total_weight:.2f%7D",
-        "prevChunkIds": []
+        "hash": "4740d5a5",
+        "encoded": "Max%20Recommendations:%20%7Bself.max_recommendations%7D",
+        "prevChunkIds": [
+          "8561f0"
+        ]
+      },
+      "306": {
+        "chunkId": "8561f0",
+        "hash": "1cd0b387",
+        "encoded": "Scoring%20Weights:%20Mood=%7Bself.weight_mood%7D,%20Genre=%7Bself.weight_genre%7D,%20Instrument=%7Bself.weight_instrument%7D,%20Theme=%7Bself.weight_theme%7D",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "307": {
         "chunkId": "8561f0",
-        "hash": "398fba8e",
-        "encoded": "STORAGE:",
-        "prevChunkIds": []
-      },
-      "308": {
-        "chunkId": "8561f0",
-        "hash": "25a42ca6",
-        "encoded": "Data%20Directory:%20%7Bself.data_dir%7D",
-        "prevChunkIds": []
+        "hash": "abb01354",
+        "encoded": "Total%20Weight:%20%7Bself.total_weight:.2f%7D",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "309": {
         "chunkId": "8561f0",
-        "hash": "adde3a45",
-        "encoded": "Database:%20%7Bself.db_path%7D",
-        "prevChunkIds": []
+        "hash": "db164a9c",
+        "encoded": "STORAGE:",
+        "prevChunkIds": [
+          "8561f0"
+        ]
+      },
+      "310": {
+        "chunkId": "8561f0",
+        "hash": "33c4aecf",
+        "encoded": "Data%20Directory:%20%7Bself.data_dir%7D",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "311": {
         "chunkId": "8561f0",
-        "hash": "3941e580",
-        "encoded": "FEATURES:",
-        "prevChunkIds": []
-      },
-      "312": {
-        "chunkId": "8561f0",
-        "hash": "5f50cf80",
-        "encoded": "Memory%20Vault:%20%7B'Enabled'%20if%20self.enable_memory_vault%20else%20'Disabled'%7D",
-        "prevChunkIds": []
+        "hash": "7ced785f",
+        "encoded": "Database:%20%7Bself.db_path%7D",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "313": {
         "chunkId": "8561f0",
-        "hash": "a8634db3",
-        "encoded": "External%20Music%20Lookup:%20%7B'Enabled'%20if%20self.enable_external_music_lookup%20else%20'Disabled'%7D",
-        "prevChunkIds": []
+        "hash": "9bba8fae",
+        "encoded": "FEATURES:",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "314": {
         "chunkId": "8561f0",
-        "hash": "2ab183b7",
+        "hash": "06495880",
+        "encoded": "Memory%20Vault:%20%7B'Enabled'%20if%20self.enable_memory_vault%20else%20'Disabled'%7D",
+        "prevChunkIds": [
+          "8561f0"
+        ]
+      },
+      "315": {
+        "chunkId": "8561f0",
+        "hash": "4d3aee8d",
+        "encoded": "External%20Music%20Lookup:%20%7B'Enabled'%20if%20self.enable_external_music_lookup%20else%20'Disabled'%7D",
+        "prevChunkIds": [
+          "8561f0"
+        ]
+      },
+      "316": {
+        "chunkId": "8561f0",
+        "hash": "a23890f4",
         "encoded": "%22%22%22",
-        "prevChunkIds": []
-      },
-      "317": {
-        "chunkId": "8561f0",
-        "hash": "ce6f11ac",
-        "encoded": "#%20=============================================================================",
-        "prevChunkIds": []
-      },
-      "318": {
-        "chunkId": "8561f0",
-        "hash": "72ca46c2",
-        "encoded": "#%20GLOBAL%20SETTINGS%20INSTANCE",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "319": {
         "chunkId": "8561f0",
         "hash": "48c494ae",
         "encoded": "#%20=============================================================================",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "320": {
         "chunkId": "8561f0",
-        "hash": "cdaf0a6f",
+        "hash": "7dc0f3b6",
+        "encoded": "#%20GLOBAL%20SETTINGS%20INSTANCE",
+        "prevChunkIds": [
+          "8561f0"
+        ]
+      },
+      "321": {
+        "chunkId": "8561f0",
+        "hash": "2ca41c9a",
+        "encoded": "#%20=============================================================================",
+        "prevChunkIds": [
+          "8561f0"
+        ]
+      },
+      "322": {
+        "chunkId": "8561f0",
+        "hash": "e4301260",
         "encoded": "_settings:%20Optional%5BSettings%5D%20=%20None",
-        "prevChunkIds": []
-      },
-      "323": {
-        "chunkId": "8561f0",
-        "hash": "c69e5a0d",
-        "encoded": "def%20get_settings()%20-%3E%20Settings:",
-        "prevChunkIds": []
-      },
-      "324": {
-        "chunkId": "8561f0",
-        "hash": "a987615b",
-        "encoded": "%22%22%22Get%20the%20global%20settings%20instance%20(singleton%20pattern).%22%22%22",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "325": {
         "chunkId": "8561f0",
-        "hash": "dcebd514",
-        "encoded": "global%20_settings",
-        "prevChunkIds": []
+        "hash": "4ecb63a6",
+        "encoded": "def%20get_settings()%20-%3E%20Settings:",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "326": {
         "chunkId": "8561f0",
-        "hash": "182f5135",
-        "encoded": "if%20_settings%20is%20None:",
-        "prevChunkIds": []
+        "hash": "6de3620b",
+        "encoded": "%22%22%22Get%20the%20global%20settings%20instance%20(singleton%20pattern).%22%22%22",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "327": {
         "chunkId": "8561f0",
-        "hash": "8afba61c",
-        "encoded": "_settings%20=%20Settings()",
-        "prevChunkIds": []
+        "hash": "be99a2b4",
+        "encoded": "global%20_settings",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "328": {
         "chunkId": "8561f0",
-        "hash": "e68b4333",
-        "encoded": "#%20Ensure%20directories%20exist",
-        "prevChunkIds": []
+        "hash": "40efcc37",
+        "encoded": "if%20_settings%20is%20None:",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "329": {
         "chunkId": "8561f0",
-        "hash": "bcc4d2af",
-        "encoded": "_settings.ensure_directories()",
-        "prevChunkIds": []
+        "hash": "906d8d19",
+        "encoded": "_settings%20=%20Settings()",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "330": {
         "chunkId": "8561f0",
-        "hash": "e10f4d2e",
+        "hash": "03eb058f",
+        "encoded": "#%20Ensure%20directories%20exist",
+        "prevChunkIds": [
+          "8561f0"
+        ]
+      },
+      "331": {
+        "chunkId": "8561f0",
+        "hash": "ae4628d3",
+        "encoded": "_settings.ensure_directories()",
+        "prevChunkIds": [
+          "8561f0"
+        ]
+      },
+      "332": {
+        "chunkId": "8561f0",
+        "hash": "fbb072c8",
         "encoded": "return%20_settings",
-        "prevChunkIds": []
-      },
-      "333": {
-        "chunkId": "8561f0",
-        "hash": "ffc997c2",
-        "encoded": "def%20reload_settings()%20-%3E%20Settings:",
-        "prevChunkIds": []
-      },
-      "334": {
-        "chunkId": "8561f0",
-        "hash": "bd07e6e2",
-        "encoded": "%22%22%22Reload%20settings%20from%20environment/config%20files.%22%22%22",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "335": {
         "chunkId": "8561f0",
-        "hash": "78cf6731",
-        "encoded": "global%20_settings",
-        "prevChunkIds": []
+        "hash": "65e90555",
+        "encoded": "def%20reload_settings()%20-%3E%20Settings:",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "336": {
         "chunkId": "8561f0",
-        "hash": "81466d3a",
-        "encoded": "_settings%20=%20Settings()",
-        "prevChunkIds": []
+        "hash": "e9dc9a30",
+        "encoded": "%22%22%22Reload%20settings%20from%20environment/config%20files.%22%22%22",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "337": {
         "chunkId": "8561f0",
-        "hash": "6feb59ff",
-        "encoded": "_settings.ensure_directories()",
-        "prevChunkIds": []
+        "hash": "7a0a8fa7",
+        "encoded": "global%20_settings",
+        "prevChunkIds": [
+          "8561f0"
+        ]
       },
       "338": {
         "chunkId": "8561f0",
-        "hash": "5cc10dc0",
+        "hash": "9fa4e744",
+        "encoded": "_settings%20=%20Settings()",
+        "prevChunkIds": [
+          "8561f0"
+        ]
+      },
+      "339": {
+        "chunkId": "8561f0",
+        "hash": "83671236",
+        "encoded": "_settings.ensure_directories()",
+        "prevChunkIds": [
+          "8561f0"
+        ]
+      },
+      "340": {
+        "chunkId": "8561f0",
+        "hash": "9717aab5",
         "encoded": "return%20_settings",
-        "prevChunkIds": []
+        "prevChunkIds": [
+          "8561f0"
+        ]
       }
     },
-    "_prevLineCount": 340
+    "_prevLineCount": 342
   }
 }
