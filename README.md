@@ -4,6 +4,7 @@
 
 > *Your memories. Your emotions. Your music.*
 
+
 ![Python](https://img.shields.io/badge/python-3.11%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-active-success)
@@ -42,6 +43,8 @@ This project demonstrates practical implementation of:
 - **Full-Stack Development** (React/Vite + FastAPI, with Streamlit fallback)
 
 > **Current setup:** Use [`docs/LOCAL_RUNBOOK.md`](docs/LOCAL_RUNBOOK.md) for the accurate Windows installation, dependency setup, Ollama configuration, FastAPI startup, React startup, Streamlit fallback, live browser voice input, optional local Whisper fallback, testing, and troubleshooting instructions. See [`PERFORMANCE.md`](PERFORMANCE.md) for the CPU latency fast path.
+    ??? CLONE_SETUP.md              # Fresh-clone Windows setup
+    ??? LOCAL_RUNBOOK.md            # Current local runbook
 
 ---
 
@@ -328,9 +331,6 @@ The Soundtrack of Your Life/
 │   └── test_portability.py
 │
 └── docs/
-    ├── HLD.md                      # High-level design
-    ├── LLD.md                      # Low-level design
-    └── SETUP.md                    # Detailed setup guide
 ```
 
 ---
