@@ -9,6 +9,15 @@
     },
     "b71a901d": {
       "value": "give one example scenario to test"
+    },
+    "1d66bd50": {
+      "value": "i restarted, but its still same"
+    },
+    "cc628426": {
+      "value": "make the font as poppins"
+    },
+    "98227ba6": {
+      "value": "i can still see these chinese symbols and other symbols, please change this to normal UI"
     }
   },
   "localPrompts": {},
